@@ -16,26 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- <meta-data -->
-        <!-- android:name="com.taobao.android.hotfix.IDSECRET" -->
-        <!-- android:value="App ID" /> -->
-        <!-- <meta-data -->
-        <!-- android:name="com.taobao.android.hotfix.APPSECRET" -->
-        <!-- android:value="App Secret" /> -->
-        <!-- <meta-data -->
-        <!-- android:name="com.taobao.android.hotfix.RSASECRET" -->
-        <!-- android:value="RSA密钥" /> -->
-
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity" />
-        <activity android:name=".Main4Activity" />
         <activity android:name=".Main5Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
