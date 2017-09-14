@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    build-mode="FULL"
+    format="10"
+    plugin-version="3.0.0-alpha4"
+    timestamp="1505368399040"
+    verifier="NOT_RUN" >
+
+    <task
+        name="javac"
+        duration="238" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/outputs/apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
+
+    <build
+        build-mode="FULL"
+        timestamp="1505368399040"
+        verifier="NOT_RUN" >
+        <artifact
+            location="/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+
+</instant-run>

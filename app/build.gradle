@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.ediancha.edcbusiness"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 104
+        versionName "1.0.4"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        maven {
+            url "http://maven.aliyun.com/nexus/content/repositories/releases"
+        }
+        maven { url 'https://jitpack.io' }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //https://help.aliyun.com/document_detail/53240.html?spm=5176.doc53287.2.1.BhM62L 阿里热修复
+    compile 'com.aliyun.ams:alicloud-android-hotfix:3.1.2'
+    //https://juejin.im/entry/59b11e6c51882524417b017e  超强刷新库，未使用，正在考虑
+    //    compile 'com.github.dkzwm:SmoothRefreshLayout:1.4.5'
+    implementation project(':dmzapi')
+}

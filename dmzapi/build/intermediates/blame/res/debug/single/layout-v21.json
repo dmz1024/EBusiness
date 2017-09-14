@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/0399d17134d3cae77d34a77869dd7871/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/0399d17134d3cae77d34a77869dd7871/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/0399d17134d3cae77d34a77869dd7871/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/0399d17134d3cae77d34a77869dd7871/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

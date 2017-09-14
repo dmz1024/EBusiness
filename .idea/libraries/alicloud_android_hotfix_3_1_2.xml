@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="alicloud-android-hotfix-3.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/alicloud-android-hotfix-3.1.2.aar/02761612a0d41982b446732e4816e3ad/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/alicloud-android-hotfix-3.1.2.aar/02761612a0d41982b446732e4816e3ad/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
