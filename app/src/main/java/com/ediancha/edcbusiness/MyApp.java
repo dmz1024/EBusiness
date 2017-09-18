@@ -6,6 +6,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.util.Log;
 
+import com.squareup.leakcanary.LeakCanary;
 import com.taobao.sophix.PatchStatus;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
@@ -44,6 +45,8 @@ public class MyApp extends Application {
                 .setSecretMetaData(HOT_APPID, HOT_APPSECRET, HOT_RSA)
                 .setEnableDebug(true)
                 .initialize();
+
+        LeakCanary.install(this);//检测内存泄漏
     }
 
 

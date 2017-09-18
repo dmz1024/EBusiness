@@ -1,7 +1,6 @@
 package com.dmz.library.dmzapi.api.down;
 
 import com.dmz.library.dmzapi.api.DmzDownloadUtil;
-import com.dmz.library.dmzapi.api.ViewBaseType;
 import com.squareup.okhttp.Request;
 
 import java.io.File;

@@ -28,6 +28,8 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorDmzBarBackground">#fff</color>
+    <color name="colorDmzBarText">#666</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
@@ -107,6 +109,8 @@
     <declare-styleable name="ActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/><attr format="reference" name="closeItemLayout"/></declare-styleable>
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable>
+    <declare-styleable name="AppBar"><attr name="navigationGravity"><enum name="top" value="0"/><enum name="center_vertical" value="1"/></attr><attr format="reference" name="menu1"/><attr format="reference" name="menu2"/><attr format="reference" name="menu3"/><attr format="reference" name="menu4"/><attr format="reference" name="menu5"/></declare-styleable>
+    <declare-styleable name="AppBar.Menu"><attr format="reference" name="toolbarMenuTextStyle"/><attr format="reference" name="toolbarMenuImageStyle"/><attr format="reference" name="toolbarMenuSpinnerStyle"/></declare-styleable>
     <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/><attr format="boolean" name="expanded"/></declare-styleable>
     <declare-styleable name="AppBarLayoutStates"><attr format="boolean" name="state_collapsed"/><attr format="boolean" name="state_collapsible"/></declare-styleable>
     <declare-styleable name="AppBarLayout_Layout"><attr name="layout_scrollFlags">
@@ -520,6 +524,7 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <dimen name="card_view__margin_10">0dp</dimen>
     <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
     <dimen name="compat_button_inset_vertical_material">6dp</dimen>
     <dimen name="compat_button_padding_horizontal_material">8dp</dimen>
@@ -593,6 +598,7 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="toolBarSize">40dp</dimen>
     <dimen name="tooltip_corner_radius">2dp</dimen>
     <dimen name="tooltip_horizontal_padding">16dp</dimen>
     <dimen name="tooltip_margin">8dp</dimen>
@@ -624,6 +630,7 @@
     <item name="transition_scene_layoutid_cache" type="id"/>
     <item name="up" type="id"/>
     <item name="view_offset_helper" type="id"/>
+    <integer name="__leak_canary_max_stored_leaks">7</integer>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="app_bar_elevation_anim_duration">150</integer>
@@ -634,6 +641,13 @@
     <integer name="hide_password_duration">320</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="__leak_canary_class_has_leaked">%s has leaked</string>
+    <string name="__leak_canary_display_activity_label">Leaks</string>
+    <string name="__leak_canary_leak_list_title">Leaks in %s</string>
+    <string name="__leak_canary_notification_message">Click for more details</string>
+    <string name="__leak_canary_share_heap_dump">Share heap dump</string>
+    <string name="__leak_canary_share_leak">Share leak</string>
+    <string name="__leak_canary_share_with">Share with…</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -1730,6 +1744,18 @@
         <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
     </style>
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionBarSize">40dp</item>
+        <item name="actionBarSize">40dp</item>
+        <!--<item name="android:windowNoTitle">true</item> &lt;!&ndash; 设置无标题 &ndash;&gt;-->
+        <!--<item name="android:windowFullscreen">?android:windowNoTitle</item>&lt;!&ndash; 取决于android:windowNoTitle的值 &ndash;&gt;-->
+    </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
@@ -2214,4 +2240,6 @@
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
         <item name="passwordToggleContentDescription">@string/password_toggle_content_description</item>
     </style>
+    <style name="__LeakCanary.Base" parent="android:Theme">
+  </style>
 </resources>

@@ -19,4 +19,6 @@
         <item name="android:listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
         <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
     </style>
+    <style name="__LeakCanary.Base" parent="android:Theme.Holo">
+  </style>
 </resources>

@@ -8,6 +8,8 @@ import com.dmz.library.dmzapi.api.OnMySuccessListener;
  * Created by dengmingzhi on 2017/8/22.
  */
 
-public interface IBaseModel<D> extends OnMySuccessListener<D> {
+public interface IBaseModel {
     void excute();
+
+    void cancel();
 }

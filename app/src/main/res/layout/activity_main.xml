@@ -1,66 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ediancha.edcbusiness.MainActivity">
+    android:orientation="vertical">
 
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="测试中" />
+
+    <Button
+        android:id="@+id/btContent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="更新" />
 
-        <EditText
-            android:id="@+id/etContent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1" />
+    <EditText
+        android:layout_alignParentBottom="true"
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1" />
 
-        <TextView
-            android:id="@+id/tvContent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="测试中" />
-
-        <Button
-            android:id="@+id/btContent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="更新" />
-
-        <Button
-            android:id="@+id/btStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="重启"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/btTest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="这个button加了id" />
-
-        <Button
-            android:id="@+id/btTest1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="这个button加了id1" />
-
-        <Button
-            android:id="@+id/btTest3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="这个button加了id1" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/aa"
-            android:text="补丁版112" />
-
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

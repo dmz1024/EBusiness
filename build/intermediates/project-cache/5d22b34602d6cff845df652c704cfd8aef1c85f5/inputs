@@ -1,6 +1,0 @@
-COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
-FILE_PATH=/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/intermediate-jars/debug/classes.jar
-FILE_HASH=ae9f8a8ecab8d5ca00af2ffb41866f2904fbf3de
-DX_VERSION=1.13
-JUMBO_MODE=false
-OPTIMIZE=true

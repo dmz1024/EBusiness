@@ -8,25 +8,25 @@ package com.zhy.baseadapter_recyclerview;
 
 public final class R {
     public static final class attr {
-        public static int layoutManager = 0x7f040157;
-        public static int reverseLayout = 0x7f04015b;
-        public static int spanCount = 0x7f04015a;
-        public static int stackFromEnd = 0x7f04015c;
+        public static int layoutManager = 0x7f040160;
+        public static int reverseLayout = 0x7f040164;
+        public static int spanCount = 0x7f040163;
+        public static int stackFromEnd = 0x7f040165;
     }
     public static final class dimen {
-        public static int item_touch_helper_max_drag_scroll_per_frame = 0x7f080082;
-        public static int item_touch_helper_swipe_escape_max_velocity = 0x7f080083;
-        public static int item_touch_helper_swipe_escape_velocity = 0x7f080084;
+        public static int item_touch_helper_max_drag_scroll_per_frame = 0x7f080083;
+        public static int item_touch_helper_swipe_escape_max_velocity = 0x7f080084;
+        public static int item_touch_helper_swipe_escape_velocity = 0x7f080085;
     }
     public static final class id {
-        public static int item_touch_helper_previous_elevation = 0x7f0c00fc;
+        public static int item_touch_helper_previous_elevation = 0x7f0c010e;
     }
     public static final class styleable {
-        public static int[] RecyclerView = {0x7f170153,0x7f170154,0x7f170155,0x7f170156,0x7f170157,0x7f170158,0x7f170159,0x7f17015a,0x7f17015b,0x7f17015c,0x7f17015d};
-        public static int RecyclerView_android_orientation = 0x7f170154;
-        public static int RecyclerView_layoutManager = 0x7f170153;
-        public static int RecyclerView_reverseLayout = 0x7f170157;
-        public static int RecyclerView_spanCount = 0x7f170156;
-        public static int RecyclerView_stackFromEnd = 0x7f170158;
+        public static int[] RecyclerView = {0x7f17015c,0x7f17015d,0x7f17015e,0x7f17015f,0x7f170160,0x7f170161,0x7f170162,0x7f170163,0x7f170164,0x7f170165,0x7f170166};
+        public static int RecyclerView_android_orientation = 0x7f17015d;
+        public static int RecyclerView_layoutManager = 0x7f17015c;
+        public static int RecyclerView_reverseLayout = 0x7f170160;
+        public static int RecyclerView_spanCount = 0x7f17015f;
+        public static int RecyclerView_stackFromEnd = 0x7f170161;
     }
 }

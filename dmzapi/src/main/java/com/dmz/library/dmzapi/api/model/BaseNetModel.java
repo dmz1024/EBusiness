@@ -3,16 +3,24 @@ package com.dmz.library.dmzapi.api.model;
 
 import com.dmz.library.dmzapi.api.DmzApi;
 import com.dmz.library.dmzapi.api.DmzBuilder;
-import com.dmz.library.dmzapi.api.IBaseBean;
+import com.dmz.library.dmzapi.api.bean.IBaseBean;
 import com.dmz.library.dmzapi.api.OnMyErrorListener;
 import com.dmz.library.dmzapi.api.OnMyOtherCodeListener;
-import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
+import com.dmz.library.dmzapi.api.OnMySuccessListener;
+import com.dmz.library.dmzapi.api.presenter.NetBasePresenter;
 
 /**
  * Created by dengmingzhi on 2017/8/22.
  */
 
-public class BaseNetModel<T extends IBaseBean, D> implements IBaseModel<D>, OnMyOtherCodeListener<T>, OnMyErrorListener {
+public class BaseNetModel<T extends IBaseBean, D> implements IBaseModel, OnMySuccessListener<D>, OnMyOtherCodeListener<T>, OnMyErrorListener {
+
+    private NetBasePresenter netBasePresenter;
+
+    public BaseNetModel(NetBasePresenter netBasePresenter) {
+        this.netBasePresenter = netBasePresenter;
+    }
+
 
     private DmzBuilder dmzBuilder;
 
@@ -30,14 +38,19 @@ public class BaseNetModel<T extends IBaseBean, D> implements IBaseModel<D>, OnMy
         return this;
     }
 
-    private DmzApi dmzApi;
-
     @Override
     public void excute() {
         setListener(dmzBuilder);
-        DmzApi.cancel(dmzApi);
-        dmzApi = DmzApi._build();
+        DmzApi.cancel(dmzBuilder.getSign());
+        DmzApi dmzApi = DmzApi._build();
         dmzApi.setDmzBuilder(dmzBuilder).excute();
+    }
+
+    @Override
+    public void cancel() {
+        if (dmzBuilder != null) {
+            DmzApi.cancel(dmzBuilder.getSign());
+        }
     }
 
     public void setListener(DmzBuilder dmzBuilder) {
@@ -48,27 +61,19 @@ public class BaseNetModel<T extends IBaseBean, D> implements IBaseModel<D>, OnMy
 
     }
 
-    protected IBasePresenter iBasePresenter;
-
-    public BaseNetModel(IBasePresenter iBasePresenter) {
-        this.iBasePresenter = iBasePresenter;
-    }
-
 
     @Override
     public void onError() {
-        iBasePresenter.onError();
+        netBasePresenter.onError();
     }
 
     @Override
     public void onSuccess(D bean) {
-        iBasePresenter.onSuccess(bean);
+        netBasePresenter.onSuccess(bean);
     }
 
     @Override
     public void onOther(T bean) {
-        iBasePresenter.onOther(bean);
+        netBasePresenter.onOther(bean);
     }
-
-
 }

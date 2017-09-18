@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorDmzBarBackground">#fff</color>
+    <color name="colorDmzBarText">#666</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <dimen name="card_view__margin_10">0dp</dimen>
+    <dimen name="toolBarSize">40dp</dimen>
     <string name="app_name">DmzApi</string>
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionBarSize">40dp</item>
+        <item name="actionBarSize">40dp</item>
+        
+        
+    </style>
 </resources>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="card_view__margin_10">0dp</dimen>
+    <dimen name="toolBarSize">40dp</dimen>
+</resources>

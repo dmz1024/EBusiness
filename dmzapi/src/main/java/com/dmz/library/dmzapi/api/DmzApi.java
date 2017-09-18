@@ -4,17 +4,11 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
+import com.dmz.library.dmzapi.api.bean.IBaseBean;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.builder.OkHttpRequestBuilder;
 import com.zhy.http.okhttp.callback.StringCallback;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -35,16 +29,13 @@ public class DmzApi {
     }
 
 
-    public static void cancel(DmzApi dmzApi) {
-        OkHttpUtils.getInstance().cancelTag(dmzApi);
-    }
 
     public void excute() {
         final OkHttpRequestBuilder builder;
         printUrl();
         builder = dmzBuilder.isMethod() ? OkHttpUtils.post() : OkHttpUtils.get();
         dmzBuilder.setSign(this);
-        builder.tag(this)
+        builder.tag(dmzBuilder.getSign())
                 .url(dmzBuilder.getUrl())
                 .params(dmzBuilder.getMap())
                 .build()
@@ -69,7 +60,7 @@ public class DmzApi {
                             dmzBuilder.getiLoadingView().loading(dmzBuilder.getLoadMsg(), dmzBuilder.isCancel() ? new IProgressInterface.OnProgressCancelListener() {
                                 @Override
                                 public void cancel() {
-                                    OkHttpUtils.getInstance().cancelTag(DmzApi.this);
+                                    DmzApi.cancel(dmzBuilder.getSign());
                                     if (dmzBuilder.getProgressCancelListener() != null) {
                                         dmzBuilder.getProgressCancelListener().cancel();
                                     }
@@ -123,6 +114,11 @@ public class DmzApi {
 
                     }
                 });
+    }
+
+
+    public static void cancel(Object sign) {
+        OkHttpUtils.getInstance().cancelTag(sign);
     }
 
 
