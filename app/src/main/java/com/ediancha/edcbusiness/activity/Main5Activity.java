@@ -37,4 +37,5 @@ public class Main5Activity extends MoreDataBaseActivity<TestBean.Test, TestBean>
     protected String getBarTitle() {
         return "地区";
     }
+
 }
