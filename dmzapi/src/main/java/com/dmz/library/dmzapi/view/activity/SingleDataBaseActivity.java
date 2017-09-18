@@ -34,15 +34,17 @@ public class SingleDataBaseActivity<T extends IBaseBean, D> extends ToobarBaseAc
     protected SingleDataContract mContract;
 
     private void initData() {
+        mContract = SingleDataContract.<T, D>_instance(scRoot, swRoot);
         initDmzBuilder();
         initMoreBuilder();
-        mContract = SingleDataContract.<T, D>_instance(scRoot, swRoot).setDataBuilder(mBuilder)._init();
+        mContract._init();
     }
 
     protected SingleDataBuilder mBuilder;
 
     protected void initMoreBuilder() {
         mBuilder = SingleDataBuilder._build().setDmzBuilder(dBuilder);
+        mContract.setDataBuilder(mBuilder);
     }
 
     protected DmzBuilder dBuilder;

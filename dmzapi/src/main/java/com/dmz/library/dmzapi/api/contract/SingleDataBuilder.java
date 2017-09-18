@@ -9,8 +9,7 @@ import com.dmz.library.dmzapi.api.DmzBuilder;
  */
 
 public class SingleDataBuilder extends BaseDataBuilder {
-    private boolean alwaysErr;//如果请求发生错误，是否总是显示错误页面
-    private float barHeight = 50;
+    private boolean alwaysErr = true;//如果请求发生错误，是否总是显示错误页面
 
     private View loadingView;
     private View errorView;
@@ -18,10 +17,6 @@ public class SingleDataBuilder extends BaseDataBuilder {
     private View otherView;
     private View loginView;
 
-
-    public float getBarHeight() {
-        return barHeight;
-    }
 
     public View getLoadingView() {
         return loadingView;
@@ -111,6 +106,16 @@ public class SingleDataBuilder extends BaseDataBuilder {
      * 当前显示的页面枚举
      */
     private ShowViewEnum currentViewEnum = ShowViewEnum.LOADINGVIEW;
+    private boolean isSuccessView;
+
+    public boolean isSuccessView() {
+        return isSuccessView;
+    }
+
+    public SingleDataBuilder setSuccessView(boolean successView) {
+        isSuccessView = successView;
+        return this;
+    }
 
     public SingleDataBuilder setCurrentViewEnum(ShowViewEnum currentViewEnum) {
         this.currentViewEnum = currentViewEnum;
@@ -122,8 +127,9 @@ public class SingleDataBuilder extends BaseDataBuilder {
     }
 
 
+
     public static SingleDataBuilder _build() {
-        return new SingleDataBuilder();
+        return new SingleDataBuilder().setCanRefresh(false);
     }
 
     @Override

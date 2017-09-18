@@ -28,53 +28,6 @@ public class SingleDataContract<T extends IBaseBean, D> extends IContract<Single
     private SingleDataBuilder mBuilder;
     private LayoutInflater layoutInflater;
 
-    /**
-     * 获得状态栏的高度
-     *
-     * @param context
-     * @return
-     */
-    public int getStatusHeight(Context context) {
-
-        int statusHeight = -1;
-        try {
-            Class<?> clazz = Class.forName("com.android.internal.R$dimen");
-            Object object = clazz.newInstance();
-            int height = Integer.parseInt(clazz.getField("status_bar_height")
-                    .get(object).toString());
-            statusHeight = context.getResources().getDimensionPixelSize(height);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return statusHeight;
-    }
-
-    /**
-     * 获得屏幕宽度
-     *
-     * @param context
-     * @return
-     */
-    public int getScreenHeight(Context context) {
-        WindowManager wm = (WindowManager) context
-                .getSystemService(Context.WINDOW_SERVICE);
-        DisplayMetrics outMetrics = new DisplayMetrics();
-        wm.getDefaultDisplay().getMetrics(outMetrics);
-        return outMetrics.heightPixels;
-    }
-
-
-    /**
-     * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
-     */
-    public static int dip2px(Context context, float dpValue) {
-        final float scale = context.getResources().getDisplayMetrics().density;
-        return (int) (dpValue * scale + 0.5f);
-    }
-
-
-    private int totalHeight = 0;
-
     public static <T extends IBaseBean, D> SingleDataContract _instance(NestedScrollView scRoot, SwipeRefreshLayout refreshLayout) {
         return new SingleDataContract<T, D>(scRoot, refreshLayout);
     }
@@ -96,30 +49,23 @@ public class SingleDataContract<T extends IBaseBean, D> extends IContract<Single
         });
     }
 
+
     public void autoRefresh() {
         if (mBuilder.getDmzBuilder().getiLoadingView() != null) {
-            refreshLayout.setEnabled(mBuilder.isCanRefresh());
             refreshLayout.setRefreshing(false);
-            excute();
         } else {
-            refreshLayout.setEnabled(true);
-            refreshLayout.post(autoRefresh);
+            if (mBuilder.getCurrentViewEnum() == SingleDataBuilder.ShowViewEnum.SUCCESSVIEW) {
+                refreshLayout.setEnabled(true);
+            }
         }
+        excute();
     }
+
 
     public SingleDataContract setDataBuilder(SingleDataBuilder mBuilder) {
         this.mBuilder = mBuilder;
         return this;
     }
-
-
-    private Runnable autoRefresh = new Runnable() {
-        @Override
-        public void run() {
-            refreshLayout.setRefreshing(true);
-            excute();
-        }
-    };
 
     @Override
     public void excute() {
@@ -132,53 +78,54 @@ public class SingleDataContract<T extends IBaseBean, D> extends IContract<Single
         initRefresh();
         notifyDataSetChanged();
         if (mBuilder.isFirstRequest()) {
-            autoRefresh();
+            refreshLayout.setEnabled(false);
+            excute();
         }
         return this;
     }
 
+
     @Override
     public void notifyDataSetChanged() {
-        View view = null;
-        switch (mBuilder.getCurrentViewEnum()) {
-            case SUCCESSVIEW:
-                view = mBuilder.getSuccessView();
-                break;
-            case ERRORVIEW:
-                if (mBuilder.getErrorView() == null) {
-                    getErrorView();
+        if (!mBuilder.isSuccessView()) {
+            View view = null;
+            if (mBuilder.getCurrentViewEnum() != null) {
+                switch (mBuilder.getCurrentViewEnum()) {
+                    case SUCCESSVIEW:
+                        view = mBuilder.getSuccessView();
+                        break;
+                    case ERRORVIEW:
+                        if (mBuilder.getErrorView() == null) {
+                            getErrorView();
+                        }
+                        view = mBuilder.getErrorView();
+                        break;
+                    case OTHERVIEW:
+                        if (mBuilder.getOtherView() == null) {
+                            getOtherView();
+                        }
+                        view = mBuilder.getOtherView();
+                        break;
+                    case LOADINGVIEW:
+                        if (mBuilder.getLoadingView() == null) {
+                            getLoadingView();
+                        }
+                        view = mBuilder.getLoadingView();
+                        break;
+                    case LOGINVIEW:
+                        if (mBuilder.getLoginView() == null) {
+                            getLoginView();
+                        }
+                        view = mBuilder.getLoginView();
+                        break;
                 }
-                view = mBuilder.getErrorView();
-                break;
-            case OTHERVIEW:
-                if (mBuilder.getOtherView() == null) {
-                    getOtherView();
-                }
-                view = mBuilder.getOtherView();
-                break;
-            case LOADINGVIEW:
-                if (mBuilder.getLoadingView() == null) {
-                    getLoadingView();
-                }
-                view = mBuilder.getLoadingView();
-                break;
-            case LOGINVIEW:
-                if (mBuilder.getLoginView() == null) {
-                    getLoginView();
-                }
-                view = mBuilder.getLoginView();
-                break;
-        }
-        scRoot.removeAllViews();
-        scRoot.addView(view);
 
-//        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-//        if (totalHeight == 0) {
-//            totalHeight = getScreenHeight(refreshLayout.getContext()) - getStatusHeight(refreshLayout.getContext()) - dip2px(refreshLayout.getContext(), mBuilder.getBarHeight());
-//        }
-//
-//        layoutParams.height = totalHeight;
-//        view.setLayoutParams(layoutParams);
+            }
+            scRoot.removeAllViews();
+            if (view != null) {
+                scRoot.addView(view);
+            }
+        }
     }
 
     private void getLoginView() {
@@ -201,17 +148,34 @@ public class SingleDataContract<T extends IBaseBean, D> extends IContract<Single
 
     private void getOtherView() {
         View view = layoutInflater.inflate(R.layout.dmzshow_single_other_view, null);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                excute();
+            }
+        });
         mBuilder.setOtherView(view);
     }
 
+
     private void getErrorView() {
         View view = layoutInflater.inflate(R.layout.dmzshow_single_error_view, null);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                excute();
+            }
+        });
         mBuilder.setErrorView(view);
     }
 
     @Override
     public void stopRefresh() {
-        refreshLayout.setEnabled(mBuilder.isCanRefresh());
+        if (mBuilder.getCurrentViewEnum() == SingleDataBuilder.ShowViewEnum.SUCCESSVIEW) {
+            refreshLayout.setEnabled(mBuilder.isCanRefresh());
+        } else {
+            refreshLayout.setEnabled(false);
+        }
         refreshLayout.setRefreshing(false);
     }
 

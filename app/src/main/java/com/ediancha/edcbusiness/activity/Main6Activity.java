@@ -1,7 +1,6 @@
 package com.ediancha.edcbusiness.activity;
 
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.dmz.library.dmzapi.api.contract.BaseDataBuilder;
@@ -20,9 +19,8 @@ public class Main6Activity extends SingleDataBaseActivity<Test1Bean, ArrayList<T
     @Override
     protected void initMoreBuilder() {
         super.initMoreBuilder();
-        mBuilder
-                .setOnMySuccessListener(this)
-                .setCanRefresh(false);
+        mContract.getSuccessView(R.layout.activity_test);
+        mBuilder.setOnMySuccessListener(this).setCanRefresh(true).setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW);
     }
 
     @Override
@@ -30,13 +28,14 @@ public class Main6Activity extends SingleDataBaseActivity<Test1Bean, ArrayList<T
         super.initDmzBuilder();
         dBuilder.setaClass(Test1Bean.class)
                 .setUrl(url)
+                .setiLoadingView(new MyProgress(this))
                 .setParms("gid", "10000");
     }
 
     @Override
     public void onSuccess(IBasePresenter presenter, ArrayList<Test1Bean.Test> bean) {
-        View successView = mContract.getSuccessView(R.layout.activity_main);
-//        TextView tvContent = successView.findViewById(R.id.tvContent);
-//        tvContent.setText(bean.get(0).getAddress());
+        View successView = mContract.getSuccessView(R.layout.activity_test);
+        TextView tvContent = successView.findViewById(R.id.tvContent);
+        tvContent.setText(bean.get(0).getAddress());
     }
 }
