@@ -19,8 +19,7 @@ public class Main6Activity extends SingleDataBaseActivity<Test1Bean, ArrayList<T
     @Override
     protected void initMoreBuilder() {
         super.initMoreBuilder();
-        mContract.getSuccessView(R.layout.activity_test);
-        mBuilder.setOnMySuccessListener(this).setCanRefresh(true).setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW);
+        mBuilder.setOnMySuccessListener(this).setCanRefresh(true);
     }
 
     @Override
@@ -28,7 +27,6 @@ public class Main6Activity extends SingleDataBaseActivity<Test1Bean, ArrayList<T
         super.initDmzBuilder();
         dBuilder.setaClass(Test1Bean.class)
                 .setUrl(url)
-                .setiLoadingView(new MyProgress(this))
                 .setParms("gid", "10000");
     }
 
