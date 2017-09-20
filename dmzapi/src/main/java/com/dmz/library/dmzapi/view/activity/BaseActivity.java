@@ -15,6 +15,16 @@ import android.widget.EditText;
 
 public class BaseActivity extends AppCompatActivity {
 
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    public Context getContext() {
+        return this;
+    }
+
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {

@@ -20,10 +20,6 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/layout/dmzshow_single_error_view.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/activity_base_more_data.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/layout/activity_base_more_data.xml"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_alert_dialog_title_material.xml"
     },
@@ -100,6 +96,10 @@
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_search_view.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/activity_main6.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/layout/activity_main6.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_list_menu_item_layout.xml"
     },
@@ -158,6 +158,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/view_base_bar.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/layout/view_base_bar.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
@@ -232,12 +236,12 @@
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_template_media_custom.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_action_mode_bar.xml"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_single_login_view.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/layout/dmzshow_single_login_view.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/__leak_canary_ref_top_row.xml",

@@ -160,6 +160,10 @@
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/drawable/notification_bg_low.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/shape_bar_line.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/shape_bar_line.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/drawable/abc_ic_search_api_material.xml"
     },

@@ -12,13 +12,22 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <meta-data
         android:name="android.support.VERSION"
         android:value="26.0.0-alpha1" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.ediancha.edcbusiness.MyApp"
@@ -39,6 +48,10 @@
         </activity>
         <activity android:name="com.ediancha.edcbusiness.activity.Main5Activity" />
         <activity android:name="com.ediancha.edcbusiness.activity.Main6Activity" />
+        <activity
+            android:name="com.ediancha.edcbusiness.activity.PersonCenterActivity"
+            android:theme="@style/PersonCenterTheme" />
+        <activity android:name="com.ediancha.edcbusiness.activity.QwActivity" />
 
         <service
             android:name="com.taobao.sophix.aidl.DownloadService"
@@ -49,6 +62,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
+
+        <activity
+            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
 
         <meta-data
             android:name="android.support.VERSION"

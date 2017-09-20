@@ -32,10 +32,4 @@ public class Main5Activity extends MoreDataBaseActivity<TestBean.Test, TestBean>
         holder.setText(R.id.tvContent, test.getAddress() + position);
     }
 
-
-    @Override
-    protected String getBarTitle() {
-        return "地区";
-    }
-
 }

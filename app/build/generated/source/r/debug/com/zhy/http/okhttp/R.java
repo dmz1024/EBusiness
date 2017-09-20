@@ -8,6 +8,6 @@ package com.zhy.http.okhttp;
 
 public final class R {
     public static final class string {
-        public static final int app_name = 0x7f0c0026;
+        public static final int app_name = 0x7f0d0026;
     }
 }

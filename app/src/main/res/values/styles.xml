@@ -5,4 +5,8 @@
 
     </style>
 
+    <style name="PersonCenterTheme" parent="MyAppTheme">
+        <item name="colorPrimaryDark">#f1da09</item>
+    </style>
+
 </resources>

@@ -16,6 +16,10 @@
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/anim/design_snackbar_out.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/anim/fade_out.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/anim/fade_out.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
@@ -50,6 +54,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/anim/fade_in.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/anim/fade_in.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/anim/tooltip_exit.xml",

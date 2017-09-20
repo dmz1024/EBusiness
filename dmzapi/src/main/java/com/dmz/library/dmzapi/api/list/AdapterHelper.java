@@ -77,6 +77,12 @@ public class AdapterHelper {
     }
 
 
+    public AdapterHelper addItemAnimator(RecyclerView.ItemAnimator animator) {
+        rvContent.setItemAnimator(animator);
+        return this;
+    }
+
+
     private Map<Integer, ViewTypeInfo> listenerMap = new HashMap<>();
 
     public interface OnLoadMoreInterface {

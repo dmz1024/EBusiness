@@ -1719,8 +1719,29 @@
                     "startLine": 225,
                     "startColumn": 4,
                     "startOffset": 16916,
+                    "endLine": 228,
+                    "endColumn": 12,
+                    "endOffset": 17066
+                },
+                "from": {
+                    "file": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/values-v21/styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 54,
+                        "endLine": 6,
+                        "endColumn": 12,
+                        "endOffset": 204
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 229,
+                    "startColumn": 4,
+                    "startOffset": 17071,
                     "endColumn": 70,
-                    "endOffset": 16982
+                    "endOffset": 17137
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1735,11 +1756,11 @@
             },
             {
                 "to": {
-                    "startLine": 226,
+                    "startLine": 230,
                     "startColumn": 4,
-                    "startOffset": 16987,
+                    "startOffset": 17142,
                     "endColumn": 82,
-                    "endOffset": 17065
+                    "endOffset": 17220
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1754,12 +1775,12 @@
             },
             {
                 "to": {
-                    "startLine": 227,
+                    "startLine": 231,
                     "startColumn": 4,
-                    "startOffset": 17070,
-                    "endLine": 236,
+                    "startOffset": 17225,
+                    "endLine": 240,
                     "endColumn": 12,
-                    "endOffset": 17745
+                    "endOffset": 17900
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1775,11 +1796,11 @@
             },
             {
                 "to": {
-                    "startLine": 237,
+                    "startLine": 241,
                     "startColumn": 4,
-                    "startOffset": 17750,
+                    "startOffset": 17905,
                     "endColumn": 56,
-                    "endOffset": 17802
+                    "endOffset": 17957
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1794,11 +1815,11 @@
             },
             {
                 "to": {
-                    "startLine": 238,
+                    "startLine": 242,
                     "startColumn": 4,
-                    "startOffset": 17807,
+                    "startOffset": 17962,
                     "endColumn": 57,
-                    "endOffset": 17860
+                    "endOffset": 18015
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1813,12 +1834,12 @@
             },
             {
                 "to": {
-                    "startLine": 239,
+                    "startLine": 243,
                     "startColumn": 4,
-                    "startOffset": 17865,
-                    "endLine": 250,
+                    "startOffset": 18020,
+                    "endLine": 254,
                     "endColumn": 12,
-                    "endOffset": 18554
+                    "endOffset": 18709
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1834,12 +1855,12 @@
             },
             {
                 "to": {
-                    "startLine": 251,
+                    "startLine": 255,
                     "startColumn": 4,
-                    "startOffset": 18559,
-                    "endLine": 262,
+                    "startOffset": 18714,
+                    "endLine": 266,
                     "endColumn": 12,
-                    "endOffset": 19260
+                    "endOffset": 19415
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1855,11 +1876,11 @@
             },
             {
                 "to": {
-                    "startLine": 263,
+                    "startLine": 267,
                     "startColumn": 4,
-                    "startOffset": 19265,
+                    "startOffset": 19420,
                     "endColumn": 118,
-                    "endOffset": 19379
+                    "endOffset": 19534
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1874,11 +1895,11 @@
             },
             {
                 "to": {
-                    "startLine": 264,
+                    "startLine": 268,
                     "startColumn": 4,
-                    "startOffset": 19384,
+                    "startOffset": 19539,
                     "endColumn": 128,
-                    "endOffset": 19508
+                    "endOffset": 19663
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1893,12 +1914,12 @@
             },
             {
                 "to": {
-                    "startLine": 265,
+                    "startLine": 269,
                     "startColumn": 4,
-                    "startOffset": 19513,
-                    "endLine": 267,
+                    "startOffset": 19668,
+                    "endLine": 271,
                     "endColumn": 12,
-                    "endOffset": 19679
+                    "endOffset": 19834
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1914,12 +1935,12 @@
             },
             {
                 "to": {
-                    "startLine": 268,
+                    "startLine": 272,
                     "startColumn": 4,
-                    "startOffset": 19684,
-                    "endLine": 270,
+                    "startOffset": 19839,
+                    "endLine": 274,
                     "endColumn": 12,
-                    "endOffset": 19845
+                    "endOffset": 20000
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1935,11 +1956,11 @@
             },
             {
                 "to": {
-                    "startLine": 271,
+                    "startLine": 275,
                     "startColumn": 4,
-                    "startOffset": 19850,
+                    "startOffset": 20005,
                     "endColumn": 128,
-                    "endOffset": 19974
+                    "endOffset": 20129
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1954,12 +1975,12 @@
             },
             {
                 "to": {
-                    "startLine": 272,
+                    "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 19979,
-                    "endLine": 274,
+                    "startOffset": 20134,
+                    "endLine": 278,
                     "endColumn": 12,
-                    "endOffset": 20145
+                    "endOffset": 20300
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1975,11 +1996,11 @@
             },
             {
                 "to": {
-                    "startLine": 275,
+                    "startLine": 279,
                     "startColumn": 4,
-                    "startOffset": 20150,
+                    "startOffset": 20305,
                     "endColumn": 130,
-                    "endOffset": 20276
+                    "endOffset": 20431
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -1994,12 +2015,12 @@
             },
             {
                 "to": {
-                    "startLine": 276,
+                    "startLine": 280,
                     "startColumn": 4,
-                    "startOffset": 20281,
-                    "endLine": 278,
+                    "startOffset": 20436,
+                    "endLine": 282,
                     "endColumn": 12,
-                    "endOffset": 20446
+                    "endOffset": 20601
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/values-v21/values-v21.xml",
@@ -2015,11 +2036,11 @@
             },
             {
                 "to": {
-                    "startLine": 279,
+                    "startLine": 283,
                     "startColumn": 4,
-                    "startOffset": 20451,
+                    "startOffset": 20606,
                     "endColumn": 115,
-                    "endOffset": 20562
+                    "endOffset": 20717
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/values-v21/values-v21.xml",
@@ -2034,11 +2055,11 @@
             },
             {
                 "to": {
-                    "startLine": 280,
+                    "startLine": 284,
                     "startColumn": 4,
-                    "startOffset": 20567,
+                    "startOffset": 20722,
                     "endColumn": 125,
-                    "endOffset": 20688
+                    "endOffset": 20843
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/values-v21/values-v21.xml",
@@ -2053,12 +2074,12 @@
             },
             {
                 "to": {
-                    "startLine": 281,
+                    "startLine": 285,
                     "startColumn": 4,
-                    "startOffset": 20693,
-                    "endLine": 283,
+                    "startOffset": 20848,
+                    "endLine": 287,
                     "endColumn": 12,
-                    "endOffset": 20856
+                    "endOffset": 21011
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/values-v21/values-v21.xml",
@@ -2074,12 +2095,12 @@
             },
             {
                 "to": {
-                    "startLine": 284,
+                    "startLine": 288,
                     "startColumn": 4,
-                    "startOffset": 20861,
-                    "endLine": 286,
+                    "startOffset": 21016,
+                    "endLine": 290,
                     "endColumn": 12,
-                    "endOffset": 21019
+                    "endOffset": 21174
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/values-v21/values-v21.xml",
@@ -2095,11 +2116,11 @@
             },
             {
                 "to": {
-                    "startLine": 287,
+                    "startLine": 291,
                     "startColumn": 4,
-                    "startOffset": 21024,
+                    "startOffset": 21179,
                     "endColumn": 125,
-                    "endOffset": 21145
+                    "endOffset": 21300
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/values-v21/values-v21.xml",
@@ -2114,12 +2135,12 @@
             },
             {
                 "to": {
-                    "startLine": 288,
+                    "startLine": 292,
                     "startColumn": 4,
-                    "startOffset": 21150,
-                    "endLine": 290,
+                    "startOffset": 21305,
+                    "endLine": 294,
                     "endColumn": 12,
-                    "endOffset": 21313
+                    "endOffset": 21468
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/values-v21/values-v21.xml",
@@ -2135,11 +2156,11 @@
             },
             {
                 "to": {
-                    "startLine": 291,
+                    "startLine": 295,
                     "startColumn": 4,
-                    "startOffset": 21318,
+                    "startOffset": 21473,
                     "endColumn": 127,
-                    "endOffset": 21441
+                    "endOffset": 21596
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/values-v21/values-v21.xml",
@@ -2154,12 +2175,12 @@
             },
             {
                 "to": {
-                    "startLine": 292,
+                    "startLine": 296,
                     "startColumn": 4,
-                    "startOffset": 21446,
-                    "endLine": 294,
+                    "startOffset": 21601,
+                    "endLine": 298,
                     "endColumn": 12,
-                    "endOffset": 21608
+                    "endOffset": 21763
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/values-v21/values-v21.xml",
@@ -2175,12 +2196,12 @@
             },
             {
                 "to": {
-                    "startLine": 295,
+                    "startLine": 299,
                     "startColumn": 4,
-                    "startOffset": 21613,
-                    "endLine": 297,
+                    "startOffset": 21768,
+                    "endLine": 301,
                     "endColumn": 12,
-                    "endOffset": 21780
+                    "endOffset": 21935
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/values-v21/values-v21.xml",
@@ -2196,12 +2217,12 @@
             },
             {
                 "to": {
-                    "startLine": 298,
+                    "startLine": 302,
                     "startColumn": 4,
-                    "startOffset": 21785,
-                    "endLine": 302,
+                    "startOffset": 21940,
+                    "endLine": 306,
                     "endColumn": 12,
-                    "endOffset": 22118
+                    "endOffset": 22273
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/values-v21/values-v21.xml",
@@ -2217,12 +2238,12 @@
             },
             {
                 "to": {
-                    "startLine": 303,
+                    "startLine": 307,
                     "startColumn": 4,
-                    "startOffset": 22123,
-                    "endLine": 305,
+                    "startOffset": 22278,
+                    "endLine": 309,
                     "endColumn": 12,
-                    "endOffset": 22316
+                    "endOffset": 22471
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/values-v21/values-v21.xml",
@@ -2238,12 +2259,12 @@
             },
             {
                 "to": {
-                    "startLine": 306,
+                    "startLine": 310,
                     "startColumn": 4,
-                    "startOffset": 22321,
-                    "endLine": 307,
+                    "startOffset": 22476,
+                    "endLine": 311,
                     "endColumn": 10,
-                    "endOffset": 22396
+                    "endOffset": 22551
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.3.aar/e07669fb91c33bd4226463ef049dcf87/res/values-v21/values-v21.xml",

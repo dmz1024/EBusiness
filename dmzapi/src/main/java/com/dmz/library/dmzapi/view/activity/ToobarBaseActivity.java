@@ -7,56 +7,32 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.dmz.library.dmzapi.R;
+import com.dmz.library.dmzapi.view.custom.DmzBar;
 
 /**
  * Created by dengmingzhi on 2017/9/14.
  */
 
 public abstract class ToobarBaseActivity extends BaseActivity {
-    protected Toolbar tbRoot;
-    protected AppBarLayout AlRoot;
+    protected DmzBar dmzBar;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getRid());
-//        initHeader();
+        initBarView();
         init();
+    }
+
+    protected void initBarView() {
+        dmzBar = findViewById(R.id.dmzBar);
     }
 
     protected abstract void init();
 
-    private void initHeader() {
-//        AlRoot = findViewById(R.id.AlRoot);
-//        tbRoot = findViewById(R.id.tbRoot);
-        if (AlRoot != null) {
-            initAlRoot();
-        }
-        if (tbRoot != null) {
-            initToolBar();
-        }
+
+    protected int getRid() {
+        return R.layout.view_base_bar;
     }
-
-    protected void initToolBar() {
-
-    }
-
-
-    public void leftOnclick() {
-        finish();
-    }
-
-    private int getLeftIcon() {
-        return 0;
-    }
-
-    protected String getBarTitle() {
-        return "";
-    }
-
-    protected void initAlRoot() {
-
-    }
-
-    protected abstract int getRid();
 }

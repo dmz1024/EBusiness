@@ -37,4 +37,6 @@ dependencies {
     //https://juejin.im/entry/59b11e6c51882524417b017e  超强刷新库，未使用，正在考虑
     //    compile 'com.github.dkzwm:SmoothRefreshLayout:1.4.5'
     implementation project(':dmzapi')
+    //https://github.com/yipianfengye/android-zxingLibrary
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
 }

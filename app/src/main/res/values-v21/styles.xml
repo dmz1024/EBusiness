@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MyAppTheme" parent="BaseAppTheme">
+        <!--转场动画需要开启-->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+</resources>

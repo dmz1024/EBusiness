@@ -10,6 +10,7 @@ import com.squareup.leakcanary.LeakCanary;
 import com.taobao.sophix.PatchStatus;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
+import com.uuzuche.lib_zxing.activity.ZXingLibrary;
 
 /**
  * Created by dengmingzhi on 2017/9/12.
@@ -29,7 +30,7 @@ public class MyApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        SophixManager.getInstance()
+        SophixManager.getInstance()//热更新
                 .setContext(this)
                 .setAppVersion(getVersion())
                 .setPatchLoadStatusStub(new PatchLoadStatusListener() {
@@ -47,6 +48,8 @@ public class MyApp extends Application {
                 .initialize();
 
         LeakCanary.install(this);//检测内存泄漏
+
+        ZXingLibrary.initDisplayOpinion(this);//初始化二维码扫描库
     }
 
 
