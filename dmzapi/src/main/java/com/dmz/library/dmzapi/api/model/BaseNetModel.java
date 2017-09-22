@@ -42,6 +42,7 @@ public class BaseNetModel<T extends IBaseBean, D> implements IBaseModel, OnMySuc
     public void excute() {
         setListener(dmzBuilder);
         DmzApi.cancel(dmzBuilder.getSign());
+        dmzBuilder.setSign(this);
         DmzApi dmzApi = DmzApi._build();
         dmzApi.setDmzBuilder(dmzBuilder).excute();
     }
@@ -50,6 +51,7 @@ public class BaseNetModel<T extends IBaseBean, D> implements IBaseModel, OnMySuc
     public void cancel() {
         if (dmzBuilder != null) {
             DmzApi.cancel(dmzBuilder.getSign());
+            dmzBuilder = null;
         }
     }
 
@@ -76,4 +78,5 @@ public class BaseNetModel<T extends IBaseBean, D> implements IBaseModel, OnMySuc
     public void onOther(T bean) {
         netBasePresenter.onOther(bean);
     }
+
 }

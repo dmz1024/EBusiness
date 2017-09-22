@@ -9,23 +9,31 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.view.activity.BaseActivity;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.uuzuche.lib_zxing.activity.CaptureFragment;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
 
+@Route(path = "/activity/qw")
 public class QwActivity extends ToobarBaseActivity implements View.OnClickListener {
     private TextView tvLight;
     private ImageView ivLight;
 
 
     @Override
-    protected void init() {
+    protected void initView() {
+        super.initView();
         tvLight = findViewById(R.id.tvLight);
         ivLight = findViewById(R.id.ivLight);
         findViewById(R.id.rlWrite).setOnClickListener(this);
         findViewById(R.id.rlLight).setOnClickListener(this);
+    }
+
+    @Override
+    protected void initData() {
+        super.initData();
         /**
          * 执行扫面Fragment的初始化操作
          */

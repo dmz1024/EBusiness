@@ -9,4 +9,8 @@
         <item name="colorPrimaryDark">#f1da09</item>
     </style>
 
+    <style name="LoginTheme" parent="MyAppTheme">
+        <item name="colorPrimaryDark">#fff</item>
+    </style>
+
 </resources>

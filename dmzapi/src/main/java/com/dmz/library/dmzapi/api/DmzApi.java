@@ -34,7 +34,6 @@ public class DmzApi {
         final OkHttpRequestBuilder builder;
         printUrl();
         builder = dmzBuilder.isMethod() ? OkHttpUtils.post() : OkHttpUtils.get();
-        dmzBuilder.setSign(this);
         builder.tag(dmzBuilder.getSign())
                 .url(dmzBuilder.getUrl())
                 .params(dmzBuilder.getMap())

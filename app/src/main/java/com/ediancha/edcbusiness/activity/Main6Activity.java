@@ -18,14 +18,12 @@ public class Main6Activity extends SingleDataBaseActivity<Test1Bean, ArrayList<T
     private String url = "http://law.east-profit.com/app.php/home/buleline/allInfo";
 
     @Override
-    protected void initMoreBuilder() {
-        super.initMoreBuilder();
+    protected void initDataBuilder() {
         mBuilder.setOnMySuccessListener(this).setCanRefresh(true);
     }
 
     @Override
     protected void initDmzBuilder() {
-        super.initDmzBuilder();
         dBuilder.setaClass(Test1Bean.class)
                 .setUrl(url)
                 .setParms("gid", "10000");

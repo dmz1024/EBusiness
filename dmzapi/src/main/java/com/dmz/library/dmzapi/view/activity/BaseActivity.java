@@ -1,5 +1,6 @@
 package com.dmz.library.dmzapi.view.activity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,20 +10,44 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
+import com.dmz.library.dmzapi.view.activity.slide.SlideBackActivity;
+
 /**
  * Created by dengmingzhi on 2017/9/14.
  */
 
-public class BaseActivity extends AppCompatActivity {
-
+public abstract class BaseActivity extends SlideBackActivity {
+    protected Bundle savedInstanceState;
+    protected Context ctx;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.savedInstanceState = savedInstanceState;
+        this.ctx = this;
+        initSlide();
+//        setContentView();
+
+        setContentView(getLayoutInflater().inflate(getRid(), null));
+
+        initView();
+        initData();
     }
 
+    protected void initData() {
+    }
+
+    protected void initView() {
+    }
+
+    protected void initSlide() {
+    }
+
+    protected abstract int getRid();
+
+
     public Context getContext() {
-        return this;
+        return ctx;
     }
 
     @Override

@@ -37,9 +37,17 @@
         <activity android:name=".activity.Main5Activity" />
         <activity android:name=".activity.Main6Activity" />
         <activity
-            android:name=".activity.PersonCenterActivity"
+            android:name=".activity.my.PersonCenterActivity"
             android:theme="@style/PersonCenterTheme" />
         <activity android:name=".activity.QwActivity"></activity>
+        <activity android:name=".activity.SpaceDescActivity"></activity>
+        <activity android:name=".activity.message.ActivityMessageActivity"></activity>
+        <activity android:name=".activity.message.ActivitySplendidActivity"></activity>
+        <activity android:name=".activity.message.ExpenseTipsActivity"></activity>
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:theme="@style/LoginTheme"></activity>
+        <activity android:name=".activity.order.SpaceOrderActivity"></activity>
     </application>
 
 </manifest>

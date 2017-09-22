@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -16,7 +17,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.dmz.library.dmzapi.R;
+import com.dmz.library.dmzapi.utils.ScreenUtil;
 
+import java.security.acl.Group;
 import java.util.ArrayList;
 
 /**
@@ -106,19 +109,28 @@ public class DmzBar extends FrameLayout implements View.OnClickListener {
         return this;
     }
 
+    private ViewGroup.LayoutParams itemLayoutParam;
 
     public DmzBar addItemView(DmzBarItemInfo info) {
-        TextView tv = new TextView(getContext());
+
         if (info.getIid() != 0) {
-            Drawable drawable = getResources().getDrawable(info.getIid());
-            drawable.setBounds(0, 0, drawable.getMinimumHeight(), drawable.getMinimumWidth());
-            tv.setCompoundDrawables(null, drawable, null, null);
+            if (itemLayoutParam == null) {
+                itemLayoutParam = new ViewGroup.LayoutParams(ScreenUtil.dp2px(20), ScreenUtil.dp2px(20));
+            }
+
+            ImageView iv = new ImageView(getContext());
+            iv.setLayoutParams(itemLayoutParam);
+            iv.setScaleType(ImageView.ScaleType.FIT_XY);
+            iv.setImageResource(info.getIid());
+            llBarRight.addView(iv);
         } else {
+            TextView tv = new TextView(getContext());
             tv.setText(info.getTitle());
             tv.setTextColor(Color.parseColor(info.getTvColor()));
             tv.setTextSize(info.getTvSize());
+            llBarRight.addView(tv);
         }
-        llBarRight.addView(tv);
+
         return this;
     }
 

@@ -11,33 +11,45 @@ import android.view.WindowManager;
  */
 
 public class ScreenUtil {
+    private static Context appContext;
+    private static int mWidth;
+    private static int mHeight;
+
+    public static void _init(Context context) {
+        appContext = context.getApplicationContext();
+    }
+
     /**
      * 获得屏幕高度
      *
-     * @param context
      * @return by Hankkin at:2015-10-07 21:15:59
      */
-    public static int getScreenWidth(Context context) {
-        WindowManager wm = (WindowManager) context
+    public static int getScreenWidth() {
+        if (mWidth != 0) {
+            return mWidth;
+        }
+        WindowManager wm = (WindowManager) appContext
                 .getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics outMetrics = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(outMetrics);
-        return outMetrics.widthPixels;
+        return mWidth = outMetrics.widthPixels;
     }
 
 
     /**
      * 获得屏幕高度
      *
-     * @param context
      * @return by Hankkin at:2015-10-07 21:16:13
      */
-    public static int getScreenHeight(Context context) {
-        WindowManager wm = (WindowManager) context
+    public static int getScreenHeight() {
+        if (mHeight != 0) {
+            return mHeight;
+        }
+        WindowManager wm = (WindowManager) appContext
                 .getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics outMetrics = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(outMetrics);
-        return outMetrics.heightPixels;
+        return mHeight = outMetrics.heightPixels;
     }
 
 
@@ -55,12 +67,11 @@ public class ScreenUtil {
     /**
      * dip转px像素
      *
-     * @param context
      * @param px
      * @return by Hankkin at:2015-10-07 21:16:43
      */
-    public static int dp2px(Context context, float px) {
-        final float scale = getScreenDensity(context);
+    public static int dp2px(float px) {
+        final float scale = getScreenDensity(appContext);
         return (int) (px * scale + 0.5);
     }
 
@@ -68,17 +79,16 @@ public class ScreenUtil {
     /**
      * 获得状态栏的高度
      *
-     * @param context
      * @return by Hankkin at:2015-10-07 21:16:43
      */
-    public static int getStatusHeight(Context context) {
+    public static int getStatusHeight() {
         int statusHeight = -1;
         try {
             Class<?> clazz = Class.forName("com.android.internal.R$dimen");
             Object object = clazz.newInstance();
             int height = Integer.parseInt(clazz.getField("status_bar_height")
                     .get(object).toString());
-            statusHeight = context.getResources().getDimensionPixelSize(height);
+            statusHeight = appContext.getResources().getDimensionPixelSize(height);
         } catch (Exception e) {
             e.printStackTrace();
         }

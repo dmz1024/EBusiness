@@ -42,7 +42,7 @@ public class AdapterHelper {
         return new AdapterHelper(ctx, rvContent);
     }
 
-    public AdapterHelper _initData(final ArrayList<IType> datas) {
+    public <D extends IType> AdapterHelper _initData(final ArrayList<D> datas) {
         adapter = new MultiItemTypeAdapter(ctx, datas) {
             @Override
             public void onBindViewHolder(ViewHolder holder, int position) {
@@ -171,7 +171,7 @@ public class AdapterHelper {
     public static class ViewTypeInfo {
         private int rid;
         private OnConvertInterface convertInterface;
-        private int type;
+        private int type = 0;
         private OnClickListener onClickListener;
         private OnLongClickListener onLongClickListener;
 
@@ -222,7 +222,6 @@ public class AdapterHelper {
     }
 
     public AdapterHelper setLayoutManager(RecyclerView.LayoutManager manager) {
-
         if (manager instanceof GridLayoutManager) {
             final int spanCount = ((GridLayoutManager) manager).getSpanCount();
 
@@ -233,9 +232,7 @@ public class AdapterHelper {
                 }
             });
         }
-
         rvContent.setLayoutManager(manager);
-
         return this;
     }
 

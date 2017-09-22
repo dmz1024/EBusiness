@@ -13,26 +13,22 @@ import com.dmz.library.dmzapi.view.custom.DmzBar;
  * Created by dengmingzhi on 2017/9/14.
  */
 
-public abstract class ToobarBaseActivity extends BaseActivity {
+public class ToobarBaseActivity extends BaseActivity {
     protected DmzBar dmzBar;
 
-
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(getRid());
+    protected void initView() {
+        super.initView();
         initBarView();
-        init();
+
     }
 
     protected void initBarView() {
         dmzBar = findViewById(R.id.dmzBar);
     }
 
-    protected abstract void init();
-
-
     protected int getRid() {
         return R.layout.view_base_bar;
     }
+
 }

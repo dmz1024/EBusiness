@@ -9,6 +9,12 @@ android {
         targetSdkVersion 26
         versionCode 104
         versionName "1.0.4"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+
     }
     buildTypes {
         release {
@@ -39,4 +45,8 @@ dependencies {
     implementation project(':dmzapi')
     //https://github.com/yipianfengye/android-zxingLibrary
     compile 'cn.yipianfengye.android:zxing-library:2.2'
+
+    //https://github.com/alibaba/ARouter
+    compile 'com.alibaba:arouter-api:1.2.2'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.3'
 }

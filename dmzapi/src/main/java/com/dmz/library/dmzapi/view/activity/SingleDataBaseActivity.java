@@ -10,6 +10,7 @@ import com.dmz.library.dmzapi.api.DmzBuilder;
 import com.dmz.library.dmzapi.api.bean.BaseListBean;
 import com.dmz.library.dmzapi.api.bean.IBaseBean;
 import com.dmz.library.dmzapi.api.bean.IType;
+import com.dmz.library.dmzapi.api.contract.BaseDataBuilder;
 import com.dmz.library.dmzapi.api.contract.MoreDataBuilder;
 import com.dmz.library.dmzapi.api.contract.MoreDataContract;
 import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
@@ -21,42 +22,44 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
  * Created by dengmingzhi on 2017/9/14.
  */
 
-public class SingleDataBaseActivity<T extends IBaseBean, D> extends ToobarBaseActivity {
+public abstract class SingleDataBaseActivity<T extends IBaseBean, D> extends ToobarBaseActivity implements BaseDataBuilder.OnMySuccessListener<D> {
     protected SwipeRefreshLayout swRoot;
     protected NestedScrollView scRoot;
 
-    @Override
-    protected void init() {
-        initView();
-        initData();
-    }
 
     protected SingleDataContract mContract;
-
-    private void initData() {
-        mContract = SingleDataContract.<T, D>_instance(scRoot, swRoot);
-        initDmzBuilder();
-        initMoreBuilder();
-        mContract._init();
-    }
+    protected DmzBuilder dBuilder;
 
     protected SingleDataBuilder mBuilder;
 
-    protected void initMoreBuilder() {
-        mBuilder = SingleDataBuilder._build().setDmzBuilder(dBuilder);
-        mContract.setDataBuilder(mBuilder);
-    }
-
-    protected DmzBuilder dBuilder;
-
-    protected void initDmzBuilder() {
-        dBuilder = DmzBuilder._builder();
-    }
-
+    @Override
     protected void initView() {
+        super.initView();
         swRoot = findViewById(R.id.swRoot);
         scRoot = findViewById(R.id.scRoot);
     }
+
+    @Override
+    protected void initData() {
+        super.initData();
+        dBuilder = DmzBuilder._builder();
+        initDmzBuilder();
+        mBuilder = SingleDataBuilder._build().setDmzBuilder(dBuilder).setOnMySuccessListener(this);
+        initDataBuilder();
+        mContract = SingleDataContract.<T, D>_instance(scRoot, swRoot);
+        mContract.setDataBuilder(mBuilder);
+        initContract();
+        mContract._init();
+    }
+
+    protected void initContract() {
+
+    }
+
+
+    protected abstract void initDataBuilder();
+
+    protected abstract void initDmzBuilder();
 
     protected int getRid() {
         return R.layout.view_base_single_data;

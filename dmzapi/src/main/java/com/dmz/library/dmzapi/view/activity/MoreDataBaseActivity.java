@@ -16,49 +16,45 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
  * Created by dengmingzhi on 2017/9/14.
  */
 
-public class MoreDataBaseActivity<D extends IType, T extends BaseListBean> extends ToobarBaseActivity implements AdapterHelper.OnConvertInterface<D> {
+public abstract class MoreDataBaseActivity<D extends IType, T extends BaseListBean> extends ToobarBaseActivity implements AdapterHelper.OnConvertInterface<D> {
     protected SwipeRefreshLayout swRoot;
     protected RecyclerView rvRoot;
-
-    @Override
-    protected void init() {
-        initView();
-        initData();
-    }
-
-    protected MoreDataContract mContract;
-
-    private void initData() {
-        initDmzBuilder();
-        initMoreBuilder();
-        mContract = MoreDataContract.<T>_instance(this, rvRoot, swRoot).setMoreDataBuilder(mBuilder)._init();
-    }
-
     protected MoreDataBuilder mBuilder;
-
-    protected void initMoreBuilder() {
-        mBuilder = MoreDataBuilder._build().setDmzBuilder(dBuilder);
-    }
-
+    protected MoreDataContract mContract;
     protected DmzBuilder dBuilder;
 
-    protected void initDmzBuilder() {
-        dBuilder = DmzBuilder._builder();
-    }
-
+    @Override
     protected void initView() {
+        super.initView();
         swRoot = findViewById(R.id.swRoot);
         rvRoot = findViewById(R.id.rvRoot);
     }
+
+    @Override
+    protected void initData() {
+        super.initData();
+        dBuilder = DmzBuilder._builder();
+        initDmzBuilder();
+        mBuilder = MoreDataBuilder._build().setDmzBuilder(dBuilder);
+        initMoreBuilder();
+        mContract = MoreDataContract.<T>_instance(this, rvRoot, swRoot);
+        initContract();
+        mContract.setMoreDataBuilder(mBuilder)._init();
+    }
+
+    protected void initContract() {
+    }
+
+    protected abstract void initMoreBuilder();
+
+    protected abstract void initDmzBuilder();
 
     protected int getRid() {
         return R.layout.view_base_more_data;
     }
 
     @Override
-    public void convert(int viewType, ViewHolder holder, D d, int position) {
-
-    }
+    public abstract void convert(int viewType, ViewHolder holder, D d, int position);
 
     @Override
     protected void onDestroy() {

@@ -7,7 +7,7 @@ package com.dmz.library.dmzapi.api.bean;
 public class ViewBaseType implements IType {
 
 
-    private int iViewType;
+    public int iViewType;
 
     @Override
     public int getViewType() {

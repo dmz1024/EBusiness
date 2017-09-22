@@ -8,6 +8,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.ediancha.edcbusiness.activity.QwActivity;
+import com.ediancha.edcbusiness.router.Go;
 import com.uuzuche.lib_zxing.activity.CaptureActivity;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
 
@@ -24,8 +25,7 @@ public class QwHelper {
     }
 
     public void openQw() {
-        Intent intent = new Intent(activity, QwActivity.class);
-        activity.startActivityForResult(intent, QW_REQUEST_CODE);
+        Go.goQw(activity, QW_REQUEST_CODE);
     }
 
 

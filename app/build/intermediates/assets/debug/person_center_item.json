@@ -1,0 +1,32 @@
+[
+  {
+    "iViewType": 1,
+    "title": "空间订单",
+    "leftImage":"ic_launcher"
+  },
+  {
+    "iViewType": 1,
+    "title": "商品订单",
+    "leftImage":"ic_launcher"
+  },
+  {
+    "iViewType": 1,
+    "title": "我的钱包",
+    "leftImage":"ic_launcher"
+  },
+  {
+    "iViewType": 1,
+    "title": "邀请好友",
+    "leftImage":"ic_launcher"
+  },
+  {
+    "iViewType": 1,
+    "title": "优惠兑换",
+    "leftImage":"ic_launcher"
+  },
+  {
+    "iViewType": 1,
+    "title": "帮助中心",
+    "leftImage":"ic_launcher"
+  }
+]

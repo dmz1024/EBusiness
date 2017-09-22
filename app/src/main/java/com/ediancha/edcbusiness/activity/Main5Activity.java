@@ -12,7 +12,6 @@ public class Main5Activity extends MoreDataBaseActivity<TestBean.Test, TestBean>
 
     @Override
     protected void initDmzBuilder() {
-        super.initDmzBuilder();
         dBuilder.setaClass(TestBean.class)
                 .setUrl(url)
                 .setParms("gid", "10000");
@@ -20,7 +19,6 @@ public class Main5Activity extends MoreDataBaseActivity<TestBean.Test, TestBean>
 
     @Override
     protected void initMoreBuilder() {
-        super.initMoreBuilder();
         mBuilder.setSize(20)
                 .addView(new AdapterHelper.ViewTypeInfo().setRid(R.layout.item_test)
                         .setConvertInterface(this));

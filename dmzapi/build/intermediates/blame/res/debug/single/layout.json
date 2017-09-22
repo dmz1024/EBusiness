@@ -104,6 +104,10 @@
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_list_menu_item_layout.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/common_item_type_1.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/layout/common_item_type_1.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_navigation_item.xml"
     },

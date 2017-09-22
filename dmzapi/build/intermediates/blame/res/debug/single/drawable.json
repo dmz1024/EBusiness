@@ -56,6 +56,10 @@
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/drawable/design_snackbar_background.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/sliding_back_shadow.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/sliding_back_shadow.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/drawable/abc_btn_default_mtrl_shape.xml"
     },

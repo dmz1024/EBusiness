@@ -26,4 +26,17 @@
 
 
 #https://github.com/tianzhijiexian/AppBar
--keep class android.support.v7.widget.Toolbar {*;}
+#-keep class android.support.v7.widget.Toolbar {*;}
+
+#https://github.com/alibaba/ARouter  路由
+-keep public class com.alibaba.android.arouter.routes.**{*;}
+-keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
+
+
+#https://muyangmin.github.io/glide-docs-cn/doc/download-setup.html
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public class * extends com.bumptech.glide.AppGlideModule
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+    **[] $VALUES;
+    public *;
+}

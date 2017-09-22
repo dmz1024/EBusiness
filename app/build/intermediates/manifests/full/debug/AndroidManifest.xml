@@ -49,9 +49,17 @@
         <activity android:name="com.ediancha.edcbusiness.activity.Main5Activity" />
         <activity android:name="com.ediancha.edcbusiness.activity.Main6Activity" />
         <activity
-            android:name="com.ediancha.edcbusiness.activity.PersonCenterActivity"
+            android:name="com.ediancha.edcbusiness.activity.my.PersonCenterActivity"
             android:theme="@style/PersonCenterTheme" />
         <activity android:name="com.ediancha.edcbusiness.activity.QwActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.SpaceDescActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.message.ActivityMessageActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.message.ActivitySplendidActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.message.ExpenseTipsActivity" />
+        <activity
+            android:name="com.ediancha.edcbusiness.activity.login.LoginActivity"
+            android:theme="@style/LoginTheme" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.SpaceOrderActivity" />
 
         <service
             android:name="com.taobao.sophix.aidl.DownloadService"
