@@ -11,39 +11,38 @@
         android:layout_height="140dp"
         android:layout_marginTop="10dp" />
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/llCenter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:paddingTop="10dp"
-        android:weightSum="3">
+        android:paddingTop="10dp">
 
-
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <TextView
-                android:layout_marginLeft="7dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:drawablePadding="7dp"
-                android:drawableTop="@mipmap/icon_news_invitation"
-                android:gravity="center_horizontal"
-                android:text="邀请好友"
-                android:textColor="#333"
-                android:textSize="14sp" />
-        </FrameLayout>
 
         <TextView
-            android:layout_width="0dp"
+            android:id="@+id/tvShape"
+            android:layout_marginLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="7dp"
+            android:drawableTop="@mipmap/icon_news_invitation"
+            android:gravity="center_horizontal"
+            android:text="邀请好友"
+            android:background="?android:attr/selectableItemBackground"
+
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvChong"
+            android:background="?android:attr/selectableItemBackground"
+
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
@@ -54,24 +53,22 @@
             android:textColor="#333"
             android:textSize="14sp" />
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+        <TextView
+            android:id="@+id/tvDui"
+            android:background="?android:attr/selectableItemBackground"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right|center_vertical"
-                android:drawablePadding="7dp"
-                android:layout_marginRight="7dp"
-                android:drawableTop="@mipmap/icon_news_discoun"
-                android:gravity="center_horizontal"
-                android:text="优惠兑换"
-                android:textColor="#333"
-                android:textSize="14sp" />
-        </FrameLayout>
-    </LinearLayout>
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="7dp"
+            android:layout_marginRight="7dp"
+            android:drawableTop="@mipmap/icon_news_discoun"
+            android:gravity="center_horizontal"
+            android:text="优惠兑换"
+            android:textColor="#333"
+            android:textSize="14sp" />
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"

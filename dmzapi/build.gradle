@@ -10,7 +10,11 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
 
     }
     buildTypes {
@@ -48,4 +52,8 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:4.1.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
 
+
+    //https://github.com/alibaba/ARouter
+    compile 'com.alibaba:arouter-api:1.2.2'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.3'
 }

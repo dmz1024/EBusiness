@@ -10,6 +10,8 @@ import com.ediancha.edcbusiness.activity.message.ActivityMessageActivity;
 import com.ediancha.edcbusiness.activity.message.ActivitySplendidActivity;
 import com.ediancha.edcbusiness.activity.message.ExpenseTipsActivity;
 import com.ediancha.edcbusiness.activity.my.PersonCenterActivity;
+import com.ediancha.edcbusiness.activity.order.GoodOrderActivity;
+import com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity;
 import com.ediancha.edcbusiness.activity.order.SpaceOrderActivity;
 import java.lang.Override;
 import java.lang.String;
@@ -25,6 +27,8 @@ public class ARouter$$Group$$activity implements IRouteGroup {
     atlas.put("/activity/message/activitySplendid", RouteMeta.build(RouteType.ACTIVITY, ActivitySplendidActivity.class, "/activity/message/activitysplendid", "activity", null, -1, -2147483648));
     atlas.put("/activity/message/expenseTips", RouteMeta.build(RouteType.ACTIVITY, ExpenseTipsActivity.class, "/activity/message/expensetips", "activity", null, -1, -2147483648));
     atlas.put("/activity/my/personCenter", RouteMeta.build(RouteType.ACTIVITY, PersonCenterActivity.class, "/activity/my/personcenter", "activity", null, -1, -2147483648));
+    atlas.put("/activity/order/goodOrder", RouteMeta.build(RouteType.ACTIVITY, GoodOrderActivity.class, "/activity/order/goodorder", "activity", null, -1, -2147483648));
+    atlas.put("/activity/order/goodOrderDesc", RouteMeta.build(RouteType.ACTIVITY, GoodOrderDescActivity.class, "/activity/order/goodorderdesc", "activity", new java.util.HashMap<String, Integer>(){{put("orderId", 8); }}, -1, -2147483648));
     atlas.put("/activity/order/spaceOrder", RouteMeta.build(RouteType.ACTIVITY, SpaceOrderActivity.class, "/activity/order/spaceorder", "activity", null, -1, -2147483648));
     atlas.put("/activity/qw", RouteMeta.build(RouteType.ACTIVITY, QwActivity.class, "/activity/qw", "activity", null, -1, -2147483648));
     atlas.put("/activity/space_desc", RouteMeta.build(RouteType.ACTIVITY, SpaceDescActivity.class, "/activity/space_desc", "activity", null, -1, -2147483648));

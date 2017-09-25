@@ -19,12 +19,12 @@ public final class R {
         public static int stackFromEnd = 0x7f040172;
     }
     public static final class dimen {
-        public static int fastscroll_default_thickness = 0x7f08007c;
-        public static int fastscroll_margin = 0x7f08007d;
-        public static int fastscroll_minimum_range = 0x7f08007e;
-        public static int item_touch_helper_max_drag_scroll_per_frame = 0x7f080086;
-        public static int item_touch_helper_swipe_escape_max_velocity = 0x7f080087;
-        public static int item_touch_helper_swipe_escape_velocity = 0x7f080088;
+        public static int fastscroll_default_thickness = 0x7f08007f;
+        public static int fastscroll_margin = 0x7f080080;
+        public static int fastscroll_minimum_range = 0x7f080081;
+        public static int item_touch_helper_max_drag_scroll_per_frame = 0x7f080089;
+        public static int item_touch_helper_swipe_escape_max_velocity = 0x7f08008a;
+        public static int item_touch_helper_swipe_escape_velocity = 0x7f08008b;
     }
     public static final class id {
         public static int item_touch_helper_previous_elevation = 0x7f0c0116;

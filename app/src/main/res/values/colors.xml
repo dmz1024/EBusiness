@@ -5,4 +5,12 @@
     <color name="colorAccent">#333</color>
     <color name="color_f1da09">#f1da09</color>
     <color name="color_zhu">#f1da09</color>
+
+    <color name="color_333">#333</color>
+    <color name="color_666">#666</color>
+    <color name="color_999">#999</color>
+    <color name="color_fff">#fff</color>
+    <color name="color_f00">#f00</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_e1e1e1">#e1e1e1</color>
 </resources>

@@ -52,5 +52,15 @@ public interface RouterUrl {
      */
     String SPACE_ORDER_ACTIVITY = "/activity/order/spaceOrder";
 
+    /**
+     * 商品订单
+     */
+    String GOOD_ORDER_ACTIVITY = "/activity/order/goodOrder";
+
+    /**
+     * 商品订单详情
+     */
+    String GOOD_ORDER_DESC_ACTIVITY = "/activity/order/goodOrderDesc";
+
 
 }

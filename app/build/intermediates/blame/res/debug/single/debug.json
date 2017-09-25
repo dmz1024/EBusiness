@@ -32,12 +32,12 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/debug/res/layout/view_base_bar.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -142,6 +142,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon_gengduo.png.flat",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_gengduo.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout_item_good_order.xml.flat",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/layout/item_good_order.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -720,6 +724,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout_item_good_order_desc_payinfo.xml.flat",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/layout/item_good_order_desc_payinfo.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
@@ -1066,6 +1074,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout_success_good_order_desc.xml.flat",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/layout/success_good_order_desc.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout___leak_canary_ref_top_row.xml.flat",
@@ -1914,6 +1926,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon_tip.png.flat",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_tip.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout_item_good_order_desc_orderinfo.xml.flat",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/layout/item_good_order_desc_orderinfo.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout_design_navigation_item.xml.flat",

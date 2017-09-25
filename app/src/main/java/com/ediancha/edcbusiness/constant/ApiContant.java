@@ -30,4 +30,14 @@ public interface ApiContant {
      * 空间订单
      */
     String SPACE_ORDER = BASE_URL + "buleline/getData";
+
+    /**
+     * 商品订单
+     */
+    String GOOD_ORDER = BASE_URL + "buleline/getData";
+
+    /**
+     * 商品订单详情
+     */
+    String GOOD_ORDER_DESC = BASE_URL + "buleline/getData";
 }

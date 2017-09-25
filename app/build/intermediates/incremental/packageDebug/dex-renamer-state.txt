@@ -1,4 +1,4 @@
-#Fri Sep 22 19:06:28 CST 2017
+#Mon Sep 25 17:59:34 CST 2017
 base.0=/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/transforms/dexMerger/debug/0
 renamed.0=classes.dex
 file.0=/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

@@ -60,6 +60,8 @@
             android:name="com.ediancha.edcbusiness.activity.login.LoginActivity"
             android:theme="@style/LoginTheme" />
         <activity android:name="com.ediancha.edcbusiness.activity.order.SpaceOrderActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.GoodOrderActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity" />
 
         <service
             android:name="com.taobao.sophix.aidl.DownloadService"

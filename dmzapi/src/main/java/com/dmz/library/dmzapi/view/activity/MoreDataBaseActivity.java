@@ -16,7 +16,7 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
  * Created by dengmingzhi on 2017/9/14.
  */
 
-public abstract class MoreDataBaseActivity<D extends IType, T extends BaseListBean> extends ToobarBaseActivity implements AdapterHelper.OnConvertInterface<D> {
+public abstract class MoreDataBaseActivity<D extends IType, T extends BaseListBean> extends ToobarBaseActivity implements AdapterHelper.OnConvertInterface<D>, AdapterHelper.OnClickListener {
     protected SwipeRefreshLayout swRoot;
     protected RecyclerView rvRoot;
     protected MoreDataBuilder mBuilder;
@@ -61,5 +61,10 @@ public abstract class MoreDataBaseActivity<D extends IType, T extends BaseListBe
         super.onDestroy();
         mContract.destroy();
         mContract = null;
+    }
+
+    @Override
+    public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
+
     }
 }

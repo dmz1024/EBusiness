@@ -68,5 +68,19 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.SPACE_ORDER_ACTIVITY).navigation();
     }
 
+    /**
+     * 空间订单
+     */
+    public static void goGoodOrder() {
+        ARouter.getInstance().build(RouterUrl.GOOD_ORDER_ACTIVITY).navigation();
+    }
+
+    /**
+     * 空间订单详情
+     */
+    public static void goGoodOrderDesc(String orderId) {
+        ARouter.getInstance().build(RouterUrl.GOOD_ORDER_DESC_ACTIVITY).withString("orderId", orderId).navigation();
+    }
+
 
 }

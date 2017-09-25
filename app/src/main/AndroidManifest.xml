@@ -48,6 +48,8 @@
             android:name=".activity.login.LoginActivity"
             android:theme="@style/LoginTheme"></activity>
         <activity android:name=".activity.order.SpaceOrderActivity"></activity>
+        <activity android:name=".activity.order.GoodOrderActivity"></activity>
+        <activity android:name=".activity.order.GoodOrderDescActivity"></activity>
     </application>
 
 </manifest>

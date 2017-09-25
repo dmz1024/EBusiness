@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.dmz.library.dmzapi.view.activity.slide.SlideBackActivity;
 
 /**
@@ -25,11 +26,9 @@ public abstract class BaseActivity extends SlideBackActivity {
         super.onCreate(savedInstanceState);
         this.savedInstanceState = savedInstanceState;
         this.ctx = this;
+        ARouter.getInstance().inject(this);
         initSlide();
-//        setContentView();
-
         setContentView(getLayoutInflater().inflate(getRid(), null));
-
         initView();
         initData();
     }

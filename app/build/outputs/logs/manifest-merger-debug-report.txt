@@ -1,14 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-51:12
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-55:12
 MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/alicloud-android-hotfix-3.1.2.aar/02761612a0d41982b446732e4816e3ad/AndroidManifest.xml:2:1-29:12
 MERGED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/zxing-library-2.2.aar/34602b1b5913eeebb93656d191ced1c2/AndroidManifest.xml:2:1-20:12
+MERGED from [:dmzapi] /Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.alibaba:arouter-api:1.2.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/arouter-api-1.2.2.aar/a002174aba5a31b5b52532d477640482/AndroidManifest.xml:2:1-10:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/244a164c54d707cc68a0cde9386cd93e/AndroidManifest.xml:2:1-11:12
-MERGED from [:dmzapi] /Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:26.0.0-alpha1] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/AndroidManifest.xml:17:1-31:12
 MERGED from [com.github.tianzhijiexian:AppBar:1.0.3] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/AppBar-1.0.3.aar/9c20123fffc9fd8f688e093bb261b028/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/AndroidManifest.xml:17:1-31:12
@@ -27,9 +27,9 @@ MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dengmingzhi
 MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/57808375261b2bb792cfdd5fcb51d084/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/96e49727e1e38f911952ca72fd7f53f4/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-55:12
 	package
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
@@ -99,7 +99,7 @@ MERGED from [com.zhy:okhttputils:2.0.0] /Users/dengmingzhi/.gradle/caches/transf
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:20:22-78
 application
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:22:5-49:19
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:22:5-53:19
 MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/alicloud-android-hotfix-3.1.2.aar/02761612a0d41982b446732e4816e3ad/AndroidManifest.xml:16:5-27:19
 MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/alicloud-android-hotfix-3.1.2.aar/02761612a0d41982b446732e4816e3ad/AndroidManifest.xml:16:5-27:19
 MERGED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/zxing-library-2.2.aar/34602b1b5913eeebb93656d191ced1c2/AndroidManifest.xml:11:5-18:19
@@ -201,15 +201,23 @@ ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidMani
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:46:19-71
 activity#com.ediancha.edcbusiness.activity.login.LoginActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:47:9-109
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:47:9-49:58
 	android:theme
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:47:64-97
+		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:49:13-46
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:47:19-63
+		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:48:13-57
 activity#com.ediancha.edcbusiness.activity.order.SpaceOrderActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:48:9-80
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:50:9-80
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:48:19-68
+		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:50:19-68
+activity#com.ediancha.edcbusiness.activity.order.GoodOrderActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:51:9-79
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:51:19-67
+activity#com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:52:9-83
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:52:19-71
 uses-sdk
 INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
@@ -218,12 +226,12 @@ MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.g
 MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/alicloud-android-hotfix-3.1.2.aar/02761612a0d41982b446732e4816e3ad/AndroidManifest.xml:7:5-9:41
 MERGED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/zxing-library-2.2.aar/34602b1b5913eeebb93656d191ced1c2/AndroidManifest.xml:7:5-9:41
 MERGED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/zxing-library-2.2.aar/34602b1b5913eeebb93656d191ced1c2/AndroidManifest.xml:7:5-9:41
+MERGED from [:dmzapi] /Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:dmzapi] /Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.alibaba:arouter-api:1.2.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/arouter-api-1.2.2.aar/a002174aba5a31b5b52532d477640482/AndroidManifest.xml:6:5-8:41
 MERGED from [com.alibaba:arouter-api:1.2.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/arouter-api-1.2.2.aar/a002174aba5a31b5b52532d477640482/AndroidManifest.xml:6:5-8:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/244a164c54d707cc68a0cde9386cd93e/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/244a164c54d707cc68a0cde9386cd93e/AndroidManifest.xml:5:5-7:41
-MERGED from [:dmzapi] /Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:dmzapi] /Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:26.0.0-alpha1] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:design:26.0.0-alpha1] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/AndroidManifest.xml:21:5-23:62
 MERGED from [com.github.tianzhijiexian:AppBar:1.0.3] /Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/AppBar-1.0.3.aar/9c20123fffc9fd8f688e093bb261b028/AndroidManifest.xml:7:5-9:41
