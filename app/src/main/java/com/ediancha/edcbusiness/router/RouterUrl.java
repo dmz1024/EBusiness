@@ -63,4 +63,27 @@ public interface RouterUrl {
     String GOOD_ORDER_DESC_ACTIVITY = "/activity/order/goodOrderDesc";
 
 
+    /**
+     * 我的钱包
+     */
+    String WALLET_ACTIVITY = "/activity/walletbag/mypackage";
+
+    /**
+     * 余额
+     */
+    String MONEY_ACTIVITY = "/activity/walletbag/money";
+    /**
+     * 优惠券
+     */
+    String Coupon_ACTIVITY = "/activity/walletbag/coupon";
+
+    /**
+     * 押金
+     */
+    String DEPOSIT_ACTIVITY = "/activity/walletbag/deposit";
+
+    /**
+     * 充值
+     */
+    String CHARGE_ACTIVITY = "/activity/walletbag/charge";
 }

@@ -1,14 +1,14 @@
 package com.ediancha.edcbusiness;
 
-import android.app.Application;
-import android.content.Context;
+
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.util.Log;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+
+
 import com.squareup.leakcanary.LeakCanary;
-import com.taobao.sophix.PatchStatus;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
 import com.uuzuche.lib_zxing.activity.ZXingLibrary;

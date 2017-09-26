@@ -82,5 +82,38 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.GOOD_ORDER_DESC_ACTIVITY).withString("orderId", orderId).navigation();
     }
 
+    /**
+     * 我的钱包
+     */
+    public static void goMyPackage() {
+        ARouter.getInstance().build(RouterUrl.WALLET_ACTIVITY).navigation();
+    }
 
+    /**
+     * 余额
+     */
+    public static void goMoney() {
+        ARouter.getInstance().build(RouterUrl.MONEY_ACTIVITY).navigation();
+    }
+    /**
+     * 优惠券
+     */
+    public static void goCoupon() {
+        ARouter.getInstance().build(RouterUrl.Coupon_ACTIVITY).navigation();
+    }
+
+
+    /**
+     * 优惠券
+     */
+    public static void goDeposit() {
+        ARouter.getInstance().build(RouterUrl.DEPOSIT_ACTIVITY).navigation();
+    }
+
+    /**
+     * 充值
+     */
+    public static void goCharge() {
+        ARouter.getInstance().build(RouterUrl.CHARGE_ACTIVITY).navigation();
+    }
 }

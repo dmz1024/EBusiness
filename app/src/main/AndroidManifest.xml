@@ -44,6 +44,11 @@
         <activity android:name=".activity.message.ActivityMessageActivity"></activity>
         <activity android:name=".activity.message.ActivitySplendidActivity"></activity>
         <activity android:name=".activity.message.ExpenseTipsActivity"></activity>
+        <activity android:name=".activity.walletbag.MyPackageActivity"/>
+        <activity android:name=".activity.walletbag.CouponActivity"/>
+        <activity android:name=".activity.walletbag.DepositActivity"/>
+        <activity android:name=".activity.walletbag.MoneyActivity"/>
+        <activity android:name=".activity.walletbag.ChargeActivity"/>
         <activity
             android:name=".activity.login.LoginActivity"
             android:theme="@style/LoginTheme"></activity>

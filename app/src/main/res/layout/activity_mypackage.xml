@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fff"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.5dp">
+
+
+        <LinearLayout
+            android:id="@+id/ln_money"
+            style="@style/ln_we_wr_ver_cen_20dp_styles">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_wallet_balance"/>
+            <TextView
+                android:id="@+id/tv_money"
+                android:text="10.00"
+                style="@style/tv_wr_min_15sp_style"/>
+            <TextView
+                android:text="余额(元)"
+                style="@style/tv_wr_mid_14sp_style" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_coupon"
+            style="@style/ln_we_wr_ver_cen_20dp_styles">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_wallet_coupon"/>
+            <TextView
+                android:id="@+id/tv_coupon"
+                android:text="10.00"
+                style="@style/tv_wr_min_15sp_style"/>
+            <TextView
+                android:text="优惠券(张)"
+                style="@style/tv_wr_mid_14sp_style" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_deposit"
+            style="@style/ln_we_wr_ver_cen_20dp_styles">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_wallet_deposit"/>
+            <TextView
+                android:id="@+id/tv_deposit"
+                android:text="10.00"
+                style="@style/tv_wr_min_15sp_style"/>
+            <TextView
+                android:text="押金(元)"
+                style="@style/tv_wr_mid_14sp_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_pass"
+        android:layout_marginTop="@dimen/size10"
+        style="@style/ln_ma_wr_ho_styles"
+        >
+        <TextView
+            style="@style/tv_wr_min_15sp_pa10_style"
+            android:text="支付密码"/>
+        <TextView
+            android:id="@+id/tv_pass"
+            style="@style/tv_wr_min_15sp_pa10_style"
+            android:text="未设置"
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:drawableRight="@mipmap/icon_wallet_password_arrow"
+            android:drawablePadding="@dimen/size5"/>
+    </LinearLayout>
+
+
+</LinearLayout>
