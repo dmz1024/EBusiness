@@ -118,6 +118,19 @@ public class Go {
     }
 
     /**
+     * 帮助中心
+     */
+    public static void goHelpCenter() {
+        ARouter.getInstance().build(RouterUrl.HELPCENTER_ACTIVITY).navigation();
+    }
+    /**
+     * 优惠兑换
+     */
+    public static void goCouponChange() {
+        ARouter.getInstance().build(RouterUrl.COUPONCHANGE_ACTIVITY).navigation();
+    }
+
+    /**
      * 我的资料
      */
     public static void goMyInfo() {

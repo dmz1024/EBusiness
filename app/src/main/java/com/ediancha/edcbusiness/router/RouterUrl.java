@@ -81,11 +81,19 @@ public interface RouterUrl {
      * 押金
      */
     String DEPOSIT_ACTIVITY = "/activity/walletbag/deposit";
-
     /**
      * 充值
      */
     String CHARGE_ACTIVITY = "/activity/walletbag/charge";
+    /**
+     * 帮助中心
+     */
+    String HELPCENTER_ACTIVITY = "/activity/help/helpCenter";
+
+    /**
+     * 优惠兑换
+     */
+    String COUPONCHANGE_ACTIVITY = "/activity/coupon/couponChange";
 
     /**
      * 我的资料
