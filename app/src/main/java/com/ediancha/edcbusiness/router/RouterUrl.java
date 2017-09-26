@@ -86,4 +86,9 @@ public interface RouterUrl {
      * 充值
      */
     String CHARGE_ACTIVITY = "/activity/walletbag/charge";
+
+    /**
+     * 我的资料
+     */
+    String MY_INFO_ACTIVITY = "/activity/my/myInfo";
 }

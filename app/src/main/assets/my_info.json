@@ -1,0 +1,48 @@
+[
+  {
+    "iViewType": 4,
+    "title": "头像",
+    "rightImage": ""
+  },
+  {
+    "iViewType": 3,
+    "title": "昵称",
+    "content": "",
+    "rightImage": "icon_wallet_password_arrow"
+  },
+  {
+    "iViewType": 3,
+    "title": "性别",
+    "rightImage": "icon_wallet_password_arrow"
+  },
+  {
+    "iViewType": 3,
+    "title": "生日",
+    "rightImage": "icon_wallet_password_arrow"
+  },
+  {
+    "iViewType": 3,
+    "title": "身份",
+    "rightImage": "icon_wallet_password_arrow"
+  },
+  {
+    "iViewType": 5
+  },
+  {
+    "iViewType": 3,
+    "title": "手机号",
+    "rightImage": "icon_wallet_password_arrow"
+  },
+  {
+    "iViewType": 3,
+    "title": "微信",
+    "content": "未绑定",
+    "rightImage": "icon_wallet_password_arrow"
+  },
+  {
+    "iViewType": 3,
+    "title": "QQ",
+    "content": "已绑定 邓如果",
+    "rightImage": "icon_wallet_password_arrow"
+  }
+]
