@@ -98,6 +98,10 @@ public class PersonCenterActivity extends BaseActivity implements View.OnClickLi
             case 2:
                 Go.goGoodOrder();
                 break;
+            case 3:
+                Go.goMyPackage();
+                break;
+
         }
     }
 }

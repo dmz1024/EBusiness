@@ -13,4 +13,6 @@
     <color name="color_f00">#f00</color>
     <color name="color_f6f6f6">#f6f6f6</color>
     <color name="color_e1e1e1">#e1e1e1</color>
+
+    <color name="color_ccc">#ccc</color>
 </resources>

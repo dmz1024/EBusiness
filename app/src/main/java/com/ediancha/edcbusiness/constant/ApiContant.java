@@ -40,4 +40,26 @@ public interface ApiContant {
      * 商品订单详情
      */
     String GOOD_ORDER_DESC = BASE_URL + "buleline/getData";
+
+    /**
+     * 我的钱包
+     */
+    String MYPACKAGE=BASE_URL+"buleline/getData";
+
+
+    /**
+     * 余额
+     */
+    String MONEY=BASE_URL+"buleline/getData";
+
+    /**
+     * 优惠券
+     */
+    String COUPON=BASE_URL+"buleline/getData";
+
+    /**
+     * 充值
+     */
+    String CHARGE=BASE_URL+"buleline/getData";
+
 }

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">易点茶商家端</string>
+
+    <string name="tv_cz_xieyi">充值使用余额表示你同意《XXX余额协议》</string>
+    <string name="dialog_deposit_string">押金退了之后您无法使用共享空间，您真的要退？</string>
 </resources>
