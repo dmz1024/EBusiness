@@ -67,4 +67,11 @@ public interface ApiContant {
      */
     String MY_INFO = BASE_URL + "buleline/getData";
 
+    /**
+     * 我的资料
+     */
+    String HELPCENTER_URL= BASE_URL + "buleline/getData";
+
+
+
 }
