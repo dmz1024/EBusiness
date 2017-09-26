@@ -127,7 +127,7 @@ public class DmzBuilder {
     }
 
 
-    public boolean isMethod() {
+    public boolean isPost() {
         return method;
     }
 

@@ -13,6 +13,11 @@ import com.ediancha.edcbusiness.activity.my.PersonCenterActivity;
 import com.ediancha.edcbusiness.activity.order.GoodOrderActivity;
 import com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity;
 import com.ediancha.edcbusiness.activity.order.SpaceOrderActivity;
+import com.ediancha.edcbusiness.activity.walletbag.ChargeActivity;
+import com.ediancha.edcbusiness.activity.walletbag.CouponActivity;
+import com.ediancha.edcbusiness.activity.walletbag.DepositActivity;
+import com.ediancha.edcbusiness.activity.walletbag.MoneyActivity;
+import com.ediancha.edcbusiness.activity.walletbag.MyPackageActivity;
 import java.lang.Override;
 import java.lang.String;
 import java.util.Map;
@@ -32,5 +37,10 @@ public class ARouter$$Group$$activity implements IRouteGroup {
     atlas.put("/activity/order/spaceOrder", RouteMeta.build(RouteType.ACTIVITY, SpaceOrderActivity.class, "/activity/order/spaceorder", "activity", null, -1, -2147483648));
     atlas.put("/activity/qw", RouteMeta.build(RouteType.ACTIVITY, QwActivity.class, "/activity/qw", "activity", null, -1, -2147483648));
     atlas.put("/activity/space_desc", RouteMeta.build(RouteType.ACTIVITY, SpaceDescActivity.class, "/activity/space_desc", "activity", null, -1, -2147483648));
+    atlas.put("/activity/walletbag/charge", RouteMeta.build(RouteType.ACTIVITY, ChargeActivity.class, "/activity/walletbag/charge", "activity", null, -1, -2147483648));
+    atlas.put("/activity/walletbag/coupon", RouteMeta.build(RouteType.ACTIVITY, CouponActivity.class, "/activity/walletbag/coupon", "activity", null, -1, -2147483648));
+    atlas.put("/activity/walletbag/deposit", RouteMeta.build(RouteType.ACTIVITY, DepositActivity.class, "/activity/walletbag/deposit", "activity", null, -1, -2147483648));
+    atlas.put("/activity/walletbag/money", RouteMeta.build(RouteType.ACTIVITY, MoneyActivity.class, "/activity/walletbag/money", "activity", null, -1, -2147483648));
+    atlas.put("/activity/walletbag/mypackage", RouteMeta.build(RouteType.ACTIVITY, MyPackageActivity.class, "/activity/walletbag/mypackage", "activity", null, -1, -2147483648));
   }
 }

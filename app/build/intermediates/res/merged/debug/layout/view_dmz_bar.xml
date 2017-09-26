@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <FrameLayout
+        android:id="@+id/fgBarLeft"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/ivBarLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/icon_dmz_bar_back" />
+
+    <LinearLayout
+        android:id="@+id/llBarRight"
+        android:layout_width="100dp"
+        android:showDividers="middle"
+        android:divider="@drawable/shape_bar_line"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|right"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="100dp"
+        android:layout_toRightOf="@id/ivBarLeft"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorDmzBarText"
+        android:textSize="15sp" />
+
+</RelativeLayout>

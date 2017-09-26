@@ -6,10 +6,15 @@ import android.util.Log;
 import com.alibaba.fastjson.JSON;
 import com.dmz.library.dmzapi.api.bean.IBaseBean;
 import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.builder.GetBuilder;
 import com.zhy.http.okhttp.builder.OkHttpRequestBuilder;
+import com.zhy.http.okhttp.builder.PostFormBuilder;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import java.util.Set;
+
+import okhttp3.Call;
+import okhttp3.Request;
 
 /**
  * Created by dengmingzhi on 2017/6/21.
@@ -29,18 +34,23 @@ public class DmzApi {
     }
 
 
-
     public void excute() {
         final OkHttpRequestBuilder builder;
         printUrl();
-        builder = dmzBuilder.isMethod() ? OkHttpUtils.post() : OkHttpUtils.get();
+        builder = dmzBuilder.isPost() ? OkHttpUtils.post() : OkHttpUtils.get();
+
+        if (dmzBuilder.isPost()) {
+            ((PostFormBuilder) builder).params(dmzBuilder.getMap());
+        } else {
+            ((GetBuilder) builder).params(dmzBuilder.getMap());
+        }
+
         builder.tag(dmzBuilder.getSign())
                 .url(dmzBuilder.getUrl())
-                .params(dmzBuilder.getMap())
                 .build()
                 .execute(new StringCallback() {
                     @Override
-                    public void onError(com.squareup.okhttp.Request request, Exception e) {
+                    public void onError(Call call, Exception e, int id) {
                         e.printStackTrace();
 
                         if (dmzBuilder.getOnMyErrorListener() != null) {
@@ -52,25 +62,8 @@ public class DmzApi {
                         }
                     }
 
-
                     @Override
-                    public void onBefore(com.squareup.okhttp.Request request) {
-                        if (dmzBuilder.getiLoadingView() != null) {
-                            dmzBuilder.getiLoadingView().loading(dmzBuilder.getLoadMsg(), dmzBuilder.isCancel() ? new IProgressInterface.OnProgressCancelListener() {
-                                @Override
-                                public void cancel() {
-                                    DmzApi.cancel(dmzBuilder.getSign());
-                                    if (dmzBuilder.getProgressCancelListener() != null) {
-                                        dmzBuilder.getProgressCancelListener().cancel();
-                                    }
-
-                                }
-                            } : null);
-                        }
-                    }
-
-                    @Override
-                    public void onResponse(String response) {
+                    public void onResponse(String response, int id) {
                         try {
                             printJson(response);
 
@@ -110,8 +103,26 @@ public class DmzApi {
                                 dmzBuilder.getiLoadingView().error("数据格式错误");
                             }
                         }
-
                     }
+
+                    @Override
+                    public void onBefore(Request request, int id) {
+                        super.onBefore(request, id);
+                        if (dmzBuilder.getiLoadingView() != null) {
+                            dmzBuilder.getiLoadingView().loading(dmzBuilder.getLoadMsg(), dmzBuilder.isCancel() ? new IProgressInterface.OnProgressCancelListener() {
+                                @Override
+                                public void cancel() {
+                                    DmzApi.cancel(dmzBuilder.getSign());
+                                    if (dmzBuilder.getProgressCancelListener() != null) {
+                                        dmzBuilder.getProgressCancelListener().cancel();
+                                    }
+
+                                }
+                            } : null);
+                        }
+                    }
+
+
                 });
     }
 

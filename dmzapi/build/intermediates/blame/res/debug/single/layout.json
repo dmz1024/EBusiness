@@ -1,19 +1,23 @@
 [
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_navigation_item_header.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_template_big_media_narrow_custom.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/leak_canary_ref_top_row.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/res/layout/leak_canary_ref_top_row.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_navigation_menu.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_navigation_menu.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_activity_chooser_view.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_single_error_view.xml",
@@ -21,15 +25,15 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_alert_dialog_title_material.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_media_action.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_template_big_media.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_item_refresh_view.xml",
@@ -37,23 +41,23 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_navigation_menu_item.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_dialog_title_material.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/layout/notification_template_part_time.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/select_dialog_multichoice_material.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_action_bar_title_item.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_item_error_view.xml",
@@ -65,35 +69,35 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/support_simple_spinner_dropdown_item.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_text_input_password_icon.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_text_input_password_icon.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_list_menu_item_checkbox.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_layout_snackbar_include.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_layout_snackbar_include.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_list_menu_item_icon.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/select_dialog_item_material.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_menu_item_action_area.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_menu_item_action_area.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_search_view.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/activity_main6.xml",
@@ -101,7 +105,7 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_list_menu_item_layout.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/common_item_type_1.xml",
@@ -109,19 +113,15 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_navigation_item.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_layout_tab_text.xml"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/__leak_canary_display_leak.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.3.aar/e07669fb91c33bd4226463ef049dcf87/res/layout/__leak_canary_display_leak.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_layout_tab_text.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/layout/notification_action_tombstone.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/layout/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_item_empty_view.xml",
@@ -129,27 +129,27 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_navigation_item_separator.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_navigation_item_separator.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_screen_toolbar.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_template_media.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_select_dialog_material.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_screen_content_include.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_single_loading_view.xml",
@@ -157,11 +157,11 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_navigation_item_subheader.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_navigation_item_subheader.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/view_base_bar.xml",
@@ -169,39 +169,39 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_action_bar_up_container.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_action_menu_layout.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_action_menu_layout.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_layout_tab_icon.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_layout_tab_icon.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_bottom_navigation_item.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_bottom_navigation_item.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_layout_snackbar.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_layout_snackbar.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_popup_menu_item_layout.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_action.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/layout/notification_action.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/layout/notification_action.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_popup_menu_header_item_layout.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/layout/notification_template_custom_big.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/layout/notification_template_custom_big.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/fragment_my_progress.xml",
@@ -217,7 +217,7 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/layout/notification_template_part_chronometer.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_item_loading_more_view.xml",
@@ -229,15 +229,23 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_media_cancel_action.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/leak_canary_heap_dump_toast.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/res/layout/leak_canary_heap_dump_toast.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_activity_chooser_view_list_item.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/leak_canary_display_leak.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/res/layout/leak_canary_display_leak.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_template_media_custom.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/res/layout/notification_template_media_custom.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_single_login_view.xml",
@@ -245,59 +253,47 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/__leak_canary_ref_top_row.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.3.aar/e07669fb91c33bd4226463ef049dcf87/res/layout/__leak_canary_ref_top_row.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/728da5f8325dd0939da7aef4e203d98d/res/layout/design_bottom_sheet_dialog.xml"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/__leak_canary_leak_row.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.3.aar/e07669fb91c33bd4226463ef049dcf87/res/layout/__leak_canary_leak_row.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_list_menu_item_radio.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_expanded_menu_layout.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_template_lines_media.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_template_big_media_narrow.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/select_dialog_singlechoice_material.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/__leak_canary_ref_row.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.3.aar/e07669fb91c33bd4226463ef049dcf87/res/layout/__leak_canary_ref_row.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/tooltip.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/tooltip.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/tooltip.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_single_other_view.xml",
@@ -305,11 +301,15 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b06294fd29944f9c74d9117ee390900c/res/layout/notification_template_big_media_custom.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/leak_canary_leak_row.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/res/layout/leak_canary_leak_row.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_action_mode_close_item_material.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/dmzshow_item_login_view.xml",
@@ -317,14 +317,18 @@
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_screen_simple.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a6dcaffeeb8a1d0812eee82eb493b027/res/layout/abc_action_menu_item_layout.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/leak_canary_ref_row.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/res/layout/leak_canary_ref_row.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/Users/dengmingzhi/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6e83643568bd70d3b88bd4fe3747d7bf/res/layout/notification_template_icon_group.xml"
+        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/layout/notification_template_icon_group.xml"
     }
 ]

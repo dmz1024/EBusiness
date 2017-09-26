@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_dmz_bar_back_white.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/mipmap-hdpi-v4/icon_dmz_bar_back_white.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_dmz_bar_back.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/mipmap-hdpi-v4/icon_dmz_bar_back.png"
+    }
+]

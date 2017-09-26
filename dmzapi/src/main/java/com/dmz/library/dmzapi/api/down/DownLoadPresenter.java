@@ -1,10 +1,12 @@
 package com.dmz.library.dmzapi.api.down;
 
 import com.dmz.library.dmzapi.api.DmzDownloadUtil;
-import com.squareup.okhttp.Request;
 
 import java.io.File;
 import java.util.ArrayList;
+
+import okhttp3.Call;
+import okhttp3.Request;
 
 /**
  * Created by dengmingzhi on 2017/9/8.
@@ -34,29 +36,29 @@ public class DownLoadPresenter {
             final DownBean downBean = downBeans.get(currentIndex);
             DmzDownloadUtil._instance(downBean.getUrl()).call(new DmzDownloadUtil.DmzFileCallBack(downBean.getPath(), downBean.getName()) {
                 @Override
-                public void onError(Request request, Exception e) {
-                    super.onError(request, e);
-                    iDownLoadView.onError(downBean.getTag());
-                    begin();
+                public void onBefore(Request request, int id) {
+                    super.onBefore(request, id);
+                    iDownLoadView.start(downBean.getTag());
                 }
 
                 @Override
-                public void inProgress(float progress) {
-                    super.inProgress(progress);
-                    iDownLoadView.onProress(downBean.getTag(), progress);
-                }
-
-                @Override
-                public void onResponse(File response) {
-                    super.onResponse(response);
+                public void onResponse(File response, int id) {
+                    super.onResponse(response, id);
                     iDownLoadView.onSuccess(downBean.getTag());
                     begin();
                 }
 
                 @Override
-                public void onBefore(Request request) {
-                    super.onBefore(request);
-                    iDownLoadView.start(downBean.getTag());
+                public void inProgress(float progress, long total, int id) {
+                    super.inProgress(progress, total, id);
+                    iDownLoadView.onProress(downBean.getTag(), progress);
+                }
+
+                @Override
+                public void onError(Call call, Exception e, int id) {
+                    super.onError(call, e, id);
+                    iDownLoadView.onError(downBean.getTag());
+                    begin();
                 }
             });
         }

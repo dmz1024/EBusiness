@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-hdpi/aa.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-hdpi/aa.png"
+    }
+]

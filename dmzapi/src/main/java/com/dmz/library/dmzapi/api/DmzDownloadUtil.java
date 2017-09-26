@@ -1,11 +1,13 @@
 package com.dmz.library.dmzapi.api;
 
-import com.squareup.okhttp.Request;
+
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.FileCallBack;
 import com.zhy.http.okhttp.request.RequestCall;
 
 import java.io.File;
+
+import okhttp3.Call;
 
 /**
  * Created by dengmingzhi on 2017/9/8.
@@ -37,17 +39,17 @@ public class DmzDownloadUtil {
         }
 
         @Override
-        public void inProgress(float progress) {
+        public void inProgress(float progress, long total, int id) {
 
         }
 
         @Override
-        public void onError(Request request, Exception e) {
+        public void onError(Call call, Exception e, int id) {
 
         }
 
         @Override
-        public void onResponse(File response) {
+        public void onResponse(File response, int id) {
 
         }
     }

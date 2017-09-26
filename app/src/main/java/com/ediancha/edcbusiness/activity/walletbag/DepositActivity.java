@@ -9,7 +9,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.dmz.library.dmzapi.view.custom.DmzBar;
 import com.ediancha.edcbusiness.R;
-import com.ediancha.edcbusiness.activity.walletbag.dialog.DepositDialog;
+import com.ediancha.edcbusiness.dialog.DepositDialog;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
