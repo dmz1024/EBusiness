@@ -13,6 +13,7 @@
         <item name="colorPrimaryDark">#fff</item>
     </style>
 
+
     <style name="style_login_ln_et">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -164,7 +165,13 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/shape_circle_btn_style</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">10dp</item>
+
+
+    <style name="QwTheme" parent="MyAppTheme">
+        <item name="android:windowNoTitle">true</item> <!-- 设置无标题 -->
+        <item name="android:windowFullscreen">?android:windowNoTitle
+        </item><!-- 取决于android:windowNoTitle的值 -->
+
     </style>
 
 </resources>

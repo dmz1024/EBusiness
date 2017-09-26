@@ -2033,6 +2033,9 @@
         <item name="colorPrimaryDark">#f1da09</item>
     </style><style name="LoginTheme" parent="MyAppTheme">
         <item name="colorPrimaryDark">#fff</item>
+    </style><style name="QwTheme" parent="MyAppTheme">
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowFullscreen">?android:windowNoTitle</item>
     </style></file><file path="/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/values-v21/styles.xml" qualifiers="v21"><style name="MyAppTheme" parent="BaseAppTheme">
         
         <item name="android:windowContentTransitions">true</item>

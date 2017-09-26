@@ -63,6 +63,7 @@
             android:layout_gravity="right|center_vertical"
             android:drawablePadding="7dp"
             android:layout_marginRight="7dp"
+
             android:drawableTop="@mipmap/icon_news_discoun"
             android:gravity="center_horizontal"
             android:text="优惠兑换"

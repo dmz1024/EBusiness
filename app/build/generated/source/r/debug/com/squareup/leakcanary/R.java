@@ -38,6 +38,6 @@ public final class R {
         public static final int __leak_canary_share_with = 0x7f0d0006;
     }
     public static final class style {
-        public static final int __LeakCanary_Base = 0x7f0e0191;
+        public static final int __LeakCanary_Base = 0x7f0e0192;
     }
 }
