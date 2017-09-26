@@ -4,6 +4,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -65,15 +66,15 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
 
     @Override
     public void onSuccess(IBasePresenter presenter, ChargeBean.Data bean) {
-       addDatas(bean.getMoneys());
+        addDatas(bean.getMoneys());
     }
 
 
     @OnClick({R.id.tv_submit})
-    void onClick(View view){
-        switch (view.getId()){
+    void onClick(View view) {
+        switch (view.getId()) {
             case R.id.tv_submit:
-
+                Log.d("你好", "ddd");
                 break;
         }
     }
@@ -102,9 +103,9 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
             case 1:
                 final EditText etCMoney = holder.getView(R.id.et_cmoney);
                 holder.setText(R.id.tv_zmoney, chargeBean.getsMoney());
-                if (chargeBean.getwMoney()!=null){
+                if (chargeBean.getwMoney() != null) {
                     etCMoney.setText(chargeBean.getwMoney());
-                }else {
+                } else {
                     etCMoney.setHint(chargeBean.getcMoney());
                 }
                 etCMoney.setTextColor(chargeBean.getCheck() == 1 ? getResources().getColor(R.color.color_f00) : getResources().getColor(R.color.color_333));
@@ -116,7 +117,7 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
                     public void onClick(View view) {
                         etCMoney.setTextColor(getResources().getColor(R.color.color_f00));
                         holder.getView(R.id.cv_bg).setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_circle_style));
-                        if (etCMoney!=null){
+                        if (etCMoney != null) {
                             ArrayList<ChargeBean.Moneys> datas = (ArrayList<ChargeBean.Moneys>) mAdapterHelper.getDatas();
                             for (int i = 0; i < datas.size(); i++) {
                                 if (position == i) {
@@ -136,6 +137,7 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
                     public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
                     }
+
                     @Override
                     public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                         chargeBean.setwMoney(charSequence.toString());
@@ -154,13 +156,13 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
     //adapter点击监听 check==0未选中，1选中
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
-         ArrayList<ChargeBean.Moneys> datas = null;
-        datas=(ArrayList<ChargeBean.Moneys>) adapterHelper.getDatas();
+        ArrayList<ChargeBean.Moneys> datas = null;
+        datas = (ArrayList<ChargeBean.Moneys>) adapterHelper.getDatas();
         for (int i = 0; i < datas.size(); i++) {
             if (position == i) {
-                datas.get(i).check=1;
+                datas.get(i).check = 1;
             } else {
-               datas.get(i).check=0;
+                datas.get(i).check = 0;
             }
         }
         addDatas(datas);
