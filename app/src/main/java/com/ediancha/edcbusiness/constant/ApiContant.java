@@ -62,4 +62,9 @@ public interface ApiContant {
      */
     String CHARGE=BASE_URL+"buleline/getData";
 
+    /**
+     * 我的资料
+     */
+    String MY_INFO = BASE_URL + "buleline/getData";
+
 }

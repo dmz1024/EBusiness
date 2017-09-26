@@ -116,4 +116,11 @@ public class Go {
     public static void goCharge() {
         ARouter.getInstance().build(RouterUrl.CHARGE_ACTIVITY).navigation();
     }
+
+    /**
+     * 我的资料
+     */
+    public static void goMyInfo() {
+        ARouter.getInstance().build(RouterUrl.MY_INFO_ACTIVITY).navigation();
+    }
 }

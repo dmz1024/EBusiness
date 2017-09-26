@@ -57,6 +57,7 @@
         <activity android:name=".activity.order.SpaceOrderActivity"></activity>
         <activity android:name=".activity.order.GoodOrderActivity"></activity>
         <activity android:name=".activity.order.GoodOrderDescActivity"></activity>
+        <activity android:name=".activity.my.MyInfoActivity"></activity>
     </application>
 
 </manifest>
