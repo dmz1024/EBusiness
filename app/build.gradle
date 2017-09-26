@@ -7,8 +7,8 @@ android {
         applicationId "com.ediancha.edcbusiness"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 104
-        versionName "1.0.4"
+        versionCode 100
+        versionName "1.0.0"
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [ moduleName : project.getName() ]

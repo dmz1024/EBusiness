@@ -12,12 +12,12 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xhdpi/icon_wallet_deposit.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_my_close.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xhdpi/icon_my_close.png"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_my_close.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xhdpi/icon_my_close.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_my_order.png",

@@ -6,12 +6,16 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
+
 import com.dmz.library.dmzapi.R;
 import com.dmz.library.dmzapi.api.bean.IBaseBean;
 
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.api.presenter.SinglePresenter;
 import com.dmz.library.dmzapi.api.view.IMoreDataView;
+
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * Created by dengmingzhi on 2017/9/15.
@@ -70,10 +74,14 @@ public class SingleDataContract<T extends IBaseBean, D> extends IContract<Single
 
     public SingleDataContract _init() {
         basePresenter = new SinglePresenter<T, D>(this).setMoreDataBuilder(mBuilder);
+
+        if (mBuilder.getCurrentViewEnum() == SingleDataBuilder.ShowViewEnum.SUCCESSVIEW) {
+            getSuccessView(mBuilder.getSuccessRid());
+        }
+
         initRefresh();
         notifyDataSetChanged();
         if (mBuilder.isFirstRequest()) {
-
             refreshLayout.setEnabled(false);
             if (mBuilder.getCurrentViewEnum() == SingleDataBuilder.ShowViewEnum.SUCCESSVIEW) {
                 refreshLayout.setEnabled(true);
@@ -133,12 +141,14 @@ public class SingleDataContract<T extends IBaseBean, D> extends IContract<Single
         mBuilder.setLoginView(view);
     }
 
+    private Unbinder unbinder;
 
-    public View getSuccessView(int rid) {
+    public void getSuccessView(int rid) {
         if (mBuilder.getSuccessView() == null) {
             mBuilder.setSuccessView(layoutInflater.inflate(rid, null));
+
+            unbinder = ButterKnife.bind(refreshLayout.getContext(), mBuilder.getSuccessView());
         }
-        return mBuilder.getSuccessView();
     }
 
     private void getLoadingView() {
@@ -196,7 +206,16 @@ public class SingleDataContract<T extends IBaseBean, D> extends IContract<Single
     @Override
     public void onSuccess(IBasePresenter presenter, D d) {
         if (mBuilder.getOnMySuccessListener() != null) {
+            getSuccessView(mBuilder.getSuccessRid());
             mBuilder.getOnMySuccessListener().onSuccess(presenter, d);
+        }
+    }
+
+    @Override
+    public void destroy() {
+        super.destroy();
+        if (unbinder != null) {
+            unbinder.unbind();
         }
     }
 }

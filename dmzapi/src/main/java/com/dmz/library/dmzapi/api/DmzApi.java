@@ -5,16 +5,13 @@ import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.dmz.library.dmzapi.api.bean.IBaseBean;
-import com.zhy.http.okhttp.OkHttpUtils;
-import com.zhy.http.okhttp.builder.GetBuilder;
-import com.zhy.http.okhttp.builder.OkHttpRequestBuilder;
-import com.zhy.http.okhttp.builder.PostFormBuilder;
-import com.zhy.http.okhttp.callback.StringCallback;
+import com.lzy.okgo.OkGo;
+import com.lzy.okgo.callback.StringCallback;
+import com.lzy.okgo.model.Response;
+import com.lzy.okgo.request.base.Request;
 
 import java.util.Set;
 
-import okhttp3.Call;
-import okhttp3.Request;
 
 /**
  * Created by dengmingzhi on 2017/6/21.
@@ -33,102 +30,92 @@ public class DmzApi {
         return this;
     }
 
+    private StringCallback stringCallback = new StringCallback() {
 
-    public void excute() {
-        final OkHttpRequestBuilder builder;
-        printUrl();
-        builder = dmzBuilder.isPost() ? OkHttpUtils.post() : OkHttpUtils.get();
+        @Override
+        public void onSuccess(Response<String> response) {
+            try {
+                IBaseBean a = (IBaseBean) JSON.parseObject(response.body(), dmzBuilder.getaClass());
+                if (a.getCode() == dmzBuilder.getCode()) {
+                    if (dmzBuilder.getiLoadingView() != null) {
+                        if (dmzBuilder.isShowSuccess()) {
+                            dmzBuilder.getiLoadingView().success(dmzBuilder.getSuccessMsg());
+                        } else {
+                            dmzBuilder.getiLoadingView().dismiss();
+                        }
+                    }
+                    if (dmzBuilder.getOnMySuccessListener() != null) {
+                        dmzBuilder.getOnMySuccessListener().onSuccess(dmzBuilder.isAll() ? a : a.getData());
+                    }
 
-        if (dmzBuilder.isPost()) {
-            ((PostFormBuilder) builder).params(dmzBuilder.getMap());
-        } else {
-            ((GetBuilder) builder).params(dmzBuilder.getMap());
+                } else {
+                    if (dmzBuilder.getiLoadingView() != null) {
+                        if (dmzBuilder.isShowInfo()) {
+                            String msg = dmzBuilder.getMapInfo(a.getCode());
+                            dmzBuilder.getiLoadingView().waring(TextUtils.isEmpty(msg) ? a.getMsg() : msg);
+                        } else {
+                            dmzBuilder.getiLoadingView().dismiss();
+                        }
+                    }
+                    if (dmzBuilder.getOnMyOtherCodeListener() != null) {
+                        dmzBuilder.getOnMyOtherCodeListener().onOther(a);
+                    }
+                }
+            } catch (com.alibaba.fastjson.JSONException e) {
+                Log.d("数据格式错误", "信息：" + e.getMessage());
+                if (dmzBuilder.getOnMyErrorListener() != null) {
+                    dmzBuilder.getOnMyErrorListener().onError();
+                }
+
+                if (dmzBuilder.getiLoadingView() != null) {
+                    dmzBuilder.getiLoadingView().error("数据格式错误");
+                }
+            }
         }
 
-        builder.tag(dmzBuilder.getSign())
-                .url(dmzBuilder.getUrl())
-                .build()
-                .execute(new StringCallback() {
+        @Override
+        public void onError(Response<String> response) {
+            super.onError(response);
+            response.getException().printStackTrace();
+
+            if (dmzBuilder.getOnMyErrorListener() != null) {
+                dmzBuilder.getOnMyErrorListener().onError();
+            }
+
+            if (dmzBuilder.getiLoadingView() != null) {
+                dmzBuilder.getiLoadingView().error("请求错误");
+            }
+        }
+
+        @Override
+        public void onStart(Request<String, ? extends Request> request) {
+            super.onStart(request);
+            if (dmzBuilder.getiLoadingView() != null) {
+                dmzBuilder.getiLoadingView().loading(dmzBuilder.getLoadMsg(), dmzBuilder.isCancel() ? new IProgressInterface.OnProgressCancelListener() {
                     @Override
-                    public void onError(Call call, Exception e, int id) {
-                        e.printStackTrace();
-
-                        if (dmzBuilder.getOnMyErrorListener() != null) {
-                            dmzBuilder.getOnMyErrorListener().onError();
+                    public void cancel() {
+                        DmzApi.cancel(dmzBuilder.getSign());
+                        if (dmzBuilder.getProgressCancelListener() != null) {
+                            dmzBuilder.getProgressCancelListener().cancel();
                         }
 
-                        if (dmzBuilder.getiLoadingView() != null) {
-                            dmzBuilder.getiLoadingView().error("请求错误");
-                        }
                     }
+                } : null);
+            }
+        }
+    };
 
-                    @Override
-                    public void onResponse(String response, int id) {
-                        try {
-                            printJson(response);
-
-                            IBaseBean a = (IBaseBean) JSON.parseObject(response, dmzBuilder.getaClass());
-                            if (a.getCode() == dmzBuilder.getCode()) {
-                                if (dmzBuilder.getiLoadingView() != null) {
-                                    if (dmzBuilder.isShowSuccess()) {
-                                        dmzBuilder.getiLoadingView().success(dmzBuilder.getSuccessMsg());
-                                    } else {
-                                        dmzBuilder.getiLoadingView().dismiss();
-                                    }
-                                }
-                                if (dmzBuilder.getOnMySuccessListener() != null) {
-                                    dmzBuilder.getOnMySuccessListener().onSuccess(dmzBuilder.isAll() ? a : a.getData());
-                                }
-
-                            } else {
-                                if (dmzBuilder.getiLoadingView() != null) {
-                                    if (dmzBuilder.isShowInfo()) {
-                                        String msg = dmzBuilder.getMapInfo(a.getCode());
-                                        dmzBuilder.getiLoadingView().waring(TextUtils.isEmpty(msg) ? a.getMsg() : msg);
-                                    } else {
-                                        dmzBuilder.getiLoadingView().dismiss();
-                                    }
-                                }
-                                if (dmzBuilder.getOnMyOtherCodeListener() != null) {
-                                    dmzBuilder.getOnMyOtherCodeListener().onOther(a);
-                                }
-                            }
-                        } catch (com.alibaba.fastjson.JSONException e) {
-                            Log.d("数据格式错误", "信息：" + e.getMessage());
-                            if (dmzBuilder.getOnMyErrorListener() != null) {
-                                dmzBuilder.getOnMyErrorListener().onError();
-                            }
-
-                            if (dmzBuilder.getiLoadingView() != null) {
-                                dmzBuilder.getiLoadingView().error("数据格式错误");
-                            }
-                        }
-                    }
-
-                    @Override
-                    public void onBefore(Request request, int id) {
-                        super.onBefore(request, id);
-                        if (dmzBuilder.getiLoadingView() != null) {
-                            dmzBuilder.getiLoadingView().loading(dmzBuilder.getLoadMsg(), dmzBuilder.isCancel() ? new IProgressInterface.OnProgressCancelListener() {
-                                @Override
-                                public void cancel() {
-                                    DmzApi.cancel(dmzBuilder.getSign());
-                                    if (dmzBuilder.getProgressCancelListener() != null) {
-                                        dmzBuilder.getProgressCancelListener().cancel();
-                                    }
-
-                                }
-                            } : null);
-                        }
-                    }
-
-
-                });
+    public void excute() {
+        printUrl();
+        if (dmzBuilder.isPost()) {
+            OkGo.<String>post(dmzBuilder.getUrl()).tag(dmzBuilder.getSign()).params(dmzBuilder.getMap()).execute(stringCallback);
+        } else {
+            OkGo.<String>get(dmzBuilder.getUrl()).tag(dmzBuilder.getSign()).params(dmzBuilder.getMap()).execute(stringCallback);
+        }
     }
 
-
     public static void cancel(Object sign) {
-        OkHttpUtils.getInstance().cancelTag(sign);
+        OkGo.getInstance().cancelTag(sign);
     }
 
 

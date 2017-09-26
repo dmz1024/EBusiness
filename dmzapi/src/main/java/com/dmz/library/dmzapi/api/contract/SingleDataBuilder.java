@@ -16,7 +16,16 @@ public class SingleDataBuilder extends BaseDataBuilder {
     private View successView;
     private View otherView;
     private View loginView;
+    private int successRid;
 
+    public SingleDataBuilder setSuccessRid(int successRid) {
+        this.successRid = successRid;
+        return this;
+    }
+
+    public int getSuccessRid() {
+        return successRid;
+    }
 
     public View getLoadingView() {
         return loadingView;

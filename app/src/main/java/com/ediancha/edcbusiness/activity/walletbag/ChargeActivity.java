@@ -46,14 +46,12 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
     RadioGroup mRgPay;
     @BindView(R.id.tv_submit)
     TextView mTvSubmit;
-
     AdapterHelper mAdapterHelper;
 
 
     @Override
     protected void initDataBuilder() {
-//        mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.LOADINGVIEW);
-        mBuilder.setCanRefresh(true);
+        mBuilder.setCanRefresh(true).setSuccessRid(R.layout.activity_charge);
     }
 
 
@@ -67,12 +65,7 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
 
     @Override
     public void onSuccess(IBasePresenter presenter, ChargeBean.Data bean) {
-
-        View successView = mContract.getSuccessView(R.layout.activity_charge);
-        ButterKnife.bind(this, successView);
-
        addDatas(bean.getMoneys());
-
     }
 
 

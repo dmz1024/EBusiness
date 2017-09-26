@@ -27,7 +27,7 @@ public class SpaceDescActivity extends SingleDataBaseActivity<Test1Bean, ArrayLi
 
     @Override
     protected void initDataBuilder() {
-        mBuilder.setOnMySuccessListener(this).setCanRefresh(false);
+        mBuilder.setOnMySuccessListener(this).setCanRefresh(false).setSuccessRid(R.layout.success_space_desc_view);
     }
 
     @Override
@@ -39,7 +39,7 @@ public class SpaceDescActivity extends SingleDataBaseActivity<Test1Bean, ArrayLi
 
     @Override
     public void onSuccess(IBasePresenter presenter, ArrayList<Test1Bean.Test> bean) {
-        View successView = mContract.getSuccessView(R.layout.success_space_desc_view);
+
     }
 
     @Override

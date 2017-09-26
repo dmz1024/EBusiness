@@ -46,13 +46,7 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
 
     @Override
     protected void initDataBuilder() {
-        mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW);
-    }
-
-    @Override
-    protected void initContract() {
-        super.initContract();
-        mContract.getSuccessView(R.layout.activity_mypackage);
+        mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW).setSuccessRid(R.layout.activity_mypackage);
     }
 
     @Override
@@ -70,12 +64,9 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
 
     @Override
     public void onSuccess(IBasePresenter presenter, MyPackageBean.Data bean) {
-        View successView = mContract.getSuccessView(R.layout.activity_mypackage);
-        ButterKnife.bind(this,successView);
         mTvMoney.setText(bean.getyMoney());
         mTvCoupon.setText(bean.getCount());
         mTvDeposit.setText(bean.getYjMoney());
-
         mTvPass.setText((bean.getPayPassWord() != 0) ? "已设置" : "未设置");
     }
 

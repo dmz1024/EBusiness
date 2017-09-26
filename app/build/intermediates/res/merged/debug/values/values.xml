@@ -2458,7 +2458,8 @@
     <style name="Platform.Widget.AppCompat.Spinner" parent="android:Widget.Spinner"/>
     <style name="QwTheme" parent="MyAppTheme">
         <item name="android:windowNoTitle">true</item> <!-- 设置无标题 -->
-        <item name="android:windowFullscreen">?android:windowNoTitle</item><!-- 取决于android:windowNoTitle的值 -->
+        <item name="android:windowFullscreen">?android:windowNoTitle
+        </item><!-- 取决于android:windowNoTitle的值 -->
     </style>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
     </style>
@@ -2950,7 +2951,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/shape_circle_btn_style</item>
-        <item name="android:gravity">center</item></style>
+        <item name="android:gravity">center</item>
+    </style>
     <style name="tv_but_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

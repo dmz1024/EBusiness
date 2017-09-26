@@ -38,9 +38,6 @@ public class MoneyActivity extends SingleDataBaseActivity<MoneyBean, MoneyBean.D
 
     @Override
     public void onSuccess(IBasePresenter presenter, MoneyBean.Data bean) {
-        View successView = mContract.getSuccessView(R.layout.activity_money);
-        ButterKnife.bind(this, successView);
-
         mTvTotal.setText(bean.getTotalMoney());
         mTvCharge.setText(bean.getcMoney());
         mTvGive.setText(bean.getzMoney());
@@ -49,14 +46,9 @@ public class MoneyActivity extends SingleDataBaseActivity<MoneyBean, MoneyBean.D
 
     @Override
     protected void initDataBuilder() {
-        mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW);
+        mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW).setSuccessRid(R.layout.activity_money);
     }
 
-    @Override
-    protected void initContract() {
-        super.initContract();
-        mContract.getSuccessView(R.layout.activity_money);
-    }
 
     @Override
     protected void initDmzBuilder() {

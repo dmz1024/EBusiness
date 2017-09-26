@@ -48,12 +48,12 @@
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/tooltip.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout/dmzshow_item_empty_view.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/layout/dmzshow_item_empty_view.xml"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout/dmzshow_item_empty_view.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/layout/dmzshow_item_empty_view.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
@@ -116,12 +116,12 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/layout/view_dmz_bar.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_navigation_item_header.xml"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/layout/view_base_more_data.xml",

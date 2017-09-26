@@ -1,6 +1,7 @@
 package com.ediancha.edcbusiness.activity.order;
 
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -9,21 +10,21 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.alibaba.android.arouter.launcher.ARouter;
 import com.bumptech.glide.Glide;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.utils.Copy;
-import com.dmz.library.dmzapi.view.activity.MoreDataBaseActivity;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.GoodsOrderDescBean;
-import com.ediancha.edcbusiness.bean.SpaceOrderBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by dengmingzhi on 2017/9/22.
@@ -34,6 +35,24 @@ import java.util.ArrayList;
 public class GoodOrderDescActivity extends SingleDataBaseActivity<GoodsOrderDescBean, GoodsOrderDescBean.Data> implements AdapterHelper.OnConvertInterface<IType> {
     @Autowired
     public String orderId;
+    @BindView(R.id.tvStatusInfo)
+    TextView tvStatusInfo;
+    @BindView(R.id.tvTitle)
+    TextView tvTitle;
+    @BindView(R.id.ivGoodImg)
+    ImageView ivGoodImg;
+    @BindView(R.id.tvPrice)
+    TextView tvPrice;
+    @BindView(R.id.tvGoodName)
+    TextView tvGoodName;
+    @BindView(R.id.tvInfo)
+    TextView tvInfo;
+    @BindView(R.id.tvCount)
+    TextView tvCount;
+    @BindView(R.id.rvPayInfo)
+    RecyclerView rvPayInfo;
+    @BindView(R.id.rvOrderInfo)
+    RecyclerView rvOrderInfo;
 
 
     @Override
@@ -44,7 +63,7 @@ public class GoodOrderDescActivity extends SingleDataBaseActivity<GoodsOrderDesc
 
     @Override
     protected void initDataBuilder() {
-
+        mBuilder.setSuccessRid(R.layout.success_good_order_desc);
     }
 
     @Override
@@ -55,20 +74,10 @@ public class GoodOrderDescActivity extends SingleDataBaseActivity<GoodsOrderDesc
 
     @Override
     public void onSuccess(IBasePresenter presenter, GoodsOrderDescBean.Data bean) {
-        View successView = mContract.getSuccessView(R.layout.success_good_order_desc);
+
         GoodsOrderDescBean.Goods goods = bean.getGoods();
         ArrayList<GoodsOrderDescBean.OrderInfo> orderInfos = bean.getOrderInfos();
         ArrayList<GoodsOrderDescBean.PayInfo> payInfo = bean.getPayInfo();
-
-        TextView tvStatusInfo = successView.findViewById(R.id.tvStatusInfo);
-        TextView tvTitle = successView.findViewById(R.id.tvTitle);
-        TextView tvPrice = successView.findViewById(R.id.tvPrice);
-        TextView tvGoodName = successView.findViewById(R.id.tvGoodName);
-        TextView tvInfo = successView.findViewById(R.id.tvInfo);
-        TextView tvCount = successView.findViewById(R.id.tvCount);
-        ImageView ivGoodImg = successView.findViewById(R.id.ivGoodImg);
-        RecyclerView rvPayInfo = successView.findViewById(R.id.rvPayInfo);
-        RecyclerView rvOrderInfo = successView.findViewById(R.id.rvOrderInfo);
 
         tvStatusInfo.setText(bean.getStatus());
         tvTitle.setText(bean.getTitle());
@@ -115,4 +124,5 @@ public class GoodOrderDescActivity extends SingleDataBaseActivity<GoodsOrderDesc
                 break;
         }
     }
+
 }

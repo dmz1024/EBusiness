@@ -50,4 +50,6 @@ public class BaseListBean<D extends ViewBaseType> implements IBaseListBean<D> {
             return pagecount;
         }
     }
+
+
 }

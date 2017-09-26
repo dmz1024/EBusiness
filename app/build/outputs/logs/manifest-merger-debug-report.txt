@@ -16,6 +16,7 @@ ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidMani
 uses-permission#android.permission.INTERNET
 ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:6:5-67
 MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:11:5-67
+MERGED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:26:5-67
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -55,11 +56,13 @@ ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidMani
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:19:5-80
 MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:14:5-80
+MERGED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:27:5-80
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:25:5-80
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:19:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:20:5-81
+MERGED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:28:5-81
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:26:5-81
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:20:22-78
@@ -208,6 +211,7 @@ MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dengmingzhi
 MERGED from [com.android.support:support-fragment:26.1.0] /Users/dengmingzhi/.android/build-cache/ef03500056926a86fed9857d1e0f030061999b65/output/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dengmingzhi/.android/build-cache/6c5eee365f244ae26e6de5d80d91a6f43af402d8/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dengmingzhi/.android/build-cache/c326b71d3fa6306eedc4b52b5c84ff7ca29a3475/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:22:5-24:41
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:20:5-22:41
 MERGED from [com.jakewharton:butterknife:8.8.1] /Users/dengmingzhi/.android/build-cache/0fc0777ba9b0c7796906e2a4f0c3847d2b00a315/output/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-compat:26.1.0] /Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/AndroidManifest.xml:21:5-23:58
@@ -266,6 +270,10 @@ MERGED from [com.android.support:support-compat:26.1.0] /Users/dengmingzhi/.andr
 		ADDED from [com.android.support:design:26.1.0] /Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/AndroidManifest.xml:28:13-35
 	android:name
 		ADDED from [com.android.support:design:26.1.0] /Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/AndroidManifest.xml:27:13-51
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:29:5-84
+	android:name
+		ADDED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:29:22-81
 service#com.squareup.leakcanary.internal.HeapAnalyzerService
 ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:29:9-32:45
 	android:enabled

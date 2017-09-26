@@ -24,6 +24,8 @@ public class BaseBean<D> implements IBaseBean<D> {
 
     @Override
     public D getData() {
+
         return data;
     }
+
 }

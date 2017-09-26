@@ -1,10 +1,11 @@
 package com.ediancha.edcbusiness.activity.message;
 
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
@@ -24,15 +25,25 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Created by dengmingzhi on 2017/9/22.
  */
 
 @Route(path = "/activity/message/activityMessage")
 public class ActivityMessageActivity extends SingleDataBaseActivity<ActivityMessageBean, ActivityMessageBean.Data> implements AdapterHelper.OnConvertInterface<IType>, AdapterHelper.OnClickListener {
-    private RecyclerView rvActivity;
-    private RecyclerView rvMessage;
-
+    @BindView(R.id.rvActivity)
+    RecyclerView rvActivity;
+    @BindView(R.id.tvShape)
+    TextView tvShape;
+    @BindView(R.id.tvChong)
+    TextView tvChong;
+    @BindView(R.id.tvDui)
+    TextView tvDui;
+    @BindView(R.id.rvMessage)
+    RecyclerView rvMessage;
     @Override
     protected void initBarView() {
         super.initBarView();
@@ -40,15 +51,16 @@ public class ActivityMessageActivity extends SingleDataBaseActivity<ActivityMess
     }
 
     @Override
-    protected void initContract() {
-        super.initContract();
+    protected void initData() {
+        super.initData();
         initSuccessView();
-
     }
 
     @Override
     protected void initDataBuilder() {
-        mBuilder.setCanRefresh(false).setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW);
+        mBuilder.setCanRefresh(false)
+                .setSuccessRid(R.layout.success_activity_message)
+                .setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW);
     }
 
     @Override
@@ -63,9 +75,6 @@ public class ActivityMessageActivity extends SingleDataBaseActivity<ActivityMess
     }
 
     private void initSuccessView() {
-        View successView = mContract.getSuccessView(R.layout.success_activity_message);
-        rvActivity = successView.findViewById(R.id.rvActivity);
-        rvMessage = successView.findViewById(R.id.rvMessage);
         LinearSnapHelper linearSnapHelper = new LinearSnapHelper();
         linearSnapHelper.attachToRecyclerView(rvActivity);
         initMessage(null);
