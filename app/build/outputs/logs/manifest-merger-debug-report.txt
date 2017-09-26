@@ -181,7 +181,9 @@ ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidMani
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:40:13-61
 activity#com.ediancha.edcbusiness.activity.QwActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:42:9-66
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:42:9-97
+	android:theme
+		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:42:55-85
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:42:19-54
 activity#com.ediancha.edcbusiness.activity.SpaceDescActivity

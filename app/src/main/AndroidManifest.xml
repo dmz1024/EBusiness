@@ -39,7 +39,9 @@
         <activity
             android:name=".activity.my.PersonCenterActivity"
             android:theme="@style/PersonCenterTheme" />
-        <activity android:name=".activity.QwActivity"></activity>
+        <activity
+            android:name=".activity.QwActivity"
+            android:theme="@style/QwTheme"></activity>
         <activity android:name=".activity.SpaceDescActivity"></activity>
         <activity android:name=".activity.message.ActivityMessageActivity"></activity>
         <activity android:name=".activity.message.ActivitySplendidActivity"></activity>

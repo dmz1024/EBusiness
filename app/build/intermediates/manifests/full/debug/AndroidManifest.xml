@@ -51,7 +51,9 @@
         <activity
             android:name="com.ediancha.edcbusiness.activity.my.PersonCenterActivity"
             android:theme="@style/PersonCenterTheme" />
-        <activity android:name="com.ediancha.edcbusiness.activity.QwActivity" />
+        <activity
+            android:name="com.ediancha.edcbusiness.activity.QwActivity"
+            android:theme="@style/QwTheme" />
         <activity android:name="com.ediancha.edcbusiness.activity.SpaceDescActivity" />
         <activity android:name="com.ediancha.edcbusiness.activity.message.ActivityMessageActivity" />
         <activity android:name="com.ediancha.edcbusiness.activity.message.ActivitySplendidActivity" />
