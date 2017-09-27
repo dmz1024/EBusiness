@@ -1,16 +1,26 @@
 package com.ediancha.edcbusiness.helper;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.dmz.library.dmzapi.utils.PermissionUtil;
 import com.ediancha.edcbusiness.activity.QwActivity;
 import com.ediancha.edcbusiness.router.Go;
-import com.uuzuche.lib_zxing.activity.CaptureActivity;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
+import com.yanzhenjie.permission.AndPermission;
+import com.yanzhenjie.permission.Permission;
+import com.yanzhenjie.permission.PermissionListener;
+import com.yanzhenjie.permission.Rationale;
+import com.yanzhenjie.permission.RationaleListener;
+
+import java.util.List;
+
 
 /**
  * Created by dengmingzhi on 2017/9/20.
@@ -19,13 +29,17 @@ import com.uuzuche.lib_zxing.activity.CodeUtils;
 public class QwHelper {
     public static final int QW_REQUEST_CODE = 1;
     private Activity activity;
-
     public QwHelper(Activity activity) {
         this.activity = activity;
     }
 
     public void openQw() {
-        Go.goQw(activity, QW_REQUEST_CODE);
+        PermissionUtil.getInstance().setOnSuccessPermission(new PermissionUtil.OnCheckSuccessPermission() {
+            @Override
+            public void onSuccess(int result) {
+                Go.goQw(activity, QW_REQUEST_CODE);
+            }
+        }).checkCamera(activity);
     }
 
 
@@ -53,4 +67,21 @@ public class QwHelper {
             }
         }
     }
+
+//    @Override
+//    public void onPermissionsGranted(int i, List<String> list) {
+//        Toast.makeText(activity, "有权限", Toast.LENGTH_SHORT).show();
+//        Go.goQw(activity, QW_REQUEST_CODE);
+//    }
+//
+//    @Override
+//    public void onPermissionsDenied(int i, List<String> list) {
+//        Toast.makeText(activity, "没有权限", Toast.LENGTH_SHORT).show();
+//
+//    }
+//
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+//        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+//    }
 }

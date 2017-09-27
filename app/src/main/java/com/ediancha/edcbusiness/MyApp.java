@@ -29,8 +29,7 @@ public class MyApp extends com.dmz.library.dmzapi.MyApp {
     public static MsgDisplayListener msgDisplayListener = null;
 
     @Override
-    public void onCreate() {
-        super.onCreate();
+    protected void initData() {
         SophixManager.getInstance()//热更新
                 .setContext(this)
                 .setAppVersion(getVersion())
@@ -47,9 +46,9 @@ public class MyApp extends com.dmz.library.dmzapi.MyApp {
                 .setSecretMetaData(HOT_APPID, HOT_APPSECRET, HOT_RSA)
                 .setEnableDebug(true)
                 .initialize();
+        super.initData();
 
         LeakCanary.install(this);//检测内存泄漏
-
         ZXingLibrary.initDisplayOpinion(this);//初始化二维码扫描库
 
 
@@ -57,8 +56,8 @@ public class MyApp extends com.dmz.library.dmzapi.MyApp {
         ARouter.openDebug();   // 开启调试模式(如果在InstantRun模式下运行，必须开启调试模式！线上版本需要关闭,否则有安全风险)
         ARouter.init(this); // 尽可能早，推荐在Application中初始化
 
+        TestWindowManager._init(this);
     }
-
 
     private String getVersion() {
         try {

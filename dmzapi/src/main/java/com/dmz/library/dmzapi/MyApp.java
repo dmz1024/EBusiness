@@ -1,6 +1,7 @@
 package com.dmz.library.dmzapi;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.dmz.library.dmzapi.utils.ScreenUtil;
 import com.lzy.okgo.OkGo;
@@ -24,9 +25,15 @@ import okhttp3.OkHttpClient;
  */
 
 public class MyApp extends Application {
+
+
     @Override
     public void onCreate() {
         super.onCreate();
+        initData();
+    }
+
+    protected void initData() {
         ScreenUtil._init(this);
         initOkGo();
     }

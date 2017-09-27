@@ -73,9 +73,13 @@ public class ChooseStringView extends LinearLayout implements AdapterHelper.OnCo
                 iChooseCancel.cancel();
                 break;
             case 0:
+                iChooseCancel.cancel();
                 if (iChooseItem != null) {
-                    iChooseCancel.cancel();
                     iChooseItem.position(position);
+                }
+                if (itemTitle != null) {
+                    iChooseCancel.cancel();
+                    itemTitle.content(position, datas.get(position));
                 }
                 break;
         }
@@ -85,12 +89,22 @@ public class ChooseStringView extends LinearLayout implements AdapterHelper.OnCo
         void position(int position);
     }
 
+    public interface IChooseItemTitle<T extends IChooseString> {
+        void content(int position, T title);
+    }
+
     public interface IChooseCancel {
         void cancel();
     }
 
     private IChooseItem iChooseItem;
+    private IChooseItemTitle itemTitle;
     private IChooseCancel iChooseCancel;
+
+    public ChooseStringView setItemTitle(IChooseItemTitle itemTitle) {
+        this.itemTitle = itemTitle;
+        return this;
+    }
 
     public ChooseStringView setiChooseCancel(IChooseCancel iChooseCancel) {
         this.iChooseCancel = iChooseCancel;

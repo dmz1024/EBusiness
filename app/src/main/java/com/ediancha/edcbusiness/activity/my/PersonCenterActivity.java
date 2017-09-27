@@ -70,12 +70,9 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
         int a = 1;
         ArrayList<CommonAdapterHelper.CommonBean> datas = CommonAdapterHelper.getDatas(this, "person_center_item.json");
         datas.add(0, new CommonAdapterHelper.CommonBean().setTitle("183****7257").setIcon(a == 1 ? R.mipmap.icon_my_authentication : R.mipmap.icon_my_not_certified).setContent("信用分 100").setViewType(2));
-
         adapterHelper = AdapterHelper._instance(this, rvContent)._initData(datas).setLayoutManager(new LinearLayoutManager(this))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(ResUtil.getLayoutId(1)).setConvertInterface(this).setOnClickListener(this))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(2).setRid(R.layout.item_person_center_info).setConvertInterface(this));
-
-
     }
 
 
@@ -83,17 +80,7 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.ivCha:
-//                finish();
-
-//                OrderLongTipDialog dialog = new OrderLongTipDialog();
-//                dialog.show(getSupportFragmentManager(), "orderDialog");
-
-                ChooseStringDialog.getInstance().setiChooseItem(new ChooseStringView.IChooseItem() {
-                    @Override
-                    public void position(int position) {
-                        Log.d("点击了", position + "");
-                    }
-                }).addData("故障报修", "联系客服").show(this);
+                finish();
                 break;
             case R.id.iv_header:
                 Go.goMyInfo();
