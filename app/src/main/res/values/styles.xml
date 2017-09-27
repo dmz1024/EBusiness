@@ -165,6 +165,7 @@
         <item name="android:background">@drawable/shape_fill_square</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">10dp</item>
+        <item name="android:textSize">@dimen/sp16</item>
     </style>
 
     <style name="tv_but_nomar_style">

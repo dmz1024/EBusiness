@@ -71,5 +71,6 @@
         android:gravity="center"
         android:padding="@dimen/size10"
         android:text="在线反馈"
+        android:textSize="@dimen/sp18"
         android:textColor="@color/color_333" />
 </RelativeLayout>
