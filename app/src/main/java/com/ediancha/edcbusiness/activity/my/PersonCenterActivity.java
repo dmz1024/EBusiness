@@ -3,6 +3,7 @@ package com.ediancha.edcbusiness.activity.my;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -10,9 +11,11 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.list.CommonAdapterHelper;
+import com.dmz.library.dmzapi.dialog.ChooseStringDialog;
 import com.dmz.library.dmzapi.utils.AnimationUtil;
 import com.dmz.library.dmzapi.utils.ResUtil;
 import com.dmz.library.dmzapi.view.activity.BaseActivity;
+import com.dmz.library.dmzapi.view.custom.ChooseStringView;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.dialog.OrderLongTipDialog;
 import com.ediancha.edcbusiness.dialog.OrderMoneyNotEnoughDialog;
@@ -82,9 +85,15 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
             case R.id.ivCha:
 //                finish();
 
-                OrderLongTipDialog dialog = new OrderLongTipDialog();
-                dialog.show(getSupportFragmentManager(), "orderDialog");
+//                OrderLongTipDialog dialog = new OrderLongTipDialog();
+//                dialog.show(getSupportFragmentManager(), "orderDialog");
 
+                ChooseStringDialog.getInstance().setiChooseItem(new ChooseStringView.IChooseItem() {
+                    @Override
+                    public void position(int position) {
+                        Log.d("点击了", position + "");
+                    }
+                }).addData("故障报修", "联系客服").show(this);
                 break;
             case R.id.iv_header:
                 Go.goMyInfo();

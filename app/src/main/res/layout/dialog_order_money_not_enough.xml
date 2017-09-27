@@ -44,6 +44,7 @@
             android:textSize="@dimen/sp14" />
 
         <Button
+            android:id="@+id/btChoog"
             android:textSize="@dimen/sp15"
             android:textColor="#333"
             android:text="马上充值"
