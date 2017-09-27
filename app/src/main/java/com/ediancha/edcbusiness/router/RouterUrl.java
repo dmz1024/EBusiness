@@ -99,4 +99,9 @@ public interface RouterUrl {
      * 我的资料
      */
     String MY_INFO_ACTIVITY = "/activity/my/myInfo";
+
+    /**
+     * 我的资料
+     */
+    String FANKUI_ACTIVITY = "/activity/help/fankui";
 }

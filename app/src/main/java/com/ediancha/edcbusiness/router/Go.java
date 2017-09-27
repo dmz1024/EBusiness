@@ -136,4 +136,11 @@ public class Go {
     public static void goMyInfo() {
         ARouter.getInstance().build(RouterUrl.MY_INFO_ACTIVITY).navigation();
     }
+
+    /**
+     * 在线反馈
+     */
+    public static void goFanKui() {
+        ARouter.getInstance().build(RouterUrl.FANKUI_ACTIVITY).navigation();
+    }
 }

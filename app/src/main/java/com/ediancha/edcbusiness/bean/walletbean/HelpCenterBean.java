@@ -61,6 +61,11 @@ public class HelpCenterBean extends BaseBean<HelpCenterBean.Data> {
                 return title;
             }
 
+            @Override
+            public int getViewType() {
+                return 1;
+            }
+
             public void setTitle(String title) {
                 this.title = title;
             }

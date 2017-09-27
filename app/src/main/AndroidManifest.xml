@@ -53,6 +53,7 @@
         <activity android:name=".activity.walletbag.ChargeActivity"/>
         <activity android:name=".activity.coupon.CouponChangeActivity"/>
         <activity android:name=".activity.help.HelpCenterActivity"/>
+        <activity android:name=".activity.help.FanKuiActivity"/>
         <activity
             android:name=".activity.login.LoginActivity"
             android:theme="@style/LoginTheme"></activity>
@@ -60,6 +61,19 @@
         <activity android:name=".activity.order.GoodOrderActivity"></activity>
         <activity android:name=".activity.order.GoodOrderDescActivity"></activity>
         <activity android:name=".activity.my.MyInfoActivity"></activity>
+
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ediancha.edcbusiness.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false"
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>
