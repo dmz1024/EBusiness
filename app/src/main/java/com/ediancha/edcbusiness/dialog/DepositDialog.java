@@ -50,4 +50,9 @@ public class DepositDialog extends NoTitleDialoggFragment {
                 break;
         }
     }
+
+    @Override
+    protected int getWPadding() {
+        return 150;
+    }
 }

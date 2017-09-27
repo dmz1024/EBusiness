@@ -102,6 +102,13 @@ public class PersonCenterActivity extends BaseActivity implements View.OnClickLi
                 Go.goMyPackage();
                 break;
 
+            case 5:
+                Go.goCouponChange();
+                break;
+            case 6:
+                Go.goHelpCenter();
+                break;
+
         }
     }
 }
