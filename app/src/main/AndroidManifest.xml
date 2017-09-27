@@ -53,6 +53,7 @@
         <activity android:name=".activity.walletbag.ChargeActivity"/>
         <activity android:name=".activity.coupon.CouponChangeActivity"/>
         <activity android:name=".activity.help.HelpCenterActivity"/>
+        <activity android:name=".activity.help.FanKuiActivity"/>
         <activity
             android:name=".activity.login.LoginActivity"
             android:theme="@style/LoginTheme"></activity>
