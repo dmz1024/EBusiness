@@ -143,4 +143,11 @@ public class Go {
     public static void goFanKui() {
         ARouter.getInstance().build(RouterUrl.FANKUI_ACTIVITY).navigation();
     }
+
+    /**
+     * H5页面展示
+     */
+    public static void goWebView() {
+        ARouter.getInstance().build(RouterUrl.WEBVIEW_ACTIVITY).navigation();
+    }
 }

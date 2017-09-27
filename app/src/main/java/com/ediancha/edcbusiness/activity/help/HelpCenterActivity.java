@@ -94,8 +94,7 @@ public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, H
         switch (viewType){
             case 0:
                 ArrayList<HelpCenterBean.Data.HotBean> hotBeans = (ArrayList<HelpCenterBean.Data.HotBean>) mAdapterHelperOne.getDatas();
-                Toast.makeText(HelpCenterActivity.this,"你选的是的是第"+hotBeans.get(position).getTitle(),Toast.LENGTH_SHORT).show();
-
+                Go.goWebView();
                 break;
             case 1:
                 break;

@@ -8,35 +8,35 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/tv_fankuai">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/size10"
-                android:text="热门问题"
-                android:textColor="@color/color_666"
-                android:textSize="@dimen/sp16" />
+        android:layout_above="@+id/tv_fankuai"
+        android:fillViewport="true">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/color_f6f6f6">
 
+                <TextView
+                    android:id="@+id/tv_cj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size10"
+                    android:text="热门问题"
+                    android:textColor="@color/color_666"
+                    android:textSize="@dimen/sp16" />
                 <RelativeLayout
                     android:id="@+id/rl_one"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_below="@+id/tv_cj">
 
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/recy_one"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
                 </RelativeLayout>
 
                 <TextView
@@ -52,8 +52,9 @@
                 <RelativeLayout
                     android:id="@+id/rl_two"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@+id/tv_type">
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_type"
+                    android:descendantFocusability="blocksDescendants">
 
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/recy_two"
@@ -61,7 +62,6 @@
                         android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
                 </RelativeLayout>
             </RelativeLayout>
-        </LinearLayout>
     </ScrollView>
     <TextView
         android:id="@+id/tv_fankuai"

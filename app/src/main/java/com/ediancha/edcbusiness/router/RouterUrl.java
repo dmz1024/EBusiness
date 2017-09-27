@@ -104,4 +104,8 @@ public interface RouterUrl {
      * 我的资料
      */
     String FANKUI_ACTIVITY = "/activity/help/fankui";
+    /**
+     * H5页面
+     */
+    String WEBVIEW_ACTIVITY = "/activity/help/webview";
 }
