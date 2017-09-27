@@ -75,6 +75,14 @@ public class ResUtil {
         switch (type) {
             case 1:
                 return R.layout.common_item_type_1;
+            case 3:
+                return R.layout.common_item_type_3;
+            case 4:
+                return R.layout.common_item_type_4;
+            case 5:
+                return R.layout.common_item_type_5;
+            case 6:
+                return R.layout.common_item_type_6;
         }
         return -1;
     }

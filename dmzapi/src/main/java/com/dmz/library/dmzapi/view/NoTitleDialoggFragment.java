@@ -14,11 +14,15 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+
 /**
  * Created by dengmingzhi on 2017/8/27.
  */
 
 public class NoTitleDialoggFragment extends DialogFragment {
+    private Unbinder unbinder;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -31,6 +35,7 @@ public class NoTitleDialoggFragment extends DialogFragment {
             view = inflater.inflate(getRid(), container, false);
         }
 
+        unbinder = ButterKnife.bind(this, view);
         initBundle(getArguments());
         initView(view);
         initData(view);
@@ -88,5 +93,13 @@ public class NoTitleDialoggFragment extends DialogFragment {
         int width = wm.getDefaultDisplay().getWidth();
         int height = wm.getDefaultDisplay().getHeight();
         return new int[]{width, height};
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (unbinder != null) {
+            unbinder.unbind();
+        }
     }
 }

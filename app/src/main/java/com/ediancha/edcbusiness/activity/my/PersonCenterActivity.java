@@ -1,10 +1,10 @@
 package com.ediancha.edcbusiness.activity.my;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -14,25 +14,39 @@ import com.dmz.library.dmzapi.utils.AnimationUtil;
 import com.dmz.library.dmzapi.utils.ResUtil;
 import com.dmz.library.dmzapi.view.activity.BaseActivity;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.dialog.OrderLongTipDialog;
+import com.ediancha.edcbusiness.dialog.OrderMoneyNotEnoughDialog;
 import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
+
 
 @Route(path = "/activity/my/personCenter")
-public class PersonCenterActivity extends BaseActivity implements View.OnClickListener, AdapterHelper.OnConvertInterface<CommonAdapterHelper.CommonBean>, AdapterHelper.OnClickListener {
-    private View ivCha;
-    private RecyclerView rvContent;
+public class PersonCenterActivity extends BaseActivity implements AdapterHelper.OnConvertInterface<CommonAdapterHelper.CommonBean>, AdapterHelper.OnClickListener {
+    @BindView(R.id.rvContent)
+    RecyclerView rvContent;
+    @BindView(R.id.iv_header)
+    ImageView ivHeader;
+    @BindView(R.id.ivCha)
+    ImageView ivCha;
+    private Unbinder unbinder;
 
     @Override
     protected void initView() {
         super.initView();
-        ivCha = findViewById(R.id.ivCha);
-        rvContent = findViewById(R.id.rvContent);
-        ivCha.setOnClickListener(this);
-        findViewById(R.id.iv_header).setOnClickListener(this);
+        unbinder = ButterKnife.bind(this);
+    }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unbinder.unbind();
     }
 
     @Override
@@ -61,17 +75,21 @@ public class PersonCenterActivity extends BaseActivity implements View.OnClickLi
 
     }
 
-    @Override
-    public void onClick(View view) {
+
+    @OnClick({R.id.ivCha, R.id.iv_header})
+    void onClick(View view) {
         switch (view.getId()) {
             case R.id.ivCha:
-                finish();
+//                finish();
+
+                OrderLongTipDialog dialog = new OrderLongTipDialog();
+                dialog.show(getSupportFragmentManager(), "orderDialog");
+
                 break;
             case R.id.iv_header:
-                Go.goLogin();
+                Go.goMyInfo();
                 break;
         }
-
     }
 
 
