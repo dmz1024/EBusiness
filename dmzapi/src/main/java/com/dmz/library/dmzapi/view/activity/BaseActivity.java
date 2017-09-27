@@ -28,9 +28,13 @@ public abstract class BaseActivity extends SlideBackActivity {
         this.ctx = this;
         ARouter.getInstance().inject(this);
         initSlide();
-        setContentView(getLayoutInflater().inflate(getRid(), null));
+        initContentView();
         initView();
         initData();
+    }
+
+    protected void initContentView() {
+        setContentView(getLayoutInflater().inflate(getRid(), null));
     }
 
     protected void initData() {

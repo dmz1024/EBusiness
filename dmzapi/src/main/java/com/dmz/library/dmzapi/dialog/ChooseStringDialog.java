@@ -59,7 +59,12 @@ public class ChooseStringDialog extends NoTitleDialoggFragment implements Choose
     }
 
     private ChooseStringView.IChooseItem iChooseItem;
+    private ChooseStringView.IChooseItemTitle itemTitle;
 
+    public ChooseStringDialog setiChooseItem(ChooseStringView.IChooseItemTitle itemTitle) {
+        this.itemTitle = itemTitle;
+        return this;
+    }
 
     public ChooseStringDialog setiChooseItem(ChooseStringView.IChooseItem iChooseItem) {
         this.iChooseItem = iChooseItem;

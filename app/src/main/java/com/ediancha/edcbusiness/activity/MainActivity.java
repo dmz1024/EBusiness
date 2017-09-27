@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.TestWindowManager;
 import com.ediancha.edcbusiness.helper.MainBottomSheet;
 import com.ediancha.edcbusiness.helper.QwHelper;
 import com.ediancha.edcbusiness.router.Go;
@@ -24,6 +25,8 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
     @Override
     protected void initView() {
         super.initView();
+
+        TestWindowManager.getInstance();
         fg_qw = findViewById(R.id.fg_qw);
         iv_bottom_header = findViewById(R.id.iv_bottom_header);
         fg_arrows = findViewById(R.id.fg_arrows);

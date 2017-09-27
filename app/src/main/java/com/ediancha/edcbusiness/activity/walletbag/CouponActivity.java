@@ -1,5 +1,7 @@
 package com.ediancha.edcbusiness.activity.walletbag;
 
+import android.graphics.Color;
+
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.view.activity.MoreDataBaseActivity;
@@ -16,6 +18,11 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
 @Route(path = "/activity/walletbag/coupon")
 public class CouponActivity extends MoreDataBaseActivity<CouponBean.Data,CouponBean> {
 
+    @Override
+    protected void initView() {
+        super.initView();
+        rvRoot.setBackgroundColor(Color.parseColor("#f6f6f6"));
+    }
 
     @Override
     protected void initMoreBuilder() {

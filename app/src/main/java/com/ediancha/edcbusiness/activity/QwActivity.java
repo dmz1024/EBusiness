@@ -2,19 +2,17 @@ package com.ediancha.edcbusiness.activity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.dmz.library.dmzapi.view.activity.BaseActivity;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.uuzuche.lib_zxing.activity.CaptureFragment;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
+
 
 @Route(path = "/activity/qw")
 public class QwActivity extends ToobarBaseActivity implements View.OnClickListener {
@@ -30,6 +28,7 @@ public class QwActivity extends ToobarBaseActivity implements View.OnClickListen
         findViewById(R.id.rlWrite).setOnClickListener(this);
         findViewById(R.id.rlLight).setOnClickListener(this);
     }
+
 
     @Override
     protected void initData() {
@@ -119,4 +118,5 @@ public class QwActivity extends ToobarBaseActivity implements View.OnClickListen
         super.onDestroy();
         CodeUtils.isLightEnable(false);
     }
+
 }
