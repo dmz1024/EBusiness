@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="?android:attr/selectableItemBackground"
     android:paddingLeft="@dimen/size10"
     android:paddingRight="@dimen/size10"
     android:paddingTop="@dimen/size10">
@@ -17,8 +16,8 @@
 
     <ImageView
         android:id="@+id/ivRight"
-        android:layout_width="@dimen/size50"
-        android:layout_height="@dimen/size50"
+        android:layout_width="@dimen/size45"
+        android:layout_height="@dimen/size45"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:scaleType="fitXY" />
@@ -26,7 +25,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/size0.5"
-        android:layout_below="@id/tvTitle"
+        android:layout_below="@id/ivRight"
         android:layout_marginTop="@dimen/size10"
         android:background="#f6f6f6" />
 </RelativeLayout>

@@ -46,6 +46,17 @@ public class CommonAdapterHelper {
         public String content;
         public int layout;
         public int icon;
+        public String rightImage;
+
+
+        public String getRightImage() {
+            return rightImage;
+        }
+
+        public CommonBean setRightImage(String rightImage) {
+            this.rightImage = rightImage;
+            return this;
+        }
 
         public CommonBean setIcon(int icon) {
             this.icon = icon;

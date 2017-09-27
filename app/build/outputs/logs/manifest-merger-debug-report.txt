@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-62:12
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-63:12
 	package
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
@@ -67,7 +67,7 @@ MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:20:22-78
 application
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:22:5-60:19
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:22:5-61:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dengmingzhi/.android/build-cache/4722fde9f602c40060f5962a048274729a9c8d40/output/AndroidManifest.xml:9:5-20
 MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:16:5-27:19
 MERGED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.android/build-cache/e8447d57349478ef540c1dfd460a463989862029/output/AndroidManifest.xml:11:5-18:19
@@ -189,6 +189,10 @@ activity#com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity
 ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:59:9-83
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:59:19-71
+activity#com.ediancha.edcbusiness.activity.my.MyInfoActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:60:9-73
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:60:19-61
 uses-sdk
 INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dengmingzhi/.android/build-cache/4722fde9f602c40060f5962a048274729a9c8d40/output/AndroidManifest.xml:5:5-7:41

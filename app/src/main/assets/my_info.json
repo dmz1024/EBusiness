@@ -1,6 +1,6 @@
 [
   {
-    "iViewType": 4,
+    "iViewType": 5,
     "title": "头像",
     "rightImage": ""
   },
@@ -26,7 +26,7 @@
     "rightImage": "icon_wallet_password_arrow"
   },
   {
-    "iViewType": 5
+    "iViewType": 4
   },
   {
     "iViewType": 3,
@@ -36,13 +36,16 @@
   {
     "iViewType": 3,
     "title": "微信",
-    "content": "未绑定",
+    "content": "",
     "rightImage": "icon_wallet_password_arrow"
   },
   {
     "iViewType": 3,
     "title": "QQ",
-    "content": "已绑定 邓如果",
+    "content": "",
     "rightImage": "icon_wallet_password_arrow"
+  },
+  {
+    "iViewType": 6
   }
 ]
