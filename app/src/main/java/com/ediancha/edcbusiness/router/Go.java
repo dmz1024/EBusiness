@@ -150,4 +150,19 @@ public class Go {
     public static void goWebView() {
         ARouter.getInstance().build(RouterUrl.WEBVIEW_ACTIVITY).navigation();
     }
+    /**
+     *缴纳押金
+     */
+    public static void goSubmitDeposit() {
+        ARouter.getInstance().build(RouterUrl.SUBMITDEPOSIT_ACTIVITY).navigation();
+    }
+
+    /**
+     *空间详情
+     */
+    public static void goSpaceDetail() {
+        ARouter.getInstance().build(RouterUrl.SPACEDETAIL_ACTIVITY).navigation();
+    }
+
+
 }

@@ -13,6 +13,7 @@ import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.helper.WebViewHelper;
 
 /**
  * Created by Admin on 2017/9/27.
@@ -22,7 +23,8 @@ public class WebViewActivity extends ToobarBaseActivity {
 
     private WebView mWebView;
     private ProgressBar mProgressBar;
-    private WebSettings mWebSettings;
+
+    private WebViewHelper mHelper;
 
     @Autowired
     public String H5;
@@ -34,26 +36,17 @@ public class WebViewActivity extends ToobarBaseActivity {
         mWebView = findViewById(R.id.wv_show);
         mProgressBar = findViewById(R.id.pb_gress);
 
-        if (H5==null){
-            H5="https://www.baidu.com";
+        mHelper = mHelper == null ? new WebViewHelper(mWebView) : mHelper;
+        if (H5 == null) {
+            H5 = "https://www.baidu.com";
         }
         initWV();
     }
 
     private void initWV() {
-        mWebSettings = mWebView.getSettings();
-        mWebSettings.setJavaScriptEnabled(true);
-        mWebSettings.setBlockNetworkImage(false);
-        //设置自适应屏幕，两者合用
-        mWebSettings.setUseWideViewPort(true); //将图片调整到适合webview的大小
-        mWebSettings.setLoadWithOverviewMode(true); // 缩放至屏幕的大小
-        mWebSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK); //关闭webview中缓存
-        mWebSettings.setAllowFileAccess(true); //设置可以访问文件
-        mWebSettings.setJavaScriptCanOpenWindowsAutomatically(true); //支持通过JS打开新窗口
-        mWebSettings.setLoadsImagesAutomatically(true); //支持自动加载图片
-        mWebSettings.setDefaultTextEncodingName("utf-8");//设置编码格式
 
         mWebView.loadUrl(H5);
+
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -61,6 +54,7 @@ public class WebViewActivity extends ToobarBaseActivity {
                 return true;
             }
         });
+
         mWebView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
@@ -91,7 +85,6 @@ public class WebViewActivity extends ToobarBaseActivity {
     //设置返回键动作（防止按返回键直接退出程序)
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        // TODO 自动生成的方法存根
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             if (mWebView.canGoBack()) {//当webview不是处于第一页面时，返回上一个页面
                 mWebView.goBack();

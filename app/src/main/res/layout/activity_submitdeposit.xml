@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_f6f6f6">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.dmz.library.dmzapi.view.custom.DmzBar
+            android:id="@+id/dmzBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fff"
+        android:layout_marginTop="@dimen/size0.5"
+        android:padding="@dimen/size20">
+
+        <TextView
+            android:id="@+id/tv_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/color_333"
+            android:text=" 押金(可退)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/color_666"
+            android:text="押金可原路返回"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_below="@id/tv_deposit"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/color_333"
+            android:text=" 299元"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_fff"
+        android:layout_marginTop="@dimen/size0.5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/in_type"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/pay_type_chose" />
+
+        <TextView
+            android:id="@+id/tv_bmony"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_f00"
+            android:text="限时特惠，首次缴纳押金可获得10元"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size20"/>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            style="@style/tv_but_style"
+            android:text="支付押金"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_xysubmit"
+            android:text="芝麻信用650分以上免押金"
+            android:gravity="center"
+            android:background="@drawable/shape_fill_square"
+            android:padding="10dp"
+            android:layout_marginLeft="@dimen/size20"
+            android:layout_marginRight="@dimen/size20"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/color_999"
+            />
+    </LinearLayout>
+</LinearLayout>

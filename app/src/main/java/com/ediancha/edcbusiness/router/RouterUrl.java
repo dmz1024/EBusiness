@@ -108,4 +108,14 @@ public interface RouterUrl {
      * H5页面
      */
     String WEBVIEW_ACTIVITY = "/activity/help/webview";
+
+    /**
+     * 缴纳押金
+     */
+    String SUBMITDEPOSIT_ACTIVITY = "/activity/walletbag/submitdeposit";
+
+    /**
+     * 空间详情
+     */
+    String SPACEDETAIL_ACTIVITY = "/activity/space/spaceDetail";
 }
