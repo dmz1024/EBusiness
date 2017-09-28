@@ -69,12 +69,11 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
         addDatas(bean.getMoneys());
     }
 
-
     @OnClick({R.id.tv_submit})
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_submit:
-                Log.d("你好", "ddd");
+
                 break;
         }
     }
@@ -90,68 +89,40 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
         switch (viewType) {
             case 0:
                 holder
-                        .setText(R.id.tv_cmoney, chargeBean.getcMoney())
-                        .setText(R.id.tv_zmoney, chargeBean.getsMoney());//test
-                LinearLayout view = holder.getView(R.id.cv_bg);
-                TextView cMoney = holder.getView(R.id.tv_cmoney);
-
-                cMoney.setTextColor(chargeBean.getCheck() == 1 ? getResources().getColor(R.color.color_f00) : getResources().getColor(R.color.color_333));
-                view.setBackgroundDrawable(chargeBean.getCheck() == 1 ? getResources().getDrawable(R.drawable.shape_circle_style) : getResources().getDrawable(R.drawable.shape_circle_ra2));
-                holder.getView(R.id.iv_show).setVisibility(chargeBean.getCheck() == 1 ? View.VISIBLE : View.INVISIBLE);
-
+                        .setText(R.id.tv_cmoney, chargeBean.getcMoney());
+                setShapeBackground(viewType, holder, chargeBean);
                 break;
             case 1:
-                final EditText etCMoney = holder.getView(R.id.et_cmoney);
-                holder.setText(R.id.tv_zmoney, chargeBean.getsMoney());
+                EditText etCMoney = holder.getView(R.id.et_cmoney);
+                setShapeBackground(viewType, holder, chargeBean);
+                inputListener(etCMoney, holder, position, chargeBean);
+                break;
+        }
+    }
+
+    private void setShapeBackground(int viewType, ViewHolder holder, ChargeBean.Moneys chargeBean) {
+        holder
+                .setText(R.id.tv_zmoney, chargeBean.getsMoney());//test
+        LinearLayout view = holder.getView(R.id.cv_bg);
+        view.setBackgroundDrawable(chargeBean.getCheck() == 1 ? getResources().getDrawable(R.drawable.shape_circle_style) : getResources().getDrawable(R.drawable.shape_circle_ra2));
+        holder.getView(R.id.iv_show).setVisibility(chargeBean.getCheck() == 1 ? View.VISIBLE : View.INVISIBLE);
+        switch (viewType) {
+            case 0:
+                TextView cMoney = holder.getView(R.id.tv_cmoney);
+                cMoney.setTextColor(chargeBean.getCheck() == 1 ? getResources().getColor(R.color.color_f00) : getResources().getColor(R.color.color_333));
+                break;
+            case 1:
+                EditText etCMoney = holder.getView(R.id.et_cmoney);
                 if (chargeBean.getwMoney() != null) {
                     etCMoney.setText(chargeBean.getwMoney());
                 } else {
                     etCMoney.setHint(chargeBean.getcMoney());
                 }
                 etCMoney.setTextColor(chargeBean.getCheck() == 1 ? getResources().getColor(R.color.color_f00) : getResources().getColor(R.color.color_333));
-                holder.getView(R.id.cv_bg).setBackgroundDrawable(chargeBean.getCheck() == 1 ? getResources().getDrawable(R.drawable.shape_circle_style) : getResources().getDrawable(R.drawable.shape_circle_ra2));
-                holder.getView(R.id.iv_show).setVisibility(chargeBean.getCheck() == 1 ? View.VISIBLE : View.INVISIBLE);
-
-                etCMoney.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        etCMoney.setTextColor(getResources().getColor(R.color.color_f00));
-                        holder.getView(R.id.cv_bg).setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_circle_style));
-                        if (etCMoney != null) {
-                            ArrayList<ChargeBean.Moneys> datas = (ArrayList<ChargeBean.Moneys>) mAdapterHelper.getDatas();
-                            for (int i = 0; i < datas.size(); i++) {
-                                if (position == i) {
-                                    ChargeBean.Moneys moneys = datas.get(i);
-                                    moneys.setCheck(1);
-                                } else {
-                                    ChargeBean.Moneys moneys = datas.get(i);
-                                    moneys.setCheck(0);
-                                }
-                            }
-                            mAdapterHelper.notifyDataSetChanged();
-                        }
-                    }
-                });
-                etCMoney.addTextChangedListener(new TextWatcher() {
-                    @Override
-                    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                    }
-
-                    @Override
-                    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                        chargeBean.setwMoney(charSequence.toString());
-                    }
-
-                    @Override
-                    public void afterTextChanged(Editable editable) {
-
-                    }
-                });
-
                 break;
         }
     }
+
 
     //adapter点击监听 check==0未选中，1选中
     @Override
@@ -167,6 +138,47 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
         }
         addDatas(datas);
         mAdapterHelper.notifyDataSetChanged();
+    }
+
+
+    private void inputListener(final EditText etCMoney, final ViewHolder holder, final int position, final ChargeBean.Moneys chargeBean) {
+        etCMoney.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                etCMoney.setTextColor(getResources().getColor(R.color.color_f00));
+                holder.getView(R.id.cv_bg).setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_circle_style));
+                if (etCMoney != null) {
+                    ArrayList<ChargeBean.Moneys> datas = (ArrayList<ChargeBean.Moneys>) mAdapterHelper.getDatas();
+                    for (int i = 0; i < datas.size(); i++) {
+                        if (position == i) {
+                            ChargeBean.Moneys moneys = datas.get(i);
+                            moneys.setCheck(1);
+                        } else {
+                            ChargeBean.Moneys moneys = datas.get(i);
+                            moneys.setCheck(0);
+                        }
+                    }
+                    mAdapterHelper.notifyDataSetChanged();
+                }
+            }
+        });
+        etCMoney.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                chargeBean.setwMoney(charSequence.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
     }
 
 
