@@ -1,5 +1,6 @@
 package com.dmz.library.dmzapi.utils;
 
+import android.Manifest;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
@@ -17,6 +18,7 @@ import java.util.List;
 
 public class PermissionUtil {
     public static final int CAMERA_REQUEST = 0x1;
+    public static final int FILE_WRITE_REQUEST = 0x2;
 
 
     public static PermissionUtil getInstance() {
@@ -71,6 +73,10 @@ public class PermissionUtil {
 
     public void checkCamera(Context ctx) {
         check(ctx, CAMERA_REQUEST, Permission.CAMERA);
+    }
+
+    public void checkCameraAndFile(Context ctx) {
+        check(ctx,PermissionUtil.FILE_WRITE_REQUEST, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
     private OnCheckSuccessPermission onSuccessPermission;
