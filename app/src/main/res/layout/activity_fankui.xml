@@ -30,6 +30,7 @@
         android:paddingRight="@dimen/size10"
         android:textSize="@dimen/sp16"
         android:textColor="@color/color_666"
+
         android:text="问题类型"
         android:singleLine="true"
         android:ellipsize="end"

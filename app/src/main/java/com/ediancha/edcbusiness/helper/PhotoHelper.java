@@ -61,15 +61,14 @@ public class PhotoHelper {
                         int currentapiVersion = android.os.Build.VERSION.SDK_INT;
                         Log.e("currentapiVersion", "currentapiVersion====>" + currentapiVersion);
                         if (currentapiVersion < 24) {
-                            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(mTmpFile));
-                            mActivity.startActivityForResult(intent, CROP_PHOTO);
+                            photoUri = Uri.fromFile(mTmpFile);
                         } else {
                             ContentValues contentValues = new ContentValues(1);
                             contentValues.put(MediaStore.Images.Media.DATA, mTmpFile.getAbsolutePath());
                             photoUri= mActivity.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
-                            intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
-                            mActivity.startActivityForResult(intent, CROP_PHOTO);
                         }
+                        intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
+                        mActivity.startActivityForResult(intent, CROP_PHOTO);
                     }
                 }
             }
@@ -85,6 +84,7 @@ public class PhotoHelper {
             uri = data.getData();
         }else {
             uri=photoUri;
+
         }
         return FilePathUtils.getRealFilePath(mActivity, uri);
     }

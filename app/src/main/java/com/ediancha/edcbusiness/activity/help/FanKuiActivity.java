@@ -4,6 +4,7 @@ package com.ediancha.edcbusiness.activity.help;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -84,7 +85,7 @@ public class FanKuiActivity extends NotNetBaseActivity {
                     public void content(int position, ChooseStringView.IChooseString title) {
                         mTvType.setText(title.getTitle());
                     }
-                }).addData("门锁损毁", "设备损毁").show(FanKuiActivity.this);
+                }).setGravity(Gravity.CENTER).addData("门锁损毁", "设备损毁").show(FanKuiActivity.this);
             }
         });
     }
@@ -106,8 +107,8 @@ public class FanKuiActivity extends NotNetBaseActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(mHelper.chcckPhoto(requestCode,resultCode)){
-           String path= mHelper.onActivityResult(requestCode,data);
+        if (mHelper.chcckPhoto(requestCode, resultCode)) {
+            String path = mHelper.onActivityResult(requestCode, data);
             mPicPaths.add(path);
             View inflate = View.inflate(this, R.layout.item_imageview, null);
             ImageView viewById = inflate.findViewById(R.id.iv_image);
