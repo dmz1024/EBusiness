@@ -5,6 +5,11 @@
     android:background="#fff"
     android:orientation="vertical">
 
+    <com.dmz.library.dmzapi.view.custom.DmzBar
+        android:id="@+id/dmzBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
     <ImageView
         android:id="@+id/ivCha"
         android:layout_width="wrap_content"
@@ -58,6 +63,7 @@
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
+                    android:text="18326167257"
                     android:id="@+id/etName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -89,6 +95,7 @@
                     android:layout_centerVertical="true">
 
                     <EditText
+                        android:text="123456"
                         android:id="@+id/etCode"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

@@ -11,6 +11,7 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.ExpenseTipsBean;
 import com.ediancha.edcbusiness.bean.SpaceOrderBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 /**
@@ -35,7 +36,7 @@ public class SpaceOrderActivity extends MoreDataBaseActivity<SpaceOrderBean.Data
 
     @Override
     protected void initMoreBuilder() {
-        mBuilder.addView(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_activity_order_space).setConvertInterface(this));
+        mBuilder.addView(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_activity_order_space).setConvertInterface(this).setOnClickListener(this));
 
     }
 
@@ -54,5 +55,9 @@ public class SpaceOrderActivity extends MoreDataBaseActivity<SpaceOrderBean.Data
                 .setText(R.id.tvTitle, data.getTitle());
     }
 
-
+    @Override
+    public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
+        super.onItemClick(viewType, adapterHelper, position);
+        Go.goSpaceOrderInProgeressDesc(adapterHelper.<SpaceOrderBean.Data>getT(position).getOrderId());
+    }
 }

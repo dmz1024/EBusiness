@@ -66,6 +66,7 @@
         <activity android:name=".activity.order.GoodOrderActivity"></activity>
         <activity android:name=".activity.order.GoodOrderDescActivity"></activity>
         <activity android:name=".activity.my.MyInfoActivity"></activity>
+        <activity android:name=".activity.order.SpaceOrderInProgeressDescActivity"></activity>
 
 
 

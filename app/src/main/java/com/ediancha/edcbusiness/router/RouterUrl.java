@@ -118,4 +118,9 @@ public interface RouterUrl {
      * 空间详情
      */
     String SPACEDETAIL_ACTIVITY = "/activity/space/spaceDetail";
+
+    /**
+     * 空间订单详情
+     */
+    String SPACE_ORDER_IN_PROGERESS_DESC_ACTIVITY = "/activity/order/spaceOrderInProgeressDesc";
 }

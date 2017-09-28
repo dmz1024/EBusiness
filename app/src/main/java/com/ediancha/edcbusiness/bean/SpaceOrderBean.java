@@ -12,7 +12,11 @@ public class SpaceOrderBean extends BaseListBean<SpaceOrderBean.Data> {
         public String statusInfo;
         public String title;
         public String[] info;
+        public String orderId;
 
+        public String getOrderId() {
+            return orderId;
+        }
 
         public String getStatus() {
             return statusInfo;

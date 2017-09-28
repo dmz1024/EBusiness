@@ -29,7 +29,7 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
     @Override
     protected void initView() {
         super.initView();
-
+        TestWindowManager._init(this);
         TestWindowManager.getInstance();
         fg_qw = findViewById(R.id.fg_qw);
         iv_bottom_header = findViewById(R.id.iv_bottom_header);
