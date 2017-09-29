@@ -3,6 +3,7 @@ package com.dmz.library.dmzapi;
 import android.app.Application;
 import android.content.Context;
 
+import com.dmz.library.dmzapi.utils.AnyPref;
 import com.dmz.library.dmzapi.utils.ScreenUtil;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
@@ -36,6 +37,7 @@ public class MyApp extends Application {
     protected void initData() {
         ScreenUtil._init(this);
         initOkGo();
+        AnyPref._init(this);
     }
 
     private void initOkGo() {
@@ -81,4 +83,6 @@ public class MyApp extends Application {
 //                .addCommonHeaders(headers)                      //全局公共头
                 .addCommonParams(params);                       //全局公共参数
     }
+
+
 }

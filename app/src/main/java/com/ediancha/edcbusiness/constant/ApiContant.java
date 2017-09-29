@@ -57,10 +57,6 @@ public interface ApiContant {
      */
     String COUPON = BASE_URL + "buleline/getData";
 
-    /**
-     * 充值
-     */
-    String CHARGE = BASE_URL + "buleline/getData";
 
     /**
      * 我的资料
@@ -80,14 +76,14 @@ public interface ApiContant {
     /**
      * 空间详情
      */
-    String SPACEDETAIL_URL= BASE_URL + "buleline/getData";
+    String SPACEDETAIL_URL = BASE_URL + "buleline/getData";
     /**
      * 实名认证
      */
-    String AUTHER_URL= BASE_URL + "buleline/getData";
+    String AUTHER_URL = BASE_URL + "buleline/getData";
 
 
-    String BASEAPI = "http://192.168.1.9/api/";
+    String BASEAPI = "http://s.east-profit.com/api.php/";
 
 
     /**
@@ -100,4 +96,11 @@ public interface ApiContant {
      * 获取验证码
      */
     String GET_CODE = BASEAPI + "users/getPhoneVerifyCode";
+
+
+    /**
+     * 充值
+     */
+    String CHARGE = BASEAPI + "marketin/antiscour";
+
 }
