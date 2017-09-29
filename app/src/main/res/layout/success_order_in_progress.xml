@@ -56,7 +56,7 @@
         android:layout_width="75dp"
         android:layout_height="25dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/shape_login_code_checked"
+        android:background="@drawable/shape_login_code"
         android:text="我要延时"
         android:textColor="@color/color_333"
         android:textSize="12sp" />

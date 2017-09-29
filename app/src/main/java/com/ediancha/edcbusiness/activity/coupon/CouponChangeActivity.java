@@ -1,7 +1,5 @@
 package com.ediancha.edcbusiness.activity.coupon;
 
-import android.content.Context;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -9,15 +7,12 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
-import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
-import com.dmz.library.dmzapi.view.custom.DmzBar;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.constant.NormalContant;
-import com.ediancha.edcbusiness.helper.ToastUtils;
+import com.ediancha.edcbusiness.helper.MyToast;
 import com.ediancha.edcbusiness.presenter.coupon.CouponChangePresenter;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
@@ -61,10 +56,10 @@ public class CouponChangeActivity extends NotNetBaseActivity implements CouponCh
     @Override
     public void successCode(BaseBean bean) {
         if (bean.getCode()== NormalContant.SUCCESS_CODE){
-            ToastUtils.getInstance().normal(this,"兑换成功!");
+            MyToast.normal("兑换成功!");
             finish();
         }else {
-            ToastUtils.getInstance().error(this,bean.msg);
+            MyToast.error(bean.msg);
         }
     }
 
@@ -72,7 +67,7 @@ public class CouponChangeActivity extends NotNetBaseActivity implements CouponCh
     void onclick(){
         String number = mEtNumber.getText().toString().trim();
         if (TextUtils.isEmpty(number)){
-            ToastUtils.getInstance().error(this,"兑换码不能为空!");
+            MyToast.error("兑换码不能为空!");
         }else {
             mCouponChangePresenter.exchangeCoupon("1",number);
         }

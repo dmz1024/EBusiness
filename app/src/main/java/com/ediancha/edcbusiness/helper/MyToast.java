@@ -9,25 +9,23 @@ import es.dmoral.toasty.Toasty;
  * Created by Admin on 2017/9/29.
  */
 
-public class ToastUtils {
-
-
-    private static ToastUtils mToastUtils;
+public class MyToast {
 
     private static Toast mToast;
-    private Context mContext;
+    private static Context mContext;
 
-    public static ToastUtils getInstance() {
-        return mToastUtils != null ? mToastUtils : new ToastUtils();
+    public static void _init(Context context) {
+        mContext = context;
     }
 
     /**
      * 错误提示
      */
-    public void error(Context mContext, String msg) {
+    public static void error(String msg) {
         if (mToast != null) {
             mToast.cancel();
         }
+
         mToast = Toasty.error(mContext, msg, Toast.LENGTH_LONG);
         mToast.show();
     }
@@ -35,7 +33,7 @@ public class ToastUtils {
     /**
      * 警告
      */
-    public void warn(Context mContext, String msg) {
+    public static void warn(String msg) {
         if (mToast != null) {
             mToast.cancel();
         }
@@ -44,13 +42,13 @@ public class ToastUtils {
     }
 
     /**
-     * 警告
+     * 正确
      */
-    public void normal(Context mContext, String msg) {
+    public static void normal(String msg) {
         if (mToast != null) {
             mToast.cancel();
         }
-        mToast = Toasty.normal(mContext, msg, Toast.LENGTH_LONG);
+        mToast = Toasty.info(mContext, msg, Toast.LENGTH_SHORT);
         mToast.show();
     }
 }
