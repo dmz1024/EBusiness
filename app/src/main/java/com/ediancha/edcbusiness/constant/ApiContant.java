@@ -77,6 +77,14 @@ public interface ApiContant {
      * 我的进行中订单
      */
     String SPACE_ORDER_IN_PROGRESS = BASE_URL + "buleline/getData";
+    /**
+     * 空间详情
+     */
+    String SPACEDETAIL_URL= BASE_URL + "buleline/getData";
+    /**
+     * 实名认证
+     */
+    String AUTHER_URL= BASE_URL + "buleline/getData";
 
 
     String BASEAPI = "http://192.168.1.9/api/";

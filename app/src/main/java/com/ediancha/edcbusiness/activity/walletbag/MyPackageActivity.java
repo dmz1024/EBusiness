@@ -46,14 +46,16 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
 
     @Override
     protected void initDataBuilder() {
-        mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW).setSuccessRid(R.layout.activity_mypackage);
+        mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW)
+                .setSuccessRid(R.layout.activity_mypackage);
     }
 
     @Override
     protected void initDmzBuilder() {
 
         dBuilder.setaClass(MyPackageBean.class)
-                .setUrl(ApiContant.MYPACKAGE).setParms("type", "9");
+                .setUrl(ApiContant.MYPACKAGE)
+                .setParms("type", "9");
     }
 
     @Override

@@ -7,7 +7,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="visible">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,15 +22,13 @@
                     android:id="@+id/uvp_pager"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:layout_centerInParent="true"
-                    android:background="@android:color/darker_gray">
-                </com.tmall.ultraviewpager.UltraViewPager>
+                   />
                 <TextView
                     android:id="@+id/tv_envir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/size20"
-                    android:layout_marginTop="@dimen/size20"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_marginTop="@dimen/size10"
                     android:text="空气质量"
                     android:textColor="@color/color_333"
                     android:textSize="@dimen/sp15"
@@ -39,14 +38,12 @@
                     android:paddingLeft="@dimen/size10"
                     android:paddingRight="@dimen/size10"/>
                 <LinearLayout
+                    android:id="@+id/ln_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_alignParentBottom="true"
                     android:gravity="center_vertical"
-                    android:layout_marginBottom="@dimen/size20"
-                    android:paddingLeft="@dimen/size20"
-                    android:paddingRight="@dimen/size20">
+                    android:layout_alignParentBottom="true">
                     <TextView
                         android:id="@+id/tv_sname"
                         android:layout_width="wrap_content"
@@ -65,7 +62,8 @@
                         android:background="@color/color_ccc"
                         android:paddingLeft="@dimen/size10"
                         android:paddingRight="@dimen/size10"
-                        android:paddingTop="@dimen/size5"
+                        android:paddingTop="@dimen/size2"
+                        android:paddingBottom="@dimen/size2"
                         android:text="空闲"
                         android:textColor="@color/color_333"
                         android:textSize="@dimen/sp15" />
@@ -73,12 +71,11 @@
                         android:id="@+id/tv_time"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="@dimen/size10"
-                        android:paddingRight="@dimen/size10"
                         android:paddingTop="@dimen/size5"
                         android:text="￥200元/小时"
                         android:textColor="@color/color_fff"
                         android:textSize="@dimen/sp15"
+                        android:layout_marginRight="@dimen/size10"
                         android:gravity="end"/>
                 </LinearLayout>
             </RelativeLayout>
@@ -87,7 +84,7 @@
                 android:id="@+id/tv_local"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableRight="@mipmap/icon_tanhao"
+                android:drawableRight="@mipmap/icon_weizhi"
                 android:text="东方明珠25k"
                 android:textSize="@dimen/sp15"
                 android:textColor="@color/color_666"
@@ -100,7 +97,7 @@
                 android:id="@+id/tv_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableRight="@mipmap/icon_tanhao"
+                android:drawableRight="@mipmap/icon_kongjian"
                 android:text="东方明珠25k"
                 android:textSize="@dimen/sp15"
                 android:textColor="@color/color_666"
@@ -119,18 +116,31 @@
                 <WebView
                     android:id="@+id/wv_webview"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></WebView>
+                    android:layout_height="wrap_content"/>
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/rl_user"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/rl_wv"
-                android:layout_marginTop="@dimen/size10">
+                android:layout_marginTop="@dimen/size10"
+                android:background="@color/color_fff">
+                <TextView
+                    android:id="@+id/tv_yt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="空间用途"
+                    android:gravity="center"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/sp20"
+                    android:padding="@dimen/size10"
+                    android:background="@color/color_fff"
+                    />
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/ry_user"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_yt">
                 </android.support.v7.widget.RecyclerView>
             </RelativeLayout>
 
@@ -139,16 +149,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/rl_user"
-                android:layout_marginTop="@dimen/size10">
+                android:layout_marginTop="@dimen/size10"
+                android:background="@color/color_fff">
+                <TextView
+                    android:id="@+id/tv_kj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="空间设施"
+                    android:gravity="center"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/sp20"
+                    android:padding="@dimen/size10"
+                    android:background="@color/color_fff"
+                    />
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/ry_equip"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_kj">
                 </android.support.v7.widget.RecyclerView>
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/tv_id"
+                android:id="@+id/tv_xf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="费用明细"
@@ -156,7 +179,43 @@
                 android:textColor="@color/color_333"
                 android:textSize="@dimen/sp20"
                 android:padding="@dimen/size10"
+                android:layout_below="@+id/rl_equip"
+                android:background="@color/color_fff"
+                android:layout_marginTop="@dimen/size10"
                 />
+            <TextView
+                android:id="@+id/tv_xfdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/color_333"
+                android:text="xxx"
+                android:background="@color/color_fff"
+                android:layout_below="@+id/tv_xf"
+                android:padding="@dimen/size10"/>
+            <TextView
+                android:id="@+id/tv_zy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注意事项"
+                android:gravity="center"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/sp20"
+                android:padding="@dimen/size10"
+                android:layout_below="@+id/tv_xfdetail"
+                android:background="@color/color_fff"
+                android:layout_marginTop="@dimen/size10"
+                />
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/color_333"
+                android:text="xxx"
+                android:background="@color/color_fff"
+                android:layout_below="@+id/tv_zy"
+                android:padding="@dimen/size10"/>
 
         </RelativeLayout>
     </ScrollView>

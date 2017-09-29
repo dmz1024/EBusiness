@@ -123,6 +123,14 @@ public class Go {
     public static void goHelpCenter() {
         ARouter.getInstance().build(RouterUrl.HELPCENTER_ACTIVITY).navigation();
     }
+
+
+    /**
+     * 帮助中心---问题分类
+     */
+    public static void goHelpCenterNext() {
+        ARouter.getInstance().build(RouterUrl.HELPCENTER_NEXT_ACTIVITY).navigation();
+    }
     /**
      * 优惠兑换
      */
@@ -170,6 +178,15 @@ public class Go {
     public static void goSpaceOrderInProgeressDesc(String orderId) {
         ARouter.getInstance().build(RouterUrl.SPACE_ORDER_IN_PROGERESS_DESC_ACTIVITY).withString("orderId", orderId).navigation();
     }
+
+
+    /**
+     *用户认证
+     */
+    public static void goUserAuther() {
+        ARouter.getInstance().build(RouterUrl.USERAUTHER_ACTIVITY).navigation();
+    }
+
 
 
 }

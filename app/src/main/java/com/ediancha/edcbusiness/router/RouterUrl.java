@@ -91,6 +91,11 @@ public interface RouterUrl {
     String HELPCENTER_ACTIVITY = "/activity/help/helpCenter";
 
     /**
+     * 帮助中心————问题分类
+     */
+    String HELPCENTER_NEXT_ACTIVITY = "/activity/help/helpCenterNext";
+
+    /**
      * 优惠兑换
      */
     String COUPONCHANGE_ACTIVITY = "/activity/coupon/couponChange";
@@ -118,6 +123,11 @@ public interface RouterUrl {
      * 空间详情
      */
     String SPACEDETAIL_ACTIVITY = "/activity/space/spaceDetail";
+
+    /**
+     * 用户认证
+     */
+    String USERAUTHER_ACTIVITY = "/activity/my/auther";
 
     /**
      * 空间订单详情
