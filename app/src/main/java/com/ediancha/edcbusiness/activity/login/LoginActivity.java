@@ -23,6 +23,7 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.presenter.user.CodePresenter;
 import com.ediancha.edcbusiness.presenter.user.LoginPresenter;
 
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -32,7 +33,7 @@ import butterknife.OnClick;
  */
 
 @Route(path = "/activity/login/login")
-public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.ILoginView, CodePresenter.ICodeView {
+public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.ILoginView,CodePresenter.ICodeView{
 
     @BindView(R.id.ivCha)
     ImageView ivCha;
@@ -81,7 +82,7 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
                 login();
                 break;
             case R.id.tvCode:
-                codePresenter.getCode(etName.getText().toString(), 1);
+//                codePresenter.getCode(etName.getText().toString(), 1);
                 break;
 
         }

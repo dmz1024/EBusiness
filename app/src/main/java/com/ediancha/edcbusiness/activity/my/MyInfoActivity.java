@@ -17,6 +17,7 @@ import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.MyInfoBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
@@ -96,6 +97,11 @@ public class MyInfoActivity extends SingleDataBaseActivity<MyInfoBean, MyInfoBea
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
 
+                switch (position){
+                    case 4:
+                        Go.goUserAuther();
+                        break;
+                }
     }
 
     @Override

@@ -115,7 +115,10 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
             case 3:
                 Go.goMyPackage();
                 break;
-
+            case 4:
+//                Go.goSpaceDetail();
+                Go.goUserAuther();
+                break;
             case 5:
                 Go.goCouponChange();
                 break;

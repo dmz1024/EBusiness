@@ -97,6 +97,7 @@ public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, H
                 Go.goWebView();
                 break;
             case 1:
+                Go.goHelpCenterNext();
                 break;
         }
     }

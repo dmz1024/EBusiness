@@ -79,15 +79,17 @@ public class SingleDataContract<T extends IBaseBean, D> extends IContract<Single
             getSuccessView(mBuilder.getSuccessRid());
         }
 
-        initRefresh();
         notifyDataSetChanged();
+        initRefresh();
         if (mBuilder.isFirstRequest()) {
-            refreshLayout.setEnabled(false);
             if (mBuilder.getCurrentViewEnum() == SingleDataBuilder.ShowViewEnum.SUCCESSVIEW) {
                 refreshLayout.setEnabled(true);
                 refreshLayout.setRefreshing(true);
+            }else {
+                refreshLayout.setEnabled(false);
+                excute();
             }
-            excute();
+
         }
         return this;
     }

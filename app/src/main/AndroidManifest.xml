@@ -59,6 +59,9 @@
         <activity android:name=".activity.help.HelpCenterActivity"/>
         <activity android:name=".activity.help.FanKuiActivity"/>
         <activity android:name=".activity.help.WebViewActivity"/>
+        <activity android:name=".activity.space.SpaceDetailActivity"/>
+        <activity android:name=".activity.my.AutherActivity"/>
+        <activity android:name=".activity.help.HelpCenterNextActivity"/>
         <activity
             android:name=".activity.login.LoginActivity"
             android:theme="@style/LoginTheme"></activity>
