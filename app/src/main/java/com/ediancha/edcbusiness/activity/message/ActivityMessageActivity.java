@@ -146,7 +146,7 @@ public class ActivityMessageActivity extends SingleDataBaseActivity<ActivityMess
             case 2:
                 switch (position) {
                     case 0:
-
+                        Go.goSpaceDetail("2");
                         break;
                     case 1:
                         Go.goExpenseTips();

@@ -12,36 +12,37 @@ import java.util.List;
 
 public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
 
-    public static class Data{
 
-        private int id;
-        private String spaceName;
-        private String spaceImage;
-        private String spaceGalley;
-        private String spaceMoney;
-        private int spaceLoadNumber;
-        private int spaceSquareMetre;
-        private String spaceAreaPath;
-        private String spaceCover;
-        private String spaceAttention;
-        private int spaceStatus;
-        private double latitude;
-        private double longitude;
-        private String shareImage;
-        private String shareTitle;
-        private String shareUrl;
-        private String shareDesc;
-        private ShareBean share;
-        private AqiBean aqi;
-        private String costStatement;
-        private ArrayList<PurposeBean> purpose;
-        private ArrayList<FacilitiesBean> facilities;
+    /**
+     * data : {"id":2,"spaceName":"/uploads/20170921/122537fcf2b9376afa93d148708adac6.jpg","spaceImage":"s.east-profit.com/uploads/20170921/122537fcf2b9376afa93d148708adac6.jpg","spaceGalley":"","spaceMoney":"123.00","spaceLoadNumber":22,"spaceSquareMetre":12,"spaceAreaPath":"12","spaceCover":"","spaceAttention":"","spaceStatus":3,"latitude":0,"longitude":0,"purpose":[{"id":194,"targetName":"情景舒适"},{"id":195,"targetName":"视野辽阔"}],"facilities":[{"id":192,"targetName":"电视"},{"id":193,"targetName":"沙发"}],"share":{"name":"/uploads/20170921/122537fcf2b9376afa93d148708adac6.jpg","url":"www.baidu.com","info":"详细信息","logo":"s.east-profit.com/uploads/20170921/122537fcf2b9376afa93d148708adac6.jpg"},"aqi":[],"costStatement":"空间使用费每小时123.00元,每6分钟多少"}
+     */
 
-        public int getId() {
+    public static class Data {
+
+        public String id;
+        public String spaceName;
+        public String spaceImage;
+        public String spaceGalley;
+        public String spaceMoney;
+        public int spaceLoadNumber;
+        public int spaceSquareMetre;
+        public String spaceAreaPath;
+        public String spaceCover;
+        public String spaceAttention;
+        public int spaceStatus;
+        public int latitude;
+        public int longitude;
+        public ShareBean share;
+        public String costStatement;
+        public ArrayList<Purpose> purpose;
+        public ArrayList<Facilities> facilities;
+        public ArrayList<?> aqi;
+
+        public String getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public void setId(String id) {
             this.id = id;
         }
 
@@ -125,52 +126,20 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
             this.spaceStatus = spaceStatus;
         }
 
-        public double getLatitude() {
+        public int getLatitude() {
             return latitude;
         }
 
-        public void setLatitude(double latitude) {
+        public void setLatitude(int latitude) {
             this.latitude = latitude;
         }
 
-        public double getLongitude() {
+        public int getLongitude() {
             return longitude;
         }
 
-        public void setLongitude(double longitude) {
+        public void setLongitude(int longitude) {
             this.longitude = longitude;
-        }
-
-        public String getShareImage() {
-            return shareImage;
-        }
-
-        public void setShareImage(String shareImage) {
-            this.shareImage = shareImage;
-        }
-
-        public String getShareTitle() {
-            return shareTitle;
-        }
-
-        public void setShareTitle(String shareTitle) {
-            this.shareTitle = shareTitle;
-        }
-
-        public String getShareUrl() {
-            return shareUrl;
-        }
-
-        public void setShareUrl(String shareUrl) {
-            this.shareUrl = shareUrl;
-        }
-
-        public String getShareDesc() {
-            return shareDesc;
-        }
-
-        public void setShareDesc(String shareDesc) {
-            this.shareDesc = shareDesc;
         }
 
         public ShareBean getShare() {
@@ -181,40 +150,32 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
             this.share = share;
         }
 
-        public AqiBean getAqi() {
-            return aqi;
-        }
-
-        public void setAqi(AqiBean aqi) {
-            this.aqi = aqi;
-        }
-
         public String getCostStatement() {
             return costStatement;
         }
 
-        public void setCostStatement(String costStatement) {
-            this.costStatement = costStatement;
-        }
 
-        public ArrayList<PurposeBean> getPurpose() {
+        public ArrayList<Purpose> getPurpose() {
             return purpose;
         }
 
-        public void setPurpose(ArrayList<PurposeBean> purpose) {
-            this.purpose = purpose;
-        }
 
-        public ArrayList<FacilitiesBean> getFacilities() {
+        public ArrayList<Facilities> getFacilities() {
             return facilities;
         }
 
-        public void setFacilities(ArrayList<FacilitiesBean> facilities) {
-            this.facilities = facilities;
+        public List<?> getAqi() {
+            return aqi;
         }
 
-        public static class ShareBean {
 
+        public static class ShareBean {
+            /**
+             * name : /uploads/20170921/122537fcf2b9376afa93d148708adac6.jpg
+             * url : www.baidu.com
+             * info : 详细信息
+             * logo : s.east-profit.com/uploads/20170921/122537fcf2b9376afa93d148708adac6.jpg
+             */
 
             private String name;
             private String url;
@@ -253,116 +214,15 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
                 this.logo = logo;
             }
         }
-
-        public static class AqiBean {
-
-            private InrdoorBean inrdoor;
-            private OutdoorBean outdoor;
-
-            public InrdoorBean getInrdoor() {
-                return inrdoor;
-            }
-
-            public void setInrdoor(InrdoorBean inrdoor) {
-                this.inrdoor = inrdoor;
-            }
-
-            public OutdoorBean getOutdoor() {
-                return outdoor;
-            }
-
-            public void setOutdoor(OutdoorBean outdoor) {
-                this.outdoor = outdoor;
-            }
-
-            public static class InrdoorBean {
-
-
-                private String aqi;
-                private String aq;
-                private String a;
-                private int type;
-
-                public String getAqi() {
-                    return aqi;
-                }
-
-                public void setAqi(String aqi) {
-                    this.aqi = aqi;
-                }
-
-                public String getAq() {
-                    return aq;
-                }
-
-                public void setAq(String aq) {
-                    this.aq = aq;
-                }
-
-                public String getA() {
-                    return a;
-                }
-
-                public void setA(String a) {
-                    this.a = a;
-                }
-
-                public int getType() {
-                    return type;
-                }
-
-                public void setType(int type) {
-                    this.type = type;
-                }
-            }
-
-            public static class OutdoorBean {
-
-
-                private String aqi;
-                private String aq;
-                private String a;
-                private int type;
-
-                public String getAqi() {
-                    return aqi;
-                }
-
-                public void setAqi(String aqi) {
-                    this.aqi = aqi;
-                }
-
-                public String getAq() {
-                    return aq;
-                }
-
-                public void setAq(String aq) {
-                    this.aq = aq;
-                }
-
-                public String getA() {
-                    return a;
-                }
-
-                public void setA(String a) {
-                    this.a = a;
-                }
-
-                public int getType() {
-                    return type;
-                }
-
-                public void setType(int type) {
-                    this.type = type;
-                }
-            }
-        }
     }
-    public static class PurposeBean extends ViewBaseType{
+    public static class Purpose extends ViewBaseType{
+        /**
+         * id : 194
+         * targetName : 情景舒适
+         */
 
-        private int id;
-        private int type;
-        private String targetName;
+        public int id;
+        public String targetName;
 
         public int getId() {
             return id;
@@ -370,14 +230,6 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
 
         public void setId(int id) {
             this.id = id;
-        }
-
-        public int getType() {
-            return type;
-        }
-
-        public void setType(int type) {
-            this.type = type;
         }
 
         public String getTargetName() {
@@ -394,11 +246,14 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
         }
     }
 
-    public static class FacilitiesBean extends ViewBaseType{
+    public static class Facilities extends ViewBaseType{
+        /**
+         * id : 192
+         * targetName : 电视
+         */
 
-        private int id;
-        private int type;
-        private String targetName;
+        public int id;
+        public String targetName;
 
         public int getId() {
             return id;
@@ -406,14 +261,6 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
 
         public void setId(int id) {
             this.id = id;
-        }
-
-        public int getType() {
-            return type;
-        }
-
-        public void setType(int type) {
-            this.type = type;
         }
 
         public String getTargetName() {
@@ -424,9 +271,5 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
             this.targetName = targetName;
         }
 
-        @Override
-        public int getViewType() {
-            return 0;
-        }
     }
 }

@@ -14,66 +14,61 @@ public class ChargeBean extends BaseBean<ChargeBean.Data> {
 
 
     public static class Data  {
-        public String surplus;
+        public String zvMoney;
         public ArrayList<Moneys> moneys;
 
         public ArrayList<Moneys> getMoneys() {
-            moneys.add((Moneys) new Moneys().setcMoney("其他金额").setsMoney("不赠送").setViewType(1));
+            if(moneys.size()>0){
+                moneys.get(0).check=true;
+            }
+            moneys.add((Moneys) new Moneys().setViewType(1));
             return moneys;
         }
 
         public String getSurplus() {
-            return surplus;
+            return zvMoney;
         }
 
         public void setSurplus(String surplus) {
-            this.surplus = surplus;
+            this.zvMoney = surplus;
         }
     }
 
     public static class Moneys extends ViewBaseType {
-        public String cMoney;
+        public String id;
+        public String rechargeAmount;
+        public String giftAmount;
 
-        public String sMoney;
+        public boolean check;
 
-        public int check;
-
-        public String wMoney;
-
-
-        public String getwMoney() {
-            return wMoney;
+        public String getId() {
+            return id;
         }
 
-        public Moneys setwMoney(String wMoney) {
-            this.wMoney = wMoney;
-            return this;
-        }
-
-        public int getCheck() {
+        public boolean getCheck() {
             return check;
         }
 
-        public void setCheck(int check) {
+        public Moneys setCheck(boolean check) {
             this.check = check;
-
+            return this;
         }
 
         public String getcMoney() {
-            return cMoney;
+            return "充"+rechargeAmount+"元";
         }
 
         public Moneys setcMoney(String cMoney) {
-            this.cMoney = cMoney;
+            this.giftAmount = cMoney;
             return this;
         }
 
         public String getsMoney() {
-            return sMoney;
+            return "赠送"+giftAmount+"元";
         }
 
         public Moneys setsMoney(String sMoney) {
-            this.sMoney = sMoney;
+            this.giftAmount = sMoney;
             return this;
         }
     }

@@ -54,11 +54,11 @@ public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, H
     private void initRv(HelpCenterBean.Data bean) {
 
         mAdapterHelperOne=AdapterHelper._instance(this,mRecyOne)
-                ._initData(bean.getHot()).setLayoutManager(new LinearLayoutManager(this))
+                ._initData(bean.getHots()).setLayoutManager(new LinearLayoutManager(this))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_helpcenter_go).setConvertInterface(this).setOnClickListener(this));
 
         mAdapterHelperTwo=AdapterHelper._instance(this,mRecyTwo)
-                ._initData(bean.getType()).setLayoutManager(new LinearLayoutManager(this))
+                ._initData(bean.getCategorys()).setLayoutManager(new LinearLayoutManager(this))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.item_helpcenter_go).setConvertInterface(this).setOnClickListener(this));
 
     }
@@ -73,8 +73,7 @@ public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, H
     protected void initDmzBuilder() {
 
         dBuilder.setaClass(HelpCenterBean.class)
-                .setUrl(ApiContant.HELPCENTER_URL)
-                .setParms("type", "13");
+                .setUrl(ApiContant.HELPCENTER_URL);
     }
 
 
@@ -93,11 +92,12 @@ public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, H
 
         switch (viewType){
             case 0:
-                ArrayList<HelpCenterBean.Data.HotBean> hotBeans = (ArrayList<HelpCenterBean.Data.HotBean>) mAdapterHelperOne.getDatas();
-                Go.goWebView();
+                HelpCenterBean.HotsBean hotsBean= (HelpCenterBean.HotsBean) adapterHelper.getDatas().get(position);
+                Go.goWebView(hotsBean.id);
                 break;
             case 1:
-                Go.goHelpCenterNext();
+                HelpCenterBean.CategorysBean categorysBean= (HelpCenterBean.CategorysBean) adapterHelper.getDatas().get(position);
+                Go.goHelpCenterNext(categorysBean.getPid(),categorysBean.getName());
                 break;
         }
     }
@@ -107,25 +107,20 @@ public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, H
     }
 
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        ButterKnife.bind(this);
-    }
 
     @Override
     public void convert(int viewType, ViewHolder holder, IType iType, int position) {
 
         switch (viewType){
             case 0:
-                HelpCenterBean.Data.HotBean hotBean = (HelpCenterBean.Data.HotBean) iType;
+                HelpCenterBean.HotsBean hotsBean = (HelpCenterBean.HotsBean) iType;
                 holder
-                        .setText(R.id.tv_title,hotBean.getTitle());
+                        .setText(R.id.tv_title,hotsBean.getTitle());
                 break;
             case 1:
-                HelpCenterBean.Data.TypeBean typeBean = (HelpCenterBean.Data.TypeBean) iType;
+                HelpCenterBean.CategorysBean category = (HelpCenterBean.CategorysBean) iType;
                 holder
-                        .setText(R.id.tv_title,typeBean.getTitle());
+                        .setText(R.id.tv_title,category.getName());
                 break;
         }
     }

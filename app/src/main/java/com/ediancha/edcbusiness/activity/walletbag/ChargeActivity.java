@@ -3,8 +3,11 @@ package com.ediancha.edcbusiness.activity.walletbag;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -13,6 +16,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
@@ -55,18 +59,26 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
         mBuilder.setCanRefresh(true).setSuccessRid(R.layout.activity_charge);
     }
 
+    @Override
+    protected void initBarView() {
+        super.initBarView();
+        dmzBar.setText("充值");
+    }
 
     @Override
     protected void initDmzBuilder() {
 
         dBuilder.setaClass(ChargeBean.class)
                 .setUrl(ApiContant.CHARGE)
-                .setParms("type", "7");
+                .setParms("userId","1");
     }
 
     @Override
     public void onSuccess(IBasePresenter presenter, ChargeBean.Data bean) {
-        addDatas(bean.getMoneys());
+        mAdapterHelper = AdapterHelper._instance(this, mRecy)._initData(bean.getMoneys()).setLayoutManager(new GridLayoutManager(this, 3))
+                .setType(new AdapterHelper.ViewTypeInfo().setType(0).setConvertInterface(this).setRid(R.layout.item_charge).setOnClickListener(this))
+                .setType(new AdapterHelper.ViewTypeInfo().setType(1).setConvertInterface(this).setRid(R.layout.item_charge_input).setOnClickListener(this));
+
     }
 
     @OnClick({R.id.tv_submit})
@@ -78,108 +90,42 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
         }
     }
 
-    private void addDatas(ArrayList<ChargeBean.Moneys> datas) {
-        mAdapterHelper = AdapterHelper._instance(this, mRecy)._initData(datas).setLayoutManager(new GridLayoutManager(this, 3))
-                .setType(new AdapterHelper.ViewTypeInfo().setType(0).setConvertInterface(this).setRid(R.layout.item_charge).setOnClickListener(this))
-                .setType(new AdapterHelper.ViewTypeInfo().setType(1).setConvertInterface(this).setRid(R.layout.item_charge_input).setOnClickListener(this));
-    }
-
     @Override
-    public void convert(int viewType, final ViewHolder holder, final ChargeBean.Moneys chargeBean, final int position) {
+    public void convert(final int viewType, final ViewHolder holder, final ChargeBean.Moneys chargeBean, final int position) {
+        holder.getConvertView().setBackgroundResource(chargeBean.getCheck()? R.drawable.shape_circle_style :R.drawable.shape_circle_ra2);
+        holder.setVisible(R.id.iv_show,chargeBean.getCheck());
         switch (viewType) {
             case 0:
-                holder
-                        .setText(R.id.tv_cmoney, chargeBean.getcMoney());
-                setShapeBackground(viewType, holder, chargeBean);
+                holder.setText(R.id.tv_cmoney, chargeBean.getcMoney()).setText(R.id.tv_zmoney,chargeBean.getsMoney());
                 break;
             case 1:
-                EditText etCMoney = holder.getView(R.id.et_cmoney);
-                setShapeBackground(viewType, holder, chargeBean);
-                inputListener(etCMoney, holder, position, chargeBean);
+                EditText mEd = holder.getView(R.id.et_cmoney);
+                mEd.setFocusable(true);
+                mEd.requestFocus();
+                mEd.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        onItemClick(viewType, mAdapterHelper,position);
+                    }
+                });
+
                 break;
         }
     }
 
-    private void setShapeBackground(int viewType, ViewHolder holder, ChargeBean.Moneys chargeBean) {
-        holder
-                .setText(R.id.tv_zmoney, chargeBean.getsMoney());//test
-        LinearLayout view = holder.getView(R.id.cv_bg);
-        view.setBackgroundDrawable(chargeBean.getCheck() == 1 ? getResources().getDrawable(R.drawable.shape_circle_style) : getResources().getDrawable(R.drawable.shape_circle_ra2));
-        holder.getView(R.id.iv_show).setVisibility(chargeBean.getCheck() == 1 ? View.VISIBLE : View.INVISIBLE);
-        switch (viewType) {
-            case 0:
-                TextView cMoney = holder.getView(R.id.tv_cmoney);
-                cMoney.setTextColor(chargeBean.getCheck() == 1 ? getResources().getColor(R.color.color_f00) : getResources().getColor(R.color.color_333));
-                break;
-            case 1:
-                EditText etCMoney = holder.getView(R.id.et_cmoney);
-                if (chargeBean.getwMoney() != null) {
-                    etCMoney.setText(chargeBean.getwMoney());
-                } else {
-                    etCMoney.setHint(chargeBean.getcMoney());
-                }
-                etCMoney.setTextColor(chargeBean.getCheck() == 1 ? getResources().getColor(R.color.color_f00) : getResources().getColor(R.color.color_333));
-                break;
-        }
-    }
+
 
 
     //adapter点击监听 check==0未选中，1选中
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
-        ArrayList<ChargeBean.Moneys> datas = null;
-        datas = (ArrayList<ChargeBean.Moneys>) adapterHelper.getDatas();
-        for (int i = 0; i < datas.size(); i++) {
-            if (position == i) {
-                datas.get(i).check = 1;
-            } else {
-                datas.get(i).check = 0;
-            }
+        ArrayList<ChargeBean.Moneys> datas = (ArrayList<ChargeBean.Moneys>) adapterHelper.getDatas();
+        for (int i = 0; i <datas.size() ; i++) {
+            datas.get(i).setCheck(false);
         }
-        addDatas(datas);
+        datas.get(position).setCheck(true);
+
+        LogUtil.e("xxxxxxxxxx");
         mAdapterHelper.notifyDataSetChanged();
     }
-
-
-    private void inputListener(final EditText etCMoney, final ViewHolder holder, final int position, final ChargeBean.Moneys chargeBean) {
-        etCMoney.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                etCMoney.setTextColor(getResources().getColor(R.color.color_f00));
-                holder.getView(R.id.cv_bg).setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_circle_style));
-                if (etCMoney != null) {
-                    ArrayList<ChargeBean.Moneys> datas = (ArrayList<ChargeBean.Moneys>) mAdapterHelper.getDatas();
-                    for (int i = 0; i < datas.size(); i++) {
-                        if (position == i) {
-                            ChargeBean.Moneys moneys = datas.get(i);
-                            moneys.setCheck(1);
-                        } else {
-                            ChargeBean.Moneys moneys = datas.get(i);
-                            moneys.setCheck(0);
-                        }
-                    }
-                    mAdapterHelper.notifyDataSetChanged();
-                }
-            }
-        });
-        etCMoney.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                chargeBean.setwMoney(charSequence.toString());
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
-
-    }
-
-
 }

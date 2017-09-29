@@ -2,6 +2,8 @@ package com.dmz.library.dmzapi;
 
 import android.app.Application;
 import android.content.Context;
+import android.graphics.Color;
+import android.support.annotation.NonNull;
 
 import com.dmz.library.dmzapi.utils.AnyPref;
 import com.dmz.library.dmzapi.utils.ScreenUtil;
@@ -19,6 +21,7 @@ import com.lzy.okgo.model.HttpParams;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
+import es.dmoral.toasty.Toasty;
 import okhttp3.OkHttpClient;
 
 /**
@@ -37,6 +40,8 @@ public class MyApp extends Application {
     protected void initData() {
         ScreenUtil._init(this);
         initOkGo();
+
+        initToast();
         AnyPref._init(this);
     }
 
@@ -82,6 +87,20 @@ public class MyApp extends Application {
                 .setRetryCount(0)                               //全局统一超时重连次数，默认为三次，那么最差的情况会请求4次(一次原始请求，三次重连请求)，不需要可以设置为0
 //                .addCommonHeaders(headers)                      //全局公共头
                 .addCommonParams(params);                       //全局公共参数
+    }
+
+
+    private void initToast() {
+        Toasty.Config.getInstance()
+                .setErrorColor(getResources().getColor(R.color.color_error)) // optional
+                .setInfoColor(Color.WHITE) // optional
+                .setSuccessColor(getResources().getColor(R.color.color_normal)) // optional
+                .setWarningColor(getResources().getColor(R.color.color_warn)) // optional
+                .setTextColor(Color.WHITE) // optional
+                .tintIcon(true) // optional (apply textColor also to the icon)
+//                .setToastTypeface(@NonNull Typeface typeface) // optional
+                .setTextSize(18) // optional
+               .apply(); // required
     }
 
 

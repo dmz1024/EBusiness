@@ -1,9 +1,6 @@
 package com.ediancha.edcbusiness.activity.space;
 
-import android.graphics.Color;
-import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
@@ -12,12 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
@@ -69,15 +67,19 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
 
     UltraPagerAdapter mPagerAdapter;
 
+    @Autowired
+    public String id;
+
     @Override
     public void onSuccess(IBasePresenter presenter, SpaceDetailBean.Data bean) {
         mTvSname.setText(bean.getSpaceName());
         mTvStatus.setText(bean.getSpaceStatus() == 1 ? "空闲" : "使用中");
         mTvTime.setText(bean.getSpaceMoney() + "元/小时");
-        mTvLocal.setText(bean.getSpaceAreaPath());
+        mTvLocal.setText(bean.getSpaceAreaPath()+"km");
         mTvNumber.setText("最多容纳" + bean.getSpaceLoadNumber() + "人");
         mTvXfdetail.setText(bean.getCostStatement());
         mTvNotice.setText(bean.getCostStatement());
+
         initUltraViewPager(bean.getSpaceImage());
         initRecyclerView(bean);
     }
@@ -98,6 +100,8 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
 
     private void initRecyclerView(SpaceDetailBean.Data bean) {
 
+        LogUtil.e("getFacilities"+bean.getFacilities());
+        LogUtil.e("getPurpose"+bean.getPurpose());
         //室内
         AdapterHelper._instance(this, mRyUser)._initData(bean.getFacilities()).setLayoutManager(new GridLayoutManager(this, 3))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_space_textview).setConvertInterface(this));
@@ -116,7 +120,7 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     protected void initDmzBuilder() {
         dBuilder.setaClass(SpaceDetailBean.class)
                 .setUrl(ApiContant.SPACEDETAIL_URL)
-                .setParms("type", "14");
+                .setParms("id", id);
     }
 
     @Override
@@ -129,14 +133,16 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     public void convert(int viewType, ViewHolder holder, IType iType, int position) {
         switch (viewType) {
             case 0:
-                SpaceDetailBean.FacilitiesBean facilitiesBean = (SpaceDetailBean.FacilitiesBean) iType;
+
+                SpaceDetailBean.Facilities facilities = (SpaceDetailBean.Facilities) iType;
                 holder
-                        .setText(R.id.tv_type, facilitiesBean.getTargetName());
+                        .setText(R.id.tv_type, facilities.getTargetName());
+
                 break;
             case 1:
-                SpaceDetailBean.PurposeBean purposeBean = (SpaceDetailBean.PurposeBean) iType;
+                SpaceDetailBean.Purpose purpose = (SpaceDetailBean.Purpose) iType;
                 holder
-                        .setText(R.id.tv_type, purposeBean.getTargetName());
+                        .setText(R.id.tv_type, purpose.getTargetName());
                 break;
         }
     }

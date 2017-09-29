@@ -82,17 +82,17 @@ public class WebViewActivity extends ToobarBaseActivity {
     }
 
 
-    //设置返回键动作（防止按返回键直接退出程序)
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if (mWebView.canGoBack()) {//当webview不是处于第一页面时，返回上一个页面
-                mWebView.goBack();
-                return true;
-            }
-        }
-        return super.onKeyDown(keyCode, event);
-    }
+//    //设置返回键动作（防止按返回键直接退出程序)
+//    @Override
+//    public boolean onKeyDown(int keyCode, KeyEvent event) {
+//        if (keyCode == KeyEvent.KEYCODE_BACK) {
+//            if (mWebView.canGoBack()) {//当webview不是处于第一页面时，返回上一个页面
+//                mWebView.goBack();
+//                return true;
+//            }
+//        }
+//        return super.onKeyDown(keyCode, event);
+//    }
 
 
 }

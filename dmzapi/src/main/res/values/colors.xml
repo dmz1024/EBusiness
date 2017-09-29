@@ -5,4 +5,9 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorDmzBarBackground">#fff</color>
     <color name="colorDmzBarText">#666</color>
+
+    <color name="color_error">#CC0033</color>
+    <color name="color_warn">#FFFF00</color>
+    <color name="color_normal">#333333</color>
+
 </resources>

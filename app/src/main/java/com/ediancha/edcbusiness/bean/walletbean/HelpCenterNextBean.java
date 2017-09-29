@@ -1,10 +1,10 @@
 package com.ediancha.edcbusiness.bean.walletbean;
 
-import android.view.View;
-
+import com.alibaba.fastjson.annotation.JSONField;
 import com.dmz.library.dmzapi.api.bean.BaseListBean;
 import com.dmz.library.dmzapi.api.bean.ViewBaseType;
-import com.dmz.library.dmzapi.api.list.AdapterHelper;
+
+import java.util.List;
 
 /**
  * Created by Admin on 2017/9/29.
@@ -12,8 +12,23 @@ import com.dmz.library.dmzapi.api.list.AdapterHelper;
 
 public class HelpCenterNextBean extends BaseListBean<HelpCenterNextBean.Data> {
 
-    public static class Data extends ViewBaseType{
 
+
+    public static class Data extends ViewBaseType {
+        /**
+         * id : 3
+         * title : 新用户如何充值？
+         */
+
+        public int id;
+        public String title;
+
+        public int getId() {
+            return id;
+        }
+
+        public String getTitle() {
+            return title;
+        }
     }
-
 }

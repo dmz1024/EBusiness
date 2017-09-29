@@ -10,6 +10,8 @@ public interface ApiContant {
 
     String BASE_URL = "http://law.east-profit.com/app.php/home/";
 
+    String BASE_API ="http://s.east-profit.com/api.php/";
+
     /**
      * 活动消息
      */
@@ -55,8 +57,12 @@ public interface ApiContant {
     /**
      * 优惠券
      */
-    String COUPON = BASE_URL + "buleline/getData";
+    String COUPON = BASE_API + "coupon/usercoupon";
 
+    /**
+     * 优惠券兑换
+     */
+    String COUPON_CHANGE = BASE_API + "coupon/exchangeCoupon";
 
     /**
      * 我的资料
@@ -64,10 +70,14 @@ public interface ApiContant {
     String MY_INFO = BASE_URL + "buleline/getData";
 
     /**
-     * 我的资料
+     * 帮助中心
      */
-    String HELPCENTER_URL = BASE_URL + "buleline/getData";
+    String HELPCENTER_URL = BASE_API + "article/helpcenter";
 
+    /**
+     * 帮助中心--问题分类
+     */
+    String HELPCENTER_NEXT_URL = BASE_API + "article/getarticle";
 
     /**
      * 我的进行中订单
@@ -76,11 +86,11 @@ public interface ApiContant {
     /**
      * 空间详情
      */
-    String SPACEDETAIL_URL = BASE_URL + "buleline/getData";
+    String SPACEDETAIL_URL= BASE_API + "space/detail";
     /**
      * 实名认证
      */
-    String AUTHER_URL = BASE_URL + "buleline/getData";
+    String AUTHER_URL= BASE_URL + "buleline/getData";
 
 
     String BASEAPI = "http://s.east-profit.com/api.php/";
