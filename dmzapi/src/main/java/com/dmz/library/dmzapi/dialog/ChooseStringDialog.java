@@ -2,6 +2,7 @@ package com.dmz.library.dmzapi.dialog;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.dmz.library.dmzapi.R;
+import com.dmz.library.dmzapi.utils.AnimationUtil;
 import com.dmz.library.dmzapi.view.NoTitleDialoggFragment;
 import com.dmz.library.dmzapi.view.custom.ChooseStringView;
 
@@ -33,29 +35,78 @@ public class ChooseStringDialog extends NoTitleDialoggFragment implements Choose
 
     @Override
     protected int getRid() {
-        return R.layout.dialog_choose_string;
+        return gravity == Gravity.CENTER ? 0 : R.layout.dialog_choose_string;
+    }
+
+    @Override
+    protected View getmView() {
+        return csView = new ChooseStringView(getContext());
     }
 
     @Override
     protected void initView(View view) {
         super.initView(view);
-        csView = view.findViewById(R.id.csView);
-        BottomSheetBehavior<ChooseStringView> from = BottomSheetBehavior.from(csView);
-        csView.setiChooseItem(iChooseItem).setiChooseCancel(this);
-        csView.setData(datas);
+        if (gravity == Gravity.BOTTOM) {
+            csView = view.findViewById(R.id.csView);
+            csView.setRvBack("#ffffff");
+            BottomSheetBehavior<ChooseStringView> from = BottomSheetBehavior.from(csView);
+
+            from.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+                @Override
+                public void onStateChanged(@NonNull View view, int newState) {
+                    if (newState == BottomSheetBehavior.STATE_HIDDEN) {
+                        cancel();
+                    }
+                }
+
+                @Override
+                public void onSlide(@NonNull View view, float v) {
+
+                }
+            });
+        } else if (gravity == Gravity.CENTER) {
+            isShowCancel = false;
+            textGravity = Gravity.LEFT | Gravity.CENTER;
+            csView.setBackgroundResource(R.drawable.shape_fff_ra5);
+        }
+
+        csView.setiChooseItem(iChooseItem).setItemTitle(itemTitle).setiChooseCancel(this).setShowCancel(isShowCancel).setTextGravity(textGravity).setData(datas);
     }
 
     private ArrayList<ChooseStringView.IChooseString> datas = new ArrayList<>();
 
     public ChooseStringDialog setDatas(ArrayList<ChooseStringView.IChooseString> datas) {
-        this.datas = datas;
+        this.datas.addAll(datas);
         return this;
     }
 
+    private int gravity = Gravity.BOTTOM;
+    private int textGravity = Gravity.CENTER;
+    private boolean isShowCancel = true;
+
+    public ChooseStringDialog setShowCancel(boolean showCancel) {
+        isShowCancel = showCancel;
+        return this;
+    }
+
+    public ChooseStringDialog setTextGravity(int textGravity) {
+        this.textGravity = textGravity;
+        return this;
+    }
+
+    public ChooseStringDialog setGravity(int gravity) {
+        this.gravity = gravity;
+        return this;
+    }
+
+    @Override
+    protected int getWPadding() {
+        return gravity == Gravity.CENTER ? 300 : super.getWPadding();
+    }
 
     @Override
     protected int getGravity() {
-        return Gravity.BOTTOM;
+        return gravity;
     }
 
     private ChooseStringView.IChooseItem iChooseItem;

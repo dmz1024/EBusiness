@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -35,39 +36,62 @@ public class ChooseStringView extends LinearLayout implements AdapterHelper.OnCo
         init(context);
     }
 
-    private ArrayList<IChooseString> datas = new ArrayList<>();
-    private AdapterHelper adapterHelper;
 
     private void init(Context context) {
-        View.inflate(context, R.layout.success_recyle_view, this);
-        rvContent = findViewById(R.id.rvContent);
+        addView(rvContent = new RecyclerView(context));
 
-        adapterHelper = AdapterHelper._instance(context, rvContent)._initData(datas).setLayoutManager(new LinearLayoutManager(getContext()))
-                .setType(new AdapterHelper.ViewTypeInfo()
-                        .setRid(R.layout.item_choose_string).setConvertInterface(this).setOnClickListener(this))
-                .setType(new AdapterHelper.ViewTypeInfo()
-                        .setRid(R.layout.item_choose_string).setType(1).setConvertInterface(this).setOnClickListener(this));
     }
 
-    public <T extends IChooseString> void setData(ArrayList<T> datas) {
-        this.datas.clear();
-        this.datas.addAll(datas);
-        this.datas.add(new ChooseStringBean().setTitle("取消").setViewType(1));
+    private ArrayList<IChooseString> datas;
 
-//        LayoutParams layoutParams = (LayoutParams) rvContent.getLayoutParams();
-//        layoutParams.height = datas.size() > 7 ? (ScreenUtil.dp2px(7 * 45)) : ScreenUtil.dp2px(datas.size() * 45);
-        adapterHelper.notifyDataSetChanged();
+    public void setData(ArrayList<IChooseString> datas) {
+        this.datas = datas;
+        ArrayList<AdapterHelper.ViewTypeInfo> typeInfos = new ArrayList<>();
+        typeInfos.add(new AdapterHelper.ViewTypeInfo()
+                .setRid(R.layout.item_choose_string).setConvertInterface(this).setOnClickListener(this));
+        if (isShowCancel) {
+            this.datas.add(new ChooseStringBean().setTitle("取消").setViewType(1));
+            typeInfos.add(new AdapterHelper.ViewTypeInfo()
+                    .setRid(R.layout.item_choose_string).setType(1).setConvertInterface(this).setOnClickListener(this));
+        } else {
+            rvContent.getLayoutParams().height = ScreenUtil.dp2px(45 * (this.datas.size() > 7 ? 7 : this.datas.size()));
+            setGravity(Gravity.CENTER);
+        }
+        AdapterHelper._instance(getContext(), rvContent)._initData(this.datas).setLayoutManager(new LinearLayoutManager(getContext()))
+                .setType(typeInfos);
+
+
+    }
+
+    private int textGravity = Gravity.CENTER;
+
+    public ChooseStringView setTextGravity(int textGravity) {
+        this.textGravity = textGravity;
+        return this;
+    }
+
+    public ChooseStringView setRvBack(String color) {
+        rvContent.setBackgroundColor(Color.parseColor(color));
+        return this;
+    }
+
+    private boolean isShowCancel = true;
+
+    public ChooseStringView setShowCancel(boolean showCancel) {
+        isShowCancel = showCancel;
+        return this;
     }
 
     @Override
     public void convert(int viewType, ViewHolder holder, IChooseString iChooseString, int position) {
         holder.setText(R.id.tvTitle, iChooseString.getTitle());
         holder.<TextView>getView(R.id.tvTitle).setTextColor(Color.parseColor(viewType == 0 ? "#333333" : "#999999"));
+        holder.<TextView>getView(R.id.tvTitle).setGravity(textGravity);
     }
 
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
-        Log.d("点击", position + "");
+
         switch (viewType) {
             case 1:
                 iChooseCancel.cancel();
@@ -78,7 +102,6 @@ public class ChooseStringView extends LinearLayout implements AdapterHelper.OnCo
                     iChooseItem.position(position);
                 }
                 if (itemTitle != null) {
-                    iChooseCancel.cancel();
                     itemTitle.content(position, datas.get(position));
                 }
                 break;

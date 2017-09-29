@@ -164,5 +164,12 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.SPACEDETAIL_ACTIVITY).navigation();
     }
 
+    /**
+     * 空间订单详情
+     */
+    public static void goSpaceOrderInProgeressDesc(String orderId) {
+        ARouter.getInstance().build(RouterUrl.SPACE_ORDER_IN_PROGERESS_DESC_ACTIVITY).withString("orderId", orderId).navigation();
+    }
+
 
 }

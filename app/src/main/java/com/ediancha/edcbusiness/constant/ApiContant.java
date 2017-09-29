@@ -44,23 +44,23 @@ public interface ApiContant {
     /**
      * 我的钱包
      */
-    String MYPACKAGE=BASE_URL+"buleline/getData";
+    String MYPACKAGE = BASE_URL + "buleline/getData";
 
 
     /**
      * 余额
      */
-    String MONEY=BASE_URL+"buleline/getData";
+    String MONEY = BASE_URL + "buleline/getData";
 
     /**
      * 优惠券
      */
-    String COUPON=BASE_URL+"buleline/getData";
+    String COUPON = BASE_URL + "buleline/getData";
 
     /**
      * 充值
      */
-    String CHARGE=BASE_URL+"buleline/getData";
+    String CHARGE = BASE_URL + "buleline/getData";
 
     /**
      * 我的资料
@@ -70,8 +70,26 @@ public interface ApiContant {
     /**
      * 我的资料
      */
-    String HELPCENTER_URL= BASE_URL + "buleline/getData";
+    String HELPCENTER_URL = BASE_URL + "buleline/getData";
 
 
+    /**
+     * 我的进行中订单
+     */
+    String SPACE_ORDER_IN_PROGRESS = BASE_URL + "buleline/getData";
 
+
+    String BASEAPI = "http://192.168.1.9/api/";
+
+
+    /**
+     * 登录
+     */
+    String LOGIN = BASEAPI + "users/toLogin";
+
+
+    /**
+     * 获取验证码
+     */
+    String GET_CODE = BASEAPI + "users/getPhoneVerifyCode";
 }

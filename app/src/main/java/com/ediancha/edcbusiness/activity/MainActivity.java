@@ -1,6 +1,7 @@
 package com.ediancha.edcbusiness.activity;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -13,6 +14,9 @@ import com.ediancha.edcbusiness.helper.MainBottomSheet;
 import com.ediancha.edcbusiness.helper.QwHelper;
 import com.ediancha.edcbusiness.router.Go;
 import com.ediancha.edcbusiness.router.RouterUrl;
+import com.lzy.okgo.OkGo;
+import com.lzy.okgo.callback.StringCallback;
+import com.lzy.okgo.model.Response;
 
 public class MainActivity extends ToobarBaseActivity implements View.OnClickListener {
     private View fg_arrows;
@@ -25,7 +29,7 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
     @Override
     protected void initView() {
         super.initView();
-
+        TestWindowManager._init(this);
         TestWindowManager.getInstance();
         fg_qw = findViewById(R.id.fg_qw);
         iv_bottom_header = findViewById(R.id.iv_bottom_header);
