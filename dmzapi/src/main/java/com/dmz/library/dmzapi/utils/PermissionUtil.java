@@ -19,6 +19,7 @@ import java.util.List;
 public class PermissionUtil {
     public static final int CAMERA_REQUEST = 0x1;
     public static final int FILE_WRITE_REQUEST = 0x2;
+    public static final int SYSTEM_ALERT_WINDOW_REQUEST = 0x3;
 
 
     public static PermissionUtil getInstance() {

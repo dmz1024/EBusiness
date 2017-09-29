@@ -145,10 +145,6 @@ public class ChooseStringDialog extends NoTitleDialoggFragment implements Choose
         return this;
     }
 
-    public ChooseStringDialog show(AppCompatActivity activity) {
-        show(activity.getSupportFragmentManager(), "chooseDialog");
-        return this;
-    }
 
 
 }
