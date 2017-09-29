@@ -51,6 +51,7 @@ public class BaseNetModel<T extends IBaseBean, D> implements IBaseModel, OnMySuc
     public void cancel() {
         if (dmzBuilder != null) {
             DmzApi.cancel(dmzBuilder.getSign());
+            dmzBuilder.clear();
             dmzBuilder = null;
         }
     }

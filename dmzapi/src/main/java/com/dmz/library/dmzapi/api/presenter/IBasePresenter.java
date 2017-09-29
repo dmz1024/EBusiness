@@ -10,6 +10,4 @@ import com.dmz.library.dmzapi.api.view.IBaseView;
 
 public interface IBasePresenter<M extends IBaseModel, V extends IBaseView> extends IDestroyBasePresenter {
     void createPresenter(M m, V v);
-
-
 }

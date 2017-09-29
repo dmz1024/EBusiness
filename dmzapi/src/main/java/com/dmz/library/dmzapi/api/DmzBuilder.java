@@ -33,6 +33,28 @@ public class DmzBuilder {
         return this;
     }
 
+    public DmzBuilder clear() {
+        isShowSuccess = false;
+        isShowInfo = true;
+        isCancel = true;
+        successMsg = "请求成功";
+        loadMsg = "正在请求";
+        mapInfo = null;
+        url = "";
+        map = null;
+        method = false;
+        code = 10000;
+        progressCancelListener = null;
+        onMyErrorListener = null;
+        onMyOtherCodeListener = null;
+        onMySuccessListener = null;
+        iLoadingView = null;
+        isAll = false;
+        aClass = null;
+        loginCode = 60001;
+        return this;
+    }
+
     public int getLoginCode() {
         return loginCode;
     }
