@@ -77,6 +77,4 @@ dependencies {
         transitive = true
     }
 
-    //https://github.com/GrenderG/Toasty
-    compile 'com.github.GrenderG:Toasty:1.2.5'
 }
