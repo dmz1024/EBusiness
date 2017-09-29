@@ -5,15 +5,18 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.TestWindowManager;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.helper.MainBottomSheet;
 import com.ediancha.edcbusiness.helper.QwHelper;
 import com.ediancha.edcbusiness.router.Go;
 import com.ediancha.edcbusiness.router.RouterUrl;
+import com.ediancha.edcbusiness.view.SpaceOrderInfoVIew;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;
@@ -29,8 +32,7 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
     @Override
     protected void initView() {
         super.initView();
-        TestWindowManager._init(this);
-        TestWindowManager.getInstance();
+        TestWindowManager.getInstance().addView();
         fg_qw = findViewById(R.id.fg_qw);
         iv_bottom_header = findViewById(R.id.iv_bottom_header);
         fg_arrows = findViewById(R.id.fg_arrows);
@@ -39,9 +41,10 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
         iv_bottom_message.setOnClickListener(this);
         fg_qw.setOnClickListener(this);
         iv_bottom_header.setOnClickListener(this);
-
         bottomSheet = new MainBottomSheet(((LinearLayout) findViewById(R.id.llBottom)), ((View) findViewById(R.id.iv_arrows)));
         qwHelper = new QwHelper(this);
+
+        UserInfoUtil.readInfo();
     }
 
     @Override
@@ -74,10 +77,17 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
                 qwHelper.openQw();
                 break;
             case R.id.iv_bottom_message:
-                Go.goActivityMessage();
+                if (UserInfoUtil.checkLogin()) {
+                    Go.goActivityMessage();
+                }
                 break;
         }
     }
 
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+    }
 }

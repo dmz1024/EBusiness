@@ -87,8 +87,8 @@ public class SingleDataContract<T extends IBaseBean, D> extends IContract<Single
                 refreshLayout.setRefreshing(true);
             }else {
                 refreshLayout.setEnabled(false);
-                excute();
             }
+            excute();
 
         }
         return this;

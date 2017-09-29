@@ -2,6 +2,7 @@ package com.ediancha.edcbusiness.presenter.user;
 
 
 import android.content.Context;
+import android.util.Log;
 
 import com.dmz.library.dmzapi.api.DmzApi;
 import com.dmz.library.dmzapi.api.DmzBuilder;
@@ -9,6 +10,7 @@ import com.dmz.library.dmzapi.api.OnMySuccessListener;
 import com.dmz.library.dmzapi.api.view.IContextView;
 import com.dmz.library.dmzapi.view.MyProgress;
 import com.ediancha.edcbusiness.bean.user.LoginBean;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
 
 /**
@@ -31,6 +33,8 @@ public class LoginPresenter {
                                 .setOnMySuccessListener(new OnMySuccessListener<LoginBean.Data>() {
                                     @Override
                                     public void onSuccess(LoginBean.Data bean) {
+
+                                        UserInfoUtil.saveInfo(bean);
                                         iLoginView.loginSuccess();
                                     }
                                 })
@@ -38,6 +42,7 @@ public class LoginPresenter {
                                 .setiLoadingView(new MyProgress(iLoginView.getContext())))
                 .excute();
     }
+
 
     public interface ILoginView extends IContextView {
         void loginSuccess();

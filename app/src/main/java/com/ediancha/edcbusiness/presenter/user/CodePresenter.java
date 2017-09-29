@@ -36,7 +36,7 @@ public class CodePresenter {
                                         iLoginView.codeSuccess();
                                     }
                                 })
-                                .setParms("tel", userPhone, "type", type + "")
+                                .setParms("userPhone", userPhone, "type", type + "")
                                 .setiLoadingView(new MyProgress(iLoginView.getContext())))
                 .excute();
     }

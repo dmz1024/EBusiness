@@ -82,7 +82,7 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
                 login();
                 break;
             case R.id.tvCode:
-//                codePresenter.getCode(etName.getText().toString(), 1);
+                codePresenter.getCode(etName.getText().toString(), 1);
                 break;
 
         }
