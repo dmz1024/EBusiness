@@ -1,5 +1,6 @@
 package com.ediancha.edcbusiness.bean.walletbean;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.api.bean.ViewBaseType;
 
@@ -14,69 +15,67 @@ import java.util.List;
 public class HelpCenterBean extends BaseBean<HelpCenterBean.Data> {
 
 
-    public static class Data {
-        public ArrayList<HotBean> hot;
-        public ArrayList<TypeBean> type;
+    /**
+     * data : {"hots":[{"id":3,"title":"新用户如何充值？"},{"id":4,"title":"如何进行手机号修改？"},{"id":5,"title":"是否支持国外用户认证？"},{"id":6,"title":"押金交纳方式？"}],"categorys":[{"pid":16,"name":"充值问题"},{"pid":17,"name":"使用问题"},{"pid":18,"name":"注册问题"},{"pid":19,"name":"订单问题"},{"pid":20,"name":"认证问题"}]}
+     */
 
-        public ArrayList<HotBean> getHot() {
-            return hot;
+    public static class Data{
+        public ArrayList<HotsBean> hots;
+        public ArrayList<CategorysBean> categorys;
+
+        public ArrayList<HotsBean> getHots() {
+            return hots;
         }
 
-
-
-        public ArrayList<TypeBean> getType() {
-            return type;
+        public ArrayList<CategorysBean> getCategorys() {
+            return categorys;
         }
 
+    }
 
-        public static class HotBean extends ViewBaseType{
+    public static class HotsBean extends ViewBaseType{
+        /**
+         * id : 3
+         * title : 新用户如何充值？
+         */
 
-            public String title;
-            public int ID;
+        public String id;
+        public String title;
 
-            public String getTitle() {
-                return title;
-            }
-
-            public void setTitle(String title) {
-                this.title = title;
-            }
-
-            public int getID() {
-                return ID;
-            }
-
-            public void setID(int ID) {
-                this.ID = ID;
-            }
+        public String getId() {
+            return id;
         }
 
-        public static class TypeBean extends ViewBaseType{
+        public String getTitle() {
+            return title;
+        }
 
+        @Override
+        public int getViewType() {
+            return 0;
+        }
+    }
 
-            public String title;
-            public int ID;
+    public static class CategorysBean extends ViewBaseType{
+        /**
+         * pid : 16
+         * name : 充值问题
+         */
 
-            public String getTitle() {
-                return title;
-            }
+        public String pid;
+        public String name;
 
-            @Override
-            public int getViewType() {
-                return 1;
-            }
+        public String getPid() {
+            return pid;
+        }
 
-            public void setTitle(String title) {
-                this.title = title;
-            }
+        public String getName() {
+            return name;
+        }
 
-            public int getID() {
-                return ID;
-            }
-
-            public void setID(int ID) {
-                this.ID = ID;
-            }
+        @Override
+        public int getViewType() {
+            return 1;
         }
     }
 }

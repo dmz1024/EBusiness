@@ -76,4 +76,7 @@ dependencies {
     compile ('com.alibaba.android:ultraviewpager:1.0.6.1@aar') {
         transitive = true
     }
+
+    //https://github.com/GrenderG/Toasty
+    compile 'com.github.GrenderG:Toasty:1.2.5'
 }

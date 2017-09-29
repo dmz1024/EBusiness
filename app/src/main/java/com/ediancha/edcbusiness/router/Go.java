@@ -128,8 +128,11 @@ public class Go {
     /**
      * 帮助中心---问题分类
      */
-    public static void goHelpCenterNext() {
-        ARouter.getInstance().build(RouterUrl.HELPCENTER_NEXT_ACTIVITY).navigation();
+    public static void goHelpCenterNext(String pid,String name) {
+        ARouter.getInstance().build(RouterUrl.HELPCENTER_NEXT_ACTIVITY)
+                .withString("pid",pid)
+                .withString("name",name)
+                .navigation();
     }
     /**
      * 优惠兑换
@@ -155,8 +158,10 @@ public class Go {
     /**
      * H5页面展示
      */
-    public static void goWebView() {
-        ARouter.getInstance().build(RouterUrl.WEBVIEW_ACTIVITY).navigation();
+    public static void goWebView(String id) {
+        ARouter.getInstance().build(RouterUrl.WEBVIEW_ACTIVITY)
+                .withString("id",id)
+                .navigation();
     }
     /**
      *缴纳押金
@@ -168,8 +173,10 @@ public class Go {
     /**
      *空间详情
      */
-    public static void goSpaceDetail() {
-        ARouter.getInstance().build(RouterUrl.SPACEDETAIL_ACTIVITY).navigation();
+    public static void goSpaceDetail(String id) {
+        ARouter.getInstance().build(RouterUrl.SPACEDETAIL_ACTIVITY)
+                .withString("id",id)
+                .navigation();
     }
 
     /**

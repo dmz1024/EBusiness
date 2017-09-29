@@ -8,6 +8,7 @@ import com.dmz.library.dmzapi.view.activity.MoreDataBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.walletbean.CouponBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.helper.TimeFormatUtils;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 
@@ -35,17 +36,17 @@ public class CouponActivity extends MoreDataBaseActivity<CouponBean.Data,CouponB
     protected void initDmzBuilder() {
         dBuilder.setaClass(CouponBean.class)
                 .setUrl(ApiContant.COUPON)
-                .setParms("type","8");
+                .setParms("userId","1");
     }
 
     @Override
     public void convert(int viewType, ViewHolder holder, CouponBean.Data data, int position) {
         holder
-                .setText(R.id.tv_name,data.getTitle())
-                .setText(R.id.tv_money,data.getMoney())
-                .setText(R.id.tv_date,data.getEndTime())
-                .setText(R.id.tv_user,data.getMoneyInfo())
-                .setText(R.id.tv_type,data.getUseRole());
+                .setText(R.id.tv_name,data.getName())
+                .setText(R.id.tv_money,data.getDiscountAmount()+"元")
+                .setText(R.id.tv_date, "有效期至:"+TimeFormatUtils.stampToDate(data.getInvalidTime()))
+                .setText(R.id.tv_user,"满"+data.getSatisfyAmount()+"元可用")
+                .setText(R.id.tv_type,data.getIntroduction());
     }
 
     @Override

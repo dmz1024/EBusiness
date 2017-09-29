@@ -1,84 +1,91 @@
 package com.ediancha.edcbusiness.bean.walletbean;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.dmz.library.dmzapi.api.bean.BaseListBean;
 import com.dmz.library.dmzapi.api.bean.ViewBaseType;
+
+import java.util.List;
 
 /**
  * Created by Admin on 2017/9/25.
  */
 
 public class CouponBean extends BaseListBean<CouponBean.Data> {
-
+    
     public static class Data extends ViewBaseType {
+        /**
+         * userId : 1
+         * couponId : 1
+         * name : 新用户专享代金券
+         * discountAmount : 10
+         * satisfyAmount : 100
+         * useOrderType : 2
+         * useTel : 
+         * isFirstOrder : 0
+         * startTime : 1506603746
+         * invalidTime : 1506700800
+         * Stringroduction : 仅限首单使用
+         * status : 1
+         */
+        public String userId;
+        public String couponId;
+        public String name;
+        public String discountAmount;
+        public String satisfyAmount;
+        public String useOrderType;
+        public String useTel;
+        public String isFirstOrder;
+        public String startTime;
+        public String invalidTime;
+        public String introduction;
+        public String status;
 
-        public String title;
-
-        public String yMoney;
-
-        public String mMoney;
-
-        public String mMoneyInfo;
-
-        public String endTime;
-
-        public String useRole;
-
-        public String ID;
-
-        public String getTitle() {
-            return title;
+        public String getUserId() {
+            return userId;
         }
 
-        public void setTitle(String title) {
-            this.title = title;
+        public String getCouponId() {
+            return couponId;
         }
 
-        public String getyMoney() {
-            return yMoney;
+        public String getName() {
+            return name;
         }
 
-        public void setyMoney(String yMoney) {
-            this.yMoney = yMoney;
+        public String getDiscountAmount() {
+            return discountAmount;
         }
 
-        public String getMoney() {
-            return mMoney;
+        public String getSatisfyAmount() {
+            return satisfyAmount;
         }
 
-        public void setMoney(String money) {
-            mMoney = money;
+        public String getUseOrderType() {
+            return useOrderType;
         }
 
-        public String getMoneyInfo() {
-            return mMoneyInfo;
+        public String getUseTel() {
+            return useTel;
         }
 
-        public void setMoneyInfo(String moneyInfo) {
-            mMoneyInfo = moneyInfo;
+        public String getIsFirstOrder() {
+            return isFirstOrder;
         }
 
-        public String getEndTime() {
-            return endTime;
+        public String getStartTime() {
+            return startTime;
         }
 
-        public void setEndTime(String endTime) {
-            this.endTime = endTime;
+        public String getInvalidTime() {
+            return invalidTime;
         }
 
-        public String getUseRole() {
-            return useRole;
+        public String getIntroduction() {
+            return introduction;
         }
 
-        public void setUseRole(String useRole) {
-            this.useRole = useRole;
-        }
-
-        public String getID() {
-            return ID;
-        }
-
-        public void setID(String ID) {
-            this.ID = ID;
+        public String getStatus() {
+            return status;
         }
     }
 }
