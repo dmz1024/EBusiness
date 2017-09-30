@@ -11,6 +11,7 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.constant.NormalContant;
 import com.ediancha.edcbusiness.helper.MyToast;
 import com.ediancha.edcbusiness.presenter.coupon.CouponChangePresenter;
+import com.ediancha.edcbusiness.router.Go;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -57,6 +58,7 @@ public class CouponChangeActivity extends NotNetBaseActivity implements CouponCh
     public void successCode(BaseBean bean) {
         if (bean.getCode()== NormalContant.SUCCESS_CODE){
             MyToast.normal("兑换成功!");
+            Go.goCoupon();
             finish();
         }else {
             MyToast.error(bean.msg);

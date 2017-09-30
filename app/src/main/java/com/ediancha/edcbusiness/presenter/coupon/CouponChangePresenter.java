@@ -15,15 +15,16 @@ import com.ediancha.edcbusiness.constant.ApiContant;
 public class CouponChangePresenter {
 
     ICouponChangeView mICouponChangeView;
-    public CouponChangePresenter(ICouponChangeView mICouponChangeView){
-        this.mICouponChangeView=mICouponChangeView;
+
+    public CouponChangePresenter(ICouponChangeView mICouponChangeView) {
+        this.mICouponChangeView = mICouponChangeView;
     }
 
-    public void exchangeCoupon(String userId,String code){
+    public void exchangeCoupon(String userId, String code) {
         DmzApi._build()
                 .setDmzBuilder(DmzBuilder._builder()
-                .setaClass(BaseBean.class)
-                .setUrl(ApiContant.COUPON_CHANGE)
+                        .setaClass(BaseBean.class)
+                        .setUrl(ApiContant.COUPON_CHANGE)
                         .setAll(true)
                         .setOnMySuccessListener(new OnMySuccessListener<BaseBean>() {
                             @Override
@@ -31,12 +32,12 @@ public class CouponChangePresenter {
                                 mICouponChangeView.successCode(bean);
                             }
                         })
-                .setParms("userId",userId,"couponcode",code)
-                .setiLoadingView(new MyProgress(mICouponChangeView.getContext())))
+                        .setParms("userId", userId, "couponcode", code)
+                        .setiLoadingView(new MyProgress(mICouponChangeView.getContext())))
                 .excute();
     }
 
-    public interface ICouponChangeView extends IContextView{
+    public interface ICouponChangeView extends IContextView {
 
         void successCode(BaseBean baseBean);
     }

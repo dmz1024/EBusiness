@@ -17,7 +17,7 @@
             style="@style/tv_ma_wra_right_min_style"
             android:layout_margin="@dimen/size10"
             android:gravity="start"
-            android:text="账户常用余额50.00"
+            android:text=""
             android:textSize="@dimen/sp18" />
 
         <TextView
@@ -34,7 +34,8 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recy"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"></android.support.v7.widget.RecyclerView>
         </RelativeLayout>
 
 

@@ -1,5 +1,6 @@
 package com.ediancha.edcbusiness.bean.walletbean;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
 
 
@@ -8,42 +9,68 @@ import com.dmz.library.dmzapi.api.bean.BaseBean;
  */
 
 public class MyPackageBean extends BaseBean<MyPackageBean.Data> {
+
+    /**
+     * data : {"money":{"money":0,"userMoney":0,"giftAmount":0},"youhui":0,"depositMoney":0,"depositType":0,"payPwd":1}
+     */
+
     public static class Data {
-        public int payPassWord;
-        public String yMoney;
-        public String count;
-        public String yjMoney;
+        /**
+         * money : {"money":0,"userMoney":0,"giftAmount":0}
+         * youhui : 0
+         * depositMoney : 0
+         * depositType : 0
+         * payPwd : 1
+         */
 
-        public String getCount() {
-            return count;
+        public MoneyBean money;
+        public int youhui;
+        public int depositMoney;
+        public int depositType;
+        public int payPwd;
+
+        public MoneyBean getMoney() {
+            return money;
         }
 
-        public String getYjMoney() {
-            return yjMoney;
+        public int getYouhui() {
+            return youhui;
         }
 
-        public int getPayPassWord() {
-            return payPassWord;
+        public int getDepositMoney() {
+            return depositMoney;
         }
 
-        public String getyMoney() {
-            return yMoney;
+        public int getDepositType() {
+            return depositType;
         }
 
-        public void setPayPassWord(int payPassWord) {
-            this.payPassWord = payPassWord;
+        public int getPayPwd() {
+            return payPwd;
+        }
+    }
+
+    public static class MoneyBean {
+        /**
+         * money : 0
+         * userMoney : 0
+         * giftAmount : 0
+         */
+
+        public int money;
+        public int userMoney;
+        public int giftAmount;
+
+        public int getMoney() {
+            return money;
         }
 
-        public void setyMoney(String yMoney) {
-            this.yMoney = yMoney;
+        public int getUserMoney() {
+            return userMoney;
         }
 
-        public void setCount(String count) {
-            this.count = count;
-        }
-
-        public void setYjMoney(String yjMoney) {
-            this.yjMoney = yjMoney;
+        public int getGiftAmount() {
+            return giftAmount;
         }
     }
 }

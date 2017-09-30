@@ -134,13 +134,13 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
         switch (viewType) {
             case 0:
 
-                SpaceDetailBean.Facilities facilities = (SpaceDetailBean.Facilities) iType;
+                SpaceDetailBean.FacilitiesBean facilities = (SpaceDetailBean.FacilitiesBean) iType;
                 holder
                         .setText(R.id.tv_type, facilities.getTargetName());
 
                 break;
             case 1:
-                SpaceDetailBean.Purpose purpose = (SpaceDetailBean.Purpose) iType;
+                SpaceDetailBean.PurposeBean purpose = (SpaceDetailBean.PurposeBean) iType;
                 holder
                         .setText(R.id.tv_type, purpose.getTargetName());
                 break;

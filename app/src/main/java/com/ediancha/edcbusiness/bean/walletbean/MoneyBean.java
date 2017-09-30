@@ -1,6 +1,8 @@
 package com.ediancha.edcbusiness.bean.walletbean;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
+import com.dmz.library.dmzapi.api.bean.ViewBaseType;
 
 /**
  * Created by Admin on 2017/9/25.
@@ -8,50 +10,65 @@ import com.dmz.library.dmzapi.api.bean.BaseBean;
 
 public class MoneyBean extends BaseBean<MoneyBean.Data> {
 
-    public static class Data {
-        public String totalMoney;
+    public static class Data{
 
-        public String cMoney;
+        public Money money;
 
-        public String zMoney;
+        public int youhui;
+        public int depositMoney;
+        public int depositType;
+        public int payPwd;
 
-        public String xiyi;
-
-        public String getTotalMoney() {
-            return totalMoney;
+        public Money getMoney() {
+            return money;
         }
 
-        public Data setTotalMoney(String totalMoney) {
-            this.totalMoney = totalMoney;
+        public int getYouhui() {
+            return youhui;
+        }
+
+        public int getDepositMoney() {
+            return depositMoney;
+        }
+
+        public int getDepositType() {
+            return depositType;
+        }
+
+        public int getPayPwd() {
+            return payPwd;
+        }
+    }
+    public static class Money {
+        public int money;
+        public int userMoney;
+        public int giftAmount;
+
+        public int getMoney() {
+            return money;
+        }
+
+        public Money setMoney(int money) {
+            this.money = money;
             return this;
         }
 
-        public String getcMoney() {
-            return cMoney;
+        public int getUserMoney() {
+            return userMoney;
         }
 
-        public Data setcMoney(String cMoney) {
-            this.cMoney = cMoney;
+        public Money setUserMoney(int userMoney) {
+            this.userMoney = userMoney;
             return this;
         }
 
-        public String getzMoney() {
-            return zMoney;
+        public int getGiftAmount() {
+            return giftAmount;
         }
 
-        public Data setzMoney(String zMoney) {
-            this.zMoney = zMoney;
-            return this;
-        }
-
-        public String getXiyi() {
-            return xiyi;
-        }
-
-        public Data setXiyi(String xiyi) {
-            this.xiyi = xiyi;
+        public Money setGiftAmount(int giftAmount) {
+            this.giftAmount = giftAmount;
             return this;
         }
     }
-
 }

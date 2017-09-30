@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/shape_circle_ra2"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    >
+    android:background="@color/color_fff">
 
-    <EditText
-        android:id="@+id/et_cmoney"
-        style="@style/tv_wr_min_15sp_pa10_style"
-        android:background="@null"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:hint="其他金额\n不赠送"
         android:layout_height="match_parent"
-        android:textColorHint="@color/color_999"
-        android:layout_marginBottom="0dp"
-        android:gravity="center"
-        android:inputType="number"
-        android:textSize="@dimen/sp16"
+        android:background="@drawable/shape_circle_ra2"
+        android:layout_margin="@dimen/size10"
+        android:id="@+id/rl">
 
-        android:layout_marginTop="@dimen/size10"
-        android:layout_centerHorizontal="true"
-        />
-    <ImageView
-        android:id="@+id/iv_show"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/icon_recharge_selected"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        />
-</RelativeLayout>
+        <EditText
+            android:id="@+id/et_cmoney"
+            style="@style/tv_wr_min_15sp_pa10_style"
+            android:layout_width="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="其他金额"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColorHint="@color/color_999"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/sp16" />
+
+        <ImageView
+            android:id="@+id/iv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_recharge_selected" />
+    </RelativeLayout>
+</LinearLayout>

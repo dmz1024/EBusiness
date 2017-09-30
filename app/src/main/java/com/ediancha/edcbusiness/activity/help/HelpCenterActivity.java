@@ -93,7 +93,7 @@ public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, H
         switch (viewType){
             case 0:
                 HelpCenterBean.HotsBean hotsBean= (HelpCenterBean.HotsBean) adapterHelper.getDatas().get(position);
-                Go.goWebView(hotsBean.id);
+                Go.goWebView(hotsBean.getHtml());
                 break;
             case 1:
                 HelpCenterBean.CategorysBean categorysBean= (HelpCenterBean.CategorysBean) adapterHelper.getDatas().get(position);

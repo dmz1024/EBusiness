@@ -3,7 +3,6 @@ package com.ediancha.edcbusiness.helper;
 import android.content.Context;
 import android.widget.Toast;
 
-import es.dmoral.toasty.Toasty;
 
 /**
  * Created by Admin on 2017/9/29.
@@ -26,8 +25,8 @@ public class MyToast {
             mToast.cancel();
         }
 
-        mToast = Toasty.error(mContext, msg, Toast.LENGTH_LONG);
-        mToast.show();
+//        mToast = Toasty.error(mContext, msg, Toast.LENGTH_LONG);
+//        mToast.show();
     }
 
     /**
@@ -37,8 +36,8 @@ public class MyToast {
         if (mToast != null) {
             mToast.cancel();
         }
-        mToast = Toasty.warning(mContext, msg, Toast.LENGTH_LONG);
-        mToast.show();
+//        mToast = Toasty.warning(mContext, msg, Toast.LENGTH_LONG);
+//        mToast.show();
     }
 
     /**
@@ -48,7 +47,7 @@ public class MyToast {
         if (mToast != null) {
             mToast.cancel();
         }
-        mToast = Toasty.info(mContext, msg, Toast.LENGTH_SHORT);
-        mToast.show();
+//        mToast = Toasty.info(mContext, msg, Toast.LENGTH_SHORT);
+//        mToast.show();
     }
 }

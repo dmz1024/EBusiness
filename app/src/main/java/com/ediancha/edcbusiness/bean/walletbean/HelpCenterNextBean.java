@@ -23,12 +23,17 @@ public class HelpCenterNextBean extends BaseListBean<HelpCenterNextBean.Data> {
         public int id;
         public String title;
 
+        public String html;
         public int getId() {
             return id;
         }
 
         public String getTitle() {
             return title;
+        }
+
+        public String getHtml() {
+            return html;
         }
     }
 }

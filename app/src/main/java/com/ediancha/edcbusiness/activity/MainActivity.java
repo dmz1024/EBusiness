@@ -64,14 +64,14 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
                 bottomSheet.toggle();
                 break;
             case R.id.iv_bottom_header:
-//                Go.goPersonCenter();
-                MyToast.normal("你好啊");
+                Go.goPersonCenter();
+//                MyToast.normal("你好啊");
                 break;
             case R.id.fg_qw:
 
-                MyToast.error("你好啊");
+//                MyToast.error("你好啊");
 
-//                qwHelper.openQw();
+                qwHelper.openQw();
                 break;
             case R.id.iv_bottom_message:
                 if (UserInfoUtil.checkLogin()) {

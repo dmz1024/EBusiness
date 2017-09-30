@@ -8,12 +8,17 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
+import com.dmz.library.dmzapi.dialog.ChooseStringDialog;
+import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.constant.NormalContant;
 import com.ediancha.edcbusiness.dialog.AutherDialog;
 import com.ediancha.edcbusiness.helper.MyToast;
 import com.ediancha.edcbusiness.helper.ValidatorUtils;
+import com.ediancha.edcbusiness.presenter.user.AuthorPresnter;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -24,7 +29,7 @@ import butterknife.OnClick;
  * 认证界面
  */
 @Route(path = "/activity/my/auther")
-public class AutherActivity extends SingleDataBaseActivity<BaseBean, Object> {
+public class AutherActivity extends NotNetBaseActivity implements AuthorPresnter.IAuthorView {
 
 
     @BindView(R.id.tv_info)
@@ -38,19 +43,8 @@ public class AutherActivity extends SingleDataBaseActivity<BaseBean, Object> {
 
     private AutherDialog mAutherDialog;
 
-    @Override
-    protected void initDataBuilder() {
-        mBuilder.setFirstRequest(false)
-                .setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW)
-                .setSuccessRid(R.layout.activity_auther);
-    }
 
-    @Override
-    protected void initDmzBuilder() {
-        dBuilder.setaClass(BaseBean.class)
-                .setUrl(ApiContant.AUTHER_URL)
-                .setParms();
-    }
+    AuthorPresnter mAuthorPresnter;
 
     @Override
     protected void initBarView() {
@@ -59,14 +53,25 @@ public class AutherActivity extends SingleDataBaseActivity<BaseBean, Object> {
     }
 
     @Override
-    public void onSuccess(IBasePresenter presenter, Object bean) {
+    protected void initView() {
+        super.initView();
+    }
 
+    @Override
+    protected int getRid() {
+        return R.layout.activity_auther;
+    }
+
+    @Override
+    protected void initData() {
+        super.initData();
+        mAuthorPresnter = new AuthorPresnter(this);
     }
 
     @OnClick({R.id.tv_submit})
     void click() {
-        String name = mTvName.getText().toString().trim();
-        String card = mTvCard.getText().toString().trim();
+        final String name = mTvName.getText().toString().trim();
+        final String card = mTvCard.getText().toString().trim();
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(card)) {
             MyToast.warn("请输入详细信息!");
         } else if (!ValidatorUtils.isIDCard(card)) {
@@ -79,9 +84,20 @@ public class AutherActivity extends SingleDataBaseActivity<BaseBean, Object> {
                     .setOkClickListner(new AutherDialog.okClickListner() {
                         @Override
                         public void setOnOkListener() {
-
+                            mAuthorPresnter.authentication(name, card, UserInfoUtil.getUserId(), UserInfoUtil.getToken());
+                            mAutherDialog.dismiss();
                         }
                     });
+        }
+    }
+
+    @Override
+    public void successCode(BaseBean bean) {
+        if (bean.getCode() == NormalContant.SUCCESS_CODE) {
+            MyToast.normal("认证成功!");
+            finish();
+        } else {
+            MyToast.error(bean.getMsg());
         }
     }
 }

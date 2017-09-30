@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.helper.WebViewHelper;
@@ -44,7 +45,6 @@ public class WebViewActivity extends ToobarBaseActivity {
     }
 
     private void initWV() {
-
         mWebView.loadUrl(H5);
 
         mWebView.setWebViewClient(new WebViewClient() {
@@ -73,7 +73,7 @@ public class WebViewActivity extends ToobarBaseActivity {
     @Override
     protected void initBarView() {
         super.initBarView();
-
+        dmzBar.setText("问题详情");
     }
 
     @Override

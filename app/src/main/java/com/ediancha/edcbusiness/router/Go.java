@@ -93,7 +93,8 @@ public class Go {
      * 余额
      */
     public static void goMoney() {
-        ARouter.getInstance().build(RouterUrl.MONEY_ACTIVITY).navigation();
+        ARouter.getInstance().build(RouterUrl.MONEY_ACTIVITY)
+                .navigation();
     }
     /**
      * 优惠券
@@ -104,10 +105,13 @@ public class Go {
 
 
     /**
-     * 优惠券
+     * 押金
      */
-    public static void goDeposit() {
-        ARouter.getInstance().build(RouterUrl.DEPOSIT_ACTIVITY).navigation();
+    public static void goDeposit(String money,int status) {
+        ARouter.getInstance().build(RouterUrl.DEPOSIT_ACTIVITY)
+                .withString("money",money)
+                .withInt("status",status)
+                .navigation();
     }
 
     /**
@@ -160,7 +164,7 @@ public class Go {
      */
     public static void goWebView(String id) {
         ARouter.getInstance().build(RouterUrl.WEBVIEW_ACTIVITY)
-                .withString("id",id)
+                .withString("H5",id)
                 .navigation();
     }
     /**
