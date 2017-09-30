@@ -6,22 +6,19 @@ import android.graphics.Color;
 import android.support.annotation.NonNull;
 
 import com.dmz.library.dmzapi.utils.AnyPref;
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.utils.ScreenUtil;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
-import com.lzy.okgo.cookie.CookieJarImpl;
-import com.lzy.okgo.cookie.store.DBCookieStore;
-import com.lzy.okgo.cookie.store.MemoryCookieStore;
-import com.lzy.okgo.cookie.store.SPCookieStore;
+
 import com.lzy.okgo.interceptor.HttpLoggingInterceptor;
-import com.lzy.okgo.model.HttpHeaders;
+
 import com.lzy.okgo.model.HttpParams;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
-import es.dmoral.toasty.Toasty;
 import okhttp3.OkHttpClient;
 
 /**
@@ -40,9 +37,8 @@ public class MyApp extends Application {
     protected void initData() {
         ScreenUtil._init(this);
         initOkGo();
-
-        initToast();
         AnyPref._init(this);
+        MyToast._init(this);
     }
 
     private void initOkGo() {
@@ -88,20 +84,5 @@ public class MyApp extends Application {
 //                .addCommonHeaders(headers)                      //全局公共头
                 .addCommonParams(params);                       //全局公共参数
     }
-
-
-    private void initToast() {
-        Toasty.Config.getInstance()
-                .setErrorColor(getResources().getColor(R.color.color_error)) // optional
-                .setInfoColor(Color.WHITE) // optional
-                .setSuccessColor(getResources().getColor(R.color.color_normal)) // optional
-                .setWarningColor(getResources().getColor(R.color.color_warn)) // optional
-                .setTextColor(Color.WHITE) // optional
-                .tintIcon(true) // optional (apply textColor also to the icon)
-//                .setToastTypeface(@NonNull Typeface typeface) // optional
-                .setTextSize(18) // optional
-               .apply(); // required
-    }
-
 
 }

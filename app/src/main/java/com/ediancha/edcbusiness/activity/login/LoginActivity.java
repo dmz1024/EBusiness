@@ -1,6 +1,5 @@
 package com.ediancha.edcbusiness.activity.login;
 
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
@@ -8,15 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.dmz.library.dmzapi.api.DmzApi;
-import com.dmz.library.dmzapi.api.DmzBuilder;
-import com.dmz.library.dmzapi.api.bean.IBaseBean;
-import com.dmz.library.dmzapi.api.presenter.ComPresenter;
-import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
-import com.dmz.library.dmzapi.api.view.IBaseView;
 import com.dmz.library.dmzapi.utils.AnimationUtil;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.ediancha.edcbusiness.R;
@@ -25,7 +17,6 @@ import com.ediancha.edcbusiness.presenter.user.LoginPresenter;
 
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -83,6 +74,7 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
                 break;
             case R.id.tvCode:
                 codePresenter.getCode(etName.getText().toString(), 1);
+
                 break;
 
         }

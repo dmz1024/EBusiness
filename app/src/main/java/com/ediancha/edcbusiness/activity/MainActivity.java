@@ -1,25 +1,18 @@
 package com.ediancha.edcbusiness.activity;
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.alibaba.android.arouter.launcher.ARouter;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.TestWindowManager;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.helper.MainBottomSheet;
 import com.ediancha.edcbusiness.helper.QwHelper;
+import com.ediancha.edcbusiness.helper.MyToast;
 import com.ediancha.edcbusiness.router.Go;
-import com.ediancha.edcbusiness.router.RouterUrl;
-import com.ediancha.edcbusiness.view.SpaceOrderInfoVIew;
-import com.lzy.okgo.OkGo;
-import com.lzy.okgo.callback.StringCallback;
-import com.lzy.okgo.model.Response;
 
 public class MainActivity extends ToobarBaseActivity implements View.OnClickListener {
     private View fg_arrows;
@@ -71,10 +64,14 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
                 bottomSheet.toggle();
                 break;
             case R.id.iv_bottom_header:
-                Go.goPersonCenter();
+//                Go.goPersonCenter();
+                MyToast.normal("你好啊");
                 break;
             case R.id.fg_qw:
-                qwHelper.openQw();
+
+                MyToast.error("你好啊");
+
+//                qwHelper.openQw();
                 break;
             case R.id.iv_bottom_message:
                 if (UserInfoUtil.checkLogin()) {

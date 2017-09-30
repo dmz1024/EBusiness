@@ -8,6 +8,7 @@ import android.util.Log;
 import com.alibaba.android.arouter.launcher.ARouter;
 
 
+import com.ediancha.edcbusiness.helper.MyToast;
 import com.squareup.leakcanary.LeakCanary;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
@@ -58,6 +59,7 @@ public class MyApp extends com.dmz.library.dmzapi.MyApp {
 
         TestWindowManager._init(this);
         TestWindowManager.getInstance();
+        MyToast._init(this);
     }
 
     private String getVersion() {

@@ -77,7 +77,6 @@ public class TestWindowManager {
     private SpaceOrderInfoVIew view;
 
     public void addView() {
-
         if (this.view != null) {
             windowManager.removeView(this.view);
         }
@@ -113,9 +112,7 @@ public class TestWindowManager {
                     // 只要按钮一动位置不是很大,就认为是点击事件
                     if (Math.abs(oldOffsetX - newOffsetX) <= 20
                             && Math.abs(oldOffsetY - newOffsetY) <= 20) {
-//                        onFloatViewClick();
-                        Log.d("打印", "哈哈哈哈");
-
+                        onClick();
                     } else {
                         tag = 0;
                         AnyPref.instance("xy").putInt("x", params.x).putInt("y", params.y).commit();
@@ -127,8 +124,19 @@ public class TestWindowManager {
         windowManager.addView(view, params);
     }
 
+    private void onClick() {
+        Go.goSpaceOrderInProgeressDesc("1");
+    }
+
     public SpaceOrderInfoVIew getView() {
         return view;
+    }
+
+
+    public void destroy() {
+        windowManager.removeView(view);
+        context = null;
+        manager = null;
     }
 
 }
