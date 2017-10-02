@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
 import com.dmz.library.dmzapi.api.bean.IType;
+import com.dmz.library.dmzapi.api.bean.ViewBaseType;
 import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
@@ -27,6 +29,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by dengmingzhi on 2017/9/22.
@@ -136,6 +139,20 @@ public class ActivityMessageActivity extends SingleDataBaseActivity<ActivityMess
                         .setText(R.id.tvTitle, message.getTitle())
                         .setText(R.id.tvContent, message.getContent())
                         .setText(R.id.tvTime, message.getTime());
+                break;
+        }
+    }
+
+    @OnClick({R.id.tvShape,R.id.tvChong,R.id.tvDui})
+    void onclick(View view){
+        switch (view.getId()){
+            case R.id.tvShape://邀请好友
+                break;
+            case R.id.tvChong://充值返现
+                Go.goCharge();
+                break;
+            case R.id.tvDui://优惠券兑换
+                Go.goCouponChange();
                 break;
         }
     }

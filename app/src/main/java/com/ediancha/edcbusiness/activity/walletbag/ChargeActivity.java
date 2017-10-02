@@ -75,6 +75,9 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
 
     @Override
     public void onSuccess(IBasePresenter presenter, ChargeBean.Data bean) {
+
+        mTvMoney.setText("账户常用余额"+bean.getSurplus()+"元");
+
         mAdapterHelper = AdapterHelper._instance(this, mRecy)._initData(bean.getMoneys()).setLayoutManager(new GridLayoutManager(this, 3))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(0).setConvertInterface(this).setRid(R.layout.item_charge).setOnClickListener(this))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(1).setConvertInterface(this).setRid(R.layout.item_charge_input).setOnClickListener(this));
@@ -92,8 +95,9 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
 
     @Override
     public void convert(final int viewType, final ViewHolder holder, final ChargeBean.Moneys chargeBean, final int position) {
-        holder.getConvertView().setBackgroundResource(chargeBean.getCheck()? R.drawable.shape_circle_style :R.drawable.shape_circle_ra2);
+//        holder.getConvertView().setBackgroundResource(chargeBean.getCheck()? R.drawable.shape_circle_style :R.drawable.shape_circle_ra2);
         holder.setVisible(R.id.iv_show,chargeBean.getCheck());
+        holder.getView(R.id.rl).setBackgroundResource(chargeBean.getCheck()? R.drawable.shape_circle_style :R.drawable.shape_circle_ra2);
         switch (viewType) {
             case 0:
                 holder.setText(R.id.tv_cmoney, chargeBean.getcMoney()).setText(R.id.tv_zmoney,chargeBean.getsMoney());

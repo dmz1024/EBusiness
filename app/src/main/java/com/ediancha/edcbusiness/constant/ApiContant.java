@@ -46,13 +46,13 @@ public interface ApiContant {
     /**
      * 我的钱包
      */
-    String MYPACKAGE = BASE_URL + "buleline/getData";
+    String MYPACKAGE = BASE_API + "users/account_info";
 
 
     /**
      * 余额
      */
-    String MONEY = BASE_URL + "buleline/getData";
+    String MONEY = BASE_API + "users/account_info";
 
     /**
      * 优惠券
@@ -90,7 +90,7 @@ public interface ApiContant {
     /**
      * 实名认证
      */
-    String AUTHER_URL= BASE_URL + "buleline/getData";
+    String AUTHER_URL= BASE_API + "users/authentication";
 
 
     String BASEAPI = "http://s.east-profit.com/api.php/";
@@ -112,5 +112,11 @@ public interface ApiContant {
      * 充值
      */
     String CHARGE = BASEAPI + "marketin/antiscour";
+
+    /**
+     * 退押金
+     */
+    String EXITDEPOSIT_URL = BASE_API + "users/return_deposit";
+
 
 }

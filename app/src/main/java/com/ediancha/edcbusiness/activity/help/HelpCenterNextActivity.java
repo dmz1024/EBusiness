@@ -47,7 +47,7 @@ public class HelpCenterNextActivity extends MoreDataBaseActivity<HelpCenterNextB
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
 
         HelpCenterNextBean.Data helpCenterNextBean = (HelpCenterNextBean.Data) adapterHelper.getDatas().get(position);
-        Go.goWebView(helpCenterNextBean.getTitle());
+        Go.goWebView(helpCenterNextBean.getHtml());
     }
 
     @Override

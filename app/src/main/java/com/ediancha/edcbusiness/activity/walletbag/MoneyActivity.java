@@ -3,13 +3,17 @@ package com.ediancha.edcbusiness.activity.walletbag;
 import android.view.View;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
+import com.dmz.library.dmzapi.utils.AnyPref;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.dmz.library.dmzapi.view.custom.DmzBar;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.bean.walletbean.MoneyBean;
+import com.ediancha.edcbusiness.bean.walletbean.MyPackageBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.router.Go;
 
@@ -23,7 +27,7 @@ import butterknife.OnClick;
  */
 
 @Route(path = "/activity/walletbag/money")
-public class MoneyActivity extends SingleDataBaseActivity<MoneyBean, MoneyBean.Data> {
+public class MoneyActivity extends SingleDataBaseActivity<MyPackageBean, MyPackageBean.Data> {
 
     @BindView(R.id.tv_total)
     TextView mTvTotal;
@@ -36,12 +40,13 @@ public class MoneyActivity extends SingleDataBaseActivity<MoneyBean, MoneyBean.D
     @BindView(R.id.tv_xieyi)
     TextView mTvXieyi;
 
-    @Override
-    public void onSuccess(IBasePresenter presenter, MoneyBean.Data bean) {
-        mTvTotal.setText(bean.getTotalMoney());
-        mTvCharge.setText(bean.getcMoney());
-        mTvGive.setText(bean.getzMoney());
 
+    @Override
+    public void onSuccess(IBasePresenter presenter, MyPackageBean.Data bean) {
+        MyPackageBean.MoneyBean money = bean.getMoney();
+        mTvTotal.setText(money.getMoney()+"");
+        mTvCharge.setText(money.getUserMoney()+"");
+        mTvGive.setText(money.getGiftAmount()+"");
     }
 
     @Override
@@ -52,9 +57,9 @@ public class MoneyActivity extends SingleDataBaseActivity<MoneyBean, MoneyBean.D
 
     @Override
     protected void initDmzBuilder() {
-        dBuilder.setaClass(MoneyBean.class)
+        dBuilder.setaClass(MyPackageBean.class)
                 .setUrl(ApiContant.MONEY)
-                .setParms("type", "11");
+                .setParms("token",UserInfoUtil.getToken() ,"userId", UserInfoUtil.getUserId());
     }
 
     @Override
@@ -66,7 +71,8 @@ public class MoneyActivity extends SingleDataBaseActivity<MoneyBean, MoneyBean.D
 
     @OnClick(R.id.tv_submit)
     void onClick(){
-        Go.goCharge();
+
+
     }
 
 }

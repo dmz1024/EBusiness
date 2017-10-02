@@ -10,6 +10,7 @@ import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.bean.walletbean.MyPackageBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.router.Go;
@@ -44,6 +45,8 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
     @BindView(R.id.ln_pass)
     LinearLayout mLnPass;
 
+    MyPackageBean.Data data;
+
     @Override
     protected void initDataBuilder() {
         mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW)
@@ -55,7 +58,7 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
 
         dBuilder.setaClass(MyPackageBean.class)
                 .setUrl(ApiContant.MYPACKAGE)
-                .setParms("type", "9");
+                .setParms("token", UserInfoUtil.getToken(), "userId", UserInfoUtil.getUserId());
     }
 
     @Override
@@ -66,10 +69,12 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
 
     @Override
     public void onSuccess(IBasePresenter presenter, MyPackageBean.Data bean) {
-        mTvMoney.setText(bean.getyMoney());
-        mTvCoupon.setText(bean.getCount());
-        mTvDeposit.setText(bean.getYjMoney());
-        mTvPass.setText((bean.getPayPassWord() != 0) ? "已设置" : "未设置");
+        data = bean;
+        mTvMoney.setText(data.getMoney().getMoney() + "");
+        mTvCoupon.setText(bean.getYouhui() + "");
+        mTvDeposit.setText(bean.getDepositMoney() + "");
+        mTvPass.setText((bean.getPayPwd() == 0) ? "未设置" : "已设置");
+
     }
 
     @OnClick({R.id.ln_money, R.id.ln_coupon, R.id.ln_deposit})
@@ -82,7 +87,7 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
                 Go.goCoupon();
                 break;
             case R.id.ln_deposit://押金
-                Go.goDeposit();
+                Go.goDeposit(data.getDepositMoney()+"",data.getDepositType());
                 break;
         }
     }

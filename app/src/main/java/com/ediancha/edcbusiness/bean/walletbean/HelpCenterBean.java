@@ -41,6 +41,7 @@ public class HelpCenterBean extends BaseBean<HelpCenterBean.Data> {
 
         public String id;
         public String title;
+        public String html;
 
         public String getId() {
             return id;
@@ -48,6 +49,10 @@ public class HelpCenterBean extends BaseBean<HelpCenterBean.Data> {
 
         public String getTitle() {
             return title;
+        }
+
+        public String getHtml() {
+            return html;
         }
 
         @Override
