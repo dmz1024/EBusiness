@@ -53,10 +53,20 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
         public String spaceDesc;
         public ShareBean share;
         public String costStatement;
+        public String latitude;
+        public String longitude;
         public int howFar;
         public ArrayList<PurposeBean> purpose;
         public ArrayList<FacilitiesBean> facilities;
         public ArrayList<?> aqi;
+
+        public String getLatitude() {
+            return latitude;
+        }
+
+        public String getLongitude() {
+            return longitude;
+        }
 
         public String getId() {
             return id;
