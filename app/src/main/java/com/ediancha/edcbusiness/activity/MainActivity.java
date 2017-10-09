@@ -11,7 +11,7 @@ import com.ediancha.edcbusiness.TestWindowManager;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.helper.MainBottomSheet;
 import com.ediancha.edcbusiness.helper.QwHelper;
-import com.ediancha.edcbusiness.helper.MyToast;
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.ediancha.edcbusiness.router.Go;
 
 public class MainActivity extends ToobarBaseActivity implements View.OnClickListener {

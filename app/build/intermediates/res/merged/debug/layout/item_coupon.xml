@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@color/color_f6f6f6">
+    android:background="?android:attr/selectableItemBackground">
 
-    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <FrameLayout
+        android:id="@+id/cdView"
+        android:background="@drawable/shape_fff_e1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/size10"
-        android:clipChildren="true"
-        android:orientation="vertical"
-        app:cardCornerRadius="2dp">
+        android:layout_margin="@dimen/size10">
 
         <LinearLayout
             style="@style/ln_ma_wr_ver_styles"
+            android:background="@null"
             android:paddingLeft="0dp"
             android:paddingRight="0dp">
 
@@ -30,17 +28,20 @@
                     android:layout_marginTop="@dimen/size10"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="代金券" />
+                    android:text="代金券"
+                    android:textSize="@dimen/size15" />
 
                 <TextView
                     android:id="@+id/tv_money"
                     style="@style/tv_ma_wra_right_min_style"
                     android:layout_marginLeft="@dimen/size10"
-                    android:text="￥ 15" />
+                    android:text="￥ 15"
+                    android:textSize="@dimen/size15" />
             </LinearLayout>
 
 
-            <LinearLayout style="@style/ln_ma_ma_ho_style"
+            <LinearLayout
+                style="@style/ln_ma_ma_ho_style"
                 android:paddingRight="@dimen/size10">
 
                 <TextView
@@ -49,45 +50,24 @@
                     android:layout_marginTop="@dimen/size10"
                     android:paddingLeft="@dimen/size10"
                     android:text="有效期值"
-                    android:textColor="@color/color_999" />
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size14" />
 
                 <TextView
                     android:id="@+id/tv_user"
                     style="@style/tv_ma_wra_right_min_style"
                     android:layout_marginLeft="@dimen/size10"
                     android:text="满100可用"
-                    android:textColor="@color/color_999" />
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/size14" />
             </LinearLayout>
 
-            <RelativeLayout
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="-15dp"
-                android:layout_marginRight="-15dp"
+                android:layout_height="6dp"
                 android:layout_marginTop="@dimen/size10"
-                >
-
-                <TextView
-                    android:id="@+id/tv_left"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:background="@drawable/shape_circle_drawable" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp"
-                    android:background="@drawable/shape_line_style"
-                    android:layout_centerInParent="true"
-                    android:layout_toRightOf="@+id/tv_left"
-                    android:layout_toLeftOf="@+id/tv_right"
-                    android:layerType="software"
-                    ></View>
-                <TextView
-                    android:id="@+id/tv_right"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/shape_circle_drawable" />
-            </RelativeLayout>
+                android:background="@drawable/shape_line_style"
+                android:layerType="software" />
 
             <TextView
                 android:id="@+id/tv_type"
@@ -96,10 +76,28 @@
                 android:layout_marginTop="@dimen/size5"
                 android:gravity="start"
                 android:paddingLeft="@dimen/size10"
+                android:paddingRight="@dimen/size10"
                 android:text="仅限首单使用"
                 android:textColor="@color/color_999"
-                android:paddingRight="@dimen/size10"/>
+                android:textSize="@dimen/size14" />
         </LinearLayout>
+    </FrameLayout>
 
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+    <View
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"
+        android:layout_alignBottom="@id/cdView"
+        android:layout_marginBottom="@dimen/size26"
+        android:layout_marginLeft="-2dp"
+        android:background="@drawable/shape_circle_drawable" />
+
+    <View
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"
+        android:layout_alignBottom="@id/cdView"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/size26"
+        android:layout_marginLeft="@dimen/size12"
+        android:background="@drawable/shape_circle_drawable" />
+
+</RelativeLayout>
