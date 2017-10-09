@@ -44,4 +44,9 @@
         android:textColor="@color/colorDmzBarText"
         android:textSize="15sp" />
 
+    <View
+        android:background="#e1e1e1"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp" />
 </RelativeLayout>

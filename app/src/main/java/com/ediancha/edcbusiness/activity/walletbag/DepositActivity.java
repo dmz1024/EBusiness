@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.dmz.library.dmzapi.view.custom.DmzBar;
@@ -16,7 +17,6 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.NormalContant;
 import com.ediancha.edcbusiness.dialog.DepositDialog;
-import com.ediancha.edcbusiness.helper.MyToast;
 import com.ediancha.edcbusiness.presenter.deposit.DepositPresenter;
 
 import butterknife.BindView;
