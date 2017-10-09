@@ -6,10 +6,10 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.constant.NormalContant;
-import com.ediancha.edcbusiness.helper.MyToast;
 import com.ediancha.edcbusiness.presenter.coupon.CouponChangePresenter;
 import com.ediancha.edcbusiness.router.Go;
 

@@ -65,12 +65,8 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
                 break;
             case R.id.iv_bottom_header:
                 Go.goPersonCenter();
-//                MyToast.normal("你好啊");
                 break;
             case R.id.fg_qw:
-
-//                MyToast.error("你好啊");
-
                 qwHelper.openQw();
                 break;
             case R.id.iv_bottom_message:

@@ -5,18 +5,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
-import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
-import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
-import com.dmz.library.dmzapi.dialog.ChooseStringDialog;
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
-import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
-import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.constant.NormalContant;
 import com.ediancha.edcbusiness.dialog.AutherDialog;
-import com.ediancha.edcbusiness.helper.MyToast;
 import com.ediancha.edcbusiness.helper.ValidatorUtils;
 import com.ediancha.edcbusiness.presenter.user.AuthorPresnter;
 
@@ -75,7 +71,7 @@ public class AutherActivity extends NotNetBaseActivity implements AuthorPresnter
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(card)) {
             MyToast.warn("请输入详细信息!");
         } else if (!ValidatorUtils.isIDCard(card)) {
-            MyToast.error("输入身份证不正确!");
+            MyToast.error("请输入正确身份证号码!");
         } else {
             mAutherDialog = new AutherDialog();
             mAutherDialog.show(getSupportFragmentManager(), "2");
@@ -93,11 +89,12 @@ public class AutherActivity extends NotNetBaseActivity implements AuthorPresnter
 
     @Override
     public void successCode(BaseBean bean) {
+        System.out.println("执行到这");
         if (bean.getCode() == NormalContant.SUCCESS_CODE) {
             MyToast.normal("认证成功!");
             finish();
         } else {
-            MyToast.error(bean.getMsg());
+            MyToast.warn(bean.getMsg());
         }
     }
 }
