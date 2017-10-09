@@ -120,11 +120,13 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
         mOpenMapHelper=new OpenMapHelper(this);
     }
 
-    @OnClick({R.id.tv_local})
+    @OnClick({R.id.tv_local,R.id.tv_number})
     void onClick(View view){
         switch (view.getId()){
             case R.id.tv_local:
                 mOpenMapHelper.openMap(mSpaceDdetail.getLatitude(),mSpaceDdetail.getLongitude(),mSpaceDdetail.getSpaceAreaPath());
+                break;
+            case R.id.tv_number:
                 break;
         }
     }
