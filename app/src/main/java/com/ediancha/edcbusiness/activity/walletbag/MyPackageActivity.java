@@ -77,7 +77,7 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
 
     }
 
-    @OnClick({R.id.ln_money, R.id.ln_coupon, R.id.ln_deposit})
+    @OnClick({R.id.ln_money, R.id.ln_coupon, R.id.ln_deposit,R.id.ln_pass})
     void click(View view) {
         switch (view.getId()) {
             case R.id.ln_money: //余额
@@ -88,6 +88,9 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
                 break;
             case R.id.ln_deposit://押金
                 Go.goDeposit(data.getDepositMoney()+"",data.getDepositType());
+                break;
+            case R.id.ln_pass:
+                Go.goPayPassWord();//修改支付密码
                 break;
         }
     }

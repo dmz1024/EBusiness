@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.ediancha.edcbusiness.R;
 
@@ -17,7 +18,7 @@ import butterknife.OnClick;
  * Created by Admin on 2017/9/22.
  * 支付密码设置
  */
-
+@Route(path = "/activity/walletbag/payPassWord")
 public class PayPWSettingActivity extends NotNetBaseActivity {
 
     MyCountDownTimer mCountDownTimer;
@@ -43,6 +44,7 @@ public class PayPWSettingActivity extends NotNetBaseActivity {
     @Override
     protected void initBarView() {
         super.initBarView();
+        dmzBar.setText("修改密码");
     }
 
     @Override

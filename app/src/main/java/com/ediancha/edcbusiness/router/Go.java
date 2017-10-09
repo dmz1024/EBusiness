@@ -198,6 +198,13 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.USERAUTHER_ACTIVITY).navigation();
     }
 
+    /**
+     *修改支付密码
+     */
+    public static void goPayPassWord() {
+        ARouter.getInstance().build(RouterUrl.PAYPW_ACTIVITY).navigation();
+    }
+
 
 
 }

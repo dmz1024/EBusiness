@@ -90,12 +90,10 @@ public class AutherActivity extends NotNetBaseActivity implements AuthorPresnter
 
     @Override
     public void successCode(BaseBean bean) {
-        System.out.println("执行到这");
+
         if (bean.getCode() == NormalContant.SUCCESS_CODE) {
             MyToast.normal("认证成功!");
             finish();
-        } else {
-            MyToast.warn(bean.getMsg());
         }
     }
 }

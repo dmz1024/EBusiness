@@ -133,4 +133,9 @@ public interface RouterUrl {
      * 空间订单详情
      */
     String SPACE_ORDER_IN_PROGERESS_DESC_ACTIVITY = "/activity/order/spaceOrderInProgeressDesc";
+
+    /**
+     * 修改支付密码
+     */
+    String PAYPW_ACTIVITY = "/activity/walletbag/payPassWord";
 }

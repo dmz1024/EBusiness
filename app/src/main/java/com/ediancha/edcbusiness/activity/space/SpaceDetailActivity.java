@@ -25,6 +25,7 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.adapter.UltraPagerAdapter;
 import com.ediancha.edcbusiness.bean.SpaceDetailBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.helper.OpenMapHelper;
 import com.tmall.ultraviewpager.UltraViewPager;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
@@ -32,6 +33,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Admin on 2017/9/28.
@@ -66,12 +68,14 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     UltraViewPager mUvpPager;
 
     UltraPagerAdapter mPagerAdapter;
-
+    private OpenMapHelper mOpenMapHelper;
+    private SpaceDetailBean.Data mSpaceDdetail;
     @Autowired
     public String id;
 
     @Override
     public void onSuccess(IBasePresenter presenter, SpaceDetailBean.Data bean) {
+        mSpaceDdetail=bean;
         mTvSname.setText(bean.getSpaceName());
         mTvStatus.setText(bean.getSpaceStatus() == 1 ? "空闲" : "使用中");
         mTvTime.setText(bean.getSpaceMoney() + "元/小时");
@@ -110,6 +114,22 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
                 .setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.item_space_textview).setConvertInterface(this));
     }
 
+    @Override
+    protected void initData() {
+        super.initData();
+        mOpenMapHelper=new OpenMapHelper(this);
+    }
+
+    @OnClick({R.id.tv_local,R.id.tv_number})
+    void onClick(View view){
+        switch (view.getId()){
+            case R.id.tv_local:
+                mOpenMapHelper.openMap(mSpaceDdetail.getLatitude(),mSpaceDdetail.getLongitude(),mSpaceDdetail.getSpaceAreaPath());
+                break;
+            case R.id.tv_number:
+                break;
+        }
+    }
 
     @Override
     protected void initDataBuilder() {
