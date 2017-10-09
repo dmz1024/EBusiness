@@ -1,39 +1,81 @@
 package com.ediancha.edcbusiness.activity;
 
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
-import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
+import com.bumptech.glide.Glide;
+import com.dmz.library.dmzapi.api.bean.IType;
+import com.dmz.library.dmzapi.api.list.AdapterHelper;
+import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
+import com.dmz.library.dmzapi.view.custom.DmzBar;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.TestWindowManager;
+import com.ediancha.edcbusiness.adapter.UltraPagerAdapter;
+import com.ediancha.edcbusiness.bean.HomeBean;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.helper.MainBottomSheet;
 import com.ediancha.edcbusiness.helper.QwHelper;
-import com.ediancha.edcbusiness.helper.MyToast;
+import com.ediancha.edcbusiness.presenter.HomePresenter;
 import com.ediancha.edcbusiness.router.Go;
+import com.tmall.ultraviewpager.UltraViewPager;
+import com.zhy.adapter.recyclerview.base.ViewHolder;
 
-public class MainActivity extends ToobarBaseActivity implements View.OnClickListener {
-    private View fg_arrows;
-    private View fg_qw;
-    private ImageView iv_bottom_header;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.microedition.khronos.opengles.GL;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+public class MainActivity extends NotNetBaseActivity implements View.OnClickListener, AdapterHelper.OnConvertInterface, AdapterHelper.OnClickListener, HomePresenter.IHomeView {
+    @BindView(R.id.tv_left)
+    TextView mTvLeft;
+    @BindView(R.id.tv_center)
+    TextView mTvCenter;
+    @BindView(R.id.tv_right)
+    TextView mTvRight;
+    @BindView(R.id.recy)
+    RecyclerView mRecy;
+    @BindView(R.id.dmzBar)
+    DmzBar mDmzBar;
+    @BindView(R.id.iv_arrows)
+    ImageView mIvArrows;
+    @BindView(R.id.fg_arrows)
+    RelativeLayout mFgArrows;
+    @BindView(R.id.fg_qw)
+    FrameLayout mFgQw;
+    @BindView(R.id.iv_bottom_header)
+    ImageView mIvBottomHeader;
+    @BindView(R.id.iv_bottom_message)
+    ImageView mIvBottomMessage;
+    @BindView(R.id.llBottom)
+    LinearLayout mLlBottom;
+    @BindView(R.id.uvp_pager)
+    UltraViewPager mUvpPager;
+
+
+    private HomePresenter mHomePresenter;
     private MainBottomSheet bottomSheet;
     private QwHelper qwHelper;
-    private ImageView iv_bottom_message;
+    UltraPagerAdapter mUltraPagerAdapter;
 
     @Override
     protected void initView() {
         super.initView();
+
+        initUltraViewPager(null);
         TestWindowManager.getInstance().addView();
-        fg_qw = findViewById(R.id.fg_qw);
-        iv_bottom_header = findViewById(R.id.iv_bottom_header);
-        fg_arrows = findViewById(R.id.fg_arrows);
-        iv_bottom_message = findViewById(R.id.iv_bottom_message);
-        fg_arrows.setOnClickListener(this);
-        iv_bottom_message.setOnClickListener(this);
-        fg_qw.setOnClickListener(this);
-        iv_bottom_header.setOnClickListener(this);
+
         bottomSheet = new MainBottomSheet(((LinearLayout) findViewById(R.id.llBottom)), ((View) findViewById(R.id.iv_arrows)));
         qwHelper = new QwHelper(this);
 
@@ -51,13 +93,46 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
         dmzBar.setVisibility(View.GONE);
     }
 
+    private void initUltraViewPager(String img) {
+
+        ArrayList<String> mRrr = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            mRrr.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507553467082&di=9b65f154e4d078d6c0431f1309ccd1ba&imgtype=0&src=http%3A%2F%2Fwww.tupian1.cn%2Fuploads%2Fallimg%2F150322%2F1-150322162644.jpg");
+        }
+        mUvpPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
+        mUltraPagerAdapter = new UltraPagerAdapter(this, mRrr);
+        mUvpPager.setAdapter(mUltraPagerAdapter);
+        mUvpPager.setInfiniteLoop(true);
+        mUvpPager.setAutoScroll(5000);
+    }
+
+    private void initRecyclerView(ArrayList<HomeBean.SpaceListBean> spaceList) {
+
+        AdapterHelper._instance(this, mRecy)._initData(spaceList)
+                .setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false){
+                    @Override
+                    public boolean canScrollVertically() {
+                        return false;
+                    }
+                })
+                .setType(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_home_space).setConvertInterface(this)
+                        .setOnClickListener(this));
+    }
+
+    @Override
+    protected void initData() {
+        super.initData();
+        mHomePresenter = new HomePresenter(this);
+        mHomePresenter.getHomeView();
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         qwHelper.onActivityResult(requestCode, resultCode, data);
     }
 
-    @Override
+    @OnClick({R.id.fg_arrows, R.id.iv_bottom_header, R.id.fg_qw, R.id.iv_bottom_message,R.id.llBottom})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.fg_arrows:
@@ -74,13 +149,33 @@ public class MainActivity extends ToobarBaseActivity implements View.OnClickList
                     Go.goActivityMessage();
                 }
                 break;
+            case R.id.llBottom:
+                break;
         }
     }
 
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
 
+
+    @Override
+    public void convert(int viewType, ViewHolder holder, IType iType, int position) {
+        HomeBean.SpaceListBean spaceListBean = (HomeBean.SpaceListBean) iType;
+
+        holder.setText(R.id.tv_name, spaceListBean.getSpaceName());
+        holder.setText(R.id.tv_local, spaceListBean.getSpaceAreaPath() + spaceListBean.getHowFar());
+        holder.setText(R.id.tv_content, spaceListBean.getSpaceDesc());
+        Glide.with(this).load("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507553467082&di=9b65f154e4d078d6c0431f1309ccd1ba&imgtype=0&src=http%3A%2F%2Fwww.tupian1.cn%2Fuploads%2Fallimg%2F150322%2F1-150322162644.jpg").into((ImageView) holder.getView(R.id.img_show));
+    }
+
+    @Override
+    public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
+        HomeBean.SpaceListBean spaceListBean = (HomeBean.SpaceListBean) adapterHelper.getDatas().get(position);
+        Go.goSpaceDetail(spaceListBean.getId());
+    }
+
+    @Override
+    public void successHome(HomeBean.Data homeBean) {
+        ArrayList<HomeBean.SpaceListBean> spaceList = homeBean.getSpaceList();
+        initRecyclerView(spaceList);
     }
 }

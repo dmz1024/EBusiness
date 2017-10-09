@@ -205,6 +205,14 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.PAYPW_ACTIVITY).navigation();
     }
 
+    /**
+     *专题
+     */
+    public static void goSpecial() {
+        ARouter.getInstance().build(RouterUrl.SPECIAL_ACTIVITY).navigation();
+    }
+
+
 
 
 }

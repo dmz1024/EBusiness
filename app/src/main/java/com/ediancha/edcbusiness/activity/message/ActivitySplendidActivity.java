@@ -10,6 +10,8 @@ import com.dmz.library.dmzapi.view.activity.MoreDataBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.ActivitySplendidBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.helper.TimeFormatUtils;
+import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 /**
@@ -33,10 +35,9 @@ public class ActivitySplendidActivity extends MoreDataBaseActivity<ActivitySplen
 
     @Override
     protected void initMoreBuilder() {
-        mBuilder
-                .setCanRefresh(false)
-                .addView(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.item_activity_splendid_have_image).setConvertInterface(this))
-                .addView(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_activity_splendid_no_image).setConvertInterface(this));
+        mBuilder.setCanRefresh(false);
+        mBuilder.addView(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.item_activity_splendid_have_image).setConvertInterface(this).setOnClickListener(this));
+        mBuilder.addView(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_activity_splendid_no_image).setConvertInterface(this).setOnClickListener(this));
     }
 
     @Override
@@ -50,14 +51,20 @@ public class ActivitySplendidActivity extends MoreDataBaseActivity<ActivitySplen
     public void convert(int viewType, ViewHolder holder, ActivitySplendidBean.Data data, int position) {
         if (viewType == 1) {
             Glide.with(this)
-                    .load(data.getIvImg())
+                    .load(data.getImage())
                     .into(holder.<ImageView>getView(R.id.ivView));
         }
         holder
-                .setVisible(R.id.ivShow, data.getIsShow())
-                .setText(R.id.tvTime, data.getTime())
-                .setText(R.id.tvContent, data.getContent())
+                .setVisible(R.id.ivShow,data.getIsShow())
+                .setText(R.id.tvTime, TimeFormatUtils.stampToDate(data.getCreatetime()))
+                .setText(R.id.tvContent, data.getIntroduce())
                 .setText(R.id.tvTitle, data.getTitle());
 
+    }
+
+    @Override
+    public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
+        ActivitySplendidBean.Data data= (ActivitySplendidBean.Data) adapterHelper.getDatas().get(position);
+        Go.goWebView(data.getHtml());
     }
 }

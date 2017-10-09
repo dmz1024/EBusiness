@@ -26,7 +26,7 @@
             android:maxLines="1"
             android:textColorHint="@color/color_999"
             android:textCursorDrawable="@null"
-            android:textSize="@dimen/sp16" />
+            android:textSize="@dimen/sp13" />
 
         <ImageView
             android:id="@+id/iv_show"

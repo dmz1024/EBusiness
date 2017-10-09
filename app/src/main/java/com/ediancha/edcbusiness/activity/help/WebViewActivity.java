@@ -56,17 +56,18 @@ public class WebViewActivity extends ToobarBaseActivity {
         });
 
         mWebView.setWebChromeClient(new WebChromeClient() {
-            @Override
-            public void onProgressChanged(WebView view, int newProgress) {
-                if (newProgress == 100) {
-                    mProgressBar.setVisibility(View.GONE);//加载完网页进度条消失
-                } else {
-                    mProgressBar.setVisibility(View.VISIBLE);//开始加载网页时显示进度条
-                    mProgressBar.setProgress(newProgress);//设置进度值
-                }
+                                        @Override
+                                        public void onProgressChanged(WebView view, int newProgress) {
+                                            if (newProgress == 100) {
+                                                mProgressBar.setVisibility(View.GONE);//加载完网页进度条消失
+                                            } else {
+                                                mProgressBar.setVisibility(View.VISIBLE);//开始加载网页时显示进度条
+                                                mProgressBar.setProgress(newProgress);//设置进度值
+                                            }
 
-            }
-        });
+                                        }
+                                    }
+        );
 
     }
 
