@@ -49,6 +49,12 @@ public class MyToast {
         toast.show();
     }
 
+    public static void close() {
+        if (toast != null) {
+            toast.cancel();
+        }
+    }
+
     private static void init() {
         if (view == null) {
             view = View.inflate(mContext, R.layout.toast_view, null);

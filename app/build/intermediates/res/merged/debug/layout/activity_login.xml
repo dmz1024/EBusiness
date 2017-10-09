@@ -5,6 +5,11 @@
     android:background="#fff"
     android:orientation="vertical">
 
+    <com.dmz.library.dmzapi.view.custom.DmzBar
+        android:id="@+id/dmzBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
     <ImageView
         android:id="@+id/ivCha"
         android:layout_width="wrap_content"
@@ -62,12 +67,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
-                    android:hint="手机号"
                     android:digits="0123456789"
+                    android:hint="手机号"
                     android:inputType="number"
                     android:maxLines="1"
                     android:padding="8dp"
                     android:singleLine="true"
+                    android:text="18326167257"
                     android:textColor="#666"
                     android:textColorHint="#999"
                     android:textSize="13sp" />
@@ -79,9 +85,9 @@
                 android:background="#f6f6f6" />
 
             <RelativeLayout
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -93,15 +99,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@null"
+                        android:digits="0123456789"
                         android:hint="验证码"
-                        android:inputType="number"
                         android:imeActionId="@+id/login"
                         android:imeActionLabel="登录"
-                        android:digits="0123456789"
                         android:imeOptions="actionUnspecified"
+                        android:inputType="number"
                         android:maxLines="1"
                         android:padding="8dp"
                         android:singleLine="true"
+                        android:text="123456"
                         android:textColor="#666"
                         android:textColorHint="#999"
                         android:textSize="13sp" />
@@ -120,8 +127,23 @@
                     android:paddingRight="6dp"
                     android:paddingTop="5dp"
                     android:text="发送验证码"
-                    android:textColor="#666"
+                    android:textColor="@color/color_fff"
                     android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvCodeTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tvCode"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@id/tvCode"
+                    android:layout_alignRight="@id/tvCode"
+                    android:layout_alignTop="@id/tvCode"
+                    android:background="@drawable/shape_login_code_check"
+                    android:gravity="center"
+                    android:text="59S"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
 
 
             </RelativeLayout>
@@ -145,7 +167,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/shape_login_code_checked"
+                android:background="@drawable/shape_login_code"
                 android:text="登录/注册"
                 android:textColor="#fff"
                 android:textSize="14sp" />

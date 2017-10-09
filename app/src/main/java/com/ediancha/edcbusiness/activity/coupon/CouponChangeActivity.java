@@ -10,6 +10,7 @@ import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.constant.NormalContant;
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.ediancha.edcbusiness.presenter.coupon.CouponChangePresenter;
 import com.ediancha.edcbusiness.router.Go;
 
