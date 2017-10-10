@@ -48,7 +48,6 @@ public class SpecialActivity extends MoreDataBaseActivity<SpecialBean.Data, Spec
                 .setText(R.id.tvTime, TimeFormatUtils.stampToDate(specialBean.getCreatetime()))
                 .setText(R.id.tvContent, specialBean.getIntroduce())
                 .setText(R.id.tvTitle, specialBean.getTitle());
-
     }
 
     @Override
