@@ -71,7 +71,11 @@
         <activity android:name=".activity.my.MyInfoActivity"></activity>
         <activity android:name=".activity.order.SpaceOrderInProgeressDescActivity"></activity>
         <activity android:name=".activity.walletbag.PayPWSettingActivity"/>
+
+        <activity android:name=".activity.SpecialActivity"/>
+
         <activity android:name=".activity.space.MoneyAffirmActivity"/>
+
         <activity android:name=".activity.HomeActivity">
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->

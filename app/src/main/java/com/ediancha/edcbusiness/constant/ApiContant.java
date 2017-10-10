@@ -21,7 +21,7 @@ public interface ApiContant {
     /**
      * 活动精选
      */
-    String ACTIVITY_SPLENDID = BASE_URL + "buleline/getData";
+    String ACTIVITY_SPLENDID = BASE_API + "article/getActivity";
 
     /**
      * 交易提醒
@@ -118,7 +118,15 @@ public interface ApiContant {
      */
     String EXITDEPOSIT_URL = BASE_API + "users/return_deposit";
 
+    /**
+     * 空间列表
+     */
+    String HOME_URL = BASE_API + "index/index";
 
+    /**
+     * 专题
+     */
+    String SPECIAL_URL = BASE_API + "article/getSpecial";
     /**
      * 扫码返规则
      */
