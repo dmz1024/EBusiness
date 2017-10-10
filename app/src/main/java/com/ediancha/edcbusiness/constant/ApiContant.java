@@ -127,4 +127,8 @@ public interface ApiContant {
      * 专题
      */
     String SPECIAL_URL = BASE_API + "article/getSpecial";
+    /**
+     * 扫码返规则
+     */
+    String SCANCODE = BASE_API + "space/scancode";
 }

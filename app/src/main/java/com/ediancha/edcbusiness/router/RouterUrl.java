@@ -142,4 +142,12 @@ public interface RouterUrl {
      * 专题
      */
     String SPECIAL_ACTIVITY = "/activity/special";
+
+
+
+    /**
+     * 扫码返回规则(开锁确认)
+     */
+    String MONEY_AFFIRM_ACTIVITY = "/activity/sapce/moneyAffirm";
+
 }
