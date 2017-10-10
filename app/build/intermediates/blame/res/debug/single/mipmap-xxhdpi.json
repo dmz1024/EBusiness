@@ -24,6 +24,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_wallet_password_arrow.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon_kaiguan.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_kaiguan.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon_home_my_selected.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_home_my_selected.png"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon_wallet_back.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_wallet_back.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon_kongjian.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_kongjian.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon_home_more.png",
@@ -160,6 +168,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_my_diiscount.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon_tanhao1.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_tanhao1.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icom_home_special_selected.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icom_home_special_selected.png"
     },
@@ -206,5 +218,9 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon_recharge_payment_selected.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_recharge_payment_selected.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon_weizhi.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxhdpi/icon_weizhi.png"
     }
 ]

@@ -24,6 +24,10 @@
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/color/color_home_style.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/color/color_home_style.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/color/abc_hint_foreground_material_light.xml"
     },

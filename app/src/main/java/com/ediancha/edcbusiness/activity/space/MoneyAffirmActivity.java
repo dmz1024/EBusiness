@@ -30,7 +30,7 @@ public class MoneyAffirmActivity extends NotNetBaseActivity {
     @Override
     protected void initBarView() {
         super.initBarView();
-        dmzBar.setText("费用确认").addItemView(new DmzBar.DmzBarItemInfo().setTitle("分享"));
+        dmzBar.setText("费用确认").addItemView(new DmzBar.DmzBarItemInfo().setTitle("分享a"));
     }
 
     @Override
