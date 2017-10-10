@@ -16,7 +16,7 @@ import java.lang.Override;
 public class OrderMoneyNotEnoughDialog_ViewBinding implements Unbinder {
   private OrderMoneyNotEnoughDialog target;
 
-  private View view2131689738;
+  private View view2131689739;
 
   @UiThread
   public OrderMoneyNotEnoughDialog_ViewBinding(final OrderMoneyNotEnoughDialog target,
@@ -27,7 +27,7 @@ public class OrderMoneyNotEnoughDialog_ViewBinding implements Unbinder {
     target.ivCha = Utils.findRequiredViewAsType(source, R.id.ivCha, "field 'ivCha'", ImageView.class);
     target.tvMoney = Utils.findRequiredViewAsType(source, R.id.tvMoney, "field 'tvMoney'", TextView.class);
     view = Utils.findRequiredView(source, R.id.btChoog, "method 'choose'");
-    view2131689738 = view;
+    view2131689739 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -46,7 +46,7 @@ public class OrderMoneyNotEnoughDialog_ViewBinding implements Unbinder {
     target.ivCha = null;
     target.tvMoney = null;
 
-    view2131689738.setOnClickListener(null);
-    view2131689738 = null;
+    view2131689739.setOnClickListener(null);
+    view2131689739 = null;
   }
 }

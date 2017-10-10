@@ -150,4 +150,8 @@ public interface RouterUrl {
      */
     String MONEY_AFFIRM_ACTIVITY = "/activity/sapce/moneyAffirm";
 
+    /**
+     * 修改信息
+     */
+    String UPDATEINFO_ACTIVITY = "/activity/my/updateInfo";
 }

@@ -1,34 +1,34 @@
 [
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icom_home_special.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxhdpi/icom_home_special.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_recharge_payment_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxhdpi\\icon_recharge_payment_selected.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icom_home_special_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxhdpi/icom_home_special_selected.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_home_my.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxhdpi\\icon_home_my.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icon_recharge_payment_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxhdpi/icon_recharge_payment_selected.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_home_tab_home_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxhdpi\\icon_home_tab_home_selected.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icon_recharge_payment_unchecked.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxhdpi/icon_recharge_payment_unchecked.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_home_tab_home.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxhdpi\\icon_home_tab_home.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icon_home_my_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxhdpi/icon_home_my_selected.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icom_home_special_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxhdpi\\icom_home_special_selected.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icon_home_my.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxhdpi/icon_home_my.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_home_my_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxhdpi\\icon_home_my_selected.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icon_home_tab_home.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxhdpi/icon_home_tab_home.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icom_home_special.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxhdpi\\icom_home_special.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icon_home_tab_home_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxhdpi/icon_home_tab_home_selected.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_recharge_payment_unchecked.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxhdpi\\icon_recharge_payment_unchecked.png"
     }
 ]

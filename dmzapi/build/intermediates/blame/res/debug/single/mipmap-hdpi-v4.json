@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_dmz_bar_back_white.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/mipmap-hdpi/icon_dmz_bar_back_white.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\icon_dmz_bar_back.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\mipmap-hdpi\\icon_dmz_bar_back.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_dmz_bar_back.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/mipmap-hdpi/icon_dmz_bar_back.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\icon_dmz_bar_back_white.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\mipmap-hdpi\\icon_dmz_bar_back_white.png"
     }
 ]

@@ -18,6 +18,7 @@ import com.ediancha.edcbusiness.activity.message.ExpenseTipsActivity;
 import com.ediancha.edcbusiness.activity.my.AutherActivity;
 import com.ediancha.edcbusiness.activity.my.MyInfoActivity;
 import com.ediancha.edcbusiness.activity.my.PersonCenterActivity;
+import com.ediancha.edcbusiness.activity.my.UpdateInfoActivity;
 import com.ediancha.edcbusiness.activity.order.GoodOrderActivity;
 import com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity;
 import com.ediancha.edcbusiness.activity.order.SpaceOrderActivity;
@@ -52,6 +53,7 @@ public class ARouter$$Group$$activity implements IRouteGroup {
     atlas.put("/activity/my/auther", RouteMeta.build(RouteType.ACTIVITY, AutherActivity.class, "/activity/my/auther", "activity", null, -1, -2147483648));
     atlas.put("/activity/my/myInfo", RouteMeta.build(RouteType.ACTIVITY, MyInfoActivity.class, "/activity/my/myinfo", "activity", null, -1, -2147483648));
     atlas.put("/activity/my/personCenter", RouteMeta.build(RouteType.ACTIVITY, PersonCenterActivity.class, "/activity/my/personcenter", "activity", null, -1, -2147483648));
+    atlas.put("/activity/my/updateInfo", RouteMeta.build(RouteType.ACTIVITY, UpdateInfoActivity.class, "/activity/my/updateinfo", "activity", new java.util.HashMap<String, Integer>(){{put("title", 8); }}, -1, -2147483648));
     atlas.put("/activity/order/goodOrder", RouteMeta.build(RouteType.ACTIVITY, GoodOrderActivity.class, "/activity/order/goodorder", "activity", null, -1, -2147483648));
     atlas.put("/activity/order/goodOrderDesc", RouteMeta.build(RouteType.ACTIVITY, GoodOrderDescActivity.class, "/activity/order/goodorderdesc", "activity", new java.util.HashMap<String, Integer>(){{put("orderId", 8); }}, -1, -2147483648));
     atlas.put("/activity/order/spaceOrder", RouteMeta.build(RouteType.ACTIVITY, SpaceOrderActivity.class, "/activity/order/spaceorder", "activity", null, -1, -2147483648));

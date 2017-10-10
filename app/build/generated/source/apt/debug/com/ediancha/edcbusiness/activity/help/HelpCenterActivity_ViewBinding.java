@@ -16,7 +16,7 @@ import java.lang.Override;
 public class HelpCenterActivity_ViewBinding implements Unbinder {
   private HelpCenterActivity target;
 
-  private View view2131689794;
+  private View view2131689795;
 
   @UiThread
   public HelpCenterActivity_ViewBinding(HelpCenterActivity target) {
@@ -32,7 +32,7 @@ public class HelpCenterActivity_ViewBinding implements Unbinder {
     target.mRecyTwo = Utils.findRequiredViewAsType(source, R.id.recy_two, "field 'mRecyTwo'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.tv_fankuai, "field 'mTvFankuai' and method 'onClick'");
     target.mTvFankuai = Utils.castView(view, R.id.tv_fankuai, "field 'mTvFankuai'", TextView.class);
-    view2131689794 = view;
+    view2131689795 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -52,7 +52,7 @@ public class HelpCenterActivity_ViewBinding implements Unbinder {
     target.mRecyTwo = null;
     target.mTvFankuai = null;
 
-    view2131689794.setOnClickListener(null);
-    view2131689794 = null;
+    view2131689795.setOnClickListener(null);
+    view2131689795 = null;
   }
 }

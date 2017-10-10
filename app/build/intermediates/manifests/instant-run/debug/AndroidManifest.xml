@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ediancha.edcbusiness"
+    android:versionCode="100"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 悬浮窗口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.ediancha.edcbusiness.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme" >
+        <activity android:name="com.ediancha.edcbusiness.activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ediancha.edcbusiness.activity.Main5Activity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.Main6Activity" />
+        <activity
+            android:name="com.ediancha.edcbusiness.activity.my.PersonCenterActivity"
+            android:theme="@style/PersonCenterTheme" />
+        <activity
+            android:name="com.ediancha.edcbusiness.activity.QwActivity"
+            android:theme="@style/QwTheme" />
+        <activity android:name="com.ediancha.edcbusiness.activity.SpaceDescActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.message.ActivityMessageActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.message.ActivitySplendidActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.message.ExpenseTipsActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.MyPackageActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.CouponActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.DepositActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.MoneyActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.ChargeActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.coupon.CouponChangeActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.help.HelpCenterActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.help.FanKuiActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.help.WebViewActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.space.SpaceDetailActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.my.AutherActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.help.HelpCenterNextActivity" />
+        <activity
+            android:name="com.ediancha.edcbusiness.activity.login.LoginActivity"
+            android:theme="@style/LoginTheme" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.SpaceOrderActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.GoodOrderActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.my.MyInfoActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.SpaceOrderInProgeressDescActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.PayPWSettingActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.my.UpdateInfoActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.SpecialActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.space.MoneyAffirmActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.HomeActivity" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ediancha.edcbusiness.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name="com.taobao.sophix.aidl.DownloadService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.taobao.hotfix.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <activity
+            android:name="com.yanzhenjie.permission.PermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:theme="@style/permission_PermissionActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <service
+            android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
+            android:enabled="false"
+            android:process=":leakcanary" />
+        <service
+            android:name="com.squareup.leakcanary.DisplayLeakService"
+            android:enabled="false" />
+
+        <activity
+            android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
+            android:enabled="false"
+            android:icon="@drawable/leak_canary_icon"
+            android:label="@string/leak_canary_display_activity_label"
+            android:taskAffinity="com.squareup.leakcanary"
+            android:theme="@style/leak_canary_LeakCanary.Base" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.squareup.leakcanary.internal.RequestStoragePermissionActivity"
+            android:enabled="false"
+            android:icon="@drawable/leak_canary_icon"
+            android:label="@string/leak_canary_storage_permission_activity_label"
+            android:taskAffinity="com.squareup.leakcanary"
+            android:theme="@style/leak_canary_Theme.Transparent" />
+
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+
+        <provider
+            android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:authorities="com.ediancha.edcbusiness.com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

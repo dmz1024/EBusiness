@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+        "outputFile": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 99
                 },
                 "from": {
-                    "file": "/Users/dengmingzhi/.android/build-cache/2ea36b38c78b94a0be2394ab8a2ab6615d3ff880/output/res/values-zh/values-zh.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\1c747bcda8529799875b9c68463248c6fb05d30f\\output\\res\\values-zh\\values-zh.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 214
                 },
                 "from": {
-                    "file": "/Users/dengmingzhi/.android/build-cache/2ea36b38c78b94a0be2394ab8a2ab6615d3ff880/output/res/values-zh/values-zh.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\1c747bcda8529799875b9c68463248c6fb05d30f\\output\\res\\values-zh\\values-zh.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 314
                 },
                 "from": {
-                    "file": "/Users/dengmingzhi/.android/build-cache/2ea36b38c78b94a0be2394ab8a2ab6615d3ff880/output/res/values-zh/values-zh.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\1c747bcda8529799875b9c68463248c6fb05d30f\\output\\res\\values-zh\\values-zh.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 363
                 },
                 "from": {
-                    "file": "/Users/dengmingzhi/.android/build-cache/2ea36b38c78b94a0be2394ab8a2ab6615d3ff880/output/res/values-zh/values-zh.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\1c747bcda8529799875b9c68463248c6fb05d30f\\output\\res\\values-zh\\values-zh.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 414
                 },
                 "from": {
-                    "file": "/Users/dengmingzhi/.android/build-cache/2ea36b38c78b94a0be2394ab8a2ab6615d3ff880/output/res/values-zh/values-zh.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\1c747bcda8529799875b9c68463248c6fb05d30f\\output\\res\\values-zh\\values-zh.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 484
                 },
                 "from": {
-                    "file": "/Users/dengmingzhi/.android/build-cache/2ea36b38c78b94a0be2394ab8a2ab6615d3ff880/output/res/values-zh/values-zh.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\1c747bcda8529799875b9c68463248c6fb05d30f\\output\\res\\values-zh\\values-zh.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 557
                 },
                 "from": {
-                    "file": "/Users/dengmingzhi/.android/build-cache/2ea36b38c78b94a0be2394ab8a2ab6615d3ff880/output/res/values-zh/values-zh.xml",
+                    "file": "C:\\Users\\Admin\\.android\\build-cache\\1c747bcda8529799875b9c68463248c6fb05d30f\\output\\res\\values-zh\\values-zh.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,

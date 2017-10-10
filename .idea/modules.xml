@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EBusiness.iml" filepath="$PROJECT_DIR$/EBusiness.iml" />
+      <module fileurl="file://D:\android\ydc\EBusiness\EBusiness.iml" filepath="D:\android\ydc\EBusiness\EBusiness.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\android\ydc\EBusiness\app\app.iml" filepath="D:\android\ydc\EBusiness\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dmzapi/dmzapi.iml" filepath="$PROJECT_DIR$/dmzapi/dmzapi.iml" />
+      <module fileurl="file://D:\android\ydc\EBusiness\dmzapi\dmzapi.iml" filepath="D:\android\ydc\EBusiness\dmzapi\dmzapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/dmzshow/dmzshow.iml" filepath="$PROJECT_DIR$/dmzshow/dmzshow.iml" />
+      <module fileurl="file://D:\android\ydc\EBusiness\dmzshow\dmzshow.iml" filepath="D:\android\ydc\EBusiness\dmzshow\dmzshow.iml" />
     </modules>
   </component>
 </project>

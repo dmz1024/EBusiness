@@ -18,11 +18,11 @@ import java.lang.Override;
 public class SpaceDetailActivity_ViewBinding implements Unbinder {
   private SpaceDetailActivity target;
 
-  private View view2131689815;
+  private View view2131689816;
 
-  private View view2131689763;
+  private View view2131689764;
 
-  private View view2131689820;
+  private View view2131689821;
 
   @UiThread
   public SpaceDetailActivity_ViewBinding(SpaceDetailActivity target) {
@@ -36,7 +36,7 @@ public class SpaceDetailActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.tv_envir, "field 'mTvEnvir' and method 'open'");
     target.mTvEnvir = Utils.castView(view, R.id.tv_envir, "field 'mTvEnvir'", TextView.class);
-    view2131689815 = view;
+    view2131689816 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -48,7 +48,7 @@ public class SpaceDetailActivity_ViewBinding implements Unbinder {
     target.mTvTime = Utils.findRequiredViewAsType(source, R.id.tv_time, "field 'mTvTime'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_local, "field 'mTvLocal' and method 'onClick'");
     target.mTvLocal = Utils.castView(view, R.id.tv_local, "field 'mTvLocal'", TextView.class);
-    view2131689763 = view;
+    view2131689764 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,7 +57,7 @@ public class SpaceDetailActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tv_number, "field 'mTvNumber' and method 'onClick'");
     target.mTvNumber = Utils.castView(view, R.id.tv_number, "field 'mTvNumber'", TextView.class);
-    view2131689820 = view;
+    view2131689821 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -92,11 +92,11 @@ public class SpaceDetailActivity_ViewBinding implements Unbinder {
     target.mTvNotice = null;
     target.mUvpPager = null;
 
-    view2131689815.setOnClickListener(null);
-    view2131689815 = null;
-    view2131689763.setOnClickListener(null);
-    view2131689763 = null;
-    view2131689820.setOnClickListener(null);
-    view2131689820 = null;
+    view2131689816.setOnClickListener(null);
+    view2131689816 = null;
+    view2131689764.setOnClickListener(null);
+    view2131689764 = null;
+    view2131689821.setOnClickListener(null);
+    view2131689821 = null;
   }
 }

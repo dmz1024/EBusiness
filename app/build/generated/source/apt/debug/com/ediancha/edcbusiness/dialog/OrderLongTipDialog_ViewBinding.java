@@ -15,7 +15,7 @@ import java.lang.Override;
 public class OrderLongTipDialog_ViewBinding implements Unbinder {
   private OrderLongTipDialog target;
 
-  private View view2131689736;
+  private View view2131689737;
 
   @UiThread
   public OrderLongTipDialog_ViewBinding(final OrderLongTipDialog target, View source) {
@@ -24,7 +24,7 @@ public class OrderLongTipDialog_ViewBinding implements Unbinder {
     View view;
     target.ivCha = Utils.findRequiredViewAsType(source, R.id.ivCha, "field 'ivCha'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.btOut, "method 'onClick'");
-    view2131689736 = view;
+    view2131689737 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class OrderLongTipDialog_ViewBinding implements Unbinder {
 
     target.ivCha = null;
 
-    view2131689736.setOnClickListener(null);
-    view2131689736 = null;
+    view2131689737.setOnClickListener(null);
+    view2131689737 = null;
   }
 }
