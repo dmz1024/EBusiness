@@ -148,12 +148,12 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable\\shape_circle_drawable.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_login_code_check.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable\\shape_login_code_check.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_pw_style.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable\\shape_pw_style.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_login_code_check.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable\\shape_login_code_check.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_b0000000.xml",

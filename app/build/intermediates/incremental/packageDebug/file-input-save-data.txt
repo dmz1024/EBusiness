@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Oct 10 13:49:38 CST 2017
+#Tue Oct 10 15:16:03 CST 2017
 20.base=D\:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\resources-debug.ap_
 143.base=D\:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\resources-debug.ap_
 493.base=D\:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\resources-debug.ap_
