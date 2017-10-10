@@ -77,4 +77,7 @@ dependencies {
         transitive = true
     }
 
+    //https://github.com/ragunathjawahar/android-saripaar
+    compile 'com.mobsandgeeks:android-saripaar:2.0.3'
+
 }

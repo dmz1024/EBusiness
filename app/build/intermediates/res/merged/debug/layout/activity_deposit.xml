@@ -46,6 +46,16 @@
             android:layout_marginTop="@dimen/size10">
 
             <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_f00"
+                android:textSize="@dimen/sp13"
+                android:gravity="center"
+                android:text="@string/string_deposit_text"
+                android:visibility="gone"/>
+
+            <TextView
                 android:id="@+id/tv_submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,6 +64,14 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="退押金" />
+            <TextView
+                android:id="@+id/tv_xieyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/sp13"
+                android:gravity="center"
+                android:text="@string/string_deposit_xieyi" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

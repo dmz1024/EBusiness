@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_f6f6f6">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.dmz.library.dmzapi.view.custom.DmzBar
+            android:id="@+id/dmzBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/color_999"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="@string/string_auther_info"
+        android:paddingLeft="@dimen/size10"
+        android:paddingRight="@dimen/size10"
+        android:paddingTop="@dimen/size3"
+        android:paddingBottom="@dimen/size3"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="@dimen/size40"
+       android:orientation="vertical">
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColorHint="@color/color_666">
+           <EditText
+               android:id="@+id/tv_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="真实姓名"
+               android:textSize="@dimen/sp16"
+               android:textColor="@color/color_666"
+               android:singleLine="true"/>
+       </android.support.design.widget.TextInputLayout>
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColorHint="@color/color_666">
+           <EditText
+               android:id="@+id/tv_card"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="身份证号"
+               android:textSize="@dimen/sp16"
+               android:textColor="@color/color_666"
+               android:singleLine="true"/>
+       </android.support.design.widget.TextInputLayout>
+
+       <TextView
+           android:id="@+id/tv_submit"
+           style="@style/tv_but_style"
+           android:text="提交认证"/>
+   </LinearLayout>
+</LinearLayout>

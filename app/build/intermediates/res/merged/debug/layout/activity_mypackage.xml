@@ -23,7 +23,7 @@
                 android:src="@mipmap/icon_wallet_balance"/>
             <TextView
                 android:id="@+id/tv_money"
-                android:text="10.00"
+                android:text=""
                 style="@style/tv_wr_min_15sp_style"/>
             <TextView
                 android:text="余额(元)"
@@ -40,7 +40,7 @@
                 android:src="@mipmap/icon_wallet_coupon"/>
             <TextView
                 android:id="@+id/tv_coupon"
-                android:text="10.00"
+                android:text=""
                 style="@style/tv_wr_min_15sp_style"/>
             <TextView
                 android:text="优惠券(张)"
@@ -55,7 +55,7 @@
                 android:src="@mipmap/icon_wallet_deposit"/>
             <TextView
                 android:id="@+id/tv_deposit"
-                android:text="10.00"
+                android:text=""
                 style="@style/tv_wr_min_15sp_style"/>
             <TextView
                 android:text="押金(元)"

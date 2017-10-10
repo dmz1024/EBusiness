@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_fff"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请认真核对信息"
+        android:gravity="center"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/color_333"
+        android:padding="@dimen/size10"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请认真核对信息"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_666"
+        android:padding="@dimen/size10"/>
+    <TextView
+        android:id="@+id/tv_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请认真核对信息"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_666"
+        android:padding="@dimen/size10"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请确保是本人真实信息，认证通过后不可修改"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/color_f00"
+        android:gravity="center"
+        android:padding="@dimen/size10"
+        android:layout_marginTop="@dimen/size20"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size10">
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="返回修改"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size10"
+            android:paddingTop="@dimen/size10"/>
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="立即提交"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size10"
+            android:paddingTop="@dimen/size10"
+            android:background="@color/color_ccc"
+            android:layout_marginRight="@dimen/size10"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -51,6 +51,7 @@ public class WebViewActivity extends ToobarBaseActivity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);
+                dmzBar.setText(view.getTitle());
                 return true;
             }
         });
@@ -74,7 +75,7 @@ public class WebViewActivity extends ToobarBaseActivity {
     @Override
     protected void initBarView() {
         super.initBarView();
-        dmzBar.setText("问题详情");
+        dmzBar.setLeftImage(R.mipmap.icon_chahao);
     }
 
     @Override
