@@ -1,14 +1,22 @@
 [
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\icon_kaiguan.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-hdpi\\icon_kaiguan.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-hdpi/aa.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-hdpi/aa.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\icon_tanhao1.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-hdpi\\icon_tanhao1.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\aa.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-hdpi\\aa.png"
     }
 ]

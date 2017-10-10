@@ -1,218 +1,454 @@
 [
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/drawable/design_password_eye.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\1b288efc9ea766eae660d35d61e9aeacf9be6738\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_btn_borderless_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\sliding_back_shadow.xml",
+        "source": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\sliding_back_shadow.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ratingbar_indicator_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\tooltip_frame_dark.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\tooltip_frame_dark.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/drawable/notification_tile_bg.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_bar_line.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_bar_line.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_cab_background_top_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_voice_search_api_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\33be41519ec78c2890c96333548b65c80504878e\\output\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_item_background_holo_dark.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/leak_canary_toast_background.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/res/drawable/leak_canary_toast_background.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_ab_back_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/drawable/design_fab_background.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/drawable/design_bottom_navigation_item_background.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_btn_colored_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/drawable/design_snackbar_background.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/sliding_back_shadow.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/sliding_back_shadow.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\33be41519ec78c2890c96333548b65c80504878e\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_go_search_api_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/tooltip_frame_dark.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/tooltip_frame_dark.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_edit_text_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_bar_line.xml",
+        "source": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_bar_line.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_btn_check_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_seekbar_track_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\leak_canary_toast_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\d3f43a04afe6af94172f1c15984fa750402855e1\\output\\res\\drawable\\leak_canary_toast_background.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/drawable/navigation_empty_icon.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/drawable/notification_bg.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_text_cursor_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\sliding_back_shadow.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\sliding_back_shadow.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/my_progress_loading.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/my_progress_loading.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/my_progress_tip.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/my_progress_tip.png"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_dialog_material_background.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_tab_indicator_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_loading.png",
+        "source": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_loading.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_clear_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/tooltip_frame_light.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/tooltip_frame_light.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_vector_test.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_switch_thumb_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_seekbar_tick_mark_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ratingbar_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_spinner_textfield_background_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_tip.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_tip.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/my_progress_success.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/my_progress_success.png"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\tooltip_frame_light.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\tooltip_frame_light.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/drawable/notification_bg_low.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/shape_bar_line.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/shape_bar_line.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_search_api_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\1b288efc9ea766eae660d35d61e9aeacf9be6738\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_btn_radio_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/shape_corner_top.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/shape_corner_top.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\33be41519ec78c2890c96333548b65c80504878e\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_menu_overflow_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/my_progress_err.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/my_progress_err.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\tooltip_frame_light.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\tooltip_frame_light.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_seekbar_thumb_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/drawable/notification_icon_background.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_fff_ra5.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_fff_ra5.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/my_progress_warning.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/drawable/my_progress_warning.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ratingbar_small_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_corner_top.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_corner_top.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_textfield_search_material.xml"
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_item_background_holo_light.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_warning.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_warning.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_loading.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_loading.png"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_success.png",
+        "source": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_success.png"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_err.png",
+        "source": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_err.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\tooltip_frame_dark.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\tooltip_frame_dark.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_b0000000.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_b0000000.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\1b288efc9ea766eae660d35d61e9aeacf9be6738\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_warning.png",
+        "source": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_warning.png"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_tip.png",
+        "source": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_tip.png"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\leak_canary_toast_background.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7\\output\\res\\drawable\\leak_canary_toast_background.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\33be41519ec78c2890c96333548b65c80504878e\\output\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\1b288efc9ea766eae660d35d61e9aeacf9be6738\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_err.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_err.png"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_corner_top.xml",
+        "source": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_corner_top.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_toast_err.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\icon_toast_err.png"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\drawable\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_toast_success.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\icon_toast_success.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\3779151ae84806373d9b3f5691301a89b28a6fee\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\Users\\dengmingzhi\\Desktop\\develop\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "D:\\Users\\dengmingzhi\\.android\\build-cache\\1b288efc9ea766eae660d35d61e9aeacf9be6738\\output\\res\\drawable\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_toast_warn.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\icon_toast_warn.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_success.png",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_success.png"
     }
 ]

@@ -1,4 +1,7 @@
-#Tue Sep 26 15:36:49 CST 2017
-base.0=/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+#Tue Oct 10 13:49:38 CST 2017
+base.0=D\:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b07ee5a2dc432e481ce58f616310f18c4d27e9c0
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_7497065758631f2a61d5f15fc000fd9c05586867\\classes.dex
+base.1=D\:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_7497065758631f2a61d5f15fc000fd9c05586867
+file.0=D\:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b07ee5a2dc432e481ce58f616310f18c4d27e9c0\\classes.dex

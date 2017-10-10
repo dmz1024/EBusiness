@@ -18,14 +18,15 @@
             android:layout_margin="@dimen/size10"
             android:gravity="start"
             android:text=""
-            android:textSize="@dimen/sp18" />
+            android:textSize="@dimen/sp15" />
 
         <TextView
             style="@style/tv_ma_wra_right_min_style"
             android:layout_marginLeft="@dimen/size10"
             android:layout_marginTop="0dp"
             android:gravity="start"
-            android:text="充值金额" />
+            android:text="充值金额"
+            android:textSize="@dimen/sp14"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
