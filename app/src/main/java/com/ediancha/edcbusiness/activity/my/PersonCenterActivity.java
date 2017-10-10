@@ -83,7 +83,7 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
                 finish();
                 break;
             case R.id.iv_header:
-                Go.goLogin();
+                Go.goMyInfo();
                 break;
         }
     }
@@ -116,7 +116,6 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
                 Go.goMyPackage();
                 break;
             case 4:
-//                Go.goSpaceDetail();
                 Go.goUserAuther();
                 break;
             case 5:

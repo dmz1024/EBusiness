@@ -87,6 +87,10 @@ public class UserInfoUtil {
         return rz;
     }
 
+    public static String getRzInfo() {
+        return rz == 1 ? "未认证" : "已认证";
+    }
+
     public static void setRz(int rz) {
         UserInfoUtil.rz = rz;
     }
@@ -211,5 +215,10 @@ public class UserInfoUtil {
 
     public static void clear() {
         AnyPref.instance("userInfo").clear();
+    }
+
+
+    public static String[] getUserToken() {
+        return new String[]{"userId", userId, "token", token};
     }
 }

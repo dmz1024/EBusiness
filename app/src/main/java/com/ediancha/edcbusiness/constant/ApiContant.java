@@ -119,4 +119,8 @@ public interface ApiContant {
     String EXITDEPOSIT_URL = BASE_API + "users/return_deposit";
 
 
+    /**
+     * 扫码返规则
+     */
+    String SCANCODE = BASE_API + "space/scancode";
 }

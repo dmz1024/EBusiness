@@ -138,4 +138,10 @@ public interface RouterUrl {
      * 修改支付密码
      */
     String PAYPW_ACTIVITY = "/activity/walletbag/payPassWord";
+
+
+    /**
+     * 扫码返回规则(开锁确认)
+     */
+    String MONEY_AFFIRM_ACTIVITY = "/activity/sapce/moneyAffirm";
 }

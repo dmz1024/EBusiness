@@ -13,9 +13,11 @@ import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.list.CommonAdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.utils.ResUtil;
+import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.MyInfoBean;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
@@ -29,23 +31,24 @@ import butterknife.ButterKnife;
  * Created by dengmingzhi on 2017/9/26.
  */
 @Route(path = "/activity/my/myInfo")
-public class MyInfoActivity extends SingleDataBaseActivity<MyInfoBean, MyInfoBean.Data> implements AdapterHelper.OnConvertInterface<CommonAdapterHelper.CommonBean>, AdapterHelper.OnClickListener {
+public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.OnConvertInterface<CommonAdapterHelper.CommonBean>, AdapterHelper.OnClickListener {
 
     @BindView(R.id.rvContent)
     RecyclerView rvContent;
-
+    private ArrayList<CommonAdapterHelper.CommonBean> datas;
+    private AdapterHelper adapterHelper;
     @Override
-    public void onSuccess(IBasePresenter presenter, MyInfoBean.Data bean) {
-
-        ArrayList<CommonAdapterHelper.CommonBean> datas = CommonAdapterHelper.getDatas(this, "my_info.json");
-        datas.get(0).setRightImage(bean.getHeader());
-        datas.get(1).setContent(bean.getNickName());
-        datas.get(2).setContent(bean.getSexInfo());
-        datas.get(3).setContent(bean.getBirthday());
-        datas.get(4).setContent(bean.getRoleInfo());
-        datas.get(6).setContent(bean.getTel());
-        datas.get(7).setContent(bean.getWxInfo());
-        datas.get(8).setContent(bean.getQQInfo());
+    protected void initData() {
+        super.initData();
+        datas = CommonAdapterHelper.getDatas(this, "my_info.json");
+        datas.get(0).setRightImage(UserInfoUtil.getUserPhoto());
+        datas.get(1).setContent(UserInfoUtil.getUserName());
+        datas.get(2).setContent(UserInfoUtil.getUserSex());
+        datas.get(3).setContent(UserInfoUtil.getBrithday());
+        datas.get(4).setContent(UserInfoUtil.getRzInfo());
+        datas.get(6).setContent(UserInfoUtil.getUserPhone());
+        datas.get(7).setContent(UserInfoUtil.getWxInfo());
+        datas.get(8).setContent(UserInfoUtil.getQqInfo());
         LinearLayoutManager manager = new LinearLayoutManager(this) {
             @Override
             public boolean canScrollVertically() {
@@ -53,29 +56,11 @@ public class MyInfoActivity extends SingleDataBaseActivity<MyInfoBean, MyInfoBea
             }
         };
         manager.setAutoMeasureEnabled(true);
-
-        AdapterHelper._instance(this, rvContent)._initData(datas).setLayoutManager(manager)
+        adapterHelper = AdapterHelper._instance(this, rvContent)._initData(datas).setLayoutManager(manager)
                 .setType(new AdapterHelper.ViewTypeInfo().setType(4).setRid(ResUtil.getLayoutId(4)))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(6).setRid(ResUtil.getLayoutId(6)))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(5).setRid(ResUtil.getLayoutId(5)).setConvertInterface(this))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(3).setRid(ResUtil.getLayoutId(3)).setConvertInterface(this).setOnClickListener(this));
-
-    }
-
-    @Override
-    protected void initContract() {
-        super.initContract();
-
-    }
-
-    @Override
-    protected void initDataBuilder() {
-        mBuilder.setSuccessRid(R.layout.success_recyle_view);
-    }
-
-    @Override
-    protected void initDmzBuilder() {
-        dBuilder.setaClass(MyInfoBean.class).setUrl(ApiContant.MY_INFO).setParms("type", "12");
     }
 
     @Override
@@ -97,11 +82,16 @@ public class MyInfoActivity extends SingleDataBaseActivity<MyInfoBean, MyInfoBea
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
 
-                switch (position){
-                    case 4:
-                        Go.goUserAuther();
-                        break;
-                }
+        switch (position) {
+            case 4:
+                Go.goUserAuther();
+                break;
+        }
+    }
+
+    @Override
+    protected int getRid() {
+        return R.layout.activity_my_info;
     }
 
     @Override

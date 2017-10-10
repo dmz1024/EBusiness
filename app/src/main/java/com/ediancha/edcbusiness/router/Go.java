@@ -3,6 +3,7 @@ package com.ediancha.edcbusiness.router;
 import android.app.Activity;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.ediancha.edcbusiness.bean.MoneyAffirmBean;
 
 /**
  * Created by dengmingzhi on 2017/9/21.
@@ -96,6 +97,7 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.MONEY_ACTIVITY)
                 .navigation();
     }
+
     /**
      * 优惠券
      */
@@ -107,10 +109,10 @@ public class Go {
     /**
      * 押金
      */
-    public static void goDeposit(String money,int status) {
+    public static void goDeposit(String money, int status) {
         ARouter.getInstance().build(RouterUrl.DEPOSIT_ACTIVITY)
-                .withString("money",money)
-                .withInt("status",status)
+                .withString("money", money)
+                .withInt("status", status)
                 .navigation();
     }
 
@@ -132,12 +134,13 @@ public class Go {
     /**
      * 帮助中心---问题分类
      */
-    public static void goHelpCenterNext(String pid,String name) {
+    public static void goHelpCenterNext(String pid, String name) {
         ARouter.getInstance().build(RouterUrl.HELPCENTER_NEXT_ACTIVITY)
-                .withString("pid",pid)
-                .withString("name",name)
+                .withString("pid", pid)
+                .withString("name", name)
                 .navigation();
     }
+
     /**
      * 优惠兑换
      */
@@ -164,22 +167,23 @@ public class Go {
      */
     public static void goWebView(String id) {
         ARouter.getInstance().build(RouterUrl.WEBVIEW_ACTIVITY)
-                .withString("H5",id)
+                .withString("H5", id)
                 .navigation();
     }
+
     /**
-     *缴纳押金
+     * 缴纳押金
      */
     public static void goSubmitDeposit() {
         ARouter.getInstance().build(RouterUrl.SUBMITDEPOSIT_ACTIVITY).navigation();
     }
 
     /**
-     *空间详情
+     * 空间详情
      */
     public static void goSpaceDetail(String id) {
         ARouter.getInstance().build(RouterUrl.SPACEDETAIL_ACTIVITY)
-                .withString("id",id)
+                .withString("id", id)
                 .navigation();
     }
 
@@ -192,19 +196,22 @@ public class Go {
 
 
     /**
-     *用户认证
+     * 用户认证
      */
     public static void goUserAuther() {
         ARouter.getInstance().build(RouterUrl.USERAUTHER_ACTIVITY).navigation();
     }
 
     /**
-     *修改支付密码
+     * 修改支付密码
      */
     public static void goPayPassWord() {
         ARouter.getInstance().build(RouterUrl.PAYPW_ACTIVITY).navigation();
     }
 
 
+    public static void goMoneyAffirmActivity(MoneyAffirmBean.Data data) {
+        ARouter.getInstance().build(RouterUrl.MONEY_AFFIRM_ACTIVITY).withParcelable("data", data).navigation();
+    }
 
 }

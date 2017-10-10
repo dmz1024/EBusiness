@@ -75,11 +75,11 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
 
     @Override
     public void onSuccess(IBasePresenter presenter, SpaceDetailBean.Data bean) {
-        mSpaceDdetail=bean;
+        mSpaceDdetail = bean;
         mTvSname.setText(bean.getSpaceName());
         mTvStatus.setText(bean.getSpaceStatus() == 1 ? "空闲" : "使用中");
         mTvTime.setText(bean.getSpaceMoney() + "元/小时");
-        mTvLocal.setText(bean.getSpaceAreaPath()+"km");
+        mTvLocal.setText(bean.getSpaceAreaPath() + "km");
         mTvNumber.setText("最多容纳" + bean.getSpaceLoadNumber() + "人");
         mTvXfdetail.setText(bean.getCostStatement());
         mTvNotice.setText(bean.getCostStatement());
@@ -104,8 +104,8 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
 
     private void initRecyclerView(SpaceDetailBean.Data bean) {
 
-        LogUtil.e("getFacilities"+bean.getFacilities());
-        LogUtil.e("getPurpose"+bean.getPurpose());
+        LogUtil.e("getFacilities" + bean.getFacilities());
+        LogUtil.e("getPurpose" + bean.getPurpose());
         //室内
         AdapterHelper._instance(this, mRyUser)._initData(bean.getFacilities()).setLayoutManager(new GridLayoutManager(this, 3))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_space_textview).setConvertInterface(this));
@@ -117,14 +117,14 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     @Override
     protected void initData() {
         super.initData();
-        mOpenMapHelper=new OpenMapHelper(this);
+        mOpenMapHelper = new OpenMapHelper(this);
     }
 
-    @OnClick({R.id.tv_local,R.id.tv_number})
-    void onClick(View view){
-        switch (view.getId()){
+    @OnClick({R.id.tv_local, R.id.tv_number})
+    void onClick(View view) {
+        switch (view.getId()) {
             case R.id.tv_local:
-                mOpenMapHelper.openMap(mSpaceDdetail.getLatitude(),mSpaceDdetail.getLongitude(),mSpaceDdetail.getSpaceAreaPath());
+                mOpenMapHelper.openMap(mSpaceDdetail.getLatitude(), mSpaceDdetail.getLongitude(), mSpaceDdetail.getSpaceAreaPath());
                 break;
             case R.id.tv_number:
                 break;
@@ -153,11 +153,9 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     public void convert(int viewType, ViewHolder holder, IType iType, int position) {
         switch (viewType) {
             case 0:
-
                 SpaceDetailBean.FacilitiesBean facilities = (SpaceDetailBean.FacilitiesBean) iType;
                 holder
                         .setText(R.id.tv_type, facilities.getTargetName());
-
                 break;
             case 1:
                 SpaceDetailBean.PurposeBean purpose = (SpaceDetailBean.PurposeBean) iType;
@@ -165,5 +163,11 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
                         .setText(R.id.tv_type, purpose.getTargetName());
                 break;
         }
+    }
+
+
+    @OnClick(R.id.tv_envir)
+    void open() {
+
     }
 }
