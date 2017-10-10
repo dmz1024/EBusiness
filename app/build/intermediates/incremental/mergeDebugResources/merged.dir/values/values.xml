@@ -127,15 +127,19 @@
     <color name="colorDmzBarText">#666</color>
     <color name="colorPrimary">#333</color>
     <color name="colorPrimaryDark">#333</color>
+    <color name="color_09F">#09F</color>
     <color name="color_333">#333</color>
     <color name="color_666">#666</color>
     <color name="color_999">#999</color>
     <color name="color_ccc">#ccc</color>
     <color name="color_e1e1e1">#e1e1e1</color>
+    <color name="color_error">#CC0033</color>
     <color name="color_f00">#f00</color>
     <color name="color_f1da09">#f1da09</color>
     <color name="color_f6f6f6">#f6f6f6</color>
     <color name="color_fff">#fff</color>
+    <color name="color_normal">#333333</color>
+    <color name="color_warn">#FFFF00</color>
     <color name="color_zhu">#f1da09</color>
     <color name="contents_text">#ff000000</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
@@ -569,6 +573,14 @@
             
             <flag name="bottom" value="0x50"/>
         </attr><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="logo"/><attr format="string" name="logoDescription"/><attr format="color" name="titleTextColor"/><attr format="color" name="subtitleTextColor"/><attr name="android:minHeight"/></declare-styleable>
+    <declare-styleable name="UltraViewPager"><attr format="integer" name="upv_autoscroll"/><attr format="boolean" name="upv_infiniteloop"/><attr format="float" name="upv_ratio"/><attr format="enum" name="upv_scrollmode">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr><attr format="enum" name="upv_disablescroll">
+            <enum name="none" value="0"/>
+            <enum name="backward" value="1"/>
+            <enum name="forward" value="2"/>
+        </attr><attr format="boolean" name="upv_multiscreen"/><attr format="boolean" name="upv_automeasure"/><attr format="float" name="upv_itemratio"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
     <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode">
             
@@ -1171,6 +1183,7 @@
     <item name="transition_position" type="id"/>
     <item name="transition_scene_layoutid_cache" type="id"/>
     <item name="transition_transform" type="id"/>
+    <item name="ultraviewpager_page_container" type="id"/>
     <item name="up" type="id"/>
     <item name="view_offset_helper" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
@@ -1248,8 +1261,18 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="permission_cancel">Cancel</string>
+    <string name="permission_message_permission_failed">We need some permissions are you refuse or system error, would you please go to Settings page manual authorization, otherwise the function to use!</string>
+    <string name="permission_message_permission_rationale">You have rejected us for authorization, would you please authorize, otherwise the function to use!</string>
+    <string name="permission_resume">Resume</string>
+    <string name="permission_setting">Setting</string>
+    <string name="permission_title_permission_failed">Permission apply failure</string>
+    <string name="permission_title_permission_rationale">Permission denied</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="string_auther_info">为了保证您的账户安全，请填写个人真实信息，认证后可修改。</string>
+    <string name="string_deposit_text">正在退押金，请耐心等待。</string>
+    <string name="string_deposit_xieyi">充值余额表示您《同意协议》</string>
     <string name="tv_cz_xieyi">充值使用余额表示你同意《XXX余额协议》</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -2329,6 +2352,7 @@
         <item name="windowNoTitle">true</item>
         <item name="android:actionBarSize">40dp</item>
         <item name="actionBarSize">40dp</item>
+        <item name="elevation">0dp</item>
         <item name="android:windowAnimationStyle">@style/activityAnim</item>
         <!--<item name="android:windowNoTitle">true</item> &lt;!&ndash; 设置无标题 &ndash;&gt;-->
         <!--<item name="android:windowFullscreen">?android:windowNoTitle</item>&lt;!&ndash; 取决于android:windowNoTitle的值 &ndash;&gt;-->
@@ -2458,8 +2482,8 @@
     <style name="Platform.Widget.AppCompat.Spinner" parent="android:Widget.Spinner"/>
     <style name="QwTheme" parent="MyAppTheme">
         <item name="android:windowNoTitle">true</item> <!-- 设置无标题 -->
-        <item name="android:windowFullscreen">?android:windowNoTitle
-        </item><!-- 取决于android:windowNoTitle的值 -->
+        <item name="android:windowFullscreen">?android:windowNoTitle</item><!-- 取决于android:windowNoTitle的值 -->
+
     </style>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
     </style>
@@ -2897,6 +2921,9 @@
     <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">#FFFFFF</item>
     </style>
+    <style name="permission_PermissionActivity" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:statusBarColor" ns1:targetApi="lollipop">@android:color/transparent</item>
+    </style>
     <style name="style_login_et_input">
         <item name="android:textColorHint">@color/color_999</item>
         <item name="android:layout_width">match_parent</item>
@@ -2904,7 +2931,6 @@
         <item name="android:textColor">@color/color_666</item>
         <item name="android:padding">10dp</item>
         <item name="android:textSize">@dimen/sp16</item>
-        <item name="android:background">@null</item>
         <item name="android:singleLine">true</item>
     </style>
     <style name="style_login_ln_et">
@@ -2960,6 +2986,7 @@
         <item name="android:background">@drawable/shape_fill_square</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">10dp</item>
+        <item name="android:textSize">@dimen/sp15</item>
     </style>
     <style name="tv_ma_wra_right_min_style">
         <item name="android:layout_width">match_parent</item>
@@ -2979,7 +3006,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/color_333</item>
-        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textSize">@dimen/sp13</item>
         <item name="android:layout_marginTop">@dimen/size10</item>
         <item name="android:layout_marginBottom">@dimen/size10</item>
     </style>

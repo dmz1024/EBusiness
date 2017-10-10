@@ -4,6 +4,14 @@
         "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/drawable/notification_bg.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/progressbar_pro.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/progressbar_pro.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/shape_b0000000.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/drawable/shape_b0000000.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_btn_radio_material.xml"
     },
@@ -20,8 +28,16 @@
         "source": "/Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/res/drawable/notification_bg_low.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/selector_home_style.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/selector_home_style.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/sliding_back_shadow.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/drawable/sliding_back_shadow.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/shape_fff_e1.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/shape_fff_e1.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/my_progress_err.png",
@@ -48,12 +64,16 @@
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/my_progress_success.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/drawable/my_progress_success.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/shape_pw_style.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/shape_pw_style.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/my_progress_success.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/drawable/my_progress_success.png"
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/shape_fff_ra5.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/drawable/shape_fff_ra5.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/selector_pay_chose.xml",
@@ -92,6 +112,10 @@
         "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/drawable/design_password_eye.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/icon_toast_err.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/drawable/icon_toast_err.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_item_background_holo_light.xml"
     },
@@ -100,16 +124,20 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/shape_fill_square.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_vector_test.xml"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/my_progress_loading.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/drawable/my_progress_loading.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_vector_test.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/shape_login_code_check.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/shape_login_code_check.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
@@ -144,12 +172,12 @@
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_cab_background_top_material.xml"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
@@ -164,8 +192,8 @@
         "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/drawable/design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/shape_login_code_checked.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/shape_login_code_checked.xml"
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/icon_toast_success.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/drawable/icon_toast_success.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
@@ -190,6 +218,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/selector_me_style.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/selector_me_style.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
@@ -244,12 +276,20 @@
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/selector_special_style.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/selector_special_style.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_ic_clear_material.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/icon_toast_warn.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/res/drawable/icon_toast_warn.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
@@ -274,5 +314,9 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
         "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable/shape_window_manager_order_info.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable/shape_window_manager_order_info.xml"
     }
 ]

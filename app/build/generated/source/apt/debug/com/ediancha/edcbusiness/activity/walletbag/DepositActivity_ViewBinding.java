@@ -16,7 +16,7 @@ import java.lang.Override;
 public class DepositActivity_ViewBinding implements Unbinder {
   private DepositActivity target;
 
-  private View view2131624098;
+  private View view2131689638;
 
   @UiThread
   public DepositActivity_ViewBinding(DepositActivity target) {
@@ -32,13 +32,15 @@ public class DepositActivity_ViewBinding implements Unbinder {
     target.mTvTotal = Utils.findRequiredViewAsType(source, R.id.tv_total, "field 'mTvTotal'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_submit, "field 'mTvSubmit' and method 'click'");
     target.mTvSubmit = Utils.castView(view, R.id.tv_submit, "field 'mTvSubmit'", TextView.class);
-    view2131624098 = view;
+    view2131689638 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.click(p0);
       }
     });
+    target.mTvShow = Utils.findRequiredViewAsType(source, R.id.tv_show, "field 'mTvShow'", TextView.class);
+    target.mTvXieyi = Utils.findRequiredViewAsType(source, R.id.tv_xieyi, "field 'mTvXieyi'", TextView.class);
   }
 
   @Override
@@ -51,8 +53,10 @@ public class DepositActivity_ViewBinding implements Unbinder {
     target.mDmzBar = null;
     target.mTvTotal = null;
     target.mTvSubmit = null;
+    target.mTvShow = null;
+    target.mTvXieyi = null;
 
-    view2131624098.setOnClickListener(null);
-    view2131624098 = null;
+    view2131689638.setOnClickListener(null);
+    view2131689638 = null;
   }
 }

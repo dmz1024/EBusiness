@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9caf02d1693bca24769e90a7659f49f1c7ac5e5c">
+        <dex dex="/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/pre-dexed/debug/classes_a7e61ec62be30bedecbd3e967262972fe2319727.jar" />
+    </item>
+
+</items>

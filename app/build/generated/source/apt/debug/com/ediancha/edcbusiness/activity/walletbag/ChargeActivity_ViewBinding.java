@@ -18,7 +18,7 @@ import java.lang.Override;
 public class ChargeActivity_ViewBinding implements Unbinder {
   private ChargeActivity target;
 
-  private View view2131624098;
+  private View view2131689638;
 
   @UiThread
   public ChargeActivity_ViewBinding(ChargeActivity target) {
@@ -37,7 +37,7 @@ public class ChargeActivity_ViewBinding implements Unbinder {
     target.mRgPay = Utils.findRequiredViewAsType(source, R.id.rg_pay, "field 'mRgPay'", RadioGroup.class);
     view = Utils.findRequiredView(source, R.id.tv_submit, "field 'mTvSubmit' and method 'onClick'");
     target.mTvSubmit = Utils.castView(view, R.id.tv_submit, "field 'mTvSubmit'", TextView.class);
-    view2131624098 = view;
+    view2131689638 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -60,7 +60,7 @@ public class ChargeActivity_ViewBinding implements Unbinder {
     target.mRgPay = null;
     target.mTvSubmit = null;
 
-    view2131624098.setOnClickListener(null);
-    view2131624098 = null;
+    view2131689638.setOnClickListener(null);
+    view2131689638 = null;
   }
 }

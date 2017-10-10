@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/design_snackbar_in.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/fade_out.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/anim/fade_out.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/fade_in.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/anim/fade_in.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/tooltip_enter.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/design_snackbar_out.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/tooltip_exit.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/anim_progress_round_rotate.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/src/main/res/anim/anim_progress_round_rotate.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/res/anim/abc_popup_enter.xml"
+    }
+]

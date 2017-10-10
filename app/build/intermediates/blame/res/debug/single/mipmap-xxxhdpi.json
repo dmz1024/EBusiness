@@ -36,12 +36,12 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_tanhao.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_home_tab_home.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_home_tab_home.png"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_use_open.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_use_open.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_home_tab_home.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_home_tab_home.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_news_notice.png",
@@ -54,6 +54,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_renzheng.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_renzheng.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_kaiguan.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_kaiguan.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icom_home_special.png",
@@ -152,6 +156,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_home_top_scan.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_weizhi.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_weizhi.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_gengduo.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_gengduo.png"
     },
@@ -180,12 +188,20 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_tanhao1.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_tanhao1.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_wallet_password_arrow.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_wallet_password_arrow.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_wallet_balance.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_wallet_balance.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_kongjian.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-xxxhdpi/icon_kongjian.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/icon_home_more.png",

@@ -1,4 +1,4 @@
-#Tue Sep 26 15:36:49 CST 2017
+#Tue Oct 10 10:24:10 CST 2017
 base.0=/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

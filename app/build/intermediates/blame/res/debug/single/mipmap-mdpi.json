@@ -20,6 +20,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-mdpi/icon_main_bottom_header.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-mdpi/icon_kaiguan.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-mdpi/icon_kaiguan.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-mdpi/icon_qw_write.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-mdpi/icon_qw_write.png"
     },
@@ -42,6 +46,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-mdpi/icon_news_transaction.png",
         "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-mdpi/icon_news_transaction.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-mdpi/icon_tanhao1.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/mipmap-mdpi/icon_tanhao1.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/mipmap-mdpi/icon_news_notice.png",
