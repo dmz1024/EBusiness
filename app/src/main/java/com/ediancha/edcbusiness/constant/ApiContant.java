@@ -131,4 +131,13 @@ public interface ApiContant {
      * 扫码返规则
      */
     String SCANCODE = BASE_API + "space/scancode";
+
+    /**
+     * 修改个人资料
+     */
+    String UPDATAEINFO = BASE_API + "users/update_user";
+    /**
+     * 修改头像
+     */
+    String UPLOAD = BASE_API + "upload/upload";
 }

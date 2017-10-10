@@ -2,6 +2,7 @@ package com.ediancha.edcbusiness.bean.user;
 
 import android.text.TextUtils;
 
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.utils.AnyPref;
 import com.ediancha.edcbusiness.router.Go;
 
@@ -20,6 +21,10 @@ public class UserInfoUtil {
     }
 
     public static String getUserPhoto() {
+        AnyPref anyPref = AnyPref.instance("userInfo");
+        if (anyPref!=null){
+            userPhoto=anyPref.getString("userPhoto");
+        }
         return userPhoto;
     }
 
@@ -28,6 +33,10 @@ public class UserInfoUtil {
     }
 
     public static String getUserName() {
+        AnyPref anyPref = AnyPref.instance("userInfo");
+        if (anyPref!=null){
+            userName=anyPref.getString("userName");
+        }
         return userName;
     }
 
@@ -221,4 +230,17 @@ public class UserInfoUtil {
     public static String[] getUserToken() {
         return new String[]{"userId", userId, "token", token};
     }
+
+
+    public static void saveName(String userName){
+        AnyPref.instance("userInfo")
+                .putString("userName", userName)
+                .commit();
+    }
+    public static void saveUserPhoto(String userPhoto){
+        AnyPref.instance("userInfo")
+                .putString("userPhoto", userPhoto)
+                .commit();
+    }
+
 }

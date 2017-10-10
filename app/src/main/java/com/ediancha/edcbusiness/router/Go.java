@@ -1,9 +1,11 @@
 package com.ediancha.edcbusiness.router;
 
 import android.app.Activity;
+import android.content.Context;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.ediancha.edcbusiness.bean.MoneyAffirmBean;
+import com.ediancha.edcbusiness.constant.NormalContant;
 
 /**
  * Created by dengmingzhi on 2017/9/21.
@@ -217,9 +219,23 @@ public class Go {
     }
 
 
-
+    /**
+     * 扫码（返回规则）
+     * @param data
+     */
     public static void goMoneyAffirmActivity(MoneyAffirmBean.Data data) {
         ARouter.getInstance().build(RouterUrl.MONEY_AFFIRM_ACTIVITY).withParcelable("data", data).navigation();
+    }
+
+    /**
+     * 修改资料
+     * @param mActivity
+     * @param name
+     */
+    public static void goUpdateInfoActivity(Activity mActivity,String name) {
+        ARouter.getInstance().build(RouterUrl.UPDATEINFO_ACTIVITY)
+                .withString("title",name)
+                .navigation(mActivity, NormalContant.REQUEST_CODE);
     }
 
 }

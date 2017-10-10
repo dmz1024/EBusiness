@@ -112,25 +112,43 @@ public class DmzBar extends FrameLayout implements View.OnClickListener {
     private ViewGroup.LayoutParams itemLayoutParam;
 
     public DmzBar addItemView(DmzBarItemInfo info) {
-
+        View view;
         if (info.getIid() != 0) {
             if (itemLayoutParam == null) {
                 itemLayoutParam = new ViewGroup.LayoutParams(ScreenUtil.dp2px(20), ScreenUtil.dp2px(20));
             }
-
             ImageView iv = new ImageView(getContext());
             iv.setLayoutParams(itemLayoutParam);
             iv.setScaleType(ImageView.ScaleType.FIT_XY);
             iv.setImageResource(info.getIid());
-            llBarRight.addView(iv);
+            view=iv;
         } else {
             TextView tv = new TextView(getContext());
             tv.setText(info.getTitle());
             tv.setTextColor(Color.parseColor(info.getTvColor()));
             tv.setTextSize(info.getTvSize());
-            llBarRight.addView(tv);
+            view=tv;
         }
+        llBarRight.addView(view);
+        view.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(mOnItemOnClickListener!=null){
+                    mOnItemOnClickListener.itemClick(llBarRight.getChildCount()-1);
+                }
+            }
+        });
 
+        return this;
+    }
+
+    public interface OnItemOnClickListener{
+        void itemClick(int index);
+    }
+    private OnItemOnClickListener mOnItemOnClickListener;
+
+    public DmzBar setOnItemOnClickListener(OnItemOnClickListener onItemOnClickListener) {
+        mOnItemOnClickListener = onItemOnClickListener;
         return this;
     }
 
