@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical">
 
     <com.dmz.library.dmzapi.view.custom.DmzBar
@@ -45,16 +46,22 @@
         android:textColor="@color/color_666"
         android:textSize="@dimen/sp13" />
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size25" />
 
     <Button
         android:id="@+id/btUse"
         android:layout_width="@dimen/size140"
-        android:layout_height="@dimen/size25"
+        android:layout_height="@dimen/size35"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/size50"
-        android:background="@drawable/shape_login_code"
+        android:layout_marginTop="@dimen/size30"
+        android:background="@drawable/shape_e1e1e1_circle"
         android:text="同意计费并开始使用"
-        android:textColor="@color/color_fff"
+        android:textColor="@color/color_333"
         android:textSize="@dimen/sp13" />
 </LinearLayout>
 

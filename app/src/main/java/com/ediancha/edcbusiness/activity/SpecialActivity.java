@@ -1,6 +1,7 @@
 package com.ediancha.edcbusiness.activity;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v4.view.LayoutInflaterCompat;
 import android.support.v4.view.LayoutInflaterFactory;
 import android.util.AttributeSet;
@@ -25,6 +26,13 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
  */
 @Route(path = "/activity/special")
 public class SpecialActivity extends MoreDataBaseActivity<SpecialBean.Data, SpecialBean> {
+
+    @Override
+    protected void initView() {
+        super.initView();
+        rvRoot.setBackgroundColor(Color.parseColor("#f6f6f6"));
+    }
+
     @Override
     protected void initMoreBuilder() {
         mBuilder.setCanRefresh(true)
@@ -52,8 +60,8 @@ public class SpecialActivity extends MoreDataBaseActivity<SpecialBean.Data, Spec
 
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
-        SpecialBean.Data special = (SpecialBean.Data) adapterHelper.getDatas().get(position);
-        Go.goWebView(special.getHtml());
+        SpecialBean.Data data = adapterHelper.getT(position);
+        Go.goWebView(data.getHtml());
     }
 
     @Override

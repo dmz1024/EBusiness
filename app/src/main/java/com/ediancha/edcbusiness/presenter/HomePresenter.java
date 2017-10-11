@@ -30,7 +30,7 @@ public class HomePresenter {
                         mIHomeView.successHome(bean);
                     }
                 })
-                .setiLoadingView(new MyProgress(mIHomeView.getContext())))
+                )
                 .excute();
     }
 

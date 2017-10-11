@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.ediancha.edcbusiness.bean.MoneyAffirmBean;
+import com.ediancha.edcbusiness.bean.OpenLockBean;
 import com.ediancha.edcbusiness.constant.NormalContant;
 
 /**
@@ -192,8 +193,8 @@ public class Go {
     /**
      * 空间订单详情
      */
-    public static void goSpaceOrderInProgeressDesc(String orderId) {
-        ARouter.getInstance().build(RouterUrl.SPACE_ORDER_IN_PROGERESS_DESC_ACTIVITY).withString("orderId", orderId).navigation();
+    public static void goSpaceOrderInProgeressDesc(OpenLockBean.Data data) {
+        ARouter.getInstance().build(RouterUrl.SPACE_ORDER_IN_PROGERESS_DESC_ACTIVITY).withParcelable("data", data).navigation();
     }
 
 

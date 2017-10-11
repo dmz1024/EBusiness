@@ -50,8 +50,6 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
     TextView mTvRight;
     @BindView(R.id.recy)
     RecyclerView mRecy;
-    @BindView(R.id.dmzBar)
-    DmzBar mDmzBar;
     @BindView(R.id.iv_arrows)
     ImageView mIvArrows;
     @BindView(R.id.fg_arrows)
@@ -77,13 +75,13 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
     protected void initView() {
         super.initView();
 
+        UserInfoUtil.readInfo();
         initUltraViewPager(null);
         TestWindowManager.getInstance().addView();
 
-        bottomSheet = new MainBottomSheet(((LinearLayout) findViewById(R.id.llBottom)), ((View) findViewById(R.id.iv_arrows)));
+        bottomSheet = new MainBottomSheet((mLlBottom), mIvArrows);
         qwHelper = new QwHelper(this);
 
-        UserInfoUtil.readInfo();
     }
 
     @Override
