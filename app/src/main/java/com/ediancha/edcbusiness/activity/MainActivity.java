@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -11,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
@@ -24,6 +26,9 @@ import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.helper.MainBottomSheet;
 import com.ediancha.edcbusiness.helper.QwHelper;
 
+import com.ediancha.edcbusiness.helper.pay.AliPayUtil;
+import com.ediancha.edcbusiness.helper.pay.IPayResultInterface;
+import com.ediancha.edcbusiness.helper.pay.Pay;
 import com.ediancha.edcbusiness.presenter.HomePresenter;
 
 import com.dmz.library.dmzapi.utils.MyToast;
@@ -41,6 +46,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+@Route(path = "/activity/main")
 public class MainActivity extends NotNetBaseActivity implements View.OnClickListener, AdapterHelper.OnConvertInterface, AdapterHelper.OnClickListener, HomePresenter.IHomeView {
     @BindView(R.id.tv_left)
     TextView mTvLeft;
@@ -77,7 +83,7 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
 
         UserInfoUtil.readInfo();
         initUltraViewPager(null);
-        TestWindowManager.getInstance().addView();
+//        TestWindowManager.getInstance().addView();
 
         bottomSheet = new MainBottomSheet((mLlBottom), mIvArrows);
         qwHelper = new QwHelper(this);
@@ -111,7 +117,7 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
     private void initRecyclerView(ArrayList<HomeBean.SpaceListBean> spaceList) {
 
         AdapterHelper._instance(this, mRecy)._initData(spaceList)
-                .setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false){
+                .setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false) {
                     @Override
                     public boolean canScrollVertically() {
                         return false;
@@ -134,29 +140,29 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
         qwHelper.onActivityResult(requestCode, resultCode, data);
     }
 
-    @OnClick({R.id.fg_arrows, R.id.iv_bottom_header, R.id.fg_qw, R.id.iv_bottom_message,R.id.llBottom})
+    @OnClick({R.id.fg_arrows, R.id.iv_bottom_header, R.id.fg_qw, R.id.iv_bottom_message, R.id.llBottom})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.fg_arrows:
                 bottomSheet.toggle();
                 break;
             case R.id.iv_bottom_header:
-                Go.goPersonCenter();
+                if (UserInfoUtil.checkLogin()) {
+                    Go.goPersonCenter();
+                }
                 break;
             case R.id.fg_qw:
-                qwHelper.openQw();
+//                qwHelper.openQw();
+                //测试支付
+//                Pay.getPay(1).start(this, "app_id=2017083008461733&biz_content=%7B%22body%22%3A%22%5Cu7535%5Cu8bdd%5Cu54a8%5Cu8be2%5Cu5957%5Cu9910%5Cu4e0010%5Cu5206%5Cu949f%22%2C%22subject%22%3A%22%5Cu7535%5Cu8bdd%5Cu54a8%5Cu8be2%5Cu5957%5Cu9910%5Cu4e0010%5Cu5206%5Cu949f%22%2C%22out_trade_no%22%3A%22SN15077104633362%22%2C%22timeout_express%22%3A%221m%22%2C%22total_amount%22%3A0.01%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=law.east-profit.com%2Fapp.php%2Fhome%2Fdorder%2FaliPaySuccessOrder&sign_type=RSA2&timestamp=2017-10-11+20%3A28%3A08&version=1.0&sign=WM7JpkU3mk9nYk31ByJzqlOCNuTY1HZoOBuz8oyrDpA8V42zAexMCDN78NWiN64Vd2BKslBjXfhonVISDEtG6nzPQLXbDacRzk%2F5H05liaEWFfJe78Y6M2XF3jwTHAHZso2Kbxbu4v0ZwRW98eyz%2BqmZKi%2FjpobEJ7GMoKPwO961ZzM%2FUHU68xM%2Fee4mRODWYV2SR8bi0R5R8GSgRFZX9n2XJ17vbckqDAa4LVa9tMO0ROJldgMTU9X8PM0Eri0nBZQE7KZhjX95ulBZ0gYtb4J7%2FzmeJt%2B9NuEk4A87BeSemVxkO%2Fea5urK%2BfQdoMjl4e7ncEkqcTBQqC3HH2Lk0Q%3D%3D");
                 break;
             case R.id.iv_bottom_message:
                 if (UserInfoUtil.checkLogin()) {
                     Go.goActivityMessage();
                 }
                 break;
-            case R.id.llBottom:
-                break;
         }
     }
-
-
 
 
     @Override
@@ -179,5 +185,12 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
     public void successHome(HomeBean.Data homeBean) {
         ArrayList<HomeBean.SpaceListBean> spaceList = homeBean.getSpaceList();
         initRecyclerView(spaceList);
+    }
+
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Log.d("主页", "回来了");
     }
 }

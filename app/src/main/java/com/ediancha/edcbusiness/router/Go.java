@@ -14,6 +14,15 @@ import com.ediancha.edcbusiness.constant.NormalContant;
 
 public class Go {
 
+
+    /**
+     * 个人中心
+     */
+    public static void goMain() {
+        ARouter.getInstance().build(RouterUrl.MAIN_ACTIVITY).navigation();
+    }
+
+
     /**
      * 个人中心
      */

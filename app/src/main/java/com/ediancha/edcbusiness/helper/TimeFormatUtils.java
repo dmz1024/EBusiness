@@ -13,34 +13,30 @@ public class TimeFormatUtils {
   */
     public static String stampToDate(long s) {
         Date d = new Date(s*1000);
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日K:mm a");
-        System.out.println("时间"+d);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         return simpleDateFormat.format(d);
     }
 
     public static String stampToDate(String s) {
         String res;
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日K:mm a");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         long lt = new Long(s);
         Date date = new Date(lt*1000);
         res = simpleDateFormat.format(date);
-        System.out.println("时间"+res);
         return res;
     }
     public static String stamp2Date(long s) {
         Date d = new Date(s*1000);
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日");
-        System.out.println("时间"+d);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         return simpleDateFormat.format(d);
     }
 
     public static String stamp2Date(String s) {
         String res;
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         long lt = new Long(s);
         Date date = new Date(lt*1000);
         res = simpleDateFormat.format(date);
-        System.out.println("时间"+res);
         return res;
     }
 

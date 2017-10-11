@@ -13,19 +13,19 @@ import java.util.ArrayList;
 public class GoodsOrderDescBean extends BaseBean<GoodsOrderDescBean.Data> {
 
     public static class Data {
-        public String statusInfo;
-        public String title;
-        public Goods goods;
+        public String goodsOut;
+        public String spaceName;
         public ArrayList<PayInfo> payInfo;
-        public ArrayList<OrderInfo> orderInfo;
+        public ArrayList<OrderInfo> orderLog;
+        public int gOrderStatus;
 
-        public Goods getGoods() {
-            return goods;
+        public int getgOrderStatus() {
+            return gOrderStatus;
         }
 
         public ArrayList<OrderInfo> getOrderInfos() {
-            orderInfo.get(0).setCopy(true);
-            return orderInfo;
+            orderLog.get(0).setCopy(true);
+            return orderLog;
         }
 
         public ArrayList<PayInfo> getPayInfo() {
@@ -34,49 +34,48 @@ public class GoodsOrderDescBean extends BaseBean<GoodsOrderDescBean.Data> {
         }
 
         public String getStatus() {
-            return statusInfo;
+            return goodsOut;
         }
 
         public String getStatusInfo() {
-            return statusInfo + "订单";
+            return goodsOut + "订单";
         }
 
         public String getTitle() {
-            return title;
+            return spaceName;
+        }
+        public String goodsImage;
+        public String goodsName;
+        public String needPay;
+        public String goodsNum;
+        public String goodsWeight;
+        public String goodsId;
+
+        public String getGoodsId() {
+            return goodsId;
         }
 
-    }
-
-    public static class Goods {
-
-        public String goodImg;
-        public String goodName;
-        public String goodPrice;
-        public String goodNum;
-        public String goodInfo;
-
-
         public String getGoodImg() {
-            return goodImg;
+            return goodsImage;
         }
 
         public String getGoodInfo() {
-            return goodInfo;
+            return goodsWeight;
         }
 
         public String getGoodName() {
-            return goodName;
+            return goodsName;
         }
 
         public String getGoodNum() {
-            return "x" + goodNum;
+            return "x" + goodsNum;
         }
 
         public String getGoodPrice() {
-            return "￥" + goodPrice;
+            return "￥" + needPay;
         }
-
     }
+
 
     public static class PayInfo extends ViewBaseType {
         public String title;

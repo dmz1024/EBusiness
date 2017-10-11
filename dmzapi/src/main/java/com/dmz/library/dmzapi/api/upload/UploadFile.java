@@ -41,6 +41,11 @@ public class UploadFile {
         return this;
     }
 
+    public UploadFile setAll(boolean all) {
+        isAll = all;
+        return this;
+    }
+
     private ArrayList<File> files;
 
     public UploadFile setFilePath(String... filePath) {

@@ -13,7 +13,7 @@ public class GoodsOrderBean extends BaseListBean<GoodsOrderBean.Data> {
     public static class Data extends ViewBaseType {
         public String statusInfo;
         public String spaceName;
-        public String orderId;
+        public String gOrderId;
         public int gOrderStatus;
 
         public int getgOrderStatus() {
@@ -21,7 +21,7 @@ public class GoodsOrderBean extends BaseListBean<GoodsOrderBean.Data> {
         }
 
         public String getOrderId() {
-            return orderId;
+            return gOrderId;
         }
 
         public Data setStatusInfo(String statusInfo) {
