@@ -139,5 +139,10 @@ public interface ApiContant {
     /**
      * 修改头像
      */
-    String UPLOAD = BASE_API + "upload/upload";
+    String UPLOAD_URL = BASE_API + "upload/upload";
+
+    /**
+     * 修改支付密码
+     */
+    String UPDATE_PAY_URL = BASE_API + "users/set_payPwd";
 }
