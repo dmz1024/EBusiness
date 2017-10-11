@@ -17,5 +17,6 @@ public class Copy {
     public static void toCopy(String content, Context ctx) {
         ClipboardManager cm = (ClipboardManager) ctx.getSystemService(Context.CLIPBOARD_SERVICE);
         cm.setText(content);
+        MyToast.normal("已复制至剪切板");
     }
 }

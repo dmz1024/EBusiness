@@ -31,17 +31,17 @@ public interface ApiContant {
     /**
      * 空间订单
      */
-    String SPACE_ORDER = BASE_URL + "buleline/getData";
+    String SPACE_ORDER = BASE_API + "orders/getorder";
 
     /**
      * 商品订单
      */
-    String GOOD_ORDER = BASE_URL + "buleline/getData";
+    String GOOD_ORDER = BASE_API + "gorders/getgorders";
 
     /**
      * 商品订单详情
      */
-    String GOOD_ORDER_DESC = BASE_URL + "buleline/getData";
+    String GOOD_ORDER_DESC = BASE_API + "gorders/getgdetail";
 
     /**
      * 我的钱包
@@ -133,7 +133,7 @@ public interface ApiContant {
     String SCANCODE = BASE_API + "space/scancode";
 
     /**
-     * 修改个人资料
+     * 扫码返规则
      */
     String UPDATAEINFO = BASE_API + "users/update_user";
     /**
@@ -145,4 +145,9 @@ public interface ApiContant {
      * 修改支付密码
      */
     String UPDATE_PAY_URL = BASE_API + "users/set_payPwd";
+
+    /**
+     * 长按开锁
+     */
+    String OPEN_LOCK = BASE_API + "orders/unlock";
 }
