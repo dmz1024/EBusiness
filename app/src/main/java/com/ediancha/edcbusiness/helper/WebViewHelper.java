@@ -33,8 +33,5 @@ public class WebViewHelper {
         mWebSettings.setLoadsImagesAutomatically(true); //支持自动加载图片
         mWebSettings.setDefaultTextEncodingName("utf-8");//设置编码格式
 
-
-
-
     }
 }

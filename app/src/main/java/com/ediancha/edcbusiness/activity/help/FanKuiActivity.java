@@ -2,8 +2,7 @@ package com.ediancha.edcbusiness.activity.help;
 
 
 import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
@@ -13,11 +12,13 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
+import com.dmz.library.dmzapi.api.DmzBuilder;
+import com.dmz.library.dmzapi.api.OnMySuccessListener;
+import com.dmz.library.dmzapi.api.upload.UploadFile;
 import com.dmz.library.dmzapi.dialog.ChooseStringDialog;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.dmz.library.dmzapi.view.custom.ChooseStringView;
 import com.ediancha.edcbusiness.R;
-import com.ediancha.edcbusiness.bean.walletbean.FanKuaiType;
 import com.ediancha.edcbusiness.helper.PhotoHelper;
 
 import java.io.File;
@@ -103,6 +104,7 @@ public class FanKuiActivity extends NotNetBaseActivity {
         return R.layout.activity_fankui;
     }
 
+    private UploadFile uploadFile;
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -117,6 +119,41 @@ public class FanKuiActivity extends NotNetBaseActivity {
                     .load(path)
                     .into(viewById);
             mLnImage.addView(inflate);
+
+
+            //上传图片
+//            uploadFile = UploadFile.getInstance()
+//                    .setFilePath(path, path)
+//                    .setDmzBuilder(
+//                            DmzBuilder._builder()
+//                                    .setOnMySuccessListener(new OnMySuccessListener<UploadFile.UpLoadMoreBean.Data>() {
+//                                        @Override
+//                                        public void onSuccess(UploadFile.UpLoadMoreBean.Data bean) {
+//                                            Log.d("上传图片地址", bean.getUrl() + "--");
+//                                        }
+//                                    })
+//                                    .setParms("param", "feedback")
+//                                    .setUrl("http://s.east-profit.com/api.php/Upload/uploadfile")
+//                    )
+//                    .setiOnLoadFinish(new UploadFile.IOnLoadFinish() {
+//                        @Override
+//                        public void result(int index, boolean isSuccess) {
+//                            Log.d("上传图片" + index, isSuccess ? "成功" : "失败");
+//                        }
+//                    })
+//                    .setiOnLoadProgress(new UploadFile.IOnLoadProgress() {
+//                        @Override
+//                        public void progress(int index, long totalSize, long currentSize, String fraction, float ffraction) {
+//                            Log.d("上传图片" + index, "上传进度：" + fraction);
+//                        }
+//                    })
+//                    .start();
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        UploadFile.cancel(uploadFile);
     }
 }
