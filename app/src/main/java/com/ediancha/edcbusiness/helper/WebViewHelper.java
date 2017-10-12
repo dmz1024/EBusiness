@@ -25,6 +25,9 @@ public class WebViewHelper {
         mWebSettings.setJavaScriptEnabled(true);
         mWebSettings.setBlockNetworkImage(false);
         //设置自适应屏幕，两者合用
+        mWebSettings.setDisplayZoomControls(false);
+        mWebSettings.setLoadWithOverviewMode(true);
+        mWebSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         mWebSettings.setUseWideViewPort(true); //将图片调整到适合webview的大小
         mWebSettings.setLoadWithOverviewMode(true); // 缩放至屏幕的大小
         mWebSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK); //关闭webview中缓存

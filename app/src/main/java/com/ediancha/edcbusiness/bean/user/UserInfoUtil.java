@@ -22,8 +22,8 @@ public class UserInfoUtil {
 
     public static String getUserPhoto() {
         AnyPref anyPref = AnyPref.instance("userInfo");
-        if (anyPref != null) {
-            userPhoto = anyPref.getString("userPhoto");
+        if (anyPref!=null){
+            userPhoto=anyPref.getString("userPhoto");
         }
         return userPhoto;
     }
@@ -34,8 +34,8 @@ public class UserInfoUtil {
 
     public static String getUserName() {
         AnyPref anyPref = AnyPref.instance("userInfo");
-        if (anyPref != null) {
-            userName = anyPref.getString("userName");
+        if (anyPref!=null){
+            userName=anyPref.getString("userName");
         }
         return userName;
     }
@@ -233,16 +233,17 @@ public class UserInfoUtil {
     }
 
 
-    public static void saveName(String userName) {
-        AnyPref.instance("userInfo")
-                .putString("userName", userName)
-                .commit();
-    }
+    public static void saveProperty(Object... userName){
+        AnyPref userInfo = AnyPref.instance("userInfo");
+        for (int i = 0; i < userName.length-1; i+=2) {
+            Object value=userName[i+1];
+            String key= (String) userName[i];
+            if(value instanceof String){
+                userInfo.putString(key, (String) value);
+            }
+        }
+        userInfo.commit();
 
-    public static void saveUserPhoto(String userPhoto) {
-        AnyPref.instance("userInfo")
-                .putString("userPhoto", userPhoto)
-                .commit();
     }
 
 }

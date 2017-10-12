@@ -11,8 +11,11 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
+import com.ediancha.edcbusiness.MyApp;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
+import com.ediancha.edcbusiness.dialog.AutherDialog;
+import com.ediancha.edcbusiness.dialog.IndetifyCodeDialog;
 import com.ediancha.edcbusiness.presenter.user.CodePresenter;
 import com.ediancha.edcbusiness.presenter.user.UpdatePayPWPresenter;
 import com.mobsandgeeks.saripaar.ValidationError;
@@ -39,12 +42,12 @@ public class PayPWSettingActivity extends NotNetBaseActivity implements CodePres
     @BindView(R.id.et_tel)
     EditText mEtTel;
 
-    @BindView(R.id.et_code)
-    @NotEmpty(sequence = 1, message = "不能为空!")
-    EditText mEtCode;
+//    @BindView(R.id.et_code)
+//    @NotEmpty(sequence = 1, message = "不能为空!")
+//    EditText mEtCode;
 
-    @BindView(R.id.tv_code)
-    TextView mTvCode;
+//    @BindView(R.id.tv_code)
+//    TextView mTvCode;
 
     @BindView(R.id.et_pass)
     @NotEmpty(sequence = 2, message = "不能为空!")
@@ -52,12 +55,12 @@ public class PayPWSettingActivity extends NotNetBaseActivity implements CodePres
     EditText mEtPass;
 
     @BindView(R.id.et_passyz)
-    @ConfirmPassword(sequence = 3,message = "密码和验证密码不统一")
+    @ConfirmPassword(sequence = 3, message = "密码和验证密码不统一")
     EditText mEtPassyz;
     @BindView(R.id.tv_submit)
     TextView mTvSubmit;
 
-    MyCountDownTimer mCountDownTimer;
+
     private CodePresenter mCodePresenter;
     private UpdatePayPWPresenter mPayPWPresenter;
     Validator validator;
@@ -85,19 +88,21 @@ public class PayPWSettingActivity extends NotNetBaseActivity implements CodePres
     @Override
     protected void initData() {
         super.initData();
-        mCountDownTimer = new MyCountDownTimer(60000, 1000);
+
         mCodePresenter = new CodePresenter(this);
         mPayPWPresenter = new UpdatePayPWPresenter(this);
 
     }
 
-    @OnClick({R.id.tv_code, R.id.tv_submit})
+    @OnClick({R.id.tv_submit})
     void click(View view) {
         switch (view.getId()) {
-            case R.id.tv_code:
-                mCountDownTimer.start();
-                mCodePresenter.getCode(UserInfoUtil.getUserPhone(), 1);
-                break;
+//            case R.id.tv_code:
+//                mCountDownTimer.start();
+////                mCodePresenter.getCode(UserInfoUtil.getUserPhone(), 1);
+//                IndetifyCodeDialog indetifyCodeDialog = new IndetifyCodeDialog();
+//                indetifyCodeDialog.show(this);
+//                break;
             case R.id.tv_submit:
                 validator.validate();
 //                String passyz = mEtPassyz.getText().toString().trim();
@@ -112,14 +117,24 @@ public class PayPWSettingActivity extends NotNetBaseActivity implements CodePres
 
     @Override
     public void successCode() {
+        MyToast.normal("设置支付密码成功!");
         finish();
     }
 
     @Override
     public void onValidationSucceeded() {
-        String code = mEtCode.getText().toString().trim();
-        String pass = mEtPass.getText().toString().trim();
-        mPayPWPresenter.UpdatePayPw(UserInfoUtil.getUserPhone(), code, pass);
+
+        final String payPass = mEtPass.getText().toString().trim();
+//
+        final IndetifyCodeDialog indetifyCodeDialog=new IndetifyCodeDialog();
+        indetifyCodeDialog.show(this);
+        indetifyCodeDialog.setPasswordListener(new IndetifyCodeDialog.UpDatePasswordListener() {
+            @Override
+            public void updatePassword(String pass) {
+                indetifyCodeDialog.dismiss();
+                mPayPWPresenter.UpdatePayPw(UserInfoUtil.getUserPhone(),pass,payPass);
+            }
+        });
     }
 
     @Override
@@ -137,33 +152,5 @@ public class PayPWSettingActivity extends NotNetBaseActivity implements CodePres
     }
 
 
-    private class MyCountDownTimer extends CountDownTimer {
-
-        public MyCountDownTimer(long millisInFuture, long countDownInterval) {
-            super(millisInFuture, countDownInterval);
-        }
-
-        //计时过程
-        @Override
-        public void onTick(long l) {
-            //防止计时过程中重复点击
-            if (mTvCode != null) {
-                mTvCode.setClickable(false);
-                mTvCode.setText(l / 1000 + "s");
-            }
-
-        }
-
-        //计时完毕的方法
-        @Override
-        public void onFinish() {
-            if (mTvCode != null) {
-                //重新给Button设置文字
-                mTvCode.setText("验证码");
-                //设置可点击
-                mTvCode.setClickable(true);
-            }
-        }
-    }
 
 }
