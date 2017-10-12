@@ -45,6 +45,7 @@ public class WebViewActivity extends ToobarBaseActivity {
     }
 
     private void initWV() {
+        mHelper.setWebView();
         mWebView.loadUrl(H5);
 
         mWebView.setWebViewClient(new WebViewClient() {

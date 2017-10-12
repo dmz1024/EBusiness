@@ -29,6 +29,7 @@ import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.constant.NormalContant;
 import com.ediancha.edcbusiness.helper.PhotoHelper;
+import com.ediancha.edcbusiness.presenter.my.UpdateHeaderPresenter;
 import com.ediancha.edcbusiness.presenter.my.UpdateNamePresenter;
 import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
@@ -42,7 +43,7 @@ import butterknife.ButterKnife;
  * Created by dengmingzhi on 2017/9/26.
  */
 @Route(path = "/activity/my/myInfo")
-public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.OnConvertInterface<CommonAdapterHelper.CommonBean>, AdapterHelper.OnClickListener, UpdateNamePresenter.IUpDateNameView {
+public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.OnConvertInterface<CommonAdapterHelper.CommonBean>, AdapterHelper.OnClickListener, UpdateNamePresenter.IUpDateNameView, UpdateHeaderPresenter.IUpdateHeaderView {
 
     @BindView(R.id.rvContent)
     RecyclerView rvContent;
@@ -51,12 +52,15 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
     private PhotoHelper mHelper;
 
     private UpdateNamePresenter mUpdateNamePresenter;
+    private UpdateHeaderPresenter mHeaderPresenter;
+    private String path;
 
     @Override
     protected void initData() {
         super.initData();
-        mUpdateNamePresenter=new UpdateNamePresenter(this);
-        mHelper=new PhotoHelper(this);
+        mUpdateNamePresenter = new UpdateNamePresenter(this);
+        mHeaderPresenter = new UpdateHeaderPresenter(this);
+        mHelper = new PhotoHelper(this);
         datas = CommonAdapterHelper.getDatas(this, "my_info.json");
         datas.get(0).setRightImage(UserInfoUtil.getUserPhoto());
         datas.get(1).setContent(UserInfoUtil.getUserName());
@@ -120,7 +124,7 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
                 Go.goUpdateInfoActivity(this, "修改昵称");
                 break;
             case 4:
-                switch (UserInfoUtil.getRz()){
+                switch (UserInfoUtil.getRz()) {
                     case 1:
                         Go.goUserAuther();
                         break;
@@ -148,25 +152,31 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == NormalContant.RESULT_NAME_CODE) {
             String name = data.getStringExtra(NormalContant.KEY);
-           if (!TextUtils.isEmpty(name)){
-               UserInfoUtil.saveName(name);
-               datas.get(1).setContent(UserInfoUtil.getUserName());
-               adapterHelper.notifyDataSetChanged();
-           }
-        }else {
+            if (!TextUtils.isEmpty(name)) {
+                UserInfoUtil.saveProperty("userName", name);
+                datas.get(1).setContent(UserInfoUtil.getUserName());
+                adapterHelper.notifyDataSetChanged();
+            }
+        } else {
             if (mHelper.chcckPhoto(requestCode, resultCode)) {
                 String path = mHelper.onActivityResult(requestCode, data);
-                mUpdateNamePresenter.UpdateName(UserInfoUtil.getUserName(),path);
+                mHeaderPresenter.updateHeader(path);
             }
         }
     }
 
     @Override
     public void responseCode(BaseBean bean) {
-        if (bean.getCode()==NormalContant.SUCCESS_CODE){
-//            UserInfoUtil.saveUserPhoto();
-            datas.get(0).setContent(UserInfoUtil.getUserPhoto());
+        if (bean.getCode() == NormalContant.SUCCESS_CODE) {
+            UserInfoUtil.saveProperty("userPhoto", ApiContant.BASE_API_HOST + path);
+            datas.get(0).setRightImage(UserInfoUtil.getUserPhoto());
             adapterHelper.notifyDataSetChanged();
         }
+    }
+
+    @Override
+    public void success(String path) {
+        this.path = path;
+        mUpdateNamePresenter.UpdateName(UserInfoUtil.getUserName(), path);
     }
 }

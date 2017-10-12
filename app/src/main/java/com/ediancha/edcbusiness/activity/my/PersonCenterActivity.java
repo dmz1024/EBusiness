@@ -137,4 +137,12 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
 
         }
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Glide.with(this)
+                .load(UserInfoUtil.getUserPhoto())
+                .into(ivHeader);
+    }
 }

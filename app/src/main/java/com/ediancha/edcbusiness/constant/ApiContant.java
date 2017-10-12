@@ -11,6 +11,7 @@ public interface ApiContant {
     String BASE_URL = "http://law.east-profit.com/app.php/home/";
 
     String BASE_API ="http://s.east-profit.com/api.php/";
+    String BASE_API_HOST ="http://s.east-profit.com/";
 
     /**
      * 活动消息
