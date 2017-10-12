@@ -76,17 +76,16 @@ public class GoodOrderDescActivity extends SingleDataBaseActivity<GoodsOrderDesc
     @Override
     public void onSuccess(IBasePresenter presenter, GoodsOrderDescBean.Data bean) {
 
-        GoodsOrderDescBean.Goods goods = bean.getGoods();
         ArrayList<GoodsOrderDescBean.OrderInfo> orderInfos = bean.getOrderInfos();
         ArrayList<GoodsOrderDescBean.PayInfo> payInfo = bean.getPayInfo();
 
         tvStatusInfo.setText(bean.getStatus());
         tvTitle.setText(bean.getTitle());
-        tvPrice.setText(goods.getGoodPrice());
-        tvGoodName.setText(goods.getGoodPrice());
-        tvInfo.setText(goods.getGoodInfo());
-        tvCount.setText(goods.getGoodNum());
-        Glide.with(this).load(goods.getGoodImg()).into(ivGoodImg);
+        tvPrice.setText(bean.getGoodPrice());
+        tvGoodName.setText(bean.getGoodPrice());
+        tvInfo.setText(bean.getGoodInfo());
+        tvCount.setText(bean.getGoodNum());
+        Glide.with(this).load(bean.getGoodImg()).into(ivGoodImg);
 
 
         AdapterHelper._instance(this, rvPayInfo)._initData(payInfo).setLayoutManager(new LinearLayoutManager(this) {

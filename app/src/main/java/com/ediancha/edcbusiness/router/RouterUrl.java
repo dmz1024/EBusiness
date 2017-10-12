@@ -15,6 +15,12 @@ public interface RouterUrl {
      */
     String PERSON_CENTER_ACTIVITY = "/activity/my/personCenter";
 
+
+    /**
+     * 主页
+     */
+    String MAIN_ACTIVITY = "/activity/main";
+
     /**
      * 空间详情
      */

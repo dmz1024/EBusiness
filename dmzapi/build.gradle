@@ -80,4 +80,7 @@ dependencies {
     //https://github.com/ragunathjawahar/android-saripaar
     compile 'com.mobsandgeeks:android-saripaar:2.0.3'
 
+    //https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419319167&token=&lang=zh_CN
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+
 }

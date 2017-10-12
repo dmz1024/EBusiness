@@ -16,7 +16,7 @@ public class DmzBuilder {
     private Map<Integer, String> mapInfo;//根据code值显示waring数据
     private String url;//请求网址
     private Map<String, String> map;//请求参数
-    private boolean method;//请求方法
+    private boolean method=true;//请求方法
     private Object sign;//请求标识，用于取消请求
     private int code = 10000;//跟后台约定的成功返回码
     private IProgressInterface.OnProgressCancelListener progressCancelListener;

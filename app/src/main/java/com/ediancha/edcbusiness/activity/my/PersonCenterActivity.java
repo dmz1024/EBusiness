@@ -130,6 +130,10 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
             case 6:
                 Go.goHelpCenter();
                 break;
+            case 7:
+                UserInfoUtil.clear();
+                Go.goMain();
+                break;
 
         }
     }

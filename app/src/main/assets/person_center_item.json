@@ -29,4 +29,10 @@
     "title": "帮助中心",
     "leftImage": "ic_launcher"
   }
+
+  {
+    "iViewType": 1,
+    "title": "退出登录",
+    "leftImage": "ic_launcher"
+  }
 ]
