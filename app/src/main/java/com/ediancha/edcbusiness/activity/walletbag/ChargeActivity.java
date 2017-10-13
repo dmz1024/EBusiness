@@ -4,6 +4,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -19,10 +20,19 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.activity.MainActivity;
+import com.ediancha.edcbusiness.bean.pay.AliPayBean;
+import com.ediancha.edcbusiness.bean.pay.WeChatBean;
 import com.ediancha.edcbusiness.bean.walletbean.ChargeBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.constant.NormalContant;
+import com.ediancha.edcbusiness.helper.pay.IPayResultInterface;
+import com.ediancha.edcbusiness.helper.pay.Pay;
+import com.ediancha.edcbusiness.presenter.charge.ChargePresenter;
+import com.ediancha.edcbusiness.presenter.charge.CheckPayPresenter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
@@ -37,7 +47,7 @@ import butterknife.OnClick;
  * 充值
  */
 @Route(path = "/activity/walletbag/charge")
-public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBean.Data> implements AdapterHelper.OnConvertInterface<ChargeBean.Moneys>, AdapterHelper.OnClickListener {
+public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBean.Data> implements AdapterHelper.OnConvertInterface<ChargeBean.Moneys>, AdapterHelper.OnClickListener, ChargePresenter.IChargeView, CheckPayPresenter.ICheckPayView {
 
     @BindView(R.id.tv_money)
     TextView mTvMoney;
@@ -53,6 +63,10 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
     TextView mTvSubmit;
     AdapterHelper mAdapterHelper;
 
+    private String cMoney;
+
+    private ChargePresenter mChargePresenter;
+    private CheckPayPresenter mCheckPayPresenter;
 
     @Override
     protected void initDataBuilder() {
@@ -84,11 +98,34 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
 
     }
 
+    @Override
+    protected void initData() {
+        super.initData();
+        mChargePresenter=new ChargePresenter(this);
+        mCheckPayPresenter=new CheckPayPresenter(this);
+    }
+
     @OnClick({R.id.tv_submit})
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_submit:
 
+                ArrayList<ChargeBean.Moneys> datas = (ArrayList<ChargeBean.Moneys>) mAdapterHelper.getDatas();
+                for (int i = 0; i <datas.size() ; i++) {
+                    if (datas.get(i).getCheck()){
+                       if ((datas.size()-1)==i){
+                           datas.get(i).setcMoney(cMoney);
+                       }
+                        ChargeBean.Moneys moneys = datas.get(i);
+                        if (mRbPay.isChecked()){
+                           mChargePresenter.aliPay(moneys.getId(),"1",moneys.rechargeAmount,"1");
+                        }
+                        else if (mRbWechat.isChecked()){
+                            mChargePresenter.aliPay(moneys.getId(),"2",moneys.rechargeAmount,"1");
+                        }
+                       LogUtil.e("充值"+datas.get(i).getId()+"money"+datas.get(i).getcMoney());
+                    }
+                }
                 break;
         }
     }
@@ -103,7 +140,8 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
                 holder.setText(R.id.tv_cmoney, chargeBean.getcMoney()).setText(R.id.tv_zmoney,chargeBean.getsMoney());
                 break;
             case 1:
-                EditText mEd = holder.getView(R.id.et_cmoney);
+                holder.setText(R.id.et_cmoney,TextUtils.isEmpty(cMoney)?"":cMoney);
+                final EditText mEd = holder.getView(R.id.et_cmoney);
                 mEd.setFocusable(true);
                 mEd.requestFocus();
                 mEd.setOnClickListener(new View.OnClickListener() {
@@ -112,7 +150,27 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
                         onItemClick(viewType, mAdapterHelper,position);
                     }
                 });
+                //将光标移到最后一位
+                mEd.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        mEd.setSelection(mEd.getText().toString().trim().length());
+                    }
+                });
+                mEd.addTextChangedListener(new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                    }
 
+                    @Override
+                    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                       cMoney=charSequence+"";
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable editable) {
+                    }
+                });
                 break;
         }
     }
@@ -129,7 +187,44 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
         }
         datas.get(position).setCheck(true);
 
-        LogUtil.e("xxxxxxxxxx");
         mAdapterHelper.notifyDataSetChanged();
+    }
+
+    @Override
+    public void successWeChatCode(WeChatBean bean) {
+
+    }
+
+    @Override
+    public void successAliPayCode(final AliPayBean bean) {
+        if (bean.getCode()== NormalContant.SUCCESS_CODE){
+            Pay.getPay(2)
+                    .setiPayResultInterface(new IPayResultInterface() {
+                        @Override
+                        public void onSuccess() {
+                            mCheckPayPresenter.checkPay(bean.info,"1");
+                        }
+
+                        @Override
+                        public void onCancel() {
+                            MyToast.warn("您取消了本次支付!");
+                        }
+
+                        @Override
+                        public void onFaile(String msg) {
+                            MyToast.warn("本次支付失败!");
+                        }
+                    }).start(this,bean.data);
+        }
+    }
+
+    @Override
+    public void successCode() {
+        MyToast.normal("支付成功!");
+    }
+
+    @Override
+    public void failCode() {
+
     }
 }

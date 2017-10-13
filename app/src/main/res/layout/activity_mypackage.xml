@@ -63,6 +63,20 @@
         </LinearLayout>
     </LinearLayout>
 
+       <CheckBox
+           android:id="@+id/cb_check"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="余额自动支付"
+           android:background="@color/color_fff"
+           android:layout_marginTop="@dimen/size10"
+           android:button="@null"
+           android:textColor="@color/color_333"
+           android:drawableRight="@drawable/selector_check_style"
+           android:padding="@dimen/size10"
+           android:checked="true"
+           />
+
     <LinearLayout
         android:id="@+id/ln_pass"
         android:layout_marginTop="@dimen/size10"
@@ -74,7 +88,7 @@
         <TextView
             android:id="@+id/tv_pass"
             style="@style/tv_wr_min_15sp_pa10_style"
-            android:text="未设置"
+            android:text=""
             android:layout_width="match_parent"
             android:gravity="end"
             android:drawableRight="@mipmap/icon_wallet_password_arrow"

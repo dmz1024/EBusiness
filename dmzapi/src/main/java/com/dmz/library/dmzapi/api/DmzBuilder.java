@@ -227,6 +227,9 @@ public class DmzBuilder {
             if (map == null) {
                 this.map = new HashMap<>();
             }
+//            if(parms.length%2!=0){
+//                throw new IllegalArgumentException("parms 长度需为偶数");
+//            }
             for (int i = 0; i < parms.length - 1; i += 2) {
                 map.put(parms[i], parms[i + 1]);
             }

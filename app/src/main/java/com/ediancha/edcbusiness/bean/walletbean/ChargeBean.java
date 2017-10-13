@@ -59,7 +59,7 @@ public class ChargeBean extends BaseBean<ChargeBean.Data> {
         }
 
         public Moneys setcMoney(String cMoney) {
-            this.giftAmount = cMoney;
+            this.rechargeAmount = cMoney;
             return this;
         }
 

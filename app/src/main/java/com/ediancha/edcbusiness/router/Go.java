@@ -248,4 +248,19 @@ public class Go {
                 .navigation(mActivity, NormalContant.REQUEST_CODE);
     }
 
+    /**
+     * 余额明细
+     */
+    public static void goOrderItemActivity() {
+        ARouter.getInstance().build(RouterUrl.ORDERITEM_ACTIVITY)
+                .navigation();
+    }
+    /**
+     * 消费详情
+     */
+    public static void goConsumeActivity() {
+        ARouter.getInstance().build(RouterUrl.CONSUME_DETAIL_ACTIVITY)
+                .navigation();
+    }
+
 }

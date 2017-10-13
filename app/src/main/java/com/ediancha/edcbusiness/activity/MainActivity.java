@@ -154,7 +154,22 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
             case R.id.fg_qw:
 //                qwHelper.openQw();
                 //测试支付
-//                Pay.getPay(1).start(this, "app_id=2017083008461733&biz_content=%7B%22body%22%3A%22%5Cu7535%5Cu8bdd%5Cu54a8%5Cu8be2%5Cu5957%5Cu9910%5Cu4e0010%5Cu5206%5Cu949f%22%2C%22subject%22%3A%22%5Cu7535%5Cu8bdd%5Cu54a8%5Cu8be2%5Cu5957%5Cu9910%5Cu4e0010%5Cu5206%5Cu949f%22%2C%22out_trade_no%22%3A%22SN15077104633362%22%2C%22timeout_express%22%3A%221m%22%2C%22total_amount%22%3A0.01%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=law.east-profit.com%2Fapp.php%2Fhome%2Fdorder%2FaliPaySuccessOrder&sign_type=RSA2&timestamp=2017-10-11+20%3A28%3A08&version=1.0&sign=WM7JpkU3mk9nYk31ByJzqlOCNuTY1HZoOBuz8oyrDpA8V42zAexMCDN78NWiN64Vd2BKslBjXfhonVISDEtG6nzPQLXbDacRzk%2F5H05liaEWFfJe78Y6M2XF3jwTHAHZso2Kbxbu4v0ZwRW98eyz%2BqmZKi%2FjpobEJ7GMoKPwO961ZzM%2FUHU68xM%2Fee4mRODWYV2SR8bi0R5R8GSgRFZX9n2XJ17vbckqDAa4LVa9tMO0ROJldgMTU9X8PM0Eri0nBZQE7KZhjX95ulBZ0gYtb4J7%2FzmeJt%2B9NuEk4A87BeSemVxkO%2Fea5urK%2BfQdoMjl4e7ncEkqcTBQqC3HH2Lk0Q%3D%3D");
+                Pay.getPay(1).setiPayResultInterface(new IPayResultInterface() {
+                    @Override
+                    public void onSuccess() {
+
+                    }
+
+                    @Override
+                    public void onCancel() {
+
+                    }
+
+                    @Override
+                    public void onFaile(String msg) {
+
+                    }
+                }).start(this, "app_id=2017083008461733&biz_content=%7B%22body%22%3A%22%5Cu7535%5Cu8bdd%5Cu54a8%5Cu8be2%5Cu5957%5Cu9910%5Cu4e0010%5Cu5206%5Cu949f%22%2C%22subject%22%3A%22%5Cu7535%5Cu8bdd%5Cu54a8%5Cu8be2%5Cu5957%5Cu9910%5Cu4e0010%5Cu5206%5Cu949f%22%2C%22out_trade_no%22%3A%22SN15077104633362%22%2C%22timeout_express%22%3A%221m%22%2C%22total_amount%22%3A0.01%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=law.east-profit.com%2Fapp.php%2Fhome%2Fdorder%2FaliPaySuccessOrder&sign_type=RSA2&timestamp=2017-10-11+20%3A28%3A08&version=1.0&sign=WM7JpkU3mk9nYk31ByJzqlOCNuTY1HZoOBuz8oyrDpA8V42zAexMCDN78NWiN64Vd2BKslBjXfhonVISDEtG6nzPQLXbDacRzk%2F5H05liaEWFfJe78Y6M2XF3jwTHAHZso2Kbxbu4v0ZwRW98eyz%2BqmZKi%2FjpobEJ7GMoKPwO961ZzM%2FUHU68xM%2Fee4mRODWYV2SR8bi0R5R8GSgRFZX9n2XJ17vbckqDAa4LVa9tMO0ROJldgMTU9X8PM0Eri0nBZQE7KZhjX95ulBZ0gYtb4J7%2FzmeJt%2B9NuEk4A87BeSemVxkO%2Fea5urK%2BfQdoMjl4e7ncEkqcTBQqC3HH2Lk0Q%3D%3D");
                 break;
             case R.id.iv_bottom_message:
                 if (UserInfoUtil.checkLogin()) {

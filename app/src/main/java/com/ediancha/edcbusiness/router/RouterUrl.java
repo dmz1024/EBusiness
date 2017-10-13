@@ -160,4 +160,13 @@ public interface RouterUrl {
      * 修改信息
      */
     String UPDATEINFO_ACTIVITY = "/activity/my/updateInfo";
+
+    /**
+     * 余额明细
+     */
+    String ORDERITEM_ACTIVITY = "/activity/orderdetail/orderItem";
+    /**
+     * 消费详情
+     */
+    String CONSUME_DETAIL_ACTIVITY = "/activity/orderdetail/consumeDetail";
 }

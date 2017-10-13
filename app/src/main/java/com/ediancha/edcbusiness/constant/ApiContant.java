@@ -151,4 +151,18 @@ public interface ApiContant {
      * 长按开锁
      */
     String OPEN_LOCK = BASE_API + "orders/unlock";
+
+    /**
+     * 充值金额
+     */
+    String CHAREGE_MONEY_URL=BASE_API+"logrecharge/aggregationpay";
+    /**
+     * 检测充值是否成功
+     */
+    String CHECK_PAY_URL=BASE_API+"logrecharge/checkpay";
+
+    /**
+     * 活动消息
+     */
+    String ACTIIVTY_MESSAGE_URL=BASE_API+"article/activityMessage";
 }

@@ -1,5 +1,6 @@
 package com.ediancha.edcbusiness.activity.walletbag;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -72,6 +73,7 @@ public class MoneyActivity extends SingleDataBaseActivity<MyPackageBean, MyPacka
     @OnClick(R.id.tv_submit)
     void onClick(){
 
+        Go.goCharge();
 
     }
 

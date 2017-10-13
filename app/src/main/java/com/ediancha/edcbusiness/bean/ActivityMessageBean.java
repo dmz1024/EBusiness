@@ -15,48 +15,77 @@ import java.util.ArrayList;
 
 public class ActivityMessageBean extends BaseBean<ActivityMessageBean.Data> {
     public static class Data {
-        public ArrayList<Activity> data1;
-        public ArrayList<Message> data2;
+        public ArrayList<Activity> top;
+        public ArrayList<Message> notice;
 
-        public ArrayList<Activity> getData1() {
-            return data1;
+        public ArrayList<Activity> getTop() {
+            return top;
         }
 
-        public ArrayList<Message> getData2() {
-            return data2;
+        public ArrayList<Message> getNotice() {
+            return notice;
         }
     }
 
     public static class Activity extends ViewBaseType {
-        public String title;
-        public String ivUrl;
+        public String id;
+        public String image;
+        public String html;
 
         @Override
         public int getViewType() {
             return 1;
         }
 
-        public String getIvUrl() {
-            return ApiContant.IMAGE;
+        public String getId() {
+            return id;
         }
 
-        public String getTitle() {
-            return title;
+        public String getImage() {
+            return image;
+        }
+
+        public String getHtml() {
+            return html;
         }
     }
 
     public static class Message extends ViewBaseType {
-        public String content;
-        public String time;
+        public String type;
+        public long createtime;
         public String title;
         public int img;
+        public String id;
+
+        @Override
+        public int getViewType() {
+            return 2;
+        }
 
         public String getTitle() {
             return title;
         }
 
+        public String getType() {
+            return type;
+        }
+
         public int getImg() {
             return img;
+        }
+
+        public Message setType(String type) {
+            this.type = type;
+            return this;
+        }
+
+        public long getCreatetime() {
+            return createtime;
+        }
+
+        public Message setCreatetime(long createtime) {
+            this.createtime = createtime;
+            return this;
         }
 
         public Message setTitle(String title) {
@@ -69,18 +98,13 @@ public class ActivityMessageBean extends BaseBean<ActivityMessageBean.Data> {
             return this;
         }
 
-        @Override
-        public int getViewType() {
-            return 2;
+        public String getId() {
+            return id;
         }
 
-
-        public String getContent() {
-            return TextUtils.isEmpty(content) ? "无" : content;
-        }
-
-        public String getTime() {
-            return TextUtils.isEmpty(time) ? "无" : time;
+        public Message setId(String id) {
+            this.id = id;
+            return this;
         }
     }
 }
