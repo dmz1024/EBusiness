@@ -1,7 +1,9 @@
 package com.ediancha.edcbusiness.activity.walletbag;
 
 
+import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -17,6 +19,7 @@ import com.ediancha.edcbusiness.router.Go;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnCheckedChanged;
 import butterknife.OnClick;
 
 
@@ -46,6 +49,8 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
     LinearLayout mLnPass;
 
     MyPackageBean.Data data;
+    @BindView(R.id.cb_check)
+    CheckBox mCbCheck;
 
     @Override
     protected void initDataBuilder() {
@@ -77,7 +82,7 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
 
     }
 
-    @OnClick({R.id.ln_money, R.id.ln_coupon, R.id.ln_deposit,R.id.ln_pass})
+    @OnClick({R.id.ln_money, R.id.ln_coupon, R.id.ln_deposit, R.id.ln_pass})
     void click(View view) {
         switch (view.getId()) {
             case R.id.ln_money: //余额
@@ -87,12 +92,16 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
                 Go.goCoupon();
                 break;
             case R.id.ln_deposit://押金
-                Go.goDeposit(data.getDepositMoney()+"",data.getDepositType());
+                Go.goDeposit(data.getDepositMoney() + "", data.getDepositType());
                 break;
             case R.id.ln_pass:
                 Go.goPayPassWord();//修改支付密码
                 break;
         }
+    }
+    @OnCheckedChanged(R.id.cb_check)
+    void checkChecked(){
+
     }
 
 }
