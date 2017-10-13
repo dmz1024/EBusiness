@@ -3,6 +3,8 @@ package com.ediancha.edcbusiness.helper.pay;
 import android.app.Activity;
 import android.text.TextUtils;
 
+import com.dmz.library.dmzapi.api.bean.BaseBean;
+
 /**
  * Created by dengmingzhi on 2017/10/11.
  */
@@ -26,36 +28,6 @@ public class Pay {
     }
 
 
-    public static class Data {
-        public String appid;
-        public String noncestr;
-        public String partnerid;
-        public String prepayid;
-        public String sign;
-        public String timestamp;
 
-        public String getAppid() {
-            return appid;
-        }
 
-        public String getNoncestr() {
-            return noncestr;
-        }
-
-        public String getPartnerid() {
-            return partnerid;
-        }
-
-        public String getPrepayid() {
-            return prepayid;
-        }
-
-        public String getSign() {
-            return sign;
-        }
-
-        public String getTimestamp() {
-            return timestamp;
-        }
-    }
 }

@@ -2,6 +2,8 @@ package com.dmz.library.dmzapi;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 
@@ -71,7 +73,7 @@ public class MyApp extends Application {
 //        headers.put("commonHeaderKey1", "commonHeaderValue1");    //header不支持中文，不允许有特殊字符
 //        headers.put("commonHeaderKey2", "commonHeaderValue2");
         HttpParams params = new HttpParams();
-        params.put("version", "1.0.0");     //param支持中文,直接传,不要自己编码
+        params.put("version", getVersion());     //param支持中文,直接传,不要自己编码
         params.put("from", "android");
 ////-------------------------------------------------------------------------------------//
 
@@ -83,6 +85,18 @@ public class MyApp extends Application {
                 .setRetryCount(0)                               //全局统一超时重连次数，默认为三次，那么最差的情况会请求4次(一次原始请求，三次重连请求)，不需要可以设置为0
 //                .addCommonHeaders(headers)                      //全局公共头
                 .addCommonParams(params);                       //全局公共参数
+    }
+
+    public String getVersion() {
+        try {
+            PackageManager manager = this.getPackageManager();
+            PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
+            String version = info.versionName;
+            return version;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "1.0.0";
+        }
     }
 
 }

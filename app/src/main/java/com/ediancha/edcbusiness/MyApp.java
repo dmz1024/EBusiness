@@ -60,15 +60,5 @@ public class MyApp extends com.dmz.library.dmzapi.MyApp {
         TestWindowManager.getInstance();
     }
 
-    private String getVersion() {
-        try {
-            PackageManager manager = this.getPackageManager();
-            PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
-            String version = info.versionName;
-            return version;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "1.0.0";
-        }
-    }
+
 }
