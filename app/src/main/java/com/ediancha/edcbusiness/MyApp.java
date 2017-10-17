@@ -1,8 +1,10 @@
 package com.ediancha.edcbusiness;
 
 
+import android.content.ComponentCallbacks;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.util.Log;
 
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -58,7 +60,12 @@ public class MyApp extends com.dmz.library.dmzapi.MyApp {
 
         TestWindowManager._init(this);
         TestWindowManager.getInstance();
+
     }
 
-
+    @Override
+    public void registerComponentCallbacks(ComponentCallbacks callback) {
+        super.registerComponentCallbacks(callback);
+        callback.onLowMemory();
+    }
 }

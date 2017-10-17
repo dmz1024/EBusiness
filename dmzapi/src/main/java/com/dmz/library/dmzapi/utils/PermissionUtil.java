@@ -82,6 +82,9 @@ public class PermissionUtil {
     public void checkReadFile(Context ctx) {
         check(ctx,PermissionUtil.FILE_WRITE_REQUEST, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
+    public void checkLoction(Context ctx) {
+        check(ctx,PermissionUtil.FILE_WRITE_REQUEST, Manifest.permission.ACCESS_COARSE_LOCATION);
+    }
 
     private OnCheckSuccessPermission onSuccessPermission;
     private OnCheckFailedPermission onCheckFailedPermission;

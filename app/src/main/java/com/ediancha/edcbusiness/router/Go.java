@@ -193,9 +193,11 @@ public class Go {
     /**
      * 空间详情
      */
-    public static void goSpaceDetail(String id) {
+    public static void goSpaceDetail(String id,String mLatitude,String mLongtude) {
         ARouter.getInstance().build(RouterUrl.SPACEDETAIL_ACTIVITY)
                 .withString("id", id)
+                .withString("mLatitude",mLatitude)
+                .withString("mLongtude",mLongtude)
                 .navigation();
     }
 

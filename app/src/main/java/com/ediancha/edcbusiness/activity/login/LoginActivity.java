@@ -33,7 +33,7 @@ import butterknife.OnClick;
  * Created by dengmingzhi on 2017/9/22.
  */
 
-@Route(path = "/activity/start/start")
+@Route(path = "/activity/login/login")
 public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.ILoginView, CodePresenter.ICodeView, Validator.ValidationListener {
 
     @BindView(R.id.ivCha)
@@ -100,6 +100,7 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
             case R.id.tvXieyi:
                 Go.goWebView("https://www.baidu.com");
                 break;
+                default:
 
         }
     }

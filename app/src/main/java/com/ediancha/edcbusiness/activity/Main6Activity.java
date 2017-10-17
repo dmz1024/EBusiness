@@ -15,6 +15,9 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * @author Admin
+ */
 public class Main6Activity extends SingleDataBaseActivity<Test1Bean, ArrayList<Test1Bean.Test>> implements BaseDataBuilder.OnMySuccessListener<ArrayList<Test1Bean.Test>> {
     @BindView(R.id.tvContent)
     TextView tvContent;

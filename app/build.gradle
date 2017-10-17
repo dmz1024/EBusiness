@@ -61,5 +61,6 @@ dependencies {
     //    }
     //支付宝
     compile files('libs/alipaySdk-20170922.jar')
+    compile files('libs/AMap_Location_V3.6.1_20171012.jar')
     compile files('libs/open_sdk_r5886_lite.jar')
 }

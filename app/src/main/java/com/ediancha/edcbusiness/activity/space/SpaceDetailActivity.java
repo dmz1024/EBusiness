@@ -1,6 +1,7 @@
 package com.ediancha.edcbusiness.activity.space;
 
 
+import android.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
@@ -25,6 +26,7 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.adapter.UltraPagerAdapter;
 import com.ediancha.edcbusiness.bean.SpaceDetailBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.helper.MapHelper;
 import com.ediancha.edcbusiness.helper.OpenMapHelper;
 import com.tmall.ultraviewpager.UltraViewPager;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
@@ -70,14 +72,28 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     UltraPagerAdapter mPagerAdapter;
     private OpenMapHelper mOpenMapHelper;
     private SpaceDetailBean.Data mSpaceDdetail;
+
     @Autowired
     public String id;
+    @Autowired
+    public String mLatitude;
+    @Autowired
+    public String mLongtude;
 
     @Override
     public void onSuccess(IBasePresenter presenter, SpaceDetailBean.Data bean) {
         mSpaceDdetail = bean;
         mTvSname.setText(bean.getSpaceName());
-        mTvStatus.setText(bean.getSpaceStatus() == 1 ? "空闲" : "使用中");
+        switch (bean.getSpaceStatus()) {
+            case 1:
+                mTvStatus.setText("空闲中");
+                break;
+            case 2:
+                mTvStatus.setText("使用中");
+                break;
+            default:
+                mTvStatus.setText("故障维修");
+        }
         mTvTime.setText(bean.getSpaceMoney() + "元/小时");
         mTvLocal.setText(bean.getSpaceAreaPath() + "km");
         mTvNumber.setText("最多容纳" + bean.getSpaceLoadNumber() + "人");
@@ -88,6 +104,12 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
         initRecyclerView(bean);
     }
 
+    @Override
+    protected void initView() {
+        super.initView();
+
+
+    }
 
     private void initUltraViewPager(String img) {
 
@@ -104,8 +126,7 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
 
     private void initRecyclerView(SpaceDetailBean.Data bean) {
 
-        LogUtil.e("getFacilities" + bean.getFacilities());
-        LogUtil.e("getPurpose" + bean.getPurpose());
+
         //室内
         AdapterHelper._instance(this, mRyUser)._initData(bean.getFacilities()).setLayoutManager(new GridLayoutManager(this, 3))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_space_textview).setConvertInterface(this));
@@ -118,6 +139,7 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     protected void initData() {
         super.initData();
         mOpenMapHelper = new OpenMapHelper(this);
+
     }
 
     @OnClick({R.id.tv_local, R.id.tv_number})
@@ -128,11 +150,13 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
                 break;
             case R.id.tv_number:
                 break;
+            default:
         }
     }
 
     @Override
     protected void initDataBuilder() {
+        //首次不加载设置
         mBuilder.setSuccessRid(R.layout.success_spacedetail);
     }
 
@@ -140,7 +164,8 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     protected void initDmzBuilder() {
         dBuilder.setaClass(SpaceDetailBean.class)
                 .setUrl(ApiContant.SPACEDETAIL_URL)
-                .setParms("id", id);
+                .setParms("id", id, "longitude", mLongtude , "latitude", mLatitude);
+
     }
 
     @Override
@@ -170,4 +195,6 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     void open() {
 
     }
+
+
 }
