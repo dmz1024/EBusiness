@@ -3,15 +3,10 @@ package com.ediancha.edcbusiness.activity.walletbag;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
-import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -23,7 +18,6 @@ import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.ediancha.edcbusiness.R;
-import com.ediancha.edcbusiness.activity.MainActivity;
 import com.ediancha.edcbusiness.bean.pay.AliPayBean;
 import com.ediancha.edcbusiness.bean.pay.WeChatBean;
 import com.ediancha.edcbusiness.bean.walletbean.ChargeBean;
@@ -38,7 +32,6 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
 import java.util.ArrayList;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
@@ -199,7 +192,7 @@ public class ChargeActivity extends SingleDataBaseActivity<ChargeBean, ChargeBea
     public void successAliPayCode(final AliPayBean bean) {
         if (bean.getCode()== NormalContant.SUCCESS_CODE){
             Pay.getPay(2)
-                    .setiPayResultInterface(new IPayResultInterface() {
+                    .setListener(new IPayResultInterface() {
                         @Override
                         public void onSuccess() {
                             mCheckPayPresenter.checkPay(bean.info,"1");

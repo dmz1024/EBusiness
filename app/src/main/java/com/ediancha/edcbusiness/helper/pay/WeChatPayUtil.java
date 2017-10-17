@@ -22,7 +22,7 @@ public class WeChatPayUtil extends Pay {
 
         Data data = (Data) object;
         IWXAPI api = WXAPIFactory.createWXAPI(activity, null);
-        api.registerApp("wxd930ea5d5a258f4f");
+        api.registerApp(data.appid);
         PayReq request = new PayReq();
         request.appId = data.getAppid();
         request.partnerId = data.getPartnerid();

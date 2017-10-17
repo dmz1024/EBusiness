@@ -51,7 +51,7 @@ public interface RouterUrl {
     /**
      * 交易通知
      */
-    String LOGIN_ACTIVITY = "/activity/login/login";
+    String LOGIN_ACTIVITY = "/activity/start/start";
 
     /**
      * 空间订单

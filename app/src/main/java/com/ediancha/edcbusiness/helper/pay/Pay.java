@@ -12,7 +12,7 @@ import com.dmz.library.dmzapi.api.bean.BaseBean;
 public class Pay {
     protected IPayResultInterface iPayResultInterface;
 
-    public Pay setiPayResultInterface(IPayResultInterface iPayResultInterface) {
+    public Pay setListener(IPayResultInterface iPayResultInterface) {
         this.iPayResultInterface = iPayResultInterface;
         return this;
     }
