@@ -33,7 +33,7 @@ import butterknife.OnClick;
  * Created by dengmingzhi on 2017/9/22.
  */
 
-@Route(path = "/activity/login/login")
+@Route(path = "/activity/start/start")
 public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.ILoginView, CodePresenter.ICodeView, Validator.ValidationListener {
 
     @BindView(R.id.ivCha)

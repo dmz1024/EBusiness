@@ -15,7 +15,7 @@ public class OpenLockBean extends BaseBean<OpenLockBean.Data> {
         public String spaceId;
         public String spaceName;
         public long orderStartTime;
-
+        public Data(){}
         protected Data(Parcel in) {
             orderId = in.readString();
             spaceId = in.readString();
