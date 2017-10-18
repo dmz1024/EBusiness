@@ -4,9 +4,11 @@ import android.graphics.Color;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
+import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.view.activity.MoreDataBaseActivity;
@@ -60,7 +62,9 @@ public class GoodOrderActivity extends MoreDataBaseActivity<GoodsOrderBean.Data,
                 .setText(R.id.tvCount, data.getGoodNum())
                 .setText(R.id.tvPrice, data.getGoodPrice());
         Glide.with(this).load(data.getGoodImg()).into(holder.<ImageView>getView(R.id.ivGoodImg));
+
     }
+
 
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {

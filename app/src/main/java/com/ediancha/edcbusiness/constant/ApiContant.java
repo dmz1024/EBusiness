@@ -165,4 +165,34 @@ public interface ApiContant {
      * 活动消息
      */
     String ACTIIVTY_MESSAGE_URL=BASE_API+"article/activityMessage";
+
+    /**
+     * QQ登陆
+     */
+    String QQ_LOGIN_URL=BASE_API+"users/loginByQQ";
+
+    /**
+     * Wechat登陆
+     */
+
+    String WECHAT_LOGIN_URL=BASE_API+"users/loginByWechat";
+
+    /**
+     * 解除绑定
+     */
+    String THREAD_UNBIND_URL=BASE_API+"users/unBind";
+
+    /**
+     * 绑定QQ
+     */
+    String THREAD_BINDQQ_URL=BASE_API+"users/bindQQByUid";
+
+    /**
+     * 绑定微信
+     */
+    String THREAD_BINDWECHAT_URL=BASE_API+"users/bindWechatByUid";
+    /**
+     * 绑定账号
+     */
+    String BIND_URL=BASE_API+"users/bindThird";
 }

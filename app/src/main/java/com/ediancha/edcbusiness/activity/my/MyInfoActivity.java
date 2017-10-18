@@ -18,6 +18,7 @@ import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.list.CommonAdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.dialog.ChooseStringDialog;
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.utils.ResUtil;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
@@ -28,7 +29,12 @@ import com.ediancha.edcbusiness.bean.MyInfoBean;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.constant.NormalContant;
+import com.ediancha.edcbusiness.dialog.CommonDialog;
 import com.ediancha.edcbusiness.helper.PhotoHelper;
+import com.ediancha.edcbusiness.helper.login.ILoginResultInterface;
+import com.ediancha.edcbusiness.helper.login.Login;
+import com.ediancha.edcbusiness.helper.login.QQLogin;
+import com.ediancha.edcbusiness.presenter.my.BindThreadPresenter;
 import com.ediancha.edcbusiness.presenter.my.UpdateHeaderPresenter;
 import com.ediancha.edcbusiness.presenter.my.UpdateNamePresenter;
 import com.ediancha.edcbusiness.router.Go;
@@ -43,7 +49,7 @@ import butterknife.ButterKnife;
  * Created by dengmingzhi on 2017/9/26.
  */
 @Route(path = "/activity/my/myInfo")
-public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.OnConvertInterface<CommonAdapterHelper.CommonBean>, AdapterHelper.OnClickListener, UpdateNamePresenter.IUpDateNameView, UpdateHeaderPresenter.IUpdateHeaderView {
+public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.OnConvertInterface<CommonAdapterHelper.CommonBean>, AdapterHelper.OnClickListener, UpdateNamePresenter.IUpDateNameView, UpdateHeaderPresenter.IUpdateHeaderView, BindThreadPresenter.IBindThreadView {
 
     @BindView(R.id.rvContent)
     RecyclerView rvContent;
@@ -52,14 +58,21 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
     private PhotoHelper mHelper;
 
     private UpdateNamePresenter mUpdateNamePresenter;
+    private BindThreadPresenter mBindThreadPresenter;
     private UpdateHeaderPresenter mHeaderPresenter;
     private String path;
+    private String access_token;
+    private int type;
+
+    private CommonDialog mCommonDialog;
 
     @Override
     protected void initData() {
         super.initData();
-        mUpdateNamePresenter = new UpdateNamePresenter(this);
-        mHeaderPresenter = new UpdateHeaderPresenter(this);
+        mUpdateNamePresenter = mUpdateNamePresenter != null ? mUpdateNamePresenter : new UpdateNamePresenter(this);
+        mHeaderPresenter = mHeaderPresenter != null ? mHeaderPresenter : new UpdateHeaderPresenter(this);
+        mBindThreadPresenter = mBindThreadPresenter != null ? mBindThreadPresenter : new BindThreadPresenter(this);
+        mCommonDialog = mCommonDialog != null ? mCommonDialog : new CommonDialog();
         mHelper = new PhotoHelper(this);
         datas = CommonAdapterHelper.getDatas(this, "my_info.json");
         datas.get(0).setRightImage(UserInfoUtil.getUserPhoto());
@@ -100,6 +113,8 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
         }
     }
 
+    QQLogin login;
+
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
 
@@ -133,6 +148,70 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
                 }
 
                 break;
+            case 7:
+                type = 1;
+                if (UserInfoUtil.getWx() == 1) {
+                    Login.getLogin(0).setListener(new ILoginResultInterface() {
+                        @Override
+                        public void onSuccess(String info) {
+                            mBindThreadPresenter.bindThread(type, null, info);
+                        }
+
+                        @Override
+                        public void onCancel() {
+                            MyToast.normal("您取消了微信绑定!");
+                        }
+
+                        @Override
+                        public void onFaile() {
+                            MyToast.normal("微信绑定失败!");
+                        }
+                    }).start(this);
+                } else {
+                mCommonDialog.setTitle("您确定解除微信绑定?")
+                        .setOnClickListener(new CommonDialog.OnClickListener() {
+                            @Override
+                            public void setOnClickRightListener() {
+                                mCommonDialog.dismiss();
+                                mBindThreadPresenter.unBindThread(type);
+                            }
+                        })
+                        .show(this);
+                }
+                break;
+            case 8:
+                type = 2;
+                if (UserInfoUtil.getQq() == 1) {
+                    login = (QQLogin) Login.getLogin(1);
+                    login.setListener(new ILoginResultInterface() {
+                        @Override
+                        public void onSuccess(String info) {
+                            LogUtil.e("openId" + info.split(",")[0] + "     " + info.split(",")[1]);
+                            mBindThreadPresenter.bindThread(type, info.split(",")[1], info.split("1")[0]);
+                        }
+
+                        @Override
+                        public void onCancel() {
+                            MyToast.normal("您取消了QQ绑定!");
+                        }
+
+                        @Override
+                        public void onFaile() {
+                            MyToast.normal("QQ绑定失败!");
+                        }
+                    }).start(this);
+                } else {
+                mCommonDialog.setTitle("您确定解除QQ绑定!")
+                        .setOnClickListener(new CommonDialog.OnClickListener() {
+                            @Override
+                            public void setOnClickRightListener() {
+                                mCommonDialog.dismiss();
+                                mBindThreadPresenter.unBindThread(type);
+                            }
+                        })
+                        .show(this);
+                }
+                break;
         }
     }
 
@@ -163,6 +242,10 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
                 mHeaderPresenter.updateHeader(path);
             }
         }
+
+        if (login != null) {
+            login.onActivity(requestCode, resultCode, data);
+        }
     }
 
     @Override
@@ -178,5 +261,19 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
     public void success(String path) {
         this.path = path;
         mUpdateNamePresenter.UpdateName(UserInfoUtil.getUserName(), path);
+    }
+
+    @Override
+    public void successCode() {
+        MyToast.normal("绑定成功!");
+        UserInfoUtil.saveProperty(type == 2 ? "qq" : "wx", 2);
+        adapterHelper.notifyDataSetChanged();
+    }
+
+    @Override
+    public void unBindSuccess() {
+        MyToast.normal("解除绑定成功!");
+        UserInfoUtil.saveProperty(type == 2 ? "qq" : "wx", 1);
+        adapterHelper.notifyDataSetChanged();
     }
 }

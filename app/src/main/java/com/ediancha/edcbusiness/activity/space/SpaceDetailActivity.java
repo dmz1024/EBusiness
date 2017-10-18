@@ -22,12 +22,16 @@ import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
+import com.dmz.library.dmzapi.view.custom.DmzBar;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.activity.MainActivity;
 import com.ediancha.edcbusiness.adapter.UltraPagerAdapter;
 import com.ediancha.edcbusiness.bean.SpaceDetailBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.helper.MapHelper;
 import com.ediancha.edcbusiness.helper.OpenMapHelper;
+import com.ediancha.edcbusiness.helper.ShareHelper;
+import com.ediancha.edcbusiness.helper.share.Share;
 import com.tmall.ultraviewpager.UltraViewPager;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
@@ -171,7 +175,18 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     @Override
     protected void initBarView() {
         super.initBarView();
-        dmzBar.setText("云集空间");
+        dmzBar.setText("云集空间")
+                .addItemView(new DmzBar.DmzBarItemInfo().setIid(R.mipmap.icon_gengduo))
+                .setOnItemOnClickListener(new DmzBar.OnItemOnClickListener() {
+                    @Override
+                    public void itemClick(int index) {
+                        if (mSpaceDdetail!=null){
+                            mSpaceDdetail.getShare().setType(1).url="https://www.baidu.com";
+                            mSpaceDdetail.getShare().logo="http://media-cdn.tripadvisor.com/media/photo-s/01/3e/05/40/the-sandbar-that-links.jpg";
+                            Share.getShare(1).start(SpaceDetailActivity.this, mSpaceDdetail.getShare());
+                        }
+                    }
+                });
     }
 
     @Override

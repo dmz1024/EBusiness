@@ -50,7 +50,7 @@
         <!--高德地图定位-->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="eef6e82ebbbbcb215239b69e5e37ddb1"/>
+            android:value="53b7e96059e5b0ff333e4a72c16cb552"/>
 
         <activity
             android:name=".activity.MainActivity"

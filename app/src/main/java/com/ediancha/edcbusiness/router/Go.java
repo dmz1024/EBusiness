@@ -70,8 +70,10 @@ public class Go {
     /**
      * 活动精选
      */
-    public static void goLogin() {
-        ARouter.getInstance().build(RouterUrl.LOGIN_ACTIVITY).navigation();
+    public static void goLogin(int type) {
+        ARouter.getInstance().build(RouterUrl.LOGIN_ACTIVITY)
+                .withInt("type",type)
+                .navigation();
     }
 
     /**

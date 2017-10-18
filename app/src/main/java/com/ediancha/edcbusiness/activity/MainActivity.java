@@ -4,6 +4,7 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -16,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.ViewAnimator;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.amap.api.location.AMapLocation;
@@ -250,7 +252,7 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
 
         @Override
         public int getType() {
-            return 2;
+            return 1;
         }
 
         @Override
