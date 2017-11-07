@@ -1,11 +1,9 @@
 package com.dmz.library.dmzapi;
 
 import android.app.Application;
-import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
-import android.support.annotation.NonNull;
+
 
 import com.dmz.library.dmzapi.utils.AnyPref;
 import com.dmz.library.dmzapi.utils.MyToast;
@@ -98,5 +96,8 @@ public class MyApp extends Application {
             return "1.0.0";
         }
     }
+
+
+
 
 }

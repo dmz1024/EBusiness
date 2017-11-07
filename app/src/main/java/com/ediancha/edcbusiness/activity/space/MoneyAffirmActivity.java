@@ -15,8 +15,10 @@ import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.dmz.library.dmzapi.view.custom.DmzBar;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.bean.CheckOrderBean;
 import com.ediancha.edcbusiness.bean.MoneyAffirmBean;
 import com.ediancha.edcbusiness.bean.OpenLockBean;
+import com.ediancha.edcbusiness.presenter.order.CheckOrderPresenter;
 import com.ediancha.edcbusiness.presenter.order.LongOpenLockPresenter;
 import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
@@ -84,7 +86,23 @@ public class MoneyAffirmActivity extends NotNetBaseActivity implements AdapterHe
 
     @Override
     public void openSuccess(OpenLockBean.Data data) {
-        Go.goSpaceOrderInProgeressDesc(data);
+        Go.goSpaceOrderInProgeressDesc(data.getOrderId());
         finish();
     }
+
+    @Override
+    public void onOtherCode(OpenLockBean data) {
+        switch (data.getCode()) {
+            case 80003://余额不足
+
+                break;
+            case 70003://不可重复下单
+                checkOrderPresenter = checkOrderPresenter == null ? new CheckOrderPresenter() : checkOrderPresenter;
+                checkOrderPresenter.check();
+                break;
+        }
+    }
+
+    private CheckOrderPresenter checkOrderPresenter;
+
 }

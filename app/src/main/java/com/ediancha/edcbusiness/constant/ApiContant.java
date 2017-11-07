@@ -10,8 +10,8 @@ public interface ApiContant {
 
     String BASE_URL = "http://law.east-profit.com/app.php/home/";
 
-    String BASE_API ="http://s.east-profit.com/api.php/";
-    String BASE_API_HOST ="http://s.east-profit.com/";
+    String BASE_API = "http://s.east-profit.com/api.php/";
+    String BASE_API_HOST = "http://s.east-profit.com/";
 
     /**
      * 活动消息
@@ -87,11 +87,11 @@ public interface ApiContant {
     /**
      * 空间详情
      */
-    String SPACEDETAIL_URL= BASE_API + "space/detail";
+    String SPACEDETAIL_URL = BASE_API + "space/detail";
     /**
      * 实名认证
      */
-    String AUTHER_URL= BASE_API + "users/authentication";
+    String AUTHER_URL = BASE_API + "users/authentication";
 
 
     String BASEAPI = "http://s.east-profit.com/api.php/";
@@ -155,15 +155,17 @@ public interface ApiContant {
     /**
      * 充值金额
      */
-    String CHAREGE_MONEY_URL=BASE_API+"logrecharge/aggregationpay";
+    String CHAREGE_MONEY_URL = BASE_API + "logrecharge/aggregationpay";
     /**
      * 检测充值是否成功
      */
-    String CHECK_PAY_URL=BASE_API+"logrecharge/checkpay";
+    String CHECK_PAY_URL = BASE_API + "logrecharge/checkpay";
+
 
     /**
-     * 活动消息
+     * 检测用户是否有进行中订单
      */
+    String HAND_ORDER = BASE_API + "orders/handorder";
     String ACTIIVTY_MESSAGE_URL=BASE_API+"article/activityMessage";
 
     /**
