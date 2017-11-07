@@ -52,6 +52,7 @@ public class PayPWSettingActivity extends NotNetBaseActivity implements CodePres
     @BindView(R.id.et_pass)
     @NotEmpty(sequence = 2, message = "不能为空!")
     @Password(min = 6, message = "密码为六位!")
+    @Length(min = 6, max = 6)
     EditText mEtPass;
 
     @BindView(R.id.et_passyz)
@@ -126,13 +127,13 @@ public class PayPWSettingActivity extends NotNetBaseActivity implements CodePres
 
         final String payPass = mEtPass.getText().toString().trim();
 //
-        final IndetifyCodeDialog indetifyCodeDialog=new IndetifyCodeDialog();
+        final IndetifyCodeDialog indetifyCodeDialog = new IndetifyCodeDialog();
         indetifyCodeDialog.show(this);
         indetifyCodeDialog.setPasswordListener(new IndetifyCodeDialog.UpDatePasswordListener() {
             @Override
             public void updatePassword(String pass) {
                 indetifyCodeDialog.dismiss();
-                mPayPWPresenter.UpdatePayPw(UserInfoUtil.getUserPhone(),pass,payPass);
+                mPayPWPresenter.UpdatePayPw(UserInfoUtil.getUserPhone(), pass, payPass);
             }
         });
     }
@@ -150,7 +151,6 @@ public class PayPWSettingActivity extends NotNetBaseActivity implements CodePres
             }
         }
     }
-
 
 
 }

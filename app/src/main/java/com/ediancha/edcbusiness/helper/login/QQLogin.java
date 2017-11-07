@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
 
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.tencent.connect.common.Constants;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
@@ -35,7 +36,9 @@ public class QQLogin extends Login {
         public void onComplete(Object o) {
             try {
                 JSONObject jsonObject = new JSONObject(o.toString());
-                iLoginResultInterface.onSuccess(jsonObject.getString(Constants.PARAM_OPEN_ID));
+                iLoginResultInterface.onSuccess(jsonObject.getString(Constants.PARAM_OPEN_ID)+ "," + jsonObject.getString(Constants.PARAM_ACCESS_TOKEN)
+                );
+                LogUtil.e(jsonObject.toString());
             } catch (JSONException e) {
                 e.printStackTrace();
                 iLoginResultInterface.onFaile();

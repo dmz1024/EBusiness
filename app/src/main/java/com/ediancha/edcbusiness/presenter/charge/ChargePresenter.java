@@ -1,14 +1,17 @@
 package com.ediancha.edcbusiness.presenter.charge;
 
+import android.text.TextUtils;
+
 import com.dmz.library.dmzapi.api.DmzApi;
 import com.dmz.library.dmzapi.api.DmzBuilder;
 import com.dmz.library.dmzapi.api.OnMySuccessListener;
 import com.dmz.library.dmzapi.api.view.IContextView;
 import com.dmz.library.dmzapi.view.MyProgress;
-import com.ediancha.edcbusiness.bean.pay.AliPayBean;
+import com.ediancha.edcbusiness.bean.pay.PayInfoBean;
 import com.ediancha.edcbusiness.bean.pay.WeChatBean;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.helper.pay.WeChatPayUtil;
 
 /**
  * Created by Admin on 2017/10/13.
@@ -22,45 +25,29 @@ public class ChargePresenter {
         this.mIChargeView = iChargeView;
     }
 
-    public void weChatPay(String id, String payType, String money, String isGive) {
+    public void Pay(String id, int payType, String money, String isGive) {
         DmzApi._build().setDmzBuilder(DmzBuilder._builder()
-                .setaClass(WeChatBean.class)
+                .setaClass(payType==1?PayInfoBean.AliPayInfoBean.class: PayInfoBean.WeChatPayInfoBean.class)
                 .setUrl(ApiContant.CHAREGE_MONEY_URL)
                 .setAll(true)
-                .setOnMySuccessListener(new OnMySuccessListener<WeChatBean>() {
+                .setOnMySuccessListener(payType==1?new OnMySuccessListener<PayInfoBean.AliPayInfoBean>() {
                     @Override
-                    public void onSuccess(WeChatBean bean) {
-                        mIChargeView.successWeChatCode(bean);
+                    public void onSuccess(PayInfoBean.AliPayInfoBean bean) {
+                        mIChargeView.successCode(bean);
+                    }
+                }:new OnMySuccessListener<PayInfoBean.WeChatPayInfoBean>() {
+                    @Override
+                    public void onSuccess(PayInfoBean.WeChatPayInfoBean bean) {
+                        mIChargeView.successCode(bean);
                     }
                 })
                 .setParms(UserInfoUtil.getUserToken())
-                .setParms("id",id, "payType", payType, "money",money, "isGive", isGive)
-                .setiLoadingView(new MyProgress(mIChargeView.getContext())))
-                .excute();
-    }
-
-    public void aliPay(String id, String payType, String money, String isGive) {
-        DmzApi._build().setDmzBuilder(DmzBuilder._builder()
-                .setaClass(AliPayBean.class)
-                .setUrl(ApiContant.CHAREGE_MONEY_URL)
-                .setAll(true)
-                .setOnMySuccessListener(new OnMySuccessListener<AliPayBean>() {
-                    @Override
-                    public void onSuccess(AliPayBean bean) {
-                        mIChargeView.successAliPayCode(bean);
-                    }
-                })
-                .setParms(UserInfoUtil.getUserToken())
-                .setParms("id",id, "payType", payType, "money",money, "isGive", isGive)
+                .setParms("id",id, "payType", payType+"", "money",money, "isGive", isGive)
                 .setiLoadingView(new MyProgress(mIChargeView.getContext())))
                 .excute();
     }
 
     public interface IChargeView extends IContextView {
-
-        void successWeChatCode(WeChatBean bean);
-        void successAliPayCode(AliPayBean bean);
-
-        void failCode();
+        void successCode(PayInfoBean bean);
     }
 }

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_fff"
+    android:background="@color/color_f8f8fa"
     android:orientation="vertical">
 
 
@@ -36,7 +36,7 @@
                 android:id="@+id/recy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color_fff"></android.support.v7.widget.RecyclerView>
+                android:background="@color/color_f8f8fa"></android.support.v7.widget.RecyclerView>
         </RelativeLayout>
 
 

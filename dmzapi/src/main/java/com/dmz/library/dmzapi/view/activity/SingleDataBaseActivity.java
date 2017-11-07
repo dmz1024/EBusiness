@@ -3,6 +3,7 @@ package com.dmz.library.dmzapi.view.activity;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 import com.dmz.library.dmzapi.R;
@@ -24,7 +25,7 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 public abstract class SingleDataBaseActivity<T extends IBaseBean, D> extends ToobarBaseActivity implements BaseDataBuilder.OnMySuccessListener<D> {
     protected SwipeRefreshLayout swRoot;
-    protected NestedScrollView scRoot;
+    protected ViewGroup scRoot;
 
 
     protected SingleDataContract mContract;
@@ -61,6 +62,7 @@ public abstract class SingleDataBaseActivity<T extends IBaseBean, D> extends Too
 
     protected abstract void initDmzBuilder();
 
+    @Override
     protected int getRid() {
         return R.layout.view_base_single_data;
     }

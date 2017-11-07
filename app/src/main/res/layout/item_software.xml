@@ -13,7 +13,7 @@
         android:textSize="@dimen/sp30"
         android:paddingBottom="@dimen/size10"
         android:paddingTop="@dimen/size10"
-        android:background="@color/color_fff"
+        android:background="@color/color_f8f8fa"
        />
 
 </LinearLayout>

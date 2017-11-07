@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.amap.api.location.AMapLocation;
 import com.bumptech.glide.Glide;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
@@ -21,9 +22,9 @@ import com.ediancha.edcbusiness.adapter.UltraPagerAdapter;
 import com.ediancha.edcbusiness.bean.HomeBean;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.helper.MainBottomSheet;
+import com.ediancha.edcbusiness.helper.location.MapHelper;
 import com.ediancha.edcbusiness.helper.QwHelper;
 
-import com.ediancha.edcbusiness.helper.login.Login;
 import com.ediancha.edcbusiness.helper.login.QQLogin;
 import com.ediancha.edcbusiness.helper.share.Share;
 import com.ediancha.edcbusiness.presenter.HomePresenter;
@@ -37,6 +38,9 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.OnClick;
 
+/**
+ * @author Admin
+ */
 @Route(path = "/activity/main")
 public class MainActivity extends NotNetBaseActivity implements View.OnClickListener, AdapterHelper.OnConvertInterface, AdapterHelper.OnClickListener, HomePresenter.IHomeView {
     @BindView(R.id.tv_left)
@@ -62,11 +66,15 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
     @BindView(R.id.uvp_pager)
     UltraViewPager mUvpPager;
 
+    private double mLatitude;
+    private double mLongtude;
 
     private HomePresenter mHomePresenter;
     private MainBottomSheet bottomSheet;
     private QwHelper qwHelper;
     UltraPagerAdapter mUltraPagerAdapter;
+
+    private MapHelper mMapHelper;
 
     @Override
     protected void initView() {
@@ -78,7 +86,23 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
 
         bottomSheet = new MainBottomSheet((mLlBottom), mIvArrows);
         qwHelper = new QwHelper(this);
+        mMapHelper=mMapHelper!=null?mMapHelper:new MapHelper(this);
+        mMapHelper.setLatLongtudeListener(new MapHelper.LatLongtudeListener() {
+            @Override
+            public void setLatitude(Double latitude) {
+                mLatitude=latitude;
+            }
 
+            @Override
+            public void setLongtude(Double longtude) {
+                mLongtude=longtude;
+            }
+
+            @Override
+            public void getLocaionInfo(AMapLocation amapLocation) {
+
+            }
+        }).getLocation();
     }
 
     @Override
@@ -104,6 +128,7 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
         mUvpPager.setInfiniteLoop(true);
         mUvpPager.setAutoScroll(5000);
     }
+
 
     private void initRecyclerView(ArrayList<HomeBean.SpaceListBean> spaceList) {
 
@@ -136,7 +161,8 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
 
     QQLogin login;
 
-    @OnClick({R.id.fg_arrows, R.id.iv_bottom_header, R.id.fg_qw, R.id.iv_bottom_message, R.id.llBottom})
+    @Override
+    @OnClick({R.id.fg_arrows, R.id.iv_bottom_header, R.id.fg_qw, R.id.iv_bottom_message, R.id.llBottom, R.id.tv_left, R.id.tv_right})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.fg_arrows:
@@ -148,6 +174,24 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
                 }
                 break;
             case R.id.fg_qw:
+                qwHelper.openQw();
+                //测试支付
+//                Pay.getPay(1).setiPayResultInterface(new IPayResultInterface() {
+//                    @Override
+//                    public void onSuccess() {
+//
+//                    }
+//
+//                    @Override
+//                    public void onCancel() {
+//
+//                    }
+//
+//                    @Override
+//                    public void onFaile(String msg) {
+//
+//                    }
+//                }).start(this, "app_id=2017083008461733&biz_content=%7B%22body%22%3A%22%5Cu7535%5Cu8bdd%5Cu54a8%5Cu8be2%5Cu5957%5Cu9910%5Cu4e0010%5Cu5206%5Cu949f%22%2C%22subject%22%3A%22%5Cu7535%5Cu8bdd%5Cu54a8%5Cu8be2%5Cu5957%5Cu9910%5Cu4e0010%5Cu5206%5Cu949f%22%2C%22out_trade_no%22%3A%22SN15077104633362%22%2C%22timeout_express%22%3A%221m%22%2C%22total_amount%22%3A0.01%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=law.east-profit.com%2Fapp.php%2Fhome%2Fdorder%2FaliPaySuccessOrder&sign_type=RSA2&timestamp=2017-10-11+20%3A28%3A08&version=1.0&sign=WM7JpkU3mk9nYk31ByJzqlOCNuTY1HZoOBuz8oyrDpA8V42zAexMCDN78NWiN64Vd2BKslBjXfhonVISDEtG6nzPQLXbDacRzk%2F5H05liaEWFfJe78Y6M2XF3jwTHAHZso2Kbxbu4v0ZwRW98eyz%2BqmZKi%2FjpobEJ7GMoKPwO961ZzM%2FUHU68xM%2Fee4mRODWYV2SR8bi0R5R8GSgRFZX9n2XJ17vbckqDAa4LVa9tMO0ROJldgMTU9X8PM0Eri0nBZQE7KZhjX95ulBZ0gYtb4J7%2FzmeJt%2B9NuEk4A87BeSemVxkO%2Fea5urK%2BfQdoMjl4e7ncEkqcTBQqC3HH2Lk0Q%3D%3D");
 //                if (UserInfoUtil.checkLogin()) {
 //                    qwHelper.openQw();
 //                }
@@ -163,7 +207,17 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
                     Go.goActivityMessage();
                 }
                 break;
+                /*打开二维码*/
+            case R.id.tv_left:
+                qwHelper.openQw();
+                break;
+            //通知
+            case R.id.tv_right:
+
+                break;
+            default:
         }
+
     }
 
     /**
@@ -188,7 +242,7 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
 
         @Override
         public int getType() {
-            return 2;
+            return 1;
         }
 
         @Override
@@ -216,7 +270,7 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
         HomeBean.SpaceListBean spaceListBean = (HomeBean.SpaceListBean) adapterHelper.getDatas().get(position);
-        Go.goSpaceDetail(spaceListBean.getId());
+        Go.goSpaceDetail(spaceListBean.getId(),mLatitude+"",mLongtude+"");
     }
 
     @Override
@@ -230,5 +284,14 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         Log.d("主页", "回来了");
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mMapHelper!=null){
+            mMapHelper.getLocationClient().onDestroy();
+        }
     }
 }

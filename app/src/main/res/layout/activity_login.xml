@@ -127,7 +127,7 @@
                     android:paddingRight="6dp"
                     android:paddingTop="5dp"
                     android:text="发送验证码"
-                    android:textColor="@color/color_fff"
+                    android:textColor="@color/color_f8f8fa"
                     android:textSize="13sp" />
 
                 <TextView
@@ -182,6 +182,26 @@
                 android:text="暂不登录"
                 android:textColor="#666"
                 android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/thread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size30">
+
+                <ImageView
+                    android:id="@+id/img_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_weixin"/>
+               <ImageView
+                   android:id="@+id/img_qq"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@mipmap/icon_qq"
+                   android:layout_marginLeft="@dimen/size50"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

@@ -34,20 +34,20 @@
         android:text="问题类型"
         android:singleLine="true"
         android:ellipsize="end"
-        android:background="@color/color_fff"
+        android:background="@color/color_f8f8fa"
         android:drawablePadding="@dimen/size10"
         android:layout_marginTop="@dimen/size10"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/size150"
-        android:background="@color/color_fff"
+        android:background="@color/color_f8f8fa"
         android:layout_marginTop="@dimen/size10">
         <EditText
             android:id="@+id/et_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/color_fff"
+            android:background="@color/color_f8f8fa"
             android:hint="问题描述（必填）"
             android:gravity="start"
             android:layout_margin="@dimen/size10"
@@ -59,7 +59,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/size120"
-        android:background="@color/color_fff"
+        android:background="@color/color_f8f8fa"
         android:orientation="horizontal"
         android:gravity="center_vertical">
         <HorizontalScrollView

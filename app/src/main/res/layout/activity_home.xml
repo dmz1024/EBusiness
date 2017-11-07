@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:clipChildren="false">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -24,11 +26,15 @@
     <RadioGroup
         android:id="@+id/rg_chose"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
         android:paddingTop="@dimen/size5"
-        android:paddingBottom="@dimen/size5">
+        android:paddingBottom="@dimen/size5"
+        android:background="@color/bg_color"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        >
 
         <RadioButton
             android:id="@+id/rb_one"
@@ -48,7 +54,34 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="专题"
+            android:text="订单"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_home_style"
+            android:drawableTop="@drawable/selector_special_style"
+            android:drawablePadding="@dimen/size2"
+            android:gravity="center"
+            android:button="@null"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shouye_sao_icon"
+                android:layout_marginTop="-10dp"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RadioButton
+            android:id="@+id/rb_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="消息"
             android:textSize="@dimen/sp14"
             android:textColor="@color/color_home_style"
             android:drawableTop="@drawable/selector_special_style"
@@ -56,7 +89,7 @@
             android:gravity="center"
             android:button="@null"/>
         <RadioButton
-            android:id="@+id/rb_three"
+            android:id="@+id/rb_four"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

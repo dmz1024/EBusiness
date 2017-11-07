@@ -1,13 +1,17 @@
 package com.ediancha.edcbusiness;
 
 
+import android.content.ComponentCallbacks;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.util.Log;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 
 
+import com.bumptech.glide.annotation.GlideModule;
+import com.bumptech.glide.module.AppGlideModule;
 import com.squareup.leakcanary.LeakCanary;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
@@ -58,7 +62,13 @@ public class MyApp extends com.dmz.library.dmzapi.MyApp {
 
         TestWindowManager._init(this);
         TestWindowManager.getInstance();
+
     }
 
+    @Override
+    public void registerComponentCallbacks(ComponentCallbacks callback) {
+        super.registerComponentCallbacks(callback);
+        callback.onLowMemory();
+    }
 
 }
