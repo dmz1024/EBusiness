@@ -67,13 +67,15 @@ public class MyToast {
             }
             toast = new Toast(mContext);
             toast.setView(view);
-            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.setGravity(Gravity.TOP, 0, 0);
+            toast.setMargin(0,0.1f);
             toast.setDuration(Toast.LENGTH_SHORT);
         } else {
             if (toast == null) {
                 toast = new Toast(mContext);
                 toast.setView(view);
-                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.setGravity(Gravity.TOP, 0, 0);
+                toast.setMargin(0,0.1f);
                 toast.setDuration(Toast.LENGTH_SHORT);
             }
         }

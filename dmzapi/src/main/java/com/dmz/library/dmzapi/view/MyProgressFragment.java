@@ -14,6 +14,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.dmz.library.dmzapi.R;
@@ -36,10 +37,10 @@ public class MyProgressFragment extends NoTitleDialoggFragment {
     }
 
 
-    @Override
-    protected float dimAmount() {
-        return 0.0f;
-    }
+//    @Override
+//    protected float dimAmount() {
+//        return 0.0f;
+//    }
 
     @Override
     protected void initBundle(Bundle arguments) {
@@ -55,7 +56,10 @@ public class MyProgressFragment extends NoTitleDialoggFragment {
     @Override
     protected void initView(View view) {
         super.initView(view);
-        iv_loading=view.findViewById(R.id.iv_loading);
+
+        ((RelativeLayout.LayoutParams) view.findViewById(R.id.fgRoot).getLayoutParams()).topMargin = (int) (getWH(getContext())[1] * 0.1f);
+
+        iv_loading = view.findViewById(R.id.iv_loading);
         iv_loading.setImageResource(R.drawable.my_progress_loading);
         isSelf = false;
         Animation circle_anim = AnimationUtils.loadAnimation(getContext(), R.anim.anim_progress_round_rotate);
@@ -76,6 +80,10 @@ public class MyProgressFragment extends NoTitleDialoggFragment {
         dismiss();
     }
 
+    @Override
+    protected int getH() {
+        return ViewGroup.LayoutParams.MATCH_PARENT;
+    }
 
     @Override
     public void onDismiss(DialogInterface dialog) {

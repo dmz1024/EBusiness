@@ -7,7 +7,7 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -47,8 +47,6 @@ dependencies {
     //内存泄漏检测
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
-    //https://github.com/tianzhijiexian/AppBar
-    compile 'com.github.tianzhijiexian:AppBar:1.0.3'
 
     compile 'com.android.support:cardview-v7:26.1.0'
     //https://muyangmin.github.io/glide-docs-cn/doc/download-setup.html
@@ -85,5 +83,7 @@ dependencies {
 
     //https://github.com/greenrobot/EventBus
     compile 'org.greenrobot:eventbus:3.0.0'
+
+
 
 }

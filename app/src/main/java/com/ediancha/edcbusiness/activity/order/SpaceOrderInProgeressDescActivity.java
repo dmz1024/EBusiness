@@ -28,7 +28,7 @@ import butterknife.ButterKnife;
 @Route(path = "/activity/order/spaceOrderInProgeressDesc")
 public class SpaceOrderInProgeressDescActivity extends SingleDataBaseActivity<SpaceOrderInProgressBean, SpaceOrderInProgressBean.Data> {
     @Autowired
-    OpenLockBean.Data data;
+    String orderId;
 
     @BindView(R.id.ivLogo)
     ImageView ivLogo;
@@ -72,7 +72,7 @@ public class SpaceOrderInProgeressDescActivity extends SingleDataBaseActivity<Sp
                 .setUrl(ApiContant.SPACE_ORDER_IN_PROGRESS)
                 .setParms(UserInfoUtil.getUserToken())
                 .setParms("type", "10")
-                .setParms("orderId", "1");
+                .setParms("orderId", orderId);
     }
 
     @Override
@@ -83,7 +83,7 @@ public class SpaceOrderInProgeressDescActivity extends SingleDataBaseActivity<Sp
     @Override
     protected void initData() {
         super.initData();
-        tvShopName.setText(data.getSpaceName());
+
 
     }
 }
