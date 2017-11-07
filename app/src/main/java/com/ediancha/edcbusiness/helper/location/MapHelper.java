@@ -1,7 +1,5 @@
-package com.ediancha.edcbusiness.helper;
+package com.ediancha.edcbusiness.helper.location;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -9,16 +7,15 @@ import android.content.pm.PackageManager;
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
-import com.amap.api.location.AMapLocationListener;
-import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.utils.PermissionUtil;
+import com.ediancha.edcbusiness.helper.MapLocationListener;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
 
 /**
- * 获取地理位置
+ * 获取地理位置(不需要显示地图)
  *
  * @author Admin
  * @date 2017/10/17
@@ -68,6 +65,11 @@ public class MapHelper {
                                     public void setLongtude(Double longtude) {
                                         mLatLongtudeListener.setLongtude(longtude);
                                     }
+
+                                    @Override
+                                    public void loactionInfo(AMapLocation amapLocation) {
+                                        mLatLongtudeListener.getLocaionInfo(amapLocation);
+                                    }
                                 }));
                         //启动定位
                         mLocationClient.startLocation();
@@ -83,9 +85,12 @@ public class MapHelper {
     }
 
     public interface LatLongtudeListener {
-        void setLatitude(Double latitude);
 
-        void setLongtude(Double longtude);
+        public void setLatitude(Double latitude) ;
+
+        public void setLongtude(Double longtude);
+
+        public void getLocaionInfo(AMapLocation amapLocation);
     }
 
 

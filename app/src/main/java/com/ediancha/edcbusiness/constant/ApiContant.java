@@ -195,4 +195,10 @@ public interface ApiContant {
      * 绑定账号
      */
     String BIND_URL=BASE_API+"users/bindThird";
+
+    /**
+     * 选择日期
+     */
+    String CHOSEDTAE_URL=BASE_API+"/space/reserve?type=3";
+
 }

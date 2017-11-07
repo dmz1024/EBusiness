@@ -127,7 +127,7 @@
                     android:paddingRight="6dp"
                     android:paddingTop="5dp"
                     android:text="发送验证码"
-                    android:textColor="@color/color_fff"
+                    android:textColor="@color/color_f8f8fa"
                     android:textSize="13sp" />
 
                 <TextView

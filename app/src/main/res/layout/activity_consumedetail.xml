@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:divider="@drawable/linear_divider_style"
-    android:background="@color/color_fff">
+    android:background="@color/color_f8f8fa">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

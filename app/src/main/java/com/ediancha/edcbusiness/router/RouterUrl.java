@@ -169,4 +169,22 @@ public interface RouterUrl {
      * 消费详情
      */
     String CONSUME_DETAIL_ACTIVITY = "/activity/orderdetail/consumeDetail";
+
+    /**
+     * 导航
+     */
+    String NAVIGATION_ACTIVITY = "/activity/space/navigation";
+    /**
+     * 定位
+     */
+    String LOACTION_ACTIVITY = "/activity/space/location";
+
+    /**
+     * 选择时段
+     */
+    String CHOSEDATE_ACTIVITY = "/activity/order/chosedate";
+    /**
+     * 确认订单
+     */
+    String CHECKORDER_ACTIVITY = "/v1/activity/order/checkorder";
 }

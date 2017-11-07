@@ -1,46 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv_left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:drawableLeft="@mipmap/icon_home_top_scan"
-           android:padding="@dimen/size10"
-            />
-        <TextView
+        <ImageView
             android:id="@+id/tv_center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:padding="@dimen/size10"
             android:layout_centerInParent="true"
-            android:textColor="@color/color_333"
-            android:textSize="@dimen/sp18"
-            android:text="SPACE"
+            android:src="@mipmap/logo_pic"
             />
         <TextView
             android:id="@+id/tv_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:drawableLeft="@mipmap/icon_home_top_news"
+            android:drawableLeft="@mipmap/ditu_icon"
             android:padding="@dimen/size10"
             android:layout_alignParentRight="true"
             />
     </RelativeLayout>
 
-    <com.tmall.ultraviewpager.UltraViewPager
-        android:id="@+id/uvp_pager"
+    <com.zhouwei.mzbanner.MZBannerView
+        android:id="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        />
+        app:indicatorAlign="center"
+        app:indicatorPaddingLeft="10dp"
+        app:canLoop="true"
+        app:open_mz_mode="false"/>
+
+    <include
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/adapter_space_item"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/adapter_ue_item"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recy"

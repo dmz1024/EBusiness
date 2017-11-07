@@ -91,7 +91,7 @@
 
     <style name="ln_ma_wr_ho_styles">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:background">@color/color_fff</item>
+        <item name="android:background">@color/color_f8f8fa</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">@dimen/size10</item>
         <item name="android:paddingRight">@dimen/size10</item>
@@ -100,7 +100,7 @@
     </style>
     <style name="ln_ma_wr_ver_styles">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:background">@color/color_fff</item>
+        <item name="android:background">@color/color_f8f8fa</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">@dimen/size10</item>
         <item name="android:paddingRight">@dimen/size10</item>
@@ -111,13 +111,13 @@
     <style name="ln_ma_ma_ver_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@color/color_fff</item>
+        <item name="android:background">@color/color_f8f8fa</item>
         <item name="android:orientation">vertical</item>
     </style>
     <style name="ln_ma_ma_ho_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@color/color_fff</item>
+        <item name="android:background">@color/color_f8f8fa</item>
         <item name="android:orientation">horizontal</item>
     </style>
 

@@ -1,5 +1,6 @@
 package com.ediancha.edcbusiness.activity.fragment;
 
+import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.view.LazyLoadFragment;
 
 /**
@@ -20,7 +21,7 @@ public class SpeciaFragment extends LazyLoadFragment {
 
     @Override
     protected int setContentView() {
-        return 0;
+        return R.layout.fragment_special;
     }
 
     @Override

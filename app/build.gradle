@@ -5,14 +5,18 @@ android {
     buildToolsVersion "26.0.0"
     defaultConfig {
         applicationId "com.ediancha.edcbusiness"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 100
         versionName "1.0.0"
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [moduleName: project.getName()]
             }
+        }
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
         }
 
     }
@@ -63,4 +67,13 @@ dependencies {
     compile files('libs/alipaySdk-20170922.jar')
     compile files('libs/AMap_Location_V3.6.1_20171012.jar')
     compile files('libs/open_sdk_r5886_lite.jar')
+    //高德地图导航
+    compile 'com.amap.api:navi-3dmap:latest.integration'
+    compile 'com.amap.api:map2d:latest.integration'
+    compile 'com.amap.api:location:latest.integration'
+    compile 'com.amap.api:search:latest.integration'
+    //https://github.com/pinguo-zhouwei/MZBannerView
+    compile 'com.github.pinguo-zhouwei:MZBannerView:v2.0.0'
+    //https://github.com/czy1121/cornerlabelview
+    compile 'com.github.czy1121:cornerlabelview:1.0.3'
 }

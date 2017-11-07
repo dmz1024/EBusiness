@@ -5,7 +5,6 @@ import com.amap.api.location.AMapLocationListener;
 import com.dmz.library.dmzapi.api.LogUtil;
 
 /**
- *
  * @author Admin
  * @date 2017/10/17
  */
@@ -18,6 +17,7 @@ public class MapLocationListener implements AMapLocationListener {
         mLatLongtudeListener = latLongtudeListener;
         return this;
     }
+
     @Override
     public void onLocationChanged(AMapLocation amapLocation) {
         if (amapLocation != null) {
@@ -25,17 +25,23 @@ public class MapLocationListener implements AMapLocationListener {
                 //解析定位结果
                 mLatLongtudeListener.setLatitude(amapLocation.getLatitude());
                 mLatLongtudeListener.setLongtude(amapLocation.getLongitude());
-            }else {
+                mLatLongtudeListener.loactionInfo(amapLocation);
+
+            } else {
                 //显示错误信息ErrCode是错误码，errInfo是错误信息，详见错误码表。
-                LogUtil.e("AmapError","location Error, ErrCode:"
+                LogUtil.e("AmapError", "location Error, ErrCode:"
                         + amapLocation.getErrorCode() + ", errInfo:"
                         + amapLocation.getErrorInfo());
             }
         }
     }
 
-    public interface LatLongtudeListener{
+    public interface LatLongtudeListener {
+
         void setLatitude(Double latitude);
+
         void setLongtude(Double longtude);
+
+        void loactionInfo(AMapLocation amapLocation);
     }
 }

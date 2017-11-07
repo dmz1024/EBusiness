@@ -10,6 +10,8 @@ import android.util.Log;
 import com.alibaba.android.arouter.launcher.ARouter;
 
 
+import com.bumptech.glide.annotation.GlideModule;
+import com.bumptech.glide.module.AppGlideModule;
 import com.squareup.leakcanary.LeakCanary;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
@@ -68,4 +70,5 @@ public class MyApp extends com.dmz.library.dmzapi.MyApp {
         super.registerComponentCallbacks(callback);
         callback.onLowMemory();
     }
+
 }

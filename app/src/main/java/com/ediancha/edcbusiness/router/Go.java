@@ -72,7 +72,7 @@ public class Go {
      */
     public static void goLogin(int type) {
         ARouter.getInstance().build(RouterUrl.LOGIN_ACTIVITY)
-                .withInt("type",type)
+                .withInt("type", type)
                 .navigation();
     }
 
@@ -195,11 +195,11 @@ public class Go {
     /**
      * 空间详情
      */
-    public static void goSpaceDetail(String id,String mLatitude,String mLongtude) {
+    public static void goSpaceDetail(String id, String mLatitude, String mLongtude) {
         ARouter.getInstance().build(RouterUrl.SPACEDETAIL_ACTIVITY)
                 .withString("id", id)
-                .withString("mLatitude",mLatitude)
-                .withString("mLongtude",mLongtude)
+                .withString("mLatitude", mLatitude)
+                .withString("mLongtude", mLongtude)
                 .navigation();
     }
 
@@ -226,7 +226,7 @@ public class Go {
     }
 
     /**
-     *专题
+     * 专题
      */
     public static void goSpecial() {
         ARouter.getInstance().build(RouterUrl.SPECIAL_ACTIVITY).navigation();
@@ -235,6 +235,7 @@ public class Go {
 
     /**
      * 扫码（返回规则）
+     *
      * @param data
      */
     public static void goMoneyAffirmActivity(MoneyAffirmBean.Data data) {
@@ -243,12 +244,13 @@ public class Go {
 
     /**
      * 修改资料
+     *
      * @param mActivity
      * @param name
      */
-    public static void goUpdateInfoActivity(Activity mActivity,String name) {
+    public static void goUpdateInfoActivity(Activity mActivity, String name) {
         ARouter.getInstance().build(RouterUrl.UPDATEINFO_ACTIVITY)
-                .withString("title",name)
+                .withString("title", name)
                 .navigation(mActivity, NormalContant.REQUEST_CODE);
     }
 
@@ -259,6 +261,7 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.ORDERITEM_ACTIVITY)
                 .navigation();
     }
+
     /**
      * 消费详情
      */
@@ -266,5 +269,41 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.CONSUME_DETAIL_ACTIVITY)
                 .navigation();
     }
+
+    /**
+     * 导航
+     */
+    public static void goNavigationActivity() {
+        ARouter.getInstance().build(RouterUrl.NAVIGATION_ACTIVITY)
+                .navigation();
+    }
+
+    /**
+     * 导航
+     */
+    public static void goLocationActivity(String mLatitude, String mLongtude) {
+        ARouter.getInstance().build(RouterUrl.LOACTION_ACTIVITY)
+                .withString("mLatitude", mLatitude)
+                .withString("mLongtude", mLongtude)
+                .navigation();
+    }
+
+    /**
+     * 选择时段
+     */
+    public static void goChoseDateActivity() {
+        ARouter.getInstance().build(RouterUrl.CHOSEDATE_ACTIVITY)
+                .navigation();
+    }
+
+
+    /**
+     * 确认订单
+     */
+    public static void goCheckOrderActivity() {
+        ARouter.getInstance().build(RouterUrl.CHECKORDER_ACTIVITY)
+                .navigation();
+    }
+
 
 }

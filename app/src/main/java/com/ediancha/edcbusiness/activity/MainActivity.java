@@ -1,13 +1,6 @@
 package com.ediancha.edcbusiness.activity;
 
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Intent;
-import android.graphics.Rect;
-import android.os.Build;
-import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -17,29 +10,21 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.ViewAnimator;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.amap.api.location.AMapLocation;
-import com.amap.api.location.AMapLocationClient;
-import com.amap.api.location.AMapLocationListener;
 import com.bumptech.glide.Glide;
-import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.ediancha.edcbusiness.R;
-import com.ediancha.edcbusiness.TestWindowManager;
-import com.ediancha.edcbusiness.activity.my.PersonCenterActivity;
 import com.ediancha.edcbusiness.adapter.UltraPagerAdapter;
 import com.ediancha.edcbusiness.bean.HomeBean;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.helper.MainBottomSheet;
-import com.ediancha.edcbusiness.helper.MapHelper;
-import com.ediancha.edcbusiness.helper.NotificationHelper;
+import com.ediancha.edcbusiness.helper.location.MapHelper;
 import com.ediancha.edcbusiness.helper.QwHelper;
 
-import com.ediancha.edcbusiness.helper.login.Login;
 import com.ediancha.edcbusiness.helper.login.QQLogin;
 import com.ediancha.edcbusiness.helper.share.Share;
 import com.ediancha.edcbusiness.presenter.HomePresenter;
@@ -111,6 +96,11 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
             @Override
             public void setLongtude(Double longtude) {
                 mLongtude=longtude;
+            }
+
+            @Override
+            public void getLocaionInfo(AMapLocation amapLocation) {
+
             }
         }).getLocation();
     }
