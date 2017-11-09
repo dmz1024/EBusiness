@@ -1,17 +1,15 @@
-package com.ediancha.edcbusiness.activity.order;
+package com.ediancha.edcbusiness.v1.activity.space;
 
-import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.dmz.library.dmzapi.api.LogUtil;
+import com.bumptech.glide.Glide;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
@@ -21,15 +19,15 @@ import com.dmz.library.dmzapi.view.custom.DmzBar;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.ChoseDateBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
+import com.ediancha.edcbusiness.helper.ImageLoader;
 import com.ediancha.edcbusiness.router.Go;
 import com.github.czy1121.view.CornerLabelView;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
-import java.util.List;
 
+import butterknife.BindColor;
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -38,37 +36,56 @@ import butterknife.OnClick;
  * @author Admin
  * @date 2017/11/6
  */
-@Route(path = "/activity/order/chosedate")
+@Route(path = "/v1/activity/space/chosedate")
 public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, ChoseDateBean.Data> implements AdapterHelper.OnConvertInterface, AdapterHelper.OnClickListener {
-    @BindView(R.id.img_show)
-    ImageView mImgShow;
-    @BindView(R.id.tv_name)
-    TextView mTvName;
+//    @BindView(R.id.img_show)
+//    ImageView mImgShow;
+//    @BindView(R.id.tv_name)
+//    TextView mTvName;
+//    @BindView(R.id.tv_location)
+//    TextView mTvLocation;
+//    @BindView(R.id.tv_num)
+//    TextView mTvNum;
 
-    @BindView(R.id.tvTime)
-    TextView tvTime;
-    @BindView(R.id.tv_location)
-    TextView mTvLocation;
-    @BindView(R.id.tv_num)
-    TextView mTvNum;
-    @BindView(R.id.recy_item)
-    RecyclerView mRecyItem;
 
-    GridLayoutManager gridLayoutManager;
+//    @BindView(R.id.tv_price)
+//    TextView mTvPrice;
+//    @BindView(R.id.tv_detail)
+//    TextView mTvDetail;
+//    @BindView(R.id.tv_submit)
+//    TextView mTvSubmit;
+//    @BindView(R.id.tvTime)
+//    TextView tvTime;
+
+    @BindView(R.id.rvContent)
+    RecyclerView rvContent;
+
+    private ImageView ivHome;
+    private TextView tvTitle;
+    private TextView tvAddress;
+    private TextView tvDesc;
+
     AdapterHelper adapterHelper;
-    @BindView(R.id.tv_price)
-    TextView mTvPrice;
-    @BindView(R.id.tv_detail)
-    TextView mTvDetail;
-    @BindView(R.id.tv_submit)
-    TextView mTvSubmit;
+
+    @Override
+    protected void initView() {
+        super.initView();
+        ivHome = findViewById(R.id.ivHome);
+        tvTitle = findViewById(R.id.tvTitle);
+        tvAddress = findViewById(R.id.tvAddress);
+        tvDesc = findViewById(R.id.tvDesc);
+
+//        Glide.with(this).load(ApiContant.IMAGE).into(ivHome);
+        ImageLoader.loadCircu(this,ApiContant.IMAGE,ivHome);
+    }
 
     @Override
     public void onSuccess(IBasePresenter presenter, final ChoseDateBean.Data data) {
 
         ArrayList<ChoseDateBean.SpaceReserveBean> spaceReserve = data.getSpaceReserve();
-        gridLayoutManager = new GridLayoutManager(ctx, 4);
-        adapterHelper = AdapterHelper._instance(this, mRecyItem)._initData(spaceReserve).setLayoutManager(gridLayoutManager)
+        final GridLayoutManager gridLayoutManager = new GridLayoutManager(ctx, 4);
+
+        adapterHelper = AdapterHelper._instance(this, rvContent)._initData(spaceReserve).setLayoutManager(gridLayoutManager)
                 .setType(new AdapterHelper.ViewTypeInfo().setType(1).setConvertInterface(this).setRid(R.layout.item_datechose))
 //                .setType(new AdapterHelper.ViewTypeInfo().setType(2).setConvertInterface(this).setRid(R.layout.item_datechose))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(3).setConvertInterface(this).setRid(R.layout.item_chose)
@@ -83,11 +100,8 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 int firstVisibleItemPosition = gridLayoutManager.findFirstVisibleItemPosition();
-                Log.d("第一个", firstVisibleItemPosition + "");
-
-                ChoseDateBean.SpaceReserveBean t = adapterHelper.<ChoseDateBean.SpaceReserveBean>getT(firstVisibleItemPosition);
-
-                tvTime.setText(t.getDayName());
+                ChoseDateBean.SpaceReserveBean t = adapterHelper.getT(firstVisibleItemPosition);
+//                tvTime.setText(t.getDayName());
             }
         });
 
@@ -105,12 +119,12 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
             }
         });
 
-        tvTime.setText(data.getDayName());
+//        tvTime.setText(data.getDayName());
     }
 
     @Override
     protected void initDataBuilder() {
-        mBuilder.setSuccessRid(R.layout.success_datechose);
+        mBuilder.setSuccessRid(R.layout.success_recyle_view);
     }
 
     @Override
@@ -123,22 +137,23 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
     protected void initBarView() {
         super.initBarView();
         dmzBar.setText("选择时段")
-                .addItemView(new DmzBar.DmzBarItemInfo().setTitle("计费规则"))
+                .addItemView(new DmzBar.DmzBarItemInfo().setTvColor("#fcc01f").setTitle("计费规则"))
                 .setOnItemOnClickListener(new DmzBar.OnItemOnClickListener() {
                     @Override
                     public void itemClick(int index) {
+
                     }
                 });
     }
 
-    @OnClick({R.id.tv_submit})
-    void click(View view) {
-        switch (view.getId()) {
-            case R.id.tv_submit:
-                Go.goCheckOrderActivity();
-                break;
-        }
-    }
+//    @OnClick({R.id.tv_submit})
+//    void click(View view) {
+//        switch (view.getId()) {
+//            case R.id.tv_submit:
+//                Go.goCheckOrderActivity();
+//                break;
+//        }
+//    }
 
 
     @Override

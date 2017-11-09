@@ -37,7 +37,7 @@ android {
 
     dexOptions {
         incremental true
-        javaMaxHeapSize "1g"
+        javaMaxHeapSize "4g"
     }
 
 }
@@ -62,14 +62,7 @@ dependencies {
     //butterknife
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    //https://github.com/permissions-dispatcher/PermissionsDispatcher
-    //    dependencies {
-    //        compile("com.github.hotchemi:permissionsdispatcher:3.0.1") {
-    //            // if you don't use android.app.Fragment you can exclude support for them
-    //            exclude module: "support-v13"
-    //        }
-    //        annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
-    //    }
+
     //支付宝
     compile files('libs/alipaySdk-20170922.jar')
     compile files('libs/open_sdk_r5886_lite.jar')

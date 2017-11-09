@@ -15,7 +15,7 @@
             android:id="@+id/dmzBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways" />
+            app:layout_scrollFlags="scroll|enterAlways|snap" />
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
@@ -26,7 +26,6 @@
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rvRoot"
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="none" />

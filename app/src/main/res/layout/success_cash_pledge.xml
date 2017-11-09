@@ -48,4 +48,18 @@
         android:textColor="#fff"
         android:textSize="@dimen/sp16" />
 
+    <TextView
+        android:id="@+id/tvTip"
+        android:visibility="gone"
+        android:layout_below="@id/btSubmit"
+        android:layout_marginTop="@dimen/size30"
+        android:layout_centerHorizontal="true"
+        android:text="*押金将在5个工作日内到账。如未到账，请联系客服。"
+        android:textSize="@dimen/sp11"
+        android:paddingRight="@dimen/size12"
+        android:paddingLeft="@dimen/size12"
+        android:paddingTop="@dimen/size5"
+        android:textColor="@color/color_999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

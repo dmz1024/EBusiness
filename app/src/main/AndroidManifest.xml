@@ -75,7 +75,7 @@
         <activity android:name=".activity.message.ActivityMessageActivity"/>
         <activity android:name=".activity.message.ActivitySplendidActivity"/>
         <activity android:name=".activity.message.ExpenseTipsActivity"/>
-        <activity android:name=".activity.walletbag.MyPackageActivity" />
+        <activity android:name=".v1.activity.my.MyPackageActivity" />
         <activity android:name=".activity.walletbag.CouponActivity" />
         <activity android:name=".activity.walletbag.DepositActivity" />
         <activity android:name=".v1.activity.my.MoneyActivity" />
@@ -102,7 +102,7 @@
         <activity android:name=".activity.space.MoneyAffirmActivity" />
         <activity android:name=".activity.space.NavigationActivity" />
         <activity android:name=".activity.space.LocationActivity" />
-        <activity android:name=".activity.order.ChoseDateActvivity" />
+        <activity android:name=".v1.activity.space.ChoseDateActvivity" />
         <activity android:name=".v1.activity.order.CheckOrderActivity" />
         <activity android:name=".v1.activity.order.SpacePayDetailActivity"/>
 

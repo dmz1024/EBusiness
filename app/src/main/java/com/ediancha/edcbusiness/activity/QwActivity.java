@@ -55,7 +55,7 @@ public class QwActivity extends ToobarBaseActivity implements View.OnClickListen
     @Override
     protected void initBarView() {
         super.initBarView();
-        dmzBar.setRootColor("#00000000").setText("返回").setTextColor("#ffffff").setLeftImage(R.mipmap.icon_dmz_bar_back_white);
+        dmzBar.setRootColor("#00000000").setText("返回").setTextColor("#ffffff");
     }
 
     /**

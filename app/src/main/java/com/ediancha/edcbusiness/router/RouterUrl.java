@@ -182,7 +182,7 @@ public interface RouterUrl {
     /**
      * 选择时段
      */
-    String CHOSEDATE_ACTIVITY = "/activity/order/chosedate";
+    String CHOSEDATE_ACTIVITY = "/v1/activity/space/chosedate";
     /**
      * 确认订单
      */
