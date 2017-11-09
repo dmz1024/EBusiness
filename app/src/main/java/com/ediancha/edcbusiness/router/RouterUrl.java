@@ -72,12 +72,12 @@ public interface RouterUrl {
     /**
      * 我的钱包
      */
-    String WALLET_ACTIVITY = "/activity/walletbag/mypackage";
+    String WALLET_ACTIVITY = "/v1/activity/my/mypackage";
 
     /**
      * 余额
      */
-    String MONEY_ACTIVITY = "/activity/walletbag/money";
+    String MONEY_ACTIVITY = "/v1/activity/my/money";
     /**
      * 优惠券
      */
@@ -187,4 +187,9 @@ public interface RouterUrl {
      * 确认订单
      */
     String CHECKORDER_ACTIVITY = "/v1/activity/order/checkorder";
+
+    /**
+     * v1押金
+     */
+    String CASH_PLEDGE_ACTIVITY = "/v1/activity/my/cashPledge";
 }

@@ -26,7 +26,7 @@ public class DmzBuilder {
     private IProgressInterface iLoadingView;//请求网络时的加载框
     private boolean isAll;//在成功时是否返回主类对象
     private Class aClass;
-    private int loginCode = 60001;
+    private int loginCode = 30001;
 
     public DmzBuilder setLoginCode(int loginCode) {
         this.loginCode = loginCode;

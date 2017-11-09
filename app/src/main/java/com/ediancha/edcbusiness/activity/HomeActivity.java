@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.activity.fragment.HomeFragment;
@@ -19,6 +20,7 @@ import com.ediancha.edcbusiness.view.ViewpagerNoScroll;
 import java.util.ArrayList;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 /**
  * Created by Admin on 2017/9/30.
@@ -74,6 +76,34 @@ public class HomeActivity extends NotNetBaseActivity {
         });
     }
 
+
+    int type = 0;
+
+    @OnClick(R.id.fgQw)
+    void qw() {
+
+        switch (type) {
+            case 0:
+                MyToast.normal("这是正确的");
+                break;
+            case 1:
+                MyToast.error("这是错误的");
+                break;
+            case 2:
+                MyToast.warn("这是警告");
+                break;
+        }
+
+        if (type == 0) {
+            type = 1;
+        } else if (type == 1) {
+            type = 2;
+        } else {
+            type = 0;
+        }
+
+    }
+
     private void initFragment() {
         mSpeciaFragment = new SpeciaFragment();
         mHomeFragment = new HomeFragment();
@@ -94,7 +124,7 @@ public class HomeActivity extends NotNetBaseActivity {
 
             @Override
             public int getCount() {
-                return mFragments != null ? mFragments.size() : 0;
+                return mFragments.size();
             }
         });
     }

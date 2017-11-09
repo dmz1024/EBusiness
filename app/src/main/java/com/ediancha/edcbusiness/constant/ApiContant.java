@@ -47,7 +47,7 @@ public interface ApiContant {
     /**
      * 我的钱包
      */
-    String MYPACKAGE = BASE_API + "users/account_info";
+    String MYPACKAGE = BASE_API + "Users/myWallet";
 
 
     /**
@@ -202,5 +202,11 @@ public interface ApiContant {
      * 选择日期
      */
     String CHOSEDTAE_URL=BASE_API+"/space/reserve?type=3";
+
+
+    /**
+     * 押金状态
+     */
+    String CASHPLEDGE=BASE_API+"/space/reserve?type=3";
 
 }

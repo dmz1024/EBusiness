@@ -305,5 +305,11 @@ public class Go {
                 .navigation();
     }
 
-
+    /**
+     * 确认订单
+     */
+    public static void goCashPledgeActivity() {
+        ARouter.getInstance().build(RouterUrl.CASH_PLEDGE_ACTIVITY)
+                .navigation();
+    }
 }

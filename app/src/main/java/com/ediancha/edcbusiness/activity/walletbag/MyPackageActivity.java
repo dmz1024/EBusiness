@@ -3,8 +3,7 @@ package com.ediancha.edcbusiness.activity.walletbag;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.LinearLayout;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -27,31 +26,24 @@ import butterknife.OnClick;
  * Created by Admin on 2017/9/21.
  * 我的钱包
  */
-@Route(path = "/activity/walletbag/mypackage")
+@Route(path = "/v1/activity/my/mypackage")
 public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyPackageBean.Data> {
 
 
-    @BindView(R.id.tv_money)
-    TextView mTvMoney;
-    @BindView(R.id.ln_money)
-    LinearLayout mLnMoney;
-    @BindView(R.id.tv_coupon)
-    TextView mTvCoupon;
-    @BindView(R.id.ln_coupon)
-    LinearLayout mLnCoupon;
-    @BindView(R.id.tv_deposit)
-    TextView mTvDeposit;
-    @BindView(R.id.ln_deposit)
-    LinearLayout mLnDeposit;
-    @BindView(R.id.tv_pass)
-    TextView mTvPass;
-    @BindView(R.id.ln_pass)
-    LinearLayout mLnPass;
+    @BindView(R.id.tvMoney)
+    TextView tvMoney;
+    @BindView(R.id.tvYhq)
+    TextView tvYhq;
+    @BindView(R.id.tvYj)
+    TextView tvYj;
+    @BindView(R.id.tvCheck)
+    TextView tvCheck;
+    @BindView(R.id.tvSetPass)
+    TextView tvSetPass;
+    @BindView(R.id.fgSetPass)
+    FrameLayout fgSetPass;
 
-    MyPackageBean.Data data;
-    @BindView(R.id.cb_check)
-    CheckBox mCbCheck;
-
+    private MyPackageBean.Data data;
     @Override
     protected void initDataBuilder() {
         mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW)
@@ -63,7 +55,7 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
 
         dBuilder.setaClass(MyPackageBean.class)
                 .setUrl(ApiContant.MYPACKAGE)
-                .setParms("token", UserInfoUtil.getToken(), "userId", UserInfoUtil.getUserId());
+                .setParms(UserInfoUtil.getUserToken());
     }
 
     @Override
@@ -75,33 +67,31 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
     @Override
     public void onSuccess(IBasePresenter presenter, MyPackageBean.Data bean) {
         data = bean;
-        mTvMoney.setText(data.getMoney().getMoney() + "");
-        mTvCoupon.setText(bean.getYouhui() + "");
-        mTvDeposit.setText(bean.getDepositMoney() + "");
-        mTvPass.setText((bean.getPayPwd() == 0) ? "未设置" : "已设置");
-
+        tvMoney.setText(data.getMoney().getMoney());
+        tvYhq.setText(bean.getYouhui());
+        tvSetPass.setText((bean.getPayPwd() == 0) ? "未设置" : "已设置");
     }
 
-    @OnClick({R.id.ln_money, R.id.ln_coupon, R.id.ln_deposit, R.id.ln_pass})
+    @OnClick({R.id.llMoeny, R.id.llYhq, R.id.llYj, R.id.fgSetPass})
     void click(View view) {
         switch (view.getId()) {
-            case R.id.ln_money: //余额
+            case R.id.llMoeny: //余额
                 Go.goMoney();
                 break;
-            case R.id.ln_coupon://优惠券
+            case R.id.llYhq://优惠券
                 Go.goCoupon();
                 break;
-            case R.id.ln_deposit://押金
+            case R.id.llYj://押金
                 Go.goDeposit(data.getDepositMoney() + "", data.getDepositType());
                 break;
-            case R.id.ln_pass:
+            case R.id.fgSetPass:
                 Go.goPayPassWord();//修改支付密码
                 break;
         }
     }
+
     @OnCheckedChanged(R.id.cb_check)
-    void checkChecked(){
+    void checkChecked() {
 
     }
-
 }

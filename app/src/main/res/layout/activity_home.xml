@@ -21,7 +21,7 @@
         android:id="@+id/vp_show"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rg_chose"></com.ediancha.edcbusiness.view.ViewpagerNoScroll>
+        android:layout_above="@+id/rg_chose"/>
 
     <RadioGroup
         android:id="@+id/rg_chose"
@@ -63,6 +63,7 @@
             android:button="@null"/>
 
         <RelativeLayout
+            android:id="@+id/fgQw"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

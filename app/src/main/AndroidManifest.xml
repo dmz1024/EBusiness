@@ -20,24 +20,22 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <!--用于进行网络定位-->
+    <!-- 用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!--用于访问GPS定位-->
+    <!-- 用于访问GPS定位 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
-    <!--用于申请调用A-GPS模块-->
+    <!-- 用于申请调用A-GPS模块 -->
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-    <!--用于申请获取蓝牙信息进行室内定位-->
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
-
     <!-- 悬浮窗口 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-
 
     <application
         android:name=".MyApp"
@@ -49,7 +47,7 @@
         android:theme="@style/MyAppTheme"
         tools:replace="android:icon">
 
-        <!--高德地图定位-->
+        <!-- 高德地图定位 -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="53b7e96059e5b0ff333e4a72c16cb552" />
@@ -57,11 +55,13 @@
         <activity
             android:name=".activity.MainActivity"
             android:launchMode="singleTask">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".activity.Main5Activity" />
         <activity android:name=".activity.Main6Activity" />
@@ -70,15 +70,15 @@
             android:theme="@style/PersonCenterTheme" />
         <activity
             android:name=".activity.QwActivity"
-            android:theme="@style/QwTheme"/>
-        <activity android:name=".activity.SpaceDescActivity"/>
-        <activity android:name=".activity.message.ActivityMessageActivity"/>
-        <activity android:name=".activity.message.ActivitySplendidActivity"/>
-        <activity android:name=".activity.message.ExpenseTipsActivity"/>
+            android:theme="@style/QwTheme" />
+        <activity android:name=".activity.SpaceDescActivity" />
+        <activity android:name=".activity.message.ActivityMessageActivity" />
+        <activity android:name=".activity.message.ActivitySplendidActivity" />
+        <activity android:name=".activity.message.ExpenseTipsActivity" />
         <activity android:name=".activity.walletbag.MyPackageActivity" />
         <activity android:name=".activity.walletbag.CouponActivity" />
         <activity android:name=".activity.walletbag.DepositActivity" />
-        <activity android:name=".activity.walletbag.MoneyActivity" />
+        <activity android:name=".v1.activity.my.MoneyActivity" />
         <activity android:name=".activity.walletbag.ChargeActivity" />
         <activity android:name=".activity.coupon.CouponChangeActivity" />
         <activity android:name=".activity.help.HelpCenterActivity" />
@@ -89,36 +89,33 @@
         <activity android:name=".activity.help.HelpCenterNextActivity" />
         <activity
             android:name=".activity.login.LoginActivity"
-            android:theme="@style/LoginTheme"/>
-        <activity android:name=".activity.order.SpaceOrderActivity"/>
-        <activity android:name=".activity.order.GoodOrderActivity"/>
-        <activity android:name=".activity.order.GoodOrderDescActivity"/>
-        <activity android:name=".activity.my.MyInfoActivity"/>
-        <activity android:name=".activity.order.SpaceOrderInProgeressDescActivity"/>
+            android:theme="@style/LoginTheme" />
+        <activity android:name=".activity.order.SpaceOrderActivity" />
+        <activity android:name=".activity.order.GoodOrderActivity" />
+        <activity android:name=".activity.order.GoodOrderDescActivity" />
+        <activity android:name=".activity.my.MyInfoActivity" />
+        <activity android:name=".activity.order.SpaceOrderInProgeressDescActivity" />
         <activity android:name=".activity.walletbag.PayPWSettingActivity" />
         <activity android:name=".activity.my.UpdateInfoActivity" />
         <activity android:name=".activity.SpecialActivity" />
         <activity android:name=".activity.orderdetail.OrderItemActivity" />
-
         <activity android:name=".activity.space.MoneyAffirmActivity" />
         <activity android:name=".activity.space.NavigationActivity" />
         <activity android:name=".activity.space.LocationActivity" />
-        <activity android:name=".activity.order.ChoseDateActvivity"/>
-        <activity android:name=".v1.activity.order.CheckOrderActivity"/>
-
+        <activity android:name=".activity.order.ChoseDateActvivity" />
+        <activity android:name=".v1.activity.order.CheckOrderActivity" />
         <activity android:name=".activity.HomeActivity">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".test.DongHuaActivity">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
@@ -131,20 +128,19 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-        <!--支付宝-->
+        <!-- 支付宝 -->
         <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name="com.alipay.sdk.app.H5AuthActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
-
+            android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <!-- 微信相关 -->
         <activity
@@ -154,20 +150,22 @@
         <activity
             android:name=".wxapi.WXEntryActivity"
             android:exported="true"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name" />
         <!-- 微信相关 -->
 
-        <!--高德地图-->
-        <service android:name="com.amap.api.location.APSService"></service>
+
+        <!-- 高德地图 -->
+        <service android:name="com.amap.api.location.APSService" />
 
         <activity
             android:name="com.amap.api.navi.AmapRouteActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.NoTitleBar" />
 
-        <!--高德地图-->
+        <!-- 高德地图 -->
 
-        <!-- qq相关-->
+
+        <!-- qq相关 -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
@@ -185,8 +183,9 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="behind"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
-        <!-- qq相关-->
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- qq相关 -->
+        <activity android:name=".v1.activity.my.CashPledgeActivity"></activity>
     </application>
 
 </manifest>
