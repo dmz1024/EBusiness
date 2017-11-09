@@ -237,7 +237,7 @@ public class UserInfoUtil {
 
 
     public static String[] getUserToken() {
-        return new String[]{"userId", userId, "token", token};
+        return new String[]{"userId", "212114", "token", "Mzc0NjM4NA=="};
     }
 
 
