@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:drawableLeft="@mipmap/ditu_icon"
+            android:drawableLeft="@mipmap/shouye_ditu_icon"
             android:padding="@dimen/size10"
             android:layout_alignParentRight="true"
             />

@@ -81,12 +81,7 @@ public class ChoseDateBean extends BaseBean<ChoseDateBean.Data> {
         }
 
         public boolean isClick() {
-            if (stepStatus==2){
-                isClick=false;
-            }else {
-                isClick=true;
-            }
-            return isClick;
+            return stepStatus==1;
         }
 
         public boolean isChose() {

@@ -14,6 +14,8 @@
         android:layout_height="match_parent"
         android:background="@drawable/space_click_style"
         android:button="@null"
+        android:focusable="false"
+        android:clickable="false"
         android:gravity="center"
         android:paddingBottom="@dimen/size10"
         android:paddingTop="@dimen/size10"

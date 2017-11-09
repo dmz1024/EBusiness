@@ -26,6 +26,7 @@ import com.github.czy1121.view.CornerLabelView;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -131,8 +132,8 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
     }
 
     @OnClick({R.id.tv_submit})
-    void click(View view){
-        switch (view.getId()){
+    void click(View view) {
+        switch (view.getId()) {
             case R.id.tv_submit:
                 Go.goCheckOrderActivity();
                 break;
@@ -142,7 +143,7 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
 
     @Override
     public void convert(final int viewType, ViewHolder holder, IType iType, final int position) {
-        ChoseDateBean.SpaceReserveBean spaceReserveBean = (ChoseDateBean.SpaceReserveBean) iType;
+        final ChoseDateBean.SpaceReserveBean spaceReserveBean = (ChoseDateBean.SpaceReserveBean) iType;
         switch (viewType) {
             case 1:
                 if (TextUtils.isEmpty(spaceReserveBean.getSplitName())) {
@@ -163,117 +164,106 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
                 } else {
                     labelView.setVisibility(View.GONE);
                 }
-                CheckBox chose = holder.<CheckBox>getView(R.id.rb_chose);
-                chose.setChecked(spaceReserveBean.isChose());
-                /**空间已被预订*/
-                chose.setFocusable(spaceReserveBean.isClick());
-                chose.setClickable(spaceReserveBean.isClick());
-                if (spaceReserveBean.isClick()) {
-                    chose.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            if (isSelect == 0) {
-                                isSelect = 1;
-                            } else if (isSelect == 1) {
-                                isSelect = 2;
-                            } else {
-                                isSelect = 3;
-                            }
-                            onItemClick(viewType, adapterHelper, position);
-                        }
-                    });
-                }
+                boolean isChoose = spaceReserveBean.isChose;
+                holder.setChecked(R.id.rb_chose, isChoose);
                 break;
         }
 
     }
 
-    private int isSelect;
-    private int location;
-    private int nextLocation;
-    private int middleLoaction;
 
+    private int location;//点击的位置
+    private int nextLocation;//根据选中的判断
+    private boolean isFirst;//false 表示第一次点击
+
+    //chose表示选择
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
-
-        switch (viewType) {
-            case 3:
-                switch (isSelect) {
-                    case 1://第一次点击
-                        location = position;
-                        setFirstChose();
-                        LogUtil.e("position" + location);
-                        break;
-                    case 2://第二次点击
-                        nextLocation = position;
-                        setNextChose();
-                        LogUtil.e("nextLocation" + nextLocation);
-                        break;
-                    default:
-                        middleLoaction = position;
-                        middleLocation();
-                        LogUtil.e("nextLocation" + middleLoaction);
-                        break;
-                }
-                adapterHelper.notifyDataSetChanged();
-                break;
+        ChoseDateBean.SpaceReserveBean spaceReserveBean = adapterHelper.getT(position);
+        if (!spaceReserveBean.isClick()) {
+            return;
         }
+        ArrayList<ChoseDateBean.SpaceReserveBean> spaceReserveBeans = (ArrayList<ChoseDateBean.SpaceReserveBean>) adapterHelper.getDatas();
+
+        int size = spaceReserveBeans.size();
+
+        int maxIndex = -1;
+        int minIndex = -1;
+        for (int i = 0; i < size; i++) {
+            if (spaceReserveBeans.get(i).getViewType() == 3 && spaceReserveBeans.get(i).isChose()) {
+                minIndex = i;
+                break;
+            }
+        }
+        if (minIndex != -1) {
+            for (int i = size - 1; i >= minIndex; i--) {
+                Log.d("maxi", i + "");
+                if (spaceReserveBeans.get(i).getViewType() == 3 && spaceReserveBeans.get(i).isChose()) {
+                    maxIndex = i;
+                    break;
+                }
+            }
+        }
+        Log.d("max", maxIndex + "--" + minIndex);
+        if (minIndex != -1) {
+            if (position < minIndex) {
+                int canChooseCount = 0;
+                int noChoosePosition = -1;
+                for (int i = position; i <= minIndex; i++) {
+                    if (spaceReserveBeans.get(i).getViewType() == 3) {
+                        if (spaceReserveBeans.get(i).isClick()) {
+                            canChooseCount += 1;
+                        } else {
+                            noChoosePosition = position;
+                            break;
+                        }
+                    }
+                }
+
+                if (canChooseCount <= 1) {
+                    int i = position - 1;
+                    if (i >= 0) {
+                        if (spaceReserveBeans.get(i).getViewType() == 3 && spaceReserveBeans.get(i).isClick()) {
+                            canChooseCount += 1;
+                        }
+                    }
+                }
+
+                if (canChooseCount > 1) {
+                    if (noChoosePosition != -1) {
+                        for (int i = minIndex; i <= maxIndex; i++) {
+                            ChoseDateBean.SpaceReserveBean bean = spaceReserveBeans.get(i);
+                            if (bean.getViewType() == 3) {
+                                bean.setChose(false);
+                            }
+                        }
+                        spaceReserveBean.setChose(true);
+                    } else {
+                        for (int i = position; i <= maxIndex; i++) {
+                            ChoseDateBean.SpaceReserveBean bean = spaceReserveBeans.get(i);
+                            if (bean.getViewType() == 3) {
+                                bean.setChose(true);
+                            }
+                        }
+                    }
+
+                } else {
+                    MyToast.warn("请至少选择两个连续的时间段");
+                }
+            } else if (position > maxIndex) {
+
+            }
+        } else {
+            spaceReserveBean.setChose(true);
+        }
+        adapterHelper.notifyDataSetChanged();
     }
 
     /**
-     * 第一次选择
+     * 选择
      */
     private void setFirstChose() {
-        ArrayList<ChoseDateBean.SpaceReserveBean> spaceReserveBeans = (ArrayList<ChoseDateBean.SpaceReserveBean>) adapterHelper.getDatas();
-        if (location == spaceReserveBeans.size() - 1) {//不让选择
-            MyToast.normal("选择最少一个小时!");
-        } else {
 
-        }
-    }
-
-
-    /**
-     * 第二次点击选择
-     */
-    private void setNextChose() {
-        ArrayList<ChoseDateBean.SpaceReserveBean> spaceReserveBeans = (ArrayList<ChoseDateBean.SpaceReserveBean>) adapterHelper.getDatas();
-        if (location > nextLocation) {
-            for (int i = nextLocation; i <= location; i++) {
-                ChoseDateBean.SpaceReserveBean spaceReserveBean = spaceReserveBeans.get(i);
-                if (spaceReserveBean.getStepStatus() == 1) {
-                    spaceReserveBean.setChose(true);
-                } else {
-                    return;
-                }
-            }
-        } else if (location < nextLocation) {
-            for (int i = location; i <= nextLocation; i++) {
-                ChoseDateBean.SpaceReserveBean spaceReserveBean = spaceReserveBeans.get(i);
-                if (spaceReserveBean.getStepStatus() == 1) {
-                    spaceReserveBean.setChose(true);
-                } else {
-                    return;
-                }
-            }
-        }
-    }
-
-    /**
-     * 点击中间位置
-     */
-    private void middleLocation() {
-        ArrayList<ChoseDateBean.SpaceReserveBean> spaceReserveBeans = (ArrayList<ChoseDateBean.SpaceReserveBean>) adapterHelper.getDatas();
-        if (location <= middleLoaction && middleLoaction <= nextLocation) {
-            for (int i = middleLoaction; i <= nextLocation; i++) {
-                ChoseDateBean.SpaceReserveBean spaceReserveBean = spaceReserveBeans.get(i);
-                if (spaceReserveBean.getStepStatus() == 1) {
-                    spaceReserveBean.setChose(false);
-                } else {
-                    return;
-                }
-            }
-        }
     }
 
 

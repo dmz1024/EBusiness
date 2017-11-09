@@ -189,6 +189,11 @@ public interface RouterUrl {
     String CHECKORDER_ACTIVITY = "/v1/activity/order/checkorder";
 
     /**
+     * 费用明细
+     */
+    String SPACEPAYDETAIL_ACTIVITY = "/v1/activity/order/spacepaydetail";
+
+    /**
      * v1押金
      */
     String CASH_PLEDGE_ACTIVITY = "/v1/activity/my/cashPledge";

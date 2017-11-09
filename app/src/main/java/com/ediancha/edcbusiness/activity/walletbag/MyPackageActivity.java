@@ -90,8 +90,4 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
         }
     }
 
-    @OnCheckedChanged(R.id.cb_check)
-    void checkChecked() {
-
-    }
 }
