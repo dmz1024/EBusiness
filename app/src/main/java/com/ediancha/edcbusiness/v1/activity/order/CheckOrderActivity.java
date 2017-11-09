@@ -10,6 +10,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.router.Go;
+import com.ediancha.edcbusiness.v1.dialog.DepositDialog;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -69,12 +70,16 @@ public class CheckOrderActivity extends NotNetBaseActivity {
     void click(View view){
         switch (view.getId()){
             case R.id.tv_price:
+                Go.goSpacePayDetailActivity();
                 break;
             case R.id.tv_coupon:
                 Go.goCoupon();
                 break;
             case R.id.tv_deposit:
-                Go.goDeposit(null,0);
+//                Go.goDeposit(null,0);
+
+                new DepositDialog()
+                        .show(ctx);
                 break;
         }
     }

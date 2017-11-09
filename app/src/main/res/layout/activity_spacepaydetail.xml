@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.dmz.library.dmzapi.view.custom.DmzBar
+            android:id="@+id/dmzBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:background="@color/color_fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size15">
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_999"
+            android:gravity="center"
+            android:textSize="@dimen/sp14"
+            android:text="@string/str_commen"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/color_666"
+        android:text="空间费用明细"
+        android:gravity="center"
+        android:padding="@dimen/size10"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_fff">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

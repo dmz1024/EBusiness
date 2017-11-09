@@ -21,8 +21,14 @@
         android:id="@+id/vp_show"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rg_chose"/>
+        android:layout_above="@+id/view"/>
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e9eaec"
+        android:layout_above="@+id/rg_chose"/>
     <RadioGroup
         android:id="@+id/rg_chose"
         android:layout_width="match_parent"
@@ -31,10 +37,9 @@
         android:layout_alignParentBottom="true"
         android:paddingTop="@dimen/size5"
         android:paddingBottom="@dimen/size5"
-        android:background="@color/bg_color"
+        android:background="@color/color_fff"
         android:clipToPadding="false"
-        android:clipChildren="false"
-        >
+        android:clipChildren="false">
 
         <RadioButton
             android:id="@+id/rb_one"
@@ -42,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="首页"
-            android:textSize="@dimen/sp14"
+            android:textSize="@dimen/sp10"
             android:textColor="@color/color_home_style"
             android:drawableTop="@drawable/selector_home_style"
             android:drawablePadding="@dimen/size2"
@@ -55,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="订单"
-            android:textSize="@dimen/sp14"
+            android:textSize="@dimen/sp10"
             android:textColor="@color/color_home_style"
             android:drawableTop="@drawable/selector_special_style"
             android:drawablePadding="@dimen/size2"
@@ -74,7 +79,8 @@
                 android:layout_height="wrap_content"
                 android:src="@mipmap/shouye_sao_icon"
                 android:layout_marginTop="-10dp"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/size5"/>
         </RelativeLayout>
 
         <RadioButton
@@ -83,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="消息"
-            android:textSize="@dimen/sp14"
+            android:textSize="@dimen/sp10"
             android:textColor="@color/color_home_style"
             android:drawableTop="@drawable/selector_special_style"
             android:drawablePadding="@dimen/size2"
@@ -95,7 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="我的"
-            android:textSize="@dimen/sp14"
+            android:textSize="@dimen/sp10"
             android:textColor="@color/color_home_style"
             android:drawableTop="@drawable/selector_me_style"
             android:drawablePadding="@dimen/size2"

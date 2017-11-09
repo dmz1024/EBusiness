@@ -306,6 +306,14 @@ public class Go {
     }
 
     /**
+     * 费用明细
+     */
+    public static void goSpacePayDetailActivity() {
+        ARouter.getInstance().build(RouterUrl.SPACEPAYDETAIL_ACTIVITY)
+                .navigation();
+    }
+
+    /**
      * 确认订单
      */
     public static void goCashPledgeActivity() {

@@ -6,19 +6,23 @@
     android:background="@color/color_f8f8fa"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text=""
+        android:textSize="@dimen/sp14"
+        android:background="@color/color_fff"
+        android:layout_marginTop="0dp"
+        android:padding="@dimen/size10"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_money"
-            style="@style/tv_ma_wra_right_min_style"
-            android:layout_margin="@dimen/size10"
-            android:gravity="start"
-            android:text=""
-            android:textSize="@dimen/sp15" />
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/size10"
+        android:background="@color/color_fff">
 
         <TextView
             style="@style/tv_ma_wra_right_min_style"
@@ -26,7 +30,9 @@
             android:layout_marginTop="0dp"
             android:gravity="start"
             android:text="充值金额"
-            android:textSize="@dimen/sp14"/>
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_666"
+            android:padding="@dimen/size10"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -36,7 +42,7 @@
                 android:id="@+id/recy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color_f8f8fa"></android.support.v7.widget.RecyclerView>
+                android:background="@color/color_fff"/>
         </RelativeLayout>
 
 
@@ -49,7 +55,8 @@
         <TextView
             android:id="@+id/tv_submit"
             style="@style/tv_but_style"
-            android:text="立即充值" />
-
+            android:text="立即充值"
+            android:background="@drawable/button_click_styles"
+            android:textColor="@color/color_fff"/>
     </LinearLayout>
 </LinearLayout>
