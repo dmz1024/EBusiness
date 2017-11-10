@@ -22,4 +22,10 @@
         android:text="我的钱包"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="dengluxieyi"
+        android:text="登录协议"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

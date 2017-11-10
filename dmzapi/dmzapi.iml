@@ -103,21 +103,20 @@
     <orderEntry type="library" exported="" name="haha-2.0.3" level="project" />
     <orderEntry type="library" exported="" name="leakcanary-analyzer-1.5" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-26.1.0" level="project" />
-    <orderEntry type="library" exported="" name="glide-4.1.1" level="project" />
+    <orderEntry type="library" exported="" name="glide-4.3.1" level="project" />
     <orderEntry type="library" exported="" name="support-vector-drawable-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-core-utils-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="annotations-4.3.1" level="project" />
     <orderEntry type="library" exported="" name="leakcanary-watcher-1.5" level="project" />
-    <orderEntry type="library" exported="" name="annotations-4.1.1" level="project" />
     <orderEntry type="library" exported="" name="leakcanary-android-1.5" level="project" />
     <orderEntry type="library" exported="" name="alertdialog-1.0.1" level="project" />
     <orderEntry type="library" exported="" name="arouter-api-1.2.2" level="project" />
     <orderEntry type="library" exported="" name="transition-26.1.0" level="project" />
-    <orderEntry type="library" exported="" name="gifdecoder-4.1.1" level="project" />
+    <orderEntry type="library" exported="" name="gifdecoder-4.3.1" level="project" />
     <orderEntry type="library" exported="" name="android-saripaar-2.0.3" level="project" />
     <orderEntry type="library" exported="" name="butterknife-annotations-8.8.1" level="project" />
     <orderEntry type="library" exported="" name="ultraviewpager-1.0.6.1" level="project" />
     <orderEntry type="library" exported="" name="arouter-annotation-1.0.3" level="project" />
-    <orderEntry type="library" exported="" name="AppBar-1.0.3" level="project" />
     <orderEntry type="library" exported="" name="support-compat-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="okio-1.13.0" level="project" />
     <orderEntry type="library" exported="" name="fastjson-1.1.63.android" level="project" />
@@ -125,13 +124,15 @@
     <orderEntry type="library" exported="" name="support-v4-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-fragment-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="animated-vector-drawable-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="eventbus-3.0.0" level="project" />
     <orderEntry type="library" exported="" name="runtime-1.0.0" level="project" />
     <orderEntry type="library" exported="" name="okhttp-3.8.1" level="project" />
     <orderEntry type="library" exported="" name="common-1.0.0" level="project" />
     <orderEntry type="library" exported="" name="1_common-1.0.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="disklrucache-4.3.1" level="project" />
     <orderEntry type="library" exported="" name="base-rvadapter-3.0.3" level="project" />
-    <orderEntry type="library" exported="" name="disklrucache-4.1.1" level="project" />
+    <orderEntry type="library" exported="" name="wechat-sdk-android-with-mta-1.4.0" level="project" />
     <orderEntry type="library" exported="" name="design-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="okhttputils-2.6.1" level="project" />
     <orderEntry type="library" exported="" name="butterknife-8.8.1" level="project" />
