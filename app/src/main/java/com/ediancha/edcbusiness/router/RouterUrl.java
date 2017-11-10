@@ -15,6 +15,12 @@ public interface RouterUrl {
      */
     String PERSON_CENTER_ACTIVITY = "/activity/my/personCenter";
 
+
+    /**
+     * 主页
+     */
+    String MAIN_ACTIVITY = "/activity/main";
+
     /**
      * 空间详情
      */
@@ -43,7 +49,7 @@ public interface RouterUrl {
 
 
     /**
-     * 交易通知
+     * 登陆
      */
     String LOGIN_ACTIVITY = "/activity/login/login";
 
@@ -66,12 +72,12 @@ public interface RouterUrl {
     /**
      * 我的钱包
      */
-    String WALLET_ACTIVITY = "/activity/walletbag/mypackage";
+    String WALLET_ACTIVITY = "/v1/activity/my/mypackage";
 
     /**
      * 余额
      */
-    String MONEY_ACTIVITY = "/activity/walletbag/money";
+    String MONEY_ACTIVITY = "/v1/activity/my/money";
     /**
      * 优惠券
      */
@@ -103,7 +109,7 @@ public interface RouterUrl {
     /**
      * 我的资料
      */
-    String MY_INFO_ACTIVITY = "/activity/my/myInfo";
+    String MY_INFO_ACTIVITY = "/v1/activity/my/myInfo";
 
     /**
      * 我的资料
@@ -133,4 +139,62 @@ public interface RouterUrl {
      * 空间订单详情
      */
     String SPACE_ORDER_IN_PROGERESS_DESC_ACTIVITY = "/activity/order/spaceOrderInProgeressDesc";
+
+    /**
+     * 修改支付密码
+     */
+    String PAYPW_ACTIVITY = "/activity/walletbag/payPassWord";
+    /**
+     * 专题
+     */
+    String SPECIAL_ACTIVITY = "/activity/special";
+
+
+
+    /**
+     * 扫码返回规则(开锁确认)
+     */
+    String MONEY_AFFIRM_ACTIVITY = "/activity/sapce/moneyAffirm";
+
+    /**
+     * 修改信息
+     */
+    String UPDATEINFO_ACTIVITY = "/activity/my/updateInfo";
+
+    /**
+     * 余额明细
+     */
+    String ORDERITEM_ACTIVITY = "/activity/orderdetail/orderItem";
+    /**
+     * 消费详情
+     */
+    String CONSUME_DETAIL_ACTIVITY = "/activity/orderdetail/consumeDetail";
+
+    /**
+     * 导航
+     */
+    String NAVIGATION_ACTIVITY = "/activity/space/navigation";
+    /**
+     * 定位
+     */
+    String LOACTION_ACTIVITY = "/activity/space/location";
+
+    /**
+     * 选择时段
+     */
+    String CHOSEDATE_ACTIVITY = "/v1/activity/space/chosedate";
+    /**
+     * 确认订单
+     */
+    String CHECKORDER_ACTIVITY = "/v1/activity/order/checkorder";
+
+    /**
+     * 费用明细
+     */
+    String SPACEPAYDETAIL_ACTIVITY = "/v1/activity/order/spacepaydetail";
+
+    /**
+     * v1押金
+     */
+    String CASH_PLEDGE_ACTIVITY = "/v1/activity/my/cashPledge";
 }

@@ -16,11 +16,13 @@ import java.lang.Override;
 public class MyPackageActivity_ViewBinding implements Unbinder {
   private MyPackageActivity target;
 
-  private View view2131624129;
+  private View view2131689688;
 
-  private View view2131624130;
+  private View view2131689689;
 
-  private View view2131624132;
+  private View view2131689691;
+
+  private View view2131689693;
 
   @UiThread
   public MyPackageActivity_ViewBinding(MyPackageActivity target) {
@@ -35,7 +37,7 @@ public class MyPackageActivity_ViewBinding implements Unbinder {
     target.mTvMoney = Utils.findRequiredViewAsType(source, R.id.tv_money, "field 'mTvMoney'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ln_money, "field 'mLnMoney' and method 'click'");
     target.mLnMoney = Utils.castView(view, R.id.ln_money, "field 'mLnMoney'", LinearLayout.class);
-    view2131624129 = view;
+    view2131689688 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +47,7 @@ public class MyPackageActivity_ViewBinding implements Unbinder {
     target.mTvCoupon = Utils.findRequiredViewAsType(source, R.id.tv_coupon, "field 'mTvCoupon'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ln_coupon, "field 'mLnCoupon' and method 'click'");
     target.mLnCoupon = Utils.castView(view, R.id.ln_coupon, "field 'mLnCoupon'", LinearLayout.class);
-    view2131624130 = view;
+    view2131689689 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +57,7 @@ public class MyPackageActivity_ViewBinding implements Unbinder {
     target.mTvDeposit = Utils.findRequiredViewAsType(source, R.id.tv_deposit, "field 'mTvDeposit'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ln_deposit, "field 'mLnDeposit' and method 'click'");
     target.mLnDeposit = Utils.castView(view, R.id.ln_deposit, "field 'mLnDeposit'", LinearLayout.class);
-    view2131624132 = view;
+    view2131689691 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +65,15 @@ public class MyPackageActivity_ViewBinding implements Unbinder {
       }
     });
     target.mTvPass = Utils.findRequiredViewAsType(source, R.id.tv_pass, "field 'mTvPass'", TextView.class);
-    target.mLnPass = Utils.findRequiredViewAsType(source, R.id.ln_pass, "field 'mLnPass'", LinearLayout.class);
+    view = Utils.findRequiredView(source, R.id.ln_pass, "field 'mLnPass' and method 'click'");
+    target.mLnPass = Utils.castView(view, R.id.ln_pass, "field 'mLnPass'", LinearLayout.class);
+    view2131689693 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.click(p0);
+      }
+    });
   }
 
   @Override
@@ -82,11 +92,13 @@ public class MyPackageActivity_ViewBinding implements Unbinder {
     target.mTvPass = null;
     target.mLnPass = null;
 
-    view2131624129.setOnClickListener(null);
-    view2131624129 = null;
-    view2131624130.setOnClickListener(null);
-    view2131624130 = null;
-    view2131624132.setOnClickListener(null);
-    view2131624132 = null;
+    view2131689688.setOnClickListener(null);
+    view2131689688 = null;
+    view2131689689.setOnClickListener(null);
+    view2131689689 = null;
+    view2131689691.setOnClickListener(null);
+    view2131689691 = null;
+    view2131689693.setOnClickListener(null);
+    view2131689693 = null;
   }
 }

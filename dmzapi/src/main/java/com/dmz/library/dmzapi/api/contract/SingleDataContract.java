@@ -6,6 +6,7 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.dmz.library.dmzapi.R;
 import com.dmz.library.dmzapi.api.bean.IBaseBean;
@@ -23,15 +24,15 @@ import butterknife.Unbinder;
 
 public class SingleDataContract<T extends IBaseBean, D> extends IContract<SinglePresenter> implements IMoreDataView<T, D> {
     private SwipeRefreshLayout refreshLayout;
-    private NestedScrollView scRoot;
+    private ViewGroup scRoot;
     private SingleDataBuilder mBuilder;
     private LayoutInflater layoutInflater;
 
-    public static <T extends IBaseBean, D> SingleDataContract _instance(NestedScrollView scRoot, SwipeRefreshLayout refreshLayout) {
+    public static <T extends IBaseBean, D> SingleDataContract _instance(ViewGroup scRoot, SwipeRefreshLayout refreshLayout) {
         return new SingleDataContract<T, D>(scRoot, refreshLayout);
     }
 
-    private SingleDataContract(NestedScrollView scRoot, SwipeRefreshLayout refreshLayout) {
+    private SingleDataContract(ViewGroup scRoot, SwipeRefreshLayout refreshLayout) {
         this.refreshLayout = refreshLayout;
         this.scRoot = scRoot;
         layoutInflater = ((Activity) refreshLayout.getContext()).getLayoutInflater();

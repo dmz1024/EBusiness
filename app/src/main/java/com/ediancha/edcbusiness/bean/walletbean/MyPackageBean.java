@@ -10,21 +10,11 @@ import com.dmz.library.dmzapi.api.bean.BaseBean;
 
 public class MyPackageBean extends BaseBean<MyPackageBean.Data> {
 
-    /**
-     * data : {"money":{"money":0,"userMoney":0,"giftAmount":0},"youhui":0,"depositMoney":0,"depositType":0,"payPwd":1}
-     */
-
     public static class Data {
-        /**
-         * money : {"money":0,"userMoney":0,"giftAmount":0}
-         * youhui : 0
-         * depositMoney : 0
-         * depositType : 0
-         * payPwd : 1
-         */
+
 
         public MoneyBean money;
-        public int youhui;
+        public String youhui;
         public int depositMoney;
         public int depositType;
         public int payPwd;
@@ -33,7 +23,7 @@ public class MyPackageBean extends BaseBean<MyPackageBean.Data> {
             return money;
         }
 
-        public int getYouhui() {
+        public String getYouhui() {
             return youhui;
         }
 
@@ -51,25 +41,19 @@ public class MyPackageBean extends BaseBean<MyPackageBean.Data> {
     }
 
     public static class MoneyBean {
-        /**
-         * money : 0
-         * userMoney : 0
-         * giftAmount : 0
-         */
+        public String money;
+        public String userMoney;
+        public String giftAmount;
 
-        public int money;
-        public int userMoney;
-        public int giftAmount;
-
-        public int getMoney() {
+        public String getMoney() {
             return money;
         }
 
-        public int getUserMoney() {
+        public String getUserMoney() {
             return userMoney;
         }
 
-        public int getGiftAmount() {
+        public String getGiftAmount() {
             return giftAmount;
         }
     }

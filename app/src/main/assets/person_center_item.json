@@ -1,32 +1,38 @@
 [
   {
     "iViewType": 1,
-    "title": "空间订单",
-    "leftImage": "ic_launcher"
-  },
-  {
-    "iViewType": 1,
-    "title": "商品订单",
-    "leftImage": "ic_launcher"
+    "title": "我的订单",
+    "leftImage": "wd_dingdan_moren_icon"
   },
   {
     "iViewType": 1,
     "title": "我的钱包",
-    "leftImage": "ic_launcher"
+    "leftImage": "wd_qb_moren_icon"
   },
+//  {
+//    "iViewType": 1,
+//    "title": "我的钱包",
+//    "leftImage": "ic_launcher"
+//  },
   {
     "iViewType": 1,
     "title": "邀请好友",
-    "leftImage": "ic_launcher"
+    "leftImage": "wd_yqhy_moren_icon"
   },
-  {
-    "iViewType": 1,
-    "title": "优惠兑换",
-    "leftImage": "ic_launcher"
-  },
+//  {
+//    "iViewType": 1,
+//    "title": "优惠兑换",
+//    "leftImage": "ic_launcher"
+//  },
   {
     "iViewType": 1,
     "title": "帮助中心",
-    "leftImage": "ic_launcher"
+    "leftImage": "wd_bzzx_moren_icon"
   }
+
+//  {
+//    "iViewType": 1,
+//    "title": "退出登录",
+//    "leftImage": "ic_launcher"
+//  }
 ]

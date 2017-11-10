@@ -1,14 +1,27 @@
 package com.ediancha.edcbusiness.router;
 
 import android.app.Activity;
+import android.content.Context;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.ediancha.edcbusiness.bean.MoneyAffirmBean;
+import com.ediancha.edcbusiness.bean.OpenLockBean;
+import com.ediancha.edcbusiness.constant.NormalContant;
 
 /**
  * Created by dengmingzhi on 2017/9/21.
  */
 
 public class Go {
+
+
+    /**
+     * 首页
+     */
+    public static void goMain() {
+        ARouter.getInstance().build(RouterUrl.MAIN_ACTIVITY).navigation();
+    }
+
 
     /**
      * 个人中心
@@ -57,8 +70,10 @@ public class Go {
     /**
      * 活动精选
      */
-    public static void goLogin() {
-        ARouter.getInstance().build(RouterUrl.LOGIN_ACTIVITY).navigation();
+    public static void goLogin(int type) {
+        ARouter.getInstance().build(RouterUrl.LOGIN_ACTIVITY)
+                .withInt("type", type)
+                .navigation();
     }
 
     /**
@@ -96,6 +111,7 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.MONEY_ACTIVITY)
                 .navigation();
     }
+
     /**
      * 优惠券
      */
@@ -107,10 +123,10 @@ public class Go {
     /**
      * 押金
      */
-    public static void goDeposit(String money,int status) {
+    public static void goDeposit(String money, int status) {
         ARouter.getInstance().build(RouterUrl.DEPOSIT_ACTIVITY)
-                .withString("money",money)
-                .withInt("status",status)
+                .withString("money", money)
+                .withInt("status", status)
                 .navigation();
     }
 
@@ -132,12 +148,13 @@ public class Go {
     /**
      * 帮助中心---问题分类
      */
-    public static void goHelpCenterNext(String pid,String name) {
+    public static void goHelpCenterNext(String pid, String name) {
         ARouter.getInstance().build(RouterUrl.HELPCENTER_NEXT_ACTIVITY)
-                .withString("pid",pid)
-                .withString("name",name)
+                .withString("pid", pid)
+                .withString("name", name)
                 .navigation();
     }
+
     /**
      * 优惠兑换
      */
@@ -164,22 +181,25 @@ public class Go {
      */
     public static void goWebView(String id) {
         ARouter.getInstance().build(RouterUrl.WEBVIEW_ACTIVITY)
-                .withString("H5",id)
+                .withString("H5", id)
                 .navigation();
     }
+
     /**
-     *缴纳押金
+     * 缴纳押金
      */
     public static void goSubmitDeposit() {
         ARouter.getInstance().build(RouterUrl.SUBMITDEPOSIT_ACTIVITY).navigation();
     }
 
     /**
-     *空间详情
+     * 空间详情
      */
-    public static void goSpaceDetail(String id) {
+    public static void goSpaceDetail(String id, String mLatitude, String mLongtude) {
         ARouter.getInstance().build(RouterUrl.SPACEDETAIL_ACTIVITY)
-                .withString("id",id)
+                .withString("id", id)
+                .withString("mLatitude", mLatitude)
+                .withString("mLongtude", mLongtude)
                 .navigation();
     }
 
@@ -192,12 +212,112 @@ public class Go {
 
 
     /**
-     *用户认证
+     * 用户认证
      */
     public static void goUserAuther() {
         ARouter.getInstance().build(RouterUrl.USERAUTHER_ACTIVITY).navigation();
     }
 
+    /**
+     * 修改支付密码
+     */
+    public static void goPayPassWord() {
+        ARouter.getInstance().build(RouterUrl.PAYPW_ACTIVITY).navigation();
+    }
+
+    /**
+     * 专题
+     */
+    public static void goSpecial() {
+        ARouter.getInstance().build(RouterUrl.SPECIAL_ACTIVITY).navigation();
+    }
 
 
+    /**
+     * 扫码（返回规则）
+     *
+     * @param data
+     */
+    public static void goMoneyAffirmActivity(MoneyAffirmBean.Data data) {
+        ARouter.getInstance().build(RouterUrl.MONEY_AFFIRM_ACTIVITY).withParcelable("data", data).navigation();
+    }
+
+    /**
+     * 修改资料
+     *
+     * @param mActivity
+     * @param name
+     */
+    public static void goUpdateInfoActivity(Activity mActivity, String name) {
+        ARouter.getInstance().build(RouterUrl.UPDATEINFO_ACTIVITY)
+                .withString("title", name)
+                .navigation(mActivity, NormalContant.REQUEST_CODE);
+    }
+
+    /**
+     * 余额明细
+     */
+    public static void goOrderItemActivity() {
+        ARouter.getInstance().build(RouterUrl.ORDERITEM_ACTIVITY)
+                .navigation();
+    }
+
+    /**
+     * 消费详情
+     */
+    public static void goConsumeActivity() {
+        ARouter.getInstance().build(RouterUrl.CONSUME_DETAIL_ACTIVITY)
+                .navigation();
+    }
+
+    /**
+     * 导航
+     */
+    public static void goNavigationActivity() {
+        ARouter.getInstance().build(RouterUrl.NAVIGATION_ACTIVITY)
+                .navigation();
+    }
+
+    /**
+     * 导航
+     */
+    public static void goLocationActivity(String mLatitude, String mLongtude) {
+        ARouter.getInstance().build(RouterUrl.LOACTION_ACTIVITY)
+                .withString("mLatitude", mLatitude)
+                .withString("mLongtude", mLongtude)
+                .navigation();
+    }
+
+    /**
+     * 选择时段
+     */
+    public static void goChoseDateActivity() {
+        ARouter.getInstance().build(RouterUrl.CHOSEDATE_ACTIVITY)
+                .navigation();
+    }
+
+
+    /**
+     * 确认订单
+     */
+    public static void goCheckOrderActivity() {
+        ARouter.getInstance().build(RouterUrl.CHECKORDER_ACTIVITY)
+                .navigation();
+    }
+
+    /**
+     * 费用明细
+     */
+    public static void goSpacePayDetailActivity() {
+        ARouter.getInstance().build(RouterUrl.SPACEPAYDETAIL_ACTIVITY)
+                .navigation();
+    }
+
+    /**
+     * 确认订单
+     */
+    public static void goCashPledgeActivity() {
+        ARouter.getInstance().build(RouterUrl.CASH_PLEDGE_ACTIVITY)
+                .navigation();
+    }
 }

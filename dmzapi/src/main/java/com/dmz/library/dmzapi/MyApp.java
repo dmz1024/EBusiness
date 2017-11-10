@@ -1,9 +1,9 @@
 package com.dmz.library.dmzapi;
 
 import android.app.Application;
-import android.content.Context;
-import android.graphics.Color;
-import android.support.annotation.NonNull;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+
 
 import com.dmz.library.dmzapi.utils.AnyPref;
 import com.dmz.library.dmzapi.utils.MyToast;
@@ -71,7 +71,7 @@ public class MyApp extends Application {
 //        headers.put("commonHeaderKey1", "commonHeaderValue1");    //header不支持中文，不允许有特殊字符
 //        headers.put("commonHeaderKey2", "commonHeaderValue2");
         HttpParams params = new HttpParams();
-        params.put("version", "1.0.0");     //param支持中文,直接传,不要自己编码
+        params.put("version", getVersion());     //param支持中文,直接传,不要自己编码
         params.put("from", "android");
 ////-------------------------------------------------------------------------------------//
 
@@ -84,5 +84,20 @@ public class MyApp extends Application {
 //                .addCommonHeaders(headers)                      //全局公共头
                 .addCommonParams(params);                       //全局公共参数
     }
+
+    public String getVersion() {
+        try {
+            PackageManager manager = this.getPackageManager();
+            PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
+            String version = info.versionName;
+            return version;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "1.0.0";
+        }
+    }
+
+
+
 
 }

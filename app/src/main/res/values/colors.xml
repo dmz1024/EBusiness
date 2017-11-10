@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#333</color>
-    <color name="colorPrimaryDark">#333</color>
-    <color name="colorAccent">#333</color>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#fff</color>
+    <color name="colorAccent">#fff</color>
     <color name="color_f1da09">#f1da09</color>
-    <color name="color_zhu">#f1da09</color>
+    <color name="color_zhu">#ffcc41</color>
 
+    <color name="color_fff">#fff</color>
     <color name="color_333">#333</color>
     <color name="color_666">#666</color>
     <color name="color_999">#999</color>
-    <color name="color_fff">#fff</color>
+    <color name="color_f8f8fa">#f8f8fa</color>
     <color name="color_f00">#f00</color>
     <color name="color_f6f6f6">#f6f6f6</color>
     <color name="color_e1e1e1">#e1e1e1</color>
-
+    <color name="color_9999">#aaaaaaaa</color>
     <color name="color_ccc">#ccc</color>
-    <color name="color_09F">#09F</color>
+    <color name="color_ffc730">#ffc730</color>
+    <color name="color_ffcc41">#ffcc41</color>
+    <color name="color_fcc01f">#fcc01f</color>
+    <color name="color_ff9900">#ff9900</color>
+    <color name="color_ed3f14">#ed3f14</color>
+    <color name="color_1c2438">#1c2438</color>
+    <color name="color_4a5162">#4a5162</color>
+    <color name="color_80848f">#80848f</color>
+    <color name="color_bbbec5">#bbbec5</color>
+    <color name="color_dddee2">#dddee2</color>
+    <color name="color_e9eaec">#e9eaec</color>
+    <color name="color_fcf6ef">#fcf6ef</color>
+    <color name="color_131317">#131317</color>
 </resources>

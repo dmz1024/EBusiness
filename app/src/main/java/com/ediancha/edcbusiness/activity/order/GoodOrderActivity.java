@@ -4,15 +4,18 @@ import android.graphics.Color;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
+import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.view.activity.MoreDataBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.GoodsOrderBean;
 import com.ediancha.edcbusiness.bean.SpaceOrderBean;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
@@ -46,21 +49,22 @@ public class GoodOrderActivity extends MoreDataBaseActivity<GoodsOrderBean.Data,
     @Override
     protected void initDmzBuilder() {
         dBuilder.setaClass(GoodsOrderBean.class)
-                .setUrl(ApiContant.GOOD_ORDER).setParms("type", "6");
+                .setUrl(ApiContant.GOOD_ORDER).setParms(UserInfoUtil.getUserToken());
     }
 
     @Override
     public void convert(int viewType, ViewHolder holder, GoodsOrderBean.Data data, int position) {
-        GoodsOrderBean.Goods goods = data.getGoods();
         holder.setText(R.id.tvStatus, data.getStatus())
                 .setText(R.id.tvStatusInfo, data.getStatusInfo())
                 .setText(R.id.tvTitle, data.getTitle())
-                .setText(R.id.tvGoodName, goods.getGoodName())
-                .setText(R.id.tvInfo, goods.getGoodInfo())
-                .setText(R.id.tvCount, goods.getGoodNum())
-                .setText(R.id.tvPrice, goods.getGoodPrice());
-        Glide.with(this).load(goods.getGoodImg()).into(holder.<ImageView>getView(R.id.ivGoodImg));
+                .setText(R.id.tvGoodName, data.getGoodName())
+                .setText(R.id.tvInfo, data.getGoodInfo())
+                .setText(R.id.tvCount, data.getGoodNum())
+                .setText(R.id.tvPrice, data.getGoodPrice());
+        Glide.with(this).load(data.getGoodImg()).into(holder.<ImageView>getView(R.id.ivGoodImg));
+
     }
+
 
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {

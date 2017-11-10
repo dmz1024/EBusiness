@@ -27,6 +27,7 @@
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:id="@+id/scRoot"
+            android:background="#f8f8fa"
             android:layout_height="match_parent"
             android:fillViewport="true"
             android:scrollbars="none"></android.support.v4.widget.NestedScrollView>

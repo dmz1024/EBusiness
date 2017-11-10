@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 public class ValidatorUtils {
 
-    public static final String REGEX_USERNAME = "^[a-zA-Z]\\w{5,17}$";
+    public static final String REGEX_USERNAME = "[\u4e00-\u9fa5\\w]{2,16}";
 
     /**
      * 正则表达式:验证密码(不包含特殊字符)

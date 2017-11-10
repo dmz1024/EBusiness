@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.bumptech.glide.Glide;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.list.CommonAdapterHelper;
 import com.dmz.library.dmzapi.dialog.ChooseStringDialog;
@@ -17,8 +18,10 @@ import com.dmz.library.dmzapi.utils.ResUtil;
 import com.dmz.library.dmzapi.view.activity.BaseActivity;
 import com.dmz.library.dmzapi.view.custom.ChooseStringView;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.dialog.OrderLongTipDialog;
 import com.ediancha.edcbusiness.dialog.OrderMoneyNotEnoughDialog;
+import com.ediancha.edcbusiness.helper.ShareHelper;
 import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
@@ -44,6 +47,9 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
     protected void initView() {
         super.initView();
         unbinder = ButterKnife.bind(this);
+        Glide.with(this)
+                .load(UserInfoUtil.getUserPhoto())
+                .into(ivHeader);
     }
 
     @Override
@@ -69,7 +75,7 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
     private void initRv() {
         int a = 1;
         ArrayList<CommonAdapterHelper.CommonBean> datas = CommonAdapterHelper.getDatas(this, "person_center_item.json");
-        datas.add(0, new CommonAdapterHelper.CommonBean().setTitle("183****7257").setIcon(a == 1 ? R.mipmap.icon_my_authentication : R.mipmap.icon_my_not_certified).setContent("信用分 100").setViewType(2));
+        datas.add(0, new CommonAdapterHelper.CommonBean().setTitle(UserInfoUtil.getUserName()).setIcon(a == 1 ? R.mipmap.icon_my_authentication : R.mipmap.icon_my_not_certified).setContent("信用分 100").setViewType(2));
         adapterHelper = AdapterHelper._instance(this, rvContent)._initData(datas).setLayoutManager(new LinearLayoutManager(this))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(ResUtil.getLayoutId(1)).setConvertInterface(this).setOnClickListener(this))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(2).setRid(R.layout.item_person_center_info).setConvertInterface(this));
@@ -83,7 +89,7 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
                 finish();
                 break;
             case R.id.iv_header:
-                Go.goLogin();
+                Go.goMyInfo();
                 break;
         }
     }
@@ -116,8 +122,7 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
                 Go.goMyPackage();
                 break;
             case 4:
-//                Go.goSpaceDetail();
-                Go.goUserAuther();
+                //
                 break;
             case 5:
                 Go.goCouponChange();
@@ -125,7 +130,19 @@ public class PersonCenterActivity extends BaseActivity implements AdapterHelper.
             case 6:
                 Go.goHelpCenter();
                 break;
+            case 7:
+                UserInfoUtil.clear();
+                Go.goMain();
+                break;
 
         }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Glide.with(this)
+                .load(UserInfoUtil.getUserPhoto())
+                .into(ivHeader);
     }
 }

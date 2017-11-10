@@ -40,6 +40,7 @@ public abstract class LazyLoadFragment extends Fragment{
         isInit = true;
         /**初始化的时候去加载数据**/
         isCanLoadData();
+        setListener();
         return view;
     }
 
@@ -130,6 +131,11 @@ public abstract class LazyLoadFragment extends Fragment{
      * 当视图已经对用户不可见并且加载过数据，如果需要在切换到其他页面时停止加载数据，可以覆写此方法
      */
     protected void stopLoad() {
+    }
+
+
+    protected void setListener(){
+
     }
 
     @Override

@@ -18,14 +18,7 @@ import butterknife.Unbinder;
 public class DepositDialog extends NoTitleDialoggFragment {
 
 
-    @BindView(R.id.iv_style)
-    ImageView mIvStyle;
-    @BindView(R.id.tv_content)
-    TextView mTvContent;
-    @BindView(R.id.tv_ok)
-    TextView mTvOk;
-    @BindView(R.id.tv_cancel)
-    TextView mTvCancel;
+  ;
     private okClickListner mOkClickListner;
 
     @Override

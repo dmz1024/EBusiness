@@ -29,6 +29,12 @@ public class AuthorPresnter {
                 .setaClass(BaseBean.class)
                 .setUrl(ApiContant.AUTHER_URL)
                 .setAll(true)
+                .setOnMySuccessListener(new OnMySuccessListener<BaseBean>() {
+                    @Override
+                    public void onSuccess(BaseBean bean) {
+                        mIAuthorView.successCode(bean);
+                    }
+                })
                 .setOnMyOtherCodeListener(new OnMyOtherCodeListener<BaseBean>() {
                     @Override
                     public void onOther(BaseBean bean) {

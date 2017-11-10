@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:maxLevel="0" android:drawable="@drawable/wdq_wallet_closeb_icon"/>
+    <item android:maxLevel="1" android:drawable="@drawable/wdqb_wallet_open_icon"/>
+</selector>

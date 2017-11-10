@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_f8f8fa"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/TEXtS"
+    android:layout_toEndOf="@+id/TEXtS">
+
+
+    <ImageView
+        android:id="@+id/img_pic"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@color/color_ffc730"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/sp15"
+        android:layout_below="@+id/img_pic"
+        android:paddingLeft="@dimen/size10"
+        android:text="xxx"
+        android:layout_marginTop="@dimen/size10"/>
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_999"
+        android:textSize="@dimen/sp15"
+        android:layout_below="@+id/tv_name"
+        android:paddingLeft="@dimen/size10"
+        android:text="xxx" />
+
+    <LinearLayout
+        android:id="@+id/ln_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_below="@+id/tv_label"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginBottom="@dimen/size10">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/size80"
+        android:layout_height="@dimen/size80"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:background="@drawable/space_price_time_style"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_money"
+           android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="￥1888"
+            android:textColor="@color/color_ffc730"
+            android:textSize="@dimen/sp15"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="起/半小时"
+            android:textColor="@color/color_f6f6f6"
+            android:layout_marginTop="@dimen/size3"
+            android:textSize="@dimen/sp14"/>
+    </LinearLayout>
+</RelativeLayout>

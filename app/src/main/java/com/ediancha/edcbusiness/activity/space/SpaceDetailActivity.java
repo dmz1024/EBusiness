@@ -1,37 +1,33 @@
 package com.ediancha.edcbusiness.activity.space;
 
 
+import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.webkit.WebView;
-
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.bumptech.glide.Glide;
-import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.bean.IType;
-import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
+import com.dmz.library.dmzapi.view.custom.DmzBar;
 import com.ediancha.edcbusiness.R;
-import com.ediancha.edcbusiness.adapter.UltraPagerAdapter;
 import com.ediancha.edcbusiness.bean.SpaceDetailBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
-import com.tmall.ultraviewpager.UltraViewPager;
+import com.ediancha.edcbusiness.helper.ImageLoader;
+import com.ediancha.edcbusiness.helper.OpenMapHelper;
+import com.ediancha.edcbusiness.helper.share.Share;
+import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
-
-import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Admin on 2017/9/28.
@@ -40,11 +36,7 @@ import butterknife.ButterKnife;
 @Route(path = "/activity/space/spaceDetail")
 public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean, SpaceDetailBean.Data> implements AdapterHelper.OnConvertInterface {
 
-    @BindView(R.id.tv_envir)
-    TextView mTvEnvir;
-    @BindView(R.id.tv_sname)
-    TextView mTvSname;
-    @BindView(R.id.tv_status)
+
     TextView mTvStatus;
     @BindView(R.id.tv_time)
     TextView mTvTime;
@@ -52,67 +44,82 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     TextView mTvLocal;
     @BindView(R.id.tv_number)
     TextView mTvNumber;
-    @BindView(R.id.wv_webview)
-    WebView mWvWebview;
     @BindView(R.id.ry_user)
     RecyclerView mRyUser;
-    @BindView(R.id.ry_equip)
-    RecyclerView mRyEquip;
-    @BindView(R.id.tv_xfdetail)
-    TextView mTvXfdetail;
     @BindView(R.id.tv_notice)
     TextView mTvNotice;
-    @BindView(R.id.uvp_pager)
-    UltraViewPager mUvpPager;
+    @BindView(R.id.recy_activity)
+    RecyclerView mRecyActivity;
 
-    UltraPagerAdapter mPagerAdapter;
+
+    private OpenMapHelper mOpenMapHelper;
+    private SpaceDetailBean.Data mSpaceDdetail;
 
     @Autowired
     public String id;
+    @Autowired
+    public String mLatitude;
+    @Autowired
+    public String mLongtude;
 
     @Override
     public void onSuccess(IBasePresenter presenter, SpaceDetailBean.Data bean) {
-        mTvSname.setText(bean.getSpaceName());
-        mTvStatus.setText(bean.getSpaceStatus() == 1 ? "空闲" : "使用中");
+        mSpaceDdetail = bean;
+
         mTvTime.setText(bean.getSpaceMoney() + "元/小时");
-        mTvLocal.setText(bean.getSpaceAreaPath()+"km");
+        mTvLocal.setText(bean.getSpaceAreaPath() + "km");
         mTvNumber.setText("最多容纳" + bean.getSpaceLoadNumber() + "人");
-        mTvXfdetail.setText(bean.getCostStatement());
+
         mTvNotice.setText(bean.getCostStatement());
 
-        initUltraViewPager(bean.getSpaceImage());
         initRecyclerView(bean);
     }
 
+    @Override
+    protected void initView() {
+        super.initView();
 
-    private void initUltraViewPager(String img) {
 
-        ArrayList<String> mRrr = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
-            mRrr.add(img);
-        }
-        mUvpPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
-        mPagerAdapter = new UltraPagerAdapter(this, mRrr);
-        mUvpPager.setAdapter(mPagerAdapter);
-        mUvpPager.setInfiniteLoop(true);
-        mUvpPager.setAutoScroll(5000);
     }
+
 
     private void initRecyclerView(SpaceDetailBean.Data bean) {
 
-        LogUtil.e("getFacilities"+bean.getFacilities());
-        LogUtil.e("getPurpose"+bean.getPurpose());
+
         //室内
         AdapterHelper._instance(this, mRyUser)._initData(bean.getFacilities()).setLayoutManager(new GridLayoutManager(this, 3))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_space_textview).setConvertInterface(this));
-        //用途
-        AdapterHelper._instance(this, mRyEquip)._initData(bean.getPurpose()).setLayoutManager(new GridLayoutManager(this, 3))
-                .setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.item_space_textview).setConvertInterface(this));
+//        //用途
+        AdapterHelper._instance(this, mRecyActivity)._initData(bean.getPurpose()).setLayoutManager(new GridLayoutManager(this, 3))
+                .setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.item_space_activity).setConvertInterface(this));
     }
 
+    @Override
+    protected void initData() {
+        super.initData();
+        mOpenMapHelper = new OpenMapHelper(this);
+
+    }
+
+    @OnClick({R.id.tv_local, R.id.tv_number, R.id.tv_submit})
+    void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.tv_local:
+//                mOpenMapHelper.openMap(mSpaceDdetail.getLatitude(), mSpaceDdetail.getLongitude(), mSpaceDdetail.getSpaceAreaPath());
+                Go.goLocationActivity(mLatitude, mLongtude);
+                break;
+            case R.id.tv_number:
+                break;
+            case R.id.tv_submit:
+                Go.goChoseDateActivity();
+                break;
+            default:
+        }
+    }
 
     @Override
     protected void initDataBuilder() {
+        //首次不加载设置
         mBuilder.setSuccessRid(R.layout.success_spacedetail);
     }
 
@@ -120,30 +127,44 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     protected void initDmzBuilder() {
         dBuilder.setaClass(SpaceDetailBean.class)
                 .setUrl(ApiContant.SPACEDETAIL_URL)
-                .setParms("id", id);
+                .setParms("id", id, "longitude", mLongtude, "latitude", mLatitude);
+
     }
 
     @Override
     protected void initBarView() {
         super.initBarView();
-        dmzBar.setText("云集空间");
+        dmzBar.setText("云集空间")
+                .addItemView(new DmzBar.DmzBarItemInfo().setIid(R.mipmap.icon_gengduo))
+                .setOnItemOnClickListener(new DmzBar.OnItemOnClickListener() {
+                    @Override
+                    public void itemClick(int index) {
+                        if (mSpaceDdetail != null) {
+                            mSpaceDdetail.getShare().setType(1).url = "https://www.baidu.com";
+                            mSpaceDdetail.getShare().logo = "http://media-cdn.tripadvisor.com/media/photo-s/01/3e/05/40/the-sandbar-that-links.jpg";
+                            Share.getShare(1).start(SpaceDetailActivity.this, mSpaceDdetail.getShare());
+                        }
+                    }
+                });
     }
 
     @Override
     public void convert(int viewType, ViewHolder holder, IType iType, int position) {
         switch (viewType) {
             case 0:
-
                 SpaceDetailBean.FacilitiesBean facilities = (SpaceDetailBean.FacilitiesBean) iType;
                 holder
                         .setText(R.id.tv_type, facilities.getTargetName());
-
                 break;
             case 1:
                 SpaceDetailBean.PurposeBean purpose = (SpaceDetailBean.PurposeBean) iType;
                 holder
                         .setText(R.id.tv_type, purpose.getTargetName());
+
+                ImageLoader.loadImageRec(ctx, "http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg", holder.<ImageView>getView(R.id.img_type));
                 break;
         }
     }
+
+
 }

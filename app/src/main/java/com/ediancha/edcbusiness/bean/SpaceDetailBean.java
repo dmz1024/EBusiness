@@ -3,6 +3,7 @@ package com.ediancha.edcbusiness.bean;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.api.bean.ViewBaseType;
+import com.ediancha.edcbusiness.helper.share.Share;
 
 import java.util.ArrayList;
 
@@ -53,10 +54,20 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
         public String spaceDesc;
         public ShareBean share;
         public String costStatement;
+        public String latitude;
+        public String longitude;
         public int howFar;
         public ArrayList<PurposeBean> purpose;
         public ArrayList<FacilitiesBean> facilities;
         public ArrayList<?> aqi;
+
+        public String getLatitude() {
+            return latitude;
+        }
+
+        public String getLongitude() {
+            return longitude;
+        }
 
         public String getId() {
             return id;
@@ -131,7 +142,7 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
         }
     }
 
-    public static class ShareBean {
+    public static class ShareBean implements Share.ShareInfo{
         /**
          * name : /uploads/20170921/122537fcf2b9376afa93d148708adac6.jpg
          * url : www.baidu.com
@@ -143,6 +154,43 @@ public class SpaceDetailBean extends BaseBean<SpaceDetailBean.Data> {
         public String url;
         public String info;
         public String logo;
+        public int type;
+
+
+        @Override
+        public String getUrl() {
+            return url;
+        }
+
+        @Override
+        public String getTitle() {
+            return name;
+        }
+
+        @Override
+        public String getContent() {
+            return info;
+        }
+
+        @Override
+        public int getType() {
+            return type;
+        }
+
+        public ShareBean setType(int type) {
+            this.type = type;
+            return this;
+        }
+
+        @Override
+        public String getAppName() {
+            return null;
+        }
+
+        @Override
+        public String getLogo() {
+            return logo;
+        }
     }
 
     public static class PurposeBean extends ViewBaseType {
