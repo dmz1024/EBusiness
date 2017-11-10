@@ -16,6 +16,7 @@ import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.dmz.library.dmzapi.view.custom.DmzBar;
+import com.dmz.library.dmzapi.view.custom.TipView;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.ChoseDateBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
@@ -76,7 +77,7 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
         tvDesc = findViewById(R.id.tvDesc);
 
 //        Glide.with(this).load(ApiContant.IMAGE).into(ivHome);
-        ImageLoader.loadCircu(this,ApiContant.IMAGE,ivHome);
+        ImageLoader.loadCircu(this, ApiContant.IMAGE, ivHome);
     }
 
     @Override
@@ -141,7 +142,9 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
                 .setOnItemOnClickListener(new DmzBar.OnItemOnClickListener() {
                     @Override
                     public void itemClick(int index) {
-
+                        TipView.getInstance().setTitle("计费规则")
+                                .setContent("以半小时为准，每半小时前15分钟内扫码需多支付15分钟费用，角标显示为半价后15分钟内扫码无需支付费用，角标显示赠送。")
+                                .setShowCancel(false).setBottom("确定").show(getContext());
                     }
                 });
     }

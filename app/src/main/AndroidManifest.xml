@@ -58,23 +58,21 @@
             android:name=".activity.MainActivity"
             android:launchMode="singleTask">
             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <activity android:name=".activity.Main5Activity" />
-        <activity android:name=".activity.Main6Activity" />
         <activity
             android:name=".activity.my.PersonCenterActivity"
             android:theme="@style/PersonCenterTheme" />
         <activity
             android:name=".activity.QwActivity"
-            android:theme="@style/QwTheme"/>
-        <activity android:name=".activity.SpaceDescActivity"/>
-        <activity android:name=".activity.message.ActivityMessageActivity"/>
-        <activity android:name=".activity.message.ActivitySplendidActivity"/>
-        <activity android:name=".activity.message.ExpenseTipsActivity"/>
+            android:theme="@style/QwTheme" />
+        <activity android:name=".activity.SpaceDescActivity" />
+        <activity android:name=".activity.message.ActivityMessageActivity" />
+        <activity android:name=".activity.message.ActivitySplendidActivity" />
+        <activity android:name=".activity.message.ExpenseTipsActivity" />
         <activity android:name=".v1.activity.my.MyPackageActivity" />
         <activity android:name=".activity.walletbag.CouponActivity" />
         <activity android:name=".activity.walletbag.DepositActivity" />
@@ -89,12 +87,12 @@
         <activity android:name=".activity.help.HelpCenterNextActivity" />
         <activity
             android:name=".activity.login.LoginActivity"
-            android:theme="@style/LoginTheme"/>
-        <activity android:name=".activity.order.SpaceOrderActivity"/>
-        <activity android:name=".activity.order.GoodOrderActivity"/>
-        <activity android:name=".activity.order.GoodOrderDescActivity"/>
-        <activity android:name=".activity.my.MyInfoActivity"/>
-        <activity android:name=".activity.order.SpaceOrderInProgeressDescActivity"/>
+            android:theme="@style/LoginTheme" />
+        <activity android:name=".activity.order.SpaceOrderActivity" />
+        <activity android:name=".activity.order.GoodOrderActivity" />
+        <activity android:name=".activity.order.GoodOrderDescActivity" />
+        <activity android:name=".v1.activity.my.MyInfoActivity"/>
+        <activity android:name=".activity.order.SpaceOrderInProgeressDescActivity" />
         <activity android:name=".activity.walletbag.PayPWSettingActivity" />
         <activity android:name=".activity.my.UpdateInfoActivity" />
         <activity android:name=".activity.SpecialActivity" />
@@ -104,13 +102,13 @@
         <activity android:name=".activity.space.LocationActivity" />
         <activity android:name=".v1.activity.space.ChoseDateActvivity" />
         <activity android:name=".v1.activity.order.CheckOrderActivity" />
-        <activity android:name=".v1.activity.order.SpacePayDetailActivity"/>
+        <activity android:name=".v1.activity.order.SpacePayDetailActivity" />
 
         <activity android:name=".activity.HomeActivity">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".test.DongHuaActivity">
@@ -136,13 +134,13 @@
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name="com.alipay.sdk.app.H5AuthActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+            android:windowSoftInputMode="adjustResize|stateHidden" />
 
 
         <!-- 微信相关 -->
@@ -153,7 +151,7 @@
         <activity
             android:name=".wxapi.WXEntryActivity"
             android:exported="true"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name"/>
         <!-- 微信相关 -->
 
         <!--高德地图-->
@@ -186,7 +184,9 @@
             android:screenOrientation="behind"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!-- qq相关 -->
-        <activity android:name=".v1.activity.my.CashPledgeActivity"></activity>
+
+
+        <activity android:name=".v1.activity.my.CashPledgeActivity"/>
     </application>
 
 </manifest>
