@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -16,6 +14,61 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_scrollFlags="scroll|enterAlways" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:padding="10dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="105dp"
+                android:layout_height="75dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_toRightOf="@+id/ivHome"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:maxLines="2"
+                    android:text="北方明珠大厦示范店"
+                    android:textColor="@color/color_1c2438"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:maxLines="2"
+                    android:text="昌平区立汤路北方明珠大厦·10KM"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/sp13" />
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="可容纳19人"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/sp13" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="@color/color_e9eaec"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"/>
+
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
@@ -25,11 +78,61 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <RelativeLayout
-            android:layout_width="match_parent"
             android:id="@+id/scRoot"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            ></RelativeLayout>
+            android:background="#f8f8fa"
+            android:fillViewport="true"
+            android:scrollbars="none" />
     </android.support.v4.widget.SwipeRefreshLayout>
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/color_f8f8fa"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/bottom_view_behavior">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingBottom="@dimen/size10"
+            android:paddingLeft="@dimen/size10"
+            android:paddingTop="@dimen/size10"
+            android:text="费用"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size10"
+            android:paddingLeft="@dimen/size10"
+            android:paddingTop="@dimen/size10"
+            android:text="明细"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/color_ffc730"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size10"
+            android:paddingLeft="@dimen/size10"
+            android:paddingTop="@dimen/size10"
+            android:text="费用"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/sp15" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
 

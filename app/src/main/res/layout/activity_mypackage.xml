@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
@@ -18,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
             android:orientation="vertical">
 
             <TextView
@@ -26,6 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:drawablePadding="@dimen/size10"
+                android:drawableTop="@mipmap/wdqb_yue_icon"
                 android:gravity="center"
                 android:text="100.00"
                 android:textColor="@color/color_1c2438"
@@ -48,6 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
             android:orientation="vertical">
 
             <TextView
@@ -56,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:drawablePadding="@dimen/size10"
+                android:drawableTop="@mipmap/wdqb_youhuiquan_icon"
                 android:gravity="center"
                 android:text="2"
                 android:textColor="@color/color_1c2438"
@@ -78,6 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
             android:orientation="vertical">
 
             <TextView
@@ -86,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:drawablePadding="@dimen/size10"
+                android:drawableTop="@mipmap/wdqb_yajin_icon"
                 android:gravity="center"
                 android:text="299.00"
                 android:textColor="@color/color_1c2438"
@@ -108,52 +115,92 @@
         android:layout_height="@dimen/size15"
         android:background="@color/color_e9eaec" />
 
-    <TextView
-        android:id="@+id/tvCheck"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@drawable/selector_check_style"
-        android:padding="@dimen/size12"
-        android:text="开启支付密码"
-        android:textColor="@color/color_333"
-        android:textSize="@dimen/sp14" />
+    <!--<TextView-->
+    <!--android:id="@+id/tvCheck"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="?android:attr/selectableItemBackground"-->
+    <!--android:drawableRight="@mipmap/wdqb_wallet_open_icon"-->
+    <!--android:padding="@dimen/size12"-->
+    <!--android:text="开启支付密码"-->
 
-    <View
+    <!--android:textColor="@color/color_333"-->
+    <!--android:textSize="@dimen/sp14" />-->
+    <FrameLayout
+        android:id="@+id/fgOpen"
+        android:background="?android:attr/selectableItemBackground"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/size0.5"
-        android:layout_marginLeft="@dimen/size12"
-        android:layout_marginRight="@dimen/size12"
-        android:background="@color/color_e9eaec" />
+        android:layout_height="42dp">
+        <TextView
+            android:textColor="@color/color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size12"
+            android:paddingRight="@dimen/size12"
+            android:text="开启密码支付" />
+        <ImageView
+            android:id="@+id/ivOpen"
+            android:src="@drawable/level_check_style"
+            android:layout_marginRight="@dimen/size12"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/size12"
+            android:layout_marginRight="@dimen/size12"
+            android:background="@color/color_e9eaec" />
+    </FrameLayout>
 
     <FrameLayout
         android:id="@+id/fgSetPass"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
+        android:background="?android:attr/selectableItemBackground"
         android:visibility="gone">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/size12"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/size12"
             android:text="重置支付密码"
+
             android:textColor="@color/color_333"
             android:textSize="@dimen/sp14" />
 
         <TextView
             android:id="@+id/tvSetPass"
             android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|right"
             android:drawablePadding="@dimen/size5"
             android:drawableRight="@mipmap/you_icon"
-            android:padding="@dimen/size12"
+            android:paddingRight="@dimen/size12"
             android:text="未设置"
             android:textColor="@color/color_999"
             android:textSize="@dimen/sp12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_gravity="bottom"
+            android:background="@color/color_e9eaec" />
     </FrameLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size0.5"
-        android:background="@color/color_e9eaec" />
+    <TextView
+        android:text="*开启密码支付并设置密码后您的所有消费将需要进行输入密码操作!"
+        android:textSize="@dimen/sp11"
+        android:paddingRight="@dimen/size12"
+        android:paddingLeft="@dimen/size12"
+        android:paddingTop="@dimen/size5"
+        android:textColor="@color/color_ff9900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

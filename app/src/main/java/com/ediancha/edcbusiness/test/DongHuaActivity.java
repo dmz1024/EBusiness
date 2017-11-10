@@ -29,4 +29,8 @@ public class DongHuaActivity extends AppCompatActivity {
     public void yuer(View v) {
         Go.goMoney();
     }
+
+    public void wodeqianbao(View v) {
+        Go.goMyPackage();
+    }
 }
