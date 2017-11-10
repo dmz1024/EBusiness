@@ -1,9 +1,10 @@
-package com.ediancha.edcbusiness.activity.walletbag;
+package com.ediancha.edcbusiness.v1.activity.my;
 
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -18,7 +19,6 @@ import com.ediancha.edcbusiness.router.Go;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnCheckedChanged;
 import butterknife.OnClick;
 
 
@@ -36,14 +36,14 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
     TextView tvYhq;
     @BindView(R.id.tvYj)
     TextView tvYj;
-    @BindView(R.id.tvCheck)
-    TextView tvCheck;
     @BindView(R.id.tvSetPass)
     TextView tvSetPass;
     @BindView(R.id.fgSetPass)
     FrameLayout fgSetPass;
-
+    @BindView(R.id.ivOpen)
+    ImageView ivOpen;
     private MyPackageBean.Data data;
+
     @Override
     protected void initDataBuilder() {
         mBuilder.setCurrentViewEnum(SingleDataBuilder.ShowViewEnum.SUCCESSVIEW)
@@ -70,9 +70,12 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
         tvMoney.setText(data.getMoney().getMoney());
         tvYhq.setText(bean.getYouhui());
         tvSetPass.setText((bean.getPayPwd() == 0) ? "未设置" : "已设置");
+
+        setPassword(bean.getPayPwd() != 0);
+
     }
 
-    @OnClick({R.id.llMoeny, R.id.llYhq, R.id.llYj, R.id.fgSetPass})
+    @OnClick({R.id.llMoeny, R.id.llYhq, R.id.llYj, R.id.fgSetPass, R.id.fgOpen})
     void click(View view) {
         switch (view.getId()) {
             case R.id.llMoeny: //余额
@@ -87,7 +90,16 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
             case R.id.fgSetPass:
                 Go.goPayPassWord();//修改支付密码
                 break;
+            case R.id.fgOpen:
+                setPassword(fgSetPass.getVisibility() == View.GONE);
+                break;
         }
+    }
+
+
+    private void setPassword(boolean isShow) {
+        fgSetPass.setVisibility(isShow ? View.VISIBLE : View.GONE);
+        ivOpen.setImageLevel(isShow ? 1 : 0);
     }
 
 }

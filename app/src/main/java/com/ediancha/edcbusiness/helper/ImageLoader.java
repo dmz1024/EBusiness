@@ -2,10 +2,13 @@ package com.ediancha.edcbusiness.helper;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestBuilder;
+import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.request.RequestOptions;
 import com.dmz.library.dmzapi.transformation.GlideRoundTransform;
 
@@ -29,16 +32,18 @@ public class ImageLoader {
 
     /**
      * 加载圆形图片
+     *
      * @param mContext
      * @param uri
      * @param target
      */
-    public static void loadImageOvel(Context mContext, Object uri, ImageView target) {
+    public static void loadImageOvel(Context mContext, String uri, ImageView target) {
         Glide.with(mContext)
                 .load(uri)
                 .apply(new RequestOptions()
                         .circleCrop())
                 .into(target);
+
     }
 
 

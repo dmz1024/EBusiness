@@ -11,7 +11,6 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 
 
 import com.bumptech.glide.Glide;
-import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.list.CommonAdapterHelper;
@@ -20,11 +19,11 @@ import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.utils.ResUtil;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.dmz.library.dmzapi.view.custom.ChooseStringView;
+import com.dmz.library.dmzapi.view.custom.TipView;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.constant.NormalContant;
-import com.ediancha.edcbusiness.dialog.CommonDialog;
 import com.ediancha.edcbusiness.helper.PhotoHelper;
 import com.ediancha.edcbusiness.helper.login.ILoginResultInterface;
 import com.ediancha.edcbusiness.helper.login.Login;
@@ -55,7 +54,6 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
     private String path;
     private int type;
 
-    private CommonDialog mCommonDialog;
 
     @Override
     protected void initData() {
@@ -63,7 +61,8 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
         mUpdateNamePresenter = mUpdateNamePresenter != null ? mUpdateNamePresenter : new UpdateNamePresenter(this);
         mHeaderPresenter = mHeaderPresenter != null ? mHeaderPresenter : new UpdateHeaderPresenter(this);
         mBindThreadPresenter = mBindThreadPresenter != null ? mBindThreadPresenter : new BindThreadPresenter(this);
-        mCommonDialog = mCommonDialog != null ? mCommonDialog : new CommonDialog();
+
+
         mHelper = new PhotoHelper(this);
         datas = CommonAdapterHelper.getDatas(this, "my_info.json");
         datas.get(0).setRightImage(UserInfoUtil.getUserPhoto());
@@ -74,12 +73,7 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
         datas.get(6).setContent(UserInfoUtil.getUserPhone());
         datas.get(7).setContent(UserInfoUtil.getWxInfo());
         datas.get(8).setContent(UserInfoUtil.getQqInfo());
-        LinearLayoutManager manager = new LinearLayoutManager(this) {
-            @Override
-            public boolean canScrollVertically() {
-                return false;
-            }
-        };
+        LinearLayoutManager manager = new LinearLayoutManager(this);
         manager.setAutoMeasureEnabled(true);
         adapterHelper = AdapterHelper._instance(this, rvContent)._initData(datas).setLayoutManager(manager)
                 .setType(new AdapterHelper.ViewTypeInfo().setType(4).setRid(ResUtil.getLayoutId(4)))
@@ -114,13 +108,10 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
                         .setiChooseItem(new ChooseStringView.IChooseItem() {
                             @Override
                             public void position(int pos) {
-                                switch (pos) {
-                                    case 0:
-                                        mHelper.openPhoto();
-                                        break;
-                                    case 1:
-                                        mHelper.showCameraAction();
-                                        break;
+                                if(pos==0){
+                                    mHelper.openPhoto();
+                                }else {
+                                    mHelper.showCameraAction();
                                 }
                             }
                         }).addData("相册选择", "拍照").show(this);
@@ -129,80 +120,61 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
                 Go.goUpdateInfoActivity(this, "修改昵称");
                 break;
             case 4:
-                switch (UserInfoUtil.getRz()) {
-                    case 1:
-                        Go.goUserAuther();
-                        break;
-                    default:
-                        break;
+                if(UserInfoUtil.getRz()==1){
+                    Go.goUserAuther();
                 }
-
                 break;
             case 7:
                 type = 1;
                 if (UserInfoUtil.getWx() == 1) {
-                    Login.getLogin(0).setListener(new ILoginResultInterface() {
-                        @Override
-                        public void onSuccess(String info) {
-                            mBindThreadPresenter.bindThread(type, null, info);
-                        }
-
-                        @Override
-                        public void onCancel() {
-                            MyToast.normal("您取消了微信绑定!");
-                        }
-
-                        @Override
-                        public void onFaile() {
-                            MyToast.normal("微信绑定失败!");
-                        }
-                    }).start(this);
+                    Login.getLogin(0).setListener(loginResultInterface).start(this);
                 } else {
-                mCommonDialog.setTitle("您确定解除微信绑定?")
-                        .setOnClickListener(new CommonDialog.OnClickListener() {
-                            @Override
-                            public void setOnClickRightListener() {
-                                mCommonDialog.dismiss();
-                                mBindThreadPresenter.unBindThread(type);
-                            }
-                        })
-                        .show(this);
+                    unBindThird();
                 }
                 break;
             case 8:
                 type = 2;
                 if (UserInfoUtil.getQq() == 1) {
                     login = (QQLogin) Login.getLogin(1);
-                    login.setListener(new ILoginResultInterface() {
-                        @Override
-                        public void onSuccess(String info) {
-                            LogUtil.e("openId" + info.split(",")[0] + "     " + info.split(",")[1]);
-                            mBindThreadPresenter.bindThread(type, info.split(",")[1], info.split("1")[0]);
-                        }
-
-                        @Override
-                        public void onCancel() {
-                            MyToast.normal("您取消了QQ绑定!");
-                        }
-
-                        @Override
-                        public void onFaile() {
-                            MyToast.normal("QQ绑定失败!");
-                        }
-                    }).start(this);
+                    login.setListener(loginResultInterface).start(this);
                 } else {
-                mCommonDialog.setTitle("您确定解除QQ绑定!")
-                        .setOnClickListener(new CommonDialog.OnClickListener() {
-                            @Override
-                            public void setOnClickRightListener() {
-                                mCommonDialog.dismiss();
-                                mBindThreadPresenter.unBindThread(type);
-                            }
-                        })
-                        .show(this);
+                    unBindThird();
+
                 }
                 break;
         }
+    }
+
+    private ILoginResultInterface loginResultInterface = new ILoginResultInterface() {
+        @Override
+        public void onSuccess(String info) {
+            String token = type == 1 ? "" : info.split(",")[1];
+            String key = type == 1 ? info : info.split(",")[0];
+            mBindThreadPresenter.bindThread(type, token, key);
+        }
+
+        @Override
+        public void onCancel() {
+            MyToast.normal("您取消了"+(type == 1 ? "微信" : "QQ")+"绑定!");
+        }
+
+        @Override
+        public void onFaile() {
+            MyToast.normal((type == 1 ? "微信" : "QQ")+"绑定失败!");
+        }
+    };
+
+    private void unBindThird() {
+        String typeInfo = type == 1 ? "微信" : "QQ";
+        TipView.getInstance()
+                .setTitle("解除" + typeInfo + "绑定")
+                .setContent("解除" + typeInfo + "绑定后您将不能使用" + typeInfo + "进行快捷登录！")
+                .setBottom(new TipView.BottomInfo("确定解除", new TipView.OnClickListener() {
+                    @Override
+                    public void OnClick() {
+                        mBindThreadPresenter.unBindThread(type);
+                    }
+                })).show(this);
     }
 
     @Override

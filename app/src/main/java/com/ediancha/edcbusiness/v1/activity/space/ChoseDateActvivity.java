@@ -71,10 +71,10 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
     @Override
     protected void initView() {
         super.initView();
-//        ivHome = findViewById(R.id.ivHome);
-//        tvTitle = findViewById(R.id.tvTitle);
-//        tvAddress = findViewById(R.id.tvAddress);
-//        tvDesc = findViewById(R.id.tvDesc);
+        ivHome = findViewById(R.id.ivHome);
+        tvTitle = findViewById(R.id.tvTitle);
+        tvAddress = findViewById(R.id.tvAddress);
+        tvDesc = findViewById(R.id.tvDesc);
 
 //        Glide.with(this).load(ApiContant.IMAGE).into(ivHome);
         ImageLoader.loadCircu(this, ApiContant.IMAGE, ivHome);

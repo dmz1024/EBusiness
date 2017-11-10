@@ -1,6 +1,7 @@
 package com.ediancha.edcbusiness.v1.activity.my;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -26,6 +27,8 @@ public class CashPledgeActivity extends SingleDataBaseActivity<CashPledgeBean, C
     TextView tvMoney;
     @BindView(R.id.tvStatus)
     TextView tvStatus;
+    @BindView(R.id.tvTip)
+    TextView tvTip;
     @BindView(R.id.btSubmit)
     Button btSubmit;
 
@@ -36,6 +39,7 @@ public class CashPledgeActivity extends SingleDataBaseActivity<CashPledgeBean, C
         status = bean.getStatus();
         tvStatus.setText(bean.getStatusInfo());
         btSubmit.setText(bean.getShowStatusInfo());
+        tvTip.setVisibility(status == 1 ? View.VISIBLE : View.GONE);
     }
 
     @Override
@@ -68,19 +72,21 @@ public class CashPledgeActivity extends SingleDataBaseActivity<CashPledgeBean, C
                 //TODO 退押金操作
                 TipView.getInstance()
                         .setTitle("退押金")
-                        .setContent("退还押金需平台审核，退押金期间和押金退还之后您均不可进行空间的使用、消费等操作！")
-                        .setBottom(new TipView.BottomInfo("退押金", new TipView.OnClickListener() {
+                        .setContent("退押金后将无法使用共享空间！")
+                        .setBottom(new TipView.BottomInfo("确定要退", new TipView.OnClickListener() {
                             @Override
                             public void OnClick() {
                                 MyToast.normal("押金退还成功");
                             }
-                        })).show(this);
+                        }))
+                        .setShowCancel(false)
+                        .setBottom("不退了").show(this);
                 break;
             case 1:
                 //TODO 取消退押金操作
                 TipView.getInstance()
                         .setTitle("取消退押金")
-                        .setContent("取消退还押金后您可以进行空间的使用、消费等操作！")
+                        .setContent("取消退还押金后您可以正常使用空间！")
                         .setShowCancel(false)
                         .setBottom("不取消")
                         .setBottom(new TipView.BottomInfo("取消退押金", new TipView.OnClickListener() {

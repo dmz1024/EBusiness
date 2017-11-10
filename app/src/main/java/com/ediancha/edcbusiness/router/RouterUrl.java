@@ -109,7 +109,7 @@ public interface RouterUrl {
     /**
      * 我的资料
      */
-    String MY_INFO_ACTIVITY = "/activity/my/myInfo";
+    String MY_INFO_ACTIVITY = "/v1/activity/my/myInfo";
 
     /**
      * 我的资料
@@ -182,7 +182,7 @@ public interface RouterUrl {
     /**
      * 选择时段
      */
-    String CHOSEDATE_ACTIVITY = "/activity/order/chosedate";
+    String CHOSEDATE_ACTIVITY = "/v1/activity/space/chosedate";
     /**
      * 确认订单
      */
