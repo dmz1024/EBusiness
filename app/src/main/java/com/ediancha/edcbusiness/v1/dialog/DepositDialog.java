@@ -38,7 +38,9 @@ public class DepositDialog extends NoTitleDialoggFragment {
                 }
                 break;
             case R.id.tv_cancel:
-                dismiss();
+                if (mOkClickListner!=null){
+                    mOkClickListner.setOnCancelListener();
+                }
                 break;
         }
     }
@@ -55,6 +57,9 @@ public class DepositDialog extends NoTitleDialoggFragment {
 
     public interface okClickListner {
         void setOnOkListener();
+
+
+        void setOnCancelListener();
     }
 }
 

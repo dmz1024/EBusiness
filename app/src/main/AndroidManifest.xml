@@ -76,7 +76,7 @@
         <activity android:name=".activity.message.ActivitySplendidActivity"/>
         <activity android:name=".activity.message.ExpenseTipsActivity"/>
         <activity android:name=".activity.walletbag.MyPackageActivity" />
-        <activity android:name=".activity.walletbag.CouponActivity" />
+        <activity android:name=".v1.activity.coupon.CouponActivity" />
         <activity android:name=".activity.walletbag.DepositActivity" />
         <activity android:name=".v1.activity.my.MoneyActivity" />
         <activity android:name=".activity.walletbag.ChargeActivity" />
@@ -105,6 +105,7 @@
         <activity android:name=".activity.order.ChoseDateActvivity" />
         <activity android:name=".v1.activity.order.CheckOrderActivity" />
         <activity android:name=".v1.activity.order.SpacePayDetailActivity"/>
+        <activity android:name=".v1.activity.order.OrderingActivity"/>
 
         <activity android:name=".activity.HomeActivity">
             <intent-filter>

@@ -320,4 +320,12 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.CASH_PLEDGE_ACTIVITY)
                 .navigation();
     }
+
+    /**
+     * 进行中订单
+     */
+    public static void goOrderingActivity() {
+        ARouter.getInstance().build(RouterUrl.ORDERING_ACTIVITY)
+                .navigation();
+    }
 }

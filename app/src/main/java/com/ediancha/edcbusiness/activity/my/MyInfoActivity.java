@@ -187,7 +187,7 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
                         @Override
                         public void onSuccess(String info) {
                             LogUtil.e("openId" + info.split(",")[0] + "     " + info.split(",")[1]);
-                            mBindThreadPresenter.bindThread(type, info.split(",")[1], info.split("1")[0]);
+                            mBindThreadPresenter.bindThread(type, info.split(",")[1], info.split(",")[0]);
                         }
 
                         @Override
