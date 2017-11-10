@@ -1,36 +1,29 @@
-package com.ediancha.edcbusiness.activity.my;
+package com.ediancha.edcbusiness.v1.activity.my;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+
+
 import com.bumptech.glide.Glide;
-import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.list.CommonAdapterHelper;
-import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
 import com.dmz.library.dmzapi.dialog.ChooseStringDialog;
 import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.utils.ResUtil;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
-import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.dmz.library.dmzapi.view.custom.ChooseStringView;
 import com.dmz.library.dmzapi.view.custom.TipView;
 import com.ediancha.edcbusiness.R;
-import com.ediancha.edcbusiness.activity.help.FanKuiActivity;
-import com.ediancha.edcbusiness.bean.MyInfoBean;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.constant.NormalContant;
-import com.ediancha.edcbusiness.dialog.CommonDialog;
 import com.ediancha.edcbusiness.helper.PhotoHelper;
 import com.ediancha.edcbusiness.helper.login.ILoginResultInterface;
 import com.ediancha.edcbusiness.helper.login.Login;
@@ -40,16 +33,13 @@ import com.ediancha.edcbusiness.presenter.my.UpdateHeaderPresenter;
 import com.ediancha.edcbusiness.presenter.my.UpdateNamePresenter;
 import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
-
 import java.util.ArrayList;
-
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * Created by dengmingzhi on 2017/9/26.
  */
-@Route(path = "/activity/my/myInfo")
+@Route(path = "/v1/activity/my/myInfo")
 public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.OnConvertInterface<CommonAdapterHelper.CommonBean>, AdapterHelper.OnClickListener, UpdateNamePresenter.IUpDateNameView, UpdateHeaderPresenter.IUpdateHeaderView, BindThreadPresenter.IBindThreadView {
 
     @BindView(R.id.rvContent)
@@ -62,7 +52,6 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
     private BindThreadPresenter mBindThreadPresenter;
     private UpdateHeaderPresenter mHeaderPresenter;
     private String path;
-    private String access_token;
     private int type;
 
 
@@ -105,7 +94,6 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
                 TextView textView = holder.<TextView>getView(R.id.tvContent);
                 textView.setCompoundDrawables(null, null, ResUtil.setDra(this, ResUtil.getMipResId(this, commonBean.getRightImage())), null);
                 break;
-
         }
     }
 
