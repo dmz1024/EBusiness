@@ -3,6 +3,7 @@ package com.ediancha.edcbusiness.activity.fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +12,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.bean.HomeBean;
 import com.ediancha.edcbusiness.helper.ImageLoader;
 import com.ediancha.edcbusiness.router.Go;
+import com.ediancha.edcbusiness.v1.presenter.HomePresenter;
 import com.ediancha.edcbusiness.view.LazyLoadFragment;
 import com.zhouwei.mzbanner.MZBannerView;
 import com.zhouwei.mzbanner.holder.MZHolderCreator;
@@ -30,7 +34,7 @@ import butterknife.Unbinder;
  * Created by Admin on 2017/10/9.
  */
 
-public class HomeFragment extends LazyLoadFragment {
+public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHomeView {
 
 
     @BindView(R.id.tv_center)
@@ -67,7 +71,8 @@ public class HomeFragment extends LazyLoadFragment {
     TextView mTvContent;
     @BindView(R.id.recy)
     RecyclerView mRecy;
-    Unbinder unbinder;
+
+    private HomePresenter mHomePresenter;
 
     public static HomeFragment newInstance() {
         return new HomeFragment();
@@ -75,20 +80,8 @@ public class HomeFragment extends LazyLoadFragment {
 
     @Override
     public void initBaseView() {
-
-        List<String> list = new ArrayList<>();
-        list.add("http://img.ivsky.com/img/bizhi/pre/201709/27/mercedes_maybach_g650_landaulet-001.jpg");
-        list.add("http://imgsrc.baidu.com/image/c0%3Dshijue1%2C0%2C0%2C294%2C40/sign=e05fa110566034a83defb0c2a37a2321/5fdf8db1cb1349547059c0755c4e9258d1094a5f.jpg");
-        list.add("http://imgsrc.baidu.com/imgad/pic/item/c8ea15ce36d3d539e829c8dc3087e950352ab09d.jpg");
-        list.add("http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg");
-        // 设置数据
-        mBanner.setPages(list, new MZHolderCreator<BannerViewHolder>() {
-            @Override
-            public BannerViewHolder createViewHolder() {
-                return new BannerViewHolder();
-            }
-        });
-        mBanner.start();
+        mHomePresenter = mHomePresenter != null ? mHomePresenter : new HomePresenter(this);
+        mHomePresenter.getHomeView();
     }
 
     @Override
@@ -99,9 +92,12 @@ public class HomeFragment extends LazyLoadFragment {
     @Override
     protected void lazyLoad() {
 
-        mTvName.setText("0000");
+//        mTvName.setText("0000");
+//
+//        ImageLoader.loadImageOvel(getContext(), "http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg", mImgHead);
 
-        ImageLoader.loadImageOvel(getContext(), "http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg", mImgHead);
+
+
     }
 
     @Override
@@ -114,8 +110,27 @@ public class HomeFragment extends LazyLoadFragment {
         });
     }
 
+    @Override
+    public void successHome(HomeBean.Data homeBean) {
 
-    public static class BannerViewHolder implements MZViewHolder<String> {
+
+        ArrayList<HomeBean.AdsBean> ads = homeBean.getAds();
+        mBanner.setPages(ads, new MZHolderCreator<BannerViewHolder>() {
+            @Override
+            public BannerViewHolder createViewHolder() {
+                return new BannerViewHolder();
+            }
+        });
+        mBanner.start();
+    }
+
+
+    private void initRecyclerView() {
+
+    }
+
+
+    public static class BannerViewHolder implements MZViewHolder<HomeBean.AdsBean> {
         private ImageView mImageView;
 
         @Override
@@ -127,9 +142,10 @@ public class HomeFragment extends LazyLoadFragment {
         }
 
         @Override
-        public void onBind(Context context, int position, String data) {
+        public void onBind(Context context, int position, HomeBean.AdsBean data) {
             // 数据绑定
-            ImageLoader.loadImageRec(context, data, mImageView);
+            Log.e("加载网址",data.getImages());
+            ImageLoader.loadImageRec(context, data.getImages(), mImageView);
         }
     }
 

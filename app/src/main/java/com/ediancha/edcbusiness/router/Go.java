@@ -322,12 +322,20 @@ public class Go {
     }
 
     /**
+     * 进行中订单
+     */
+    public static void goOrderingActivity() {
+        ARouter.getInstance().build(RouterUrl.ORDERING_ACTIVITY)
+                .navigation();
+    }
+    /**
      * 空气质量
      */
     public static void goAirQualityActivity() {
         ARouter.getInstance().build(RouterUrl.AIR_QUALITY_ACTIVITY)
                 .navigation();
     }
+
 
 
 

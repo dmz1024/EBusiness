@@ -3,6 +3,7 @@ package com.ediancha.edcbusiness.activity.space;
 
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.webkit.WebView;
@@ -91,7 +92,7 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
         AdapterHelper._instance(this, mRyUser)._initData(bean.getFacilities()).setLayoutManager(new GridLayoutManager(this, 3))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_space_textview).setConvertInterface(this));
 //        //用途
-        AdapterHelper._instance(this, mRecyActivity)._initData(bean.getPurpose()).setLayoutManager(new GridLayoutManager(this, 3))
+        AdapterHelper._instance(this, mRecyActivity)._initData(bean.getPurpose()).setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.item_space_activity).setConvertInterface(this));
     }
 
@@ -173,5 +174,8 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
         }
     }
 
-
+    @Override
+    protected int getRid() {
+        return R.layout.activity_choose_time;
+    }
 }

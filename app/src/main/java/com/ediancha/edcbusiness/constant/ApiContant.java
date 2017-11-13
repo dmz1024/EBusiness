@@ -209,4 +209,5 @@ public interface ApiContant {
      */
     String CASHPLEDGE=BASE_API+"/space/reserve?type=3";
 
+
 }

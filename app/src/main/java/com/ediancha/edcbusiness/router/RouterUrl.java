@@ -81,7 +81,7 @@ public interface RouterUrl {
     /**
      * 优惠券
      */
-    String Coupon_ACTIVITY = "/activity/walletbag/coupon";
+    String Coupon_ACTIVITY = "/v1/activity/walletbag/coupon";
 
     /**
      * 押金
@@ -104,7 +104,7 @@ public interface RouterUrl {
     /**
      * 优惠兑换
      */
-    String COUPONCHANGE_ACTIVITY = "/activity/coupon/couponChange";
+    String COUPONCHANGE_ACTIVITY = "/v1/activity/coupon/couponChange";
 
     /**
      * 我的资料
@@ -200,7 +200,14 @@ public interface RouterUrl {
 
 
     /**
+     * 进行中订单
+     */
+    String ORDERING_ACTIVITY = "/v1/activity/order/ordering";
+
+
+    /**
      * 空气质量
      */
     String AIR_QUALITY_ACTIVITY = "/v1/activity/space/airQuality";
+
 }

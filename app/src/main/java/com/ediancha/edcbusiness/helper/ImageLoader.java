@@ -2,6 +2,7 @@ package com.ediancha.edcbusiness.helper;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
@@ -36,7 +37,7 @@ public class ImageLoader {
      * @param uri
      * @param target
      */
-    public static void loadImageOvel(Context mContext, Object uri, ImageView target) {
+    public static void loadImageOvel(Context mContext, String uri, ImageView target) {
         Glide.with(mContext)
                 .load(uri)
                 .apply(new RequestOptions()

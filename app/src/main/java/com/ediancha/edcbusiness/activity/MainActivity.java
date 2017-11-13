@@ -28,7 +28,7 @@ import com.ediancha.edcbusiness.helper.QwHelper;
 
 import com.ediancha.edcbusiness.helper.login.QQLogin;
 import com.ediancha.edcbusiness.helper.share.Share;
-import com.ediancha.edcbusiness.presenter.HomePresenter;
+import com.ediancha.edcbusiness.v1.presenter.HomePresenter;
 
 import com.ediancha.edcbusiness.router.Go;
 import com.tmall.ultraviewpager.UltraViewPager;
@@ -253,8 +253,8 @@ public class MainActivity extends NotNetBaseActivity implements View.OnClickList
 
     @Override
     public void successHome(HomeBean.Data homeBean) {
-        ArrayList<HomeBean.SpaceListBean> spaceList = homeBean.getSpaceList();
-        initRecyclerView(spaceList);
+//        ArrayList<HomeBean.SpaceListBean> spaceList = homeBean.getSpaceList();
+//        initRecyclerView(spaceList);
     }
 
 
