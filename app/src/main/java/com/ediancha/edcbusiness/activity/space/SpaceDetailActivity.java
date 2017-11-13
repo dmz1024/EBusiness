@@ -24,6 +24,7 @@ import com.ediancha.edcbusiness.helper.ImageLoader;
 import com.ediancha.edcbusiness.helper.OpenMapHelper;
 import com.ediancha.edcbusiness.helper.share.Share;
 import com.ediancha.edcbusiness.router.Go;
+import com.ediancha.edcbusiness.v1.dialog.SpaceDescDialog;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import butterknife.BindView;
@@ -102,7 +103,7 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
 
     }
 
-    @OnClick({R.id.tv_local, R.id.tv_number, R.id.tv_submit})
+    @OnClick({R.id.tv_local, R.id.tv_number, R.id.tv_submit,R.id.tv_title,R.id.ln_pm})
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_local:
@@ -113,6 +114,12 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
                 break;
             case R.id.tv_submit:
                 Go.goChoseDateActivity();
+                break;
+            case R.id.tv_title:
+                SpaceDescDialog.getInstance().show(this);
+                break;
+            case R.id.ln_pm:
+                Go.goAirQualityActivity();
                 break;
             default:
         }
