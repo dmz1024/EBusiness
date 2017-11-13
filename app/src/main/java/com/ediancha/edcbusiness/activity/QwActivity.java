@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.uuzuche.lib_zxing.activity.CaptureFragment;
@@ -94,9 +95,15 @@ public class QwActivity extends ToobarBaseActivity implements View.OnClickListen
                 writeNum();
                 break;
             case R.id.rlLight:
-                CodeUtils.isLightEnable(isLight = !isLight);
-                tvLight.setText(isLight ? "关闭手电筒" : "打开手电筒");
-                ivLight.setImageResource(isLight ? R.mipmap.icon_open_light : R.mipmap.icon_colse_light);
+                try {
+                    CodeUtils.isLightEnable(!isLight);
+                    isLight = !isLight;
+                    tvLight.setText(isLight ? "关闭手电筒" : "打开手电筒");
+                    ivLight.setImageResource(isLight ? R.mipmap.icon_open_light : R.mipmap.icon_colse_light);
+                }catch (Exception e){
+                    MyToast.error("没有摄像头权限");
+                }
+
                 break;
         }
     }
@@ -116,7 +123,11 @@ public class QwActivity extends ToobarBaseActivity implements View.OnClickListen
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        CodeUtils.isLightEnable(false);
+        try {
+            CodeUtils.isLightEnable(false);
+        } catch (Exception e) {
+
+        }
     }
 
 }

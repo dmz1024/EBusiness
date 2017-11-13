@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.dmz.library.dmzapi.R;
@@ -17,8 +18,8 @@ import java.util.ArrayList;
  */
 
 public class BaseSheetDialog extends NoTitleDialoggFragment {
-    protected LinearLayout llRoot;
-    protected BottomSheetBehavior<LinearLayout> from;
+    protected ViewGroup llRoot;
+    protected BottomSheetBehavior<ViewGroup> from;
     protected View itemView;
     @Override
     final protected int getRid() {
@@ -80,5 +81,10 @@ public class BaseSheetDialog extends NoTitleDialoggFragment {
 
     protected boolean isCanHidden() {
         return true;
+    }
+
+    @Override
+    protected int getGravity() {
+        return Gravity.BOTTOM;
     }
 }

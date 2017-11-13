@@ -58,9 +58,9 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
     @Override
     protected void initData() {
         super.initData();
-        mUpdateNamePresenter = mUpdateNamePresenter != null ? mUpdateNamePresenter : new UpdateNamePresenter(this);
-        mHeaderPresenter = mHeaderPresenter != null ? mHeaderPresenter : new UpdateHeaderPresenter(this);
-        mBindThreadPresenter = mBindThreadPresenter != null ? mBindThreadPresenter : new BindThreadPresenter(this);
+        mUpdateNamePresenter = new UpdateNamePresenter(this);
+        mHeaderPresenter =new UpdateHeaderPresenter(this);
+        mBindThreadPresenter = new BindThreadPresenter(this);
 
 
         mHelper = new PhotoHelper(this);

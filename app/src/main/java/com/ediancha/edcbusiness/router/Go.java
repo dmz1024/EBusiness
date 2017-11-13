@@ -320,4 +320,15 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.CASH_PLEDGE_ACTIVITY)
                 .navigation();
     }
+
+    /**
+     * 空气质量
+     */
+    public static void goAirQualityActivity() {
+        ARouter.getInstance().build(RouterUrl.AIR_QUALITY_ACTIVITY)
+                .navigation();
+    }
+
+
+
 }

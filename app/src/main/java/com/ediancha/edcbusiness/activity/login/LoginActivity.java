@@ -24,6 +24,7 @@ import com.ediancha.edcbusiness.presenter.user.CodePresenter;
 import com.ediancha.edcbusiness.presenter.user.LoginPresenter;
 import com.ediancha.edcbusiness.presenter.user.ThreadLoginPresenter;
 import com.ediancha.edcbusiness.router.Go;
+import com.ediancha.edcbusiness.v1.dialog.DealDialog;
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.Length;
@@ -58,8 +59,6 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
     TextView tvCodeTime;
     @BindView(R.id.btLogin)
     Button btLogin;
-    @BindView(R.id.tvNoLogin)
-    TextView tvNoLogin;
     @BindView(R.id.tvXieyi)
     TextView mTvXieyi;
     @BindView(R.id.img_wechat)
@@ -68,7 +67,7 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
     ImageView mTvQq;
 
     int type;
-    String access_token,openid;
+    String access_token, openid;
     @BindView(R.id.thread)
     LinearLayout mThread;
     private ThreadLoginPresenter mThreadLoginPresenter;
@@ -103,12 +102,10 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
 
     private CodeHelper codeHelper;
 
-    @OnClick({R.id.tvNoLogin, R.id.btLogin, R.id.ivCha, R.id.tvCode, R.id.tvXieyi, R.id.img_qq, R.id.img_wechat})
+    @OnClick({ R.id.btLogin, R.id.ivCha, R.id.tvCode, R.id.tvXieyi, R.id.img_qq, R.id.img_wechat})
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.ivCha:
-            case R.id.tvNoLogin:
-                finish();
                 break;
             case R.id.btLogin:
                 login();
@@ -117,10 +114,10 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
                 code();
                 break;
             case R.id.tvXieyi:
-                Go.goWebView("https://www.baidu.com");
+                DealDialog.getInstance().setTitle("用户注册协议").setUrl("https://www.baidu.com").show(this);
                 break;
             case R.id.img_wechat:
-                type=1;
+                type = 1;
                 Login.getLogin(0)
                         .setListener(new ILoginResultInterface() {
                             @Override
@@ -130,7 +127,7 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
 
                             @Override
                             public void onCancel() {
-                                MyToast.normal("取消微信授权登陆!");
+
                             }
 
                             @Override
@@ -141,18 +138,18 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
                         .start(this);
                 break;
             case R.id.img_qq:
-                type=2;
+                type = 2;
                 login = (QQLogin) Login.getLogin(1).setListener(new ILoginResultInterface() {
                     @Override
                     public void onSuccess(String info) {
-                        access_token=info.split(",")[1];
-                        openid=info.split(",")[0];
+                        access_token = info.split(",")[1];
+                        openid = info.split(",")[0];
                         mThreadLoginPresenter.threadLogin(openid, 1);
                     }
 
                     @Override
                     public void onCancel() {
-                        MyToast.normal("取消QQ授权登陆!");
+
                     }
 
                     @Override
@@ -208,11 +205,11 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
 
     @Override
     public void onValidationSucceeded() {
-        if (type==0){
+        if (type == 0) {
             loginPresenter.login(etName.getText().toString(), etCode.getText().toString());
-        }else {
-            mThreadLoginPresenter.bindLogin(type+"",etName.getText().toString(),
-                    etCode.getText().toString(),access_token,openid);
+        } else {
+            mThreadLoginPresenter.bindLogin(type + "", etName.getText().toString(),
+                    etCode.getText().toString(), access_token, openid);
         }
     }
 
@@ -232,7 +229,7 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
     public void regBind() {
         mThread.setVisibility(View.GONE);
         btLogin.setText("绑定并登录");
-        type=1;
+        type = 1;
     }
 
     @Override

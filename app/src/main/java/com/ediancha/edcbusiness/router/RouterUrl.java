@@ -197,4 +197,10 @@ public interface RouterUrl {
      * v1押金
      */
     String CASH_PLEDGE_ACTIVITY = "/v1/activity/my/cashPledge";
+
+
+    /**
+     * 空气质量
+     */
+    String AIR_QUALITY_ACTIVITY = "/v1/activity/space/airQuality";
 }
