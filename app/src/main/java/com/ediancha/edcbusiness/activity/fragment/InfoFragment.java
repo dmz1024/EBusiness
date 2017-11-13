@@ -164,10 +164,11 @@ public class InfoFragment extends LazyLoadFragment implements InfoPresenter.IInf
             case 2:
                 switch (position) {
                     case 0:
-                        Go.goSpecial();
+                        Go.goExpenseTips();//交易提醒
+//                        Go.goSpecial();//专题
                         break;
                     case 1:
-                        Go.goExpenseTips();
+                        Go.goActivitySplendid();//活动通知
                         break;
                     case 2:
                         Go.goActivitySplendid();

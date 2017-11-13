@@ -1,30 +1,34 @@
 package com.ediancha.edcbusiness.activity.fragment;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.dmz.library.dmzapi.api.LogUtil;
+import com.dmz.library.dmzapi.api.bean.IType;
+import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.HomeBean;
 import com.ediancha.edcbusiness.helper.ImageLoader;
+import com.ediancha.edcbusiness.helper.TextStylesHelper;
 import com.ediancha.edcbusiness.router.Go;
 import com.ediancha.edcbusiness.v1.presenter.HomePresenter;
 import com.ediancha.edcbusiness.view.LazyLoadFragment;
 import com.zhouwei.mzbanner.MZBannerView;
 import com.zhouwei.mzbanner.holder.MZHolderCreator;
 import com.zhouwei.mzbanner.holder.MZViewHolder;
+import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,7 +38,7 @@ import butterknife.Unbinder;
  * Created by Admin on 2017/10/9.
  */
 
-public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHomeView {
+public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHomeView, AdapterHelper.OnConvertInterface, AdapterHelper.OnClickListener {
 
 
     @BindView(R.id.tv_center)
@@ -43,35 +47,21 @@ public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHom
     TextView mTvRight;
     @BindView(R.id.banner)
     MZBannerView mBanner;
-    @BindView(R.id.img_pic)
-    ImageView mImgPic;
-    @BindView(R.id.recy_label)
-    RecyclerView mRecyLabel;
-    @BindView(R.id.ln_label)
-    LinearLayout mLnLabel;
-    @BindView(R.id.tv_money)
-    TextView mTvMoney;
-    @BindView(R.id.tv_time)
-    TextView mTvTime;
-    @BindView(R.id.img_ue_pic)
-    ImageView mImgUePic;
-    @BindView(R.id.tv_label)
-    TextView mTvLabel;
-    @BindView(R.id.rl_ue_show)
-    RelativeLayout mRlUeShow;
-    @BindView(R.id.img_head)
-    ImageView mImgHead;
-    @BindView(R.id.tv_name)
-    TextView mTvName;
-    @BindView(R.id.tv_office)
-    TextView mTvOffice;
-    @BindView(R.id.rl_ue_user)
-    RelativeLayout mRlUeUser;
-    @BindView(R.id.tv_content)
-    TextView mTvContent;
-    @BindView(R.id.recy)
-    RecyclerView mRecy;
-
+    @BindView(R.id.tv_title)
+    TextView mTvTitle;
+    @BindView(R.id.tv_detail)
+    TextView mTvDetail;
+    @BindView(R.id.ln_title)
+    LinearLayout mLnTitle;
+    @BindView(R.id.space_item)
+    RecyclerView mSpaceItem;
+    @BindView(R.id.tv_tiyan)
+    TextView mTvTiyan;
+    @BindView(R.id.tv_tydetail)
+    TextView mTvTydetail;
+    @BindView(R.id.recy_tiyan)
+    RecyclerView mRecyTiyan;
+    Unbinder unbinder;
     private HomePresenter mHomePresenter;
 
     public static HomeFragment newInstance() {
@@ -97,24 +87,17 @@ public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHom
 //        ImageLoader.loadImageOvel(getContext(), "http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg", mImgHead);
 
 
-
     }
 
     @Override
     protected void setListener() {
-        mImgPic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Go.goSpaceDetail("1", null, null);
-            }
-        });
     }
 
     @Override
     public void successHome(HomeBean.Data homeBean) {
 
-
         ArrayList<HomeBean.AdsBean> ads = homeBean.getAds();
+        Log.e("加载网址成功", ads.toString());
         mBanner.setPages(ads, new MZHolderCreator<BannerViewHolder>() {
             @Override
             public BannerViewHolder createViewHolder() {
@@ -122,11 +105,68 @@ public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHom
             }
         });
         mBanner.start();
+        initRecyclerView(homeBean);
     }
 
+    AdapterHelper mSpaceAdapter;
+    AdapterHelper mTiyanAdapter;
 
-    private void initRecyclerView() {
+    private void initRecyclerView(HomeBean.Data homeBean) {
+        HomeBean.SpaceBean space = homeBean.getSpace();
+        mTvTitle.setText(space.getTitle());
+        mTvDetail.setText(space.getSubTitle());
+        mSpaceAdapter = AdapterHelper._instance(getActivity(), mSpaceItem)
+                ._initData(homeBean.space.getSpaceList())
+                .setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false) {
+                                      @Override
+                                      public boolean canScrollVertically() {
+                                          return false;
+                                      }
+                                  }
+                ).setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.adapter_space_item).setConvertInterface(this)
+                        .setOnClickListener(this));
 
+        HomeBean.CommentBean comment = homeBean.getComment();
+        mTvTiyan.setText(comment.getTitle());
+        mTvTydetail.setText(comment.getSubTitle());
+        mTiyanAdapter = AdapterHelper._instance(getContext(), mRecyTiyan)._initData(comment.getSpaceComment())
+                .setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false) {
+                    @Override
+                    public boolean canScrollVertically() {
+                        return false;
+                    }
+                }).setType(new AdapterHelper.ViewTypeInfo().setType(2).setRid(R.layout.adapter_ue_item).setConvertInterface(this));
+    }
+
+    @Override
+    public void convert(int viewType, ViewHolder holder, IType iType, int position) {
+        if (viewType == 1) {
+            HomeBean.SpaceListBean spaceListBean = (HomeBean.SpaceListBean) iType;
+            holder.setText(R.id.tv_name, spaceListBean.getSpaceName());
+            String label = "可容纳" + spaceListBean.spaceLoadNumber + "人|" + spaceListBean.getSpaceDesc();
+            holder.setText(R.id.tv_label, label);
+            ImageLoader.loadImageRec(getContext(), spaceListBean.getSpaceImage(), holder.<ImageView>getView(R.id.img_pic));
+            String[] labelname = spaceListBean.getLabelname();
+            for (int i = 0; i < labelname.length; i++) {
+                TextView tvLabel = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.item_text_label, null, false);
+                tvLabel.setText(labelname[i]);
+                holder.<LinearLayout>getView(R.id.ln_label)
+                        .addView(tvLabel);
+            }
+        } else if (viewType == 2) {
+            HomeBean.SpaceCommentBean comment = (HomeBean.SpaceCommentBean) iType;
+            holder.setText(R.id.tv_name, comment.getNickname());
+            holder.setText(R.id.tv_office, "UI设计师|东方盈");
+            holder.setText(R.id.tv_content, comment.getContent());
+            ImageLoader.loadImageRec(getContext(), comment.getImages(), holder.<ImageView>getView(R.id.img_ue_pic));
+            ImageLoader.loadImageOvel(getContext(), comment.getImages(), holder.<ImageView>getView(R.id.img_head));
+        }
+    }
+
+    @Override
+    public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
+        HomeBean.SpaceListBean spaceBean = adapterHelper.<HomeBean.SpaceListBean>getT(position);
+        Go.goSpaceDetail(spaceBean.getId(), null, null);
     }
 
 
@@ -144,8 +184,16 @@ public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHom
         @Override
         public void onBind(Context context, int position, HomeBean.AdsBean data) {
             // 数据绑定
-            Log.e("加载网址",data.getImages());
+
             ImageLoader.loadImageRec(context, data.getImages(), mImageView);
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (mBanner != null) {
+            mBanner.pause();
         }
     }
 

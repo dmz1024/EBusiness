@@ -71,7 +71,7 @@
                         android:layout_height="wrap_content"
                         android:text="36"
                         android:textColor="@color/color_ffc730"
-                        android:textSize="@dimen/sp15" />
+                        android:textSize="@dimen/sp16" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -83,6 +83,7 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/tv_envir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
@@ -94,7 +95,7 @@
                     android:paddingLeft="@dimen/size3"
                     android:paddingRight="@dimen/size3"
                     android:paddingTop="@dimen/size5"
-                    android:text="空气质量|优"
+                    android:text=""
                     android:textColor="@color/color_f6f6f6"
                     android:textSize="@dimen/sp14" />
             </RelativeLayout>

@@ -37,17 +37,13 @@
             android:paddingLeft="@dimen/size10"
             android:paddingRight="@dimen/size10"
             android:paddingTop="@dimen/size5"
-            android:text="空间订单"
+            android:text="商品订单"
             android:textColor="@color/space_order_text_style" />
     </RadioGroup>
-
-    <TableLayout
-        android:id="@+id/tab_name"
+    <FrameLayout
+        android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent">
 
-    <com.ediancha.edcbusiness.view.ViewpagerNoScroll
-        android:id="@+id/vp_show"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    </FrameLayout>
 </LinearLayout>

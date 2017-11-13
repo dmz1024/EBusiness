@@ -21,15 +21,14 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.ChoseDateBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.helper.ImageLoader;
-import com.ediancha.edcbusiness.router.Go;
 import com.github.czy1121.view.CornerLabelView;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
 
-import butterknife.BindColor;
+
 import butterknife.BindView;
-import butterknife.OnClick;
+
 
 /**
  * 选择时段

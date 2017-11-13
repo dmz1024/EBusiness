@@ -1,4 +1,4 @@
-package com.ediancha.edcbusiness.activity.message;
+package com.ediancha.edcbusiness.v1.activity.message;
 
 import android.graphics.Color;
 import android.widget.ImageView;
@@ -18,7 +18,7 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
  * Created by dengmingzhi on 2017/9/22.
  */
 
-@Route(path = "/activity/message/activitySplendid")
+@Route(path = "/v1/activity/message/activitySplendid")
 public class ActivitySplendidActivity extends MoreDataBaseActivity<ActivitySplendidBean.Data, ActivitySplendidBean> {
 
     @Override

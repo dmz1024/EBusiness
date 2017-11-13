@@ -35,17 +35,17 @@ public interface RouterUrl {
     /**
      * 活动消息
      */
-    String ACTIVITY_MESSAGE_ACTIVITY = "/activity/message/activityMessage";
+    String ACTIVITY_MESSAGE_ACTIVITY = "/v1/activity/message/activityMessage";
 
     /**
      * 活动精选
      */
-    String ACTIVITY_SPLENDID_ACTIVITY = "/activity/message/activitySplendid";
+    String ACTIVITY_SPLENDID_ACTIVITY = "/v1/activity/message/activitySplendid";
 
     /**
      * 交易通知
      */
-    String EXPENSE_TIPS_ACTIVITY = "/activity/message/expenseTips";
+    String EXPENSE_TIPS_ACTIVITY = "/v1/activity/message/expenseTips";
 
 
     /**
@@ -94,12 +94,12 @@ public interface RouterUrl {
     /**
      * 帮助中心
      */
-    String HELPCENTER_ACTIVITY = "/activity/help/helpCenter";
+    String HELPCENTER_ACTIVITY = "/v1/activity/help/helpCenter";
 
     /**
      * 帮助中心————问题分类
      */
-    String HELPCENTER_NEXT_ACTIVITY = "/activity/help/helpCenterNext";
+    String HELPCENTER_NEXT_ACTIVITY = "/v1/activity/help/helpCenterNext";
 
     /**
      * 优惠兑换
@@ -114,11 +114,11 @@ public interface RouterUrl {
     /**
      * 我的资料
      */
-    String FANKUI_ACTIVITY = "/activity/help/fankui";
+    String FANKUI_ACTIVITY = "/v1/activity/help/fankui";
     /**
      * H5页面
      */
-    String WEBVIEW_ACTIVITY = "/activity/help/webview";
+    String WEBVIEW_ACTIVITY = "/v1/activity/help/webview";
 
     /**
      * 缴纳押金
@@ -210,4 +210,9 @@ public interface RouterUrl {
      */
     String AIR_QUALITY_ACTIVITY = "/v1/activity/space/airQuality";
 
+
+    /**
+     * 已完成订单
+     */
+    String ORDEREND_ACTIVITY = "/v1/activity/order/ordershop";
 }

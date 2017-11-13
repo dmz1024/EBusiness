@@ -63,8 +63,7 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <activity android:name=".activity.Main5Activity" />
-        <activity android:name=".activity.Main6Activity" />
+
         <activity
             android:name=".activity.my.PersonCenterActivity"
             android:theme="@style/PersonCenterTheme" />
@@ -72,21 +71,21 @@
             android:name=".activity.QwActivity"
             android:theme="@style/QwTheme" />
         <activity android:name=".activity.SpaceDescActivity" />
-        <activity android:name=".activity.message.ActivityMessageActivity" />
-        <activity android:name=".activity.message.ActivitySplendidActivity" />
-        <activity android:name=".activity.message.ExpenseTipsActivity" />
+        <activity android:name=".v1.activity.message.ActivityMessageActivity" />
+        <activity android:name=".v1.activity.message.ActivitySplendidActivity" />
+        <activity android:name=".v1.activity.message.ExpenseTipsActivity" />
         <activity android:name=".v1.activity.my.MyPackageActivity" />
         <activity android:name=".activity.walletbag.CouponActivity" />
         <activity android:name=".activity.walletbag.DepositActivity" />
         <activity android:name=".v1.activity.my.MoneyActivity" />
         <activity android:name=".activity.walletbag.ChargeActivity" />
         <activity android:name=".activity.coupon.CouponChangeActivity" />
-        <activity android:name=".activity.help.HelpCenterActivity" />
-        <activity android:name=".activity.help.FanKuiActivity" />
-        <activity android:name=".activity.help.WebViewActivity" />
+        <activity android:name=".v1.activity.help.HelpCenterActivity" />
+        <activity android:name=".v1.activity.help.FanKuiActivity" />
+        <activity android:name=".v1.activity.help.WebViewActivity" />
         <activity android:name=".activity.space.SpaceDetailActivity" />
         <activity android:name=".activity.my.AutherActivity" />
-        <activity android:name=".activity.help.HelpCenterNextActivity" />
+        <activity android:name=".v1.activity.help.HelpCenterNextActivity" />
         <activity
             android:name=".activity.login.LoginActivity"
             android:theme="@style/LoginTheme" />
@@ -106,6 +105,7 @@
         <activity android:name=".v1.activity.order.CheckOrderActivity" />
         <activity android:name=".v1.activity.order.SpacePayDetailActivity" />
         <activity android:name=".v1.activity.order.OrderingActivity"/>
+        <activity android:name=".v1.activity.order.OrderShopActivity"/>
 
         <activity android:name=".activity.HomeActivity">
             <intent-filter>

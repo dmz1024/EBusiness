@@ -14,15 +14,17 @@ import java.util.List;
 public class HomeBean extends BaseBean<HomeBean.Data> {
 
     public static class Data {
-        public ArrayList<SpaceBean> space;
-        public ArrayList<CommentBean> comment;
+
+        public SpaceBean space;
+        public CommentBean comment;
         public ArrayList<AdsBean> ads;
 
-        public ArrayList<SpaceBean> getSpaceList() {
+
+        public SpaceBean getSpace() {
             return space;
         }
 
-        public ArrayList<CommentBean> getComment() {
+        public CommentBean getComment() {
             return comment;
         }
 
@@ -55,7 +57,7 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
 
         public String title;
         public String subTitle;
-        public ArrayList<SpaceCommentBean> spaceList;
+        public ArrayList<SpaceCommentBean> spaceComment;
 
         public String getTitle() {
             return title;
@@ -65,8 +67,8 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
             return subTitle;
         }
 
-        public ArrayList<SpaceCommentBean> getSpaceList() {
-            return spaceList;
+        public ArrayList<SpaceCommentBean> getSpaceComment() {
+            return spaceComment;
         }
     }
 
@@ -145,6 +147,11 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
         public String[] getLabelname() {
             return labelname;
         }
+
+        @Override
+        public int getViewType() {
+            return 1;
+        }
     }
 
     /**
@@ -175,6 +182,11 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
 
         public String getHead_img() {
             return head_img;
+        }
+
+        @Override
+        public int getViewType() {
+            return 2;
         }
     }
 

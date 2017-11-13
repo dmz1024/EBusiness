@@ -1,8 +1,7 @@
-package com.ediancha.edcbusiness.activity.help;
+package com.ediancha.edcbusiness.v1.activity.help;
 
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
@@ -12,8 +11,6 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
-import com.dmz.library.dmzapi.api.DmzBuilder;
-import com.dmz.library.dmzapi.api.OnMySuccessListener;
 import com.dmz.library.dmzapi.api.upload.UploadFile;
 import com.dmz.library.dmzapi.dialog.ChooseStringDialog;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
@@ -21,17 +18,15 @@ import com.dmz.library.dmzapi.view.custom.ChooseStringView;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.helper.PhotoHelper;
 
-import java.io.File;
 import java.util.ArrayList;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 
 /**
  * Created by Admin on 2017/9/27.
  */
-@Route(path = "/activity/help/fankui")
+@Route(path = "/v1/activity/help/fankui")
 public class FanKuiActivity extends NotNetBaseActivity {
 
     @BindView(R.id.tv_type)

@@ -1,11 +1,10 @@
-package com.ediancha.edcbusiness.activity.help;
+package com.ediancha.edcbusiness.v1.activity.help;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
+
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.bean.IType;
@@ -30,8 +29,8 @@ import butterknife.OnClick;
 /**
  * Created by Admin on 2017/9/26.
  */
-@Route(path = "/activity/help/helpCenter")
-public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, HelpCenterBean.Data> implements AdapterHelper.OnClickListener, AdapterHelper.OnConvertInterface {
+@Route(path =  "/v1/activity/help/helpCenter")
+public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, HelpCenterBean.Data> implements  AdapterHelper.OnClickListener, AdapterHelper.OnConvertInterface {
     @BindView(R.id.recy_one)
     RecyclerView mRecyOne;
     @BindView(R.id.recy_two)
