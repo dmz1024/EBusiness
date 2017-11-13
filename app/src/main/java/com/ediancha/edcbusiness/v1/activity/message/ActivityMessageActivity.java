@@ -1,6 +1,5 @@
-package com.ediancha.edcbusiness.activity.message;
+package com.ediancha.edcbusiness.v1.activity.message;
 
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
 import com.dmz.library.dmzapi.api.bean.IType;
-import com.dmz.library.dmzapi.api.bean.ViewBaseType;
 import com.dmz.library.dmzapi.api.contract.SingleDataBuilder;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.presenter.IBasePresenter;
@@ -30,14 +28,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
  * Created by dengmingzhi on 2017/9/22.
  */
 
-@Route(path = "/activity/message/activityMessage")
+@Route(path = "/v1/activity/message/activityMessage")
 public class ActivityMessageActivity extends SingleDataBaseActivity<ActivityMessageBean, ActivityMessageBean.Data> implements AdapterHelper.OnConvertInterface<IType>, AdapterHelper.OnClickListener {
     @BindView(R.id.rvActivity)
     RecyclerView rvActivity;
@@ -52,7 +49,7 @@ public class ActivityMessageActivity extends SingleDataBaseActivity<ActivityMess
     @Override
     protected void initBarView() {
         super.initBarView();
-        dmzBar.setText("活动消息").addItemView(new DmzBar.DmzBarItemInfo().setIid(R.mipmap.icon_news_shezhi));
+        dmzBar.setText("活动精选");
     }
 
     @Override
@@ -169,13 +166,13 @@ public class ActivityMessageActivity extends SingleDataBaseActivity<ActivityMess
             case 2:
                 switch (position) {
                     case 0:
-                        Go.goSpecial();
+                        Go.goExpenseTips();//交易通知
                         break;
                     case 1:
-                        Go.goExpenseTips();
+                        Go.goActivitySplendid();//活动精选
                         break;
                     case 2:
-                        Go.goActivitySplendid();
+                        Go.goSpecial();//专题
                         break;
                 }
                 break;

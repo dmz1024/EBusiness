@@ -1,4 +1,4 @@
-package com.ediancha.edcbusiness.activity.message;
+package com.ediancha.edcbusiness.v1.activity.message;
 
 import android.graphics.Color;
 import android.widget.ImageView;
@@ -8,7 +8,6 @@ import com.bumptech.glide.Glide;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.view.activity.MoreDataBaseActivity;
 import com.ediancha.edcbusiness.R;
-import com.ediancha.edcbusiness.bean.ActivitySplendidBean;
 import com.ediancha.edcbusiness.bean.ExpenseTipsBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
@@ -18,7 +17,7 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
  */
 
 
-@Route(path = "/activity/message/expenseTips")
+@Route(path = "/v1/activity/message/expenseTips")
 public class ExpenseTipsActivity extends MoreDataBaseActivity<ExpenseTipsBean.Data, ExpenseTipsBean> {
 
     @Override

@@ -1,4 +1,4 @@
-package com.ediancha.edcbusiness.activity.help;
+package com.ediancha.edcbusiness.v1.activity.help;
 
 import android.view.KeyEvent;
 import android.view.View;
@@ -19,7 +19,7 @@ import com.ediancha.edcbusiness.helper.WebViewHelper;
 /**
  * Created by Admin on 2017/9/27.
  */
-@Route(path = "/activity/help/webview")
+@Route(path = "/v1/activity/help/webview")
 public class WebViewActivity extends ToobarBaseActivity {
 
     private WebView mWebView;

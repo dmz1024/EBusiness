@@ -12,7 +12,7 @@
     <ImageView
         android:id="@+id/img_pic"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="200dp"
         android:src="@color/color_ffc730"
         />
     <TextView
@@ -24,7 +24,7 @@
         android:layout_below="@+id/img_pic"
         android:paddingLeft="@dimen/size10"
         android:text="xxx"
-        android:layout_marginTop="@dimen/size10"/>
+        android:layout_marginTop="@dimen/size10" />
     <TextView
         android:id="@+id/tv_label"
         android:layout_width="match_parent"
@@ -44,11 +44,6 @@
         android:layout_below="@+id/tv_label"
         android:layout_marginLeft="@dimen/size10"
         android:layout_marginBottom="@dimen/size10">
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recy_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </android.support.v7.widget.RecyclerView>
     </LinearLayout>
 
     <LinearLayout
@@ -57,9 +52,10 @@
         android:orientation="vertical"
         android:layout_alignParentRight="true"
         android:layout_marginTop="@dimen/size10"
-        android:layout_marginRight="@dimen/size10"
+        android:layout_marginRight="@dimen/size15"
         android:background="@drawable/space_price_time_style"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_below="@+id/ln_title">
 
         <TextView
             android:id="@+id/tv_money"

@@ -1,7 +1,5 @@
 package com.ediancha.edcbusiness.activity;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.View;
@@ -14,7 +12,7 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.activity.fragment.HomeFragment;
 import com.ediancha.edcbusiness.activity.fragment.InfoFragment;
 import com.ediancha.edcbusiness.activity.fragment.MeFragment;
-import com.ediancha.edcbusiness.activity.fragment.SpeciaFragment;
+import com.ediancha.edcbusiness.activity.fragment.OrderFragment;
 import com.ediancha.edcbusiness.view.ViewpagerNoScroll;
 
 import java.util.ArrayList;
@@ -40,7 +38,7 @@ public class HomeActivity extends NotNetBaseActivity {
     RadioGroup mRgChose;
 
     private HomeFragment mHomeFragment;
-    private SpeciaFragment mSpeciaFragment;
+    private OrderFragment mSpeciaFragment;
     private MeFragment mMeFragment;
     private InfoFragment mInfoFragment;
 
@@ -105,7 +103,7 @@ public class HomeActivity extends NotNetBaseActivity {
     }
 
     private void initFragment() {
-        mSpeciaFragment = new SpeciaFragment();
+        mSpeciaFragment = new OrderFragment();
         mHomeFragment = new HomeFragment();
         mMeFragment = new MeFragment();
         mInfoFragment = new InfoFragment();

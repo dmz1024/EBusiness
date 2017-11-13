@@ -1,4 +1,4 @@
-package com.ediancha.edcbusiness.activity.help;
+package com.ediancha.edcbusiness.v1.activity.help;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by Admin on 2017/9/29.
  */
-@Route(path = "/activity/help/helpCenterNext")
+@Route(path = "/v1/activity/help/helpCenterNext")
 public class HelpCenterNextActivity extends MoreDataBaseActivity<HelpCenterNextBean.Data,HelpCenterNextBean>{
 
     @Autowired
