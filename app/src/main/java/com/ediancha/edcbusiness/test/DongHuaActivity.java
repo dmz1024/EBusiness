@@ -38,4 +38,12 @@ public class DongHuaActivity extends AppCompatActivity {
     public void dengluxieyi(View v) {
         DealDialog.getInstance().setTitle("用户注册协议").setUrl("https://www.baidu.com").show(this);
     }
+
+    public void shezhi(View v) {
+        Go.goSetActivity();
+    }
+
+    public void login(View v) {
+        Go.goLogin();
+    }
 }

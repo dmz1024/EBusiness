@@ -1,0 +1,44 @@
+[
+  {
+    "iViewType": 7,
+    "title": "Space通知",
+    "rightImage": "level_check_style"
+  },
+  {
+    "iViewType": 7,
+    "title": "交易通知",
+    "rightImage": "level_check_style"
+  },
+  {
+    "iViewType": 7,
+    "title": "活动精选",
+    "rightImage": "level_check_style"
+  },
+  {
+    "iViewType": 4
+  },
+  {
+    "iViewType": 8,
+    "title": "用户协议",
+    "rightImage": "icon_wallet_password_arrow"
+  },
+
+  {
+    "iViewType": 8,
+    "title": "清除缓存",
+    "rightImage": "icon_wallet_password_arrow"
+  },
+  {
+    "iViewType": 8,
+    "title": "关于我们",
+    "rightImage": "icon_wallet_password_arrow"
+  },
+  {
+    "iViewType": 4
+  },
+  {
+    "iViewType": 8,
+    "title": "应用权限",
+    "rightImage": "icon_wallet_password_arrow"
+  }
+]
