@@ -2,21 +2,38 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:paddingLeft="@dimen/size10"
+    android:paddingRight="@dimen/size10"
+    >
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/fgRoot"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size40"
         android:background="@drawable/shape_b0000000"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="9dp">
 
-        <ImageView
-            android:id="@+id/iv_loading"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/my_progress_loading" />
-    </RelativeLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_loading"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_progress_loading" />
+            <TextView
+                android:textColor="#fff"
+                android:layout_marginLeft="@dimen/size10"
+                android:textSize="@dimen/sp12"
+                android:text="正在加载"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
 </RelativeLayout>

@@ -215,6 +215,11 @@ public interface RouterUrl {
      * 已完成订单
      */
     String ORDEREND_ACTIVITY = "/v1/activity/order/ordershop";
+
+    /**
+     * 输入门牌号开门
+     */
+    String OPEN_INPUT_ACTIVITY = "/v1/activity/space/openinput";
     /**
      * 设置
      */

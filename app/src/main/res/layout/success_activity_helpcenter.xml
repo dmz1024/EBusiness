@@ -14,7 +14,7 @@
         android:padding="@dimen/size12"
         android:text="在线反馈"
         android:textColor="@color/color_fff"
-        android:textSize="@dimen/sp15" />
+        android:textSize="@dimen/sp15"/>
 
 
     <LinearLayout
@@ -33,11 +33,11 @@
             android:textColor="@color/color_333"
             android:textSize="@dimen/sp16" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recy_one"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff" />
 
         <TextView
             android:id="@+id/tv_type"
@@ -48,11 +48,12 @@
             android:textColor="@color/color_333"
             android:textSize="@dimen/sp16" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recy_two"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff" />
     </LinearLayout>
 
     <ImageView

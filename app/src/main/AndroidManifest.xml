@@ -106,6 +106,9 @@
         <activity android:name=".v1.activity.order.SpacePayDetailActivity" />
         <activity android:name=".v1.activity.order.OrderingActivity"/>
         <activity android:name=".v1.activity.order.OrderShopActivity"/>
+        <activity android:name=".v1.activity.my.SetActivity"/>
+        <activity android:name=".v1.activity.space.OpenInputActivity"/>
+        <activity android:name=".v1.activity.space.AirQualityActivity"/>
 
         <activity android:name=".activity.HomeActivity">
             <intent-filter>
@@ -190,9 +193,6 @@
 
 
         <activity android:name=".v1.activity.my.CashPledgeActivity"/>
-        <activity android:name=".v1.activity.space.AirQualityActivity"/>
-
-        <activity android:name=".v1.activity.my.SetActivity"/>
         <activity android:name=".v1.activity.my.LimitsActivity"/>
     </application>
 

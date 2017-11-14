@@ -7,8 +7,26 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="4462fea0dd3219241312bab85a0781bc20ae2eef">
+        sha1="a3a6c32820908e4947fe97c428235500443e92d1">
         <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b07ee5a2dc432e481ce58f616310f18c4d27e9c0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\disklrucache\4.3.1\9eaeaefa25c6ff18d7008f06208d41a261d8b29b\disklrucache-4.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9eaeaefa25c6ff18d7008f06208d41a261d8b29b">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\10\disklrucache-4.3.1_e93433473543a5366443d13c290272c5f3d3b74d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\annotations\4.3.1\a786169ed0f768a589503844726f2380bb2139c\annotations-4.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0a786169ed0f768a589503844726f2380bb2139c">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\10\annotations-4.3.1_fc0259b4ea15ba1fe40cd7f492084ae56b2cd5a8\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +36,42 @@
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7497065758631f2a61d5f15fc000fd9c05586867\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\gifdecoder\4.3.1\dc06b7679496073ef4505005b4c5995f522503cd\gifdecoder-4.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="dc06b7679496073ef4505005b4c5995f522503cd">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\10\gifdecoder-4.3.1_5975ac3ae30b1a6fe0648a9508aa05e0387cb5ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\android\ydc\EBusiness\app\libs\alipaySdk-20170922.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7537e663454a204c3675929dae034a556ac1f753">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\2\alipaySdk-20170922_6921aa1cf967ba5badbfcf07eebfc9cce55befb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\android\ydc\EBusiness\app\libs\open_sdk_r5886_lite.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6c08b5431b3bdfc936fadc29001f30b847b34864">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\2\open_sdk_r5886_lite_1099911e44f9a9397943e33fee2c418260b6cf16\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\4.3.1\9afb77c8712b19e421caecefe8e85e98ab327ce7\glide-4.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9afb77c8712b19e421caecefe8e85e98ab327ce7">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-4.3.1_aeb5493489e58a2d6df95c291a0ef3425fc11176\classes.dex" />
     </item>
 
 </items>

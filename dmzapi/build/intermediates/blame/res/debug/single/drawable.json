@@ -40,12 +40,12 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress_loading.png",
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\my_progress_loading.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
@@ -100,6 +100,10 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\d3f43a04afe6af94172f1c15984fa750402855e1\\output\\res\\drawable\\leak_canary_toast_background.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_toast_success.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_toast_success.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\drawable\\notification_icon_background.xml"
     },
@@ -122,6 +126,10 @@
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_ffcc41_ra5.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_ffcc41_ra5.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
@@ -172,6 +180,10 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_toast.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_toast.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\drawable\\design_password_eye.xml"
     },
@@ -188,8 +200,20 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_toast_warn.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_toast_warn.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_f5f5f5_tip_fenge.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_f5f5f5_tip_fenge.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_toast_error.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_toast_error.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",

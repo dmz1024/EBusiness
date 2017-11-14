@@ -218,6 +218,13 @@ public interface ApiContant {
     String SHOP_ORDER_URL=BASE_HOME_URL+"goods/goodsOrdersDetails";
 
     /**
+     * 商品订单列表
+     */
+    String SHOP_ORDER_ITEM_URL=BASE_HOME_URL+"goods/goodsOrdersList";
+
+
+
+    /**
      * 设置
      */
     String SET=BASE_HOME_URL+"goods/goodsOrdersDetails";

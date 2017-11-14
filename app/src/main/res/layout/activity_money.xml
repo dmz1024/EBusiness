@@ -7,7 +7,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@mipmap/yue_bg_pic">
+        android:background="@mipmap/yue_bjt_pic">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="加载中..."
-                android:textColor="@color/color_1c2438"
+                android:textColor="@color/color_fff"
                 android:textSize="@dimen/sp30" />
 
             <TextView
@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="总金额（元）"
-                android:textColor="@color/color_666"
+                android:textColor="@color/color_fff"
                 android:textSize="@dimen/sp12" />
         </LinearLayout>
     </FrameLayout>

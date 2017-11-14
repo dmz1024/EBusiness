@@ -11,6 +11,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.ToobarBaseActivity;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.router.Go;
 import com.uuzuche.lib_zxing.activity.CaptureFragment;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
 
@@ -99,7 +100,7 @@ public class QwActivity extends ToobarBaseActivity implements View.OnClickListen
                     CodeUtils.isLightEnable(!isLight);
                     isLight = !isLight;
                     tvLight.setText(isLight ? "关闭手电筒" : "打开手电筒");
-                    ivLight.setImageResource(isLight ? R.mipmap.icon_open_light : R.mipmap.icon_colse_light);
+                    ivLight.setImageResource(isLight ? R.mipmap.sd_open_icon : R.mipmap.sd_closs_icon);
                 }catch (Exception e){
                     MyToast.error("没有摄像头权限");
                 }
@@ -117,6 +118,7 @@ public class QwActivity extends ToobarBaseActivity implements View.OnClickListen
         resultIntent.putExtras(bundle);
         QwActivity.this.setResult(RESULT_OK, resultIntent);
         QwActivity.this.finish();
+        Go.goOpenInputActivity();
     }
 
 

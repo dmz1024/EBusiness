@@ -327,6 +327,15 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.ORDERING_ACTIVITY)
                 .navigation();
     }
+
+
+    /**
+     * 已完成订单
+     */
+    public static void goShopOrderActivity() {
+        ARouter.getInstance().build(RouterUrl.ORDEREND_ACTIVITY)
+                .navigation();
+    }
     /**
      * 空气质量
      */
@@ -352,6 +361,13 @@ public class Go {
                 .navigation();
     }
 
+    /**
+     * 输入门牌号开门
+     */
+    public static void goOpenInputActivity() {
+        ARouter.getInstance().build(RouterUrl.OPEN_INPUT_ACTIVITY)
+                .navigation();
+    }
 
 
 }

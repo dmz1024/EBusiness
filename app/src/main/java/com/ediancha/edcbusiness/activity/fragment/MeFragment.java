@@ -55,12 +55,11 @@ public class MeFragment extends LazyLoadFragment {
         ImageLoader.loadImageOvel(getContext(),"http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg",mImgUserhead);
     }
 
-    @OnClick({R.id.tv_order,R.id.tv_bag,R.id.tv_friend,R.id.tv_help,R.id.img_userhead})
+    @OnClick({R.id.tv_order,R.id.tv_bag,R.id.tv_friend,R.id.tv_help,R.id.img_userhead,R.id.tv_setting})
     void onClick(View view){
         switch (view.getId()){
             case R.id.tv_order:
                 Go.goOrderingActivity();
-//                Go.goShopOrderActivity();
                 break;
             case R.id.tv_bag:
                 Go.goMyPackage();
@@ -73,6 +72,9 @@ public class MeFragment extends LazyLoadFragment {
                 break;
             case R.id.img_userhead:
                 Go.goMyInfo();
+                break;
+            case R.id.tv_setting:
+                Go.goSetActivity();
                 break;
         }
     }

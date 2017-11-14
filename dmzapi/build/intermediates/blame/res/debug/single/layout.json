@@ -96,6 +96,10 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_base_sheet.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\layout\\dialog_base_sheet.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_template_big_media.xml"
     },
@@ -142,6 +146,10 @@
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\layout\\dmz_tip_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\layout\\dmz_tip_view.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",

@@ -119,4 +119,5 @@ public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, H
                 break;
         }
     }
+
 }
