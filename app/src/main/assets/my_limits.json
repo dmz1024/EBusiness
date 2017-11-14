@@ -1,0 +1,35 @@
+[
+  {
+    "iViewType": 9,
+    "title": "相机",
+    "rightImage": "level_check_style",
+    "content": "*相机权限用于本app进行扫码开门，上传用户图像等操作"
+  },
+  {
+    "iViewType": 4
+  },
+  {
+    "iViewType": 9,
+    "title": "文件存取",
+    "rightImage": "level_check_style",
+    "content": "*文件存取权限用户数据的缓存，减少流量的多余耗费"
+  },
+  {
+    "iViewType": 4
+  },
+  {
+    "iViewType": 9,
+    "title": "通知栏消息",
+    "rightImage": "level_check_style",
+    "content": "*通知栏消息用于显示重要的消息通知，信息提示等操作(关闭可能会导致app不能正常的接收到操作提示，如：登录时手机号没有输入正确，app会提示您为什么会错误)"
+  },
+  {
+    "iViewType": 4
+  },
+  {
+    "iViewType": 9,
+    "title": "位置",
+    "rightImage": "level_check_style",
+    "content": "*位置权限用于本app进行精准的定位，进而给您推送周边的共享空间信息"
+  }
+]

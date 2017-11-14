@@ -70,9 +70,8 @@ public class Go {
     /**
      * 活动精选
      */
-    public static void goLogin(int type) {
+    public static void goLogin() {
         ARouter.getInstance().build(RouterUrl.LOGIN_ACTIVITY)
-                .withInt("type", type)
                 .navigation();
     }
 
@@ -328,15 +327,6 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.ORDERING_ACTIVITY)
                 .navigation();
     }
-
-
-    /**
-     * 已完成订单
-     */
-    public static void goShopOrderActivity() {
-        ARouter.getInstance().build(RouterUrl.ORDEREND_ACTIVITY)
-                .navigation();
-    }
     /**
      * 空气质量
      */
@@ -345,6 +335,22 @@ public class Go {
                 .navigation();
     }
 
+
+    /**
+     * 设置
+     */
+    public static void goSetActivity() {
+        ARouter.getInstance().build(RouterUrl.SET_ACTIVITY)
+                .navigation();
+    }
+
+ /**
+     * 应用权限
+     */
+    public static void goLimitsActivity() {
+        ARouter.getInstance().build(RouterUrl.LIMITS_ACTIVITY)
+                .navigation();
+    }
 
 
 

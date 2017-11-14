@@ -223,7 +223,7 @@ public class UserInfoUtil {
 
     public static boolean checkLogin() {
         if (TextUtils.isEmpty(getUserId()) || TextUtils.isEmpty(getToken())) {
-            Go.goLogin(0);
+            Go.goLogin();
             return false;
         }
 

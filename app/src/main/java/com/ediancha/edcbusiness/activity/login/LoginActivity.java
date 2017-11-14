@@ -2,6 +2,7 @@ package com.ediancha.edcbusiness.activity.login;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.utils.AnimationUtil;
 import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
+import com.dmz.library.dmzapi.view.custom.TipView;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.helper.CodeHelper;
 import com.ediancha.edcbusiness.helper.login.ILoginResultInterface;
@@ -102,10 +104,11 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
 
     private CodeHelper codeHelper;
 
-    @OnClick({ R.id.btLogin, R.id.ivCha, R.id.tvCode, R.id.tvXieyi, R.id.img_qq, R.id.img_wechat})
+    @OnClick({R.id.btLogin, R.id.ivCha, R.id.tvCode, R.id.tvXieyi, R.id.img_qq, R.id.img_wechat})
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.ivCha:
+                finish();
                 break;
             case R.id.btLogin:
                 login();
@@ -205,7 +208,8 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
 
     @Override
     public void onValidationSucceeded() {
-        if (type == 0) {
+
+        if (TextUtils.equals("登录/注册", btLogin.getText().toString())) {
             loginPresenter.login(etName.getText().toString(), etCode.getText().toString());
         } else {
             mThreadLoginPresenter.bindLogin(type + "", etName.getText().toString(),
@@ -227,9 +231,13 @@ public class LoginActivity extends NotNetBaseActivity implements LoginPresenter.
 
     @Override
     public void regBind() {
-        mThread.setVisibility(View.GONE);
-        btLogin.setText("绑定并登录");
-        type = 1;
+        TipView.getInstance().setTitle("绑定手机号").setContent("您的第三方账号未绑定手机号，请先绑定！").setBottom("绑定手机号", new TipView.OnClickListener() {
+            @Override
+            public void OnClick() {
+                mThread.setVisibility(View.GONE);
+                btLogin.setText("绑定并登录");
+            }
+        }).show(this);
     }
 
     @Override

@@ -215,4 +215,16 @@ public interface RouterUrl {
      * 已完成订单
      */
     String ORDEREND_ACTIVITY = "/v1/activity/order/ordershop";
+    /**
+     * 设置
+     */
+    String SET_ACTIVITY = "/v1/activity/my/set";
+
+
+    /**
+     * 应用权限
+     */
+    String LIMITS_ACTIVITY = "/v1/activity/my/limits";
+
+
 }

@@ -59,8 +59,8 @@ public class MeFragment extends LazyLoadFragment {
     void onClick(View view){
         switch (view.getId()){
             case R.id.tv_order:
-//                Go.goOrderingActivity();
-                Go.goShopOrderActivity();
+                Go.goOrderingActivity();
+//                Go.goShopOrderActivity();
                 break;
             case R.id.tv_bag:
                 Go.goMyPackage();

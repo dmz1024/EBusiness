@@ -9,8 +9,8 @@ import com.dmz.library.dmzapi.api.bean.BaseBean;
 public class SetBean extends BaseBean<SetBean.Data> {
     public static class Data{
         public int spaceMessage;
-        public int moneyMessage;
-        public int activityMessage;
+        public int moneyMessage=1;
+        public int activityMessage=1;
 
         public int getActivityMessage() {
             return activityMessage;

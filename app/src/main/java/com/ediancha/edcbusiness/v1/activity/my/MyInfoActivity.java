@@ -74,7 +74,6 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
         datas.get(7).setContent(UserInfoUtil.getWxInfo());
         datas.get(8).setContent(UserInfoUtil.getQqInfo());
         LinearLayoutManager manager = new LinearLayoutManager(this);
-        manager.setAutoMeasureEnabled(true);
         adapterHelper = AdapterHelper._instance(this, rvContent)._initData(datas).setLayoutManager(manager)
                 .setType(new AdapterHelper.ViewTypeInfo().setType(4).setRid(ResUtil.getLayoutId(4)))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(6).setRid(ResUtil.getLayoutId(6)))

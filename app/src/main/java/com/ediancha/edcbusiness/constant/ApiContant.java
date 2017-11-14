@@ -217,5 +217,8 @@ public interface ApiContant {
      */
     String SHOP_ORDER_URL=BASE_HOME_URL+"goods/goodsOrdersDetails";
 
-
+    /**
+     * 设置
+     */
+    String SET=BASE_HOME_URL+"goods/goodsOrdersDetails";
 }
