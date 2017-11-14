@@ -70,9 +70,11 @@ public class InfoFragment extends LazyLoadFragment implements InfoPresenter.IInf
 
     @Override
     protected void lazyLoad() {
-        mInfoPresenter = mInfoPresenter != null ? mInfoPresenter : new InfoPresenter(this);
+        if (mInfoPresenter==null){
+            mInfoPresenter = mInfoPresenter != null ? mInfoPresenter : new InfoPresenter(this);
 
-        mInfoPresenter.getInfoView();
+            mInfoPresenter.getInfoView();
+        }
     }
 
     @Override

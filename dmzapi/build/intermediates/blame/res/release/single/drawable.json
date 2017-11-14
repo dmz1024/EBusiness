@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\shape_ffcc41_ra5.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_ffcc41_ra5.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\drawable\\design_fab_background.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\shape_toast_warn.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_toast_warn.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\icon_toast_warn.png",
@@ -88,6 +96,10 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\shape_toast_success.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_toast_success.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
@@ -98,6 +110,10 @@
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\shape_f5f5f5_tip_fenge.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_f5f5f5_tip_fenge.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
@@ -122,6 +138,10 @@
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\shape_toast_error.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_toast_error.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
@@ -230,6 +250,10 @@
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\shape_toast.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\drawable\\shape_toast.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\release\\drawable\\tooltip_frame_light.xml",

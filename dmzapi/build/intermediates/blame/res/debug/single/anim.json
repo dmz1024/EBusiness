@@ -1,7 +1,31 @@
 [
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_in.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\anim\\slide_left_in.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\slide_right_in.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\anim\\slide_right_in.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\tooltip_exit.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\tooltip_exit.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\dmz_toast_enter.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\anim\\dmz_toast_enter.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\fade_out.xml",
@@ -14,6 +38,10 @@
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\dmz_toast_exit.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\anim\\dmz_toast_exit.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
@@ -32,10 +60,6 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_fade_out.xml"
     },
@@ -48,12 +72,12 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_fade_in.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\slide_right_out.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\anim\\slide_right_out.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
@@ -64,15 +88,15 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\anim\\design_snackbar_in.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\tooltip_exit.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\tooltip_exit.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_out.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\src\\main\\res\\anim\\slide_left_out.xml"
     }
 ]

@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_margin="@dimen/size5">
+        android:padding="@dimen/size5"
+        android:background="@color/color_fff">
 
         <RadioButton
             android:id="@+id/rb_space"
@@ -32,7 +33,6 @@
             android:layout_height="wrap_content"
             android:background="@drawable/space_order_selector_style"
             android:button="@null"
-            android:checked="true"
             android:paddingBottom="@dimen/size5"
             android:paddingLeft="@dimen/size10"
             android:paddingRight="@dimen/size10"

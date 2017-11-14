@@ -70,8 +70,7 @@ public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHom
 
     @Override
     public void initBaseView() {
-        mHomePresenter = mHomePresenter != null ? mHomePresenter : new HomePresenter(this);
-        mHomePresenter.getHomeView();
+
     }
 
     @Override
@@ -82,11 +81,10 @@ public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHom
     @Override
     protected void lazyLoad() {
 
-//        mTvName.setText("0000");
-//
-//        ImageLoader.loadImageOvel(getContext(), "http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg", mImgHead);
-
-
+        if (mHomePresenter==null){
+            mHomePresenter = new HomePresenter(this);
+            mHomePresenter.getHomeView();
+        }
     }
 
     @Override

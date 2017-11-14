@@ -4,6 +4,10 @@
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\layout\\view_base_single_data.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dmz_tip_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\layout\\dmz_tip_view.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\common_item_type_6.xml",
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\layout\\common_item_type_6.xml"
     },
@@ -250,6 +254,10 @@
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_navigation_item_separator.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dialog_base_sheet.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_base_sheet.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dmzshow_single_error_view.xml",

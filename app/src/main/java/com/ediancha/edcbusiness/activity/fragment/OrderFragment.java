@@ -1,7 +1,10 @@
 package com.ediancha.edcbusiness.activity.fragment;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +12,7 @@ import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.v1.fragment.ShopOrderFragment;
 import com.ediancha.edcbusiness.v1.fragment.SpaceOrderFragment;
@@ -51,17 +55,22 @@ public class OrderFragment extends LazyLoadFragment {
         return R.layout.fragment_special;
     }
 
-    FragmentTransaction mTransaction;
 
+    FragmentManager mManager;
+    FragmentTransaction fragmentTransaction;
     @Override
     protected void lazyLoad() {
-        mSpaceOrderFragment = new SpaceOrderFragment();
-        mShopOrderFragment = new ShopOrderFragment();
+        mSpaceOrderFragment = SpaceOrderFragment.newInstance();
+        mShopOrderFragment = ShopOrderFragment.newInstance();
 
-        mTransaction = getChildFragmentManager().beginTransaction();
-        mTransaction.add(R.id.frame, mSpaceOrderFragment)
+        mRbSpace.setChecked(true);
+        mManager = getChildFragmentManager();
+        fragmentTransaction= mManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame, mSpaceOrderFragment)
                 .add(R.id.frame, mShopOrderFragment)
                 .hide(mShopOrderFragment)
+                .hide(mSpaceOrderFragment)
+                .show(mSpaceOrderFragment)
                 .commit();
 
         mRgOtype.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -69,19 +78,20 @@ public class OrderFragment extends LazyLoadFragment {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i) {
                     case R.id.rb_space:
-                        mTransaction.hide(mShopOrderFragment)
-                                .show(mSpaceOrderFragment)
-                                .commit();
+                        replaceFragment(mSpaceOrderFragment, mShopOrderFragment);
                         break;
                     case R.id.rb_shop:
-                        mTransaction.hide(mSpaceOrderFragment)
-                                .show(mShopOrderFragment)
-                                .commit();
+                        replaceFragment(mShopOrderFragment, mSpaceOrderFragment);
                         break;
                 }
             }
         });
     }
-
+    private void replaceFragment(Fragment showFragment, Fragment hideFragment) {
+        FragmentTransaction mTransaction = mManager.beginTransaction();
+        mTransaction.hide(hideFragment)
+                .show(showFragment)
+                .commit();
+    }
 
 }

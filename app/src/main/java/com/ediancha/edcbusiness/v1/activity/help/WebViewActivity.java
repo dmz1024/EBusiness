@@ -76,7 +76,7 @@ public class WebViewActivity extends ToobarBaseActivity {
     @Override
     protected void initBarView() {
         super.initBarView();
-        dmzBar.setLeftImage(R.mipmap.icon_chahao);
+        dmzBar.setLeftImage(R.mipmap.icon_recharge_back);
     }
 
     @Override
