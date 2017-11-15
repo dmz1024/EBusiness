@@ -1,8 +1,11 @@
 package com.ediancha.edcbusiness.v1.fragment;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.ediancha.edcbusiness.R;
@@ -27,6 +30,19 @@ public class SpaceOrderSubFragment extends BaseFragment<SpaceOrderDataBean.Data,
 
     public static SpaceOrderSubFragment newInstance() {
         return new SpaceOrderSubFragment();
+    }
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        LogUtil.e("SpaceOrderSubFragment +  onCreate");
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        LogUtil.e("SpaceOrderSubFragment +  onStart");
     }
 
     @Override

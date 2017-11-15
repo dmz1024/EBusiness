@@ -84,7 +84,7 @@
         <activity android:name=".v1.activity.help.FanKuiActivity" />
         <activity android:name=".v1.activity.help.WebViewActivity" />
         <activity android:name=".activity.space.SpaceDetailActivity" />
-        <activity android:name=".activity.my.AutherActivity" />
+        <activity android:name=".v1.activity.my.AutherActivity" />
         <activity android:name=".v1.activity.help.HelpCenterNextActivity" />
         <activity
             android:name=".activity.login.LoginActivity"
@@ -109,6 +109,8 @@
         <activity android:name=".v1.activity.my.SetActivity"/>
         <activity android:name=".v1.activity.space.OpenInputActivity"/>
         <activity android:name=".v1.activity.space.AirQualityActivity"/>
+        <activity android:name=".v1.activity.coupon.CouponActivity"/>
+        <activity android:name=".v1.activity.order.SpaceOrderEndAcitivity"/>
 
         <activity android:name=".activity.HomeActivity">
             <intent-filter>

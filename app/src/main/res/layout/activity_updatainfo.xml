@@ -21,11 +21,12 @@
         android:id="@+id/et_key"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_f8f8fa"
+        android:background="@color/color_fff"
         android:hint="输入关键字"
-        android:padding="@dimen/size10"
+        android:padding="@dimen/size15"
         android:textSize="@dimen/sp15"
         android:textColor="@color/color_666"
         android:textColorHint="@color/color_999"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/size10"/>
 </LinearLayout>

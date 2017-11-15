@@ -85,7 +85,7 @@ public class MyPackageActivity extends SingleDataBaseActivity<MyPackageBean, MyP
                 Go.goCoupon();
                 break;
             case R.id.llYj://押金
-                Go.goDeposit(data.getDepositMoney() + "", data.getDepositType());
+                Go.goCashPledgeActivity();
                 break;
             case R.id.fgSetPass:
                 Go.goPayPassWord();//修改支付密码

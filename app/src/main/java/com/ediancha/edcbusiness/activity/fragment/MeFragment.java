@@ -65,7 +65,7 @@ public class MeFragment extends LazyLoadFragment {
                 Go.goMyPackage();
                 break;
             case R.id.tv_friend:
-
+                Go.goSpaceOrderEndActivity();
                 break;
             case R.id.tv_help:
                 Go.goHelpCenter();

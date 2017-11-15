@@ -231,5 +231,9 @@ public interface RouterUrl {
      */
     String LIMITS_ACTIVITY = "/v1/activity/my/limits";
 
+    /**
+     * 空间已完成订单
+     */
+    String SPACE_ORDER_END_ACTIVITY = "/v1/activity/order/spaceorderend";
 
 }

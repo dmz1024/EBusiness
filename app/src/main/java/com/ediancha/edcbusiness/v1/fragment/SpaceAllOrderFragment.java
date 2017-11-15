@@ -1,8 +1,11 @@
 package com.ediancha.edcbusiness.v1.fragment;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.widget.ImageView;
 
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.constant.ApiContant;
@@ -21,6 +24,7 @@ public class SpaceAllOrderFragment extends BaseFragment<SpaceOrderDataBean.Data,
     public static SpaceAllOrderFragment newInstance() {
         return new SpaceAllOrderFragment();
     }
+
 
     @Override
     protected void initMoreBuilder() {
@@ -47,5 +51,6 @@ public class SpaceAllOrderFragment extends BaseFragment<SpaceOrderDataBean.Data,
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
         super.onItemClick(viewType, adapterHelper, position);
+
     }
 }
