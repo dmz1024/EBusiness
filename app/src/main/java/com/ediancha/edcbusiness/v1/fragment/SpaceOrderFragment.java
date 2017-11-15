@@ -1,24 +1,22 @@
 package com.ediancha.edcbusiness.v1.fragment;
 
-import android.os.Bundle;
+
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.dmz.library.dmzapi.api.LogUtil;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.view.LazyLoadFragment;
+import com.ediancha.edcbusiness.view.ViewpagerNoLoad;
 
+
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 /**
  * Created by Admin on 2017/11/13.
@@ -48,7 +46,6 @@ public class SpaceOrderFragment extends LazyLoadFragment {
     @Override
     public void initBaseView() {
 
-
     }
 
     @Override
@@ -57,7 +54,7 @@ public class SpaceOrderFragment extends LazyLoadFragment {
     }
 
     @Override
-    protected void lazyLoad() {
+    protected void lazyLoad(){
         if (mFragments.size() <= 0) {
             mAllFragment = SpaceAllOrderFragment.newInstance();
             mEndFragment = SpaceOrderEndFragment.newInstance();
@@ -70,9 +67,21 @@ public class SpaceOrderFragment extends LazyLoadFragment {
 
         }
         mViewPagerAdapter = mViewPagerAdapter != null ? mViewPagerAdapter : new SpaceAdapter(getChildFragmentManager());
+
+//        Class aClass = mVpShow.getClass();
+//        try {
+//            Field default_offscreen_pages = aClass.getDeclaredField("DEFAULT_OFFSCREEN_PAGES");
+//            default_offscreen_pages.setAccessible(true);
+//            default_offscreen_pages.setInt(mVpShow,0);
+//            LogUtil.e("修改成功");
+//        } catch (NoSuchFieldException e) {
+//            e.printStackTrace();
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//        }
+//        mVpShow.setOffscreenPageLimit(0);
         mVpShow.setAdapter(mViewPagerAdapter);
         mTabTitle.setupWithViewPager(mVpShow);
-        mVpShow.setOffscreenPageLimit(4);
 
     }
 

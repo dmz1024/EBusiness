@@ -1,4 +1,4 @@
-package com.ediancha.edcbusiness.activity.my;
+package com.ediancha.edcbusiness.v1.activity.my;
 
 import android.text.TextUtils;
 import android.widget.EditText;
@@ -75,7 +75,7 @@ public class AutherActivity extends NotNetBaseActivity implements AuthorPresnter
             MyToast.error("请输入正确身份证号码!");
         } else {
             mAutherDialog = new AutherDialog();
-            mAutherDialog.show(getSupportFragmentManager(), "2");
+            mAutherDialog.show(ctx);
             mAutherDialog.setName(name)
                     .setCard(card)
                     .setOkClickListner(new AutherDialog.okClickListner() {

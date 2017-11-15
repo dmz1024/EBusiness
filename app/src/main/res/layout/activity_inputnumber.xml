@@ -2,73 +2,94 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/icon_input_bg"
-    android:gravity="center">
-
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/color_ffc730"
-        android:textSize="@dimen/sp20"
-        android:text="温馨提示"
-        android:gravity="center"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/color_ffc730"
-        android:textSize="@dimen/sp16"
-        android:text="若输入错误，将无法打开房门"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/size10"/>
-
-    <EditText
-        android:id="@+id/et_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="输入智能锁编号，打开房门"
-        android:background="@drawable/shape_input_edit"
-        android:padding="@dimen/size15"
-        android:layout_margin="@dimen/size30"
-        android:gravity="center"
-        android:textColor="@color/color_f8f8fa"
-        android:textColorHint="@color/color_f8f8fa"
-        android:singleLine="true"
-        android:inputType="number"
-        android:textSize="@dimen/sp16"/>
-    <TextView
-        android:id="@+id/tv_open"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/shape_input_text"
-        android:padding="@dimen/size15"
-        android:layout_marginRight="@dimen/size30"
-        android:layout_marginLeft="@dimen/size30"
-        android:gravity="center"
-        android:textColor="@color/color_fff"
-        android:text="解开门锁"
-        android:textSize="@dimen/sp16"/>
-
-
-    <LinearLayout
-        android:id="@+id/ln_open"
+        android:id="@+id/tv_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-        <ImageView
-            android:id="@+id/img_open"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/sd_closs_icon"
-            android:layout_marginTop="@dimen/size20"/>
+        android:text="输入编号开锁"
+        android:textColor="@color/color_fff"
+        android:textSize="@dimen/sp16"
+        android:padding="@dimen/size10"
+        android:drawableLeft="@mipmap/back_bai_icon"
+        android:drawablePadding="@dimen/size10"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
         <TextView
-            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="温馨提示"
+            android:textColor="@color/color_ffc730"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="center"
+            android:text="若输入错误，将无法打开房门"
+            android:textColor="@color/color_ffc730"
+            android:textSize="@dimen/sp16" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size30"
+            android:background="@drawable/shape_input_edit"
+            android:gravity="center"
+            android:hint="输入智能锁编号，打开房门"
+            android:inputType="number"
+            android:padding="@dimen/size15"
+            android:singleLine="true"
+            android:textColor="@color/color_f8f8fa"
+            android:textColorHint="@color/color_f8f8fa"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size30"
+            android:layout_marginRight="@dimen/size30"
+            android:background="@drawable/shape_input_text"
+            android:gravity="center"
+            android:padding="@dimen/size15"
+            android:text="解开门锁"
+            android:textColor="@color/color_fff"
+            android:textSize="@dimen/sp16" />
+
+
+        <LinearLayout
+            android:id="@+id/ln_open"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="打开手电筒"
-            android:textColor="@color/color_fff"
-            android:layout_marginTop="@dimen/size8"/>
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size20"
+                android:src="@mipmap/sd_closs_icon" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:text="打开手电筒"
+                android:textColor="@color/color_fff" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

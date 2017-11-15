@@ -368,6 +368,12 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.OPEN_INPUT_ACTIVITY)
                 .navigation();
     }
-
+    /**
+     * 空间已完成订单
+     */
+    public static void goSpaceOrderEndActivity() {
+        ARouter.getInstance().build(RouterUrl.SPACE_ORDER_END_ACTIVITY)
+                .navigation();
+    }
 
 }

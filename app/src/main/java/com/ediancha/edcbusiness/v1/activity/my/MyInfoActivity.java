@@ -120,8 +120,9 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
                 break;
             case 4:
                 if(UserInfoUtil.getRz()==1){
-                    Go.goUserAuther();
+
                 }
+                Go.goUserAuther();
                 break;
             case 7:
                 type = 1;

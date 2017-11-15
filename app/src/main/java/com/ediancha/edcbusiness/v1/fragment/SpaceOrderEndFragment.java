@@ -1,5 +1,9 @@
 package com.ediancha.edcbusiness.v1.fragment;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.constant.ApiContant;
@@ -16,6 +20,8 @@ public class SpaceOrderEndFragment extends BaseFragment<SpaceOrderDataBean.Data,
     public static SpaceOrderEndFragment newInstance(){
         return new SpaceOrderEndFragment();
     }
+
+
     @Override
     protected void initMoreBuilder() {
         mBuilder.setCanRefresh(true)

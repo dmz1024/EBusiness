@@ -55,12 +55,12 @@
                 android:layout_marginTop="@dimen/size15"
                 android:textSize="@dimen/sp18"
                 android:textColor="@color/color_fcc01f"
-                android:text="为您推荐"
+                android:text=""
                 android:layout_marginBottom="@dimen/size5"
                 />
             <View
                 android:layout_width="@dimen/size20"
-                android:layout_height="@dimen/size5"
+                android:layout_height="@dimen/size3"
                 android:background="@color/color_fcc01f"/>
             <TextView
                 android:id="@+id/tv_detail"
@@ -102,7 +102,7 @@
                 />
             <View
                 android:layout_width="@dimen/size20"
-                android:layout_height="@dimen/size5"
+                android:layout_height="@dimen/size3"
                 android:background="@color/color_fcc01f"/>
             <TextView
                 android:id="@+id/tv_tydetail"

@@ -44,7 +44,7 @@ public class OpenInputActivity extends NotNetBaseActivity {
 
     private boolean isLight;
 
-    @OnClick({R.id.tv_open, R.id.ln_open})
+    @OnClick({R.id.tv_open, R.id.ln_open,R.id.tv_back})
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_open:
@@ -58,6 +58,9 @@ public class OpenInputActivity extends NotNetBaseActivity {
                 } catch (Exception e) {
                     MyToast.error("没有摄像头权限");
                 }
+                break;
+            case R.id.tv_back:
+                finish();
                 break;
         }
     }

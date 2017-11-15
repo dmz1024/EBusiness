@@ -1,11 +1,15 @@
 package com.ediancha.edcbusiness.activity.fragment;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.BackgroundColorSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -140,9 +144,12 @@ public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHom
     public void convert(int viewType, ViewHolder holder, IType iType, int position) {
         if (viewType == 1) {
             HomeBean.SpaceListBean spaceListBean = (HomeBean.SpaceListBean) iType;
-            holder.setText(R.id.tv_name, spaceListBean.getSpaceName());
-            String label = "可容纳" + spaceListBean.spaceLoadNumber + "人|" + spaceListBean.getSpaceDesc();
+            String label = "可容纳" + spaceListBean.spaceLoadNumber + "人|" + spaceListBean.getHowFar()+"KM";
             holder.setText(R.id.tv_label, label);
+            SpannableString spannable=new SpannableString(" "+spaceListBean.getIs_tui()+"  "+spaceListBean.getSpaceName());
+            BackgroundColorSpan colorSpan=new BackgroundColorSpan(Color.parseColor("#ffc730"));
+            spannable.setSpan(colorSpan,0,spaceListBean.getIs_tui().length()+2, Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+            holder.<TextView>getView(R.id.tv_name).setText(spannable);
             ImageLoader.loadImageRec(getContext(), spaceListBean.getSpaceImage(), holder.<ImageView>getView(R.id.img_pic));
             String[] labelname = spaceListBean.getLabelname();
             for (int i = 0; i < labelname.length; i++) {
