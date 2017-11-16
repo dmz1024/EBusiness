@@ -4,10 +4,12 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.dmz.library.dmzapi.api.list.CommonAdapterHelper;
+import com.dmz.library.dmzapi.utils.PermissionUtil;
 import com.dmz.library.dmzapi.utils.ResUtil;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.ediancha.edcbusiness.R;
@@ -53,13 +55,12 @@ public class LimitsActivity extends NotNetBaseActivity implements AdapterHelper.
     @Override
     public void convert(int viewType, ViewHolder holder, CommonAdapterHelper.CommonBean commonBean, int position) {
         holder.setText(R.id.tvTitle, commonBean.getTitle()).setText(R.id.tvContent, commonBean.getContent());
-        ImageView imageView = holder.getView(R.id.ivRight);
-        imageView.setImageResource(ResUtil.getDraResId(this, commonBean.getRightImage()));
-        imageView.setImageLevel(commonBean.getType());
+        TextView textView = holder.getView(R.id.tvTitle);
+        textView.setCompoundDrawables(null, null, ResUtil.setDra(this, ResUtil.getMipResId(this, commonBean.getRightImage())), null);
     }
 
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
-
+        PermissionUtil.goAppDetailSettingIntent(this);
     }
 }

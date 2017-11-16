@@ -32,6 +32,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Unbinder;
 
 /**
@@ -81,10 +82,16 @@ public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHom
     @Override
     protected void lazyLoad() {
 
-        if (mHomePresenter==null){
+        if (mHomePresenter == null) {
             mHomePresenter = new HomePresenter(this);
             mHomePresenter.getHomeView();
         }
+    }
+
+
+    @OnClick(R.id.tv_right)
+    void goMap() {
+        Go.goMapSpaceActivity();
     }
 
     @Override

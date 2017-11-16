@@ -64,6 +64,11 @@ public interface ApiContant {
     String COUPON = BASE_API + "coupon/usercoupon";
 
     /**
+     * 余额明细
+     */
+    String BALANCEDESC = BASE_API + "coupon/usercoupon";
+
+    /**
      * 优惠券兑换
      */
     String COUPON_CHANGE = BASE_API + "coupon/exchangeCoupon";

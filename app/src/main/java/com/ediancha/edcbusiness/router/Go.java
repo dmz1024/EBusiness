@@ -369,5 +369,21 @@ public class Go {
                 .navigation();
     }
 
+    /**
+     * 余额明细
+     */
+    public static void goBalanceDescActivity() {
+        ARouter.getInstance().build(RouterUrl.BALANCE_DESC_ACTIVITY)
+                .navigation();
+    }
+
+
+    /**
+     * 地图space信息
+     */
+    public static void goMapSpaceActivity() {
+        ARouter.getInstance().build(RouterUrl.MAP_SPACE_ACTIVITY)
+                .navigation();
+    }
 
 }

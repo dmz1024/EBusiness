@@ -1,4 +1,4 @@
-package com.ediancha.edcbusiness.v1.activity.coupon;
+package com.ediancha.edcbusiness.v1.activity.my;
 
 import android.graphics.Color;
 
@@ -16,7 +16,7 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
  * Created by Admin on 2017/9/21.
  * 优惠券
  */
-@Route(path = "/v1/activity/walletbag/coupon")
+@Route(path = "/v1/activity/my/coupon")
 public class CouponActivity extends MoreDataBaseActivity<CouponBean.Data,CouponBean> {
 
     @Override

@@ -40,7 +40,7 @@ public class MoneyActivity extends SingleDataBaseActivity<MyPackageBean, MyPacka
     @Override
     public void onSuccess(IBasePresenter presenter, MyPackageBean.Data bean) {
         MyPackageBean.MoneyBean money = bean.getMoney();
-        tvMoney.setText("￥"+money.getGiftAmount());
+        tvMoney.setText("￥" + money.getGiftAmount());
         tvCmoney.setText(money.getUserMoney());
         tvSmoney.setText(money.getMoney());
     }
@@ -62,7 +62,12 @@ public class MoneyActivity extends SingleDataBaseActivity<MyPackageBean, MyPacka
     protected void initBarView() {
         super.initBarView();
         dmzBar.setText("余额")
-                .addItemView(new DmzBar.DmzBarItemInfo().setTitle("明细"));
+                .addItemView(new DmzBar.DmzBarItemInfo().setTitle("明细")).setOnItemOnClickListener(new DmzBar.OnItemOnClickListener() {
+            @Override
+            public void itemClick(int index) {
+                Go.goBalanceDescActivity();
+            }
+        });
     }
 
     @OnClick(R.id.btSubmit)

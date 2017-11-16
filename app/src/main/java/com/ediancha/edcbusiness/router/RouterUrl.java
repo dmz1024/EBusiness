@@ -81,7 +81,7 @@ public interface RouterUrl {
     /**
      * 优惠券
      */
-    String Coupon_ACTIVITY = "/v1/activity/walletbag/coupon";
+    String Coupon_ACTIVITY = "/v1/activity/my/coupon";
 
     /**
      * 押金
@@ -230,6 +230,16 @@ public interface RouterUrl {
      * 应用权限
      */
     String LIMITS_ACTIVITY = "/v1/activity/my/limits";
+    /**
+     * 余额明细
+     */
+    String BALANCE_DESC_ACTIVITY = "/v1/activity/my/balanceDesc";
+
+
+    /**
+     * 地图SPACE信息
+     */
+    String MAP_SPACE_ACTIVITY = "/v1/activity/space/mapSpace";
 
 
 }

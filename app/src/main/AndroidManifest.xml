@@ -194,6 +194,9 @@
 
         <activity android:name=".v1.activity.my.CashPledgeActivity"/>
         <activity android:name=".v1.activity.my.LimitsActivity"/>
+        <activity android:name=".v1.activity.my.CouponActivity"/>
+        <activity android:name=".v1.activity.my.BalanceDescActivity"/>
+        <activity android:name=".v1.activity.space.MapSpaceActivity"/>
     </application>
 
 </manifest>
