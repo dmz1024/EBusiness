@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\android\ydc\EBusiness\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a091da6a88efaaea03e882cbc155268d1d567769">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b07ee5a2dc432e481ce58f616310f18c4d27e9c0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\android\ydc\EBusiness\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7497065758631f2a61d5f15fc000fd9c05586867\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\android\ydc\EBusiness\app\libs\alipaySdk-20170922.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7537e663454a204c3675929dae034a556ac1f753">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\2\alipaySdk-20170922_6921aa1cf967ba5badbfcf07eebfc9cce55befb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\android\ydc\EBusiness\app\libs\open_sdk_r5886_lite.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6c08b5431b3bdfc936fadc29001f30b847b34864">
+        <dex dex="D:\android\ydc\EBusiness\app\build\intermediates\transforms\dex\debug\folders\1000\2\open_sdk_r5886_lite_1099911e44f9a9397943e33fee2c418260b6cf16\classes.dex" />
+    </item>
+
+</items>

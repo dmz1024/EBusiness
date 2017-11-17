@@ -9,8 +9,10 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.dmz.library.dmzapi.api.view.IContextView;
 import com.dmz.library.dmzapi.utils.PermissionUtil;
 import com.ediancha.edcbusiness.activity.QwActivity;
+import com.ediancha.edcbusiness.presenter.order.MoneyAffirmPresenter;
 import com.ediancha.edcbusiness.router.Go;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
 import com.yanzhenjie.permission.AndPermission;
@@ -26,11 +28,19 @@ import java.util.List;
  * Created by dengmingzhi on 2017/9/20.
  */
 
-public class QwHelper {
+public class QwHelper implements IContextView {
     public static final int QW_REQUEST_CODE = 1;
     private Activity activity;
+
     public QwHelper(Activity activity) {
         this.activity = activity;
+    }
+
+    private int type;
+
+    public QwHelper setType(int type) {
+        this.type = type;
+        return this;
     }
 
     public void openQw() {
@@ -57,7 +67,17 @@ public class QwHelper {
                 if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_SUCCESS) {
                     //TODO 获取二维码扫描结果
                     String result = bundle.getString(CodeUtils.RESULT_STRING);
-                    Log.d("二维码", result);
+
+                    switch (type) {
+                        case 0:
+                            moneyAffirm(result);
+                            break;
+                        case 1:
+
+                            break;
+                    }
+
+
                 } else if (bundle.getInt(CodeUtils.RESULT_TYPE) == QwActivity.WRITE_NUM) {
                     //TODO 手动输入门牌号
                     Log.d("二维码", "手动输入");
@@ -68,20 +88,16 @@ public class QwHelper {
         }
     }
 
-//    @Override
-//    public void onPermissionsGranted(int i, List<String> list) {
-//        Toast.makeText(activity, "有权限", Toast.LENGTH_SHORT).show();
-//        Go.goQw(activity, QW_REQUEST_CODE);
-//    }
-//
-//    @Override
-//    public void onPermissionsDenied(int i, List<String> list) {
-//        Toast.makeText(activity, "没有权限", Toast.LENGTH_SHORT).show();
-//
-//    }
-//
-//    @Override
-//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-//        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
-//    }
+    private MoneyAffirmPresenter moneyAffirmPresenter;
+
+    private void moneyAffirm(String id) {
+        moneyAffirmPresenter = moneyAffirmPresenter == null ? new MoneyAffirmPresenter(this) : moneyAffirmPresenter;
+        moneyAffirmPresenter.goMoneyAffir(id);
+    }
+
+
+    @Override
+    public Context getContext() {
+        return activity;
+    }
 }

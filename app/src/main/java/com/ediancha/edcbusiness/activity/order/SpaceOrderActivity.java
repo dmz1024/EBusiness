@@ -10,6 +10,7 @@ import com.dmz.library.dmzapi.view.activity.MoreDataBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.ExpenseTipsBean;
 import com.ediancha.edcbusiness.bean.SpaceOrderBean;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.router.Go;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
@@ -43,7 +44,7 @@ public class SpaceOrderActivity extends MoreDataBaseActivity<SpaceOrderBean.Data
     @Override
     protected void initDmzBuilder() {
         dBuilder.setaClass(SpaceOrderBean.class)
-                .setUrl(ApiContant.SPACE_ORDER).setParms("type", "5");
+                .setUrl(ApiContant.SPACE_ORDER).setParms(UserInfoUtil.getUserToken());
     }
 
     @Override
@@ -58,6 +59,6 @@ public class SpaceOrderActivity extends MoreDataBaseActivity<SpaceOrderBean.Data
     @Override
     public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
         super.onItemClick(viewType, adapterHelper, position);
-        Go.goSpaceOrderInProgeressDesc(adapterHelper.<SpaceOrderBean.Data>getT(position).getOrderId());
+//        Go.goSpaceOrderInProgeressDesc(adapterHelper.<SpaceOrderBean.Data>getT(position).getOrderId());
     }
 }

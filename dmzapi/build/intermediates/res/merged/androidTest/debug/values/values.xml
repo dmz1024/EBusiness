@@ -39,6 +39,7 @@
     <color name="color_error">#CC0033</color>
     <color name="color_normal">#333333</color>
     <color name="color_warn">#FFFF00</color>
+    <color name="color_zhu">#ffcc41</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
@@ -114,8 +115,6 @@
     <declare-styleable name="ActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/><attr format="reference" name="closeItemLayout"/></declare-styleable>
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable>
-    <declare-styleable name="AppBar"><attr name="navigationGravity"><enum name="top" value="0"/><enum name="center_vertical" value="1"/></attr><attr format="reference" name="menu1"/><attr format="reference" name="menu2"/><attr format="reference" name="menu3"/><attr format="reference" name="menu4"/><attr format="reference" name="menu5"/></declare-styleable>
-    <declare-styleable name="AppBar.Menu"><attr format="reference" name="toolbarMenuTextStyle"/><attr format="reference" name="toolbarMenuImageStyle"/><attr format="reference" name="toolbarMenuSpinnerStyle"/></declare-styleable>
     <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/><attr format="boolean" name="expanded"/><attr name="android:keyboardNavigationCluster"/><attr name="android:touchscreenBlocksFocus"/></declare-styleable>
     <declare-styleable name="AppBarLayoutStates"><attr format="boolean" name="state_collapsed"/><attr format="boolean" name="state_collapsible"/></declare-styleable>
     <declare-styleable name="AppBarLayout_Layout"><attr name="layout_scrollFlags">
@@ -1086,7 +1085,10 @@
     <string name="app_name">DmzApi</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="bottom_view_behavior">com.dmz.library.dmzapi.behavior.LBottomBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="fab_scale_behavior">com.dmz.library.dmzapi.behavior.LFabScaleBehavior</string>
+    <string name="fab_vertical_behavior">com.dmz.library.dmzapi.behavior.LFabVerticalBehavior</string>
     <string name="leak_canary_analysis_failed">Leak analysis failed</string>
     <string name="leak_canary_class_has_leaked">%1$s leaked %2$s</string>
     <string name="leak_canary_could_not_save_text">LeakCanary was unable to save the analysis result.</string>
@@ -1124,6 +1126,7 @@
     <string name="permission_title_permission_rationale">Permission denied</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_view_behavior">com.dmz.library.dmzapi.behavior.LTitleBehavior</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -2196,7 +2199,7 @@
         <item name="android:actionBarSize">40dp</item>
         <item name="actionBarSize">40dp</item>
         <item name="elevation">0dp</item>
-        <item name="android:windowAnimationStyle">@style/activityAnim</item>
+        <item name="android:windowAnimationStyle">@style/activityLeftRight</item>
         <!--<item name="android:windowNoTitle">true</item> &lt;!&ndash; 设置无标题 &ndash;&gt;-->
         <!--<item name="android:windowFullscreen">?android:windowNoTitle</item>&lt;!&ndash; 取决于android:windowNoTitle的值 &ndash;&gt;-->
     </style>
@@ -2536,6 +2539,10 @@
     <style name="ThemeOverlay.AppCompat.Dialog" parent="Base.ThemeOverlay.AppCompat.Dialog"/>
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="Base.ThemeOverlay.AppCompat.Dialog.Alert"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+    <style name="ToastAnim">
+        <item name="android:windowEnterAnimation">@anim/dmz_toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/dmz_toast_exit</item>
+    </style>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">
@@ -2697,6 +2704,12 @@
         <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
         <!--<item name="android:activityCloseEnterAnimation">@anim/fade_in</item>-->
         <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="activityLeftRight">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
     </style>
     <style name="leak_canary_LeakCanary.Base" parent="android:Theme">
   </style>

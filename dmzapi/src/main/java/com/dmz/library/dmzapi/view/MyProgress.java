@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.dmz.library.dmzapi.api.IProgressInterface;
+import com.dmz.library.dmzapi.utils.MyToast;
 
 /**
  * Created by dengmingzhi on 2017/8/25.
@@ -23,6 +24,7 @@ public class MyProgress implements IProgressInterface {
 
     @Override
     public void loading(String loading, OnProgressCancelListener listener) {
+        MyToast.close();
         _instance = MyProgressFragment._instance(loading);
         if (listener != null) {
             _instance.setCancelable(true);
@@ -30,32 +32,20 @@ public class MyProgress implements IProgressInterface {
         } else {
             _instance.setCancelable(false);
         }
-        _instance.show(((AppCompatActivity) ctx).getSupportFragmentManager(), "progress");
-        timer.cancel();
+        _instance.show(ctx);
     }
 
     @Override
     public void error(String error) {
-        _instance.error(error);
-        timer.start();
+        MyToast.error(error);
+        dismiss();
     }
 
-    private CountDownTimer timer = new CountDownTimer(3000, 1000) {
-        @Override
-        public void onTick(long l) {
-
-        }
-
-        @Override
-        public void onFinish() {
-            _instance.close();
-        }
-    };
 
     @Override
     public void waring(String waring) {
-        _instance.waring(waring);
-        timer.start();
+        MyToast.warn(waring);
+        dismiss();
     }
 
     @Override
@@ -65,7 +55,7 @@ public class MyProgress implements IProgressInterface {
 
     @Override
     public void success(String success) {
-        _instance.success(success);
-        timer.start();
+        MyToast.normal(success);
+        dismiss();
     }
 }

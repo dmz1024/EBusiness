@@ -33,9 +33,16 @@ public class PhotoHelper {
      * 打开选择相册
      */
     public void openPhoto() {
-        Intent intent = new Intent(Intent.ACTION_PICK);
-        intent.setType("image/*");//相片类型
-        mActivity.startActivityForResult(intent, REQUEST_CODE_PICK_IMAGE);
+
+        PermissionUtil.getInstance().setOnSuccessPermission(new PermissionUtil.OnCheckSuccessPermission() {
+            @Override
+            public void onSuccess(int result) {
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setType("image/*");//相片类型
+                mActivity.startActivityForResult(intent, REQUEST_CODE_PICK_IMAGE);
+            }
+        }).checkReadFile(mActivity);
+
     }
 
 

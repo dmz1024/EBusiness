@@ -13,5 +13,6 @@ public class ARouter$$Root$$app implements IRouteRoot {
   @Override
   public void loadInto(Map<String, Class<? extends IRouteGroup>> routes) {
     routes.put("activity", ARouter$$Group$$activity.class);
+    routes.put("v1", ARouter$$Group$$v1.class);
   }
 }

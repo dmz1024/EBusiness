@@ -13,20 +13,20 @@ public final class R {
         public static final int leak_canary_toast_background = 0x7f020060;
     }
     public static final class id {
-        public static final int leak_canary_action = 0x7f0d00a9;
-        public static final int leak_canary_display_leak_failure = 0x7f0d00a8;
-        public static final int leak_canary_display_leak_list = 0x7f0d00a7;
-        public static final int leak_canary_row_connector = 0x7f0d00ac;
-        public static final int leak_canary_row_more = 0x7f0d00ad;
-        public static final int leak_canary_row_text = 0x7f0d00aa;
-        public static final int leak_canary_row_time = 0x7f0d00ab;
+        public static final int leak_canary_action = 0x7f0d00ac;
+        public static final int leak_canary_display_leak_failure = 0x7f0d00ab;
+        public static final int leak_canary_display_leak_list = 0x7f0d00aa;
+        public static final int leak_canary_row_connector = 0x7f0d00af;
+        public static final int leak_canary_row_more = 0x7f0d00b0;
+        public static final int leak_canary_row_text = 0x7f0d00ad;
+        public static final int leak_canary_row_time = 0x7f0d00ae;
     }
     public static final class layout {
-        public static final int leak_canary_display_leak = 0x7f04003c;
-        public static final int leak_canary_heap_dump_toast = 0x7f04003d;
-        public static final int leak_canary_leak_row = 0x7f04003e;
-        public static final int leak_canary_ref_row = 0x7f04003f;
-        public static final int leak_canary_ref_top_row = 0x7f040040;
+        public static final int leak_canary_display_leak = 0x7f040041;
+        public static final int leak_canary_heap_dump_toast = 0x7f040042;
+        public static final int leak_canary_leak_row = 0x7f040043;
+        public static final int leak_canary_ref_row = 0x7f040044;
+        public static final int leak_canary_ref_top_row = 0x7f040045;
     }
     public static final class string {
         public static final int leak_canary_analysis_failed = 0x7f070015;
@@ -55,6 +55,6 @@ public final class R {
     }
     public static final class style {
         public static final int leak_canary_LeakCanary_Base = 0x7f09002b;
-        public static final int leak_canary_Theme_Transparent = 0x7f090191;
+        public static final int leak_canary_Theme_Transparent = 0x7f090193;
     }
 }

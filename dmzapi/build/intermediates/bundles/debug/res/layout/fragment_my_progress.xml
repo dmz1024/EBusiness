@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="#333333"
-    android:padding="10dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/size10"
+    android:paddingRight="@dimen/size10"
+    >
 
-    <ImageView
-        android:id="@+id/iv_loading"
-        android:layout_width="35dp"
-        android:scaleType="fitXY"
-        android:layout_height="35dp"
-        android:layout_centerVertical="true"
-        android:src="@drawable/my_progress_loading" />
+    <FrameLayout
+        android:id="@+id/fgRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size40"
+        android:background="@drawable/shape_b0000000"
+        android:padding="9dp">
 
-    <TextView
-        android:id="@+id/tv_content"
-        android:textColor="#fff"
-        android:textSize="13sp"
-        android:visibility="gone"
-        android:layout_toRightOf="@id/iv_loading"
-        android:layout_marginLeft="10dp"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_loading"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_progress_loading" />
+            <TextView
+                android:textColor="#fff"
+                android:layout_marginLeft="@dimen/size10"
+                android:textSize="@dimen/sp12"
+                android:text="正在加载"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
 </RelativeLayout>

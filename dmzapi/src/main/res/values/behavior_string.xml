@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_view_behavior">com.dmz.library.dmzapi.behavior.LTitleBehavior</string>
+    <string name="fab_scale_behavior">com.dmz.library.dmzapi.behavior.LFabScaleBehavior</string>
+    <string name="fab_vertical_behavior">com.dmz.library.dmzapi.behavior.LFabVerticalBehavior</string>
+    <string name="bottom_view_behavior">com.dmz.library.dmzapi.behavior.LBottomBehavior</string>
+</resources>
+

@@ -125,7 +125,7 @@ public class TestWindowManager {
     }
 
     private void onClick() {
-        Go.goSpaceOrderInProgeressDesc("1");
+//        Go.goSpaceOrderInProgeressDesc("1");
     }
 
     public SpaceOrderInfoVIew getView() {

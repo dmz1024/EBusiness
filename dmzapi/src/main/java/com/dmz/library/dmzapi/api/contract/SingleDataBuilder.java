@@ -9,7 +9,7 @@ import com.dmz.library.dmzapi.api.DmzBuilder;
  */
 
 public class SingleDataBuilder extends BaseDataBuilder {
-    private boolean alwaysErr = true;//如果请求发生错误，是否总是显示错误页面
+    private boolean alwaysErr = false;//如果请求发生错误，是否总是显示错误页面
 
     private View loadingView;
     private View errorView;

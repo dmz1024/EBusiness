@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fgTop"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@mipmap/yue_bg_pic">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="￥299.00"
+                android:textColor="@color/color_1c2438"
+                android:textSize="@dimen/sp30" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="加载中..."
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/sp12" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size45"
+        android:layout_below="@id/fgTop"
+        android:layout_marginLeft="@dimen/size20"
+        android:layout_marginRight="@dimen/size20"
+        android:layout_marginTop="@dimen/size50"
+        android:background="@drawable/shape_ffc730_ra4"
+        android:text="加载中..."
+        android:textColor="#fff"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:visibility="gone"
+        android:layout_below="@id/btSubmit"
+        android:layout_marginTop="@dimen/size30"
+        android:layout_centerHorizontal="true"
+        android:text="*押金将在5个工作日内到账。如未到账，请联系客服。"
+        android:textSize="@dimen/sp11"
+        android:paddingRight="@dimen/size12"
+        android:paddingLeft="@dimen/size12"
+        android:paddingTop="@dimen/size5"
+        android:textColor="@color/color_999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

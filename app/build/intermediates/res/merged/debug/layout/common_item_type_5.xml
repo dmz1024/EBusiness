@@ -20,7 +20,7 @@
         android:layout_height="@dimen/size45"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"/>
 
     <View
         android:layout_width="match_parent"

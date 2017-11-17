@@ -1,97 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <LinearLayout
-        style="@style/ln_ma_wr_ver_styles"
-        android:layout_marginTop="0.5dp"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/tv_total"
-            style="@style/tv_wr_min_15sp_style"
-            android:layout_marginTop="20dp"
-            android:text="10.00"
-            android:textSize="25sp" />
-
-        <TextView
-            style="@style/tv_wr_min_15sp_style"
-            android:text="总余额(元)"
-            android:textColor="@color/color_999" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@mipmap/yue_bjt_pic">
 
         <LinearLayout
-            style="@style/ln_ma_wr_ho_styles"
-            android:layout_marginBottom="@dimen/size20"
-            android:layout_marginTop="@dimen/size20">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
-            <LinearLayout
-                style="@style/ln_ma_wr_ver_styles"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:gravity="center">
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="加载中..."
+                android:textColor="@color/color_fff"
+                android:textSize="@dimen/sp30" />
 
-                <TextView
-                    android:id="@+id/tv_charge"
-                    style="@style/tv_wr_min_15sp_style"
-                    android:text="10.00"
-                    android:textSize="@dimen/sp18" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="总金额（元）"
+                android:textColor="@color/color_fff"
+                android:textSize="@dimen/sp12" />
+        </LinearLayout>
+    </FrameLayout>
 
-                <TextView
-                    style="@style/tv_wr_min_15sp_style"
-                    android:text="充值余额(元)"
-                    android:textColor="@color/color_999" />
-            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size10"
+        android:paddingTop="@dimen/size10"
+        android:weightSum="2">
 
-            <LinearLayout
-                style="@style/ln_ma_wr_ver_styles"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv_give"
-                    style="@style/tv_wr_min_15sp_style"
-                    android:text="10.00"
-                    android:textSize="@dimen/sp18" />
+            <TextView
+                android:id="@+id/tvCmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="0.00"
+                android:textColor="@color/color_1c2438"
+                android:textSize="@dimen/sp14" />
 
-                <TextView
-                    style="@style/tv_wr_min_15sp_style"
-                    android:text="赠送余额(元)"
-                    android:textColor="@color/color_999" />
-            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size5"
+                android:gravity="center"
+                android:text="充值余额（元）"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/sp12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_e9eaec" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="0.00"
+                android:textColor="@color/color_1c2438"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size5"
+                android:gravity="center"
+                android:text="赠送余额（元）"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/sp12" />
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        style="@style/ln_ma_ma_ver_style"
-        android:layout_marginTop="@dimen/size10">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_e9eaec" />
 
-        <TextView
-            android:id="@+id/tv_submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/size20"
-            android:background="@drawable/shape_fill_square"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="充值" />
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:layout_marginLeft="@dimen/size40"
+        android:layout_marginRight="@dimen/size40"
+        android:layout_marginTop="@dimen/size50"
+        android:background="@drawable/shape_ffc730_ra4"
+        android:text="充值"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp16" />
 
-        <TextView
-            android:id="@+id/tv_xieyi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/size20"
-            android:layout_marginRight="@dimen/size20"
-            android:paddingLeft="@dimen/size5"
-            android:paddingRight="@dimen/size5"
-            android:text="@string/tv_cz_xieyi"
-            android:textColor="@color/color_999"
-            android:textSize="@dimen/sp14" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/tvXieyi"
 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size10"
+        android:text="充值使用余额表示您同意《SPACE余额协议》"
+        android:textColor="@color/color_666"
+        android:textSize="@dimen/sp12" />
 
 </LinearLayout>

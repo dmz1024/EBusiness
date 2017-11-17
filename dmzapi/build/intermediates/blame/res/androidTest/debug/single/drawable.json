@@ -4,6 +4,10 @@
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\shape_b0000000.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shape_ffcc41_ra5.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\shape_ffcc41_ra5.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_internal_bg.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
@@ -16,12 +20,12 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\my_progress_err.png",
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\my_progress_err.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\my_progress_success.png",
@@ -64,12 +68,12 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_search_api_material.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\my_progress_loading.png",
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\my_progress_loading.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg.xml",
@@ -116,6 +120,10 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\tooltip_frame_light.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shape_toast.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\shape_toast.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
@@ -144,8 +152,16 @@
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\shape_corner_top.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shape_toast_error.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\shape_toast_error.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_icon_background.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shape_f5f5f5_tip_fenge.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\shape_f5f5f5_tip_fenge.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_thumb_material.xml",
@@ -194,6 +210,14 @@
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shape_toast_warn.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\shape_toast_warn.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shape_toast_success.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\debug\\res\\drawable\\shape_toast_success.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\icon_toast_err.png",

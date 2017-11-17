@@ -8,19 +8,10 @@ import butterknife.Unbinder;
  */
 
 public class NotNetBaseActivity extends ToobarBaseActivity {
-    private Unbinder unbinder;
 
     @Override
     protected void initView() {
-        unbinder = ButterKnife.bind(this);
+        ButterKnife.bind(this);
         super.initView();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (unbinder != null) {
-            unbinder.unbind();
-        }
     }
 }

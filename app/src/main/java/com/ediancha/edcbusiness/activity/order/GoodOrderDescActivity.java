@@ -18,6 +18,7 @@ import com.dmz.library.dmzapi.utils.Copy;
 import com.dmz.library.dmzapi.view.activity.SingleDataBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.GoodsOrderDescBean;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
@@ -69,23 +70,22 @@ public class GoodOrderDescActivity extends SingleDataBaseActivity<GoodsOrderDesc
     @Override
     protected void initDmzBuilder() {
         dBuilder.setaClass(GoodsOrderDescBean.class)
-                .setUrl(ApiContant.GOOD_ORDER_DESC).setParms("type", "10").setParms("orderId", orderId);
+                .setUrl(ApiContant.GOOD_ORDER_DESC).setParms(UserInfoUtil.getUserToken()).setParms("gOrderId", orderId);
     }
 
     @Override
     public void onSuccess(IBasePresenter presenter, GoodsOrderDescBean.Data bean) {
 
-        GoodsOrderDescBean.Goods goods = bean.getGoods();
         ArrayList<GoodsOrderDescBean.OrderInfo> orderInfos = bean.getOrderInfos();
         ArrayList<GoodsOrderDescBean.PayInfo> payInfo = bean.getPayInfo();
 
         tvStatusInfo.setText(bean.getStatus());
         tvTitle.setText(bean.getTitle());
-        tvPrice.setText(goods.getGoodPrice());
-        tvGoodName.setText(goods.getGoodPrice());
-        tvInfo.setText(goods.getGoodInfo());
-        tvCount.setText(goods.getGoodNum());
-        Glide.with(this).load(goods.getGoodImg()).into(ivGoodImg);
+        tvPrice.setText(bean.getGoodPrice());
+        tvGoodName.setText(bean.getGoodPrice());
+        tvInfo.setText(bean.getGoodInfo());
+        tvCount.setText(bean.getGoodNum());
+        Glide.with(this).load(bean.getGoodImg()).into(ivGoodImg);
 
 
         AdapterHelper._instance(this, rvPayInfo)._initData(payInfo).setLayoutManager(new LinearLayoutManager(this) {

@@ -1,328 +1,604 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:1-63:12
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:2:1-202:12
 	package
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:3:5-39
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:4:5-39
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:3:5-51
 	xmlns:android
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:6:5-67
-MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:11:5-67
-MERGED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:26:5-67
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:7:5-67
+MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:11:5-67
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\Admin\.android\build-cache\bf46225b61f3a675377657cee0ba05cc11eeab37\output\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:7:5-79
-MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:12:5-79
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:8:5-79
+MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:8:5-76
-MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:13:5-76
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:9:5-76
+MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:13:5-76
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:8:22-73
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:9:22-73
 uses-permission#android.permission.CAMERA
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:9:5-65
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:10:5-65
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:9:22-62
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:10:22-62
 uses-permission#android.permission.FLASHLIGHT
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:10:5-69
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:11:5-69
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:10:22-66
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:11:22-66
 uses-feature#android.hardware.camera
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:14:5-60
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:15:5-60
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:14:19-57
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:15:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:15:5-70
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:16:5-70
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:15:19-67
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:16:19-67
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:17:5-66
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:18:5-66
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:17:22-63
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:18:22-63
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:18:5-68
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:19:5-68
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:18:22-65
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:19:22-65
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:19:5-80
-MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:14:5-80
-MERGED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:27:5-80
-MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:25:5-80
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:20:5-80
+MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:14:5-80
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\Admin\.android\build-cache\bf46225b61f3a675377657cee0ba05cc11eeab37\output\AndroidManifest.xml:27:5-80
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:25:5-80
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:19:22-77
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:20:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:20:5-81
-MERGED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:28:5-81
-MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:26:5-81
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:21:5-81
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\Admin\.android\build-cache\bf46225b61f3a675377657cee0ba05cc11eeab37\output\AndroidManifest.xml:28:5-81
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:26:5-81
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:20:22-78
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:21:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:22:5-75
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:22:22-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:24:5-81
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:24:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:26:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:29:5-76
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:29:22-73
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:32:5-89
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:32:22-86
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:34:5-68
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:34:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:35:5-74
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:35:22-71
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:39:5-78
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:39:22-75
 application
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:22:5-61:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dengmingzhi/.android/build-cache/4722fde9f602c40060f5962a048274729a9c8d40/output/AndroidManifest.xml:9:5-20
-MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:16:5-27:19
-MERGED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.android/build-cache/e8447d57349478ef540c1dfd460a463989862029/output/AndroidManifest.xml:11:5-18:19
-MERGED from [com.android.support:design:26.1.0] /Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:transition:26.1.0] /Users/dengmingzhi/.android/build-cache/73ed2ed5aa82f0298154023cb6832900334a371d/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dengmingzhi/.android/build-cache/a76b44cd4d333f62ccee363c4593a8ae94c0cc94/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.github.tianzhijiexian:AppBar:1.0.3] /Users/dengmingzhi/.android/build-cache/8c57970ca20d865be9b26bfdcb90c501b12160b8/output/AndroidManifest.xml:11:5-12:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dengmingzhi/.android/build-cache/3c8660fae970a73d6d1bfb607e2fad262cfc9bc1/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dengmingzhi/.android/build-cache/bb27e5538e8cda51999c95f1d78c9c1c04dc5c79/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dengmingzhi/.android/build-cache/39f7101534d7594b045e22d455987e886af71cb4/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dengmingzhi/.android/build-cache/1883c3e14f44f6fcc428ece8d4ffdfc4f0d734ad/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dengmingzhi/.android/build-cache/ef03500056926a86fed9857d1e0f030061999b65/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dengmingzhi/.android/build-cache/6c5eee365f244ae26e6de5d80d91a6f43af402d8/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dengmingzhi/.android/build-cache/c326b71d3fa6306eedc4b52b5c84ff7ca29a3475/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:28:5-57:19
-MERGED from [com.android.support:support-compat:26.1.0] /Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/dengmingzhi/.android/build-cache/9d1b5c3f5e3486c8c57c122d07a23873a818bd30/output/AndroidManifest.xml:24:5-28:19
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:42:5-200:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Admin\.android\build-cache\ab4bbb27ab9c171b6223ebba97a86e9c2cbe8c45\output\AndroidManifest.xml:9:5-20
+MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:16:5-27:19
+MERGED from [cn.yipianfengye.android:zxing-library:2.2] C:\Users\Admin\.android\build-cache\316f21a01ffefa394b159ed9f5d31c564d295f52\output\AndroidManifest.xml:11:5-18:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\Admin\.android\build-cache\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Admin\.android\build-cache\f2f916c07f27aa6500cc574c5f65adc1839fb288\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Admin\.android\build-cache\582b44e14cec5c2e08b63abdb9c96622c1a0a83c\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.yanzhenjie:permission:1.1.0] C:\Users\Admin\.android\build-cache\1c747bcda8529799875b9c68463248c6fb05d30f\output\AndroidManifest.xml:24:5-31:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Admin\.android\build-cache\f70341c495077daf82b0dbf2f050e2e030a5e6e8\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:28:5-57:19
+MERGED from [com.airbnb.android:lottie:2.2.5] C:\Users\Admin\.android\build-cache\92ab95452a0dd43d3b3eca8afcf58effc56bb617\output\AndroidManifest.xml:10:5-20
+MERGED from [com.github.pinguo-zhouwei:MZBannerView:v2.0.0] C:\Users\Admin\.android\build-cache\2df9177afcff0a5f0880ddf093c35a60c979fa84\output\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Admin\.android\build-cache\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Admin\.android\build-cache\5c37403f435c7dd9657ac96ba19f7c0fdbf53e8e\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Admin\.android\build-cache\949b27702e3f050692d5db51d4a2261fe1db9a07\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Admin\.android\build-cache\a5530254895be899902fc87c670a9da37915921c\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Admin\.android\build-cache\16fc6127d4563575cf136d89ba263229d9382580\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Admin\.android\build-cache\d22456b7ddaa7e3f73129bc6881ff2d9059d82dc\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Admin\.android\build-cache\e5bc0ebb36481cd28f34477c708c404481bbc9c4\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Admin\.android\build-cache\ff69c5f3bd3b3b54bbc0a4da8b0e4f01750dc0b0\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Admin\.android\build-cache\fd42bfdde8c18b54ec3c3717b00920858f65f447\output\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Admin\.android\build-cache\9785d7e8bba5245e8b796e414f998f8325c71dd7\output\AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:26:9-41
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:46:9-41
 	android:supportsRtl
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:28:9-35
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:48:9-35
 	android:roundIcon
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:27:9-54
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:47:9-54
 	android:allowBackup
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:24:9-35
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:44:9-35
 	android:icon
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:25:9-43
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:45:9-43
 	android:theme
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:29:9-42
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:49:9-42
+	tools:replace
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:50:9-37
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:23:9-30
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:43:9-30
+meta-data#com.amap.api.v2.apikey
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:53:9-55:64
+	android:value
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:55:13-61
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:54:13-50
 activity#com.ediancha.edcbusiness.activity.MainActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:30:9-36:20
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:57:9-65:20
+	android:launchMode
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:59:13-44
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:30:19-56
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:31:13-35:29
-action#android.intent.action.MAIN
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:32:17-69
-	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:32:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:34:17-77
-	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:34:27-74
-activity#com.ediancha.edcbusiness.activity.Main5Activity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:37:9-60
-	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:37:19-57
-activity#com.ediancha.edcbusiness.activity.Main6Activity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:38:9-60
-	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:38:19-57
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:58:13-50
 activity#com.ediancha.edcbusiness.activity.my.PersonCenterActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:39:9-41:56
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:67:9-69:56
 	android:theme
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:41:13-53
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:69:13-53
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:40:13-61
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:68:13-61
 activity#com.ediancha.edcbusiness.activity.QwActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:42:9-44:55
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:70:9-72:46
 	android:theme
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:44:13-43
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:72:13-43
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:43:13-48
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:71:13-48
 activity#com.ediancha.edcbusiness.activity.SpaceDescActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:45:9-73
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:73:9-64
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:45:19-61
-activity#com.ediancha.edcbusiness.activity.message.ActivityMessageActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:46:9-87
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:73:19-61
+activity#com.ediancha.edcbusiness.v1.activity.message.ActivityMessageActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:74:9-81
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:46:19-75
-activity#com.ediancha.edcbusiness.activity.message.ActivitySplendidActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:47:9-88
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:74:19-78
+activity#com.ediancha.edcbusiness.v1.activity.message.ActivitySplendidActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:75:9-82
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:47:19-76
-activity#com.ediancha.edcbusiness.activity.message.ExpenseTipsActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:48:9-83
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:75:19-79
+activity#com.ediancha.edcbusiness.v1.activity.message.ExpenseTipsActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:76:9-77
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:48:19-71
-activity#com.ediancha.edcbusiness.activity.walletbag.MyPackageActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:49:9-73
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:76:19-74
+activity#com.ediancha.edcbusiness.v1.activity.my.MyPackageActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:77:9-70
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:49:19-71
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:77:19-67
 activity#com.ediancha.edcbusiness.activity.walletbag.CouponActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:50:9-70
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:78:9-71
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:50:19-68
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:78:19-68
 activity#com.ediancha.edcbusiness.activity.walletbag.DepositActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:51:9-71
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:79:9-72
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:51:19-69
-activity#com.ediancha.edcbusiness.activity.walletbag.MoneyActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:52:9-69
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:79:19-69
+activity#com.ediancha.edcbusiness.v1.activity.my.MoneyActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:80:9-66
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:52:19-67
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:80:19-63
 activity#com.ediancha.edcbusiness.activity.walletbag.ChargeActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:53:9-70
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:81:9-71
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:53:19-68
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:81:19-68
+activity#com.ediancha.edcbusiness.activity.coupon.CouponChangeActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:82:9-74
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:82:19-71
+activity#com.ediancha.edcbusiness.v1.activity.help.HelpCenterActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:83:9-73
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:83:19-70
+activity#com.ediancha.edcbusiness.v1.activity.help.FanKuiActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:84:9-69
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:84:19-66
+activity#com.ediancha.edcbusiness.v1.activity.help.WebViewActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:85:9-70
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:85:19-67
+activity#com.ediancha.edcbusiness.activity.space.SpaceDetailActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:86:9-72
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:86:19-69
+activity#com.ediancha.edcbusiness.activity.my.AutherActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:87:9-64
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:87:19-61
+activity#com.ediancha.edcbusiness.v1.activity.help.HelpCenterNextActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:88:9-77
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:88:19-74
 activity#com.ediancha.edcbusiness.activity.login.LoginActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:54:9-56:58
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:89:9-91:49
 	android:theme
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:56:13-46
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:91:13-46
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:55:13-57
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:90:13-57
 activity#com.ediancha.edcbusiness.activity.order.SpaceOrderActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:57:9-80
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:92:9-71
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:57:19-68
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:92:19-68
 activity#com.ediancha.edcbusiness.activity.order.GoodOrderActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:58:9-79
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:93:9-70
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:58:19-67
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:93:19-67
 activity#com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:59:9-83
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:94:9-74
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:59:19-71
-activity#com.ediancha.edcbusiness.activity.my.MyInfoActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:60:9-73
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:94:19-71
+activity#com.ediancha.edcbusiness.v1.activity.my.MyInfoActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:95:9-66
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml:60:19-61
-uses-sdk
-INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dengmingzhi/.android/build-cache/4722fde9f602c40060f5962a048274729a9c8d40/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:7:5-9:41
-MERGED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.android/build-cache/e8447d57349478ef540c1dfd460a463989862029/output/AndroidManifest.xml:7:5-9:41
-MERGED from [EBusiness:dmzapi:unspecified] /Users/dengmingzhi/Desktop/develop/EBusiness/dmzapi/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
-MERGED from [com.zhy:okhttputils:2.6.1] /Users/dengmingzhi/.android/build-cache/bd6da5e2821d7b3a923e40606c35a506f012a1f0/output/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:26.1.0] /Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:transition:26.1.0] /Users/dengmingzhi/.android/build-cache/73ed2ed5aa82f0298154023cb6832900334a371d/output/AndroidManifest.xml:20:5-44
-MERGED from [com.zhy:base-rvadapter:3.0.3] /Users/dengmingzhi/.android/build-cache/4f18240b507af40ef4a9fb2dc0da9143bc231801/output/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dengmingzhi/.android/build-cache/a76b44cd4d333f62ccee363c4593a8ae94c0cc94/output/AndroidManifest.xml:20:5-44
-MERGED from [com.github.tianzhijiexian:AppBar:1.0.3] /Users/dengmingzhi/.android/build-cache/8c57970ca20d865be9b26bfdcb90c501b12160b8/output/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dengmingzhi/.android/build-cache/3c8660fae970a73d6d1bfb607e2fad262cfc9bc1/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dengmingzhi/.android/build-cache/bb27e5538e8cda51999c95f1d78c9c1c04dc5c79/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dengmingzhi/.android/build-cache/39f7101534d7594b045e22d455987e886af71cb4/output/AndroidManifest.xml:20:5-44
-MERGED from [com.alibaba:arouter-api:1.2.2] /Users/dengmingzhi/.android/build-cache/ab1cb576d648e470077f15118303c11b8eb91c8f/output/AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dengmingzhi/.android/build-cache/1883c3e14f44f6fcc428ece8d4ffdfc4f0d734ad/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dengmingzhi/.android/build-cache/ef03500056926a86fed9857d1e0f030061999b65/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dengmingzhi/.android/build-cache/6c5eee365f244ae26e6de5d80d91a6f43af402d8/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dengmingzhi/.android/build-cache/c326b71d3fa6306eedc4b52b5c84ff7ca29a3475/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:20:5-22:41
-MERGED from [com.jakewharton:butterknife:8.8.1] /Users/dengmingzhi/.android/build-cache/0fc0777ba9b0c7796906e2a4f0c3847d2b00a315/output/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-compat:26.1.0] /Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/dengmingzhi/.android/build-cache/9d1b5c3f5e3486c8c57c122d07a23873a818bd30/output/AndroidManifest.xml:20:5-22:41
-	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.1.0] /Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/AndroidManifest.xml:23:9-59
-	android:targetSdkVersion
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/AndroidManifest.xml
-service#com.taobao.sophix.aidl.DownloadService
-ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:17:9-25:19
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:95:19-64
+activity#com.ediancha.edcbusiness.activity.order.SpaceOrderInProgeressDescActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:96:9-86
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:96:19-83
+activity#com.ediancha.edcbusiness.activity.walletbag.PayPWSettingActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:97:9-77
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:97:19-74
+activity#com.ediancha.edcbusiness.activity.my.UpdateInfoActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:98:9-68
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:98:19-65
+activity#com.ediancha.edcbusiness.activity.SpecialActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:99:9-62
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:99:19-59
+activity#com.ediancha.edcbusiness.activity.orderdetail.OrderItemActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:100:9-76
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:100:19-73
+activity#com.ediancha.edcbusiness.activity.space.MoneyAffirmActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:101:9-72
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:101:19-69
+activity#com.ediancha.edcbusiness.activity.space.NavigationActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:102:9-71
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:102:19-68
+activity#com.ediancha.edcbusiness.activity.space.LocationActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:103:9-69
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:103:19-66
+activity#com.ediancha.edcbusiness.v1.activity.space.ChoseDateActvivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:104:9-74
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:104:19-71
+activity#com.ediancha.edcbusiness.v1.activity.order.CheckOrderActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:105:9-74
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:105:19-71
+activity#com.ediancha.edcbusiness.v1.activity.order.SpacePayDetailActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:106:9-78
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:106:19-75
+activity#com.ediancha.edcbusiness.v1.activity.order.OrderingActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:107:9-71
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:107:19-69
+activity#com.ediancha.edcbusiness.v1.activity.order.OrderShopActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:108:9-72
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:108:19-70
+activity#com.ediancha.edcbusiness.v1.activity.my.SetActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:109:9-63
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:109:19-61
+activity#com.ediancha.edcbusiness.v1.activity.space.OpenInputActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:110:9-72
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:110:19-70
+activity#com.ediancha.edcbusiness.v1.activity.space.AirQualityActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:111:9-73
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:111:19-71
+activity#com.ediancha.edcbusiness.activity.HomeActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:113:9-119:20
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:113:19-56
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:114:13-118:29
+action#android.intent.action.MAIN
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:115:17-69
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:115:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:117:17-77
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:117:27-74
+activity#com.ediancha.edcbusiness.test.DongHuaActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:120:9-126:20
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:120:19-55
+provider#android.support.v4.content.FileProvider
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:128:9-136:20
+	android:authorities
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:130:13-72
+	android:grantUriPermissions
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:132:13-47
 	android:exported
-		ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:19:13-36
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:131:13-37
 	android:name
-		ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:18:13-66
-intent-filter#android.intent.category.DEFAULT+com.taobao.hotfix.action
-ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:20:13-24:29
-action#com.taobao.hotfix.action
-ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:21:17-67
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:129:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:133:13-135:54
+	android:resource
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:135:17-51
 	android:name
-		ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:21:25-64
-category#android.intent.category.DEFAULT
-ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:23:17-76
-	android:name
-		ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] /Users/dengmingzhi/.android/build-cache/8a89c72828648de99947c524ab97c43016e2cc37/output/AndroidManifest.xml:23:27-73
-activity#com.uuzuche.lib_zxing.activity.CaptureActivity
-ADDED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.android/build-cache/e8447d57349478ef540c1dfd460a463989862029/output/AndroidManifest.xml:12:9-17:63
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:134:17-67
+activity#com.alipay.sdk.app.H5PayActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:138:9-143:79
 	android:screenOrientation
-		ADDED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.android/build-cache/e8447d57349478ef540c1dfd460a463989862029/output/AndroidManifest.xml:15:13-49
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:142:13-47
+	android:exported
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:141:13-37
 	android:windowSoftInputMode
-		ADDED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.android/build-cache/e8447d57349478ef540c1dfd460a463989862029/output/AndroidManifest.xml:17:13-60
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:143:13-67
 	android:configChanges
-		ADDED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.android/build-cache/e8447d57349478ef540c1dfd460a463989862029/output/AndroidManifest.xml:14:13-63
-	android:theme
-		ADDED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.android/build-cache/e8447d57349478ef540c1dfd460a463989862029/output/AndroidManifest.xml:16:13-63
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:140:13-85
 	android:name
-		ADDED from [cn.yipianfengye.android:zxing-library:2.2] /Users/dengmingzhi/.android/build-cache/e8447d57349478ef540c1dfd460a463989862029/output/AndroidManifest.xml:13:13-74
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:139:13-60
+activity#com.alipay.sdk.app.H5AuthActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:144:9-149:79
+	android:screenOrientation
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:148:13-47
+	android:exported
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:147:13-37
+	android:windowSoftInputMode
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:149:13-67
+	android:configChanges
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:146:13-74
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:145:13-61
+activity#com.ediancha.edcbusiness.wxapi.WXPayEntryActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:153:9-156:48
+	android:label
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:156:13-45
+	android:exported
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:155:13-36
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:154:13-53
+activity#com.ediancha.edcbusiness.wxapi.WXEntryActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:157:9-160:57
+	android:label
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:160:13-45
+	android:exported
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:159:13-36
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:158:13-50
+service#com.amap.api.location.APSService
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:164:9-76
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:164:18-65
+activity#com.amap.api.navi.AmapRouteActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:166:9-169:63
+	android:configChanges
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:168:13-74
+	android:theme
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:169:13-60
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:167:13-63
+activity#com.tencent.tauth.AuthActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:174:9-186:20
+	android:launchMode
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:176:13-44
+	android:noHistory
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:177:13-37
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:175:13-58
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:178:13-185:29
+action#android.intent.action.VIEW
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:179:17-69
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:179:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:181:17-76
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:181:27-73
+category#android.intent.category.BROWSABLE
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:182:17-78
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:182:27-75
+data
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:184:17-60
+	android:scheme
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:184:23-57
+activity#com.tencent.connect.common.AssistActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:187:9-191:75
+	android:screenOrientation
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:190:13-47
+	android:configChanges
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:189:13-63
+	android:theme
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:191:13-72
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:188:13-69
+activity#com.ediancha.edcbusiness.v1.activity.my.CashPledgeActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:195:9-70
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:195:19-68
+activity#com.ediancha.edcbusiness.v1.activity.my.LimitsActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:196:9-66
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:196:19-64
+activity#com.ediancha.edcbusiness.v1.activity.my.CouponActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:197:9-66
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:197:19-64
+activity#com.ediancha.edcbusiness.v1.activity.my.BalanceDescActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:198:9-71
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:198:19-69
+activity#com.ediancha.edcbusiness.v1.activity.space.MapSpaceActivity
+ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:199:9-71
+	android:name
+		ADDED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml:199:19-69
+uses-sdk
+INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Admin\.android\build-cache\ab4bbb27ab9c171b6223ebba97a86e9c2cbe8c45\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.yipianfengye.android:zxing-library:2.2] C:\Users\Admin\.android\build-cache\316f21a01ffefa394b159ed9f5d31c564d295f52\output\AndroidManifest.xml:7:5-9:41
+MERGED from [EBusiness:dmzapi:unspecified] D:\android\ydc\EBusiness\dmzapi\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [com.zhy:okhttputils:2.6.1] C:\Users\Admin\.android\build-cache\2276cdee66c1f87b74d4925df6470861eadb9771\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:26.1.0] C:\Users\Admin\.android\build-cache\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Admin\.android\build-cache\f2f916c07f27aa6500cc574c5f65adc1839fb288\output\AndroidManifest.xml:20:5-44
+MERGED from [com.zhy:base-rvadapter:3.0.3] C:\Users\Admin\.android\build-cache\d9c38a76bde4fed7e81306fb72899eba73a99ae7\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Admin\.android\build-cache\582b44e14cec5c2e08b63abdb9c96622c1a0a83c\output\AndroidManifest.xml:20:5-44
+MERGED from [com.alibaba:arouter-api:1.2.2] C:\Users\Admin\.android\build-cache\f22db2cb6b23b228fe17e59f7730e83441669b03\output\AndroidManifest.xml:6:5-8:41
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\Admin\.android\build-cache\bf46225b61f3a675377657cee0ba05cc11eeab37\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.yanzhenjie:permission:1.1.0] C:\Users\Admin\.android\build-cache\1c747bcda8529799875b9c68463248c6fb05d30f\output\AndroidManifest.xml:20:5-22:41
+MERGED from [com.yanzhenjie.alertdialog:alertdialog:1.0.1] C:\Users\Admin\.android\build-cache\2f7ce0db4cfbd2be240fce395e807aead7710e28\output\AndroidManifest.xml:6:5-8:41
+MERGED from [com.alibaba.android:ultraviewpager:1.0.6.1] C:\Users\Admin\.android\build-cache\53f5961aa358ccde87cb1f9e3b07220db9b8abf4\output\AndroidManifest.xml:32:5-34:41
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Admin\.android\build-cache\f70341c495077daf82b0dbf2f050e2e030a5e6e8\output\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:20:5-22:41
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Admin\.android\build-cache\5b94fc2a6dddabc66c0d562047911763fe67ef6b\output\AndroidManifest.xml:5:5-43
+MERGED from [com.airbnb.android:lottie:2.2.5] C:\Users\Admin\.android\build-cache\92ab95452a0dd43d3b3eca8afcf58effc56bb617\output\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.pinguo-zhouwei:MZBannerView:v2.0.0] C:\Users\Admin\.android\build-cache\2df9177afcff0a5f0880ddf093c35a60c979fa84\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.czy1121:cornerlabelview:1.0.3] C:\Users\Admin\.android\build-cache\50c3e76033ca4fd37d88511ab97b5e3ef4fb873d\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Admin\.android\build-cache\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Admin\.android\build-cache\5c37403f435c7dd9657ac96ba19f7c0fdbf53e8e\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Admin\.android\build-cache\949b27702e3f050692d5db51d4a2261fe1db9a07\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Admin\.android\build-cache\a5530254895be899902fc87c670a9da37915921c\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Admin\.android\build-cache\16fc6127d4563575cf136d89ba263229d9382580\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Admin\.android\build-cache\d22456b7ddaa7e3f73129bc6881ff2d9059d82dc\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Admin\.android\build-cache\e5bc0ebb36481cd28f34477c708c404481bbc9c4\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Admin\.android\build-cache\ff69c5f3bd3b3b54bbc0a4da8b0e4f01750dc0b0\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Admin\.android\build-cache\fd42bfdde8c18b54ec3c3717b00920858f65f447\output\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Admin\.android\build-cache\9785d7e8bba5245e8b796e414f998f8325c71dd7\output\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Admin\.android\build-cache\8aaf44a2752c647799d264ae61a2276381e66027\output\AndroidManifest.xml:18:5-42
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Admin\.android\build-cache\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android\ydc\EBusiness\app\src\main\AndroidManifest.xml
+service#com.taobao.sophix.aidl.DownloadService
+ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:17:9-25:19
+	android:exported
+		ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:19:13-36
+	android:name
+		ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:18:13-66
+intent-filter#android.intent.category.DEFAULT+com.taobao.hotfix.action
+ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:20:13-24:29
+action#com.taobao.hotfix.action
+ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:21:17-67
+	android:name
+		ADDED from [com.aliyun.ams:alicloud-android-hotfix:3.1.2] C:\Users\Admin\.android\build-cache\d5b37b084e3b499c344e476f6017a74eacd6963b\output\AndroidManifest.xml:21:25-64
+activity#com.uuzuche.lib_zxing.activity.CaptureActivity
+ADDED from [cn.yipianfengye.android:zxing-library:2.2] C:\Users\Admin\.android\build-cache\316f21a01ffefa394b159ed9f5d31c564d295f52\output\AndroidManifest.xml:12:9-17:63
+	android:screenOrientation
+		ADDED from [cn.yipianfengye.android:zxing-library:2.2] C:\Users\Admin\.android\build-cache\316f21a01ffefa394b159ed9f5d31c564d295f52\output\AndroidManifest.xml:15:13-49
+	android:windowSoftInputMode
+		ADDED from [cn.yipianfengye.android:zxing-library:2.2] C:\Users\Admin\.android\build-cache\316f21a01ffefa394b159ed9f5d31c564d295f52\output\AndroidManifest.xml:17:13-60
+	android:configChanges
+		ADDED from [cn.yipianfengye.android:zxing-library:2.2] C:\Users\Admin\.android\build-cache\316f21a01ffefa394b159ed9f5d31c564d295f52\output\AndroidManifest.xml:14:13-63
+	android:theme
+		ADDED from [cn.yipianfengye.android:zxing-library:2.2] C:\Users\Admin\.android\build-cache\316f21a01ffefa394b159ed9f5d31c564d295f52\output\AndroidManifest.xml:16:13-63
+	android:name
+		ADDED from [cn.yipianfengye.android:zxing-library:2.2] C:\Users\Admin\.android\build-cache\316f21a01ffefa394b159ed9f5d31c564d295f52\output\AndroidManifest.xml:13:13-74
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.1.0] /Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:transition:26.1.0] /Users/dengmingzhi/.android/build-cache/73ed2ed5aa82f0298154023cb6832900334a371d/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dengmingzhi/.android/build-cache/a76b44cd4d333f62ccee363c4593a8ae94c0cc94/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/dengmingzhi/.android/build-cache/3779151ae84806373d9b3f5691301a89b28a6fee/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dengmingzhi/.android/build-cache/3c8660fae970a73d6d1bfb607e2fad262cfc9bc1/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dengmingzhi/.android/build-cache/bb27e5538e8cda51999c95f1d78c9c1c04dc5c79/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dengmingzhi/.android/build-cache/39f7101534d7594b045e22d455987e886af71cb4/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dengmingzhi/.android/build-cache/1883c3e14f44f6fcc428ece8d4ffdfc4f0d734ad/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dengmingzhi/.android/build-cache/df7e286e177b66eab08cb6ff9ed991453c9178a5/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dengmingzhi/.android/build-cache/ef03500056926a86fed9857d1e0f030061999b65/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dengmingzhi/.android/build-cache/6c5eee365f244ae26e6de5d80d91a6f43af402d8/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dengmingzhi/.android/build-cache/c326b71d3fa6306eedc4b52b5c84ff7ca29a3475/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /Users/dengmingzhi/.android/build-cache/33be41519ec78c2890c96333548b65c80504878e/output/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:design:26.1.0] C:\Users\Admin\.android\build-cache\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Admin\.android\build-cache\f2f916c07f27aa6500cc574c5f65adc1839fb288\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Admin\.android\build-cache\582b44e14cec5c2e08b63abdb9c96622c1a0a83c\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Admin\.android\build-cache\f70341c495077daf82b0dbf2f050e2e030a5e6e8\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Admin\.android\build-cache\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Admin\.android\build-cache\5c37403f435c7dd9657ac96ba19f7c0fdbf53e8e\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Admin\.android\build-cache\949b27702e3f050692d5db51d4a2261fe1db9a07\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Admin\.android\build-cache\a5530254895be899902fc87c670a9da37915921c\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Admin\.android\build-cache\16fc6127d4563575cf136d89ba263229d9382580\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Admin\.android\build-cache\d22456b7ddaa7e3f73129bc6881ff2d9059d82dc\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Admin\.android\build-cache\e5bc0ebb36481cd28f34477c708c404481bbc9c4\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Admin\.android\build-cache\ff69c5f3bd3b3b54bbc0a4da8b0e4f01750dc0b0\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Admin\.android\build-cache\fd42bfdde8c18b54ec3c3717b00920858f65f447\output\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:design:26.1.0] /Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Admin\.android\build-cache\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\output\AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:design:26.1.0] /Users/dengmingzhi/.android/build-cache/1b288efc9ea766eae660d35d61e9aeacf9be6738/output/AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Admin\.android\build-cache\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\output\AndroidManifest.xml:27:13-51
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:29:5-84
+ADDED from [com.lzy.net:okgo:3.0.4] C:\Users\Admin\.android\build-cache\bf46225b61f3a675377657cee0ba05cc11eeab37\output\AndroidManifest.xml:29:5-84
 	android:name
-		ADDED from [com.lzy.net:okgo:3.0.4] /Users/dengmingzhi/.android/build-cache/3d4afe33e436bf618fc49da5b3b090021f7b52db/output/AndroidManifest.xml:29:22-81
+		ADDED from [com.lzy.net:okgo:3.0.4] C:\Users\Admin\.android\build-cache\bf46225b61f3a675377657cee0ba05cc11eeab37\output\AndroidManifest.xml:29:22-81
+activity#com.yanzhenjie.permission.PermissionActivity
+ADDED from [com.yanzhenjie:permission:1.1.0] C:\Users\Admin\.android\build-cache\1c747bcda8529799875b9c68463248c6fb05d30f\output\AndroidManifest.xml:25:9-30:75
+	android:launchMode
+		ADDED from [com.yanzhenjie:permission:1.1.0] C:\Users\Admin\.android\build-cache\1c747bcda8529799875b9c68463248c6fb05d30f\output\AndroidManifest.xml:28:13-42
+	android:windowSoftInputMode
+		ADDED from [com.yanzhenjie:permission:1.1.0] C:\Users\Admin\.android\build-cache\1c747bcda8529799875b9c68463248c6fb05d30f\output\AndroidManifest.xml:30:13-72
+	android:configChanges
+		ADDED from [com.yanzhenjie:permission:1.1.0] C:\Users\Admin\.android\build-cache\1c747bcda8529799875b9c68463248c6fb05d30f\output\AndroidManifest.xml:27:13-74
+	android:theme
+		ADDED from [com.yanzhenjie:permission:1.1.0] C:\Users\Admin\.android\build-cache\1c747bcda8529799875b9c68463248c6fb05d30f\output\AndroidManifest.xml:29:13-65
+	android:name
+		ADDED from [com.yanzhenjie:permission:1.1.0] C:\Users\Admin\.android\build-cache\1c747bcda8529799875b9c68463248c6fb05d30f\output\AndroidManifest.xml:26:13-72
 service#com.squareup.leakcanary.internal.HeapAnalyzerService
-ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:29:9-32:45
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:29:9-32:45
 	android:enabled
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:31:13-36
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:31:13-36
 	android:process
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:32:13-42
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:32:13-42
 	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:30:13-80
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:30:13-80
 service#com.squareup.leakcanary.DisplayLeakService
-ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:33:9-35:39
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:33:9-35:39
 	android:enabled
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:35:13-36
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:35:13-36
 	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:34:13-70
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:34:13-70
 activity#com.squareup.leakcanary.internal.DisplayLeakActivity
-ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:37:9-49:20
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:37:9-49:20
 	android:enabled
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:39:13-36
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:39:13-36
 	android:label
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:41:13-71
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:41:13-71
 	android:icon
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:40:13-54
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:40:13-54
 	android:theme
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:43:13-63
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:43:13-63
 	android:taskAffinity
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:42:13-59
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:42:13-59
 	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:38:13-80
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:38:13-80
 activity#com.squareup.leakcanary.internal.RequestStoragePermissionActivity
-ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:50:9-56:68
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:50:9-56:68
 	android:enabled
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:52:13-36
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:52:13-36
 	android:label
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:54:13-82
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:54:13-82
 	android:icon
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:53:13-54
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:53:13-54
 	android:theme
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:56:13-65
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:56:13-65
 	android:taskAffinity
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:55:13-59
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:55:13-59
 	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /Users/dengmingzhi/.android/build-cache/4eb27c15dabf1f23360f6597a9cdc23e0e3f5bd7/output/AndroidManifest.xml:51:13-93
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] C:\Users\Admin\.android\build-cache\d3f43a04afe6af94172f1c15984fa750402855e1\output\AndroidManifest.xml:51:13-93
 meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/dengmingzhi/.android/build-cache/9d1b5c3f5e3486c8c57c122d07a23873a818bd30/output/AndroidManifest.xml:25:9-27:47
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Admin\.android\build-cache\9785d7e8bba5245e8b796e414f998f8325c71dd7\output\AndroidManifest.xml:25:9-27:47
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/dengmingzhi/.android/build-cache/9d1b5c3f5e3486c8c57c122d07a23873a818bd30/output/AndroidManifest.xml:27:13-44
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Admin\.android\build-cache\9785d7e8bba5245e8b796e414f998f8325c71dd7\output\AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/dengmingzhi/.android/build-cache/9d1b5c3f5e3486c8c57c122d07a23873a818bd30/output/AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Admin\.android\build-cache\9785d7e8bba5245e8b796e414f998f8325c71dd7\output\AndroidManifest.xml:26:13-58

@@ -80,8 +80,16 @@ public class NoTitleDialoggFragment extends DialogFragment {
 
 
         params.width = getWH(getContext())[0] - getWPadding();
-        params.height = ViewGroup.LayoutParams.WRAP_CONTENT;
+        params.height = getH();
+        if(dimAmount()!=-1){
+            params.dimAmount = dimAmount();
+        }
+
         win.setAttributes(params);
+    }
+
+    protected float dimAmount() {
+        return -1f;
     }
 
     protected int getWPadding() {
@@ -115,5 +123,13 @@ public class NoTitleDialoggFragment extends DialogFragment {
 
     public void show(FragmentManager supportFragmentManager) {
         show(supportFragmentManager, "dialog");
+    }
+
+    public void show(Context ctx){
+        show(((AppCompatActivity) ctx));
+    }
+
+    protected int getH() {
+        return ViewGroup.LayoutParams.WRAP_CONTENT;
     }
 }

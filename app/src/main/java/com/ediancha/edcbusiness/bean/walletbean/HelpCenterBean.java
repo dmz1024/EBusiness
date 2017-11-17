@@ -24,7 +24,11 @@ public class HelpCenterBean extends BaseBean<HelpCenterBean.Data> {
         public ArrayList<CategorysBean> categorys;
 
         public ArrayList<HotsBean> getHots() {
-            return hots;
+            ArrayList<HotsBean> datas=new ArrayList<>();
+            datas.addAll(hots);
+            datas.addAll(hots);
+            datas.addAll(hots);
+            return datas;
         }
 
         public ArrayList<CategorysBean> getCategorys() {

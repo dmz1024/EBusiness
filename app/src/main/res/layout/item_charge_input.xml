@@ -13,8 +13,8 @@
 
         <EditText
             android:id="@+id/et_cmoney"
-            style="@style/tv_wr_min_15sp_pa10_style"
-            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
             android:layout_centerHorizontal="true"
             android:layout_centerInParent="true"
             android:layout_marginBottom="0dp"
@@ -22,11 +22,11 @@
             android:cursorVisible="true"
             android:gravity="center"
             android:hint="其他金额"
-            android:inputType="number"
+            android:inputType="number|numberDecimal"
             android:maxLines="1"
             android:textColorHint="@color/color_999"
             android:textCursorDrawable="@null"
-            android:textSize="@dimen/sp16" />
+            android:textSize="@dimen/sp13" />
 
         <ImageView
             android:id="@+id/iv_show"
@@ -34,6 +34,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:src="@mipmap/icon_recharge_selected" />
+            android:src="@mipmap/xuanzh_pic" />
     </RelativeLayout>
 </LinearLayout>

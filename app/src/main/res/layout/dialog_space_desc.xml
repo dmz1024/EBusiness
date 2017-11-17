@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/size250"
+    android:background="#fff"
+    android:padding="@dimen/size15">
+
+
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@mipmap/rongna_tanchuang_guan_icon" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvContent"
+        android:minHeight="@dimen/size175"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/size45" />
+</FrameLayout>

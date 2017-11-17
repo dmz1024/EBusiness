@@ -1,58 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:background="@color/color_fff">
 
-    <LinearLayout
-        android:id="@+id/cv_bg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/size5"
-        android:background="@drawable/shape_circle_ra2">
-        <RelativeLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_circle_ra2"
+        android:layout_margin="@dimen/size10"
+        android:id="@+id/rl">
+
+        <EditText
+            android:id="@+id/et_cmoney"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="其他金额"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:textColorHint="@color/color_999"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/sp13" />
+
+        <ImageView
+            android:id="@+id/iv_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <EditText
-                android:id="@+id/et_cmoney"
-                style="@style/tv_wr_min_15sp_pa10_style"
-                android:background="@null"
-                android:layout_width="55dp"
-                android:hint="其他金额"
-                android:textColorHint="@color/color_333"
-                android:layout_marginBottom="0dp"
-                android:gravity="center"
-                android:inputType="number"
-                android:maxLines="1"
-                android:textSize="@dimen/sp16"
-                android:cursorVisible="true"
-                android:textCursorDrawable="@null"
-                android:layout_marginTop="@dimen/size15"
-                android:layout_centerHorizontal="true"
-                />
-            <TextView
-                android:id="@+id/tv_zmoney"
-                style="@style/tv_wr_min_15sp_pa10_style"
-                android:text="赠送300元"
-                android:textColor="@color/color_666"
-                android:textSize="@dimen/size14"
-                android:layout_marginTop="@dimen/size5"
-                android:layout_marginBottom="@dimen/size15"
-                android:layout_below="@+id/et_cmoney"
-                android:layout_centerHorizontal="true"
-                />
-            <ImageView
-                android:id="@+id/iv_show"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/icon_recharge_selected"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                />
-        </RelativeLayout>
-    </LinearLayout>
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/xuanzh_pic" />
+    </RelativeLayout>
 </LinearLayout>

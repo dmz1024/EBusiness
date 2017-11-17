@@ -2,6 +2,7 @@ package com.dmz.library.dmzapi.utils;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.text.TextUtils;
 import android.widget.TextView;
 
 import com.dmz.library.dmzapi.R;
@@ -16,6 +17,9 @@ public class ResUtil {
 
 
     public static Drawable setDra(Context ctx, int rid) {
+        if (rid == 0) {
+            return null;
+        }
         Drawable drawable = ctx.getResources().getDrawable(rid);
         drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getIntrinsicHeight());
         return drawable;
@@ -47,8 +51,31 @@ public class ResUtil {
      * @return
      */
     public static int getMipResId(Context context, String variableName) {
+        int resId;
+        try {
+            resId = context.getResources().getIdentifier(variableName, "mipmap", context.getPackageName());
+        } catch (Exception e) {
+            return 0;
+        }
 
-        int resId = context.getResources().getIdentifier(variableName, "mipmap", context.getPackageName());
+        //如果没有在"mipmap"下找到imageName,将会返回0
+        return resId;
+    }
+
+    /**
+     * 将字符串转成资源id
+     *
+     * @param variableName
+     * @return
+     */
+    public static int getDraResId(Context context, String variableName) {
+        int resId;
+        try {
+            resId = context.getResources().getIdentifier(variableName, "drawable", context.getPackageName());
+        } catch (Exception e) {
+            return 0;
+        }
+
         //如果没有在"mipmap"下找到imageName,将会返回0
         return resId;
     }
@@ -83,6 +110,12 @@ public class ResUtil {
                 return R.layout.common_item_type_5;
             case 6:
                 return R.layout.common_item_type_6;
+            case 7:
+                return R.layout.common_item_type_7;
+            case 8:
+                return R.layout.common_item_type_8;
+            case 9:
+                return R.layout.common_item_type_9;
         }
         return -1;
     }

@@ -16,7 +16,7 @@ public class DmzBuilder {
     private Map<Integer, String> mapInfo;//根据code值显示waring数据
     private String url;//请求网址
     private Map<String, String> map;//请求参数
-    private boolean method;//请求方法
+    private boolean method=true;//请求方法
     private Object sign;//请求标识，用于取消请求
     private int code = 10000;//跟后台约定的成功返回码
     private IProgressInterface.OnProgressCancelListener progressCancelListener;
@@ -26,7 +26,7 @@ public class DmzBuilder {
     private IProgressInterface iLoadingView;//请求网络时的加载框
     private boolean isAll;//在成功时是否返回主类对象
     private Class aClass;
-    private int loginCode = 60001;
+    private int loginCode = 30001;
 
     public DmzBuilder setLoginCode(int loginCode) {
         this.loginCode = loginCode;
@@ -227,6 +227,9 @@ public class DmzBuilder {
             if (map == null) {
                 this.map = new HashMap<>();
             }
+//            if(parms.length%2!=0){
+//                throw new IllegalArgumentException("parms 长度需为偶数");
+//            }
             for (int i = 0; i < parms.length - 1; i += 2) {
                 map.put(parms[i], parms[i + 1]);
             }

@@ -35,11 +35,11 @@
 
             <ImageView
                 android:id="@+id/ivWrite"
-                android:layout_width="20dp"
-                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:scaleType="fitXY"
-                android:src="@mipmap/icon_qw_write" />
+                android:src="@mipmap/shou_icon" />
         </FrameLayout>
 
         <TextView
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="65dp"
-            android:text="手动输入门牌号"
+            android:text="手动输入号码"
             android:textColor="#999"
             android:textSize="12sp" />
     </RelativeLayout>
@@ -70,11 +70,11 @@
 
             <ImageView
                 android:id="@+id/ivLight"
-                android:layout_width="20dp"
-                android:layout_height="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:scaleType="fitXY"
-                android:src="@mipmap/icon_colse_light" />
+                android:src="@mipmap/sd_closs_icon" />
         </FrameLayout>
 
         <TextView

@@ -10,9 +10,14 @@ import com.dmz.library.dmzapi.api.bean.ViewBaseType;
 public class SpaceOrderBean extends BaseListBean<SpaceOrderBean.Data> {
     public static class Data extends ViewBaseType {
         public String statusInfo;
-        public String title;
+        public String spaceName;
+        public int orderStatus;
         public String[] info;
         public String orderId;
+
+        public int getOrderStatus() {
+            return orderStatus;
+        }
 
         public String getOrderId() {
             return orderId;
@@ -27,7 +32,7 @@ public class SpaceOrderBean extends BaseListBean<SpaceOrderBean.Data> {
         }
 
         public String getTitle() {
-            return title;
+            return spaceName;
         }
 
         public String getInfo() {

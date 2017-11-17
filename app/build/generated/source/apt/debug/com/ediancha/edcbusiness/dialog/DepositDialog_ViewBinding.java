@@ -4,8 +4,6 @@ package com.ediancha.edcbusiness.dialog;
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -16,29 +14,25 @@ import java.lang.Override;
 public class DepositDialog_ViewBinding implements Unbinder {
   private DepositDialog target;
 
-  private View view2131624100;
+  private View view2131689670;
 
-  private View view2131624164;
+  private View view2131689834;
 
   @UiThread
   public DepositDialog_ViewBinding(final DepositDialog target, View source) {
     this.target = target;
 
     View view;
-    target.mIvStyle = Utils.findRequiredViewAsType(source, R.id.iv_style, "field 'mIvStyle'", ImageView.class);
-    target.mTvContent = Utils.findRequiredViewAsType(source, R.id.tv_content, "field 'mTvContent'", TextView.class);
-    view = Utils.findRequiredView(source, R.id.tv_ok, "field 'mTvOk' and method 'click'");
-    target.mTvOk = Utils.castView(view, R.id.tv_ok, "field 'mTvOk'", TextView.class);
-    view2131624100 = view;
+    view = Utils.findRequiredView(source, R.id.tv_ok, "method 'click'");
+    view2131689670 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.click(p0);
       }
     });
-    view = Utils.findRequiredView(source, R.id.tv_cancel, "field 'mTvCancel' and method 'click'");
-    target.mTvCancel = Utils.castView(view, R.id.tv_cancel, "field 'mTvCancel'", TextView.class);
-    view2131624164 = view;
+    view = Utils.findRequiredView(source, R.id.tv_cancel, "method 'click'");
+    view2131689834 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,18 +44,13 @@ public class DepositDialog_ViewBinding implements Unbinder {
   @Override
   @CallSuper
   public void unbind() {
-    DepositDialog target = this.target;
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
-    this.target = null;
+    target = null;
 
-    target.mIvStyle = null;
-    target.mTvContent = null;
-    target.mTvOk = null;
-    target.mTvCancel = null;
 
-    view2131624100.setOnClickListener(null);
-    view2131624100 = null;
-    view2131624164.setOnClickListener(null);
-    view2131624164 = null;
+    view2131689670.setOnClickListener(null);
+    view2131689670 = null;
+    view2131689834.setOnClickListener(null);
+    view2131689834 = null;
   }
 }

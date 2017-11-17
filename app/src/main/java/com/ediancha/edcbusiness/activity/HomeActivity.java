@@ -1,23 +1,25 @@
 package com.ediancha.edcbusiness.activity;
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.activity.fragment.HomeFragment;
+import com.ediancha.edcbusiness.activity.fragment.InfoFragment;
 import com.ediancha.edcbusiness.activity.fragment.MeFragment;
-import com.ediancha.edcbusiness.activity.fragment.SpeciaFragment;
+import com.ediancha.edcbusiness.activity.fragment.OrderFragment;
+import com.ediancha.edcbusiness.router.Go;
 import com.ediancha.edcbusiness.view.ViewpagerNoScroll;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Admin on 2017/9/30.
@@ -37,8 +39,9 @@ public class HomeActivity extends NotNetBaseActivity {
     RadioGroup mRgChose;
 
     private HomeFragment mHomeFragment;
-    private SpeciaFragment mSpeciaFragment;
+    private OrderFragment mSpeciaFragment;
     private MeFragment mMeFragment;
+    private InfoFragment mInfoFragment;
 
     private ArrayList<Fragment> mFragments;
 
@@ -54,31 +57,45 @@ public class HomeActivity extends NotNetBaseActivity {
         mRgChose.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                switch (radioGroup.getCheckedRadioButtonId()){
+                switch (radioGroup.getCheckedRadioButtonId()) {
                     case R.id.rb_one:
-                        mVpShow.setCurrentItem(0,false);
+                        mVpShow.setCurrentItem(0, false);
                         break;
                     case R.id.rb_two:
-                        mVpShow.setCurrentItem(1,false);
+                        mVpShow.setCurrentItem(1, false);
                         break;
                     case R.id.rb_three:
-                        mVpShow.setCurrentItem(2,false);
+                        mVpShow.setCurrentItem(2, false);
+                        break;
+                    case R.id.rb_four:
+                        mVpShow.setCurrentItem(3, false);
                         break;
                 }
             }
         });
     }
 
+
+    int type = 0;
+
+    @OnClick(R.id.fgQw)
+    void qw() {
+        Go.goQw(this,1000);
+    }
+
     private void initFragment() {
-        mSpeciaFragment = new SpeciaFragment();
+        mSpeciaFragment = new OrderFragment();
         mHomeFragment = new HomeFragment();
         mMeFragment = new MeFragment();
+        mInfoFragment = new InfoFragment();
 
-        mFragments=new ArrayList<>();
+        mFragments = new ArrayList<>();
         mFragments.add(mHomeFragment);
         mFragments.add(mSpeciaFragment);
+        mFragments.add(mInfoFragment);
         mFragments.add(mMeFragment);
 
+        mVpShow.setOffscreenPageLimit(4);
         mVpShow.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
@@ -87,7 +104,7 @@ public class HomeActivity extends NotNetBaseActivity {
 
             @Override
             public int getCount() {
-                return mFragments!=null?mFragments.size():0;
+                return mFragments.size();
             }
         });
     }

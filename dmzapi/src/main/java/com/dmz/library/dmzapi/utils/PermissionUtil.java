@@ -2,6 +2,9 @@ package com.dmz.library.dmzapi.utils;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.support.annotation.NonNull;
 
 import com.yanzhenjie.permission.AndPermission;
@@ -79,6 +82,12 @@ public class PermissionUtil {
     public void checkCameraAndFile(Context ctx) {
         check(ctx,PermissionUtil.FILE_WRITE_REQUEST, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
+    public void checkReadFile(Context ctx) {
+        check(ctx,PermissionUtil.FILE_WRITE_REQUEST, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+    }
+    public void checkLoction(Context ctx) {
+        check(ctx,PermissionUtil.FILE_WRITE_REQUEST, Manifest.permission.ACCESS_COARSE_LOCATION);
+    }
 
     private OnCheckSuccessPermission onSuccessPermission;
     private OnCheckFailedPermission onCheckFailedPermission;
@@ -99,5 +108,15 @@ public class PermissionUtil {
 
     public interface OnCheckFailedPermission {
         void onFailed();
+    }
+
+
+
+    public static void goAppDetailSettingIntent(Context context) {
+        Intent localIntent = new Intent();
+        localIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        localIntent.setAction("android.settings.APPLICATION_DETAILS_SETTINGS");
+        localIntent.setData(Uri.fromParts("package", context.getPackageName(), null));
+        context.startActivity(localIntent);
     }
 }

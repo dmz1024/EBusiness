@@ -1,10 +1,90 @@
 [
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/icon_recharge_payment_unchecked.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxxhdpi/icon_recharge_payment_unchecked.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icon_recharge_payment_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icon_recharge_payment_selected.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/icon_recharge_payment_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/EBusiness/app/src/main/res/drawable-xxxhdpi/icon_recharge_payment_selected.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\wdq_wallet_closeb_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\wdq_wallet_closeb_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icon_home_tab_home_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icon_home_tab_home_selected.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icon_wallet_open.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icon_wallet_open.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\home_dianji_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\home_dianji_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\xzh_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\xzh_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icon_home_my_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icon_home_my_selected.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icom_home_special_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icom_home_special_selected.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\home_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\home_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\payment_unchecked_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\payment_unchecked_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icom_home_special.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icom_home_special.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icon_home_my.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icon_home_my.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\mine_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\mine_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\wdqb_wallet_open_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\wdqb_wallet_open_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\message_dianji_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\message_dianji_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\mine_dianji_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\mine_dianji_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\message_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\message_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\dingdan_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\dingdan_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\dingdan_dianji_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\dingdan_dianji_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icon_recharge_payment_unchecked.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icon_recharge_payment_unchecked.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icon_home_tab_home.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icon_home_tab_home.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icon_wallet_close.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\icon_wallet_close.png"
     }
 ]

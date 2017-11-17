@@ -1,14 +1,14 @@
 package com.ediancha.edcbusiness;
 
 
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
+import android.content.ComponentCallbacks;
+import android.content.Context;
+import android.support.multidex.MultiDex;
 import android.util.Log;
-
 import com.alibaba.android.arouter.launcher.ARouter;
 
 
-import com.ediancha.edcbusiness.helper.MyToast;
+
 import com.squareup.leakcanary.LeakCanary;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
@@ -59,18 +59,19 @@ public class MyApp extends com.dmz.library.dmzapi.MyApp {
 
         TestWindowManager._init(this);
         TestWindowManager.getInstance();
-        MyToast._init(this);
+
     }
 
-    private String getVersion() {
-        try {
-            PackageManager manager = this.getPackageManager();
-            PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
-            String version = info.versionName;
-            return version;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "1.0.0";
-        }
+    @Override
+    public void registerComponentCallbacks(ComponentCallbacks callback) {
+        super.registerComponentCallbacks(callback);
+        callback.onLowMemory();
     }
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
+
+
 }
