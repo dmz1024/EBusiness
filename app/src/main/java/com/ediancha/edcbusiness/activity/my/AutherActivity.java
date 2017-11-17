@@ -5,7 +5,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.dmz.library.dmzapi.api.LogUtil;
+
 import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.view.activity.NotNetBaseActivity;
@@ -13,7 +13,6 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
 import com.ediancha.edcbusiness.constant.NormalContant;
 import com.ediancha.edcbusiness.dialog.AutherDialog;
-import com.dmz.library.dmzapi.utils.MyToast;
 import com.ediancha.edcbusiness.helper.ValidatorUtils;
 import com.ediancha.edcbusiness.presenter.user.AuthorPresnter;
 
@@ -75,7 +74,7 @@ public class AutherActivity extends NotNetBaseActivity implements AuthorPresnter
             MyToast.error("请输入正确身份证号码!");
         } else {
             mAutherDialog = new AutherDialog();
-            mAutherDialog.show(getSupportFragmentManager(), "2");
+            mAutherDialog.show(ctx);
             mAutherDialog.setName(name)
                     .setCard(card)
                     .setOkClickListner(new AutherDialog.okClickListner() {

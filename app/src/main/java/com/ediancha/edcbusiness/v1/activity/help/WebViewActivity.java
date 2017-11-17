@@ -2,7 +2,9 @@ package com.ediancha.edcbusiness.v1.activity.help;
 
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewStub;
 import android.webkit.WebChromeClient;
+import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -22,6 +24,7 @@ import com.ediancha.edcbusiness.helper.WebViewHelper;
 @Route(path = "/v1/activity/help/webview")
 public class WebViewActivity extends ToobarBaseActivity {
 
+    ViewStub mVsError;
     private WebView mWebView;
     private ProgressBar mProgressBar;
 
@@ -35,12 +38,10 @@ public class WebViewActivity extends ToobarBaseActivity {
         super.initView();
 
         mWebView = findViewById(R.id.wv_show);
+        mVsError = (ViewStub) findViewById(R.id.vs_error);
         mProgressBar = findViewById(R.id.pb_gress);
 
         mHelper = mHelper == null ? new WebViewHelper(mWebView) : mHelper;
-        if (H5 == null) {
-            H5 = "https://www.baidu.com";
-        }
         initWV();
     }
 
@@ -54,6 +55,13 @@ public class WebViewActivity extends ToobarBaseActivity {
                 view.loadUrl(url);
                 dmzBar.setText(view.getTitle());
                 return true;
+            }
+
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                super.onReceivedError(view, request, error);
+                mWebView.setVisibility(View.GONE);
+                mVsError.inflate();
             }
         });
 

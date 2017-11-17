@@ -7,11 +7,11 @@
     android:orientation="vertical">
 
 
-        <com.dmz.library.dmzapi.view.custom.DmzBar
-            android:id="@+id/dmzBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways" />
+    <com.dmz.library.dmzapi.view.custom.DmzBar
+        android:id="@+id/dmzBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways" />
 
 
 
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/size10"
-        android:background="@color/color_f8f8fa"
+        android:background="@color/color_fff"
         android:drawablePadding="@dimen/size10"
         android:drawableRight="@mipmap/xia_icon"
         android:ellipsize="end"
@@ -39,15 +39,16 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/size120"
         android:layout_marginTop="@dimen/size10"
-        android:background="@color/color_f8f8fa"
-        android:layout_below="@id/tv_type">
+        android:background="@color/color_fff"
+        android:layout_below="@id/tv_type"
+        >
 
         <EditText
             android:id="@+id/et_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/size10"
-            android:background="@color/color_f8f8fa"
+            android:background="@color/color_fff"
             android:gravity="start"
             android:hint="问题描述（必填）"
             android:textColor="@color/color_666"
@@ -55,42 +56,15 @@
             android:textSize="@dimen/sp16" />
     </LinearLayout>
 
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy_pic"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/size120"
-        android:background="@color/color_f8f8fa"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fff"
         android:layout_below="@id/ln_et">
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical">
-
-                <LinearLayout
-                    android:id="@+id/ln_image"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <ImageView
-                    android:id="@+id/iv_image"
-                    android:layout_width="@dimen/size80"
-                    android:layout_height="@dimen/size80"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/size10"
-                    android:layout_toEndOf="@+id/ln_image"
-                    android:layout_toRightOf="@+id/ln_image"
-                    android:src="@mipmap/zxfk_tjtp_pic" />
-            </RelativeLayout>
-        </HorizontalScrollView>
-    </LinearLayout>
+    </android.support.v7.widget.RecyclerView>
 
     <TextView
         android:id="@+id/tv_submit"

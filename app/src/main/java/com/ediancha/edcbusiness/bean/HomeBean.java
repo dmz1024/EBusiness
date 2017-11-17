@@ -1,11 +1,9 @@
 package com.ediancha.edcbusiness.bean;
 
-import com.alibaba.fastjson.annotation.JSONField;
 import com.dmz.library.dmzapi.api.bean.BaseBean;
 import com.dmz.library.dmzapi.api.bean.ViewBaseType;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Admin on 2017/10/9.
@@ -34,7 +32,7 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
     }
 
 
-    public static class SpaceBean{
+    public static class SpaceBean {
 
         public String title;
         public String subTitle;
@@ -53,7 +51,7 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
         }
     }
 
-    public static class CommentBean{
+    public static class CommentBean {
 
         public String title;
         public String subTitle;
@@ -75,7 +73,7 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
     /**
      * 广告
      */
-    public static class AdsBean{
+    public static class AdsBean {
         public String id;
         public String link_url;
         public String images;
@@ -101,7 +99,7 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
     /**
      * 空间推荐
      */
-    public static class SpaceListBean extends ViewBaseType{
+    public static class SpaceListBean extends ViewBaseType {
         public String id;
         public String spaceName;
         public String spaceLoadNumber;
@@ -110,7 +108,11 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
         public String spaceDesc;
         public String howFar;
         public String is_tui;
-        public String[] labelname;
+        public ArrayList<LabelnameBean> labelname;
+
+        public ArrayList<LabelnameBean> getLabelname() {
+            return labelname;
+        }
 
         public String getId() {
             return id;
@@ -144,20 +146,51 @@ public class HomeBean extends BaseBean<HomeBean.Data> {
             return is_tui;
         }
 
-        public String[] getLabelname() {
-            return labelname;
-        }
-
         @Override
         public int getViewType() {
             return 1;
         }
+
+
     }
+
+    public static class LabelnameBean extends ViewBaseType {
+        public int id;
+        public String name;
+        public String description;
+
+        public int getId() {
+            return id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        @Override
+        public int getViewType() {
+            return 3;
+        }
+
+        @Override
+        public String toString() {
+            return "LabelnameBean{" +
+                    "id=" + id +
+                    ", name='" + name + '\'' +
+                    ", description='" + description + '\'' +
+                    '}';
+        }
+    }
+
 
     /**
      * 为你推荐
      */
-    public static class SpaceCommentBean extends ViewBaseType{
+    public static class SpaceCommentBean extends ViewBaseType {
         public String content;
         public String images;
         public String createTime;

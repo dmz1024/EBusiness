@@ -120,4 +120,8 @@ public class HelpCenterActivity extends SingleDataBaseActivity<HelpCenterBean, H
         }
     }
 
+    @Override
+    protected int getRid() {
+        return R.layout.activity_space_desc;
+    }
 }
