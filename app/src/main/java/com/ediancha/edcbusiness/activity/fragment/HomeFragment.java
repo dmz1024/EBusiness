@@ -14,10 +14,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.dmz.library.dmzapi.api.LogUtil;
 import com.dmz.library.dmzapi.api.bean.IType;
 import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.ediancha.edcbusiness.R;
@@ -151,10 +153,13 @@ public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHom
             spannable.setSpan(colorSpan,0,spaceListBean.getIs_tui().length()+2, Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
             holder.<TextView>getView(R.id.tv_name).setText(spannable);
             ImageLoader.loadImageRec(getContext(), spaceListBean.getSpaceImage(), holder.<ImageView>getView(R.id.img_pic));
-            String[] labelname = spaceListBean.getLabelname();
-            for (int i = 0; i < labelname.length; i++) {
+
+            ArrayList<HomeBean.LabelnameBean> labelname = spaceListBean.getLabelname();
+
+            LogUtil.e("label"+labelname.toString());
+            for (int i = 0; i < labelname.size(); i++) {
                 TextView tvLabel = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.item_text_label, null, false);
-                tvLabel.setText(labelname[i]);
+                tvLabel.setText(labelname.get(i).getName());
                 holder.<LinearLayout>getView(R.id.ln_label)
                         .addView(tvLabel);
             }
