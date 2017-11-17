@@ -16,7 +16,7 @@ import java.lang.Override;
 public class PayPWSettingActivity_ViewBinding implements Unbinder {
   private PayPWSettingActivity target;
 
-  private View viewSource;
+  private View view2131689661;
 
   @UiThread
   public PayPWSettingActivity_ViewBinding(PayPWSettingActivity target) {
@@ -27,14 +27,14 @@ public class PayPWSettingActivity_ViewBinding implements Unbinder {
   public PayPWSettingActivity_ViewBinding(final PayPWSettingActivity target, View source) {
     this.target = target;
 
+    View view;
     target.mEtTel = Utils.findRequiredViewAsType(source, R.id.et_tel, "field 'mEtTel'", EditText.class);
-    target.mEtCode = Utils.findRequiredViewAsType(source, R.id.et_code, "field 'mEtCode'", EditText.class);
-    target.mTvCode = Utils.findRequiredViewAsType(source, R.id.tv_code, "field 'mTvCode'", TextView.class);
     target.mEtPass = Utils.findRequiredViewAsType(source, R.id.et_pass, "field 'mEtPass'", EditText.class);
     target.mEtPassyz = Utils.findRequiredViewAsType(source, R.id.et_passyz, "field 'mEtPassyz'", EditText.class);
-    target.mTvSubmit = Utils.findRequiredViewAsType(source, R.id.tv_submit, "field 'mTvSubmit'", TextView.class);
-    viewSource = source;
-    source.setOnClickListener(new DebouncingOnClickListener() {
+    view = Utils.findRequiredView(source, R.id.tv_submit, "field 'mTvSubmit' and method 'click'");
+    target.mTvSubmit = Utils.castView(view, R.id.tv_submit, "field 'mTvSubmit'", TextView.class);
+    view2131689661 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.click(p0);
@@ -50,13 +50,11 @@ public class PayPWSettingActivity_ViewBinding implements Unbinder {
     this.target = null;
 
     target.mEtTel = null;
-    target.mEtCode = null;
-    target.mTvCode = null;
     target.mEtPass = null;
     target.mEtPassyz = null;
     target.mTvSubmit = null;
 
-    viewSource.setOnClickListener(null);
-    viewSource = null;
+    view2131689661.setOnClickListener(null);
+    view2131689661 = null;
   }
 }

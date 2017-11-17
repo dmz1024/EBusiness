@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/size5"
-        app:cardBackgroundColor="@color/color_fff"
+        app:cardBackgroundColor="@color/color_f8f8fa"
         app:cardCornerRadius="@dimen/size3"
         app:contentPaddingBottom="@dimen/size15"
         app:contentPaddingLeft="@dimen/size10"

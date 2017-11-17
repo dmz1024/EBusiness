@@ -94,12 +94,12 @@ public final class R {
         public static int status_bar_notification_info_maxnum = 0x7f0b0009;
     }
     public static final class layout {
-        public static int notification_action = 0x7f040043;
-        public static int notification_action_tombstone = 0x7f040044;
-        public static int notification_template_custom_big = 0x7f04004b;
-        public static int notification_template_icon_group = 0x7f04004c;
-        public static int notification_template_part_chronometer = 0x7f040050;
-        public static int notification_template_part_time = 0x7f040051;
+        public static int notification_action = 0x7f040046;
+        public static int notification_action_tombstone = 0x7f040047;
+        public static int notification_template_custom_big = 0x7f04004e;
+        public static int notification_template_icon_group = 0x7f04004f;
+        public static int notification_template_part_chronometer = 0x7f040053;
+        public static int notification_template_part_time = 0x7f040054;
     }
     public static final class string {
         public static int status_bar_notification_info_overflow = 0x7f070014;

@@ -3,11 +3,11 @@
     package="com.ediancha.edcbusiness.test" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="16"
         android:targetSdkVersion="26" />
 
     <instrumentation
-        android:name="android.test.InstrumentationTestRunner"
+        android:name="com.android.test.runner.MultiDexTestRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
         android:label="Tests for com.ediancha.edcbusiness"

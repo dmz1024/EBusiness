@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <attr format="color" name="HorizontalProgresReachColor"/>
+    <attr format="dimension" name="HorizontalProgresReachHeight"/>
+    <attr format="color" name="HorizontalProgresTextColor"/>
+    <attr format="dimension" name="HorizontalProgresTextOffset"/>
+    <attr format="dimension" name="HorizontalProgresTextSize"/>
+    <attr format="color" name="HorizontalProgresUnReachColor"/>
+    <attr format="dimension" name="HorizontalProgresUnReachHeight"/>
+    <attr format="color" name="ProgresUnReachColor"/>
     <attr format="reference" name="constraintSet"/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -122,25 +130,41 @@
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="cc">#59a9ff</color>
-    <color name="colorAccent">#333</color>
+    <color name="colorAccent">#fff</color>
     <color name="colorDmzBarBackground">#fff</color>
     <color name="colorDmzBarText">#666</color>
-    <color name="colorPrimary">#333</color>
-    <color name="colorPrimaryDark">#333</color>
-    <color name="color_09F">#09F</color>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#1c2438</color>
+    <color name="color_131317">#131317</color>
+    <color name="color_14cbe3">#14cbe3</color>
+    <color name="color_1c2438">#1c2438</color>
     <color name="color_333">#333</color>
+    <color name="color_4a5162">#4a5162</color>
     <color name="color_666">#666</color>
+    <color name="color_80848f">#80848f</color>
     <color name="color_999">#999</color>
+    <color name="color_9999">#aaaaaaaa</color>
+    <color name="color_bbbec5">#bbbec5</color>
     <color name="color_ccc">#ccc</color>
+    <color name="color_dddee2">#dddee2</color>
     <color name="color_e1e1e1">#e1e1e1</color>
+    <color name="color_e9eaec">#e9eaec</color>
+    <color name="color_ed3f14">#ed3f14</color>
     <color name="color_error">#CC0033</color>
     <color name="color_f00">#f00</color>
     <color name="color_f1da09">#f1da09</color>
+    <color name="color_f1f1f1">#f1f1f1</color>
     <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_f8f8fa">#f8f8fa</color>
+    <color name="color_fcc01f">#fcc01f</color>
+    <color name="color_fcf6ef">#fcf6ef</color>
+    <color name="color_ff9900">#ff9900</color>
+    <color name="color_ffc730">#ffc730</color>
+    <color name="color_ffcc41">#ffcc41</color>
     <color name="color_fff">#fff</color>
     <color name="color_normal">#333333</color>
     <color name="color_warn">#FFFF00</color>
-    <color name="color_zhu">#f1da09</color>
+    <color name="color_zhu">#ffcc41</color>
     <color name="contents_text">#ff000000</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
@@ -242,8 +266,6 @@
     <declare-styleable name="ActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/><attr format="reference" name="closeItemLayout"/></declare-styleable>
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable>
-    <declare-styleable name="AppBar"><attr name="navigationGravity"><enum name="top" value="0"/><enum name="center_vertical" value="1"/></attr><attr format="reference" name="menu1"/><attr format="reference" name="menu2"/><attr format="reference" name="menu3"/><attr format="reference" name="menu4"/><attr format="reference" name="menu5"/></declare-styleable>
-    <declare-styleable name="AppBar.Menu"><attr format="reference" name="toolbarMenuTextStyle"/><attr format="reference" name="toolbarMenuImageStyle"/><attr format="reference" name="toolbarMenuSpinnerStyle"/></declare-styleable>
     <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/><attr format="boolean" name="expanded"/><attr name="android:keyboardNavigationCluster"/><attr name="android:touchscreenBlocksFocus"/></declare-styleable>
     <declare-styleable name="AppBarLayoutStates"><attr format="boolean" name="state_collapsed"/><attr format="boolean" name="state_collapsible"/></declare-styleable>
     <declare-styleable name="AppBarLayout_Layout"><attr name="layout_scrollFlags">
@@ -434,6 +456,14 @@
             
             <flag name="all" value="0x77"/>
         </attr></declare-styleable>
+    <declare-styleable name="CornerLabelView"><attr format="dimension" name="clvPaddingTop"/><attr format="dimension" name="clvPaddingCenter"/><attr format="dimension" name="clvPaddingBottom"/><attr format="string" name="clvText1"/><attr format="color" name="clvText1Color"/><attr format="dimension" name="clvText1Height"/><attr format="string" name="clvText2"/><attr format="color" name="clvText2Color"/><attr format="dimension" name="clvText2Height"/><attr format="color" name="clvFillColor"/><attr format="integer" name="clvFlags">
+            <flag name="none" value="0"/>
+            <flag name="right" value="1"/>
+            <flag name="bottom" value="2"/>
+            <flag name="triangle" value="4"/>
+        </attr></declare-styleable>
+    <declare-styleable name="CustomCircleProgresStyle"><attr format="dimension" name="CustomCircleRadio"/><attr format="dimension" name="CustomReachPaintStroken"/><attr format="dimension" name="CustomUnReachPaintStroken"/><attr format="integer" name="CustomUnReachEnd"/><attr format="integer" name="CustomUnReachStart"/><attr format="boolean" name="CustomHasProgressNum"/></declare-styleable>
+    <declare-styleable name="CustomHorizontalProgresStyle"><attr name="HorizontalProgresUnReachColor"/><attr name="HorizontalProgresUnReachHeight"/><attr name="HorizontalProgresReachColor"/><attr name="HorizontalProgresReachHeight"/><attr name="HorizontalProgresTextColor"/><attr name="HorizontalProgresTextSize"/><attr name="HorizontalProgresTextOffset"/></declare-styleable>
     <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="reference|color" name="textColorError"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize">
@@ -468,6 +498,16 @@
         </attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
+    <declare-styleable name="LottieAnimationView"><attr format="string" name="lottie_fileName"/><attr format="boolean" name="lottie_autoPlay"/><attr format="boolean" name="lottie_loop"/><attr format="string" name="lottie_imageAssetsFolder"/><attr format="float" name="lottie_progress"/><attr format="boolean" name="lottie_enableMergePathsForKitKatAndAbove"/><attr format="enum" name="lottie_cacheStrategy">
+            <enum name="none" value="0"/>
+            <enum name="weak" value="1"/>
+            <enum name="strong" value="2"/>
+        </attr><attr format="color" name="lottie_colorFilter"/><attr format="float" name="lottie_scale"/></declare-styleable>
+    <declare-styleable name="MZBannerView"><attr format="boolean" name="open_mz_mode"/><attr format="boolean" name="canLoop"/><attr format="dimension" name="indicatorPaddingLeft"/><attr format="dimension" name="indicatorPaddingRight"/><attr name="indicatorAlign">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr><attr format="boolean" name="middle_page_cover"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="alphabeticModifiers">
             <flag name="META" value="0x10000"/>
@@ -1161,6 +1201,8 @@
     <item name="launch_product_query" type="id"/>
     <item name="line1" type="id"/>
     <item name="line3" type="id"/>
+    <item name="lottie_layer_name" type="id"/>
+    <item name="mz_banner_item_tag" type="id"/>
     <item name="parent_matrix" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
@@ -1227,11 +1269,14 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">易点茶商家端</string>
+    <string name="app_name">6C SPACE</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="bottom_view_behavior">com.dmz.library.dmzapi.behavior.LBottomBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="dialog_deposit_string">押金退了之后您无法使用共享空间，您真的要退？</string>
+    <string name="fab_scale_behavior">com.dmz.library.dmzapi.behavior.LFabScaleBehavior</string>
+    <string name="fab_vertical_behavior">com.dmz.library.dmzapi.behavior.LFabVerticalBehavior</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="leak_canary_analysis_failed">Leak analysis failed</string>
     <string name="leak_canary_class_has_leaked">%1$s leaked %2$s</string>
@@ -1270,9 +1315,11 @@
     <string name="permission_title_permission_rationale">Permission denied</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="str_commen">xxxx</string>
     <string name="string_auther_info">为了保证您的账户安全，请填写个人真实信息，认证后可修改。</string>
     <string name="string_deposit_text">正在退押金，请耐心等待。</string>
     <string name="string_deposit_xieyi">充值余额表示您《同意协议》</string>
+    <string name="title_view_behavior">com.dmz.library.dmzapi.behavior.LTitleBehavior</string>
     <string name="tv_cz_xieyi">充值使用余额表示你同意《XXX余额协议》</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -2353,7 +2400,7 @@
         <item name="android:actionBarSize">40dp</item>
         <item name="actionBarSize">40dp</item>
         <item name="elevation">0dp</item>
-        <item name="android:windowAnimationStyle">@style/activityAnim</item>
+        <item name="android:windowAnimationStyle">@style/activityLeftRight</item>
         <!--<item name="android:windowNoTitle">true</item> &lt;!&ndash; 设置无标题 &ndash;&gt;-->
         <!--<item name="android:windowFullscreen">?android:windowNoTitle</item>&lt;!&ndash; 取决于android:windowNoTitle的值 &ndash;&gt;-->
     </style>
@@ -2364,6 +2411,16 @@
     </style>
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <style name="CornerLabelView">
+    </style>
+    <style name="CornerLabelView.Default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="clvPaddingTop">10dp</item>
+        <item name="clvPaddingCenter">3dp</item>
+        <item name="clvPaddingBottom">3dp</item>
     </style>
     <style name="LoginTheme" parent="MyAppTheme">
         <item name="colorPrimaryDark">#fff</item>
@@ -2530,6 +2587,9 @@
     <style name="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow" parent="Base.Widget.AppCompat.ActionButton">
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
+    </style>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/sp14</item>
     </style>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
@@ -2707,6 +2767,10 @@
     <style name="ThemeOverlay.AppCompat.Dialog" parent="Base.ThemeOverlay.AppCompat.Dialog"/>
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="Base.ThemeOverlay.AppCompat.Dialog.Alert"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+    <style name="ToastAnim">
+        <item name="android:windowEnterAnimation">@anim/dmz_toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/dmz_toast_exit</item>
+    </style>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">
@@ -2869,6 +2933,12 @@
         <!--<item name="android:activityCloseEnterAnimation">@anim/fade_in</item>-->
         <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
     </style>
+    <style name="activityLeftRight">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
     <style name="leak_canary_LeakCanary.Base" parent="android:Theme">
   </style>
     <style name="leak_canary_Theme.Transparent" parent="android:Theme">
@@ -2881,18 +2951,18 @@
     <style name="ln_ma_ma_ho_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@color/color_fff</item>
+        <item name="android:background">@color/color_f8f8fa</item>
         <item name="android:orientation">horizontal</item>
     </style>
     <style name="ln_ma_ma_ver_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@color/color_fff</item>
+        <item name="android:background">@color/color_f8f8fa</item>
         <item name="android:orientation">vertical</item>
     </style>
     <style name="ln_ma_wr_ho_styles">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:background">@color/color_fff</item>
+        <item name="android:background">@color/color_f8f8fa</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">@dimen/size10</item>
         <item name="android:paddingRight">@dimen/size10</item>
@@ -2901,7 +2971,7 @@
     </style>
     <style name="ln_ma_wr_ver_styles">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:background">@color/color_fff</item>
+        <item name="android:background">@color/color_f8f8fa</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">@dimen/size10</item>
         <item name="android:paddingRight">@dimen/size10</item>
@@ -2930,7 +3000,7 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:textColor">@color/color_666</item>
         <item name="android:padding">10dp</item>
-        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textSize">@dimen/sp15</item>
         <item name="android:singleLine">true</item>
     </style>
     <style name="style_login_ln_et">

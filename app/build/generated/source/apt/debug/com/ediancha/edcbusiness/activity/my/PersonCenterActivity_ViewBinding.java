@@ -16,9 +16,9 @@ import java.lang.Override;
 public class PersonCenterActivity_ViewBinding implements Unbinder {
   private PersonCenterActivity target;
 
-  private View view2131689700;
+  private View view2131689786;
 
-  private View view2131689659;
+  private View view2131689718;
 
   @UiThread
   public PersonCenterActivity_ViewBinding(PersonCenterActivity target) {
@@ -33,7 +33,7 @@ public class PersonCenterActivity_ViewBinding implements Unbinder {
     target.rvContent = Utils.findRequiredViewAsType(source, R.id.rvContent, "field 'rvContent'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.iv_header, "field 'ivHeader' and method 'onClick'");
     target.ivHeader = Utils.castView(view, R.id.iv_header, "field 'ivHeader'", ImageView.class);
-    view2131689700 = view;
+    view2131689786 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class PersonCenterActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ivCha, "field 'ivCha' and method 'onClick'");
     target.ivCha = Utils.castView(view, R.id.ivCha, "field 'ivCha'", ImageView.class);
-    view2131689659 = view;
+    view2131689718 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,9 +62,9 @@ public class PersonCenterActivity_ViewBinding implements Unbinder {
     target.ivHeader = null;
     target.ivCha = null;
 
-    view2131689700.setOnClickListener(null);
-    view2131689700 = null;
-    view2131689659.setOnClickListener(null);
-    view2131689659 = null;
+    view2131689786.setOnClickListener(null);
+    view2131689786 = null;
+    view2131689718.setOnClickListener(null);
+    view2131689718 = null;
   }
 }

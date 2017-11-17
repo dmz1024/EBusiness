@@ -100,7 +100,6 @@
         <activity android:name=".activity.orderdetail.OrderItemActivity" />
         <activity android:name=".activity.space.MoneyAffirmActivity" />
         <activity android:name=".activity.space.NavigationActivity" />
-        <activity android:name=".activity.space.LocationActivity" />
         <activity android:name=".v1.activity.space.ChoseDateActvivity" />
         <activity android:name=".v1.activity.order.CheckOrderActivity" />
         <activity android:name=".v1.activity.order.SpacePayDetailActivity" />

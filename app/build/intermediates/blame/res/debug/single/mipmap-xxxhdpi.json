@@ -1,11 +1,19 @@
 [
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_recharge_back.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_recharge_back.png"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_home_more.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_home_more.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_recharge_back.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_recharge_back.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wdqb_yajin_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wdqb_yajin_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\df_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\df_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_wallet_deposit.png",
@@ -20,8 +28,8 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_my_waller.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_success.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_success.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\lan_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\lan_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_tip.png",
@@ -32,12 +40,12 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_wallet_close.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_wallet_close.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\liebao_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\liebao_icon.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_recharge_selected.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_recharge_selected.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\dingwei_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\dingwei_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_recharge_service.png",
@@ -48,20 +56,40 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_wallet_password_arrow.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_renzheng.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_renzheng.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yishou_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yishou_pic.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_my_not_certified.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_my_not_certified.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\xfxq_fz_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\xfxq_fz_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\back_hei_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\back_hei_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\sd_closs_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\sd_closs_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\xia_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\xia_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yue_bg_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yue_bg_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\shuaxin_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\shuaxin_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wode_shezhi_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wode_shezhi_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_my_close.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_my_close.png"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_invitation.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_invitation.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_recharge_payment_unchecked.png",
@@ -76,6 +104,314 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_my_invitation.png"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_discoun.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_discoun.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\dibu_logo_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\dibu_logo_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_shezhi.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_shezhi.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\rongna_tanchuang_guan_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\rongna_tanchuang_guan_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_home_my.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_home_my.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\zmxy_logo_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\zmxy_logo_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\home_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\home_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\zxfk_tjtp_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\zxfk_tjtp_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\news_shezhi_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\news_shezhi_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\kt_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\kt_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ditu_bai_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\ditu_bai_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_remind.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_remind.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wd_bzzx_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wd_bzzx_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\jgb_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\jgb_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\message_dianji_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\message_dianji_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_selected.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\sao_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\sao_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wd_qb_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wd_qb_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yue_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yue_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\tuiyanjin_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\tuiyanjin_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icom_home_special.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icom_home_special.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_qq.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_qq.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\banjia_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\banjia_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\recharge_alipay_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\recharge_alipay_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yuezhifu_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yuezhifu_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\help_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\help_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\news_jytz_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\news_jytz_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_tanhao.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_tanhao.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\logo_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wode_bgtp_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wode_bgtp_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\znms_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\znms_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\zmxy_bg_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\zmxy_bg_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\suo_open_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\suo_open_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yemx_chzh_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yemx_chzh_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_my_order.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_my_order.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\you_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\you_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\home_dianji_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\home_dianji_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icom_home_special_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icom_home_special_selected.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\dlzc_weixin_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\dlzc_weixin_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\call_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\call_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_use_open.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_use_open.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\sanjiao_shang_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\sanjiao_shang_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_home_my_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_home_my_selected.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\shou_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\shou_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_weixin.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_weixin.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ditu_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\ditu_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_wallet.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_wallet.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\xuanzh_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\xuanzh_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\guan_bai_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\guan_bai_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wdqb_yue_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wdqb_yue_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\news_tzh_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\news_tzh_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wd_rz_no_iocn.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wd_rz_no_iocn.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_success.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_success.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\omg_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\omg_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_wallet_close.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_wallet_close.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wdqb_youhuiquan_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wdqb_youhuiquan_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yemx_rili_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yemx_rili_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_recharge_selected.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_recharge_selected.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wifi_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wifi_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wo_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wo_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\sanjia_xia_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\sanjia_xia_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\shang_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\shang_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\logo_da_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_da_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\mine_dianji_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\mine_dianji_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_renzheng.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_renzheng.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\news_hdjx_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\news_hdjx_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\guiwei_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\guiwei_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\mine_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\mine_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_my_not_certified.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_my_not_certified.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wd_rz_yes_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wd_rz_yes_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\rongna_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\rongna_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\news_wdqb_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\news_wdqb_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\xfxq_xiaoxi_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\xfxq_xiaoxi_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\fhhome_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\fhhome_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yinhao_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yinhao_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_invitation.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_invitation.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\youhui_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\youhui_pic.png"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_transaction.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_transaction.png"
     },
@@ -84,28 +420,40 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_weizhi.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_discoun.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_discoun.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\shouye_sao_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\shouye_sao_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_wallet_balance.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_wallet_balance.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_shezhi.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_shezhi.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\news_yhdh_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\news_yhdh_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yhq_gx_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yhq_gx_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\dingdan_dianji_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\dingdan_dianji_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\zmxy_guan_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\zmxy_guan_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_use.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_use.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_home_my.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_home_my.png"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\news_yqhy_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\news_yqhy_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_kaiguan.png",
@@ -116,36 +464,88 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_home_tab_home_selected.png"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\message_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\message_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\recharge_wechat_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\recharge_wechat_icon.png"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_saoyisao.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_saoyisao.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\dingdan_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\dingdan_moren_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_my_authentication.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_my_authentication.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_remind.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_remind.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yhq_bgt_bai_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yhq_bgt_bai_pic.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_selected.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_selected.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\fymx_yuan_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\fymx_yuan_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\cjcj_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\cjcj_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\logo_xia_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_xia_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_home_top_news.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_home_top_news.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icom_home_special.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icom_home_special.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\shouye_ditu_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\shouye_ditu_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\fenge_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\fenge_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\zfcg_cg_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\zfcg_cg_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\dlzc_qq_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\dlzc_qq_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\zfcg_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\zfcg_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\dlzc_logo_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\dlzc_logo_pic.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_lamp_open.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_lamp_open.png"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\myj_cg_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\myj_cg_pic.png"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_recharge_wechat.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_recharge_wechat.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yemx_kjxf_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yemx_kjxf_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yhq_bj_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yhq_bj_pic.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_wallet_coupon.png",
@@ -156,20 +556,56 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_lamp_close.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_tanhao.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_tanhao.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\payment_unchecked_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\payment_unchecked_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\kuang_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\kuang_pic.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_gengduo.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_gengduo.png"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\xzh_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\xzh_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wdq_wallet_closeb_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wdq_wallet_closeb_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wdydsj_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wdydsj_pic.png"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_home_top_scan.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_home_top_scan.png"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yhq_bgt_huang_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yhq_bgt_huang_pic.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wenhao_hei_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wenhao_hei_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\share_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\share_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\back_bai_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\back_bai_icon.png"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_wallet_back.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_wallet_back.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yue_bjt_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yue_bjt_pic.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_notice.png",
@@ -180,20 +616,24 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_recharge_alipay.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_my_order.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_my_order.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\sd_open_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\sd_open_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\suo_closs_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\suo_closs_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\daohang_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\daohang_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_tanhao1.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_tanhao1.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icom_home_special_selected.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icom_home_special_selected.png"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_use_open.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_use_open.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wd_yqhy_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wd_yqhy_moren_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_unlock.png",
@@ -204,23 +644,39 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_wallet_open.png"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wd_dingdan_moren_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wd_dingdan_moren_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ydcg_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\ydcg_pic.png"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_my_diiscount.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_my_diiscount.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wdqb_wallet_open_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wdqb_wallet_open_icon.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\wenti_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\wenti_icon.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_home_tab_home.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_home_tab_home.png"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_home_my_selected.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_home_my_selected.png"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_news_wallet.png",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_news_wallet.png"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\zmxy_kapian_pic.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\zmxy_kapian_pic.png"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon_kongjian.png",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_kongjian.png"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\yemx_zsje_icon.png",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\mipmap-xxxhdpi\\yemx_zsje_icon.png"
     }
 ]

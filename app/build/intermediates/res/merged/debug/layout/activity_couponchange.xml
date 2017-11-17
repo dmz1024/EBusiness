@@ -22,7 +22,7 @@
         android:id="@+id/et_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_fff"
+        android:background="@color/color_f8f8fa"
         android:paddingTop="@dimen/size10"
         android:paddingBottom="@dimen/size10"
         android:singleLine="true"

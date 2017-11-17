@@ -21,7 +21,7 @@
         android:id="@+id/et_key"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_fff"
+        android:background="@color/color_f8f8fa"
         android:hint="输入关键字"
         android:padding="@dimen/size10"
         android:textSize="@dimen/sp15"

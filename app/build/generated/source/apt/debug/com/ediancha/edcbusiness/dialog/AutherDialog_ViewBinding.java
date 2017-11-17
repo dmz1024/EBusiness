@@ -15,9 +15,9 @@ import java.lang.Override;
 public class AutherDialog_ViewBinding implements Unbinder {
   private AutherDialog target;
 
-  private View view2131689645;
+  private View view2131689672;
 
-  private View view2131689643;
+  private View view2131689670;
 
   @UiThread
   public AutherDialog_ViewBinding(final AutherDialog target, View source) {
@@ -30,7 +30,7 @@ public class AutherDialog_ViewBinding implements Unbinder {
     target.mTvInfo = Utils.findRequiredViewAsType(source, R.id.tv_info, "field 'mTvInfo'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_back, "field 'mTvBack' and method 'onClick'");
     target.mTvBack = Utils.castView(view, R.id.tv_back, "field 'mTvBack'", TextView.class);
-    view2131689645 = view;
+    view2131689672 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -39,7 +39,7 @@ public class AutherDialog_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tv_ok, "field 'mTvOk' and method 'onClick'");
     target.mTvOk = Utils.castView(view, R.id.tv_ok, "field 'mTvOk'", TextView.class);
-    view2131689643 = view;
+    view2131689670 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,9 +62,9 @@ public class AutherDialog_ViewBinding implements Unbinder {
     target.mTvBack = null;
     target.mTvOk = null;
 
-    view2131689645.setOnClickListener(null);
-    view2131689645 = null;
-    view2131689643.setOnClickListener(null);
-    view2131689643 = null;
+    view2131689672.setOnClickListener(null);
+    view2131689672 = null;
+    view2131689670.setOnClickListener(null);
+    view2131689670 = null;
   }
 }

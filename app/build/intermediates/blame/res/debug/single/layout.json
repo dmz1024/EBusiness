@@ -1,23 +1,11 @@
 [
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_item_type_5.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\common_item_type_5.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_media_action.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tooltip.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\tooltip.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chargeok.xml",
@@ -28,28 +16,12 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_template_big_media_narrow_custom.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_home_space.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_home_space.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_single_error_view.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_single_error_view.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_balance_desc.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_balance_desc.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_heap_dump_toast.xml",
@@ -60,10 +32,6 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\window_manager_order_info.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\window_manager_order_info.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_item_type_6.xml",
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\common_item_type_6.xml"
     },
@@ -72,32 +40,16 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_couponchange.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_home.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_charge.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_charge.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_custom.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_template_big_media_custom.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_choose_string.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\item_choose_string.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_charge_input.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_charge_input.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_title_view.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_title_view.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_money_affirm_time.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_money_affirm_time.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
@@ -120,20 +72,12 @@
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\common_item_type_4.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_webview.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_webview.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_activity_splendid_no_image.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_activity_splendid_no_image.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_datechose.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\success_datechose.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_spinner_textview.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_spinner_textview.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\layout\\notification_template_custom_big.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_good_order_desc_payinfo.xml",
@@ -144,60 +88,36 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_template_media_custom.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_layout_snackbar_include.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_item_empty_view.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_item_empty_view.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_single_login_view.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_single_login_view.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_space_activity.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_space_activity.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_item_loading_more_view.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_item_loading_more_view.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_consumedetail.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_consumedetail.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_camera.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\my_camera.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_cash_pledge.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\success_cash_pledge.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_action_menu_layout.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_checkorder.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_checkorder.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_mecenter.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_mecenter.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_activity_message.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\success_activity_message.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_coupon.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_coupon.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_activity_helpcenter.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\success_activity_helpcenter.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_base_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\fragment_base_view.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_base_single_data.xml",
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\view_base_single_data.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
@@ -236,32 +156,28 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_limits.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_my_limits.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_good_order_desc.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\success_good_order_desc.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_item_type_3.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\common_item_type_3.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_orderitem.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_orderitem.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_helpcenter_go.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_helpcenter_go.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_menu.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_base_sheet.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dialog_base_sheet.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_choose_string.xml",
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dialog_choose_string.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_imageview.xml",
@@ -280,16 +196,8 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_money.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_money.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_progress.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_my_progress.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_item.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\window_map.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\window_map.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_conpou.xml",
@@ -308,40 +216,32 @@
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_item_login_view.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toast_view.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\toast_view.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_map_space.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_map_space.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_ref_row.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\d3f43a04afe6af94172f1c15984fa750402855e1\\output\\res\\layout\\leak_canary_ref_row.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ordering.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_ordering.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_screen_simple.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_balan_desc.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_balan_desc.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_item_separator.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_base_bar.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\view_base_bar.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_money_affirm_time_one.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_money_affirm_time_one.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
@@ -356,10 +256,6 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_media_cancel_action.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_money_affirm.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_money_affirm.xml"
     },
@@ -372,10 +268,6 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_mypackage.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main6.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\activity_main6.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\layout\\notification_template_icon_group.xml"
     },
@@ -384,16 +276,20 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_activity_order_space.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_activity_order_space.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_quality.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_air_quality.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_me.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\fragment_me.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_item_type_9.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\common_item_type_9.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_item_type_1.xml",
@@ -404,68 +300,48 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_helpcenter.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_software.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_software.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_dmz_bar.xml",
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\view_dmz_bar.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_good_order.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_good_order.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_order_item.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_order_item.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_donghua.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_donghua.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_auther.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_auther.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\camera.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\316f21a01ffefa394b159ed9f5d31c564d295f52\\output\\res\\layout\\camera.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_ref_top_row.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\d3f43a04afe6af94172f1c15984fa750402855e1\\output\\res\\layout\\leak_canary_ref_top_row.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_space_textview.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_space_textview.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_layout_tab_icon.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_item_refresh_view.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_item_refresh_view.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_qw.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_qw.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_location.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_location.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_updatainfo.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_updatainfo.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\layout\\notification_action.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_activity_splendid_have_image.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_activity_splendid_have_image.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_capture.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\316f21a01ffefa394b159ed9f5d31c564d295f52\\output\\res\\layout\\fragment_capture.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_single_other_view.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_single_other_view.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_text_match.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_text_match.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_test.xml",
@@ -476,24 +352,16 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_expense_tips.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pay_type_chose.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\pay_type_chose.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pay_type_chose.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\pay_type_chose.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_deposit.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_deposit.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_display_leak.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\d3f43a04afe6af94172f1c15984fa750402855e1\\output\\res\\layout\\leak_canary_display_leak.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\banner_item.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\banner_item.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_person_center.xml",
@@ -504,8 +372,396 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_person_center_info.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_orderall.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\fragment_orderall.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_space_item.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\adapter_space_item.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_set.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\success_set.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fankui.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_fankui.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_paypwsetting.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_paypwsetting.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_choose_time.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_choose_time.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_info.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_my_info.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_space_desc.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_space_desc.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_test.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_test.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_submitdeposit.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_submitdeposit.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_indetifycode.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\dialog_indetifycode.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_spinner_show.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_spinner_show.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_item_type_8.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\common_item_type_8.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_space_desc_dialog.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_space_desc_dialog.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_item_type_5.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\common_item_type_5.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_ue_item.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\adapter_ue_item.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_home_space.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_home_space.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\include_space_detail.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\include_space_detail.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_inputnumber.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_inputnumber.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_single_error_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_single_error_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_navigation.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_navigation.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\window_manager_order_info.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\window_manager_order_info.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_ordershop.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\fragment_ordershop.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_charge.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_charge.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_choose_string.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\item_choose_string.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\error_webview_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\error_webview_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_title_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_title_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mz_banner_effect_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\2df9177afcff0a5f0880ddf093c35a60c979fa84\\output\\res\\layout\\mz_banner_effect_layout.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_item_type_7.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\common_item_type_7.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_webview.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_webview.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_activity_splendid_no_image.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_activity_splendid_no_image.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_item_empty_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_item_empty_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_single_login_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_single_login_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_item_loading_more_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_item_loading_more_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_camera.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\my_camera.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_activity_message.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\success_activity_message.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_coupon.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_coupon.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_space_order.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_space_order.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_activity_helpcenter.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\success_activity_helpcenter.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_good_order_desc.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\success_good_order_desc.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_item_type_3.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\common_item_type_3.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_space_desc.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\dialog_space_desc.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_consumedetail.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_consumedetail.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_money.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_money.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_progress.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_my_progress.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_deal.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\dialog_deal.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toast_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\toast_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_spaceorder.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\fragment_spaceorder.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_ref_row.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\d3f43a04afe6af94172f1c15984fa750402855e1\\output\\res\\layout\\leak_canary_ref_row.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mz_banner_normal_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\2df9177afcff0a5f0880ddf093c35a60c979fa84\\output\\res\\layout\\mz_banner_normal_layout.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_base_bar.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\view_base_bar.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\949b27702e3f050692d5db51d4a2261fe1db9a07\\output\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main6.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\activity_main6.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_chose.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_chose.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ordershop.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_ordershop.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_activity_order_space.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_activity_order_space.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_good_order.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_good_order.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_special.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\fragment_special.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\camera.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\316f21a01ffefa394b159ed9f5d31c564d295f52\\output\\res\\layout\\camera.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_ref_top_row.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\d3f43a04afe6af94172f1c15984fa750402855e1\\output\\res\\layout\\leak_canary_ref_top_row.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_text_label.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_text_label.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_spacepaydetail.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_spacepaydetail.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_item_refresh_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_item_refresh_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_qw.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_qw.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\fd42bfdde8c18b54ec3c3717b00920858f65f447\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_activity_splendid_have_image.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_activity_splendid_have_image.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmzshow_single_other_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_single_other_view.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_share.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\dialog_share.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_deposit.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_deposit.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_info.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\fragment_info.xml"
+    },
+    {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_display_leak.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\d3f43a04afe6af94172f1c15984fa750402855e1\\output\\res\\layout\\leak_canary_display_leak.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -524,10 +780,6 @@
         "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmzshow_single_loading_view.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_layout_snackbar.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_auther.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\dialog_auther.xml"
     },
@@ -540,32 +792,16 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fankui.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_fankui.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_order_money_not_enough.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\dialog_order_money_not_enough.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_paypwsetting.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_paypwsetting.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_shop_order.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_shop_order.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_info.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_my_info.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_space_desc.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_space_desc.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_test.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_test.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_datechose.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_datechose.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_deposit.xml",
@@ -580,28 +816,20 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\dialog_order_long_tip.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_submitdeposit.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\activity_submitdeposit.xml"
-    },
-    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_good_order_desc_orderinfo.xml",
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_good_order_desc_orderinfo.xml"
-    },
-    {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7e954c0a42bbfe941972d4f0f4ecf798f99cc683\\output\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_common.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\dialog_common.xml"
     },
     {
-        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_spinner_show.xml",
-        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\layout\\item_spinner_show.xml"
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dmz_tip_view.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\dmzapi\\build\\intermediates\\bundles\\default\\res\\layout\\dmz_tip_view.xml"
     },
     {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",

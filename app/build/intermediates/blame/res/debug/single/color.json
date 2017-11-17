@@ -40,6 +40,10 @@
         "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\color\\color_home_style.xml"
     },
     {
+        "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\color\\space_order_text_style.xml",
+        "source": "D:\\android\\ydc\\EBusiness\\app\\src\\main\\res\\color\\space_order_text_style.xml"
+    },
+    {
         "merged": "D:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\687f5d6a2e1d93b3accd3963ce6d4394bb01f2bc\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     },

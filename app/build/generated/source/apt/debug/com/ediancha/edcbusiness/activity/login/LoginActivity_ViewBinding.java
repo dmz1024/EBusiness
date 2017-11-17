@@ -8,6 +8,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -19,15 +20,17 @@ import java.lang.Override;
 public class LoginActivity_ViewBinding implements Unbinder {
   private LoginActivity target;
 
-  private View view2131689659;
+  private View view2131689718;
 
-  private View view2131689665;
+  private View view2131689724;
 
-  private View view2131689668;
+  private View view2131689726;
 
-  private View view2131689669;
+  private View view2131689727;
 
-  private View view2131689667;
+  private View view2131689729;
+
+  private View view2131689730;
 
   @UiThread
   public LoginActivity_ViewBinding(LoginActivity target) {
@@ -41,7 +44,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ivCha, "field 'ivCha' and method 'onClick'");
     target.ivCha = Utils.castView(view, R.id.ivCha, "field 'ivCha'", ImageView.class);
-    view2131689659 = view;
+    view2131689718 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -52,7 +55,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.etCode = Utils.findRequiredViewAsType(source, R.id.etCode, "field 'etCode'", EditText.class);
     view = Utils.findRequiredView(source, R.id.tvCode, "field 'tvCode' and method 'onClick'");
     target.tvCode = Utils.castView(view, R.id.tvCode, "field 'tvCode'", TextView.class);
-    view2131689665 = view;
+    view2131689724 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,30 +65,41 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.tvCodeTime = Utils.findRequiredViewAsType(source, R.id.tvCodeTime, "field 'tvCodeTime'", TextView.class);
     view = Utils.findRequiredView(source, R.id.btLogin, "field 'btLogin' and method 'onClick'");
     target.btLogin = Utils.castView(view, R.id.btLogin, "field 'btLogin'", Button.class);
-    view2131689668 = view;
+    view2131689726 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = Utils.findRequiredView(source, R.id.tvNoLogin, "field 'tvNoLogin' and method 'onClick'");
-    target.tvNoLogin = Utils.castView(view, R.id.tvNoLogin, "field 'tvNoLogin'", TextView.class);
-    view2131689669 = view;
+    view = Utils.findRequiredView(source, R.id.tvXieyi, "field 'mTvXieyi' and method 'onClick'");
+    target.mTvXieyi = Utils.castView(view, R.id.tvXieyi, "field 'mTvXieyi'", TextView.class);
+    view2131689727 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = Utils.findRequiredView(source, R.id.tvXieyi, "method 'onClick'");
-    view2131689667 = view;
+    view = Utils.findRequiredView(source, R.id.img_wechat, "field 'mImgWechat' and method 'onClick'");
+    target.mImgWechat = Utils.castView(view, R.id.img_wechat, "field 'mImgWechat'", ImageView.class);
+    view2131689729 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
+    view = Utils.findRequiredView(source, R.id.img_qq, "field 'mTvQq' and method 'onClick'");
+    target.mTvQq = Utils.castView(view, R.id.img_qq, "field 'mTvQq'", ImageView.class);
+    view2131689730 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    target.mThread = Utils.findRequiredViewAsType(source, R.id.thread, "field 'mThread'", LinearLayout.class);
   }
 
   @Override
@@ -101,17 +115,22 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.tvCode = null;
     target.tvCodeTime = null;
     target.btLogin = null;
-    target.tvNoLogin = null;
+    target.mTvXieyi = null;
+    target.mImgWechat = null;
+    target.mTvQq = null;
+    target.mThread = null;
 
-    view2131689659.setOnClickListener(null);
-    view2131689659 = null;
-    view2131689665.setOnClickListener(null);
-    view2131689665 = null;
-    view2131689668.setOnClickListener(null);
-    view2131689668 = null;
-    view2131689669.setOnClickListener(null);
-    view2131689669 = null;
-    view2131689667.setOnClickListener(null);
-    view2131689667 = null;
+    view2131689718.setOnClickListener(null);
+    view2131689718 = null;
+    view2131689724.setOnClickListener(null);
+    view2131689724 = null;
+    view2131689726.setOnClickListener(null);
+    view2131689726 = null;
+    view2131689727.setOnClickListener(null);
+    view2131689727 = null;
+    view2131689729.setOnClickListener(null);
+    view2131689729 = null;
+    view2131689730.setOnClickListener(null);
+    view2131689730 = null;
   }
 }

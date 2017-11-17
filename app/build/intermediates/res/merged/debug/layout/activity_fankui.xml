@@ -1,96 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@color/color_f6f6f6">
+    android:background="@color/color_f6f6f6"
+    android:orientation="vertical">
 
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <com.dmz.library.dmzapi.view.custom.DmzBar
             android:id="@+id/dmzBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_scrollFlags="scroll|enterAlways" />
-    </android.support.design.widget.AppBarLayout>
+
 
 
     <TextView
         android:id="@+id/tv_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableRight="@mipmap/icon_wallet_password_arrow"
-        android:paddingTop="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:background="@color/color_f8f8fa"
+        android:drawablePadding="@dimen/size10"
+        android:drawableRight="@mipmap/xia_icon"
+        android:ellipsize="end"
         android:paddingBottom="@dimen/size10"
         android:paddingLeft="@dimen/size10"
+        android:layout_below="@+id/dmzBar"
         android:paddingRight="@dimen/size10"
-        android:textSize="@dimen/sp16"
-        android:textColor="@color/color_666"
-
-        android:text="问题类型"
+        android:paddingTop="@dimen/size10"
         android:singleLine="true"
-        android:ellipsize="end"
-        android:background="@color/color_fff"
-        android:drawablePadding="@dimen/size10"
-        android:layout_marginTop="@dimen/size10"/>
+        android:text="问题类型"
+        android:textColor="@color/color_666"
+        android:textSize="@dimen/sp16" />
 
     <LinearLayout
+        android:id="@+id/ln_et"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/size150"
-        android:background="@color/color_fff"
-        android:layout_marginTop="@dimen/size10">
+        android:layout_height="@dimen/size120"
+        android:layout_marginTop="@dimen/size10"
+        android:background="@color/color_f8f8fa"
+        android:layout_below="@id/tv_type">
+
         <EditText
             android:id="@+id/et_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/color_fff"
-            android:hint="问题描述（必填）"
-            android:gravity="start"
             android:layout_margin="@dimen/size10"
-            android:textSize="@dimen/sp16"
+            android:background="@color/color_f8f8fa"
+            android:gravity="start"
+            android:hint="问题描述（必填）"
+            android:textColor="@color/color_666"
             android:textColorHint="@color/color_999"
-            android:textColor="@color/color_666"/>
+            android:textSize="@dimen/sp16" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/size120"
-        android:background="@color/color_fff"
+        android:background="@color/color_f8f8fa"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:layout_below="@id/ln_et">
+
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:gravity="center_vertical">
-               <LinearLayout
-                   android:id="@+id/ln_image"
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:orientation="horizontal"
-                   android:gravity="center_vertical">
-               </LinearLayout>
-               <ImageView
-                   android:id="@+id/iv_image"
-                   android:layout_width="@dimen/size80"
-                   android:layout_height="@dimen/size80"
-                   android:src="@mipmap/icon_tanhao"
-                   android:layout_centerVertical="true"
-                   android:layout_toRightOf="@+id/ln_image"
-                   android:layout_toEndOf="@+id/ln_image"
-                   android:layout_marginLeft="@dimen/size10"/>
-           </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/ln_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="@dimen/size80"
+                    android:layout_height="@dimen/size80"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_toEndOf="@+id/ln_image"
+                    android:layout_toRightOf="@+id/ln_image"
+                    android:src="@mipmap/zxfk_tjtp_pic" />
+            </RelativeLayout>
         </HorizontalScrollView>
     </LinearLayout>
 
     <TextView
         android:id="@+id/tv_submit"
-        style="@style/tv_but_style"
-        android:text="提交反馈"/>
-</LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/size10"
+        android:background="@color/color_ffc730"
+        android:textColor="@color/color_fff"
+        android:layout_alignParentBottom="true"
+        android:text="提交反馈" />
+</RelativeLayout>

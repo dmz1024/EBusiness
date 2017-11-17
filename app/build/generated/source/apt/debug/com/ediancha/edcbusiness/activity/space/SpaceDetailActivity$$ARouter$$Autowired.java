@@ -16,5 +16,7 @@ public class SpaceDetailActivity$$ARouter$$Autowired implements ISyringe {
     serializationService = ARouter.getInstance().navigation(SerializationService.class);;
     SpaceDetailActivity substitute = (SpaceDetailActivity)target;
     substitute.id = substitute.getIntent().getStringExtra("id");
+    substitute.mLatitude = substitute.getIntent().getStringExtra("mLatitude");
+    substitute.mLongtude = substitute.getIntent().getStringExtra("mLongtude");
   }
 }

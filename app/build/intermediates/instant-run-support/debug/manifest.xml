@@ -5,7 +5,7 @@
     android:versionName="1.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="16"
         android:targetSdkVersion="26" />
 
     <!-- 网络权限 -->
@@ -24,6 +24,20 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <!-- 悬浮窗口 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -37,50 +51,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme" >
-        <activity android:name="com.ediancha.edcbusiness.activity.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.ediancha.edcbusiness.activity.Main5Activity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.Main6Activity" />
+        <!-- 高德地图定位 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="53b7e96059e5b0ff333e4a72c16cb552" />
+
         <activity
-            android:name="com.ediancha.edcbusiness.activity.my.PersonCenterActivity"
-            android:theme="@style/PersonCenterTheme" />
-        <activity
-            android:name="com.ediancha.edcbusiness.activity.QwActivity"
-            android:theme="@style/QwTheme" />
-        <activity android:name="com.ediancha.edcbusiness.activity.SpaceDescActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.message.ActivityMessageActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.message.ActivitySplendidActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.message.ExpenseTipsActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.MyPackageActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.CouponActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.DepositActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.MoneyActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.ChargeActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.coupon.CouponChangeActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.help.HelpCenterActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.help.FanKuiActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.help.WebViewActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.space.SpaceDetailActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.my.AutherActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.help.HelpCenterNextActivity" />
-        <activity
-            android:name="com.ediancha.edcbusiness.activity.login.LoginActivity"
-            android:theme="@style/LoginTheme" />
-        <activity android:name="com.ediancha.edcbusiness.activity.order.SpaceOrderActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.order.GoodOrderActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.my.MyInfoActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.order.SpaceOrderInProgeressDescActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.PayPWSettingActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.my.UpdateInfoActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.SpecialActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.space.MoneyAffirmActivity" />
-        <activity android:name="com.ediancha.edcbusiness.activity.HomeActivity" >
+            android:name="com.ediancha.edcbusiness.activity.MainActivity"
+            android:launchMode="singleTask" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -88,6 +67,65 @@
 
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.ediancha.edcbusiness.activity.my.PersonCenterActivity"
+            android:theme="@style/PersonCenterTheme" />
+        <activity
+            android:name="com.ediancha.edcbusiness.activity.QwActivity"
+            android:theme="@style/QwTheme" />
+        <activity android:name="com.ediancha.edcbusiness.activity.SpaceDescActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.message.ActivityMessageActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.message.ActivitySplendidActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.message.ExpenseTipsActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.my.MyPackageActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.CouponActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.DepositActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.my.MoneyActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.ChargeActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.coupon.CouponChangeActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.help.HelpCenterActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.help.FanKuiActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.help.WebViewActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.space.SpaceDetailActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.my.AutherActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.help.HelpCenterNextActivity" />
+        <activity
+            android:name="com.ediancha.edcbusiness.activity.login.LoginActivity"
+            android:theme="@style/LoginTheme" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.SpaceOrderActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.GoodOrderActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.GoodOrderDescActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.my.MyInfoActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.order.SpaceOrderInProgeressDescActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.walletbag.PayPWSettingActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.my.UpdateInfoActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.SpecialActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.orderdetail.OrderItemActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.space.MoneyAffirmActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.space.NavigationActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.space.LocationActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.space.ChoseDateActvivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.order.CheckOrderActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.order.SpacePayDetailActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.order.OrderingActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.order.OrderShopActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.my.SetActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.space.OpenInputActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.space.AirQualityActivity" />
+        <activity android:name="com.ediancha.edcbusiness.activity.HomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ediancha.edcbusiness.test.DongHuaActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <provider
@@ -99,6 +137,69 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 微信相关 -->
+        <activity
+            android:name="com.ediancha.edcbusiness.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.ediancha.edcbusiness.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <!-- 微信相关 -->
+
+
+        <!-- 高德地图 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- 高德地图 -->
+
+
+        <!-- qq相关 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106484834" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- qq相关 -->
+
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.my.CashPledgeActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.my.LimitsActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.my.CouponActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.my.BalanceDescActivity" />
+        <activity android:name="com.ediancha.edcbusiness.v1.activity.space.MapSpaceActivity" />
 
         <service
             android:name="com.taobao.sophix.aidl.DownloadService"

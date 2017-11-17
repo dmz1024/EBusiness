@@ -91,7 +91,7 @@
             android:text="消息"
             android:textSize="@dimen/sp10"
             android:textColor="@color/color_home_style"
-            android:drawableTop="@drawable/selector_special_style"
+            android:drawableTop="@drawable/selector_info_style"
             android:drawablePadding="@dimen/size2"
             android:gravity="center"
             android:button="@null"/>

@@ -28,5 +28,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </WebView>
-
+    <ViewStub
+        android:id="@+id/vs_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/error_webview_view" />
 </LinearLayout>

@@ -1,4 +1,4 @@
-#Tue Oct 10 15:16:02 CST 2017
+#Fri Nov 17 12:03:30 CST 2017
 base.0=D\:\\android\\ydc\\EBusiness\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b07ee5a2dc432e481ce58f616310f18c4d27e9c0
 renamed.1=classes.dex
 renamed.0=classes2.dex

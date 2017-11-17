@@ -16,7 +16,7 @@ import java.lang.Override;
 public class CouponChangeActivity_ViewBinding implements Unbinder {
   private CouponChangeActivity target;
 
-  private View view2131689638;
+  private View view2131689661;
 
   @UiThread
   public CouponChangeActivity_ViewBinding(CouponChangeActivity target) {
@@ -31,7 +31,7 @@ public class CouponChangeActivity_ViewBinding implements Unbinder {
     target.mEtNumber = Utils.findRequiredViewAsType(source, R.id.et_number, "field 'mEtNumber'", EditText.class);
     view = Utils.findRequiredView(source, R.id.tv_submit, "field 'mTvSubmit' and method 'onclick'");
     target.mTvSubmit = Utils.castView(view, R.id.tv_submit, "field 'mTvSubmit'", TextView.class);
-    view2131689638 = view;
+    view2131689661 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public class CouponChangeActivity_ViewBinding implements Unbinder {
     target.mEtNumber = null;
     target.mTvSubmit = null;
 
-    view2131689638.setOnClickListener(null);
-    view2131689638 = null;
+    view2131689661.setOnClickListener(null);
+    view2131689661 = null;
   }
 }

@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.butterknife'
 android {
-    signingConfigs {
-        config {
-            keyAlias 'allin'
-            keyPassword 'allin123'
-            storeFile file('/Users/dengmingzhi/Desktop/develop/android/jks/AllIn.jks')
-            storePassword 'allin123'
-        }
-    }
+//    signingConfigs {
+//        config {
+//            keyAlias 'allin'
+//            keyPassword 'allin123'
+//            storeFile file('/Users/dengmingzhi/Desktop/develop/android/jks/AllIn.jks')
+//            storePassword 'allin123'
+//        }
+//    }
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
@@ -30,24 +30,24 @@ android {
         }
     }
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
-        }
-        debug {
-            signingConfig signingConfigs.config
-        }
-    }
-//    repositories {
-//        maven {
-//            url "http://maven.aliyun.com/nexus/content/repositories/releases"
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
 //        }
-//        maven { url 'https://jitpack.io' }
-//    }
+//        debug {
+//            signingConfig signingConfigs.config
+//        }
+    }
+    repositories {
+        maven {
+            url "http://maven.aliyun.com/nexus/content/repositories/releases"
+        }
+        maven { url 'https://jitpack.io' }
+    }
     dexOptions {
         incremental true
-        javaMaxHeapSize "4g"
+        javaMaxHeapSize "1g"
         preDexLibraries = false
     }
 }
