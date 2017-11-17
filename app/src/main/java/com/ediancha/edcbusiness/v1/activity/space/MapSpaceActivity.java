@@ -3,12 +3,19 @@ package com.ediancha.edcbusiness.v1.activity.space;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.SystemClock;
 import android.support.annotation.Nullable;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.BounceInterpolator;
+import android.view.animation.Interpolator;
+import android.view.animation.LinearInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -18,6 +25,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.amap.api.maps.AMap;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.MapView;
+import com.amap.api.maps.Projection;
 import com.amap.api.maps.UiSettings;
 import com.amap.api.maps.model.BitmapDescriptor;
 import com.amap.api.maps.model.BitmapDescriptorFactory;
@@ -26,6 +34,16 @@ import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.Marker;
 import com.amap.api.maps.model.MarkerOptions;
 import com.amap.api.maps.model.MyLocationStyle;
+import com.amap.api.maps.model.animation.Animation;
+import com.amap.api.maps.model.animation.RotateAnimation;
+import com.amap.api.maps.model.animation.TranslateAnimation;
+import com.amap.api.services.core.LatLonPoint;
+import com.amap.api.services.route.BusRouteResult;
+import com.amap.api.services.route.DriveRouteResult;
+import com.amap.api.services.route.RideRouteResult;
+import com.amap.api.services.route.RouteSearch;
+import com.amap.api.services.route.WalkPath;
+import com.amap.api.services.route.WalkRouteResult;
 import com.dmz.library.dmzapi.utils.DateUtils;
 import com.dmz.library.dmzapi.utils.MyToast;
 import com.dmz.library.dmzapi.utils.ScreenUtil;
@@ -86,7 +104,9 @@ public class MapSpaceActivity extends BaseActivity {
     }
 
     private Marker marker;
-
+    private Marker marker1;
+    private Marker marker2;
+    private boolean is1;
     private void initMap() {
         MyLocationStyle myLocationStyle;
         myLocationStyle = new MyLocationStyle();
@@ -108,7 +128,11 @@ public class MapSpaceActivity extends BaseActivity {
                     marker = aMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromBitmap(BitmapFactory.decodeResource(getResources(), R.mipmap.wo_icon))));
                     Bitmap bitmapWo = BitmapFactory.decodeResource(getResources(), R.mipmap.wo_icon);
                     Bitmap bitmapLan = BitmapFactory.decodeResource(getResources(), R.mipmap.lan_icon);
-                    marker.setPositionByPixels(ScreenUtil.getScreenWidth() / 2, ((ScreenUtil.getScreenHeight() - (ScreenUtil.dp2px(50)) - bitmapWo.getHeight()) + (bitmapLan.getHeight() / 2) - 5) / 2);
+                    marker.setPositionByPixels(ScreenUtil.getScreenWidth() / 2, ((ScreenUtil.getScreenHeight() - (ScreenUtil.dp2px(50)) - bitmapWo.getHeight()) + (bitmapLan.getHeight() / 2) - 10) / 2);
+
+
+                    marker1 = aMap.addMarker(new MarkerOptions().position(new LatLng(40.05941412643571, 116.41451507806778)));
+                    marker2 = aMap.addMarker(new MarkerOptions().position(new LatLng(40.05797605314868, 116.41531839966775)));
                 }
 
 //                ivWo.setVisibility(View.VISIBLE);
@@ -119,6 +143,18 @@ public class MapSpaceActivity extends BaseActivity {
 
         if (DateUtils.getHour() >= 18 || DateUtils.getHour() <= 7)
             aMap.setMapType(AMap.MAP_TYPE_NIGHT);//夜间模式
+
+
+        aMap.setOnMarkerClickListener(new AMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                if (!TextUtils.equals(MapSpaceActivity.this.marker.getId(), marker.getId())) {
+                    routeSearch(marker);
+                }
+
+                return true;
+            }
+        });
 
 
         aMap.showIndoorMap(true);//显示室内地图
@@ -143,10 +179,11 @@ public class MapSpaceActivity extends BaseActivity {
                         lastChangeTime = currentTimeMillis;
                         LatLng position = marker.getPosition();
                         MyToast.error(position.latitude + "---" + position.longitude);
+
+                        Log.d("大小位置", position.latitude + "---" + position.longitude);
+                        jumpPoint(marker);
                         //TODO 请求网络
                     }
-                } else {
-                    //TODO 请求网络
                 }
             }
         });
@@ -187,5 +224,67 @@ public class MapSpaceActivity extends BaseActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         map.onSaveInstanceState(outState);
+    }
+
+
+    /**
+     * marker点击时跳动一下
+     */
+    public void jumpPoint(final Marker marker) {
+//        LatLng position = marker.getPosition();
+//        Animation animation = new TranslateAnimation(new LatLng(position.latitude + 0.0002, position.longitude));
+//        animation.setDuration(500L);
+//        animation.setInterpolator(new LinearInterpolator());
+//        marker.setAnimation(animation);
+//        marker.startAnimation();
+
+    }
+
+    public void routeSearch(Marker marker) {
+        RouteSearch routeSearch = new RouteSearch(this);
+
+        routeSearch.setRouteSearchListener(new RouteSearch.OnRouteSearchListener() {
+            @Override
+            public void onBusRouteSearched(BusRouteResult result, int code) {
+
+            }
+
+            @Override
+            public void onDriveRouteSearched(DriveRouteResult result, int code) {
+
+            }
+
+            @Override
+            public void onWalkRouteSearched(WalkRouteResult result, int code) {
+
+                if(code==1000){
+                    WalkPath walkPath = result.getPaths().get(0);
+//                aMap.clear();// 清理地图上的所有覆盖物
+                    WalkRouteOverlay walkRouteOverlay = new WalkRouteOverlay(MapSpaceActivity.this,
+                            aMap, walkPath, result.getStartPos(),
+                            result.getTargetPos());
+//                    walkRouteOverlay.removeFromMap();
+                    walkRouteOverlay.addToMap();
+//                walkRouteOverlay.zoomToSpan();
+
+                }
+            }
+
+            @Override
+            public void onRideRouteSearched(RideRouteResult result, int code) {
+
+            }
+        });
+
+
+        LatLng marker1Position = marker.getPosition();
+
+
+        RouteSearch.FromAndTo fromAndTo = new RouteSearch.FromAndTo(new LatLonPoint(aMap.getMyLocation().getLatitude(), aMap.getMyLocation().getLongitude()), new LatLonPoint(marker1Position.latitude, marker1Position.longitude));
+
+        RouteSearch.WalkRouteQuery query = new RouteSearch.WalkRouteQuery(fromAndTo, RouteSearch.WALK_MULTI_PATH);//RouteSearch.WALK_DEFAULT
+        routeSearch.calculateWalkRouteAsyn(query);//开始算路
+
+
     }
 }
