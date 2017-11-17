@@ -40,15 +40,14 @@ public abstract class BaseFragment<D extends IType, T extends BaseListBean> exte
 
     @Override
     protected void lazyLoad() {
-        if (mBuilder == null) {
-            dBuilder = DmzBuilder._builder();
-            initDmzBuilder();
-            mBuilder = MoreDataBuilder._build().setDmzBuilder(dBuilder);
-            initMoreBuilder();
-            mContract = MoreDataContract.<T>_instance(getContext(), rvRoot, swRoot);
-            initContract();
-            mContract.setMoreDataBuilder(mBuilder)._init();
-        }
+        dBuilder = DmzBuilder._builder();
+        initDmzBuilder();
+        mBuilder = MoreDataBuilder._build().setDmzBuilder(dBuilder);
+        initMoreBuilder();
+        mContract = MoreDataContract.<T>_instance(getContext(), rvRoot, swRoot);
+        initContract();
+        mContract.setMoreDataBuilder(mBuilder)._init();
+
     }
 
     protected void initContract() {
@@ -68,7 +67,7 @@ public abstract class BaseFragment<D extends IType, T extends BaseListBean> exte
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (mContract!=null){
+        if (mContract != null) {
             mContract.destroy();
             mContract = null;
         }

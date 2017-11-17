@@ -19,7 +19,11 @@
 
     </style>
 
-
+    <style name="editext_style">
+        <item name="android:textColor">@color/color_ffc730</item>
+        <item name="android:padding">@dimen/size5</item>
+        <item name="android:textSize">@dimen/sp14</item>
+    </style>
 
     <style name="style_login_ln_et">
         <item name="android:layout_width">match_parent</item>

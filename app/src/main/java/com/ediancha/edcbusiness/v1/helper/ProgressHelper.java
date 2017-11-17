@@ -23,10 +23,12 @@ public class ProgressHelper {
     private CountDownTimer mTimer = new CountDownTimer(3000, 20) {
         @Override
         public void onTick(long l) {
-            if(mListerner.onProgress(20)){
+            if (mListerner.onProgress(20)) {
                 cancel();
-            };
+            }
+            ;
         }
+
         @Override
         public void onFinish() {
 
@@ -43,6 +45,7 @@ public class ProgressHelper {
         return this;
     }
 
+    float x, y;
     public ProgressHelper setView(View view) {
         mView = view;
         mView.setOnTouchListener(new View.OnTouchListener() {
@@ -50,7 +53,15 @@ public class ProgressHelper {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
+                        x = motionEvent.getX();
+                        y = motionEvent.getY();
                         mTimer.start();
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        if (Math.abs((motionEvent.getX() - x)) > 10 || Math.abs((motionEvent.getY() - y)) > 5) {
+                            mTimer.cancel();
+                            mListerner.onProgress(0);
+                        }
                         break;
                     case MotionEvent.ACTION_UP:
                         mTimer.cancel();

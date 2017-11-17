@@ -134,7 +134,6 @@ public interface RouterUrl {
      * 用户认证
      */
     String USERAUTHER_ACTIVITY = "/activity/my/auther";
-
     /**
      * 空间订单详情
      */
@@ -241,5 +240,9 @@ public interface RouterUrl {
      */
     String MAP_SPACE_ACTIVITY = "/v1/activity/space/mapSpace";
 
+    /**
+     * 空间已完成订单
+     */
+    String SPACE_ORDER_END_ACTIVITY = "/v1/activity/order/spaceorderend";
 
 }

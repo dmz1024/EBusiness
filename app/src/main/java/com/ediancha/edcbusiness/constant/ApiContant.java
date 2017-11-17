@@ -233,4 +233,9 @@ public interface ApiContant {
      * 设置
      */
     String SET=BASE_HOME_URL+"goods/goodsOrdersDetails";
+
+    /**
+     * 空间已完成订单
+     */
+    String  SPACE_END_ORDER= BASE_API + "coupon/usercoupon";
 }

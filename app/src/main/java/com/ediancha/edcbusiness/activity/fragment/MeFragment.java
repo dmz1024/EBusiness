@@ -9,6 +9,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.bean.user.UserInfoUtil;
+import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.helper.ImageLoader;
 import com.ediancha.edcbusiness.router.Go;
 import com.ediancha.edcbusiness.view.LazyLoadFragment;
@@ -52,12 +54,13 @@ public class MeFragment extends LazyLoadFragment {
 
     @Override
     protected void lazyLoad() {
-        ImageLoader.loadImageOvel(getContext(),"http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg",mImgUserhead);
+        mTvName.setText(UserInfoUtil.getToken()==null ? "未登录/注册" : UserInfoUtil.getUserName());
+        ImageLoader.loadImageOvel(getContext(), ApiContant.IMAGE_URL, mImgUserhead);
     }
 
-    @OnClick({R.id.tv_order,R.id.tv_bag,R.id.tv_friend,R.id.tv_help,R.id.img_userhead,R.id.tv_setting})
-    void onClick(View view){
-        switch (view.getId()){
+    @OnClick({R.id.tv_order, R.id.tv_bag, R.id.tv_friend, R.id.tv_help, R.id.img_userhead, R.id.tv_setting})
+    void onClick(View view) {
+        switch (view.getId()) {
             case R.id.tv_order:
                 Go.goOrderingActivity();
                 break;
@@ -65,7 +68,7 @@ public class MeFragment extends LazyLoadFragment {
                 Go.goMyPackage();
                 break;
             case R.id.tv_friend:
-
+                Go.goSpaceOrderEndActivity();
                 break;
             case R.id.tv_help:
                 Go.goHelpCenter();

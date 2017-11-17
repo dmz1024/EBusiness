@@ -119,9 +119,9 @@ public class MyInfoActivity extends NotNetBaseActivity implements AdapterHelper.
                 Go.goUpdateInfoActivity(this, "修改昵称");
                 break;
             case 4:
-                if(UserInfoUtil.getRz()==1){
+//                if(UserInfoUtil.getRz()==1){
                     Go.goUserAuther();
-                }
+//                }
                 break;
             case 7:
                 type = 1;

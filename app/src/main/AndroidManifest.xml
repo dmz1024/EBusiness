@@ -108,6 +108,7 @@
         <activity android:name=".v1.activity.my.SetActivity"/>
         <activity android:name=".v1.activity.space.OpenInputActivity"/>
         <activity android:name=".v1.activity.space.AirQualityActivity"/>
+        <activity android:name=".v1.activity.order.SpaceOrderEndAcitivity"/>
 
         <activity android:name=".activity.HomeActivity">
             <intent-filter>
