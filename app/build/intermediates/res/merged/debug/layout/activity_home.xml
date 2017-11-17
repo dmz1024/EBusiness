@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.dmz.library.dmzapi.view.custom.DmzBar
+            android:id="@+id/dmzBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </android.support.design.widget.AppBarLayout>
+
+    <com.ediancha.edcbusiness.view.ViewpagerNoScroll
+        android:id="@+id/vp_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_chose"></com.ediancha.edcbusiness.view.ViewpagerNoScroll>
+
+    <RadioGroup
+        android:id="@+id/rg_chose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="@dimen/size5"
+        android:paddingBottom="@dimen/size5">
+
+        <RadioButton
+            android:id="@+id/rb_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="首页"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_home_style"
+            android:drawableTop="@drawable/selector_home_style"
+            android:drawablePadding="@dimen/size2"
+            android:gravity="center"
+            android:checked="true"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/rb_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="专题"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_home_style"
+            android:drawableTop="@drawable/selector_special_style"
+            android:drawablePadding="@dimen/size2"
+            android:gravity="center"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/rb_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我的"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/color_home_style"
+            android:drawableTop="@drawable/selector_me_style"
+            android:drawablePadding="@dimen/size2"
+            android:gravity="center"
+            android:button="@null"/>
+    </RadioGroup>
+    </RelativeLayout>

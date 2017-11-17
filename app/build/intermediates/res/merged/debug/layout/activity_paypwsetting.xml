@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_f6f6f6"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.dmz.library.dmzapi.view.custom.DmzBar
+            android:id="@+id/dmzBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout style="@style/style_login_ln_et">
+
+        <EditText
+            android:id="@+id/et_tel"
+            style="@style/style_login_et_input"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="phone"
+            android:background="@null"
+            android:text="15711284053" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size20"
+        android:layout_marginRight="@dimen/size20"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size20"
+            android:layout_toLeftOf="@+id/tv_code"
+            android:textColorHint="@color/color_999">
+
+            <EditText
+                android:id="@+id/et_code"
+                style="@style/style_login_et_input"
+                android:layout_height="wrap_content"
+                android:hint="请输入验证码"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_login_code_check"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="@dimen/size10"
+            android:paddingTop="5dp"
+            android:text="验证码"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/sp15" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size20"
+        android:layout_marginRight="@dimen/size20"
+        android:textColorHint="@color/color_999">
+
+        <EditText
+            android:id="@+id/et_pass"
+            style="@style/style_login_et_input"
+            android:hint="新密码"
+            android:inputType="numberPassword"
+            android:singleLine="true"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size20"
+        android:layout_marginRight="@dimen/size20"
+        android:textColorHint="@color/color_999">
+        <EditText
+            android:id="@+id/et_passyz"
+            style="@style/style_login_et_input"
+            android:hint="验证密码"
+            android:singleLine="true"
+            android:inputType="numberPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        style="@style/style_login_ln_et"
+        android:layout_marginTop="@dimen/size20"
+        android:background="@drawable/shape_login_code_check"
+        android:layout_marginRight="@dimen/size20"
+        android:layout_marginLeft="@dimen/size20">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="确定"
+            android:textColor="@color/color_fff"
+            android:textSize="@dimen/sp15" />
+    </LinearLayout>
+
+</LinearLayout>
