@@ -37,7 +37,7 @@ public class SpaceAllOrderFragment extends BaseFragment<SpaceOrderDataBean.Data,
     protected void initDmzBuilder() {
         dBuilder.setaClass(SpaceOrderDataBean.class)
                 .setUrl(ApiContant.SHOP_ORDER_ITEM_URL)
-                .setParms("token", "NDgxNjA5N1==");
+                .setParms("token", "MzgzMTczMg==");
     }
 
     @Override

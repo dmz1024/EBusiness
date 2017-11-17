@@ -58,9 +58,9 @@
             android:name=".activity.MainActivity"
             android:launchMode="singleTask">
             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
 
@@ -92,7 +92,7 @@
         <activity android:name=".activity.order.SpaceOrderActivity" />
         <activity android:name=".activity.order.GoodOrderActivity" />
         <activity android:name=".activity.order.GoodOrderDescActivity" />
-        <activity android:name=".v1.activity.my.MyInfoActivity"/>
+        <activity android:name=".v1.activity.my.MyInfoActivity" />
         <activity android:name=".activity.order.SpaceOrderInProgeressDescActivity" />
         <activity android:name=".activity.walletbag.PayPWSettingActivity" />
         <activity android:name=".activity.my.UpdateInfoActivity" />
@@ -104,13 +104,13 @@
         <activity android:name=".v1.activity.space.ChoseDateActvivity" />
         <activity android:name=".v1.activity.order.CheckOrderActivity" />
         <activity android:name=".v1.activity.order.SpacePayDetailActivity" />
-        <activity android:name=".v1.activity.order.OrderingActivity"/>
-        <activity android:name=".v1.activity.order.OrderShopActivity"/>
-        <activity android:name=".v1.activity.my.SetActivity"/>
-        <activity android:name=".v1.activity.space.OpenInputActivity"/>
-        <activity android:name=".v1.activity.space.AirQualityActivity"/>
-        <activity android:name=".v1.activity.coupon.CouponActivity"/>
-        <activity android:name=".v1.activity.order.SpaceOrderEndAcitivity"/>
+        <activity android:name=".v1.activity.order.OrderingActivity" />
+        <activity android:name=".v1.activity.order.OrderShopActivity" />
+        <activity android:name=".v1.activity.my.SetActivity" />
+        <activity android:name=".v1.activity.space.OpenInputActivity" />
+        <activity android:name=".v1.activity.space.AirQualityActivity" />
+        <activity android:name=".v1.activity.coupon.CouponActivity" />
+        <activity android:name=".v1.activity.order.SpaceOrderEndAcitivity" />
 
         <activity android:name=".activity.HomeActivity">
             <intent-filter>
@@ -194,8 +194,8 @@
         <!-- qq相关 -->
 
 
-        <activity android:name=".v1.activity.my.CashPledgeActivity"/>
-        <activity android:name=".v1.activity.my.LimitsActivity"/>
+        <activity android:name=".v1.activity.my.CashPledgeActivity" />
+        <activity android:name=".v1.activity.my.LimitsActivity" />
     </application>
 
 </manifest>
