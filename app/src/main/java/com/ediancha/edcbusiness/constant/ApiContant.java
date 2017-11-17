@@ -13,6 +13,9 @@ public interface ApiContant {
     String BASE_API = "http://s.east-profit.com/api.php/";
     String BASE_API_HOST = "http://s.east-profit.com/";
 
+    String BASE_HOME_URL="http://lh.illdj.com/app.php/api/";
+
+    String IMAGE_URL="http://lh.illdj.com/public/uploads/images/20171027/7b1c9613d73dbd5200ea76fee9b06253.jpg";
     /**
      * 活动消息
      */
@@ -59,6 +62,11 @@ public interface ApiContant {
      * 优惠券
      */
     String COUPON = BASE_API + "coupon/usercoupon";
+
+    /**
+     * 余额明细
+     */
+    String BALANCEDESC = BASE_API + "coupon/usercoupon";
 
     /**
      * 优惠券兑换
@@ -122,7 +130,7 @@ public interface ApiContant {
     /**
      * 空间列表
      */
-    String HOME_URL = BASE_API + "index/index";
+    String HOME_URL = BASE_HOME_URL + "index/index";
 
     /**
      * 专题
@@ -209,4 +217,20 @@ public interface ApiContant {
      */
     String CASHPLEDGE=BASE_API+"/space/reserve?type=3";
 
+    /**
+     * 商品订单
+     */
+    String SHOP_ORDER_URL=BASE_HOME_URL+"goods/goodsOrdersDetails";
+
+    /**
+     * 商品订单列表
+     */
+    String SHOP_ORDER_ITEM_URL=BASE_HOME_URL+"goods/goodsOrdersList";
+
+
+
+    /**
+     * 设置
+     */
+    String SET=BASE_HOME_URL+"goods/goodsOrdersDetails";
 }

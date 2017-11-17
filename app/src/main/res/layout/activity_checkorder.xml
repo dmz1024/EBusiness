@@ -241,7 +241,9 @@
                 android:button="@null"
                 android:drawableRight="@drawable/selector_pay_chose"
                 android:drawableLeft="@mipmap/yuezhifu_icon"
-                android:drawablePadding="@dimen/size10"/>
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="@dimen/size10"
+                />
             <RadioButton
                 android:id="@+id/tv_wechat"
                 android:layout_width="match_parent"
@@ -253,6 +255,7 @@
                 android:button="@null"
                 android:drawableRight="@drawable/selector_pay_chose"
                 android:drawableLeft="@mipmap/recharge_wechat_icon"
+                android:background="?android:selectableItemBackground"
                 android:drawablePadding="@dimen/size10"/>
             <RadioButton
                 android:id="@+id/tv_alipay"
@@ -265,6 +268,7 @@
                 android:button="@null"
                 android:drawableRight="@drawable/selector_pay_chose"
                 android:drawableLeft="@mipmap/recharge_alipay_icon"
+                android:background="?android:selectableItemBackground"
                 android:drawablePadding="@dimen/size10"/>
         </RadioGroup>
     </LinearLayout>

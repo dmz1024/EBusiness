@@ -1,57 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/tv_center"
-            android:layout_width="wrap_content"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/tv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/size10"
+                android:src="@mipmap/logo_pic" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/shouye_ditu_icon"
+                android:padding="@dimen/size10" />
+        </RelativeLayout>
+
+        <com.zhouwei.mzbanner.MZBannerView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:canLoop="true"
+            app:indicatorAlign="center"
+            app:indicatorPaddingLeft="10dp"
+            app:open_mz_mode="false" />
+        <LinearLayout
+            android:id="@+id/ln_title"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:padding="@dimen/size10"
-            android:layout_centerInParent="true"
-            android:src="@mipmap/logo_pic"
-            />
-        <TextView
-            android:id="@+id/tv_right"
-            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size15"
+                android:textSize="@dimen/sp18"
+                android:textColor="@color/color_fcc01f"
+                android:text="为您推荐"
+                android:layout_marginBottom="@dimen/size5"
+                />
+            <View
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size5"
+                android:background="@color/color_fcc01f"/>
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size10"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/color_666"
+                android:layout_marginBottom="@dimen/size10"
+                />
+        </LinearLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/space_item"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+           </android.support.v7.widget.RecyclerView>
+       </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:drawableLeft="@mipmap/shouye_ditu_icon"
-            android:padding="@dimen/size10"
-            android:layout_alignParentRight="true"
-            />
-    </RelativeLayout>
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
-    <com.zhouwei.mzbanner.MZBannerView
-        android:id="@+id/banner"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:indicatorAlign="center"
-        app:indicatorPaddingLeft="10dp"
-        app:canLoop="true"
-        app:open_mz_mode="false"/>
+            <TextView
+                android:id="@+id/tv_tiyan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size15"
+                android:textSize="@dimen/sp18"
+                android:textColor="@color/color_fcc01f"
+                android:text=""
+                android:layout_marginBottom="@dimen/size5"
+                />
+            <View
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size5"
+                android:background="@color/color_fcc01f"/>
+            <TextView
+                android:id="@+id/tv_tydetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size10"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/color_666"
+                android:layout_marginBottom="@dimen/size10"
+                />
+        </LinearLayout>
 
-    <include
-        android:id="@+id/include"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/adapter_space_item"/>
-
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/adapter_ue_item"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recy"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v7.widget.RecyclerView>
-
-</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_tiyan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -3,10 +3,14 @@ package com.ediancha.edcbusiness.activity.space;
 
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
@@ -23,6 +27,7 @@ import com.ediancha.edcbusiness.helper.ImageLoader;
 import com.ediancha.edcbusiness.helper.OpenMapHelper;
 import com.ediancha.edcbusiness.helper.share.Share;
 import com.ediancha.edcbusiness.router.Go;
+import com.ediancha.edcbusiness.v1.dialog.SpaceDescDialog;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import butterknife.BindView;
@@ -50,6 +55,40 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     TextView mTvNotice;
     @BindView(R.id.recy_activity)
     RecyclerView mRecyActivity;
+    @BindView(R.id.img_space)
+    ImageView mImgSpace;
+    @BindView(R.id.tv_money)
+    TextView mTvMoney;
+    @BindView(R.id.tv_pm)
+    TextView mTvPm;
+    @BindView(R.id.tv_title)
+    TextView mTvTitle;
+    @BindView(R.id.webview)
+    WebView mWebview;
+    @BindView(R.id.rl_user)
+    LinearLayout mRlUser;
+    @BindView(R.id.tv_kj)
+    TextView mTvKj;
+    @BindView(R.id.tv_prices)
+    TextView mTvPrices;
+    @BindView(R.id.tv_submit)
+    TextView mTvSubmit;
+    @BindView(R.id.tv_envir)
+    TextView mTvEnvir;
+    @BindView(R.id.ln_label)
+    LinearLayout mLnLabel;
+    @BindView(R.id.ln_size)
+    LinearLayout mLnSize;
+    @BindView(R.id.rl_wv)
+    LinearLayout mRlWv;
+    @BindView(R.id.rl_activity)
+    LinearLayout mRlActivity;
+    @BindView(R.id.rl_price)
+    LinearLayout mRlPrice;
+    @BindView(R.id.rl_notice)
+    LinearLayout mRlNotice;
+    @BindView(R.id.scrollview)
+    ScrollView mScrollview;
 
 
     private OpenMapHelper mOpenMapHelper;
@@ -71,7 +110,9 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
         mTvNumber.setText("最多容纳" + bean.getSpaceLoadNumber() + "人");
 
         mTvNotice.setText(bean.getCostStatement());
-
+        ImageLoader.loadImageRec(ctx, ApiContant.IMAGE_URL, mImgSpace);
+        String envir = "空气质量"+"<font color='#ffc730'>|优</font>";
+        mTvEnvir.setText(Html.fromHtml(envir));
         initRecyclerView(bean);
     }
 
@@ -90,7 +131,7 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
         AdapterHelper._instance(this, mRyUser)._initData(bean.getFacilities()).setLayoutManager(new GridLayoutManager(this, 3))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(0).setRid(R.layout.item_space_textview).setConvertInterface(this));
 //        //用途
-        AdapterHelper._instance(this, mRecyActivity)._initData(bean.getPurpose()).setLayoutManager(new GridLayoutManager(this, 3))
+        AdapterHelper._instance(this, mRecyActivity)._initData(bean.getPurpose()).setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false))
                 .setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.item_space_activity).setConvertInterface(this));
     }
 
@@ -101,7 +142,7 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
 
     }
 
-    @OnClick({R.id.tv_local, R.id.tv_number, R.id.tv_submit})
+    @OnClick({R.id.tv_local, R.id.tv_number, R.id.tv_submit,R.id.tv_title,R.id.ln_pm})
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_local:
@@ -112,6 +153,12 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
                 break;
             case R.id.tv_submit:
                 Go.goChoseDateActivity();
+                break;
+            case R.id.tv_title:
+                SpaceDescDialog.getInstance().show(this);
+                break;
+            case R.id.ln_pm:
+                Go.goAirQualityActivity();
                 break;
             default:
         }
@@ -135,7 +182,7 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
     protected void initBarView() {
         super.initBarView();
         dmzBar.setText("云集空间")
-                .addItemView(new DmzBar.DmzBarItemInfo().setIid(R.mipmap.icon_gengduo))
+                .addItemView(new DmzBar.DmzBarItemInfo().setIid(R.mipmap.share_icon))
                 .setOnItemOnClickListener(new DmzBar.OnItemOnClickListener() {
                     @Override
                     public void itemClick(int index) {
@@ -150,21 +197,22 @@ public class SpaceDetailActivity extends SingleDataBaseActivity<SpaceDetailBean,
 
     @Override
     public void convert(int viewType, ViewHolder holder, IType iType, int position) {
-        switch (viewType) {
-            case 0:
-                SpaceDetailBean.FacilitiesBean facilities = (SpaceDetailBean.FacilitiesBean) iType;
-                holder
-                        .setText(R.id.tv_type, facilities.getTargetName());
-                break;
-            case 1:
-                SpaceDetailBean.PurposeBean purpose = (SpaceDetailBean.PurposeBean) iType;
-                holder
-                        .setText(R.id.tv_type, purpose.getTargetName());
+        if (viewType == 0) {
+            SpaceDetailBean.FacilitiesBean facilities = (SpaceDetailBean.FacilitiesBean) iType;
+            holder
+                    .setText(R.id.tv_type, facilities.getTargetName());
+        } else if (viewType == 1) {
+            SpaceDetailBean.PurposeBean purpose = (SpaceDetailBean.PurposeBean) iType;
+            holder
+                    .setText(R.id.tv_type, purpose.getTargetName());
 
-                ImageLoader.loadImageRec(ctx, "http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg", holder.<ImageView>getView(R.id.img_type));
-                break;
+            ImageLoader.loadImageRec(ctx, ApiContant.IMAGE, holder.<ImageView>getView(R.id.img_type));
         }
     }
 
+    @Override
+    protected int getRid() {
+        return R.layout.activity_space_desc;
+    }
 
 }

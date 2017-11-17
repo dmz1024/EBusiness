@@ -70,9 +70,8 @@ public class Go {
     /**
      * 活动精选
      */
-    public static void goLogin(int type) {
+    public static void goLogin() {
         ARouter.getInstance().build(RouterUrl.LOGIN_ACTIVITY)
-                .withInt("type", type)
                 .navigation();
     }
 
@@ -320,4 +319,71 @@ public class Go {
         ARouter.getInstance().build(RouterUrl.CASH_PLEDGE_ACTIVITY)
                 .navigation();
     }
+
+    /**
+     * 进行中订单
+     */
+    public static void goOrderingActivity() {
+        ARouter.getInstance().build(RouterUrl.ORDERING_ACTIVITY)
+                .navigation();
+    }
+
+
+    /**
+     * 已完成订单
+     */
+    public static void goShopOrderActivity() {
+        ARouter.getInstance().build(RouterUrl.ORDEREND_ACTIVITY)
+                .navigation();
+    }
+    /**
+     * 空气质量
+     */
+    public static void goAirQualityActivity() {
+        ARouter.getInstance().build(RouterUrl.AIR_QUALITY_ACTIVITY)
+                .navigation();
+    }
+
+
+    /**
+     * 设置
+     */
+    public static void goSetActivity() {
+        ARouter.getInstance().build(RouterUrl.SET_ACTIVITY)
+                .navigation();
+    }
+
+ /**
+     * 应用权限
+     */
+    public static void goLimitsActivity() {
+        ARouter.getInstance().build(RouterUrl.LIMITS_ACTIVITY)
+                .navigation();
+    }
+
+    /**
+     * 输入门牌号开门
+     */
+    public static void goOpenInputActivity() {
+        ARouter.getInstance().build(RouterUrl.OPEN_INPUT_ACTIVITY)
+                .navigation();
+    }
+
+    /**
+     * 余额明细
+     */
+    public static void goBalanceDescActivity() {
+        ARouter.getInstance().build(RouterUrl.BALANCE_DESC_ACTIVITY)
+                .navigation();
+    }
+
+
+    /**
+     * 地图space信息
+     */
+    public static void goMapSpaceActivity() {
+        ARouter.getInstance().build(RouterUrl.MAP_SPACE_ACTIVITY)
+                .navigation();
+    }
+
 }

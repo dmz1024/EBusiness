@@ -11,9 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.graphics.Bitmap;
-
 import com.amap.api.maps.model.LatLng;
 import com.amap.api.services.core.LatLonPoint;
+
 
 class AMapServicesUtil {
     public static int BUFFER_SIZE = 2048;

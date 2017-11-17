@@ -5,10 +5,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.airbnb.lottie.LottieAnimationView;
 import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.router.Go;
-import com.ediancha.edcbusiness.v1.dialog.LoginDealDialog;
+import com.ediancha.edcbusiness.v1.dialog.DealDialog;
 
 /**
  * Created by dengmingzhi on 2017/11/7.
@@ -37,6 +36,14 @@ public class DongHuaActivity extends AppCompatActivity {
 
 
     public void dengluxieyi(View v) {
-        LoginDealDialog.getInstance().show(this);
+        DealDialog.getInstance().setTitle("用户注册协议").setUrl("https://www.baidu.com").show(this);
+    }
+
+    public void shezhi(View v) {
+        Go.goSetActivity();
+    }
+
+    public void login(View v) {
+        Go.goLogin();
     }
 }

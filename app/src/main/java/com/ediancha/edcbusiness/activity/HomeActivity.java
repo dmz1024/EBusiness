@@ -1,7 +1,5 @@
 package com.ediancha.edcbusiness.activity;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.View;
@@ -14,7 +12,8 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.activity.fragment.HomeFragment;
 import com.ediancha.edcbusiness.activity.fragment.InfoFragment;
 import com.ediancha.edcbusiness.activity.fragment.MeFragment;
-import com.ediancha.edcbusiness.activity.fragment.SpeciaFragment;
+import com.ediancha.edcbusiness.activity.fragment.OrderFragment;
+import com.ediancha.edcbusiness.router.Go;
 import com.ediancha.edcbusiness.view.ViewpagerNoScroll;
 
 import java.util.ArrayList;
@@ -40,7 +39,7 @@ public class HomeActivity extends NotNetBaseActivity {
     RadioGroup mRgChose;
 
     private HomeFragment mHomeFragment;
-    private SpeciaFragment mSpeciaFragment;
+    private OrderFragment mSpeciaFragment;
     private MeFragment mMeFragment;
     private InfoFragment mInfoFragment;
 
@@ -81,31 +80,11 @@ public class HomeActivity extends NotNetBaseActivity {
 
     @OnClick(R.id.fgQw)
     void qw() {
-
-        switch (type) {
-            case 0:
-                MyToast.normal("这是正确的");
-                break;
-            case 1:
-                MyToast.error("这是错误的");
-                break;
-            case 2:
-                MyToast.warn("这是警告");
-                break;
-        }
-
-        if (type == 0) {
-            type = 1;
-        } else if (type == 1) {
-            type = 2;
-        } else {
-            type = 0;
-        }
-
+        Go.goQw(this,1000);
     }
 
     private void initFragment() {
-        mSpeciaFragment = new SpeciaFragment();
+        mSpeciaFragment = new OrderFragment();
         mHomeFragment = new HomeFragment();
         mMeFragment = new MeFragment();
         mInfoFragment = new InfoFragment();
@@ -116,6 +95,7 @@ public class HomeActivity extends NotNetBaseActivity {
         mFragments.add(mInfoFragment);
         mFragments.add(mMeFragment);
 
+        mVpShow.setOffscreenPageLimit(4);
         mVpShow.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {

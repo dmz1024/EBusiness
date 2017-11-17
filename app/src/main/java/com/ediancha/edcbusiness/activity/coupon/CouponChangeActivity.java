@@ -21,7 +21,7 @@ import butterknife.OnClick;
 /**
  * Created by Admin on 2017/9/26.
  */
-@Route(path = "/activity/coupon/couponChange")
+@Route(path = "/v1/activity/coupon/couponChange")
 public class CouponChangeActivity extends NotNetBaseActivity implements CouponChangePresenter.ICouponChangeView {
 
 

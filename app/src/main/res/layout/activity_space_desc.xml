@@ -24,14 +24,14 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <android.support.v4.widget.NestedScrollView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:id="@+id/scRoot"
             android:layout_height="match_parent"
             android:fillViewport="true"
             android:scrollbars="none">
 
-        </android.support.v4.widget.NestedScrollView>
+        </RelativeLayout>
     </android.support.v4.widget.SwipeRefreshLayout>
 
 

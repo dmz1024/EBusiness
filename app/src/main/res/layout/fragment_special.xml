@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_margin="@dimen/size5">
+        android:padding="@dimen/size5"
+        android:background="@color/color_fff">
 
         <RadioButton
             android:id="@+id/rb_space"
@@ -32,22 +33,17 @@
             android:layout_height="wrap_content"
             android:background="@drawable/space_order_selector_style"
             android:button="@null"
-            android:checked="true"
             android:paddingBottom="@dimen/size5"
             android:paddingLeft="@dimen/size10"
             android:paddingRight="@dimen/size10"
             android:paddingTop="@dimen/size5"
-            android:text="空间订单"
+            android:text="商品订单"
             android:textColor="@color/space_order_text_style" />
     </RadioGroup>
-
-    <TableLayout
-        android:id="@+id/tab_name"
+    <FrameLayout
+        android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent">
 
-    <com.ediancha.edcbusiness.view.ViewpagerNoScroll
-        android:id="@+id/vp_show"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    </FrameLayout>
 </LinearLayout>

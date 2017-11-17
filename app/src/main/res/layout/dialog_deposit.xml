@@ -6,18 +6,17 @@
     android:orientation="vertical">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/size270"
         android:layout_height="wrap_content"
         android:background="@mipmap/zmxy_kapian_pic">
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="@dimen/size270"
         android:layout_height="@dimen/size75"
         android:orientation="horizontal"
-        android:background="@color/color_fff"
-        android:gravity="center_vertical">
+        android:background="@drawable/shape_lin_circle_style">
 
         <TextView
             android:id="@+id/tv_cancel"
@@ -26,24 +25,32 @@
             android:layout_weight="1"
             android:background="@drawable/shape_circle_styles"
             android:gravity="center"
-            android:paddingTop="@dimen/size10"
-            android:paddingBottom="@dimen/size10"
+            android:paddingTop="@dimen/size8"
+            android:paddingBottom="@dimen/size8"
             android:paddingRight="@dimen/size15"
             android:paddingLeft="@dimen/size15"
             android:text="支付押金"
             android:textColor="@color/color_666"
-            android:textSize="@dimen/size15" />
+            android:textSize="@dimen/size14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size15"/>
 
         <TextView
             android:id="@+id/tv_ok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="?android:attr/selectableItemBackground"
+            android:background="@drawable/shape_circle_green_styles"
             android:gravity="center"
-            android:padding="@dimen/size10"
-            android:text="确定"
+            android:paddingTop="@dimen/size8"
+            android:paddingBottom="@dimen/size8"
+            android:paddingRight="@dimen/size15"
+            android:paddingLeft="@dimen/size15"
+            android:text="使用芝麻免押"
             android:textColor="@color/color_666"
-            android:textSize="@dimen/sp15" />
-    </LinearLayout>
+            android:textSize="@dimen/sp14"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size15"/>
+    </RelativeLayout>
 </LinearLayout>

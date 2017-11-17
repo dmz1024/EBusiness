@@ -2,6 +2,7 @@ package com.ediancha.edcbusiness.v1.activity.order;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -13,6 +14,7 @@ import com.ediancha.edcbusiness.router.Go;
 import com.ediancha.edcbusiness.v1.dialog.DepositDialog;
 
 import butterknife.BindView;
+import butterknife.OnCheckedChanged;
 import butterknife.OnClick;
 
 
@@ -59,6 +61,8 @@ public class CheckOrderActivity extends NotNetBaseActivity {
     @Override
     protected void initView() {
         super.initView();
+
+        mTvYue.setChecked(true);
     }
 
     @Override
@@ -77,10 +81,14 @@ public class CheckOrderActivity extends NotNetBaseActivity {
                 break;
             case R.id.tv_deposit:
 //                Go.goDeposit(null,0);
-
                 new DepositDialog()
                         .show(ctx);
                 break;
         }
+    }
+
+    @OnCheckedChanged(R.id.tv_yue)
+    void check(){
+
     }
 }

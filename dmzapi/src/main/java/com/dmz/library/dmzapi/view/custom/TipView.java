@@ -56,7 +56,7 @@ public class TipView extends NoTitleDialoggFragment {
         tvContent.setText(content);
 
         if (isShowCancel) {
-            infos.add(0,new BottomInfo("取消"));
+            infos.add(0, new BottomInfo("取消"));
         }
 
         llBottom.setWeightSum(infos.size());
@@ -132,6 +132,11 @@ public class TipView extends NoTitleDialoggFragment {
         for (int i = 0; i < info.length; i++) {
             setBottom(new BottomInfo(info[i]));
         }
+        return this;
+    }
+
+    public TipView setBottom(String info, OnClickListener clickListener) {
+        setBottom(new BottomInfo(info, clickListener));
         return this;
     }
 

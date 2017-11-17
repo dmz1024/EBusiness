@@ -21,15 +21,14 @@ import com.ediancha.edcbusiness.R;
 import com.ediancha.edcbusiness.bean.ChoseDateBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
 import com.ediancha.edcbusiness.helper.ImageLoader;
-import com.ediancha.edcbusiness.router.Go;
 import com.github.czy1121.view.CornerLabelView;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
 
-import butterknife.BindColor;
+
 import butterknife.BindView;
-import butterknife.OnClick;
+
 
 /**
  * 选择时段
@@ -222,7 +221,6 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
                 }
             }
         }
-        Log.d("max", maxIndex + "--" + minIndex);
         if (minIndex != -1) {
             if (position < minIndex) {
                 int canChooseCount = 0;
@@ -270,6 +268,66 @@ public class ChoseDateActvivity extends SingleDataBaseActivity<ChoseDateBean, Ch
                 }
             } else if (position > maxIndex) {
 
+                int canChooseCount = 0;
+                int noChoosePosition = -1;
+                for (int i = maxIndex; i <= position; i++) {
+                    if (spaceReserveBeans.get(i).getViewType() == 3) {
+                        if (spaceReserveBeans.get(i).isClick()) {
+                            canChooseCount += 1;
+                        } else {
+                            noChoosePosition = position;
+                            break;
+                        }
+                    }
+                }
+                if (canChooseCount <= 1) {
+                    int i = maxIndex - 1;
+                    if (i >= 0) {
+                        if (spaceReserveBeans.get(i).getViewType() == 3 && spaceReserveBeans.get(i).isClick()) {
+                            canChooseCount += 1;
+                        }
+                    }
+                }
+
+                if (canChooseCount > 1) {
+                    if (noChoosePosition != -1) {
+                        for (int i = minIndex; i <= maxIndex; i++) {
+                            ChoseDateBean.SpaceReserveBean bean = spaceReserveBeans.get(i);
+                            if (bean.getViewType() == 3) {
+                                bean.setChose(false);
+                            }
+                        }
+                        spaceReserveBean.setChose(true);
+                    } else {
+                        for (int i = maxIndex; i <= position; i++) {
+                            ChoseDateBean.SpaceReserveBean bean = spaceReserveBeans.get(i);
+                            if (bean.getViewType() == 3) {
+                                bean.setChose(true);
+                            }
+                        }
+                    }
+
+                } else {
+                    MyToast.warn("请至少选择两个连续的时间段");
+                }
+            }else {
+                int min = Math.abs(position - minIndex);
+                int max = Math.abs(maxIndex - position);
+                if (min>=max){
+                    for (int i = position; i <= maxIndex; i++) {
+                        ChoseDateBean.SpaceReserveBean bean = spaceReserveBeans.get(i);
+                        if (bean.getViewType() == 3) {
+                            bean.setChose(false);
+                        }
+                    }
+                }else{
+                    for (int i = minIndex; i <= position; i++) {
+                        ChoseDateBean.SpaceReserveBean bean = spaceReserveBeans.get(i);
+                        if (bean.getViewType() == 3) {
+                            bean.setChose(false);
+                        }
+                    }
+                }
             }
         } else {
             spaceReserveBean.setChose(true);

@@ -58,11 +58,12 @@
             android:name=".activity.MainActivity"
             android:launchMode="singleTask">
             <!--<intent-filter>-->
-            <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
+
         <activity
             android:name=".activity.my.PersonCenterActivity"
             android:theme="@style/PersonCenterTheme" />
@@ -70,21 +71,21 @@
             android:name=".activity.QwActivity"
             android:theme="@style/QwTheme" />
         <activity android:name=".activity.SpaceDescActivity" />
-        <activity android:name=".activity.message.ActivityMessageActivity" />
-        <activity android:name=".activity.message.ActivitySplendidActivity" />
-        <activity android:name=".activity.message.ExpenseTipsActivity" />
+        <activity android:name=".v1.activity.message.ActivityMessageActivity" />
+        <activity android:name=".v1.activity.message.ActivitySplendidActivity" />
+        <activity android:name=".v1.activity.message.ExpenseTipsActivity" />
         <activity android:name=".v1.activity.my.MyPackageActivity" />
         <activity android:name=".activity.walletbag.CouponActivity" />
         <activity android:name=".activity.walletbag.DepositActivity" />
         <activity android:name=".v1.activity.my.MoneyActivity" />
         <activity android:name=".activity.walletbag.ChargeActivity" />
         <activity android:name=".activity.coupon.CouponChangeActivity" />
-        <activity android:name=".activity.help.HelpCenterActivity" />
-        <activity android:name=".activity.help.FanKuiActivity" />
-        <activity android:name=".activity.help.WebViewActivity" />
+        <activity android:name=".v1.activity.help.HelpCenterActivity" />
+        <activity android:name=".v1.activity.help.FanKuiActivity" />
+        <activity android:name=".v1.activity.help.WebViewActivity" />
         <activity android:name=".activity.space.SpaceDetailActivity" />
         <activity android:name=".activity.my.AutherActivity" />
-        <activity android:name=".activity.help.HelpCenterNextActivity" />
+        <activity android:name=".v1.activity.help.HelpCenterNextActivity" />
         <activity
             android:name=".activity.login.LoginActivity"
             android:theme="@style/LoginTheme" />
@@ -103,6 +104,11 @@
         <activity android:name=".v1.activity.space.ChoseDateActvivity" />
         <activity android:name=".v1.activity.order.CheckOrderActivity" />
         <activity android:name=".v1.activity.order.SpacePayDetailActivity" />
+        <activity android:name=".v1.activity.order.OrderingActivity"/>
+        <activity android:name=".v1.activity.order.OrderShopActivity"/>
+        <activity android:name=".v1.activity.my.SetActivity"/>
+        <activity android:name=".v1.activity.space.OpenInputActivity"/>
+        <activity android:name=".v1.activity.space.AirQualityActivity"/>
 
         <activity android:name=".activity.HomeActivity">
             <intent-filter>
@@ -134,13 +140,13 @@
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
         <activity
             android:name="com.alipay.sdk.app.H5AuthActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
 
 
         <!-- 微信相关 -->
@@ -151,7 +157,7 @@
         <activity
             android:name=".wxapi.WXEntryActivity"
             android:exported="true"
-            android:label="@string/app_name"/>
+            android:label="@string/app_name"></activity>
         <!-- 微信相关 -->
 
         <!--高德地图-->
@@ -187,6 +193,10 @@
 
 
         <activity android:name=".v1.activity.my.CashPledgeActivity"/>
+        <activity android:name=".v1.activity.my.LimitsActivity"/>
+        <activity android:name=".v1.activity.my.CouponActivity"/>
+        <activity android:name=".v1.activity.my.BalanceDescActivity"/>
+        <activity android:name=".v1.activity.space.MapSpaceActivity"/>
     </application>
 
 </manifest>

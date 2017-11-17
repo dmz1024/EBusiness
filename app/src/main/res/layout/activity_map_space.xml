@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/ivCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/logo_pic" />
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size10"
+            android:src="@mipmap/fhhome_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_e9eaec" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTop">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivWo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/wo_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlTop"
+        android:background="#fff"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivSpace"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size5"
+            android:layout_toRightOf="@id/ivSpace"
+            android:ellipsize="middle"
+            android:maxLines="2"
+            android:text="北方明珠大厦示范店"
+            android:textColor="@color/color_1c2438"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/ivGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="@dimen/size3"
+            android:scaleType="fitXY"
+            android:src="@mipmap/daohang_icon" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginLeft="@dimen/size5"
+            android:layout_marginRight="@dimen/size2"
+            android:layout_toLeftOf="@id/ivGo"
+            android:layout_toRightOf="@id/ivSpace"
+            android:ellipsize="middle"
+            android:text="昌平区立汤路北方明珠大厦·10KM"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/sp11" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAddress"
+            android:layout_marginLeft="@dimen/size5"
+            android:layout_marginRight="@dimen/size2"
+            android:layout_toLeftOf="@id/ivGo"
+            android:layout_toRightOf="@id/ivSpace"
+            android:text="可容纳19人"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/sp11" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@id/rlInfo"
+        android:background="@color/color_e9eaec" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size30"
+        android:layout_marginLeft="@dimen/size30"
+        android:layout_marginRight="@dimen/size30">
+
+        <ImageView
+            android:id="@+id/ivLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shuaxin_icon" />
+
+        <ImageView
+            android:id="@+id/ivKefu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/help_icon" />
+
+        <FrameLayout
+            android:id="@+id/fg_qw"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape_main_bottom_qw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="8dp"
+                android:drawableTop="@mipmap/icon_main_bottom_qw"
+                android:gravity="center"
+                android:text="扫码开门"
+                android:textColor="#333"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

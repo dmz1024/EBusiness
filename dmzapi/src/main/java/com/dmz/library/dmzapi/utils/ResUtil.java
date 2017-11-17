@@ -62,6 +62,24 @@ public class ResUtil {
         return resId;
     }
 
+    /**
+     * 将字符串转成资源id
+     *
+     * @param variableName
+     * @return
+     */
+    public static int getDraResId(Context context, String variableName) {
+        int resId;
+        try {
+            resId = context.getResources().getIdentifier(variableName, "drawable", context.getPackageName());
+        } catch (Exception e) {
+            return 0;
+        }
+
+        //如果没有在"mipmap"下找到imageName,将会返回0
+        return resId;
+    }
+
 
     /**
      * 将字符串转成资源id
@@ -92,6 +110,12 @@ public class ResUtil {
                 return R.layout.common_item_type_5;
             case 6:
                 return R.layout.common_item_type_6;
+            case 7:
+                return R.layout.common_item_type_7;
+            case 8:
+                return R.layout.common_item_type_8;
+            case 9:
+                return R.layout.common_item_type_9;
         }
         return -1;
     }

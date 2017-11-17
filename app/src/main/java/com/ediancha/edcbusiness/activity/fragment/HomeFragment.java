@@ -1,36 +1,45 @@
 package com.ediancha.edcbusiness.activity.fragment;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.dmz.library.dmzapi.api.bean.IType;
+import com.dmz.library.dmzapi.api.list.AdapterHelper;
 import com.ediancha.edcbusiness.R;
+import com.ediancha.edcbusiness.bean.HomeBean;
 import com.ediancha.edcbusiness.helper.ImageLoader;
+import com.ediancha.edcbusiness.helper.TextStylesHelper;
 import com.ediancha.edcbusiness.router.Go;
+import com.ediancha.edcbusiness.v1.presenter.HomePresenter;
 import com.ediancha.edcbusiness.view.LazyLoadFragment;
 import com.zhouwei.mzbanner.MZBannerView;
 import com.zhouwei.mzbanner.holder.MZHolderCreator;
 import com.zhouwei.mzbanner.holder.MZViewHolder;
+import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Unbinder;
 
 /**
  * Created by Admin on 2017/10/9.
  */
 
-public class HomeFragment extends LazyLoadFragment {
+public class HomeFragment extends LazyLoadFragment implements HomePresenter.IHomeView, AdapterHelper.OnConvertInterface, AdapterHelper.OnClickListener {
 
 
     @BindView(R.id.tv_center)
@@ -39,35 +48,22 @@ public class HomeFragment extends LazyLoadFragment {
     TextView mTvRight;
     @BindView(R.id.banner)
     MZBannerView mBanner;
-    @BindView(R.id.img_pic)
-    ImageView mImgPic;
-    @BindView(R.id.recy_label)
-    RecyclerView mRecyLabel;
-    @BindView(R.id.ln_label)
-    LinearLayout mLnLabel;
-    @BindView(R.id.tv_money)
-    TextView mTvMoney;
-    @BindView(R.id.tv_time)
-    TextView mTvTime;
-    @BindView(R.id.img_ue_pic)
-    ImageView mImgUePic;
-    @BindView(R.id.tv_label)
-    TextView mTvLabel;
-    @BindView(R.id.rl_ue_show)
-    RelativeLayout mRlUeShow;
-    @BindView(R.id.img_head)
-    ImageView mImgHead;
-    @BindView(R.id.tv_name)
-    TextView mTvName;
-    @BindView(R.id.tv_office)
-    TextView mTvOffice;
-    @BindView(R.id.rl_ue_user)
-    RelativeLayout mRlUeUser;
-    @BindView(R.id.tv_content)
-    TextView mTvContent;
-    @BindView(R.id.recy)
-    RecyclerView mRecy;
+    @BindView(R.id.tv_title)
+    TextView mTvTitle;
+    @BindView(R.id.tv_detail)
+    TextView mTvDetail;
+    @BindView(R.id.ln_title)
+    LinearLayout mLnTitle;
+    @BindView(R.id.space_item)
+    RecyclerView mSpaceItem;
+    @BindView(R.id.tv_tiyan)
+    TextView mTvTiyan;
+    @BindView(R.id.tv_tydetail)
+    TextView mTvTydetail;
+    @BindView(R.id.recy_tiyan)
+    RecyclerView mRecyTiyan;
     Unbinder unbinder;
+    private HomePresenter mHomePresenter;
 
     public static HomeFragment newInstance() {
         return new HomeFragment();
@@ -76,19 +72,6 @@ public class HomeFragment extends LazyLoadFragment {
     @Override
     public void initBaseView() {
 
-        List<String> list = new ArrayList<>();
-        list.add("http://img.ivsky.com/img/bizhi/pre/201709/27/mercedes_maybach_g650_landaulet-001.jpg");
-        list.add("http://imgsrc.baidu.com/image/c0%3Dshijue1%2C0%2C0%2C294%2C40/sign=e05fa110566034a83defb0c2a37a2321/5fdf8db1cb1349547059c0755c4e9258d1094a5f.jpg");
-        list.add("http://imgsrc.baidu.com/imgad/pic/item/c8ea15ce36d3d539e829c8dc3087e950352ab09d.jpg");
-        list.add("http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg");
-        // 设置数据
-        mBanner.setPages(list, new MZHolderCreator<BannerViewHolder>() {
-            @Override
-            public BannerViewHolder createViewHolder() {
-                return new BannerViewHolder();
-            }
-        });
-        mBanner.start();
     }
 
     @Override
@@ -99,23 +82,100 @@ public class HomeFragment extends LazyLoadFragment {
     @Override
     protected void lazyLoad() {
 
-        mTvName.setText("0000");
+        if (mHomePresenter == null) {
+            mHomePresenter = new HomePresenter(this);
+            mHomePresenter.getHomeView();
+        }
+    }
 
-        ImageLoader.loadImageOvel(getContext(), "http://img1.imgtn.bdimg.com/it/u=4113217746,822807257&fm=27&gp=0.jpg", mImgHead);
+
+    @OnClick(R.id.tv_right)
+    void goMap() {
+        Go.goMapSpaceActivity();
     }
 
     @Override
     protected void setListener() {
-        mImgPic.setOnClickListener(new View.OnClickListener() {
+    }
+
+    @Override
+    public void successHome(HomeBean.Data homeBean) {
+
+        ArrayList<HomeBean.AdsBean> ads = homeBean.getAds();
+        Log.e("加载网址成功", ads.toString());
+        mBanner.setPages(ads, new MZHolderCreator<BannerViewHolder>() {
             @Override
-            public void onClick(View view) {
-                Go.goSpaceDetail("1", null, null);
+            public BannerViewHolder createViewHolder() {
+                return new BannerViewHolder();
             }
         });
+        mBanner.start();
+        initRecyclerView(homeBean);
+    }
+
+    AdapterHelper mSpaceAdapter;
+    AdapterHelper mTiyanAdapter;
+
+    private void initRecyclerView(HomeBean.Data homeBean) {
+        HomeBean.SpaceBean space = homeBean.getSpace();
+        mTvTitle.setText(space.getTitle());
+        mTvDetail.setText(space.getSubTitle());
+        mSpaceAdapter = AdapterHelper._instance(getActivity(), mSpaceItem)
+                ._initData(homeBean.space.getSpaceList())
+                .setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false) {
+                                      @Override
+                                      public boolean canScrollVertically() {
+                                          return false;
+                                      }
+                                  }
+                ).setType(new AdapterHelper.ViewTypeInfo().setType(1).setRid(R.layout.adapter_space_item).setConvertInterface(this)
+                        .setOnClickListener(this));
+
+        HomeBean.CommentBean comment = homeBean.getComment();
+        mTvTiyan.setText(comment.getTitle());
+        mTvTydetail.setText(comment.getSubTitle());
+        mTiyanAdapter = AdapterHelper._instance(getContext(), mRecyTiyan)._initData(comment.getSpaceComment())
+                .setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false) {
+                    @Override
+                    public boolean canScrollVertically() {
+                        return false;
+                    }
+                }).setType(new AdapterHelper.ViewTypeInfo().setType(2).setRid(R.layout.adapter_ue_item).setConvertInterface(this));
+    }
+
+    @Override
+    public void convert(int viewType, ViewHolder holder, IType iType, int position) {
+        if (viewType == 1) {
+            HomeBean.SpaceListBean spaceListBean = (HomeBean.SpaceListBean) iType;
+            holder.setText(R.id.tv_name, spaceListBean.getSpaceName());
+            String label = "可容纳" + spaceListBean.spaceLoadNumber + "人|" + spaceListBean.getSpaceDesc();
+            holder.setText(R.id.tv_label, label);
+            ImageLoader.loadImageRec(getContext(), spaceListBean.getSpaceImage(), holder.<ImageView>getView(R.id.img_pic));
+            String[] labelname = spaceListBean.getLabelname();
+            for (int i = 0; i < labelname.length; i++) {
+                TextView tvLabel = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.item_text_label, null, false);
+                tvLabel.setText(labelname[i]);
+                holder.<LinearLayout>getView(R.id.ln_label)
+                        .addView(tvLabel);
+            }
+        } else if (viewType == 2) {
+            HomeBean.SpaceCommentBean comment = (HomeBean.SpaceCommentBean) iType;
+            holder.setText(R.id.tv_name, comment.getNickname());
+            holder.setText(R.id.tv_office, "UI设计师|东方盈");
+            holder.setText(R.id.tv_content, comment.getContent());
+            ImageLoader.loadImageRec(getContext(), comment.getImages(), holder.<ImageView>getView(R.id.img_ue_pic));
+            ImageLoader.loadImageOvel(getContext(), comment.getImages(), holder.<ImageView>getView(R.id.img_head));
+        }
+    }
+
+    @Override
+    public void onItemClick(int viewType, AdapterHelper adapterHelper, int position) {
+        HomeBean.SpaceListBean spaceBean = adapterHelper.<HomeBean.SpaceListBean>getT(position);
+        Go.goSpaceDetail(spaceBean.getId(), null, null);
     }
 
 
-    public static class BannerViewHolder implements MZViewHolder<String> {
+    public static class BannerViewHolder implements MZViewHolder<HomeBean.AdsBean> {
         private ImageView mImageView;
 
         @Override
@@ -127,9 +187,18 @@ public class HomeFragment extends LazyLoadFragment {
         }
 
         @Override
-        public void onBind(Context context, int position, String data) {
+        public void onBind(Context context, int position, HomeBean.AdsBean data) {
             // 数据绑定
-            ImageLoader.loadImageRec(context, data, mImageView);
+
+            ImageLoader.loadImageRec(context, data.getImages(), mImageView);
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (mBanner != null) {
+            mBanner.pause();
         }
     }
 

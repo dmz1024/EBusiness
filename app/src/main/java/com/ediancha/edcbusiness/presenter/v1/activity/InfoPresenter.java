@@ -5,9 +5,7 @@ import com.dmz.library.dmzapi.api.DmzBuilder;
 import com.dmz.library.dmzapi.api.OnMySuccessListener;
 import com.dmz.library.dmzapi.api.view.IContextView;
 import com.ediancha.edcbusiness.bean.ActivityMessageBean;
-import com.ediancha.edcbusiness.bean.HomeBean;
 import com.ediancha.edcbusiness.constant.ApiContant;
-import com.ediancha.edcbusiness.presenter.HomePresenter;
 
 /**
  * Created by Admin on 2017/11/8.

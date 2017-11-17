@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.butterknife'
 android {
+    signingConfigs {
+        config {
+            keyAlias 'allin'
+            keyPassword 'allin123'
+            storeFile file('/Users/dengmingzhi/Desktop/develop/android/jks/AllIn.jks')
+            storePassword 'allin123'
+        }
+    }
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
@@ -20,26 +28,28 @@ android {
             //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
             abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
         }
-
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
-    repositories {
-        maven {
-            url "http://maven.aliyun.com/nexus/content/repositories/releases"
-        }
-        maven { url 'https://jitpack.io' }
-    }
-
+//    repositories {
+//        maven {
+//            url "http://maven.aliyun.com/nexus/content/repositories/releases"
+//        }
+//        maven { url 'https://jitpack.io' }
+//    }
     dexOptions {
         incremental true
         javaMaxHeapSize "4g"
+        preDexLibraries = false
     }
-
 }
 
 dependencies {
@@ -62,23 +72,17 @@ dependencies {
     //butterknife
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-
     //支付宝
     compile files('libs/alipaySdk-20170922.jar')
     compile files('libs/open_sdk_r5886_lite.jar')
-
     compile 'com.airbnb.android:lottie:2.2.5'
     //高德地图导航
-    compile 'com.amap.api:navi-3dmap:latest.integration'
-    compile 'com.amap.api:map2d:latest.integration'
-    compile 'com.amap.api:location:latest.integration'
-    compile 'com.amap.api:search:latest.integration'
+    compile 'com.amap.api:navi-3dmap:5.4.0_3dmap5.4.0'
+    compile 'com.amap.api:location:3.6.1'
+    compile 'com.amap.api:search:5.5.0'
     //https://github.com/pinguo-zhouwei/MZBannerView
     compile 'com.github.pinguo-zhouwei:MZBannerView:v2.0.0'
     //https://github.com/czy1121/cornerlabelview
     compile 'com.github.czy1121:cornerlabelview:1.0.3'
-
     compile 'com.android.support:multidex:1.0.1'
-
-
 }

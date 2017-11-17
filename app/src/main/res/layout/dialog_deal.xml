@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/size15"
+        android:text="《用户注册协议》"
+        android:textColor="@color/color_1c2438"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:enabled="false"
+        android:alpha="0.5"
+        android:id="@+id/tvAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/size10"
+        android:background="@drawable/shape_deal"
+        android:paddingBottom="@dimen/size6"
+        android:paddingLeft="@dimen/size40"
+        android:paddingRight="@dimen/size40"
+        android:paddingTop="@dimen/size6"
+        android:text="同意协议"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp15" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/tvAgree"
+        android:background="#e9eaec" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view"
+        android:layout_below="@id/tvTitle" />
+</RelativeLayout>

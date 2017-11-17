@@ -34,16 +34,16 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/yue_bg_pic"
+                android:layout_height="@dimen/size200"
+                android:src="@drawable/icon_me_center"
                 android:scaleType="centerCrop"/>
 
             <ImageView
                 android:id="@+id/img_userhead"
-                android:layout_width="@dimen/size60"
-                android:layout_height="@dimen/size60"
+                android:layout_width="@dimen/size100"
+                android:layout_height="@dimen/size100"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/size20"
+                android:layout_marginLeft="@dimen/size25"
                 />
 
             <LinearLayout
@@ -54,13 +54,25 @@
                 android:layout_centerVertical="true"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv_name"
+                <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/color_fff"
-                    android:text="@string/str_commen"
-                    android:textSize="@dimen/sp16"/>
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_bname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="@string/str_commen"
+                        android:textSize="@dimen/sp20" />
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_fff"
+                        android:text="@string/str_commen"
+                        android:textSize="@dimen/sp20"
+                        android:paddingBottom="1px"/>
+                </RelativeLayout>
                 <TextView
                     android:id="@+id/tv_detail"
                     android:layout_width="wrap_content"
@@ -68,7 +80,8 @@
                     android:textColor="@color/color_fff"
                     android:text="@string/str_commen"
                     android:textSize="@dimen/sp14"
-                    android:layout_marginTop="@dimen/size5"/>
+                    android:layout_marginTop="@dimen/size5"
+                    android:visibility="gone"/>
                 <TextView
                     android:id="@+id/tv_rz"
                     android:layout_width="wrap_content"
@@ -80,6 +93,7 @@
             </LinearLayout>
         </RelativeLayout>
         <LinearLayout
+            android:id="@+id/ln_item"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/rl_user"
@@ -140,6 +154,21 @@
                 android:text="帮助中心"
                 android:drawableRight="@mipmap/you_icon"
                 android:drawableLeft="@mipmap/wd_bzzx_moren_icon"
+                android:drawablePadding="@dimen/size10"
+                android:gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                />
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size15"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/color_666"
+                android:text="设置"
+                android:layout_below="@id/ln_item"
+                android:drawableRight="@mipmap/you_icon"
+                android:drawableLeft="@mipmap/wode_shezhi_icon"
                 android:drawablePadding="@dimen/size10"
                 android:gravity="center_vertical"
                 android:background="?android:attr/selectableItemBackground"
